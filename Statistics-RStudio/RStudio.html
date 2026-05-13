@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>R and RStudio Statistics Software</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD GOD JESUS CHRIST. We are experts in R and RStudio for Statistics.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
+                statistics, data, data collection, data organization, data presentation, data analysis, data interpretation,
+                descriptive statistics, inferential statistics, statistical science, sample, population, individual, decision, 
+                conclusion, study, variables, quantitative variable, qualitative variable, discrete variable, continuous variable,
+                statistic, parameter, research, research objective, inference, response variable, explanatory variable,
+                predictor variable, level of measurement of a variable, nominal level, ordinal level, interval level, ratio level, 
+                fact, survey, experiment, historical record, Likert scales, statistical process, correlation, regression, 
+                correlation coefficient, product moment correlation coefficient, Pearson correlation coefficient, 
+                critical values of correlation coefficient, forecasting, forecasting models, forecasting techniques, period,
+                value, forecast, error, mean absolute deviation, mean square error, averages, simple averages, 
+                moving averages, weighted moving averages, index numbers, time-series forecasting, smoothing techniques, 
+                naive forecasting models, averaging models, exponential smoothing, trend analysis, seasonal effects, 
+                autocorrelation, autoregression, variables, price index, critical value, confidence level, confidence interval, 
+                significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, 
+                type II error, unstacked table, coding, wide data, narrow data, unstacked table, stacked table, long data, 
+                null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, 
+                critical region, hypothesis testing, population proportion, population mean, one sample proportion, 
+                two sample proportion, goodness-of-fit test, chi-square, normal distribution table, student t distribution table,
+                F statistic, test statistic, sample proportion, population proportion, level of significance, 
+                confidence levels, sample mean, population mean, sample variance, population variance, 
+                sample standard deviation, population standard deviation, critical values, student t distribution, 
+                normal distribution, chi -square distribution, sampling, normal distribution, sampling distribution, 
+                probability distribution, sample mean, sample proportion, sample variance, sample standard deviation, 
+                population mean, population proportion, population variance, population standard deviation, estimators, 
+                bias, standard error, probability, central limit theorem, confounding, lurking variable, sampling frame,
+                frequency distribution table, frequency table, class, classes, frequency, data set, class width, tally,
+                class size, range, number of classes, maximum value, minimum value, class interval, class limit,
+                class midpoint, class mark, class boundary, relative frequency, cumulative frequency, data cycle,
+                two-way table, R programming, RStudio">
+
+    <link href="styles/RStudio.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki">
+        <!--
+            <div class="w3-center">
+                <button class="quoteDay" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            <div class="w3-content quotes" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages12"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <!--
+        <header class="w3-padding-64 khaki">
+            <div class="w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages12"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        </header>
+        -->
+    <!-- End Header/Home -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+
+        <img src="images/chukwuemekasamueldominic.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+            class="images" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+        <!-- Image in top left corner --
+            <a href="https://www.samdomforpeace.appspot.com" title="Samuel Chukwuemeka">
+                <img src="images/chukwuemekasamueldominic.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        <h1>R and RStudio for Statistics</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="w3-container">
+        <p class="w3-center w3-padding-16">
+            <a href="https://statistical-science.appspot.com"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Home</a>
+            <a href="#DownloadInstallR" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Download and Install
+                R</a>
+            <a href="#DownloadInstallRStudio" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Download and
+                Install RStudio</a>
+            <a href="#RunRStudio" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Run RStudio / Some
+                Settings</a>
+            <br><br>
+            <a href="#datasets" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Datasets in RStudio</a>
+            <a href="#importExcel" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Find, Download and Import
+                Microsoft Excel Dataset into RStudio</a>
+            <br><br>
+            <a href="#names" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Variables/Functions Names</a>
+            <a href="#dataTypes" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Data Types</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/DataPresentation.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Data Presentation</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Scatter Diagrams</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Descriptive Statistics</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/ProbabilityDistributions.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Probability Distributions</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/InferentialStatistics.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Inferential Statistics</a>
+            <br><br>
+            <a href="#references" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">References</a>
+        </p>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <br><br>
+
+    <!-- Download and Install R -->
+    <div class="w3-row w3-container" id="DownloadInstallR">
+        <div class="w3-topbar w3-padding">
+            <h2>Download and Install R</h2>
+            <p>
+                As at today: 06/26/2023; <br>
+                <b>Download and Install R</b> <br>
+                (1.) Visit the website: <a href="https://posit.co/download/rstudio-desktop/"
+                    target="_blank">https://posit.co/download/rstudio-desktop/</a> <br><br>
+                (2.) Step 1: Click the: <b>DOWNLOAD AND INSTALL R</b> button link <br>
+                <img src="images/Download-Install/download-R-step-1.png" alt="Download/Install R: Step 1">
+                <br><br>
+                (3.) It leads to another website: <a href="https://cran.rstudio.com/"
+                    target="_blank">https://cran.rstudio.com/</a> <br><br>
+                (4.) Step 2: Click: <b>Download R for Windows</b> <br>
+                <img src="images/Download-Install/download-R-step-2.png" alt="Download/Install R: Step 2">
+                <br><br>
+                (5.) Step 3: Click: <b>base</b> <br>
+                <img src="images/Download-Install/download-R-step-3.png" alt="Download/Install R: Step 3">
+                <br><br>
+                (6.) Step 4: Click: <b>Download R-4.3.1 for Windows</b> <br>
+                <img src="images/Download-Install/download-R-step-4.png" alt="Download/Install R: Step 4">
+                <br><br>
+                (7.) Step 5: <br>
+                <img src="images/Download-Install/download-R-step-5.png" alt="Download/Install R: Step 5">
+                <br><br>
+                (8.) Step 6: <br>
+                <img src="images/Download-Install/download-R-step-6.png" alt="Download/Install R: Step 6">
+                <br><br>
+                (9.) Step 7: <br>
+                <img src="images/Download-Install/download-R-step-7.png" alt="Download/Install R: Step 7">
+                <br><br>
+                (10.) Step 8: <br>
+                <img src="images/Download-Install/download-R-step-8.png" alt="Download/Install R: Step 8">
+                <br><br>
+                (11.) Step 9: <br>
+                <img src="images/Download-Install/download-R-step-9.png" alt="Download/Install R: Step 9">
+                <br><br>
+                (12.) Step 10: <br>
+                <img src="images/Download-Install/download-R-step-10.png" alt="Download/Install R: Step 10">
+                <br><br>
+                (13.) Step 11: <br>
+                <img src="images/Download-Install/download-R-step-11.png" alt="Download/Install R: Step 11">
+                <br><br>
+                (14.) Step 12: <br>
+                <img src="images/Download-Install/download-R-step-12.png" alt="Download/Install R: Step 12">
+                <br><br>
+                (15.) Step 13: <br>
+                <img src="images/Download-Install/download-R-step-13.png" alt="Download/Install R: Step 13">
+                <br><br>
+                (16.) Restart your computer.
+            </p>
+        </div>
+    </div>
+    <!-- End Download and Install R -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Download and Install RStudio -->
+    <div class="w3-row w3-container" id="DownloadInstallRStudio">
+        <div class="w3-topbar w3-padding">
+            <h2>Download and Install RStudio</h2>
+            <p>
+                As at today: 06/26/2023; <br>
+                <b>Download and Install RStudio</b> <br>
+                (1.) Back to the main website: <a href="https://posit.co/download/rstudio-desktop/"
+                    target="_blank">https://posit.co/download/rstudio-desktop/</a> <br><br>
+                (2.) Step 1: Click: <b>DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS</b> <br>
+                <img src="images/Download-Install/download-RStudio-1.png" alt="Download/Install RStudio 1">
+                <br><br>
+                (3.) Step 2: <br>
+                <img src="images/Download-Install/download-RStudio-2.png" alt="Download/Install RStudio 2">
+                <br><br>
+                (4.) Step 3: <br>
+                <img src="images/Download-Install/download-RStudio-3.png" alt="Download/Install RStudio 3">
+                <br><br>
+                (5.) Step 4: <br>
+                <img src="images/Download-Install/download-RStudio-4.png" alt="Download/Install RStudio 4">
+                <br><br>
+                (6.) Step 5: <br>
+                <img src="images/Download-Install/download-RStudio-5.png" alt="Download/Install RStudio 5">
+                <br><br>
+                (7.) Step 6: <br>
+                <img src="images/Download-Install/download-RStudio-6.png" alt="Download/Install RStudio 6">
+            </p>
+        </div>
+    </div>
+    <!-- End Download and Install RStudio -->
+
+    <br><br>
+
+    <!-- Run RStudio -->
+    <div class="w3-row w3-container" id="RunRStudio">
+        <div class="w3-topbar w3-padding">
+            <h2>Run RStudio</h2>
+            <p>
+                <b>Run RStudio</b> <br>
+                (1.) Step 1: <br>
+                <img src="images/Run/run-RStudio-1.png" alt="Run RStudio 1">
+                <br><br>
+                (2.) Step 2: <br>
+                <img src="images/Run/run-RStudio-2.png" alt="Run RStudio 2">
+                <br><br>
+                (3.) Step 3: <br>
+                <img src="images/Run/run-RStudio-3.png" alt="Run RStudio 3">
+                <br><br>
+                (4.) Step 4: <br>
+                <img src="images/Run/run-RStudio-4.png" alt="Run RStudio 4">
+                <br><br>
+                (5.) Step 5: <br>
+                <img src="images/Run/run-RStudio-5.png" alt="Run RStudio 5">
+                <br><br>
+                (6.) Step 6: <br>
+                <img src="images/Run/run-RStudio-6.png" alt="Run RStudio 6">
+                It has come to my attention that some settings are necessary in RStudio. <br>
+                One of the important settings is the font size of the editor. By default, it is a small font size (less
+                than 12pt). We need to increase it. <br>
+                This is to accommodate the students who may need an acceptable font size so as not to strain the eyes.
+                <br>
+                For the programs written already, if you need an acceptable font size, please attend Office Hours/Live
+                Sessions so we can go over it. <br>
+                Going forward, we shall use the acceptable font size that we want to use now. <br>
+                So, let us increase the font size.
+                <br><br>
+                <b>Tools</b> menu &rightarrow; <b>Global Options...</b> bar &rightarrow; <br>
+                <img src="images/Run/run-RStudio-7.png" alt="Run RStudio 7">
+                <br><br>
+                <b>Appearance</b> &rightarrow; Make the appropriate settings: at least a font size of 14; <b>Apply</b>
+                &rightarrow; <b>OK</b> <br>
+                <img src="images/Run/run-RStudio-8.png" alt="Run RStudio 8">
+            </p>
+        </div>
+    </div>
+    <!-- End Run RStudio -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Datasets in RStudio -->
+    <div class="w3-row w3-container" id="datasets">
+        <div class="w3-topbar w3-padding">
+            <h2>Datasets in RStudio</h2>
+            <p>
+                RStudio has some pre-loaded datasets. <br>
+                As at today: 06/28/2023; <br>
+                To see all the datasets in RStudio: <br>
+                (1.) Step 1: Type the <code>data()</code> or <code>data</code> function: <br>
+                <img src="images/Datasets/step-1-1.png" alt="Datasets: 1-1"> <br>
+                <img src="images/Datasets/step-1-2.png" alt="Datasets: 1-2">
+                <br><br>
+                Going forward, let us make comments to our code. <br>
+                Comments in <i>R</i> are written beginning with the hatch, <span>#</span> symbol.
+                <br><br>
+                (2.) Step 2: I want a dataset with only one variable. <br>
+                So, let me read the description of the <i>rivers</i> data so I have to use the code:
+                <code>?rivers</code> <br>
+                The column is the <i>length</i> of the major rivers. <br>
+                <img src="images/Datasets/step-2-1.png" alt="Datasets: 2-1"> <br>
+                <img src="images/Datasets/step-2-2.png" alt="Datasets: 2-2">
+                <br><br>
+                (3.) The description tells me the dataset is a vector with 141 observations. <br>
+                This means that the sample size is 141. <br>
+                A <b>vector</b> is a list of items that are the <b>same data type</b>. <br>
+                I already know that <b>length</b> is a <b>quantitative: continuous</b> variable <br>
+                So, the data type must be numeric (numbers) <br>
+                Let me verify the sample size by using the <code>length()</code> function. <br>
+                Then, verify the data type of the data values by using the <code>class()</code> function. <br>
+                <img src="images/Datasets/step-3.png" alt="Datasets: 3">
+                <br><br>
+                (4.) I want to see the <i>rivers</i> data, so I have to use the code: <code>rivers</code> <br>
+                <img src="images/Datasets/step-4.png" alt="Datasets: 4">
+                <br><br>
+                (5.) I do not like the format of this dataset. <br>
+                It looks like a raw data as it is. <br>
+                I want it to look like a table <br>
+                The name of the dataset is <b>rivers</b> <br>
+                So, to make it look like a table, we have to convert the vector to a data frame <br>
+                A <b>data frame</b> is <b>data displayed in a table format.</b> <br>
+                First, let us make a copy of the dataset. <br>
+                <b><i>It is highly recommended that you make a copy of any built-in dataset in R that you intend to use,
+                        then use that copy.</i></b> <br>
+                We copy the dataset by assigning it to a new dataset using the assignment operator <br>
+                <img src="images/Datasets/step-5-1.png" alt="Datasets: 5-1">
+                <br><br>
+                Then, we can work with the <code>copyRivers</code> dataset to make it look like a table. <br>
+                Let us do so using a new dataset and the <code>as.data.frame()</code> function. <br>
+                <img src="images/Datasets/step-5-2.png" alt="Datasets: 5-2">
+                <br><br>
+                Besides, the appearance, are there more differences? <br>
+                Yes, there are more differences. <br>
+                Say we want to find the mean of the vector and the mean of the data frame, let us observe these codes:
+                <br>
+                <img src="images/Datasets/step-5-3.png" alt="Datasets: 5-3">
+                <br><br>
+                Do you notice the extra step we took to determine the mean of the data frame? <br>
+                As a vector, we can simply determine the mean by using the built-in <code>mean()</code> function
+                directly using the vector as the argument. <br>
+                As a data frame, we have to use the built-in function using the data frame and a reference (denoted by
+                the dollar symbol, <span>$</span>) to the column name as the argument. <br>
+                So, this implies that for all <b><i>numeric</i></b> data type (class of the dataset is "numeric"), we
+                can determine the built-in function directly. <br>
+                But for all <b><i>data.frame</i></b> data type (class of the dataset is "data.frame"), we have to use
+                the data frame in reference to each variable (column name)
+                <br><br>
+                (6.) The "rivers" dataset has only one variable: "length" <br>
+                So,e datasets in RStudio are data frames and have more than one column <br>
+                What if we want to find the mean of the entire dataset? <br>
+                So, let us discuss another type: the matrix. <br>
+                A <b>matrix</b> is a <b>rectangular two-dimensional array (row and column) of data.</b> <br>
+                The row are the horizontal entries (data values) <br>
+                The column are the vertical entries (data values) <br>
+                Let us review this dataset: the "women" dataset <br>
+                <img src="images/Datasets/step-6-1.png" alt="Datasets: 6-1"> <br>
+                <img src="images/Datasets/step-6-2.png" alt="Datasets: 6-2">
+                <br><br>
+                But how do we find the mean of the entire dataset? <br>
+                One way to do so is to convert the data frame to a matrix using the <code>as.matrix()</code> function
+                <br>
+                Then, we can find the mean of the entire dataset. <br>
+                So, let us make a copy and convert it to a matrix. <br>
+                <img src="images/Datasets/step-6-3.png" alt="Datasets: 6-3">
+                <br><br>
+                There are more data types but let us discuss them if we need to. <br>
+                For now, let us get back to Statistics. <br>
+                To see more examples of using the built-in (system-defined) statistical functions and writing our
+                user-defined functions in R/RStudio, please review <a
+                    href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html">R and
+                    RStudio for Descriptive Statistics</a>
+            </p>
+        </div>
+    </div>
+    <!-- End Datasets in RStudio -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Import Excel into RStudio -->
+    <div class="w3-row w3-container" id="importExcel">
+        <div class="w3-topbar w3-padding">
+            <h2>Find, Download and Import Microsoft Excel Dataset into RStudio</h2>
+            <p>
+                Let us access one of the datasets we shall be using in the course:
+                Datasets from the U.S Government website: <a href="https://data.gov/" target="_blank">United States
+                    Government's Open Data: Datasets</a> <br>
+                Download a dataset in Microsoft Excel format <br>
+                Import it into RStudio. These will require installing some packages.
+                <br><br>
+                (1.) Step 1: <br>
+                <img src="images/ImportExcel/Example1.png" alt="Import Excel into RStudio 1">
+                <br><br>
+                (2.) Step 2: <br>
+                <img src="images/ImportExcel/Example2.png" alt="Import Excel into RStudio 2">
+                <br><br>
+                (3.) Step 3: <br>
+                <img src="images/ImportExcel/Example3.png" alt="Import Excel into RStudio 3">
+                <br><br>
+                (4.) Step 4: <br>
+                <img src="images/ImportExcel/Example4.png" alt="Import Excel into RStudio 4">
+                <br><br>
+                (5.) Step 5: <br>
+                <img src="images/ImportExcel/Example5.png" alt="Import Excel into RStudio 5">
+                <br><br>
+                (6.) Step 6: <br>
+                <img src="images/ImportExcel/Example6.png" alt="Import Excel into RStudio 6">
+                <br><br>
+                (7.) Step 7: <br>
+                <img src="images/ImportExcel/Example7.png" alt="Import Excel into RStudio 7">
+                <br><br>
+                (8.) Step 8: <br>
+                <img src="images/ImportExcel/Example8.png" alt="Import Excel into RStudio 8" style="width: 100%;">
+                <br><br>
+                (9.) Step 9: <br>
+                <img src="images/ImportExcel/Example9.png" alt="Import Excel into RStudio 9">
+                <br><br>
+                (10.) Step 10: <br>
+                <img src="images/ImportExcel/Example10.png" alt="Import Excel into RStudio 10" style="width: 100%;">
+                <br><br>
+                (11.) Step 11: <br>
+                <img src="images/ImportExcel/Example11.png" alt="Import Excel into RStudio 11" style="width: 100%;">
+            </p>
+        </div>
+    </div>
+    <!-- End Import Excel into RStudio -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Variables/Functions Names -->
+    <div class="w3-row w3-container" id="names">
+        <div class="w3-topbar w3-padding">
+            <h2>Variables</h2>
+            <p>
+                A <b>Variable</b> is a <b>portion of computer memory</b> for <b>storing a data value.</b> <br>
+                It is created by assigning a value or an expression to it. <br>
+                Assigning a value to a variable is done with the <b>assignment operator:</b> $\lt$&ndash; <br>
+                An equal sign, &equals; is used in some cases; however the assignment operator is highly recommended.
+                <br>
+                It is also highly recommended that: <br>
+                (A.) The variable is on the LHS (Left Hand Side) of the assignment operator. <br>
+                (B.) The value or the expression is on the RHS (Right Hand Side) of the assignment operator. <br>
+                For example, we declare a variable in R this way:
+                <br>
+                <code>
+                        variable &lt;&ndash; value
+                    </code>
+                <br>OR<br>
+                <code>
+                        variable &lt;&ndash; expression
+                    </code>
+                <br>
+                Variable names: <br><br>
+                (1.) Can be single letters (<i>please avoid unless if used in loops</i>) <br><br>
+                (2.) (a.) Can contain a combination of letters, digits, and underscores but <b>must not</b> begin
+                with a digit. <br>
+                (b.) It may begin with a letter or a period (not an underscore). <br>
+                (c.) If it starts with a period, it cannot be followed by a digit. <br>
+                (d.) Also, it should not contain two consecutive underscores.
+                <br>
+                Be it as it may: <br>
+                (a.) <i>Please avoid underscores and decimals</i> <br>
+                (b.) Use a combination of letters and digits such as: <br>
+                <b>num1</b> to represent the first number <br>
+                <b>variable1</b> to represent the first number <br><br>
+                (3.) Can contain only letters but <b>must not</b> be any of the <b>keywords</b> or <b>system-defined
+                    functions</b>. <br>
+                It is highly recommended to <b>avoid using any keywords as an identifier in any R program.</b> <br><br>
+
+                The <b>keywords</b> are: <br>
+                <i>
+                    if, else, repeat, while, function, for, next, break, TRUE, FALSE, NULL, Inf, NaN, NA, NA_integer_,
+                    NA_real_,
+                    NA_complex_, NA_character_,
+                </i> <br><br>
+
+                The <b>functions</b> are: <br>
+                <i>
+
+
+                </i> <br><br>
+
+                (a.) The letters can be Camel case (similar to the hump of a camel) such as: <br>
+                <b>firstVariable</b>...the V is the hump <br>
+                In Camel casing letters: two letters are merged as one; the first letter of the second word is
+                an uppercase letter while all other letters are lower case letters. <br>
+                In <b>firstVariable,</b> V is uppercase; all other letters are lower case <br>
+                (b.) The letters can be Pascal case such as <b>FirstVariable</b> <br>
+                In Pascal casing, two letters are merged as one; the first letter of the first word and the
+                first letter of the second word are uppercase letters while all other letters are lower case letters.
+                <br>
+                In <b>FirstVariable,</b> F and V are uppercase; all other letters are lowercase. <br>
+                (c.) uppercase letters (<i>please avoid...it denotes someone who is yelling</i>) <br>
+                (d.) lowercase letters (<i>okay, but try to avoid</i>) <br><br>
+                <i>
+                    <b>Student:</b> What if you have three words? <br>
+                    How do you write it in Camel case? Pascal case? <br>
+                    <b>Teacher:</b> Say we want to write the variable, first arithmetic sequence <br>
+                    Camel case: <b>firstArithmeticSequence</b>...A and S are the only uppercase <br>
+                    Pascal case: <b>FirstArithmeticSequence</b>...F, A, S are the only uppercase
+                </i> <br><br>
+                In this course, for all applicable variables; please use: <br>
+                (i.) A combination of letters and digits such as <b>num1</b> OR <br>
+                (ii.) Camel case letters such as <b>firstNumber</b> OR <br>
+                (iii.) Pascal case letters such as <b>FirstNumber</b> <br>
+                ***We shall use <i>single characters</i> when we write conditions for Iteration statements/Loops
+                because it is easier to use single characters in such cases. We shall see examples when we discuss
+                loops.
+                However, feel free not to use it if you wish.*** <br><br>
+                (4.) Cannot contain whitespaces. <br>
+                A <b>whitespace</b> is a <b>horizontal or vertical space</b>. <br>
+                For example: <b>myNum</b> has no whitespace; but <b>my Num</b> has a whitespace. <br>
+                Variable names cannot contain whitespaces. <br>
+                Hence: <b>myNum</b> is <b>acceptable</b>, but <b>my Num</b> is <b>not acceptable.</b> <br><br>
+
+                <i>
+                    It is also <b>highly recommended</b> to avoid <b>special characters</b> in C# variable names. <br>
+                    Special characters are all the <b>non-numeric and non-alphabet characters on your keyboard</b> such
+                    as ~ (tilde), !(exclamation), @ (asperand), # (hash), $ (dollar), % (percent), ^ (caret), &
+                    (ampersand), *
+                    (asterisk). <br>
+                    For all course work, please avoid special characters in variable names.
+                </i>
+                <br><br>
+                (5.) Are case sensitive. <br>
+                These are all different variables: <br>
+                firstresult (lowercase), <br>
+                firstResult (Camel case), <br>
+                FirstResult (Pascal case), <br>
+                Firstresult, <br>
+                FIRSTRESULT (uppercase), <br>
+                first_result (snake case) <br>
+                strFirstResult (Hungarian notation) <br><br>
+                <i>
+                    <b>Student:</b> Hungarian notation? <br>
+                    <b>Teacher:</b> Hungarian notation is a naming convention that follows the camel case naming but in
+                    which
+                    the name is preceded by the data type represented by a three-character ID. <br>
+                    <b>str</b> means <b>string</b> <br>
+                    Similarly, <b>int</b> is for <b>integer</b>; <b>dec</b> is for <b>decimal</b>;
+                    <b>dbl</b> is for <b>double</b>; <b>bln</b> is for <b>Boolean</b> among others.
+                </i>
+
+
+
+
+            </p>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- End Variables/Functions Names -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- References -->
+    <div class="w3-container" id="references">
+        <div class="w3-padding">
+            <h3>References</h3>
+            <p class="w3-content">
+                Chukwuemeka, Samuel Dominic (2023). <i>R and RStudio Statistics Software.</i>
+                Retrieved from <a href="https://statistical-science.appspot.com/"
+                    target="_blank">https://statistical-science.appspot.com/</a>
+                <br><br>
+                <br><br>
+                Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                <br><br>
+                RStudio Community. (n.d.). RStudio Community. https://community.rstudio.com/
+                <br><br>
+                RStudio Desktop. (n.d.). Posit. https://posit.co/download/rstudio-desktop/
+                <br><br>
+                <i>R Guides</i> (n.d.). Statology. https://www.statology.org/r-guides/
+                <br><br>
+                R-Lang. (2023, June 30). R-Lang. https://r-lang.com/
+                <br><br>
+                R Tutorial. (n.d.). www.w3schools.com. https://www.w3schools.com/r/default.asp
+                <br><br>
+                R Tutorial | Learn R Programming Language Tutorial - javatpoint. (n.d.). www.javatpoint.com.
+                https://www.javatpoint.com/r-tutorial
+                <br><br>
+                Datasets - Data.gov. (2012). Data.Gov. https://catalog.data.gov/dataset
+                <br><br>
+
+
+            </p>
+        </div>
+    </div>
+    <!-- End References -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2023&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2023&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+
+    <script src="scripts/messages9.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

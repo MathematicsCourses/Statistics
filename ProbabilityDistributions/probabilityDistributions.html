@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Probability Distributions</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in probability distributions." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, samdom4peace, math, mathematics, 
+    descriptive statistics, probability, combinatorics, random variable, discrete random variable, continuous random variable, 
+    probability distribution, binomial distribution, poisson distribution, normal distribution, Gaussian distribution, empirical rule, 
+    68 - 95 - 99.7 percent rule, Chebyshev's theorem, uniform distribution, sampling distribution, central limit theorem, 
+    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, " />
+
+    <link href="styles/probability-distributions.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar khaki w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="Overview">OVERVIEW <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#quotes" class="w3-bar-item w3-button">Quotes</a>
+                    <a href="#welcome" class="w3-bar-item w3-button">Welcome</a>
+                    <a href="#objectives" class="w3-bar-item w3-button">Objectives</a>
+                    <a href="#prerequisiteTopics" class="w3-bar-item w3-button">Prerequisite Topics</a>
+                    <a href="#vocabularyWords" class="w3-bar-item w3-button">Vocabulary Words</a>
+                    <a href="#symbolsFormulas" class="w3-bar-item w3-button">Symbols and Formulas</a>
+                    <a href="#definitions" class="w3-bar-item w3-button">Definitions</a>
+                    <a href="#introduction" class="w3-bar-item w3-button">Introduction</a>
+                    
+                </div>
+            </div>
+            
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="Overview">PROBABILITY DISTRIBUTIONS <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#probabilityDistribution" class="w3-bar-item w3-button">Probability Distribution</a>
+                    <a href="#uniformDistribution" class="w3-bar-item w3-button">Uniform Distribution</a>
+                    <a href="#binomialDistribution" class="w3-bar-item w3-button">Binomial Distribution</a>
+                    <a href="#poissonDistribution" class="w3-bar-item w3-button">Poisson Distribution</a>
+                    <a href="#normalDistribution" class="w3-bar-item w3-button">Normal Distribution</a>
+                    <a href="#centralLimitTheorem" class="w3-bar-item w3-button">Central Limit Theorem</a>
+                    <a href="#geometricDistribution" class="w3-bar-item w3-button">Geometric Distribution</a>
+                    <a href="#hypergeometricDistribution" class="w3-bar-item w3-button">Hypergeometric Distribution</a>
+                    <a href="#cheybyshevTheorem" class="w3-bar-item w3-button">Cheybyshev Theorem</a>
+                </div>
+            </div>
+            <!--
+            <a href="https://www.youtube.com/playlist?list=PLgu-r_ZFzO8C1FzXl5Nq_fuPKipCp_4Jh" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEOS</a>
+            -->
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="Overview">SOLVED EXAMPLES <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probability-distribution.html" target="_blank" class="w3-bar-item w3-button">Probability Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/uniform-distribution.html" target="_blank" class="w3-bar-item w3-button">Uniform Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/binomial-distribution.html" target="_blank" class="w3-bar-item w3-button">Binomial Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/poisson-distribution.html" target="_blank" class="w3-bar-item w3-button">Poisson Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/normal-distribution.html" target="_blank" class="w3-bar-item w3-button">Normal Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/geometric-distribution.html" target="_blank" class="w3-bar-item w3-button">Geometric Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/hypergeometric-distribution.html" target="_blank" class="w3-bar-item w3-button">Hypergeometric Distribution</a>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probability-distributions.html" target="_blank" class="w3-bar-item w3-button">Probability Distributions (All)</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="Overview">CALCULATORS <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <!--<a href="https://statistical-science.appspot.com/ProbabilityDistributions/probability-distribution-calculators.html" target="_blank" class="w3-bar-item w3-button">Calculators</a>-->
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/TI-calculators-ProbabilityDistributions.html" target="_blank" class="w3-bar-item w3-button">Texas Instruments (TI) calculators for Probability</a>
+                    <a href="https://statistical-science.appspot.com/Statistics-RStudio/ProbabilityDistributions.html" target="_blank" class="w3-bar-item w3-button">Using R/RStudio for Probability Distributions</a>
+                </div>
+            </div>
+            
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="Overview">REVIEW <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#project" class="w3-bar-item w3-button">Project</a>
+                    <a href="#tables" class="w3-bar-item w3-button">Tables</a>
+                    <a href="#references" class="w3-bar-item w3-button">References</a>
+                    <!--
+                    <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button">Portfolios</a>
+                    <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button">Contact</a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1500px;margin-top:46px">
+
+        <!-- Quotes --
+        <div class="w3-content w3-padding-64" id="quotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p class="quote" id="messages1"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+        </div>
+        <!- End Quotes -->
+
+        <!-- Quotes --
+        <div class="w3-center w3-padding-64" id="quotes">
+            <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+        <div class="quoteDay w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p class="quote" id="messages1"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+        </div>
+         End Quotes -->
+
+
+        <!-- Greetings -->
+        <div class="w3-container w3-padding-64" id="welcome">
+            <h1>Probability Distributions</h1>
+            
+            <a href="https://statistical-reasoning.appspot.com/">
+                <img src="images/samuelchukwuemeka1.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+            </a>
+        
+            <p>
+                <span id="greetings"></span> <br>
+                I greet you this day,
+                <script>document.write(Date() + ".");</script> <br>
+                <u>First:</u> read the notes. <br>
+                <u>Second:</u> view the videos. <br>
+                <u>Third:</u> solve the questions/solved examples. <br>
+                <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                <u>Fourth:</u> check your solutions with the calculators. <br>
+                Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+                You may contact me. <br>
+                If you are my student, please do not contact me here. Contact me via the school's system. <br>
+                Thank you for visiting.
+            </p>
+            <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace)
+                <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+            </p>
+        </div>
+        <!-- End Greetings -->
+
+        <!-- Objectives -->
+        <div class="w3-container w3-padding-64" id="objectives">
+            <h2>Objectives</h2>
+            <hr>
+            <p>
+                Students will: <br><br>
+                (1.) Define a random variable. <br> 
+                (2.) List the types of a random variable. <br> 
+                (3.) Define a probability distribution. <br> 
+                (4.) Solve applied problems on probability distribution. <br> 
+                (5.) Discuss the uniform probability distribution. <br> 
+                (6.) Solve applied problems on uniform distribution. <br>
+                (7.) Discuss the Binomial probability distribution. <br> 
+                (8.) Read the Binomial Distribution Table. <br>
+                (9.) Solve applied problems on Binomial distribution. <br>
+                (10.) Discuss the Poisson probability distribution. <br> 
+                (11.) Read the Poisson Distribution Table. <br>
+                (12.) Solve applied problems on Poisson distribution. <br>
+                (13.) Discuss the Normal probability distribution. <br> 
+                (14.) Read the different kinds of Normal Distribution Tables based on the shaded areas. <br>
+                (15.) Discuss the Empirical Rule <br>
+                (16.) Discuss the Central Limit Theorem. <br>
+                (17.) Solve applied problems on Normal distribution. <br>
+                (18.) Approximate the Binomial distribution using the Normal distribution. <br>
+                (19.) Discuss the Geometric probability distribution. <br> 
+                (20.) Solve applied problems on Geometric distribution. <br>
+                (21.) Discuss the Hypergeometric probability distribution. <br> 
+                (22.) Solve applied problems on Hypergeometric distribution. <br>
+                (23.) Discuss Cheybyshev's Theorem. <br> 
+                (24.) Solve applied problems on Cheybyshev's Theorem. <br>
+                (25.) Solve probability distribution problems using technology including the Texas Instruments (TI) 
+                calculators and Pearson Statcrunch among others.
+            
+                <br><br>
+
+                <u>Skills Measured/Acquired</u> <br>
+                (1.) Use of prior knowledge <br>
+                (2.) Critical Thinking <br>
+                (3.) Interdisciplinary connections/applications <br>
+                (4.) Technology <br>
+                (5.) Active participation through direct questioning <br>
+                (6.) Research
+            </p>
+        </div>
+        <!-- End Objectives -->
+
+        <!-- Prerequisite Topics -->
+        <div class="w3-container w3-padding-64" id="prerequisiteTopics">
+            <h2>Prerequisite Topics</h2>
+            <hr>
+            <p class="w3-padding">
+                It is highly recommended that you have some prior knowledge of these prerequisite topics. <br><br>
+                (1.) <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptive-statistics.html" target="_blank">Descriptive Statistics</a> <br>
+                (2.) <a href="https://statistical-science.appspot.com/Probability/probability.html" target="_blank">Probability</a> <br>
+                (3.) <a href="https://statistical-science.appspot.com/Combinatorics/combinatorics.html" target="_blank">Combinatorics</a>
+            </p>
+        </div>
+        <!-- End Prerequisite Topics -->
+
+        <!-- Vocabulary Words -->
+        <div class="w3-container w3-padding-64" id="vocabularyWords">
+            <h2>Vocabulary Words</h2>
+            <hr>
+            <p>
+                variable, random variable, discrete random variable, continuous random variable, outcome, mean, expected value, probability, 
+                probability distribution, 
+
+
+
+
+            </p>
+        </div>
+        <!-- End Vocabulary Words -->
+
+        <!-- Symbols and Formulas -->
+        <div class="w3-container w3-padding-64" id="symbolsFormulas">
+            <h2>Symbols, Meanings, and Formulas</h2>
+            <hr>
+            <p>
+                <b>Symbols and Meanings</b> <br>
+                $\Sigma$ pronounced as uppercase Sigma = summation <br>
+                $k$ = any integer greater than 1 <br>
+                $k$ = number of standard deviations of the mean <br>
+                $x$ = random variable <br>
+                $P(x)$ = probability of the random variable, $x$ <br>
+                $\mu$ = mean of the random variable (or the expected value) <br>
+                $E$ = expected value (or the mean) <br>
+                $\sigma$ = standard deviation of the random variable <br>
+                $min$ = minimum data value <br>
+                $max$ = maximum data value <br>
+                $n$ = sample size <br>
+                $N$ = population size <br>
+                $x_1$ = first value of the variable <br>
+                $x_2$ = second value of the variable <br>
+                $n$ = number of independent trials <br>
+                $p$ = probability of success <br>
+                $q$ = probability of failure <br>
+                $z$ = z-score <br>
+                $z_1$ = first value of the z-score <br>
+                $z_2$ = second value of the z-score <br>
+                $P(z)$ = probability of the z-score <br>
+                $pdf$ = probability distribution function <br>
+                $n!$ is read as $n-factorial$ <br>
+                The number of combinations of $n$ total items taking $x$ items at a time is $^nC_x \;\;\;or\;\;\; _nC_x \;\;\;or\;\;\; C(n, x) \;\;\;or\;\;\; \displaystyle{\binom{n}{x}}$
+
+                <br><br>
+
+                <b>Formulas</b> <br><br>
+                $
+                \boldsymbol{Probability\;\;Distribution} \\[3ex] 
+                (1.)\;\;\mu = \Sigma[x * P(x)] \\[3ex] 
+                (2.)\;\;E = \Sigma[x * P(x)] \\[3ex] 
+                (3.)\;\; \sigma = \sqrt{\Sigma[x^2 * P(x)] - \mu^2} \\[7ex]
+
+                \boldsymbol{Combinatorics} \\[3ex]
+                (1.)\:\: 0! = 1 \\[3ex]
+                (2.)\:\: n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[3ex]
+                (3.)\;\; n! = n * (n - 1)! \\[3ex]
+                (4.)\;\; n! = (n - 1) * (n - 2)!...among\;\;others \\[3ex]
+                (5.)\:\: C(n, x) = \dfrac{n!}{(n - x)!x!} \\[5ex]
+                (6.)\;\; C(n, x) = C(n, n - x) \\[7ex]
+
+                \boldsymbol{Binomial\;\;Distribution} \\[3ex] 
+                (1.)\;\; p + q = 1 \\[3ex] 
+                (2.)\;\; \mu = n * p \\[3ex]
+                (3.)\;\; \sigma = \sqrt{n * p * q} \\[4ex] 
+                (4.)\;\; P(x) = C(n, x) * p^x * q^{n - x} \\[7ex]
+
+                \boldsymbol{Poisson\;\;Distribution} \\[3ex] 
+                (1.)\;\;P(x) = \dfrac{\mu^x * e^{-\mu}}{x!} \\[5ex]
+                (2.)\;\; \mu = \sigma^2 \\[7ex]
+
+                \boldsymbol{Normal\;\;Distribution} \\[3ex] 
+                (1.)\;\; z = \dfrac{x - \bar{x}}{s} \\[5ex]
+                (2.)\;\; x = \bar{x} + zs \\[3ex]
+                (3.)\;\; z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                (4.)\;\; x = \mu + z\sigma \\[3ex]
+
+
+                
+
+
+                $
+
+                <br><br>
+
+                <b>Empirical Rule (68 - 95 - 99.7 percent Rule)</b> <br>
+                (<i>Applies only to Normal Distribution</i>) <br>
+                (a.) 68% of the data lie within (below and above) 1 standard deviation of the mean <br>
+                (b.) 95% of the data lie within (below and above) 2 standard deviations of the mean <br>
+                (c.) 99.7% of the data lie within (below and above) 3 standard deviations of the mean <br><br>
+
+                <b>Pafnuty Chebyshev's Theorem</b> <br>
+                (<i>Applies to any distribution</i>) <br>
+                At least $\left(1 - \dfrac{1}{k^2}\right) * 100$ % of the data lie within $k$ standard deviations of the mean <br>
+                implies <br>
+                At least $\left(1 - \dfrac{1}{k^2}\right) * 100$ % of the data lie within $\mu - k\sigma$ and $\mu + k\sigma$ <br><br>
+
+                <b>Range Rule of Thumb</b> <br>
+                Minimum Usual Value = &mu; - 2&sigma; <br>
+                Maximum Usual Value = &mu; + 2&sigma; <br>
+                A data value is <b>unusual</b> if it is <b>less than the minimum usual value</b> <u>or</u> <b>greater than the maximum usual value</b> <br><br>
+
+                <b>z-score Boundary</b> <br>
+                A data value is <b>usual</b> if $-2.00 \lt z-score \lt 2.00$ <br>
+                A data value is <b>unusual</b> if $z-score \lt -2.00$ <u>or</u> if $z-score \gt 2.00$ <br><br>
+
+            </p>
+        </div>
+        <!-- End Symbols and Formulas -->
+
+        <!-- Definitions -->
+        <div class="w3-container w3-padding-64" id="definitions">
+            <h2>Definitions</h2>
+            <hr>
+            <p>
+                A <b>random variable</b> is a <b>numerical value</b> assigned to an <b>outcome of a random experiment.</b> <br><br>
+                A <b>discrete random variable</b> has a <b>finite number of possible values.</b> <br><br>
+                A <b>continuous random variable</b> has an <b>infinite number of possible values</b> within a specific interval. <br>
+                Continuous variables are numerical variables with outcomes that cannot be listed or counted because 
+                they occur over a range. <br><br>
+
+
+
+
+            </p>
+        </div>
+        <!-- End Definitions -->
+
+        <!-- Introduction -->
+        <div class="w3-container w3-padding-64" id="introduction">
+            <h2>Introduction</h2>
+            <hr>
+            <p>
+                A <b>random variable</b> is a <b>numerical value</b> assigned to an <b>outcome of a random experiment.</b> <br>
+                It is denoted by X <br>
+                It could be a discrete random variable or a continuous random variable. <br><br>
+
+                A <b>discrete random variable</b> has a <b>finite number of possible values.</b> <br>
+                If you can <b>count it</b>, it is <b>discrete</b> <br>
+                <u>Examples are:</u> <br>
+                (a.) the number of students in Mr. C's Statistics class <br>
+                (b.) the number of goals scored during a soccer match <br>
+                (c.) the number of visitors to Mr. C's websites; etc. <br>
+                The <b>mean value</b> of the outcomes of a discrete random variable is the <b>expected value</b> of the discrete random value. <br><br> 
+
+                A <b>continuous random variable</b> has an <b>infinite number of possible values</b> within a specific interval. <br>
+                If you can <b>measure it</b>, it is <b>continuous</b> <br>
+                <u>Example are:</u> <br>
+                (a.) the amount of ice at Geneva Lake in Wisconsin during the Winterfest celebration in 2016 <br>
+                (b.) the temperature of Boston in 2018 during the polar vortex hazard <br>
+                (c.) the time it takes to fly from the City of Truth and Consequences, New Mexico to the City of Surprise, Arizona <br>
+                (d.) the average weight of an adult female lion <br>
+                (e.) the height of the tallest basketball player in the NBA; among others. 
+
+
+            </p>
+
+
+            <h3>Usual and Unusual Events</h3>
+            <p>
+                In general; if the probability of an event is at least $5\%$ ($0.05$ or more), the event is usual. <br><br>
+                In general (but depending on the situation); if the probability of an event is less than $5\%$ (less than $0.05$),
+                the event is
+                unusual. <br>
+                What situation does this depend? <br>
+                For example: In a life and death situation where a defendant is to be sentenced if guilty or released if innocent;
+                the jurors need to be $\underline{100\%}$ <u>certain</u> of any decision they make. If the jurors are $96\%$ certain
+                that the defendant is guilty, this means that the probability that the defendant is not guilty is $4\%$ (less than
+                $5\%$). According to the $5\%$ rule, this implies that it is not usual that the defendant is not guilty. <br>
+                But, what if the defendant is innocent? In this case that involves life or death, the event is not unusual. <br>
+                LIFE IS PRECIOUS!!!
+            </p>
+
+            
+        </div>
+        <!-- End Introduction -->
+
+        <!-- Probability Distribution -->
+        <div class="w3-container w3-padding-64" id="probabilityDistribution">
+            <h2>Probability Distribution</h2>
+            <hr>
+            <p>
+                A probability distribution indicates the possible outcomes of a random experiment and the probability 
+                of occurrence of each outcome. <br>
+
+
+                Discrete probability distributions are represented by equations, tables, and graphs. <br>
+                Continuous probability distributions are represented by areas under curves. <br>
+
+
+
+                The total area under a probability density curve is 1, because it represents the probability that the 
+                outcome will be somewhere on the <i>x</i>-axis. <br>
+
+
+
+
+            </p>
+        </div>
+        <!-- End Probability Distribution -->
+
+        <!-- Binomial Distribution -->
+        <div class="w3-container w3-padding-64" id="binomialDistribution">
+            <h2>Binomial Distribution</h2>
+            <hr>
+            <p>
+
+
+            </p>
+
+            <h4>Requirements for a Binomial Probability Distribution</h4>
+            <p>
+                (1.) The event has a fixed number of trials. <br><br>
+                (2.) The trials are independent. <br><br>
+                (3.) The outcome of each trial is either a success or a failure. <br><br>
+                (4.) The probability of a success or failure in any one trial is the same as the probability of success or failure in all the trials. 
+
+
+            </p>
+        </div>
+        <!-- End Binomial Distribution -->
+
+        <!-- Normal Distribution -->
+        <div class="w3-container w3-padding-64" id="normalDistribution">
+            <h2>Normal Distribution</h2>
+            <hr>
+            <p>
+                The Normal Probability Distribution is the probability distribution that is used to model the probability of a continuous random 
+                variable. <br>
+                Introduced by Carl Gauss, it is also known as the Gaussian Distribution <br> 
+                Some applications of normal distribution are seen in variables such as the shoe sizes of the students at Georgia Northwestern 
+                Technical College (GNTC); the heights of the students at Arizona Western College (AWC); and the Intelligence Quotience (IQ) scores 
+                of the population of the residents of the Village of Waterproof, Louisiana among others. 
+            </p>
+
+            <h4>Properties of the Normal Distribution Curve (Normal Curve or Normal Probability Distribution)</h4>
+            <p>
+                (1.) It is a bell-shaped curve. <br><br>
+                (2.) The total area under the normal curve is 100% <br>
+                or <br>
+                The total probability under the normal curve is 1 <br>
+                or <br>
+                The total relative frequency under the normal curve is 100% or 1 <br><br>
+                (3.) It is symmetric about the mean. <br>
+                The mean is the center of the normal distribution. <br>
+                Being symmetric about the mean implies that the area under the curve to the left of the mean is equal to the area under the curve to 
+                the right of the mean. <br><br>
+                (4.) The mean, median, and mode of a normal curve is the same. <br>
+                Because of this property, it has a single highest peak that occurs at the mean: $x = \mu$ <br>
+                In other words, the highest peak of the normal curve occurs where the value of the variable is equal to the mean of the 
+                distribution. <br><br>
+                (5.) As the variable increases without bounds (gets larger and larger), or decreases without bounds (gets smaller and smaller); the 
+                normal curve approaches but never touches the horizontal axis. <br><br>
+                (6.) The Empirical Rule: <br>
+                (a.) About 68% of the curve lie within 1 standard deviation from the mean <br>
+                In other words, about 68% of the curve lie between $\mu - 1\sigma$ and $\mu + 1\sigma$ 
+                <br><br>
+                (b.) About 95% of the curve lie within 2 standard deviations from the mean <br>
+                In other words, about 95% of the curve lie between $\mu - 2\sigma$ and $\mu + 2\sigma$ 
+                <br><br>
+                (c.) About 99.7% of the curve lie within 3 standard deviations from the mean <br>
+                In other words, about 99.7% of the curve lie between $\mu - 3\sigma$ and $\mu + 3\sigma$ 
+                <br><br>
+                (7.) The most widely used probability model for continuous numerical variables is the normal distribution.
+                <br><br>
+                (8.) The normal probability model is unimodal and symmetric, so if a dataset is suspected to be unimodal and symmetric, the normal probability model is a good model for 
+                such dataset.
+                <br><br>
+                (9.) The exact shape of the normal distribution is determined by the mean and the standard deviation. 
+                <br><br>
+                (10.) The normal curve has inflection points at one standard deviation from the mean: between $\mu - 1\sigma$ and $\mu + 1\sigma$ <br>
+                This implies that the inflection points are found: one standard deviation below the mean and one standard deviation above the mean. 
+            </p>
+
+            <h4>The Standard Normal Distribution</h4>
+            <p>
+                (1.) This is also known as the <i>z</i>-distribution or the unit normal distribution. <br>
+                (2.) The mean of the standard normal curve is 0 <br>
+                (3.) The standard deviation of the standard normal curve is 1 <br><br>
+
+                Let us read the normal distribution tables. <br>
+                The most common table is the table where some area under the curve is shaded to the left <br>
+                But some professors provide students with the table where some area under the curve is shaded in the center <br>
+                It is not uncommon to see a table where some area under the curve is shaded to the right <br>
+                All three kinds of tables are read differently, though they should all lead to the same answer if used to solve the same question. <br><br>
+                <i>
+                    Print each kind of table and teach students how to read them. <br>
+                    Using some questions, use each table to find the same answers to those questions. 
+                </i>
+            </p>
+        </div>
+        <!-- End Normal Distribution -->
+
+        <!-- Tables -->
+        <div class="w3-container w3-padding-64" id="tables">
+            <h2>Tables</h2>
+            <hr>
+
+            <br><br>
+
+            <div class="w3-padding-64" id="BinomialDistributionTable">
+                <b>Binomial Distribution Table</b> <br>
+                <object data="images/Binomial-Distribution-Table.pdf" width="1400" height="700"></object>
+            </div>
+
+            <br><br>
+
+            <div class="w3-padding-64" id="PoissonDistributionTable">
+                <b>Poisson Distribution Table</b> <br>
+                <object data="images/Poisson-Distribution-Table.pdf" width="1400" height="700"></object>
+            </div>
+
+            <br><br>
+
+            <div class="w3-padding-64" id="NormalDistributionTableLeftShaded">
+                <b>Standard Normal Distribution Table (Left-Shaded Area)</b> <br>
+                <img src="images/normal-distribution-negative-left-shaded-area.png" alt="Normal Distribution Area: Left Shaded: Negative"> 
+                <img src="images/normal-distribution-positive-left-shaded-area.png" alt="Normal Distribution Area: Left Shaded: Positive"> 
+                <object data="images/Normal-Distribution-Table-left-shaded-area.pdf" width="1400" height="700"></object>
+            </div>
+
+            <br><br>
+
+            <div class="w3-padding-64" id="NormalDistributionTableCenterShaded">
+                <b>Standard Normal Distribution Table (Center-Shaded Area)</b> <br>
+                <img src="images/normal-distribution-center-shaded-area.png" alt="Normal Distribution Area: Center Shaded"> <br><br>
+                <img src="images/normal-distribution-table-center-shaded-area.png" alt="Normal Distribution Table: Center Shaded">                
+            </div>
+
+
+
+
+
+        </div>
+        <!-- End Tables -->
+
+        <!-- References -->
+        <div class="w3-content w3-padding-32" id="references">
+            <h2 class="w3-padding-16">References</h2>
+            <hr>
+            <p>
+                Chukwuemeka, Samuel Dominic (2023). <i>Probability Distributions.</i>
+                Retrieved from <a href="https://statistical-science.appspot.com/" target="_blank">https://statistical-science.appspot.com/</a>
+                <br><br>
+                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.).
+                New Jersey: Wiley
+                <br><br>
+                Gould, R., & Ryan, C. (2016). <i>Introductory Statistics: Exploring the world through data</i> (2nd ed.). Boston:
+                Pearson
+                <br><br>
+                Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through data</i> (3rd ed.). Pearson.
+                <br><br>
+                Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
+                <br><br>
+                OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
+                Retrieved from <a href="https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12" 
+                target="_blank">https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12</a>
+                <br><br>
+                Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed decisions using data with an introduction to mathematics of finance</i>
+                (2nd custom ed.). Boston: Pearson Learning Solutions.
+                <br><br>
+                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i>
+                (5th ed.). Boston: Pearson
+                <br><br>
+                Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                <br><br>
+                Weiss, Neil A. (2015). <i>Elementary Statistics</i> (9th ed.). Boston: Pearson
+                <br><br>
+                TI Products | Calculators and Technology | Texas Instruments. (n.d.). Education.ti.com. Retrieved March 18, 2023, from https://education.ti.com/en/products
+                <br><br>
+                CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/
+                <br><br>
+                Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners.
+                https://www.vastlearners.com/free-jamb-past-questions/
+                <br><br>
+                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                <br><br>
+                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                <br><br>
+                NSC Examinations. (n.d.). www.education.gov.za.
+                https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                <br><br>
+                West African Examinations Council (WAEC). Retrieved May 30, 2020, from
+                https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                <br><br>
+                Binomial Distribution Table: https://uwf.edu/media/university-of-west-florida/colleges/cse/departments/mathematics-and-statistics/documents/student-resources/Binomial-Tables-1.pdf
+                <br><br>
+                Poisson Distribution Table: http://faculty.wwu.edu/auer/DSCI205/bbs-e12-POIS.pdf
+                <br><br>
+                Normal Distribution Table (Left Shaded Area): https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf
+                <br><br>
+                Normal Distribution Table (Center Shaded Area): https://itl.nist.gov/div898/handbook/eda/section3/eda3671.htm
+                <br><br>
+                51 Real SAT PDFs and List of 89 Real ACTs (Free) : McElroy Tutoring. (n.d.). 
+                Mcelroytutoring.com. Retrieved December 12, 2022, 
+                from https://mcelroytutoring.com/lower.php?url=44-official-sat-pdfs-and-82-official-act-pdf-practice-tests-free
+            </p>
+        </div>
+        <!-- End References -->
+
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-48">
+        <!--
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog" /></a>
+        -->
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2022&nbsp;<a href="https://www.samdomforpeace.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2022 SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages1.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

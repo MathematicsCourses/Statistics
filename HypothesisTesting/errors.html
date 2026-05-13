@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Identify Type I and Type II Errors</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in solving errors in hypothesis testing.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics,
+                        hypothesis testing calculators, critical value, confidence level, confidence interval, 
+                        significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, 
+                        type I error, type II error, null hypothesis, alternative hypothesis, one-tail, two-tail, probability value,
+                        p-value, test statistic, critical region, hypothesis testing, population proportion, population mean, 
+                        one sample proportion, two sample proportion, goodness-of-fit test, chi-square, normal distribution table,
+                        student t distribution table, F statistic, test statistic">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 bisque">
+        <h1>Solved Examples on Type I and Type II Errors</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+        <!-- Image in top left corner --
+            <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-testing.html" title="Samuel Dominic Chukwuemeka">
+                <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        Unless specified otherwise: identify Type I and Type II errors.
+        <br>
+        <i>
+            The names of the towns (in italics) are written to make you smile. <br>
+            Yes, those towns exist. &#128522; <br>
+            I want to make this topic fun as much as I can.
+        </i>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) The proportion of people in the town of <i>Scrabble, West Virginia</i> whow write with their left
+                hand is 0.15
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE1')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE1">
+                    <br>
+                    <b>Type I error:</b> <br>
+                    Reject the claim that the proportion of people in the town who write with their left hand is $0.15$,
+                    when that
+                    proportion is actually true. <br><br>
+                    <b>Type II error:</b> <br>
+                    Fail to reject the claim that the proportion of people in the town who write with their left hand is
+                    $0.15$, when
+                    that proportion is actually different from $0.15$
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Three years ago, the mean price of a single-family home in the village of <i>Loving, New Mexico</i>
+                was $\$100,000$ <br>
+                A realtor believes that the mean price has increased since then.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE2')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE2">
+                    <br>
+                    <b>Type I error:</b> <br>
+                    Reject the hypothesis that the mean price of a family home in the village was $\$100,000$, when it
+                    was actually the
+                    true average price. <br><br>
+                    <b>Type II error:</b> <br>
+                    Do not reject the hypothesis that the average price of a family home in the village was $\$100,000$
+                    when the actual
+                    average price was greater than $\$100,000$
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) A bottle contains a label stating that it contains Spring Valley pills with 500 mg of vitamin​ C,
+                and another bottle contains a label stating that it contains Merck pills with 40 mg of lisinopril that
+                is used to treat high blood pressure. <br>
+                Identify which one of the following errors is most​ serious, explain why it is most​ serious, and
+                characterize the error as being a type I error or a type II error.
+                <br><br>
+                (a.) For​ lisinopril, fail to reject H<sub>0</sub>: &mu; = 40mg when the mean is actually different from
+                40mg.
+                <br><br>
+                (b.) For​ lisinopril, reject H<sub>0</sub>: &mu; = 40mg when the mean is actually equal to 40mg.
+                <br><br>
+                (c.) For vitamin​ C, fail to reject H<sub>0</sub>: &mu; = 500mg when the mean is actually different from
+                500mg.
+                <br><br>
+                (d.) For vitamin​ C, reject H<sub>0</sub>: &mu; = 500mg when the mean is actually equal to 500mg.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE3')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE3">
+                    <br>
+                    What are the dangers of consuming too much or too little vitamin C as compared to the dangers of
+                    consuming too much or too little blood pressure medication? <br>
+                    Consuming too much or too little of blood pressue medication is more serious than consuming too much
+                    or too little Vitamic C. <br>
+                    So, options (c.) and (d.) are eliminated. <br>
+                    So, let s focus on options (a.) and (b.)
+                    <br><br>
+                    A type I error is the mistake of rejecting the null hypothesis when it is actually true. <br>
+                    This would mean: not consuming the Merck pills with 40mg of lisinopril when in fact the pills have
+                    40mg of lisinopril
+                    <br><br>
+                    A type II error is the mistake of failing to reject the null hypothesis when it is actually false.
+                    <br>
+                    This would mean: consuming the Merck pills with either <i>more than</i> or <i>less than</i> 40mg of
+                    lisinopril.
+                    <br><br>
+                    The more serious error in this case is the type II error because comsuming <i>more than</i> 40mg of
+                    lisinopril is overdose of the blood pressure medication while consuming <i>less than</i> 40mg of
+                    lisinopril is underdose of the blood pressure medication.
+                    <br><br>
+                    Error (a.) is most​ serious, since this error is the most likely to result in a person consuming a
+                    potentially dangerous quantity of a substance. <br>
+                    This error would be a type II error.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Suppose the consequences of making a Type I error are severe, which of these levels of significance
+                would you choose: 1%? 5%, or 10%?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE4')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE4">
+                    <br>
+                    Use the 1% significance level because it is the smallest that was given. <br>
+                    Recall that the level of significance is the probability of making a Type I error. <br>
+                    You really want it to be very small.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) A bottle contains a label stating that it contains pills with 500 mg of vitamin C. <br>
+                Another bottle contains a label stating that it contains pills with 325 mg of aspirin. <br>
+                When testing claims about the mean contents of the pills, which of these would have more serious
+                implications: <br>
+                (a.) The rejection of the vitamin C claim <b>OR</b> the rejection of the aspirin claim? <br>
+                (b.) Is it wise to use the same significance level for hypothesis tests about the mean amount of vitamin
+                C and the mean amount of aspirin?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE5')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE5">
+                    <br>
+                    (a.) The rejection of the claim about the aspirin is more serious because the wrong aspirin dosage
+                    could cause more serious adverse reactions than a wrong vitamin C dosage. <br>
+                    (b.) It would be wise to use a smaller significance level for testing the claim about the aspirin.
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) A researcher is testing someone who claims to have ESP (ExtraSensory Perception) by having that
+                person predict whether a coin will come up heads or tails. <br>
+                The null hypothesis is that the person is guessing and does not have​ ESP, and the population proportion
+                of success is 0.50. <br>
+                The researcher tests the claim with a hypothesis​ test, using a significance level of 0.05. <br>
+                The probability of concluding that the person has ESP when in fact she or he ................... have
+                ESP is ..........
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE6')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE6">
+                    <br>
+                    The level of significance is the probability of making a Type I error. <br>
+                    This means that the level of significance is the probability of rejecting the null hypotheses when
+                    it is true. <br>
+                    The level of significance given in the question is 0.05 <br>
+                    Therefore, the probability of concluding that the person has ESP when in fact she or he <b>does
+                        not</b> have ESP is 0.05
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE7')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE7">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) A researcher finds the <i>p</i>-value of the test statistic in a hypothesis test to be 0.28. What
+                does it mean?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE8')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE8">
+                    <br>
+                    It means that if the null hypothesis is true, then the researcher expects results at least as
+                    extreme as the test statistic in about 28 of 100 samples.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) A teacher is giving an exam with 20​ multiple-choice questions, each with four possible answers.
+                <br>
+                The​ teacher's null hypothesis is that a certain student is just​ guessing, and the population
+                proportion of success is 0.25. <br>
+                Suppose the teacher conducts a test with a significance level of 0.01. <br>
+                Write a sentence describing the significance level in the context of the hypothesis test.
+                <br><br>
+                <b>A.</b> The probability that the student is guessing is 0.01.
+                <br><br>
+                <b>B.</b> The probability of saying the student is guessing when the student is actually not guessing is
+                0.01.
+                <br><br>
+                <b>C.</b> The probability of saying the student is not guessing when the student is actually guessing is
+                0.01.
+                <br><br>
+                <b>D.</b> The probability that the student is not guessing is 0.01.
+                <br><br>
+                <b>E.</b> The probability of saying the student is guessing when the student is guessing is 0.01.
+                <br><br>
+                <b>F.</b> The probability of saying the student is not guessing when the student is not guessing is
+                0.01.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE9')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE9">
+                    <br>
+                    The significance level is the probability of making a Type I error. <br>
+                    This means that the significance level is the probability of rejecting the null hypotheses when it
+                    is true. <br>
+                    In the context of the question, this means that: <br>
+                    The probability of saying the student is not guessing when the student is actually guessing is 0.01.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) What does <i>statistical significance</i> mean?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE10')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE10">
+                    <br>
+                    Statistical significance means that the result observed in a sample is unusual when the null
+                    hypothesis is assumed to be true.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) An alternative hypothesis is: <i>p</i> &lt; 0.65 <br>
+                To test this hypothesis, a random sample of size 360 is taken. <br>
+                Calculate the probability of making a Type II error if the alternative proportion is 60%. <br>
+                Use a 5% significance level.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE11')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE11">
+                    <br>
+                    $
+                    H_0:\;\; p = 0.65 \\[3ex]
+                    H_1;\;\; p \lt 0.65 \\[5ex]
+                    n = 360 \\[3ex]
+                    p = 0.65 \\[3ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.65 \\[3ex]
+                    q = 0.35 \\[3ex]
+                    z_{\dfrac{\alpha}{2}} = -1.645 \\[7ex]
+                    \hat{p_c} = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{pq}{n}} + p \\[7ex]
+                    \hat{p_c} = -1.645 * \sqrt{\dfrac{0.65 * 0.35}{360}} + 0.65 \\[5ex]
+                    \hat{p_c} = 0.6086471589 \\[3ex]
+                    p_a = 60\% = 0.6 \\[3ex]
+                    q_a = 1 - p_a \\[3ex]
+                    q_a = 1 - 0.6 \\[3ex]
+                    q_a = 0.4 \\[3ex]
+                    z = \dfrac{\hat{p_c} - p_a}{\sqrt{\dfrac{pq}{n}}} \\[8ex]
+                    z = \dfrac{0.6086471589 - 0.6}{\sqrt{\dfrac{0.65 * 0.35}{360}}} \\[8ex]
+                    z = 0.3439806315 \\[3ex]
+                    z \approx 0.34 \\[3ex]
+                    \beta = P(z \lt -0.34) = 0.36693
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) In a clinical trial of a drug intended to help the residents of the town of Experiment, Georgia;
+                133 subjects were treated with the drug for 11 weeks, and 15 subjects experienced abdominal pain. <br>
+                Someone claimed that more than 0.08 of the drug’s users experienced abdominal pain. <br>
+                The claim was supported with a hypothesis test conducted with a 5% significance level. <br>
+                Using 0.17 as an alternative value of <i>P</i>, the power of the test is 0.96. <br>
+                Interpret the power of the test.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE12')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE12">
+                    <br>
+                    The power of 0.96 shows that there is a 96% chance of rejecting the null hypothesis of <i>P</i> =
+                    0.08 when the true proportion is 0.17. <br>
+                    This means that if the proportion of users who experienced abdominal pain was 0.17, then there is a
+                    96% chance of supporting the claim that the proportion of users who experienced abdominal pain was
+                    greater than 0.08.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE13')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE14')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE14">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE15')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE15">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE16')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE17')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE18')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE19')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE19">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE20')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE20">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/HypothesisTesting/errors.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE21')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE22')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE23')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE24')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE24">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE25')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE26')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE27')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE28')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE29')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHTE30')">Show/Hide Answer</button>
+                <div class="result" id="solutionHTE30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2017&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

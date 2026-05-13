@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Hypothesis Testing</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in testing hypothesis and hypothesis tests.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics,
+                        hypothesis testing calculators, critical value, confidence level, confidence interval, 
+                        significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, 
+                        type I error, type II error, null hypothesis, alternative hypothesis, one-tail, two-tail, probability value,
+                        p-value, test statistic, critical region, hypothesis testing, population proportion, population mean, 
+                        one sample proportion, two sample proportion, goodness-of-fit test, chi-square, normal distribution table,
+                        student t distribution table, F statistic, test statistic">
+
+    <link href="styles/hypothesis-testing.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar Links -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card-2 w3-left-align w3-xlarge">
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Greetings <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#welcome" class="w3-bar-item w3-button">Welcome</a>
+                </div>
+            </div>
+
+            <!--<a href="https://www.youtube.com/watch?v=Hc9zhToYZK0&list=PLgu-r_ZFzO8BwEyKYl1hDfZ4ePrSH5to1&ab_channel=SamuelChukwuemeka" target="_blank" class="w3-bar-item w3-button w3-mobile">Videos</a>-->
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Overview <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#objectives" class="w3-bar-item w3-button">Objectives</a>
+                    <a href="#vocabularyWords" class="w3-bar-item w3-button">Vocabulary Words</a>
+                    <a href="#introduction" class="w3-bar-item w3-button">Introduction</a>
+                    <a href="#definitions" class="w3-bar-item w3-button">Definitions</a>
+                    <a href="#symbols" class="w3-bar-item w3-button">Symbols</a>
+                    <a href="#formulas" class="w3-bar-item w3-button">Formulas</a>
+                    <a href="#references" class="w3-bar-item w3-button">References</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Tables <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#NormalDistributionTableLeftShaded" class="w3-bar-item w3-button">Normal Distribution Table
+                        (Left-Shaded Area)</a>
+                    <a href="#NormalDistributionTableCenterShaded" class="w3-bar-item w3-button">Normal Distribution
+                        Table (Center-Shaded Area)</a>
+                    <a href="#criticalValuesPearsonDF" class="w3-bar-item w3-button">t Distribution Table</a>
+                    <a href="#criticalValuesPearsonDF" class="w3-bar-item w3-button">Critical Values of the Pearson
+                        Correlation Coefficient (Degrees of Freedom)</a>
+                    <a href="#criticalValuesPearsonSampleSize" class="w3-bar-item w3-button">Critical Values of the
+                        Pearson Correlation Coefficient (Sample Size)</a>
+                    <a href="#criticalValuesSpearman" class="w3-bar-item w3-button">Critical Values of the Spearman's
+                        Rank Correlation Coefficient</a>
+                    <a href="#criticalValuesChiSquare1" class="w3-bar-item w3-button">Critical Values of Chi-Square
+                        Distribution: Part 1 (Common)</a>
+                    <a href="#criticalValuesChiSquare2" class="w3-bar-item w3-button">Critical Values of Chi-Square
+                        Distribution: Part 2 (Others)</a>
+                    <a href="#criticalValuesChiSquare3" class="w3-bar-item w3-button">Critical Values of Chi-Square
+                        Distribution: Part 3 (Others)</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Hypothesis Tests <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#goodness-of-fit" class="w3-bar-item w3-button">Goodness-of-Fit and Test for
+                        Independence</a>
+                    <a href="#decision" class="w3-bar-item w3-button">Decision, Conclusion, Interpretation</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Solved Examples <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/errors.html" target="_blank"
+                        class="w3-bar-item w3-button w3-mobile">Type I and Type II Errors</a>
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis.html" target="_blank"
+                        class="w3-bar-item w3-button w3-mobile">Null and Alternative Hypothesis</a>
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-tests.html"
+                        target="_blank" class="w3-bar-item w3-button w3-mobile">Hypothesis Tests</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button">Statistical Software <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#RStudio" class="w3-bar-item w3-button">RStudio</a>
+                    <a href="#TI-calculators" class="w3-bar-item w3-button">TI-series (Texas Instruments)
+                        calculators</a>
+                    <a href="#Statcrunch" class="w3-bar-item w3-button">Pearson Statcrunch</a>
+                    <a href="#SPSS" class="w3-bar-item w3-button">IBM SPSS (Statistical Package for the Social
+                        Sciences)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+    <div class="w3-container cornsilk">
+        <br><br>
+        <!-- Header -->
+        <header class="w3-container w3-padding-24 w3-white">
+            <div class="w3-content">
+                <h1>Hypothesis Tests</h1>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Welcome -->
+        <div class="w3-container w3-padding-64 w3-white" id="welcome">
+            <div class="w3-row-padding">
+
+                <div class="w3-col l8 m6">
+                    <h2>Welcome to Our Site</h2>
+                    <p>
+                        <span id="greetings"></span> <br>
+                        I greet you this day,
+                        <script>document.write(Date() + ".");</script>
+                        <br><br>
+                        <u>First:</u> Review the Notes/Multimedia Resources/eText. <br>
+                        <u>Second:</u> View the Videos. <br>
+                        <u>Third:</u> Solve the questions/solved examples. <br>
+                        <u>Fourth:</u> Check your solutions with my <b>thoroughly-explained solved examples.</b>
+                        <br><br>
+                        <strong>Samuel Dominic Chukwuemeka</strong> (SamDom For Peace)
+                        <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+                    </p>
+                </div>
+                <br><br><br><br>
+                <div class="w3-col l4 m6">
+                    <a href="https://statistical-science.appspot.com/" target="_blank">
+                        <img src="images/samuelchukwuemeka.jpg" alt="Samdom For Peace"
+                            title="Samuel Chukwuemeka (SamDom For Peace)" class="w3-image w3-right w3-hide-small image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Welcome -->
+
+        <!-- Objectives -->
+        <div class="w3-container w3-padding-32" id="objectives">
+            <h2 class="w3-padding-16">Objectives</h2>
+            <hr>
+            <p class="white w3-padding">
+                Students will: <br><br>
+                (1.) Discuss the meaning of hypothesis testing. <br>
+                (2.) Explain the meaning of null and alternative hypothesis. <br>
+                (3.) State the null and alternative hypothesis from a given claim. <br>
+                (4.) State the type of hypothesis test. <br>
+                (5.) State the population parameter being tested. <br>
+                (6.) Explain the meaning of Type I and Type II errors. <br>
+                (7.) Discuss social injustice related to Type I and Type II errors. (Relate Statistics to Criminology).
+                <br>
+                (8.) Identify the Type I and Type II errors from a claim. <br>
+                (9.) Identify the Type I and Type II errors in social cases. (Relate Statistics to Criminology). <br>
+                (10.) Discuss the three methods used in hypothesis testing. <br>
+                (11.) Test the hypothesis for a claim using the Critical Value Method (Classical Approach). <br>
+                (12.) Test the hypothesis for a claim using the Probability Value Method (P-value Approach). <br>
+                (13.) Test the hypothesis for a claim using the Confidence Interval Method. <br>
+                (14.) Write the decision of the hypothesis test based on the methods used. <br>
+                (15.) Write the conclusion of the hypothesis test based on the decision. <br>
+                (16.) Interpret the conclusion. <br>
+                (17.) Discuss the power of a hypothesis test.
+            </p>
+        </div>
+        <!-- End Objectives -->
+
+
+        <!-- Introduction -->
+        <div class="w3-container w3-padding-32" id="introduction">
+            <h2 class="w3-padding-16">Introduction</h2>
+            <hr>
+            <div class="white w3-padding">
+                <i>
+                    Recall: <br>
+                    Ask students to list the steps in the <b>Scientific Method</b> <br><br>
+                    Is <b>Forming a Hypothesis</b> one of the methods? <br><br>
+                    Is <b>Testing the Hypothesis</b> also one of the methods? <br><br>
+                    If you answered "yes", then you are right!
+                </i>
+            </div>
+
+            <h3>Hypothesis</h3>
+            <div class="white w3-padding">
+                Bring it to <b>Logic:</b> A <b>hypothesis</b> is defined as the <b>premise of a conditional
+                    statement.</b>
+                <br><br>
+                Bring it to <b>Science:</b> A <b>hypothesis</b> is <b>an unproven theory about a scientific problem.</b>
+                <br><br>
+                Bring it to <b>Statistics:</b> A <b>hypothesis</b> is <b>a claim about a population parameter.</b> <br>
+                It is a statement about a population parameter that can be tested, and may or may not true.
+                <br><br>
+                We are testing a <b>claim</b> about a <b>population parameter</b> using a <b>sample statistic.</b> <br>
+                We are testing a <b>claim</b> about a <b>population proportion</b> using a <b>sample proportion.</b>
+                <br>
+                We are testing a <b>claim</b> about a <b>population mean</b> using a <b>sample mean.</b> <br>
+                We are testing a <b>claim</b> about a <b>population variance</b> using a <b>sample variance.</b> <br>
+                We are testing a <b>claim</b> about a <b>population standard deviation</b> using a <b>sample standard
+                    deviation.</b> <br>
+                In statistical​ inference, measurements are made on a sample and generalizations are made to a
+                population. <br>
+                It is often difficult to measure the population, hence we measure samples. The results are then
+                generalized to the population.
+            </div>
+
+            <h3>Hypothesis Test</h3>
+            <p class="white w3-padding">
+                A <b>hypothesis test</b> is a <b>procedure for testing a claim about a population parameter.</b>
+            </p>
+
+            <h3>Null Hypothesis</h3>
+            <p class="white w3-padding">
+                The <b>null hypothesis</b> is the <b>statement</b> that shows that the value of the <b>population
+                    parameter is equal to some claimed value.</b> <br>
+                It is always a statement about a population parameter. <br>
+                The value in the null hypothesis is the value of the population parameter that represents the​
+                status-quo for the current situation. <br>
+                It is denoted by $H_0$ <br>
+                We test the null hypothesis assuming it to be true thorughout the hypothesis testing procedure, unless
+                observation strongly indicates otherwise. <br>
+                We make a decision based on the null hypothesis. <br>
+                We either reject the null the hypothesis; or we do not reject the null hypothesis (or fail to reject the
+                null hypothesis)
+                based on the result of the methods we used for the test. <br>
+                <i>Fail to reject the null hypothesis</i> is the same as <i>Do not reject the null hypothesis</i>. <br>
+                This does not mean that we accept the null hypothesis. It just means that we do not reject it. <br><br>
+                <i>Explain this concept with examples.</i> <br><br>
+                Then, we make a conclusion based on our decision.
+            </p>
+
+            <h3>Alternative Hypothesis</h3>
+            <p class="white w3-padding">
+                The <b>alternative hypothesis</b> is the <b>statement</b> that shows that the value of the <b>population
+                    parameter is different from the claimed value.</b> <br>
+                (<i><u>different</u> from the claimed value could mean: <u>less than</u> the claimed value; <u>more
+                        than</u> the claimed value; or <u>not equal to</u> the claimed value.</i>) <br>
+                It is the research hypothesis. <br>
+                It is denoted by $H_1$ or $H_A$ or $H_a$ <br>
+                The <b>population parameter being different from the claimed value</b> means that it could be <b>less
+                    than the claimed value</b>; or
+                <b>greater than the claimed value</b>; or <b>not equal to the claimed value</b>. <br><br>
+                If the <b>population parameter is less than the claimed value,</b> the <b>hypothesis test is a
+                    left-tailed test.</b> <br>
+                In <b>left-tailed tests,</b> the <b>critical region is in the extreme left region (left tail).</b>
+                <br><br>
+                $population\:\:parameter \lt claimed\:\:value \implies left-tailed\:\:test$ <br><br>
+                If the <b>population parameter is greater than the claimed value,</b> the <b>hypothesis test is a
+                    right-tailed test.</b> <br>
+                In <b>right-tailed tests,</b> the <b>critical region is in the extreme right region (right tail).</b>
+                <br><br>
+                $population\:\:parameter \gt claimed\:\:value \implies right-tailed\:\:test$ <br><br>
+                Left-tailed tests and Right-tailed tests are one-tailed tests. <br><br>
+                If the <b>population parameter is not equal to the claimed value,</b> the <b>hypothesis test is a
+                    two-tailed test.</b> <br>
+                In <b>two-tailed tests,</b> the <b>critical region is in the two extreme regions (two tails: left tail
+                    and right tail).</b> <br><br>
+                $population\:\:parameter \ne claimed\:\:value \implies two-tailed\:\:test$
+            </p>
+
+            <h3>Test Statistic</h3>
+            <p class="white w3-padding">
+                The <b>test statistic</b> <b>compares the observed outcome with the outcome of the null hypothesis.</b>
+                <br>
+                It measures how far away the observed parameter lies from the hypothesized value of the population
+                parameter. <br>
+                It is used in making a decision about the null hypothesis. <br>
+                It is found by converting the sample statistic to a score with the assumption that the null hypothesis
+                is true. <br>
+                A test statistic close to 0 indicates the obtained sample statistic is likely if the null hypothesis is​
+                correct, which supports the null hypothesis. <br>
+                A test statistic far from 0 indicates the obtained sample statistic is unlikely if the null hypothesis
+                is​ correct, which discredits the null hypothesis.
+            </p>
+
+            <h3>Methods used in Hypothesis Testing</h3>
+            <p class="white w3-padding">
+                There are three methods used in hypothesis testing. <br>
+                Two of those methods will always lead to the same decision, and ultimaltely the same conclusion. <br>
+                Those are the two main methods. <br>
+                The other method may be used <b>only when those two main methods are used.</b> <br>
+                The two main methods are: <br><br>
+                (1.) <b>Critical Value Method</b> or <b>Classical Approach</b> or <b>Traditional Method</b> <br><br>
+                <b>
+                    If the test statistic is in the critical region, reject the null hypothesis. <br>
+                    If the test statistic is not in the critical region, do not reject the null hypothesis.
+                </b> <br><br>
+                The <b>critical values</b> define the <b>critical regions.</b> <br>
+                For a <b>left-tailed hypothesis test,</b> any <b>value less than the critical value in the left-tail</b>
+                is in the <b>critical region.</b> <br>
+                For a <b>right-tailed hypothesis test,</b> any <b>value greater than the critical value in the
+                    right-tail</b> is in the <b>critical region.</b> <br>
+                For a <b>two-tailed hypothesis test,</b> any <b>values less than the critical value in the left-tail OR
+                    greater than the critical value in the right-tail</b> is in the <b>critical region.</b>
+                <br><br><br><br>
+                (2.) <b>P-Value Method</b> or <b>Probability Value Method</b> <br><br>
+                <b>
+                    If the P-value is less than or equal to the level of significance, reject the null hypothesis. <br>
+                    If the P-value is greater than the level of significance, do not reject the null hypothesis.
+                </b> <br><br><br><br>
+                The other method is: <br>
+                (3.) <b>Confidence Interval Method</b> <br><br>
+                Sometimes, we use the Confidence Interval method to test the hypothesis. <br>
+                We typically use this method for: <b>one sample with two tails; two samples with left tail; two samples
+                    with right tail; or two samples with two tails.</b> <br><br>
+                <b>
+                    If the confidence interval does not contain the value of the population parameter stated in the null
+                    hypothesis, reject the null hypothesis. <br>
+                    If the confidence interval contains the value of the population parameter stated in the null
+                    hypothesis, do not reject the null hypothesis.
+                </b> <br><br>
+                For <b>one-tailed hypothesis test:</b> construct a confidence interval using: $CL = 1 - 2\alpha$ <br>
+                For <b>two-tailed hypothesis test:</b> construct a confidence interval using: $CL = 1 - \alpha$ <br><br>
+                <mark>NOTE:</mark> <br>
+                (I.) The <b>Classical Approach</b> and the <b>P-value Approach</b> will <b>always give the same decision
+                    and the same conclusion</b> regardless of the hypothesis test. <br><br>
+                (II.) For <b>Hypothesis test about a Population Proportion;</b> the <b>Confidence Interval Method may or
+                    may not</b> give the <b>same decison and the same conclusion</b> as the other two methods. <br><br>
+                <i>Explain this concept with examples.</i> <br><br>
+                (III.) For <b>Hypothesis test about a: Population Mean, Population Variance, and Population Standard
+                    Deviation; all three methods will always give the same decision and the same conclusion.</b>
+                <br><br>
+                <i>
+                    What if we formed our hypothesis correctly, applied the correct methods to test it, performed our
+                    calculation correctly, and
+                    still made a wrong decision which leads to a wrong conclusion? <br>
+                    Is it possible? <br>
+                    YES. It is possible. <br>
+                    Why? <br>
+                    We are humans. <br>
+                    Humans are known for making mistakes. <br>
+                    This leads us to....
+                </i>
+            </p>
+
+            <div id="hypothesisTestingErrors" class="w3-padding-32">
+                <h3>Errors in Hypothesis Tests</h3>
+                <p class="white w3-padding">
+                    There are two main types of errors we can make when testing hypothesis. <br>
+                    They are: <br><br>
+                    <b>Type I Error</b> (Rejecting a true null hypothesis) <br>
+                    This is the error made when we reject the null hypothesis when it is true. <br>
+                    <i>
+                        Compare it to a <a
+                            href="https://statistical-science.appspot.com/Probability/probabilityApplications.html"
+                            target="_blank">False Positive scenario in Probability</a> (Questions 50 and 51). Explain.
+                        <br>
+                        It is also similar to <b>convicting an innocent man</b>
+                    </i>
+                    <br><br>
+                    <b>Type II Error</b> (Not rejecting a false null hypothesis) <br>
+                    This is the error made when we fail to reject the null hypothesis when it is false. <br>
+                    <i>
+                        Compare it to a <a
+                            href="https://statistical-science.appspot.com/Probability/probabilityApplications.html"
+                            target="_blank">False Negative scenario in Probability</a> (Questions 49 and 52). Explain.
+                        <br>
+                        It is also similar to <b>acquiting a guilty man</b>
+                    </i>
+                    <br><br>
+
+                    Both errors are bad. <br>
+                    However, which one do you think is worse? <br>
+                    Type I error OR Type II error? <br>
+                    Would you convict an innocent man? OR Would you acquit a guilty man? <br>
+                    To further explain these errors, let us review the table.
+                </p>
+            </div>
+
+            <table class="white w3-center">
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td colspan="2"><b>Truth</b></td>
+                </tr>
+                <tr>
+                    <td>$H_0$ is true</td>
+                    <td>$H_0$ is false</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><b>Decision</b></td>
+                    <td>Reject $H_0$</td>
+                    <td>Type I error</td>
+                    <td>Correct decision</td>
+                </tr>
+                <tr>
+                    <td>Do not reject $H_0$</td>
+                    <td>Correct decision</td>
+                    <td>Type II error</td>
+                </tr>
+            </table>
+            <p class="white w3-padding">Compare this to: (You may use this to remember the main table)</p>
+            <table class="white w3-center">
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td colspan="2"><b>Truth</b></td>
+                </tr>
+                <tr>
+                    <td>Innocent</td>
+                    <td>Guilty</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><b>Verdict</b></td>
+                    <td>Convict</td>
+                    <td>Type I error</td>
+                    <td>Correct decision</td>
+                </tr>
+                <tr>
+                    <td>Acquit</td>
+                    <td>Correct decision</td>
+                    <td>Type II error</td>
+                </tr>
+            </table>
+            <p class="white w3-padding">
+                $\alpha$ is the probability of making a Type I error. <br>
+                $\beta$ is the probability of making a Type II error. <br>
+                Type I and Type II errors are inversely related. <br>
+                As $\alpha$ increases, $\beta$ decreases. <br>
+                As $\alpha$ decreases, $\beta$ increases.
+            </p>
+
+            <h3>Level of Significance (Significance Level)</h3>
+            <p class="white w3-padding">
+                <i>Ask students to define the level of significance (when we covered Inferential Statistics)</i>
+                <br><br>
+                We are going to give another definition of the level of significance (as it concerns Hypothesis
+                Testing). <br>
+                The <b>level of significance</b> is the <b>probability of making the mistake of rejecting the null
+                    hypothesis even though it is true.</b> <br>
+                This implies that: The <b>level of significance</b> is the <b>probability of making a Type I error.</b>
+                <br>
+                It is the likelihood of obtaining a sample statistic distinct from the predicted population parameter to
+                the extent that it makes the predicted population parameter seem incorrect​ when, in​ fact, it is
+                correct. <br>
+                It is denoted by &alpha;. <br>
+                Though the acceptable significance level depends on the​ situation, 5%(0.05) is generally a good
+                starting point. <br>
+                <mark>NOTE:</mark> If &alpha; is not given, use &alpha; = 5% <br>
+            </p>
+
+            <h3>Probability Value (P-value)</h3>
+            <p class="white w3-padding">
+                The​ probability value (p-value) is the probability that if the null hypothesis is​ true, a test
+                statistic will have a value as extreme as or more extreme than the observed value. <br>
+                In other​ words, the​ p-value measures how unusual an event is. <br>
+                It is denoted by <i>p</i>. <br>
+                A​ p-value lower than the significance level is small, and it discredits the null​ hypothesis. <br>
+                A​ p-value greater than the significance level is not small, and it indicates that the null hypothesis
+                is probably true. <br>
+                A​ p-value is small if it is less than 0.05 (because the common significance level is 0.05).
+            </p>
+
+            <h3>Power of a Hypothesis Test</h3>
+            <p class="white w3-padding">
+                The <b>power of a hypothesis test</b> is the <b>probability of rejecting a null hypothesis when it is
+                    false.</b> <br>
+                This implies that: The <b>power of a hypothesis test</b> is the <b>probability of making the correct
+                    decision by avoiding making a Type II error.</b> <br>
+                The power of a hypothesis test depends on the significance level, the sample size, and how wrong the
+                null hypothesis is.
+            </p>
+
+            <h3>Requirements for Testing Hypothesis about a Population Proportion</h3>
+            <p class="white w3-padding">
+                (1.) The samples are simple random samples. <br><br>
+                (2.) There is a fixed number of trials. <br><br>
+                (3.) The trials are independent. <br><br>
+                (4.) Each trial results in either a success or a failure. <br><br>
+                (5.) The probability of success or failure in any trial is the same as the probability of success or
+                failure in all the trials. <br><br>
+                (6.) There are at least ten successes and ten failures. <br>
+                $np \ge 10$ AND $nq \ge 10$ <br><br>
+                (7.) The sample size is no more than five percent (at most five percent) of the population size. <br>
+                $n \le 5\%N$ or $n \le 0.05N$ <br><br>
+                <mark>NOTE:</mark> If the population proportion is not given, use $50\%$ <br>
+                If $p$ is not given, use $p = 50\%$ or $p = 0.5$
+            </p>
+
+            <h3>Requirements for Testing Hypothesis about Two Population Proportions</h3>
+            <p class="white w3-padding">
+                (1.) The sample proportions are from two simple random independent samples. <br>
+                Independent samples means that the sample values selected from one population proportion are not related
+                to, or
+                somehow natuarlly paired or matched with the sample values from the other population. <br><br>
+                (2.) There are at least five successes and five failures for each of the two samples. <br>
+                $n\hat{p} \ge 5$ AND $n\hat{q} \ge 5$ for each of the two samples. <br><br>
+                The two main <b>Hypothesis Test Methods</b> uses the <b>pooled sample proportion.</b> <br>
+                This means that the data is pooled (sort of like "pooling resources together") to obtain the proportion
+                of successes
+                in both samples combined. <br><br>
+                The <b>Confidence Interval Method</b> uses the <b>unpooled sample proportions.</b> <br>
+                This means the two sample proportions are treated separately.
+            </p>
+
+            <h3>Requirements for Testing Hypothesis about a Population Mean</h3>
+            <p class="white w3-padding">
+                (1.) The samples are simple random samples. <br><br>
+                (2.) The population is normally distributed, OR the sample size is greater than thirty ($n \gt 30$).
+            </p>
+
+            <h3>Independent Samples</h3>
+            <p class="white w3-padding">
+                Two samples are <b>independent</b> if the sample values from one population are not related to, or
+                somehow naturally
+                paired or matched with the sample values from the other population. <br>
+                <u>Example:</u> Paul was curious about the mean credit scores of men and women. <br>
+                He visited the <i>Town of Okay, Oklahoma</i> and gathered two random samples: the credit scores
+                of 50 men and 50 women.
+            </p>
+
+            <h3>Dependent Samples</h3>
+            <p class="white w3-padding">
+                Two samples are <b>dependent</b> if the sample values from one population are related to, or somehow
+                naturally
+                paired or matched with the sample values from the other population. <br>
+                Each pair of sample values consists of two measurements from the same subject (such as before/after
+                data), or
+                each pair of sample values consists of matched pairs (such as husband/wife data). <br>
+                <u>Example:</u> Paul was curious about the mean credit scores of married couples. <br>
+                He visited the <i>Community of Money, Mississippi,</i> randomly selected 50 families, and asked for each
+                of the credit
+                scores of the husband and wife.
+            </p>
+
+            <h3>Requirements for Testing Hypothesis about Two Independent Population Means</h3>
+            <p class="white w3-padding">
+                When $\sigma_1$ and $\sigma_2$ are unknown, and are not assumed to be equal: AND <br>
+                When $\mu_1$ and $\mu_2$ are assumed to be equal: <br>
+                Use $t$ distribution <br><br>
+                (1.) The values of the first population standard deviation and the second population standard deviation
+                are unknown,
+                and are not assumed to be equal. <br><br>
+                (2.) The two samples are simple random samples. <br><br>
+                (3.) The two samples are independent. <br><br>
+                (4.) The two samples are taken from a normally distributed population, or each of the samples have sizes
+                greater than $30$. <br><br><br>
+
+                When $\sigma_1$ and $\sigma_2$ are unknown, but assumed to be equal: <br>
+                Use $t$ distribution and a pooled sample variance <br><br>
+                (1.) The values of the first population standard deviation and the second population standard deviation
+                are unknown,
+                but they are assumed to be equal. <br><br>
+                (2.) The two samples are simple random samples. <br><br>
+                (3.) The two samples are independent. <br><br>
+                (4.) The two samples are taken from a normally distributed population, or each of the samples have sizes
+                greater than $30$. <br><br><br>
+
+                When $\sigma_1$ and $\sigma_2$ are known: <br>
+                Use $z$ distribution <br><br>
+                (1.) The values of the first population standard deviation and the second population standard deviation
+                are known. <br><br>
+                (2.) The two samples are simple random samples. <br><br>
+                (3.) The two samples are independent. <br><br>
+                (4.) The two samples are taken from a normally distributed population, or each of the samples have sizes
+                greater than $30$. <br><br><br>
+            </p>
+
+            <h3>Requirements for Testing Hypothesis about Two Dependent Population Means</h3>
+            <p class="white w3-padding">
+                Use $t$ distribution for Dependent Samples <br><br>
+                (1.) The samples are dependent samples (matched pairs). <br>
+                (2.) The two samples are simple random samples. <br>
+                (3.) The two samples are taken from a normally distributed population, or each of the samples have sizes
+                greater than 30.
+            </p>
+
+            <h3>Requirements for Testing Hypothesis about a Population Variance OR a Population Standard Deviation</h3>
+            <p class="white w3-padding">
+                Use $\chi^2$ distribution <br><br>
+                (1.) The samples are simple random samples. <br>
+                (2.) The population is normally distributed.
+            </p>
+
+            <div class="w3-container w3-padding-32" id="goodness-of-fit">
+                <h3>Goodness-of-Fit Test, Test for Independence, and Contingency Tables</h3>
+                <div class="white w3-padding">
+                    The Chi-square test (also known as a​ <b>Goodness-of-Fit test</b>) is a hypothesis test used to:
+                    <br>
+                    Test the hypothesis that an observed frequency distribution <b>fits</b> to some claimed
+                    distribution. <br>
+                    OR <br>
+                    Test the hypothesis that an observed frequency distribution fits​ (or conforms​ to) some claimed
+                    distribution.
+                    <br>
+                    OR <br>
+                    Determine if the population distribution of a categorical variable is the same as a proposed
+                    distribution. <br>
+                    OR <br>
+                    Determine whether a distribution of categorical variables is following any proposed distribution.
+                    <br>
+                    OR <br>
+                    Analyze categorical or quanlitative data that can be separated into different rows and columns of a
+                    table.
+                    OR <br>
+                    <br><br>
+                    Compare a proposed distribution for one categorical variable with the observed sample distribution.
+                    <br><br>
+                    As noted from all the above definitions, the Goodness-of-Fit Test is used for a single categorical
+                    variable. <br>
+                    To determine if two categorical variables are related to each other, the Test for Independence is
+                    used. <br>
+                    The <b>Chi-square Test for Independence</b> is the hypothesis test used to determine if two
+                    categorical variables are
+                    related.
+                    <br><br>
+                    <i>
+                        <b>Student:</b> Mr. C, shouldn't we use Correlation to determine if two variables are related?
+                        <br>
+                        <b>Teacher:</b> Yes, we should. Very good question. <br>
+                        However, the use of correlation coefficient and scatter diagrams are used to determine if two
+                        <b>numerical variables</b> (quantitative variables) are related. <br>
+                        If we want to determine the relationship between two <b>categorical variables</b> (qualitative
+                        variables), we use the Chi-square Test for Independence. <br>
+                        <b>Student:</b> But, how do we conduct such a test if we are not working with numbers? <br>
+                        <b>Teacher:</b> Well, we shall work with numbers. In this case, the numbers are the
+                        counts/frequencies of our observations of each categorical variable. <br>
+                        For two categorical variables, the frequencies of both variables usually overlap. <br>
+                        Hence, we have a special type of frequency table to show the frequencies. <br>
+                        This leads us to...
+                    </i>
+                    <br><br>
+                    A <b>Contingency Table</b> is a frequency table that shows the frequency of each category in one
+                    variable, <i>contingent</i> upon the specific level of the other variable. <br>
+                    It is a one-way frequency​ table in which the frequencies corresponds to one variable. <br>
+                    For Goodness-of-Fit tests, one-way frequency table is used.
+                    <br><br>
+                    To perform a​ goodness-of-fit test, an expected count (value) of at least 5 is required in each
+                    cell. <br>
+                    The expected values in a​ two-way table are the number of observations in each cell if the null
+                    hypothesis were true. <br>
+                    This implies that: The​ chi-square distribution provides a good approximation to the sampling
+                    distribution of
+                    the​ chi-squared statistic if the expected value in each cell is 5 or higher. <br>
+                    The​ chi-squared statistic measures the amount by which the expected values (counts) differ from the
+                    observed
+                    values (counts). <br>
+                    It compares the observed counts to the expected counts if the proposed distribution were the true
+                    distribution.
+                    <br><br>
+                    <b>Characteristics of the chi-squared statistic are:</b> <br>
+                    (1.) The distribution allows for only positive values. <br>
+                    (2.) The distribution is skewed right. It is not symmetric. It is not skewed left. <br>
+                    (3.) The shape depends on a parameter called the degrees of freedom.
+                    <br><br>
+                    <b>Requirements to conduct a​ Goodness-of-Fit test are:</b> <br>
+                    (1.) The data have been randomly selected. <br>
+                    (2.) For each​ category, the expected frequency is at least 5. <br>
+                    <i>Notice we said: <b>expected frequency</b> (<u>not</u> observed frequency)</i> <br>
+                    (3.) The sample data consist of frequency counts for each of the different categories.
+                    <br><br>
+                    <b>Notable Notes Regarding Goodness-of-Fit test are: </b> <br>
+                    (1.) When performing a​ chi-square test for goodness of​ fit, the degrees of freedom are computed by
+                    subtracting 1
+                    from the number of categories (number of different data cells) for the variable. <br>
+                    <i>df</i> = number of different data cells &minus; 1
+                    <br><br>
+                    (2.) If expected frequencies are​ equal, then we can determine them by the formula: $E =
+                    \dfrac{n}{k}$
+                    where <i>n</i> is the total number of observations and <i>k</i> is the number of categories.
+                    <br><br>
+                    (3.) If expected frequencies are not all​ equal, then we can determine them by $E = np$ for each
+                    individual​ category, where <i>n</i> is the total number of observations and <i>p</i> is the
+                    probability for the category.
+                    <br><br>
+                    (4.) Expected frequencies need not be whole numbers. <br>
+                    (5.) The chi-squared test statistic is based on differences between the observed and expected
+                    values. <br>
+                    (6.) If the observed values are very close to the expected values, then the chi-squared test
+                    statistic will be small and the Probability-value (P-value) will be large. <br>
+                    This would lead us to conclude that there is a good fit with the assumed distribution.
+                    <br><br>
+                    (7.) A small value of the chi-squared statistic implies that the expected values is close to the
+                    observed values. <br>
+                    In that case, there is no association between the categorical​ variables. <br>
+                    The two variables appear to be​ independent.
+                    <br><br>
+                    (8.) A large value of the chi-squared statistic implies that the expected values differ from the
+                    observed values by a large amount. <br>
+                    In that case, one should be suspicious of the null​ hypothesis. <br>
+                    There is an association between the categorical​ variables. <br>
+                    The two variables appear to be​ dependent.
+                    <br><br>
+                    (9.) If the observed and expected frequencies are not​ close, the chi-square test statistic will be
+                    large and the​ Probability-value (P-value) will be small. <br>
+                    This leads us to conclude that there is not a good fit with the assumed distribution.
+                    <br><br>
+                    (10.) The null hypothesis for a​ goodness-of-fit test is always that the population distribution of
+                    the variable is
+                    the same as the proposed distribution. <br>
+                    <i>H<sub>0:</sub></i> The frequency counts agree with the claimed distribution <br>
+                    <i>H<sub>1:</sub></i> The frequency counts do not agree with the claimed distribution.
+                    <br><br>
+                    (11.) The​ p-value for a​ chi-squared test for goodness of fit is the probability​ that, if the null
+                    hypothesis is​
+                    true, a​ chi-square statistic will be equal to or greater than the observed value. <br>
+                    So the relevant area is the area to the right of the test statistic.
+                    <br><br>
+                    A <b>Contingency Table</b> is a frequency table that shows the frequency of each category in one
+                    variable, <i>contingent</i> upon the specific level of the other variable. <br>
+                    It is a two-way frequency​ table in which the frequencies correspond to two variables. <br>
+                    For Test of Independence, two-way frequency table is used.
+                    <br><br>
+                    <b>Requirements for Test for Independence between the row variable and column variable in a
+                        Contingency​ table are:</b> <br>
+                    (1.) The null hypothesis is that the row and column variables are independent of each other. <br>
+                    (2.) The number of degrees of freedom is ​(<i>r</i>​ &minus; 1)(<i>c</i> &minus; ​1), where <i>r</i>
+                    is the number of rows and <i>c</i> is the number of columns. <br>
+                    (3.) Tests of independence with a contingency table are always​ right-tailed.
+
+                </div>
+            </div>
+        </div>
+        <!-- End Introduction -->
+
+        <!-- Definition -->
+        <div class="w3-container w3-padding-32" id="definitions">
+            <h2 class="w3-padding-16">Definitions</h2>
+            <hr>
+            <div class="white w3-padding">
+                A <b>hypothesis</b> is <b>a claim about a population parameter.</b> <br><br>
+                A <b>hypothesis test</b> is a <b>procedure for testing a claim about a population parameter.</b>
+                <br><br>
+                The <b>null hypothesis</b> is the <b>statement</b> that shows that the value of the <b>population
+                    parameter is equal to some claimed value.</b> <br><br>
+                The <b>alternative hypothesis</b> is the <b>statement</b> that shows that the value of the <b>population
+                    parameter is different from the claimed value.</b> <br><br>
+                A <b>hypothesis test</b> is a <b>left-tailed test</b> if the <b>population parameter is less than the
+                    claimed value.</b> <br><br>
+                A <b>hypothesis test</b> is a <b>right-tailed test</b> if the <b>population parameter is greater than
+                    the claimed value.</b> <br><br>
+                A <b>hypothesis test</b> is a <b>two-tailed test</b> if the <b>population parameter is not equal than he
+                    claimed value.</b> <br><br>
+                The <b>test statistic</b> is a <b>used in making a decision about the null hypothesis.</b> <br><br>
+                <b>Type I Error</b> is the error made when we reject the null hypothesis when it is true. <br><br>
+                <b>Type II Error</b> is the error made when we fail to reject the null hypothesis when it is false.
+                <br><br>
+                The <b>level of significance</b> is the <b>probability of making the mistake of rejecting the null
+                    hypothesis when it is true.</b> <br>
+                This implies that: The <b>level of significance</b> is the <b>probability of making a Type I error.</b>
+                <br><br>
+                The <b>power of a hypothesis test</b> is the <b>probability of rejecting a null hypothesis when it is
+                    false.</b> <br>
+                This implies that: The <b>power of a hypothesis test</b> is the <b>probability of making the correct
+                    decision by avoiding making a Type II error.</b> <br><br>
+                Two samples are <b>independent</b> if the sample values from one population are not related to, or
+                somehow naturally
+                paired or matched with the sample values from the other population. <br><br>
+                Two samples are <b>dependent</b> if the sample values from one population are related to, or somehow
+                naturally
+                paired or matched with the sample values from the other population.
+                <br><br>
+                The probability value (P-value) is the probability of obtaining the observed results of a hypothesis
+                test, assuming the null hypothesis is true. <br>
+                A smaller p-value indicates a stronger evidence in favor of the alternative hypothesis.
+                <br><br>
+
+
+
+            </div>
+        </div>
+        <!-- End Definition -->
+
+        <!-- Symbols and Meanings -->
+        <div class="w3-container w3-padding-32" id="symbols">
+            <h2 class="w3-padding-16">Symbols and Meanings</h2>
+            <hr>
+
+            <ul class="w3-ul white">
+                <li>$z_{\dfrac{\alpha}{2}}$ is the critical $z$ value</li>
+                <li>$z_{\dfrac{\alpha}{2}}$ is the $z-score$ separating an area/probability of $\dfrac{\alpha}{2}$ in
+                    the right tail</li>
+                <li>$-z_{\dfrac{\alpha}{2}}$ is the $z-score$ separating an area/probability of $\dfrac{\alpha}{2}$ in
+                    the left tail</li>
+                <li>$z_{\alpha}$ is the $z-score$ separating an area/probability of $\alpha$ in the right tail</li>
+                <li>$-z_{\alpha}$ is the $z-score$ separating an area/probability of $\alpha$ in the left tail</li>
+                <li>$t_{\dfrac{\alpha}{2}}$ is the critical $t$ value</li>
+                <li>$t_{\dfrac{\alpha}{2}}$ is the critical $t$ separating an area/probability of $\dfrac{\alpha}{2}$ in
+                    the right tail</li>
+                <li>$-t_{\dfrac{\alpha}{2}}$ is the critical $t$ separating an area/probability of $\dfrac{\alpha}{2}$
+                    in the left tail</li>
+                <li>$z$ is the test statistic for estimating population proportion </li>
+                <li>$z$ is the test statistic for estimating population mean (based on some conditions)</li>
+                <li>$t$ is the test statistic for estimating population mean (based on some conditions)</li>
+                <li>$\chi ^2$ is the test statistic for estimating population variance</li>
+                <li>$\chi ^2$ is the test statistic for estimating population standard deviation</li>
+                <li>$\chi ^2$ is the test statistic for Goodness-of-Fit tests</li>
+                <li>$\alpha$ is the level of significance</li>
+                <li>$\alpha$ is the probability of making a Type I error</li>
+                <li>$\beta$ is the probability of making a Type II error</li>
+                <li>$CL$ is the level of confidence</li>
+                <li>$df$ is the degrees of freedom</li>
+                <li>$P-value$ is the probability value</li>
+                <li>$\hat{p}$ is the sample proportion</li>
+                <li>$x$ is the number of individuals with the specified characteristics</li>
+                <li>$n$ is the sample size</li>
+                <li>$n$ is the total number of trials</li>
+                <li>$p$ is the population proportion</li>
+                <li>$q$ is the complement of the population proportion</li>
+                <li>$\overline{p}$ is the pooled sample proportion</li>
+                <li>$\overline{q}$ is the complement of the pooled sample proportion</li>
+                <li>$s$ is the sample standard deviation</li>
+                <li>$s^2$ is the sample variance</li>
+                <li>$\sigma$ is the population standard deviation</li>
+                <li>$\sigma^2$ is the population variance</li>
+                <li>$x_1$ is the number of successes in the first sample</li>
+                <li>$x_2$ is the number of successes in the second sample</li>
+                <li>$\hat{p_1}$ is the first sample proportion</li>
+                <li>$\hat{p_2}$ is the second sample proportion</li>
+                <li>$\hat{q_1}$ is the complement of the first sample proportion</li>
+                <li>$\hat{q_2}$ is the complement of the second sample proportion</li>
+                <li>$\hat{p_c}$ is the critical value of the sample proportion</li>
+                <li>$p_a$ is the alternative proportion</li>
+                <li>$q_a$ is the complement of the alternative proportion</li>
+                <li>$p_1$ is the first population proportion</li>
+                <li>$p_2$ is the second population proportion</li>
+                <li>$SE$ is the standard error</li>
+                <li>$E$ is the margin of error</li>
+                <li>$\overline{x_1}$ is the first sample mean</li>
+                <li>$\overline{x_2}$ is the second sample mean</li>
+                <li>$\overline{x_c}$ is the critical value of the sample mean</li>
+                <li>$\overline{x_a}$ is the alternative mean</li>
+                <li>$\mu_1$ is the first population mean</li>
+                <li>$\mu_2$ is the second population mean</li>
+                <li>$s_1$ is the first sample standard deviation</li>
+                <li>$s_2$ is the second sample standard deviation</li>
+                <li>$\sigma_1$ is the first population standard deviation</li>
+                <li>$\sigma_2$ is the second population standard deviation</li>
+                <li>$s_1^2$ is the first sample variance</li>
+                <li>$s_2^2$ is the second sample variance</li>
+                <li>$s_p^2$ is the pooled sample variance</li>
+                <li>$\sigma_1^2$ is the first population variance</li>
+                <li>$\sigma_2^2$ is the second population variancen</li>
+                <li>$d$ is the individual difference between the two values in a single matched pair</li>
+                <li>$\mu_d$ is the mean of the differences for the population of all matched pairs of data</li>
+                <li>$\bar{d}$ is the mean value of the differences for the paired sample data</li>
+                <li>$s_d$ is the standard deviation of the differences for the paired sample data</li>
+                <li>$n_d$ is number of pairs of sample data</li>
+                <li>$O$ is the observed frequence of an outcome (found from the sample data)</li>
+                <li>$E$ is the expected frequency of an outcome (found by assuming the distribution as claimed)</li>
+                <li>$k$ is the number of different categories</li>
+                <li>$r$ is the sample Pearson's linear correlation coefficient</li>
+                <li>$\rho$ is the population Pearson's linear correlation coefficient
+                </li>
+            </ul>
+        </div>
+        <!-- End Symbols and Meanings -->
+
+        <!-- Formulas -->
+        <div class="w3-padding-32" id="formulas">
+            <h2 class="w3-padding-16">Formulas</h2>
+            <hr>
+            <div class="w3-container white w3-padding-32">
+                <p>
+                    Proportion is given as a decimal or a percentage. <br>
+                    If the significance level, $\alpha$ is not given, use $\alpha = 5\%$ <br>
+                    The null hypothesis should always have the 'equal' symbol <br>
+                    The alternative hypothesis has the 'unequal' symbol (less than, greater than, not equal to)
+                </p>
+                <h3>Probability of making a Type II error</h3>
+                <p>
+                    To calculate the probability of making a Type II error, $\beta$ <br>
+                    <b>As applicable:</b> <br>
+                    <b>First Step:</b> <br>
+                    Solve for the critical proportion using the critical $z$ OR <br>
+                    Solve for the critical mean using the critical $z$ OR <br>
+                    Solve for the critical mean using the critical $t$ <br><br>
+                    $
+                    (1.)\:\: z_{\dfrac{\alpha}{2}} = \dfrac{\hat{p_c} - p}{\sqrt{\dfrac{pq}{n}}} \\[10ex]
+                    (2.)\:\: \hat{p_c} = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{pq}{n}} + p \\[7ex]
+                    (3.)\:\: z_{\dfrac{\alpha}{2}} = \dfrac{\overline{x}_c - \mu}{\dfrac{\sigma}{\sqrt{n}}} \\[10ex]
+                    (4.)\:\: \overline{x_c} = z_{\dfrac{\alpha}{2}} * \dfrac{\sigma}{\sqrt{n}} + \mu \\[7ex]
+                    (5.)\:\: t_{\dfrac{\alpha}{2}} = \dfrac{\overline{x}_c - \mu}{\dfrac{s}{\sqrt{n}}} \\[10ex]
+                    (6.)\:\: \overline{x_c} = t_{\dfrac{\alpha}{2}} * \dfrac{s}{\sqrt{n}} + \mu \\[7ex]
+                    $
+                    <b>Second Step:</b> <br>
+                    Solve for the $z$ score using the alternative proportion OR <br>
+                    Solve for the $z$ score using the alternative mean OR <br>
+                    Solve for the $t$ score using the alternative mean <br><br>
+                    $
+                    (7.)\:\: z = \dfrac{\hat{p_c} - p_a}{\sqrt{\dfrac{p_a * q_a}{n}}} \\[10ex]
+                    (8.)\:\: z = \dfrac{\overline{x}_a - \mu}{\dfrac{\sigma}{\sqrt{n}}} \\[10ex]
+                    (9.)\:\: t = \dfrac{\overline{x}_a - \mu}{\dfrac{s}{\sqrt{n}}} \\[10ex]
+                    $
+                    <b>Third Step:</b> <br>
+                    Calculate the probability of $z$ OR <br>
+                    Calculate the probability of $t$
+                </p>
+                <br><br>
+
+                <h3>Power of a Hypothesis Test</h3>
+                <p>
+                    $
+                    (1.)\:\: P_{hyp} = 1 - \beta \\[3ex]
+                    $
+                </p>
+                <br><br>
+
+                <h3>Hypothesis Test about a Population Proportion</h3>
+                <p>
+                    If $p$ is not given, use $p = 50\%$
+                </p>
+                <p>
+                    $
+                    (1.)\:\: \hat{p} = \dfrac{x}{n} \\[7ex]
+                    (2.)\:\: p + q = 1 \\[5ex]
+                    (3.)\:\: z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[10ex]
+                    $
+                </p>
+
+                <h3>Hypothesis Test about Two Population Proportions</h3>
+                <p>
+                    The pooled sample proportion is used. <br>
+                    This means that the data is pooled to obtain the proportion of successess in both samples combined
+                    rather than separately (unpooled).
+                </p>
+                <p>
+                    $
+                    (1.)\:\: \hat{p_1} = \dfrac{x_1}{n_1} \\[7ex]
+                    (2.)\:\: \hat{p_2} = \dfrac{x_2}{n_2} \\[7ex]
+                    (3.)\:\: \overline{p} = \dfrac{x_1 + x_2}{n_1 + n_2} \\[7ex]
+                    (4.)\:\: \overline{q} = 1 - \overline{p} \\[5ex]
+                    (5.)\:\: z = \dfrac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\dfrac{\overline{p} *
+                    \overline{q}}{n_1} + \dfrac{\overline{p} * \overline{q}}{n_2}}} \\[10ex]
+                    $
+                </p>
+                <p>
+                    Because this is a pooled sample, we assume the null hypothesis as: <br><br>
+                    $
+                    H_0:\:\: p_1 = p_2 \:\:OR \\[3ex]
+                    H_0:\:\: p_1 - p_2 = 0 \\[3ex]
+                    \implies \\[3ex]
+                    (6.)\:\: z = \dfrac{\hat{p_1} - \hat{p_2}}{\sqrt{\dfrac{\overline{p} * \overline{q}}{n_1} +
+                    \dfrac{\overline{p} * \overline{q}}{n_2}}} \\[10ex]
+                    (7.)\:\: SE = \sqrt{\dfrac{\overline{p} * \overline{q}}{n_1} + \dfrac{\overline{p} *
+                    \overline{q}}{n_2}} \\[7ex]
+                    $
+                </p>
+
+                <h3>Confidence Interval Method about Two Population Proportions</h3>
+                <p>
+                    The unpooled sample proportion is used. <br>
+                    This means that the two sample proportions are treated separately.
+                    <br><br>
+                    $
+                    (1.)\:\: E = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{\hat{p_1} * \hat{q_1}}{n_1} + \dfrac{\hat{p_2} *
+                    \hat{q_2}}{n_2}} \\[7ex]
+                    $
+                    The confidence interval method of the difference of the population proportions is: <br><br>
+                    $(\hat{p_1} - \hat{p_2}) - E \lt (p_1 - p_2) \lt (\hat{p_1} - \hat{p_2}) + E \\[3ex]$
+                </p>
+
+                <h3>Hypothesis Test about a Population Mean</h3>
+                <p>
+                    <b>When $\sigma$ is known:</b> <br><br>
+                    $
+                    (1.)\:\: z = \dfrac{\overline{x} - \mu}{\dfrac{\sigma}{\sqrt{n}}} \\[10ex]
+                    $
+                    <b>When $\sigma$ is NOT known:</b>
+                    <br><br>
+                    $
+                    (2.)\:\: t = \dfrac{\bar{x} - \mu}{\dfrac{s}{\sqrt{n}}} \\[10ex]
+                    (3.)\:\: df = n - 1 \\[3ex]
+                    $
+                </p>
+
+                <h3>Hypothesis Test about Two Independent Population Means</h3>
+                <p>
+                    Two samples are <b>independent</b> if the sample values from one population are not related to, or
+                    natuarlly paired or paired with the sample values from the other population.
+                    <br><br>
+                    When <i>t</i> distribution is used <br>
+                    When $\sigma_1$ and $\sigma_2$ are unknown; and are NOT assumed to be equal
+                    <br><br>
+                    $
+                    (1.)\:\: t = \dfrac{(\overline{x_1} - \overline{x_2}) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{s_1^2}{n_1} +
+                    \dfrac{s_2^2}{n_2}}} \\[10ex]
+                    $
+                    <b>When $\mu_1 - \mu_2$ is assumed to be $0$:</b> <br><br>
+                    $
+                    (2.)\:\: t = \dfrac{\overline{x_1} - \overline{x_2}}{\sqrt{\dfrac{s_1^2}{n_1} + \dfrac{s_2^2}{n_2}}}
+                    \\[10ex]
+                    $
+                    <b>Simple Estimate of the Degrees of Freedom:</b> <br><br>
+                    $
+                    (3.)\:\: df = the\:\:smaller\:\:value\:\:of\:\:(n_1 - 1) \:\:and\:\: (n_2 - 1) \\[3ex]
+                    $
+                    <b>Difficult Estimate (More Accurate Estimate) of the Degrees of Freedom:</b> <br><br>
+                    $
+                    (4.)\:\: df = \dfrac{(A + B)^2}{\dfrac{A^2}{n_1 - 1} + \dfrac{B^2}{n_2 - 1}} \\[10ex]
+                    (5.)\:\: A = \dfrac{s_1^2}{n_1} \\[7ex]
+                    (6.)\:\: B = \dfrac{s_2^2}{n_2} \\[7ex]
+                    $
+                    When <i>t</i> distribution is used <br>
+                    When $\sigma_1$ and $\sigma_2$ are unknown; and are assumed to be equal <br>
+                    The pooled dample variance is used.
+                    <br><br>
+                    $
+                    (1.)\:\: t = \dfrac{(\overline{x_1} - \overline{x_2}) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{s_p^2}{n_1} +
+                    \dfrac{s_p^2}{n_2}}} \\[10ex]
+                    (2.)\:\: s_p^2 = \dfrac{s_1^2(n_1 - 1) + s_2^2(n_2 - 1)}{(n_1 - 1)(n_2 - 1)} \\[7ex]
+                    (3.)\:\: s_p = \sqrt{\dfrac{s_1^2(n_1 - 1) + s_2^2(n_2 - 1)}{(n_1 - 1)(n_2 - 1)}} \\[7ex]
+                    (4.)\:\: df = n_1 + n_2 - 2 \\[3ex]
+                    $
+                    <b>
+                        When $z$ distribution is used <br>
+                        When $\sigma_1$ and $\sigma_2$ are known
+                    </b> <br><br>
+                    $
+                    (1.)\:\: z = \dfrac{(\overline{x_1} - \overline{x_2}) - (\mu_1 -
+                    \mu_2)}{\sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}} \\[10ex]
+                    $
+                </p>
+
+                <h3>Confidence Interval about Two Independent Population Means</h3>
+                <p>
+                    <b>When $\sigma_1$ and $\sigma_2$ are unknown; and are NOT assumed to be equal</b> <br><br>
+                    The confidence interval method of the difference of the population means is: <br><br>
+                    $
+                    (1.)\:\: Confidence\:\:Interval\:\:is:\:\:(\overline{x_1} - \overline{x_2}) - E \lt (\mu_1 - \mu_2)
+                    \lt (\overline{x_1} - \overline{x_2}) + E \\[5ex]
+                    (2.)\:\: E = t_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{s_1^2}{n_1} + \dfrac{s_2^2}{n_2}} \\[7ex]
+                    $
+                    <b>Simple Estimate of the Degrees of Freedom:</b> <br><br>
+                    $
+                    (3.)\:\: df = the\:\:smaller\:\:value\:\:of\:\:(n_1 - 1) \:\:and\:\: (n_2 - 1) \\[3ex]
+                    $
+                    <b>Difficult Estimate (More Accurate Estimate) of the Degrees of Freedom:</b> <br><br>
+                    $
+                    (4.)\:\: df = \dfrac{(A + B)^2}{\dfrac{A^2}{n_1 - 1} + \dfrac{B^2}{n_2 - 1}} \\[10ex]
+                    (5.)\:\: A = \dfrac{s_1^2}{n_1} \\[7ex]
+                    (6.)\:\: B = \dfrac{s_2^2}{n_2} \\[7ex]
+                    $
+
+                    <b>When $\sigma_1$ and $\sigma_2$ are unknown; and are NOT assumed to be equal</b> <br><br>
+                    The confidence interval method of the difference of the population means is: <br><br>
+                    $
+                    (1.)\:\: Confidence\:\:Interval\:\:is:\:\:(\overline{x_1} - \overline{x_2}) - E \lt (\mu_1 - \mu_2)
+                    \lt (\overline{x_1} - \overline{x_2}) + E \\[5ex]
+                    (2.)\:\: E = t_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{s_p^2}{n_1} + \dfrac{s_p^2}{n_2}} \\[7ex]
+                    (3.)\:\: s_p^2 = \dfrac{s_1^2(n_1 - 1) + s_2^2(n_2 - 1)}{(n_1 - 1)(n_2 - 1)} \\[7ex]
+                    (4.)\:\: s_p = \sqrt{\dfrac{s_1^2(n_1 - 1) + s_2^2(n_2 - 1)}{(n_1 - 1)(n_2 - 1)}} \\[7ex]
+                    (5.)\:\: df = n_1 + n_2 - 2 \\[3ex]
+                    $
+                    <b>
+                        When $z$ distribution is used <br>
+                        When $\sigma_1$ and $\sigma_2$ are known
+                    </b> <br><br>
+                    The confidence interval method of the difference of the population means is: <br><br>
+                    $
+                    (1.)\:\: Confidence\:\:Interval\:\:is:\:\:(\overline{x_1} - \overline{x_2}) - E \lt (\mu_1 - \mu_2)
+                    \lt (\overline{x_1} - \overline{x_2}) + E \\[5ex]
+                    (2.)\:\: E = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}
+                    \\[7ex]
+                    $
+                </p>
+
+                <h3>Hypothesis Test about Two Dependent Population Means</h3>
+                <p>
+                    Two samples are <b>dependent</b> if the sample values are somehow matched, where the matching is
+                    based on some meaningful
+                    relationship. <br>
+                    Each pair of sample values consists of two measurements from the same subject (such as
+                    <b>before/after</b> data), or each pair
+                    of sample values consists of matched pairs (such as <b>husband/wife</b> data). <br><br>
+                    $
+                    (1.)\:\: t = \dfrac{\overline{d} - \mu_d}{\dfrac{s_d}{\sqrt{n}}} \\[7ex]
+                    (2.)\:\: df = n - 1 \\[3ex]
+                    $
+                </p>
+
+                <h3>Confidence Interval about Two Dependent Population Means</h3>
+                The confidence interval method of the difference of the population means is: <br><br>
+                <p>
+                    $
+                    (1.)\:\: Confidence\:\:Interval\:\:is:\:\: \overline{d} - E \lt \mu_d \lt \overline{d} + E \\[5ex]
+                    (2.)\:\: E = t_{\dfrac{\alpha}{2}} * \dfrac{s_d}{\sqrt{n}} \\[5ex]
+                    $
+                </p>
+
+                <h3>Hypothesis Test about a Population Standard Deviation</h3>
+                <p>
+                    <b>Normally Distributed Population</b> <br><br>
+                    $
+                    (1.)\;\; \chi^2 = \dfrac{s^2(n - 1)}{\sigma^2} \\[5ex]
+                    $
+                </p>
+
+                <h3>Goodness-of-Fit Test</h3>
+                <p>
+                    $
+                    (1.)\:\: \chi^2 = \Sigma \dfrac{(O - E)^2}{E} \\[7ex]
+                    (2.)\:\: df = k - 1 \\[3ex]
+                    $
+                </p>
+
+
+                <h3>Correlation</h3>
+                <p>
+                    <b>Two Samples</b> <br><br>
+                    <b>First Formula for the Pearson Correlation Coefficient</b> <br><br>
+                    $
+                    (1.)\:\: r = \dfrac{\Sigma \left(\dfrac{x - \overline{x}}{s_x}\right)\left(\dfrac{y -
+                    \overline{y}}{s_y}\right)}{n - 1} \\[10ex]
+                    (2.)\:\: r = \dfrac{\Sigma(z_x)(z_y)}{n - 1} \\[5ex]
+                    $
+                    <b>Second Formula for the Pearson Correlation Coefficient</b> <br><br>
+                    $
+                    (1.)\:\: r = \dfrac{n(\Sigma xy) - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2} *
+                    \sqrt{n(\Sigma y^2) - (\Sigma y)^2}} \\[7ex]
+                    $
+                    <b>Critical Value of the Correlation Coefficient</b> (Use for Critical Value method) <br><br>
+                    $
+                    (1.)\:\: Critical\:\:value\:\:of\:\:r = \sqrt{\dfrac{t^2}{t^2 + df}} \\[7ex]
+                    (where\:\:t-values\:\:are\:\:from\:\:the\:\:Critical\:\:t\:\:Table) \\[3ex]
+                    (2.)\:\: df = n - 2 \\[3ex]
+                    $
+                    <b>Test Statistic of the Correlation Coefficient</b> (Use for P-value method) <br><br>
+                    $
+                    (1.)\:\: t = \dfrac{r}{\sqrt{\dfrac{1 - r^2}{n - 2}}} \\[7ex]
+                    $
+                </p>
+
+            </div>
+        </div>
+        <!-- End Formulas -->
+
+
+        <!-- Decision, Conclusion, and Interpretation -->
+        <div class="w3-padding-32" id="decision">
+            <h2 class="w3-padding-16">Decision, Conclusion, and Interpretation</h2>
+            <hr>
+            <div class="w3-container white w3-padding-32">
+                <p>
+                    <b><mark>NOTE:</mark></b> <br>
+                    (1.) Use $z$ or $t$ as necessary <br><br>
+                    (2.) For the interpretations, replace <b>proportion</b> with <b>mean</b> as applicable. <br><br>
+                    <u>Unless your professor says otherwise:</u> <br>
+                    (3.) Use only these terms for the <b>Decision</b> <br>
+                    (a.) Reject the null hypothesis <br>
+                    (b.) Do not reject the null hypothesis. <br>
+                    (c.) Fail to reject the null hypothesis. <br>
+                    (b.) and (c.) means the same thing. <br><br>
+                    <i>
+                        Keep in mind that we are dealing with the <b>null hypothesis</b> <br>
+                        You either reject the null hypothesis or you do not reject the null hypothesis. <br>
+                        We do not accept the null hypothesis. <br>
+                        We just do not reject it. <br>
+                        The fact that we do not reject it does not mean that we accept it. <br>
+                        Hence, the need for the conclusion and the interpretation.
+                    </i> <br><br>
+                    (4.) Use only these terms for the <b>Conclusion</b> <br>
+                    (a.) There is sufficient evidence to support/warrant the rejection of the null hypothesis. <br>
+                    (b.) There is sufficient evidence to reject the null hypothesis. <br>
+                    (c.) There is sufficient evidence to support/warrant the claim of the alternative hypothesis. <br>
+                    (d.) There is insufficient evidence to support/warrant the rejection of the null hypothesis. <br>
+                    (e.) There is insufficient evidence to reject the null hypothesis. <br>
+                    (f.) There is insufficient evidence to support/warrant the claim of the alternative hypothesis. <br>
+                    (a.), (b.), and (c.) means the same thing. <br>
+                    (d.), (e.), and (f.) means the same thing.
+                </p>
+                <br><br>
+                <p>
+                    <b>
+                        <mark>IMPORTANT:</mark> <br>
+                        (1.) For: <br>
+                        Hypothesis Test about a Population Proportion OR <br>
+                        Hypothesis Test about a Population Mean <br>
+                        Use $z$ table <br><br>
+                        (2.) For: <br>
+                        Hypothesis Test about a Population Mean (whose Population Standard Deviation is not known) <br>
+                        Use $t$ table <br><br>
+                        (3.) For: <br>
+                        Hypothesis Test about a Population Variance OR <br>
+                        Hypothesis Test about a Population Standard Deviation <br>
+                        use $\chi^2$ table
+                    </b>
+                </p>
+
+                <h3>Critical Value Method or Classical Approach</h3>
+                <b>Left-tailed Tests</b>
+                <p>
+                    Find $-z_{\dfrac{\alpha}{2}}$ <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $z \lt -z_{\dfrac{\alpha}{2}}$, it falls in the critical region <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is
+                    <b>significantly less</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>significantly less</b> than the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $z \gt -z_{\dfrac{\alpha}{2}}$, it does not fall in the critical region <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is <b>NOT
+                        significantly less</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>NOT significantly less</b> than the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <b>Right-tailed Tests</b>
+                <p>
+                    Find $z_{\dfrac{\alpha}{2}}$ <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $z \gt z_{\dfrac{\alpha}{2}}$, it falls in the critical region <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is
+                    <b>significantly more</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>significantly more</b> than the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $z \lt z_{\dfrac{\alpha}{2}}$, it does not fall in the critical region <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is <b>NOT
+                        significantly more</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>NOT significantly more</b> than the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <b>Two-tailed Tests</b>
+                <p>
+                    Find $-z_{\dfrac{\alpha}{2}}$ and $z_{\dfrac{\alpha}{2}}$ <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $z \lt -z_{\dfrac{\alpha}{2}}$ OR $z \gt z_{\dfrac{\alpha}{2}}$, it falls in the critical region
+                    <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the <i>rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is
+                    <b>significantly different</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>significantly different</b> from the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $-z_{\dfrac{\alpha}{2}} \lt z \lt z_{\dfrac{\alpha}{2}}$, it does not fall in the critical region
+                    <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to warrant the <i>rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is <b>NOT
+                        significantly different</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>NOT significantly different</b> from the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <h3>P-Value (Probability-Value) Approach</h3>
+                <b>Left-tailed Tests</b>
+                <p>
+                    Find $P(z \lt -test\:\:statistic)$ <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $P-value \le \alpha$ <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is
+                    <b>significantly less</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>significantly less</b> than the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $P-value \gt \alpha$ <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is <b>NOT
+                        significantly less</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>NOT significantly less</b> than the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <b>Right-tailed Tests</b>
+                <p>
+                    Find $P(z \gt test\:\:statistic)$ <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $P-value \le \alpha$ <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is
+                    <b>significantly more</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>significantly more</b> than the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $P-value \gt \alpha$ <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to support the <i>claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is <b>NOT
+                        significantly more</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>NOT significantly more</b> than the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <b>Two-tailed Tests</b>
+                <p>
+                <p>
+                    Find $P(z \lt -test\:\:statistic) + P(z \gt test\:\:statistic)$ <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $P-value \le \alpha$ <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the <i>rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is
+                    <b>significantly different</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>significantly different</b> from the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $P-value \gt \alpha$ <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to warrant the <i>rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation for One-Sample:</b> The population proportion for the <i>variable</i> is <b>NOT
+                        significantly different</b> than the stated value. <br><br>
+                    <b>Interpretation for Two-Samples:</b> The population proportion for the <i>first sample</i> is
+                    <b>NOT significantly different</b> from the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+
+                <h3>Confidence Interval Method</h3>
+                <b>One Sample: Two-Tailed Tests</b>
+                <p>
+                    Construct a confidence interval using: $CL = 1 - 2\alpha$ <br>
+                    Determine the confidence interval using an appropriate confidence level <br><br>
+                    <b>Condition $1$</b> <br>
+                    If the confidence interval <b>does NOT</b> the value of the population parameter stated in the null
+                    hypothesis: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>warrant the rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The confidence interval <b>does NOT</b> contain the value of the
+                    <i>population parameter</i> stated in
+                    the null hypothesis <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If the confidence interval contains the value of the population parameter stated in the null
+                    hypothesis: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The confidence interval contains the value of the <i>population parameter</i>
+                    stated in
+                    the null hypothesis
+                </p> <br><br>
+
+                <b>Two Samples: Left-tailed Tests</b>
+                <p>
+                    Construct a confidence interval using: $CL = 1 - \alpha$ <br>
+                    Determine the confidence interval using an appropriate confidence level <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $Lower\:\:Confidence\:\:Limit \lt 0$ AND $Upper\:\:Confidence\:\:Limit \lt 0$:
+                    the confidence interval does not contain $0$ <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The population proportion for the <i>first sample</i> is <b>significantly
+                        less</b> than the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $Lower\:\:Confidence\:\:Limit \lt 0$ AND $Upper\:\:Confidence\:\:Limit \gt 0$:
+                    the confidence interval contains $0$ <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The population proportion for the <i>first sample</i> is <b>NOT significantly
+                        less</b> than the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <b>Two Samples: Right-tailed Tests</b>
+                <p>
+                    Construct a confidence interval using: $CL = 1 - \alpha$ <br>
+                    Determine the confidence interval using an appropriate confidence level <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $Lower\:\:Confidence\:\:Limit \gt 0$ AND $Upper\:\:Confidence\:\:Limit \gt 0$:
+                    the confidence interval does not contain $0$ <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The population proportion for the <i>first sample</i> is <b>significantly
+                        more</b> than the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $Lower\:\:Confidence\:\:Limit \lt 0$ AND $Upper\:\:Confidence\:\:Limit \gt 0$:
+                    the confidence interval contains $0$ <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of the alternative
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The population proportion for the <i>first sample</i> is <b>NOT significantly
+                        more</b> than the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+                <b>Two Samples: Two-tailed Tests</b>
+                <p>
+                    Construct a confidence interval using: $CL = 1 - \alpha$ <br>
+                    Determine the confidence interval using an appropriate confidence level <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $Lower\:\:Confidence\:\:Limit \lt 0$ AND $Upper\:\:Confidence\:\:Limit \lt 0$ OR
+                    $Lower\:\:Confidence\:\:Limit \gt 0$ AND $Upper\:\:Confidence\:\:Limit \gt 0$
+                    the confidence interval does not contain $0$ <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>warrant the rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The population proportion for the <i>first sample</i> is <b>significantly
+                        different</b> from the
+                    population proportion for the <i>second sample</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $Lower\:\:Confidence\:\:Limit \lt 0$ AND $Upper\:\:Confidence\:\:Limit \gt 0$:
+                    the confidence interval contains $0$ <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>warrant the rejection of the null
+                        hypothesis</i> <br><br>
+                    <b>Interpretation:</b> The population proportion for the <i>first sample</i> is <b>NOT significantly
+                        different</b> from the
+                    population proportion for the <i>second sample</i>
+                </p> <br><br>
+
+
+                <h3>Correlation: Critical Value Method or Classical Approach</h3>
+                <b>Two Samples: Left-tailed Tests</b>
+                <p>
+                    Calculate the Pearson correlation coefficient <br>
+                    Calculate the critical value of the Pearson correlation coefficient <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $r \lt 0$ AND $r \lt Critical\:\:value\:\:of\:\:r$: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of a negative linear
+                        correlation</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $r \lt 0$ AND $r \gt Critical\:\:value\:\:of\:\:r$: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of a negative linear
+                        correlation</i>
+                </p> <br><br>
+
+                <b>Two Samples: Right-tailed Tests</b>
+                <p>
+                    Calculate the Pearson correlation coefficient <br>
+                    Calculate the critical value of the Pearson correlation coefficient <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $r \gt 0$ AND $r \gt Critical\:\:value\:\:of\:\:r$: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of a positive linear
+                        correlation</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $r \gt 0$ AND $r \lt Critical\:\:value\:\:of\:\:r$: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of a positive linear
+                        correlation</i>
+                </p> <br><br>
+
+                <b>Two Samples: Two-tailed Tests</b>
+                <p>
+                    Calculate the Pearson correlation coefficient <br>
+                    Calculate the critical value of the Pearson correlation coefficient <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $|r| \gt Critical\:\:value\:\:of\:\:r$: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of a linear correlation</i>
+                    <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $|r| \le Critical\:\:value\:\:of\:\:r$: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of a linear
+                        correlation</i>
+                </p> <br><br>
+
+
+                <h3>Correlation: P-Value Method</h3>
+                <b>Two Samples: Left-tailed Tests</b>
+                <p>
+                    Calculate the Pearson correlation coefficient <br>
+                    Calculate the test statistic <br>
+                    Determine the probability value (p-value) of the test statistic <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $r \lt 0$ AND $P-value \le \alpha$: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of a negative linear
+                        correlation</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $r \lt 0$ AND $P-value \gt \alpha$: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of a negative linear
+                        correlation</i>
+                </p> <br><br>
+
+                <b>Two Samples: Right-tailed Tests</b>
+                <p>
+                    Calculate the Pearson correlation coefficient <br>
+                    Calculate the test statistic <br>
+                    Determine the probability value (p-value) of the test statistic <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $r \gt 0$ AND $P-value \le \alpha$: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of a positive linear
+                        correlation</i> <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $r \gt 0$ AND $P-value \gt \alpha$: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of a positive linear
+                        correlation</i>
+                </p> <br><br>
+
+                <b>Two Samples: Two-tailed Tests</b>
+                <p>
+                    Calculate the Pearson correlation coefficient <br>
+                    Calculate the test statistic <br>
+                    Determine the probability value (p-value) of the test statistic <br><br>
+                    <b>Condition $1$</b> <br>
+                    If $P-value \le \alpha$: <br><br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to <i>support the claim of a linear correlation</i>
+                    <br><br>
+
+                    <b>Condition $2$</b> <br>
+                    If $P-value \gt \alpha$: <br><br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to <i>support the claim of a linear
+                        correlation</i>
+                </p> <br><br>
+
+
+            </div>
+        </div>
+        <!-- End Decision, Conclusion, and Interpretation -->
+
+        <!-- Tables -->
+        <div class="w3-padding-32">
+            <div class="w3-container white w3-padding-32">
+
+                <div class="w3-padding-32 w3-center" id="NormalDistributionTableLeftShaded">
+                    <h4>Standard Normal Distribution Table (Left-Shaded Area)</h4>
+                    <p>
+                        <img src="images/Tables/normal-distribution-negative-left-shaded-area.png"
+                            alt="Normal Distribution Area: Left Shaded: Negative"> <br>
+                        <img src="images/Tables/normal-distribution-positive-left-shaded-area.png"
+                            alt="Normal Distribution Area: Left Shaded: Positive"> <br>
+                        <object data="images/Tables/Normal-Distribution-Table-left-shaded-area.pdf" width="1300"
+                            height="700"></object>
+                    </p>
+                </div>
+
+                <div class="w3-padding-32 w3-center" id="NormalDistributionTableCenterShaded">
+                    <h4>Standard Normal Distribution Table (Center-Shaded Area)</h4>
+                    <p>
+                        <img src="images/Tables/normal-distribution-center-shaded-area.png"
+                            alt="Normal Distribution Area: Center Shaded"> <br><br>
+                        <img src="images/Tables/normal-distribution-table-center-shaded-area.png"
+                            alt="Normal Distribution Table: Center Shaded">
+                    </p>
+                </div>
+
+                <div class="w3-padding-32 w3-center" id="tDistributionTable">
+                    <h4>t Distribution Table</h4>
+                    <p>
+                        <object data="images/Tables/t-table.pdf" width="1300" height="700"></object>
+                    </p>
+                </div>
+
+                <div class="w3-padding-32 w3-center" id="criticalValuesPearsonDF">
+                    <h4>Critical Values of the Pearson Correlation Coefficient (based on Degrees of Freedom)</h4>
+                    <p>
+                        <object
+                            data="images/Tables/critical-values-Pearson-correlation-coefficient-based-on-degrees-freedom.pdf"
+                            width="1300" height="700"></object>
+                    </p>
+                </div>
+
+                <div class="w3-padding-32 w3-center" id="criticalValuesPearsonSampleSize">
+                    <h4>Critical Values of the Pearson Correlation Coefficient (based on Sample Size)</h4>
+                    <p>
+                        <object
+                            data="images/Tables/critical-values-Pearson-correlation-coefficient-based-on-sample-size.pdf"
+                            width="1300" height="700"></object>
+                    </p>
+                </div>
+
+                <div class="w3-padding-32 w3-center" id="criticalValuesSpearman">
+                    <h4>Critical Values of the Spearman's Rank Correlation Coefficient</h4>
+                    <p>
+                        <object data="images/Tables/critical-values-Spearman-correlation-coefficient.pdf" width="1300"
+                            height="700"></object>
+                    </p>
+                </div>
+
+                <div class="w3-padding-32" id="criticalValuesChiSquare1">
+                    <h4>Critical Values of the Chi-Square Distribution: Part 1 (Common)</h4>
+                    <table class="w3-center chiSquare">
+                        <caption>Probability less than the Critical Value</caption>
+                        <tr>
+                            <td style="width: 15%;">
+                                Confidence Level (Percent)
+                            </td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">1%</td>
+                            <td style="width: 14%;">5%</td>
+                            <td style="width: 14%;">10%</td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">90%</td>
+                            <td style="width: 14%;">95%</td>
+                            <td style="width: 14%;">99%</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15%;">
+                                Confidence Level (Decimal)
+                            </td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">0.01</td>
+                            <td style="width: 14%;">0.05</td>
+                            <td style="width: 14%;">0.1</td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">0.9</td>
+                            <td style="width: 14%;">0.95</td>
+                            <td style="width: 14%;">0.99</td>
+                        </tr>
+                        <tr>
+                            <td colspan="9"><b>OR</b></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15%;">
+                                Significance Level (Percent)
+                            </td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">99%</td>
+                            <td style="width: 14%;">95%</td>
+                            <td style="width: 14%;">90%</td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">10%</td>
+                            <td style="width: 14%;">5%</td>
+                            <td style="width: 14%;">1%</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 15%;">
+                                Significance Level (Decimal)
+                            </td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">0.99</td>
+                            <td style="width: 14%;">0.95</td>
+                            <td style="width: 14%;">0.9</td>
+                            <td style="width: 0.5%;"></td>
+                            <td style="width: 14%;">0.1</td>
+                            <td style="width: 14%;">0.05</td>
+                            <td style="width: 14%;">0.01</td>
+                        </tr>
+                        <tr>
+                            <th style="width: 15%;">
+                                Critical
+                                Values $\rightarrow$ <br>
+                                Degrees of
+                                Freedom $\downarrow$
+                            </th>
+                            <th style="width: 0.5%;"></th>
+                            <th style="width: 42%;" colspan="3">Lower-tail Critical Values</th>
+                            <th style="width: 0.5%;"></th>
+                            <th style="width: 42%;" colspan="3">Upper-tail Critical Values</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td style="width: 0.5%;"></td>
+                            <td>0.00016</td>
+                            <td>0.00393</td>
+                            <td>0.01579</td>
+                            <td style="width: 0.5%;"></td>
+                            <td>2.70554</td>
+                            <td>3.84146</td>
+                            <td>6.63490</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td>0.02010</td>
+                            <td>0.10259</td>
+                            <td>0.21072</td>
+                            <td></td>
+                            <td>4.60517</td>
+                            <td>5.99146</td>
+                            <td>9.21034</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td>0.11483</td>
+                            <td>0.35185</td>
+                            <td>0.58437</td>
+                            <td></td>
+                            <td>6.25139</td>
+                            <td>7.81473</td>
+                            <td>11.34487</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td>0.29711</td>
+                            <td>0.71072</td>
+                            <td>1.06362</td>
+                            <td></td>
+                            <td>7.77944</td>
+                            <td>9.48773</td>
+                            <td>13.27670</td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Tables -->
+
+        <!-- Statistical Software: Texas Instrument (TI) calculators -->
+        <div class="w3-container w3-padding-32" id="TI-calculators">
+            <h2 class="w3-padding-16">Statistical Software: Texas Instrument (TI) calculators</h2>
+            <hr>
+            <div class="white w3-padding">
+                <h5>One-Sample Proportion</h5>
+                <p>
+                    <img src="images/Software/TexasInstruments/one-sampleProportion.png" alt="One-Sample Proportion">
+                </p>
+
+                <h5>One-Sample Mean</h5>
+                <p>
+                    <i>z</i> test: <img src="images/Software/TexasInstruments/one-sampleMeanZ.png"
+                        alt="One-Sample Mean">
+                    <br>
+                    OR
+                    <br>
+                    <i>t</i> test: <img src="images/Software/TexasInstruments/one-sampleMeanT.png"
+                        alt="One-Sample Mean">
+                </p>
+
+
+
+
+
+
+                <h5>Goodness-of-Fit Test</h5>
+                <p>
+                    <img src="images/Software/TexasInstruments/goodness-of-fit.png" alt="Goodness-of-Fit">
+                </p>
+
+
+
+            </div>
+        </div>
+        <!-- End Statistical Software: Texas Instrument (TI) calculators -->
+
+        <!-- References -->
+        <div class="w3-container white w3-padding-32" id="references">
+            <div class="w3-content">
+                <h4>References</h4>
+
+                Chukwuemeka, Samuel Dominic (2023). <i>Hypothesis Testing</i>
+                Retrieved from <a href="https://statistical-science.appspot.com/"
+                    target="_blank">https://statistical-science.appspot.com/</a>
+                <br><br>
+                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.).
+                New Jersey: Wiley
+                <br><br>
+                Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through
+                    data</i> (3rd ed.). Pearson.
+                <br><br>
+                Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
+                <br><br>
+                OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
+                Retrieved from <a href="https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12"
+                    target="_blank">https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12</a>
+                <br><br>
+                Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed Decisions using Data with an Introduction to
+                    Mathematics of Finance</i>
+                (2nd custom ed.). Boston: Pearson Learning Solutions.
+                <br><br>
+                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i>
+                (5th ed.). Boston: Pearson
+                <br><br>
+                Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                <br><br>
+                Weiss, Neil A. (2015). <i>Elementary Statistics</i> (9th ed.). Boston: Pearson
+                <br><br>
+                Datasets - Data.gov. (2012). Data.Gov. https://catalog.data.gov/dataset
+                <br><br>
+                DLAP Website. (n.d.). Curriculum.gov.mt.
+                https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+                <br><br>
+                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                <br><br>
+                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                <br><br>
+                KCSE Past Papers by Subject with Answers-Marking Schemes. (n.d.). ATIKA SCHOOL.
+                Retrieved June 16, 2022, from https://www.atikaschool.org/kcsepastpapersbysubject
+                <br><br>
+                Netrimedia. (2022, May 2). ICSE 10th Board Exam Previous Papers- Last 10 Years. Education Observer.
+                https://www.educationobserver.com/icse-class10-previous-papers/
+                <br><br>
+                NSC Examinations. (n.d.). www.education.gov.za.
+                https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                <br><br>
+                School Curriculum and Standards Authority (SCSA): K-12. Past ATAR Course Examinations. Retrieved
+                December 10, 2021,
+                from https://senior-secondary.scsa.wa.edu.au/further-resources/past-atar-course-exams
+                <br><br>
+                Normal Distribution Table (Left Shaded Area):
+                https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf
+                <br><br>
+                Normal Distribution Table (Center Shaded Area):
+                https://itl.nist.gov/div898/handbook/eda/section3/eda3671.htm
+                <br><br>
+                Spearman Ranked Correlation Table. (n.d.).
+                http://webspace.ship.edu/pgmarr/geo441/tables/spearman%20ranked%20correlation%20table.pdf
+                <br><br>
+                <b><i>t</i></b> Distribution Table: https://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
+                <br><br>
+                1.3.6.7.4. Critical Values of the Chi-Square Distribution. (n.d.). Itl.Nist.Gov. Retrieved June 17,
+                2020, from
+                https://itl.nist.gov/div898/handbook/eda/section3/eda3674.htm
+            </div>
+        </div>
+        <!-- End References -->
+    </div>
+    <!-- End Page Content -->
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 black w3-center w3-xlarge">
+        <div class="w3-xlarge w3-padding-16">
+            <!-- Google Translate -->
+            <div id="google_translate_element" class="w3-center"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+        <p>&copy; 2017&nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/messages10.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+</body>
+
+</html>

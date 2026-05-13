@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Probability</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD JESUS CHRIST. We are experts in probability.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
+              algebra, statistics, probability, events, classical method, empirical method, probabilities, odds of an event,
+              odds in favor, odds against, independent events, dependent events, mutually exclusive events, mutually 
+              inclusive events, complementary events, laws of probability, conditional probability, Bayes theorem, coins, 
+              dice, cards, deterministic phenomenon, random phenomenon, random experiment, outcome, success, failure, 
+              sample space, event space, theoretical probability, rare event rule, rules of probability, with replacement,
+              without replacement, tree diagrams, Punnett squares, law of large numbers">
+
+    <link href="styles/probability.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body class="w3-content" style="max-width:1200px">
+
+    <!-- Side bar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+
+        <div class="w3-padding-16">
+            <i onclick="w3_close()" class="w3-display-middle"></i>
+            <img src="images/samuelchukwuemeka.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                title="Samuel Dominic Chukwuemeka (Samdom For Peace)"
+                style="height: 150px; width: 150px; text-align: center">
+            <!--
+                <a href="https://www.samuelchukwuemeka.com/" title="Samuel Chukwuemeka" target="_blank">
+                    <img src="images/samuelchukwuemeka.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" style="height: 150px; width: 150px; text-align: center">
+                </a>
+            -->
+        </div>
+
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <div class="w3-padding-16">
+            <!--<a href="#quotes" class="w3-bar-block w3-button">Quotes</a> <br>-->
+            <a href="#greeting" class="w3-bar-block w3-button">Greeting</a> <br>
+            <a href="#overview" class="w3-bar-block w3-button">Overview</a> <br>
+            <!--<a href="https://www.youtube.com/playlist?feature=edit_ok&list=PLjyyswMG9g9ABGozDjAziFm20IgOQSSyc&disable_polymer=true" target="_blank" class="w3-bar-block w3-button">Videos</a> <br>-->
+            <a href="#introduction" class="w3-bar-block w3-button">Introduction</a> <br>
+            <a href="#coins" class="w3-bar-block w3-button">Coins</a> <br>
+            <a href="#dice" class="w3-bar-block w3-button">Dice</a> <br>
+            <a href="#cards" class="w3-bar-block w3-button">Cards</a> <br>
+            <a onclick="events()" href="javascript:void(0)" class="w3-button w3-bar-block w3-white w3-left-align"
+                id="events">
+                Events <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="eventTypes" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#independentEvents" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right w3-margin-right"></i>Independent</a>
+                <a href="#dependentEvents" class="w3-bar-block w3-button">Dependent</a>
+                <a href="#mutuallyExclusiveEvents" class="w3-bar-item w3-button">Mutually Exclusive</a>
+                <a href="#mutuallyInclusiveEvents" class="w3-bar-item w3-button">Mutually Inclusive</a>
+                <a href="#complementaryEvents" class="w3-bar-block w3-button">Complementary</a>
+                <a href="#oddsEvent" class="w3-bar-item w3-button">Odds of an Event</a>
+                <a href="#usualUnusualEvent" class="w3-bar-item w3-button">Usual and Unusual</a>
+            </div>
+            <br>
+            <a onclick="rules()" href="javascript:void(0)" class="w3-button w3-bar-block w3-white w3-left-align"
+                id="rules">
+                Rules <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="rulesProbability" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#multiplicationRule" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right w3-margin-right"></i>Multiplication</a>
+                <a href="#additionRule" class="w3-bar-block w3-button">Addition</a>
+                <a href="#complementaryRule" class="w3-bar-block w3-button">Complementary</a>
+                <a href="#rareEventRule" class="w3-bar-block w3-button">Rare Event</a>
+            </div>
+            <br>
+            <a href="https://statistical-science.appspot.com/Probability/probabilityApplications.html" target="_blank"
+                class="w3-bar-block w3-button">Solved Examples</a>
+            <!--
+                <a href="#conditionalProbability" class="w3-bar-item w3-button">Conditional Probability</a>
+                <a href="#bayesTheorem" class="w3-bar-block w3-button">Bayes' Theorem</a> <br>
+                <a onclick="examples()" href="javascript:void(0)" class="w3-button w3-bar-block w3-white w3-left-align" id="examples">
+                    Solved Examples <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="solvedExamplesProbability" class="w3-bar-block w3-hide w3-padding-large">
+                    <a href="https://www.chukwuemekasamuel.com/Probability/probabilityApplications.html" target="_blank" class="w3-bar-block w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Part 1</a>
+                    <a href="https://www.samuelchukwuemeka.com/SNHU-MAT130/module5homework.html" target="_blank" class="w3-bar-block w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Part 2</a>
+                    <a href="https://www.samuelchukwuemeka.com/SNHU-MAT130/module6homework.html" target="_blank" class="w3-bar-block w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Part 3</a>
+                    <a href="https://www.samuelchukwuemeka.com/SNHU-MAT130/module6exam.html" target="_blank" class="w3-bar-block w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Part 4</a>
+                    <a href="https://www.chukwuemekasamuel.com/Probability/oddsEvents.html" target="_blank" class="w3-bar-block w3-button">Odds of Events</a>
+                </div>
+                <br>
+                <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-block w3-button w3-padding">Portfolio</a> <br>
+                <a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-block w3-button w3-padding">Contact</a> <br>
+            -->
+            <br>
+            <a href="#references" class="w3-bar-block w3-button">References</a>
+        </div>
+    </nav>
+
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Quotes of the Day -->
+        <header class="w3-container w3-xlarge w3-padding-32 silver" id="quotes">
+            <!--
+                <div class="w3-content">
+                    <div class="w3-center">
+                        <button class="bibleQuotes" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+                    </div>
+                    <div class="quoteDay w3-content" id="solutionQuotes">
+                        <p>
+                            <q>
+                                If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                                <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                                It is the <b>most powerful prayer</b>.
+                                A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                            </q> - Samuel Dominic Chukwuemeka 
+                        </p>
+                        <p id="messages"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                        <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+                    </div>
+                </div>
+
+                
+                <div class="w3-content" id="solutionQuotes">
+                    <p>
+                        <q>
+                            If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                            <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                            It is the <b>most powerful prayer</b>.
+                            A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                        </q> - Samuel Dominic Chukwuemeka 
+                    </p>
+                    <p id="messages"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                    <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+                </div>
+            -->
+        </header>
+        <!-- End Quotes of the Day -->
+
+        <!-- Image header -->
+        <div class="w3-display-container w3-container" id="greeting">
+            <img src="images/probability.png" alt="probability" title="Samuel Chukwuemeka (Samdom For Peace)"
+                style="width:100%">
+            <!--
+                <a href="https://www.chukwuemekasamuel.com/" target="_blank">
+                    <img src="images/probability.png" alt="probability" title="Samuel Chukwuemeka (Samdom For Peace)" style="width:100%">
+                </a>
+            -->
+            <br><br>
+
+            <h1>Welcome to Probability</h1>
+            <p>
+                <span id="greetings"></span> <br>
+                I greet you this day,
+                <script>document.write(Date() + ".");</script> <br>
+                <u>First:</u> read the notes. <br>
+                <u>Second:</u> view the videos. <br>
+                <u>Third:</u> solve the questions/solved examples. <br>
+                <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may
+                contact me. <br>
+                If you are my student, please do not contact me here. Contact me via the school's system. Thank you for
+                visiting!!!
+            </p>
+            <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: medium">B.Eng.,
+                    A.A.T, M.Ed., M.S</span></p>
+        </div>
+
+
+        <!-- Overview -->
+        <div class="w3-container" id="overview">
+            <h2>Objectives</h2>
+            <p>
+                <u>Students will:</u> <br><br>
+                (1.) Discuss the meaning of probability. <br>
+                (2.) Determine the probability of an event. <br>
+                (3.) Compute the probabilities of events using the classical method. <br>
+                (4.) Compute the probabilities of events using the empirical method. <br>
+                (5.) Discuss scenarios related to probability including coins, dice, and cards among others. <br>
+                (6.) Discuss the role of probability in life decisions including marriage among others. <br>
+                (7.) Illustrate the sample spaces of events using probability tree diagrams. <br>
+                (8.) Illustrate the sample spaces of events using Punnett squares. <br>
+                (9.) Interpret the probabilities of events. <br>
+                (10.) Determine the odds in favor of an event. <br>
+                (11.) Determine the odds against an event. <br>
+                (12.) Discuss the types of events. <br>
+                (13.) Apply the rules of probability. <br>
+                (14.) Solve applied problems involving probability. <br>
+                (15.) Discuss conditional probability. <br>
+                (16.) Solve applied problems involving conditional probability. <br>
+                (17.) Discuss Bayes' theorem. <br>
+            </p>
+            <h2>Mathematicians who did extensive work on Probability</h2>
+            <p>
+                (1.) Gregor Mendel : Mendelian Laws of Genetics : Roman Catholic Monk : Austrian <br>
+                (2.) Reverend Thomas Bayes : Bayes Theorem/Conditional Probability : British <br>
+                (3.) Reginald Punnett : Punnett Square : British <br>
+                (4.) Girolamo Cardano : Italian <br>
+                (5.) Pafnuty Chebyshev : Chebyshev's Theorem : Russian <br>
+                (6.) Andrey Markov : Markov Chain : Russian <br>
+                (7.) Andrey Kolmogorov : Russian <br>
+                (8.) Pierre de Fermat : France <br>
+                (9.) Pierre Simon de Laplace : France <br>
+                (10.) Blaise Pascal : France <br>
+                ***Honorable Mention : Evang. Samuel Dominic Chukwuemeka (SamDom For Peace) : The Humble Teacher
+            </p>
+            <p>
+                Okay, great people - please let me know whether I taught this topic well. <br>
+                Did you learn anything from me? &#x263A;&#x263A;&#x263A;
+            </p>
+            <h2>Scenarios Related to Probability / Vocabulary Words</h2>
+            <p>
+                <b>Bring it to English Language:</b> probably, chance, odds, odds of winning, odds of losing, placing
+                bets,
+                gambling, sweepstakes, raffle tickets, door prizes, cards, coins, dice, result, success, failure,
+                events,
+                set, dependent, independent, possible, impossible, odds, odds in favor, odds against, <br><br>
+                <b>Bring it to Science:</b> phenomenon, random, experiment, outcome, theoretical, classical, empirical,
+                theorem, rule, law, <br><br>
+                <b>Bring it to Mathematics:</b> probability, sample space, event space, mutually exclusive, mutually
+                inclusive,
+                inclusive, with replacement, without replacement, addition law, multiplication law, inequality
+            </p>
+            <p>
+                <i>
+                    <u>Check for Prior Knowledge</u> <br>
+                    Ask students to list all the ways/terms/scenarios in which they have used the word,
+                    <b>Probability</b> or <b>any word associated with Probability</b>
+                </i>
+            </p>
+            <p>
+                (1.) <b>Religion/Christianity:</b> The <u>probability</u> that JESUS CHRIST will come again to judge all
+                mankind is 100%$ (1). <br><br>
+                (2.) <b>Meteorology:</b> The National Weather Service predicted a
+                <a href="http://forecast.weather.gov/MapClick.php?textField1=34.24&textField2=-85.17#.WnP38UxFyUk"
+                    target="_blank">70% <u>chance</u> of precipitation </a> in Peachtree City, GA on the Saturday
+                night of 3rd February, 2018. <br><br>
+                (3.) <b>Gambling/Gaming:</b> What are the <u>odds in favor</u> of winning the Powerball lottery?
+                <br><br>
+                (4.) <b>Gambling/Gaming:</b> What are the <u>odds against</u> winning the Mega Milions lottery? <br><br>
+                (5.) <b>Biology:</b> The <u>probability</u> of seeing a chair that gives birth to a human being is
+                0% (0). <br><br>
+                (6.) <b>Statistics:</b> It is generally known that one with a higher degree will earn more than another
+                with a lower degree or no degree at all. <br>
+                According to the <a href="https://www.bls.gov/careeroutlook/2015/article/wage-differences.htm"
+                    target="_blank">Bureau of Labor Statistics</a>, one of the reasons for varying wages is Credentials.
+                <br>
+                What is the <u>probability</u> that a randomly selected resident of the State of New Hampshire earns
+                more than the minimum income for middle class according to
+                <a href="https://www.cnbc.com/2017/03/30/how-much-you-have-to-earn-to-be-considered-middle-class-in-every-state.html"
+                    target="_blank">CNBC</a> <u>given that</u> the person has an advanced degree? <br>
+                Did you notice the underlined, "given that"? What is the probability that an event will occur given that
+                a prior event occurred? <br>
+                This is known as <u>Conditional Probability.</u>
+                <br><br>
+                (7.) <b>Criminology:</b> Have you heard of a: <u>true positive</u>? <u>true negative</u>?
+                <u>false positive</u>? <u>false negative</u>? <br>
+                Is it possible for someone who is drug-free to test positive for drug-use? - Of course, it is possible.
+                <br>
+                Remember we are humans. Science helps us to avoid mistakes. With the advancement of science and
+                technology, the "probability" of making those mistakes are small. <br>
+                But, we still make mistakes because we are humans. We have limitations. Do you see another reason of
+                using "probability"? <br>
+                Is it also possible for someone who uses drugs to test negative for drug-use? - Of course, it is also
+                possible. <br><br>
+                and much more scenarios ...
+            </p>
+        </div>
+        <!-- End Overview -->
+
+        <br><br>
+
+        <!-- Introduction -->
+        <div class="w3-container" id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Let us define and explain several terms that we shall use in this topic.
+
+                <br><br>
+
+                <b>Deterministic Phenomenon:</b> is a phenomenon that you can predict the outcome based on the
+                information you know. <br>
+                For example: Assume you went to the Walmart store at a certain location to buy oranges. <br>
+                Say the oranges were marked at $\$2.00$ per pound. <br>
+                If you want to purchase $6$ pounds of oranges, how much would you pay?
+
+                <br><br>
+
+                <b>Random Phenomenon:</b> is a phenomenon that you cannot predict the outcome. <br>
+                These include: the toss of a fair die, the pick of the winning numbers of a lottery ticket, and the
+                toss of a fair coin among others.
+
+                <br><br>
+
+                <b>Random Experiment:</b> is the observation or measurement of a random phenomenon. <br>
+                For example: forecasting the probability of earthquakes by observing the periods of occurrence, etc.
+                <br>
+                A computer or some type of randomizing device is used to help achieve randomness. <br>
+                Computer-generated random numbers are also known as pseudo-random numbers because they are generated by
+                a seed value that starts the random sequence.
+
+                <br><br>
+
+                <b>Outcome:</b> is the result of an experiment.
+
+                <br><br>
+
+                <b>Success:</b> is a favorable outcome. <br>
+                Assume you want to get a head whenever you toss a coin. <br>
+                If you toss a coin and get a head, then it is success. <br>
+                If you toss a coin and get a tail, then it is failure.
+
+                <br><br>
+
+                <b>Failure:</b> is an unfavorable outcome.
+
+                <br><br>
+
+                <b>Sample Space:</b> is the set of all possible outcomes of a random experiment. <br>
+                It is generally denoted by $S$
+
+                <br><br>
+
+                <b>Event Space:</b> is a subset of the sample space which is also a set of some of all outcomes. <br>
+                It is the set of the outcomes we want to find. <br>
+                It is generally denoted by $E$
+
+                <br><br>
+
+                <b>Events:</b> We have five main types of events in Probability. <br>
+                (1.) Dependent Events <br>
+                (2.) Independent Events <br>
+                (3.) Mutually Exclusive Events <br>
+                (4.) Mutually Inclusive Events <br>
+                (5.) Complementary Events <br><br>
+                Please click on the "Events" link on the Left Hand Side ($LHS$) for further explanations.
+
+                <br><br>
+
+                <b>Probability:</b> of an event is the measure of the likelihood of the event. <br>
+                OR <br>
+                <b>Probability:</b> of an event is the measure of the success of the event. <br><br>
+                The <b>probability of an event</b> can be expressed as a <b>fraction</b>, <b>decimal</b>, or
+                <b>percent.</b> <br>
+                $20\%$ chance or rain means that the probability that rain will fall is: <br>
+                $20\%$ OR $\dfrac{20}{100} = \dfrac{1}{5}$ OR $\dfrac{20}{100} = 0.2$ <br><br>
+                So, $P(raining) = \dfrac{1}{5} \:\:or\:\: 0.2 \:\:or\:\: 20\%$ <br><br><br>
+                The <b>Inequality Range:</b> is $0 \le P(E) \le 1$ <br><br>
+                The probability of an impossible event (an event that will never happen) is $0$ <br>
+                The probability of a sure event (an event that must happen) is $1$ <br>
+                Therefore, the probability of any event is from $0$ through $1$ <br>
+                $0$ and $1$ are the two extremes for the probability of an event. <br>
+                This means that if you are asked to calculate the probability of any event; if your answer is less
+                than $0$ or greater than $1$, then it is incorrect.
+
+                <br><br>
+
+                We can classify Probability as: <br>
+                (1.) Theoretical or Classical Probability <br>
+                (2.) Empirical or Experimental Probability
+
+                <br><br>
+
+                <b>Theoretical or Classical Probability:</b> is the probability of an event in which each outcome of the
+                event has an equal likelihood of occurrence. <br>
+                It is not based on an experiment. <br>
+                It is based on the relative frequency at which an event happens after infinitely many repetitions. <br>
+                The probability of an event, say $E$ is generally denoted by $P(E)$ <br><br>
+                $
+                P(E) = \dfrac{number\:\: of\:\: required\:\: outcomes}{number\:\: of\:\: possible\:\: outcomes} \\[5ex]
+                \rightarrow P(E) = \dfrac{cardinality\:\: of\:\: event\:\: space}{cardinality\:\: of\:\: sample\:\:
+                space} \\[5ex]
+                \rightarrow P(E) = \dfrac{n(E)}{n(S)}
+                $
+
+                <br><br>
+
+                <mark>NOTE:</mark>
+                For most calculations involving probabilities, it is recommended that you do not simplify until the
+                final answer. <br><br>
+                <i>
+                    Please explain the examples/cases where this recommendation is needed...cases of
+                    <b>with replacement and without replacement conditions, addition rule, etc.</b>
+                </i>
+
+                <br><br>
+
+                <u>Example 1:</u> <b>JAMB</b> A man kept 6 black, 5 brown, and 7 purple shirts in a drawer. <br>
+                What is the probability of his picking a purple shirt with his eyes closed?
+                <br><br>
+                $
+                A.\:\: \dfrac{1}{7} \\[5ex]
+                B.\:\: \dfrac{11}{18} \\[5ex]
+                C.\:\: \dfrac{7}{18} \\[5ex]
+                D.\:\: \dfrac{7}{11}
+                $
+            </p>
+
+            <button class="solutions" onclick="solutions('solutionP1')">Show/Hide Answer</button>
+            <div class="result" id="solutionP1">
+                <br>
+                $
+                \underline{Define\:\:variables} \\[3ex]
+                Let: \\[3ex]
+                black = B \\[3ex]
+                brown = R \\[3ex]
+                purple = P \\[3ex]
+                \underline{Write\:\:the\:\:cardinalities} \\[3ex]
+                n(B) = 6 \\[3ex]
+                n(R) = 5 \\[3ex]
+                n(P) = 7 \\[3ex]
+                n(S) = 6 + 5 + 7 = 18 \\[3ex]
+                \underline{Use\:\:Formula\:\:to\:\:find\:\:the \:\:Probability} \\[3ex]
+                P(P) = \dfrac{n(P)}{n(S)} \\[5ex]
+                P(P) = \dfrac{7}{18}
+                $
+            </div>
+
+            <p>
+                <u>Example 2:</u> <b>JAMB</b> Find the probability that a number selected at random from 40 to
+                50 is a prime.
+                <br><br>
+                $
+                A.\:\: \dfrac{3}{11} \\[5ex]
+                B.\:\: \dfrac{5}{11} \\[5ex]
+                C.\:\: \dfrac{3}{10} \\[5ex]
+                D.\:\: \dfrac{4}{11}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionP2')">Show/Hide Answer</button>
+            <div class="result" id="solutionP2">
+                <br>
+                Recall: What are prime numbers? <br><br>
+                $
+                \underline{Define\:\:variable} \\[3ex]
+                Let: \\[3ex]
+                event\:\:of\:\:selecting\:\:a\:\:prime\:\:number\:\:from\:\:40-50 = E \\[3ex]
+                \underline{List\:\:elements\:\:of\:\:the\:\:Sample\:\:Space\:\:and\:\:the\:\:Event\:\:space} \\[3ex]
+                S = \{40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50\} \\[3ex]
+                E = \{41, 43, 47\} \\[3ex]
+                \underline{Write\:\:the\:\:cardinalities} \\[3ex]
+                n(S) = 11 \\[3ex]
+                n(E) = 3 \\[3ex]
+                \underline{Use\:\:Formula\:\:to\:\:find\:\:the \:\:Probability} \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(P) = \dfrac{3}{11}
+                $
+            </div>
+
+            <p>
+                <u>Example 3: Bring it to Geometry</u> <b>JAMB</b> Find the probability of selecting a figure which
+                is parallelogram from a square, a rectangle, a rhombus, a kite and a trapezium.
+                <br><br>
+                $
+                A.\:\: \dfrac{3}{5} \\[5ex]
+                B.\:\: \dfrac{2}{5} \\[5ex]
+                C.\:\: \dfrac{4}{5} \\[5ex]
+                D.\:\: \dfrac{1}{5}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionP3')">Show/Hide Answer</button>
+            <div class="result" id="solutionP3">
+                <br>
+                Recall: From Geometry: <br><br>
+                (1.) All Squares are Parallelograms but NOT all Parallelograms are Squares. <br>
+                This means that we can always get a parallelogram from a square because all squares are parallelograms
+                <br><br>
+                (2.) All Rectangles are Parallelograms but NOT all Parallelograms are Rectangles. <br>
+                So, we can get a parallelogram from a rectangle because all rectangles are parallelograms <br><br>
+                (3.) All Rhombi are Parallelograms but all Parallelograms are NOT Rhombi. <br>
+                Therefore, we can get a parallelogram from a rhombus because all rhombi are parallelograms <br><br>
+                (4.) Kites are NOT Parallelograms. <br>
+                So, we cannot get a parallelogram from a kite because kites are not parallelograms <br><br>
+                (5.) Trapeziums are NOT Parallelograms. <br>
+                In that sense, we cannot get a parallelogram from a trapezium because trapeziums are not parallelograms
+                <br><br>
+                $
+                \underline{Define\:\:variable} \\[3ex]
+                Let: \\[3ex]
+                event\:\:of\:\:selecting\:\:a\:\:parallelogram\:\:from\:\:those\:\:shapes = E \\[3ex]
+                \underline{List\:\:elements\:\:of\:\:the\:\:Sample\:\:Space\:\:and\:\:the\:\:Event\:\:space} \\[3ex]
+                S = \{Square, Rectangle, Rhombus, Kite, Trapezium\} \\[3ex]
+                E = \{Square, Rectangle, Rhombus\} \\[3ex]
+                \underline{Write\:\:the\:\:cardinalities} \\[3ex]
+                n(S) = 5 \\[3ex]
+                n(E) = 3 \\[3ex]
+                \underline{Use\:\:Formula\:\:to\:\:find\:\:the \:\:Probability} \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(P) = \dfrac{3}{5}
+                $
+            </div>
+
+            <p>
+                <b>Empirical or Experimental Probability:</b> is the probability of an event in which each outcome of
+                the event does not have an equal likelihood of occurrence. <br>
+                It is based on short-run relative frequencies. <br>
+                Experiments are needed. <br>
+                The experiments used to produce empirical probabilities are known as simulations. <br><br>
+                $
+                P(E) = \dfrac{number\:\: of\:\: times\:\: the\:\: event\:\: occurred}{number\:\: of\:\: times\:\:
+                the\:\: experiment\:\: was\:\: performed}
+                $
+
+                <br><br>
+
+                <b>Simulations:</b> are the experiments used to produce empirical probabilities. <br>
+                When using a similation tom estimate a probability, it is recommended that at least 100 trials
+                be done. <br><br>
+
+                The <b>Law of Large Numbers</b> states that if an experiment with a random outcome is repeated a
+                large numberof times, the empirical probability of an event is likely to be close to the true
+                probability. <br>
+                This implies that the larger the number of repetitions, the closer the empirical probability is
+                to the true probability.
+
+                <br><br>
+
+                A <b>Fair Die:</b> is a die in which all the outcomes are equally likely.
+
+                <br><br>
+
+                A <b>Loaded Die:</b> is a die in which a certain outcome/some certain outcomes is/are more likely. <br>
+                All the outcomes are not equally likely.
+
+                <br><br>
+
+                <b>Tests</b> <br>
+                In testing for marijuana and for most applicable tests: <br><br>
+                (1.) A <b>False Positive</b> means that the applicant <b>did not use it <u>but</u> tested positive for
+                    it.</b> <br>
+                Some examples of false positive tests and the causes are found here: <a
+                    href="https://www.webmd.com/drug-medication/ss/slideshow-drugs-false-positive-test"
+                    target="_blank">here - by WebMD</a> <br><br>
+                (2.) A <b>False Negative</b> means that the applicant <b>used it <u>but</u> tested negative for it.</b>
+                <br><br>
+                (3.) A <b>True Positive</b> means that the applicant <b>used it <u>and</u> tested positive for it.</b>
+                <br><br>
+                (4.) A <b>True Negative</b> means that the applicant <b>did not use it <u>and</u> tested negative for
+                    it.</b>
+
+                <br><br>
+
+                <b>Inequalities Used/Terms Used</b> <br>
+                (1.) <b>At least</b> $5$ means $\ge 5$ <br>
+                It means that the <b>minimum should be $5$</b> <br><br>
+
+                (2.) <b>At most</b> $5$ means $\le 5$ <br>
+                It means that the <b>maximum should be $5$</b> <br><br>
+
+                (3.) <b>Just</b> $5$ means $= 5$ <br>
+                It means <b>exactly $5$</b> or <b>equal to $5$</b> <br><br>
+
+                (4.) <b>More than</b> $5$ means $\gt 5$ <br><br>
+
+                (5.) <b>Less than</b> $5$ means $\lt 5$ <br><br>
+
+                (6.) <b>No more than</b> $5$ means $\le 5$ <br>
+                It should not be more than $5$ <br>
+                It means $5$ or less <br><br>
+
+                (7.) <b>No less than</b> $5$ means $\ge 5$ <br>
+                It should not be less than $5$ <br>
+                It means $5$ or more <br><br>
+            </p>
+
+        </div>
+        <!-- End Introduction -->
+
+
+
+        <!-- Events -->
+        <div class="w3-container" id="independentEvents">
+            <h2>Independent Events</h2>
+            <p>
+                <b>Two events are independent</b> if the probability of one event does not affect the probability of the
+                other event. <br>
+                <u>For example:</u> Say a bag contains $5$ red marbles, $3$ green marbles, and $4$ blue marbles. <br>
+                Let: <br><br>
+                $
+                Red = R \\[3ex]
+                Green = G \\[3ex]
+                Blue = B \\[3ex]
+                n(R) = 5 \\[3ex]
+                n(G) = 3 \\[3ex]
+                n(B) = 4 \\[3ex]
+                S = \{5R, 3G, 4B\} \\[3ex]
+                n(S) = 5 + 3 + 4 = 12 \\[3ex]
+                $
+                <u>Event A:</u> Samuel draws a marble from the bag. <br>
+                It is a blue marble. <br>
+                He does not like blue marbles. <br>
+                So, he puts the marble back into the bag ... "With Replacement" condition <br><br>
+                $
+                P(B) = \dfrac{n(B)}{n(S)} = \dfrac{4}{12} = \dfrac{1}{3} \\[5ex]
+                $
+                <u>Event B:</u> Samuel draws another marble from the bag. <br>
+                It is a green marble. <br><br>
+                $
+                P(G) = \dfrac{n(G)}{n(S)} = \dfrac{3}{12} = \dfrac{1}{4} \\[5ex]
+                $
+                We see that Events $A$ and $B$ are independent. <br>
+                The probability of event $B$ occurring is not affected in any way by the probability of the occurrence
+                of event $A$. <br>
+                This is because of the <b>With Replacement</b> condition. <br>
+                Samuel put that first pick back into the bag. So, all the marbles are complete prior to the second pick.
+            </p>
+        </div>
+        <div class="w3-container" id="dependentEvents">
+            <h2>Dependent Events</h2>
+            <p>
+                <b>Two events are dependent</b> if the probability of one event affects the probability of the
+                other event. <br>
+                <u>For example:</u> Say a bag contains $5$ red marbles, $3$ green marbles, and $4$ blue marbles. <br>
+                Let: <br><br>
+                $
+                Red = R \\[3ex]
+                Green = G \\[3ex]
+                Blue = B \\[3ex]
+                n(R) = 5 \\[3ex]
+                n(G) = 3 \\[3ex]
+                n(B) = 4 \\[3ex]
+                S = \{5R, 3G, 4B\} \\[3ex]
+                n(S) = 5 + 3 + 4 = 12 \\[3ex]
+                $
+                <u>Event C:</u> Samuel draws a marble from the bag. <br>
+                It is a blue marble. <br>
+                He does not like blue marbles. <br>
+                However, rather than putting it back into the bag, he throws the marble away. <br>
+                So, the sample space has been affected. $n(S) = 11$ rather than $12$ <br>
+                This is because he threw the marble away ... "Without Replacement" condition <br><br>
+                <u>Event D:</u> Samuel draws another marble from the bag. <br>
+                It is a green marble. <br><br>
+                $
+                P(B) = \dfrac{n(B)}{n(S)} = \dfrac{4}{12} = \dfrac{1}{3} \\[5ex]
+                Without\:\: Replacement \\[3ex]
+                S = \{5R, 3G, 3B\} \\[3ex]
+                n(S) = 5 + 3 + 3 = 11 \\[3ex]
+                P(G) = \dfrac{n(G)}{n(S)} = \dfrac{3}{11} \\[5ex]
+                $
+                We see that the probability of picking a green marble was affected by the probability that a blue marble
+                was picked earlier. <br>
+                The event of picking the blue marble resulted in the decision to throw it away. <br>
+                Throwing it away affects the sample space, and hence any other event/pick <br>
+                Event $D$ was dependent on Event $C$ <br>
+                Events $C$ and $D$ are dependent events. <br>
+                This is because of the <b>Without Replacement</b> condition. <br>
+                Samuel did not replace the first pick. So, a marble was missing prior to the second pick. <br><br>
+                <mark>Are there situations where we treat dependent events as independent events?</mark> <br>
+                Yes. <br>
+                It is known as the <b>$\boldsymbol{5\%}$ Guideline for Treating Dependent Events as Independent
+                    Events</b> <br>
+                It states that: If the sample size is no more than (less than or equal to) $5\%$ of the population size,
+                treat the
+                selections as being independent. <br>
+                $n \le 0.05N$
+            </p>
+
+            <p>
+                <u>Example 1:</u> <b>JAMB</b> A bag contains $4$ white balls and $6$ red balls. <br>
+                Two balls are taken from the bag without replacement. <br>
+                What is the probability that they are both red?
+                <br><br>
+                $
+                A.\:\: \dfrac{1}{3} \\[5ex]
+                B.\:\: \dfrac{2}{9} \\[5ex]
+                C.\:\: \dfrac{2}{15} \\[5ex]
+                D.\:\: \dfrac{1}{5} \\[5ex]
+                E.\:\: \dfrac{3}{5}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionDE1')">Show/Hide Answer</button>
+            <div class="result" id="solutionDE1">
+                <br>
+                $
+                Let\:\: red = R \\[3ex]
+                n(R) = 6 \\[3ex]
+                white = W \\[3ex]
+                n(W) = 4 \\[3ex]
+                n(S) = 6 + 4 = 10 \\[3ex]
+                P(R) = \dfrac{n(R)}{n(S)} \\[5ex]
+                P(R) = \dfrac{6}{10} \\[5ex]
+                Two\:\:marbles\:\:picked \\[3ex]
+                Without\:\:replacement\:\:condition \\[3ex]
+                P(RR) = \dfrac{6}{10} * \dfrac{5}{9} \\[5ex]
+                P(RR) = \dfrac{1}{3}
+                $
+            </div>
+
+        </div>
+        <div class="w3-container" id="mutuallyExclusiveEvents">
+            <h2>Mutually Exclusive Events</h2>
+            <p>
+                <b>Two events are mutually exclusive</b> if they cannot occur at the same time. <br>
+                The events are also said to be <b>disjoint events</b> <br>
+                <u>For example:</u> In a single toss of a fair coin; the event of having a head, say Event $E$ and the
+                event of having a tail, say Event $F$ at the same time are mutually exclusive. <br>
+                In a single toss of a fair coin, one can either get a head or a tail, but not both. <br>
+                Recall this topic in Logic:
+                <i>XOR</i> - Exclusive OR (Either or but not both) <br>
+                For Mutually Exclusive Events, $P(E \cap F) = 0$
+            </p>
+        </div>
+        <div class="w3-container" id="mutuallyInclusiveEvents">
+            <h2>Mutually Inclusive Events</h2>
+            <p>
+                <b>Two events are mutually inclusive</b> if they can occur at the same time. <br>
+                <u>For example:</u> In a single toss of a fair die; the event of having an odd number, say Event $G$ and
+                the
+                event of having a prime number, say Event $H$ at the same time are mutually inclusive.
+            </p>
+        </div>
+        <div class="w3-container" id="complementaryEvents">
+            <h2>Complementary Events</h2>
+            <p>
+                <b>Two events are complementary</b> if one event is the complement or prime of the other event. <br>
+                The sum of the probabilities of an event and it's complement is $1$ <br>
+                The complement of an event, say $J$ is denoted by $J^c$ or $J'$ <br>
+                Let us review some examples.
+            </p>
+            <table class="w3-center">
+                <tr>
+                    <th class="green">Event $J$</th>
+                    <th class="green">Complement of Event $J$ is $J'$ or $J^c$</th>
+                </tr>
+                <tr>
+                    <td>John will play the piano</td>
+                    <td>John will not play the piano</td>
+                </tr>
+                <tr>
+                    <td>The couple will have <u>at least 1</u> girl</td>
+                    <td>The couple will have <u>no</u> girl (all boys)</td>
+                </tr>
+                <tr>
+                    <td>The couple will have <u>at least 2</u> boys</td>
+                    <td>The couple will have <u>less than 2</u> boys</td>
+                </tr>
+                <tr>
+                    <td>The couple will have <u>at most 3</u> boys</td>
+                    <td>The couple will have <u>more than 3</u> boys</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w3-container" id="oddsEvent">
+            <h2>Odds of an Event</h2>
+            <p>
+                The <b>Odds of an Event</b> is the ratio of the number of ways the event can occur to the number of
+                ways the event cannot occur. <br><br>
+                $
+                Odds\:\:of\:\:an\:\:event =
+                \dfrac{number\:\:of\:\:favorable\:\:outcomes}{number\:\:of\:\:unfavorable\:\:outcomes} \\[5ex]
+                $
+                The odds of an event can be in favor of the event occurring, or against the event occurring. <br><br>
+                $
+                Odds\:\:in\:\:favor =
+                \dfrac{probability\:\:that\:\:event\:\:will\:\:occur}{probability\:\:that\:\:event\:\:will\:\:not\:\:occur}
+                = \dfrac{P(E)}{P(E')} \\[5ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E') = \dfrac{n(E')}{n(S)} \\[5ex]
+                \rightarrow Odds\:\:in\:\:favor = P(E) \div P(E') \\[3ex]
+                Odds\:\:in\:\:favor = \dfrac{n(E)}{n(S)} \div \dfrac{n(E')}{n(S)} \\[5ex]
+                Odds\:\:in\:\:favor = \dfrac{n(E)}{n(S)} * \dfrac{n(S)}{n(E')} \\[5ex]
+                \rightarrow Odds\:\:in\:\:favor = \dfrac{n(E)}{n(E')} \\[5ex]
+                Odds\:\:against =
+                \dfrac{probability\:\:that\:\:event\:\:will\:\:not\:\:occur}{probability\:\:that\:\:event\:\:will\:\:occur}
+                = \dfrac{P(E')}{P(E)} \\[5ex]
+                \rightarrow Odds\:\:against = P(E') \div P(E) \\[3ex]
+                Odds\:\:against = \dfrac{n(E')}{n(S)} \div \dfrac{n(E)}{n(S)} \\[5ex]
+                Odds\:\:against = \dfrac{n(E')}{n(S)} * \dfrac{n(S)}{n(E)} \\[5ex]
+                \rightarrow Odds\:\:against = \dfrac{n(E')}{n(E)}
+                $
+            </p>
+        </div>
+        <div class="w3-container" id="usualUnusualEvent">
+            <h2>Usual and Unusual Events</h2>
+            <p>
+                In general; if the probability of an event is at least $5\%$ ($0.05$ or more), the event is usual.
+                <br><br>
+                In general (but depending on the situation); if the probability of an event is less than $5\%$ (less
+                than $0.05$), the event is
+                unusual. <br>
+                What situation does this depend? <br>
+                For example: In a life and death situation where a defendant is to be sentenced if guilty or released if
+                innocent;
+                the jurors need to be $\underline{100\%}$ <u>certain</u> of any decision they make. If the jurors are
+                $96\%$ certain
+                that the defendant is guilty, this means that the probability that the defendant is not guilty is $4\%$
+                (less than
+                $5\%$). According to the $5\%$ rule, this implies that it is not usual that the defendant is not guilty.
+                <br>
+                But, what if the defendant is innocent? In this case that involves life or death, the event is not
+                unusual. <br>
+                LIFE IS PRECIOUS!!!
+            </p>
+        </div>
+        <!-- End Events -->
+
+        <br><br>
+
+        <!-- Rules of Probability -->
+        <div class="w3-container" id="multiplicationRule">
+            <h2>Multiplication Rule</h2>
+            <p>
+                <b>Multiplication Rule</b> goes with <b>AND</b> <br>
+                Say we have two events: Event $A$ and Event $B$; what is the probability that both Event $A$ and
+                Event $B$ occur? <br>
+                Notice the "and"
+            </p>
+            <p>
+                The <b>Multiplication Rule of Probability</b> states that: Given two events, say Event $A$ and Event
+                $B$;
+                the probability that both event $A$ <b>AND</b> event $B$ occur is equal to the product of the
+                individual probabilities of their occurrences. <br><br>
+                $
+                P(A\:\:\:AND\:\:\:B) = P(A) * P(B|A) \\[3ex]
+                P(A \cap B) = P(A) * P(B|A) \\[3ex]
+                P(A\:\:\:AND\:\:\:B) = P(A \cap B) \\[3ex]
+                $
+                $P(B|A)$ is read as: the probability of event $B$ given event $A$ <br><br>
+                For <u>Independent Events</u> <br><br>
+                $
+                P(B|A) = P(B) \\[3ex]
+                \rightarrow P(A\:\:\:AND\:\:\:B) = P(A) * P(B) \\[3ex]
+                $
+                For <u>Dependent Events</u> <br><br>
+                $
+                P(B|A) = P(B|A) \\[3ex]
+                \rightarrow P(A\:\:\:AND\:\:\:B) = P(A) * P(B|A)
+                $
+            </p>
+            <p>
+                <u>Example 1:</u> <b>ACT</b> The probabilities that each of 2 independent events will occur are
+                given in the table below.
+            </p>
+            <table class="w3-center">
+                <tr>
+                    <th>Event</th>
+                    <th>Probability</th>
+                </tr>
+                <tr>
+                    <td>
+                        A <br>
+                        $0.20$
+                    </td>
+                    <td>
+                        B <br>
+                        $0.40$
+                    </td>
+                </tr>
+            </table>
+            <p>
+                What is the probability that both Events $A$ and $B$ will occur - that is, $P(A\:\:and\:\:B)$ ?<br><br>
+                $
+                F.\:\: 0.08 \\[3ex]
+                G.\:\: 0.20 \\[3ex]
+                H.\:\: 0.30 \\[3ex]
+                J.\:\: 0.50 \\[3ex]
+                K.\:\: 0.60
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionMR1')">Show/Hide Answer</button>
+            <div class="result" id="solutionMR1">
+                <br>
+                $
+                P(A\:\:\:AND\:\:\:B) = P(A) * P(B) ...Multiplication\:\:Rule\:\:for\:\:Independent\:\:Events \\[3ex]
+                P(A\:\:\:AND\:\:\:B) = 0.20(0.40) \\[3ex]
+                P(A\:\:\:AND\:\:\:B) = 0.08
+                $
+            </div>
+
+        </div>
+        <div class="w3-container" id="additionRule">
+            <h2>Addition Rule</h2>
+            <p>
+                <b>Addition Rule</b> goes with <b>OR</b> <br>
+                Say we have two events: Event $A$ and Event $B$; what is the probability that either Event $A$ or
+                Event $B$ occurs? <br>
+                Notice the "or"
+            </p>
+            <p>
+                The <b>Addition Rule of Probability</b> states that: Given two events, say Event $A$ and Event $B$;
+                the probability that event $A$ <b>OR</b> event $B$ occur is equal to the probability that event $A$
+                occurs plus the probability that event $B$ occurs minus the probability that both events $A$ and $B$
+                occur. <br><br>
+                <u>Recall:</u> <br>
+                Based on the Definition of the union of two sets say set $A$ and set $B$; <br>
+                <i>
+                    Do you see the relationship between Sets and Probability <br>
+                    We are using our knowledge of Sets on Probability
+                </i> <br>
+                $n(A \cup B) = n(A) + n(B) - n(A \cap B)$ <br><br>
+                Bring it to Probability <br>
+                Divide each term by $n(S)$ <br><br>
+                $
+                \dfrac{n(A \cup B)}{n(S)} = \dfrac{n(A)}{n(S)} + \dfrac{n(B)}{n(S)} - \dfrac{n(A \cap B)}{n(S)} \\[5ex]
+                P(A \cup B) = P(A) + P(B) - P(A \cap B) \\[3ex]
+                P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - P(A\:\:\:AND\:\:\:B) \\[3ex]
+                $
+                For <u>Independent Events</u> <br><br>
+                $
+                P(B|A) = P(B) \\[3ex]
+                \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - [P(A) * P(B)] \\[3ex]
+                $
+                For <u>Dependent Events</u> <br><br>
+                $
+                P(B|A) = P(B|A) \\[3ex]
+                \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - [P(A) * P(B|A)] \\[3ex]
+                $
+                For <u>Mutually Exclusive Events (Disjoint Events)</u> <br><br>
+                $
+                P(A \cap B) = 0 \\[3ex]
+                P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - 0 \\[3ex]
+                \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B)
+                $
+            </p>
+            <p>
+                <u>Example 1:</u> <b>ACT</b> The probability that Event <i>A</i> will occur is 0.2 <br>
+                The probability that Event <i>B</i> will occur is 0.6 <br>
+                Given that Events <i>A</i> and <i>B</i> are mutually exclusive, what is the probability that Event
+                <i>A</i> <b>OR</b>
+                Event <i>B</i> will occur?
+                <br><br>
+                $
+                F.\:\: 0.12 \\[3ex]
+                G.\:\: 0.2 \\[3ex]
+                H.\:\: 0.3 \\[3ex]
+                J.\:\: 0.4 \\[3ex]
+                K.\:\: 0.8
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionAR1')">Show/Hide Answer</button>
+            <div class="result" id="solutionAR1">
+                <br>
+                $
+                P(A\:\:\:OR\:\:\:B) = P(A) + P(B)...Addition\:\:Rule\:\:for\:\:Mutually\:\:Exclusive\:\:Events \\[3ex]
+                P(A\:\:\:OR\:\:\:B) = P(A) + P(B) \\[3ex]
+                P(A\:\:\:OR\:\:\:B) = 0.2 + 0.6 \\[3ex]
+                P(A\:\:\:OR\:\:\:B) = 0.8
+                $
+            </div>
+
+        </div>
+        <div class="w3-container" id="complementaryRule">
+            <h2>Complementary Rule</h2>
+            <p>
+                <b>Complementary Rule</b> applies only to <b>Complementary Events</b> <br>
+                Say we have an events: Event $A$ <br>
+                The complement of Event $A$ is $A'$ <br><br>
+                $
+                P(A) + P(A') = 1 \\[3ex]
+                \rightarrow P(A') = 1 - P(A)
+                $
+            </p>
+            <p>
+                <u>Example 1:</u> <b>ACT</b> If it rains in Franklin City on a particular day, the probability that
+                it will rain there the following day is 0.70 <br>
+                If it does not rain in Franklin City on a particular day, the probability that it will rain there the
+                following day is 0.10 <br>
+                Given that it rained in Franklin City on Monday, what is the probability that it will NOT rain in
+                Franklin City on Tuesday of the same week?
+                <br><br>
+                $
+                F.\:\: 0.10 \\[3ex]
+                G.\:\: 0.30 \\[3ex]
+                H.\:\: 0.60 \\[3ex]
+                J.\:\: 0.70 \\[3ex]
+                K.\:\: 0.90
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionCR1')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR1">
+                <br>
+                It rained in Franklin City on Monday <br><br>
+                The probability that it will rain there on Tuesday (the following day) is $0.70$ <br><br>
+                Let $T$ be the event that it will rain on Tuesday <br><br>
+                This implies that $T'$ is the event that it will not rain on Tuesday... this is what we are asked to
+                find <br><br>
+                $
+                P(T) = 0.70 \\[3ex]
+                P(T) + P(T') = 1 ...Complementary\:\:Rule \\[3ex]
+                P(T') = 1 - P(T) \\[3ex]
+                P(T') = 1 - 0.70 \\[3ex]
+                P(T') = 0.30
+                $
+            </div>
+            <p>
+                <u>Example 2:</u> <b>ACT</b> A bag contains exactly 18 solid-colored buttons: 3 red, 5 blue,
+                and 10 white. <br>
+                What is the probability of randomly selecting 1 button that is NOT white?
+                <br><br>
+                $
+                F.\:\: \dfrac{1}{18} \\[5ex]
+                G.\:\: \dfrac{1}{8} \\[5ex]
+                H.\:\: \dfrac{4}{9} \\[5ex]
+                J.\:\: \dfrac{2}{3} \\[5ex]
+                K.\:\: \dfrac{4}{5}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionCR2')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR2">
+                <br>
+                We can solve this in at least two ways <br>
+                Choose whatever approach you prefer <br><br>
+                $
+                Let: \\[3ex]
+                red = R \\[3ex]
+                blue = B \\[3ex]
+                white = W \\[3ex]
+                S = \{3R, 5B, 10W\} \\[3ex]
+                n(S) = 3 + 5 + 10 = 18 \\[5ex]
+
+                \underline{First\:\: Method: Quantitative\:\: Reasoning} \\[3ex]
+                NOT\:\:White \implies R\:\:AND\:\:B \\[3ex]
+                n(R) = 3 \\[3ex]
+                n(B) = 5 \\[3ex]
+                n(R\:\:AND\:\:B) = 3 + 5 = 8 \\[3ex]
+                P(NOT\:\:White) = P(R\:\:AND\:\:B) = \dfrac{n(R\:\:AND\:\:B)}{n(S)} \\[5ex]
+                P(NOT\:\:White) = \dfrac{8}{18} \\[5ex]
+                P(NOT\:\:White) = \dfrac{4}{9} \\[5ex]
+
+                \underline{Second\:\: Method: Complementary\:\:Rule} \\[3ex]
+                NOT\:\:white = W' \\[3ex]
+                P(White) + P(NOT\:\:White) = 1 ... Complementary\:\: Rule \\[3ex]
+                P(W) + P(W') = 1 \\[3ex]
+                n(W) = 10 \\[3ex]
+                P(W) = \dfrac{n(W)}{n(S)} = \dfrac{10}{18} \\[5ex]
+                P(W') = 1 - P(W) \\[3ex]
+                P(W') = 1 - \dfrac{10}{18} \\[5ex]
+                P(W') = \dfrac{18}{18} - \dfrac{10}{18} \\[5ex]
+                P(W') = \dfrac{18 - 10}{18} \\[5ex]
+                P(W') = \dfrac{8}{18} \\[5ex]
+                P(W') = \dfrac{4}{9}
+                $
+            </div>
+        </div>
+        <div class="w3-container" id="rareEventRule">
+            <h2>Rare Event Rule</h2>
+            <p>
+                The <b>Rare Event Rule</b> states that if under a given assumption, the probability of a particular
+                observed event is extremely small (less than $5\%$), then the assumption is probably not correct.
+            </p>
+        </div>
+        <!-- End Rules of Probability -->
+
+
+        <!-- Coins -->
+        <div class="w3-container" id="coins">
+            <h2>Coins</h2>
+            <p>
+                A fair coin has two faces: the head, $H$ and the tail, $T$
+            </p>
+            <p>
+                <b><u>Case 1:</u> A fair coin tossed one time</b> <br><br>
+                $
+                S = \{H, T\} \\[3ex]
+                n(S) = 2
+                $
+            </p>
+            <p>
+                <b><u>Case 2:</u> A fair coin tossed two times (twice) OR Two fair coins tossed one time</b> <br>
+                <u>Used:</u> <b>Punnett Square</b>
+            </p>
+            <table class="w3-center dice">
+                <caption>A fair coin tossed two times (twice) OR Two fair coins tossed one time</caption>
+                <tr>
+                    <th style="width: 16%;">
+                        $2^{nd}\:\:Coin\:\:\rightarrow$ <br>
+                        $1^{st}\:\:Coin\:\:\downarrow$
+                    </th>
+                    <th class="green">$H$</th>
+                    <th class="green">$T$</th>
+                </tr>
+                <tr>
+                    <td>$H$</td>
+                    <td>$HH$</td>
+                    <td>$HT$</td>
+                </tr>
+                <tr>
+                    <td>$T$</td>
+                    <td>$TH$</td>
+                    <td>$TT$</td>
+                </tr>
+            </table>
+            <p>
+                $
+                S = \{HH, HT, TH, TT\} \\[3ex]
+                n(S) = 4
+                $
+            </p>
+            <p>
+                <b><u>Case 3:</u> A fair coin tossed three times (thrice) OR Three fair coins tossed one time</b> <br>
+                <u>Used:</u> <b>Punnett Square</b> <br>
+                Two tables will be used in this case. <br>
+                Use any table you prefer. <br>
+                <b>First Table:</b> $1$ coin in the Column and $2$ coins in the Row <br>
+                <b>Second Table:</b> $2$ coins in the Column and $1$ coin in the Row <br>
+            </p>
+            <table class="w3-center dice">
+                <caption>First Table: $1$ coin in the Column and $2$ coins in the Row</caption>
+                <tr>
+                    <th style="width: 16%;">
+                        $2\:\:Coins\:\:\rightarrow$ <br>
+                        $1\:\:Coin\:\:\downarrow$
+                    </th>
+                    <th class="green">$HH$</th>
+                    <th class="green">$HT$</th>
+                    <th class="green">$TH$</th>
+                    <th class="green">$TT$</th>
+                </tr>
+                <tr>
+                    <td>$H$</td>
+                    <td>$HHH$</td>
+                    <td>$HHT$</td>
+                    <td>$HTH$</td>
+                    <td>$HTT$</td>
+                </tr>
+                <tr>
+                    <td>$T$</td>
+                    <td>$THH$</td>
+                    <td>$THT$</td>
+                    <td>$TTH$</td>
+                    <td>$TTT$</td>
+                </tr>
+            </table>
+            <p>
+                $
+                S = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\} \\[3ex]
+                n(S) = 8
+                $
+            </p>
+            <table class="w3-center dice">
+                <caption>Second Table: $2$ coins in the Column and $1$ coin in the Row</caption>
+                <tr>
+                    <th style="width: 16%;">
+                        $1\:\:Coin\:\:\rightarrow$ <br>
+                        $2\:\:Coins\:\:\downarrow$
+                    </th>
+                    <th class="green">$H$</th>
+                    <th class="green">$T$</th>
+                </tr>
+                <tr>
+                    <td>$HH$</td>
+                    <td>$HHH$</td>
+                    <td>$HHT$</td>
+                </tr>
+                <tr>
+                    <td>$HT$</td>
+                    <td>$HTH$</td>
+                    <td>$HTT$</td>
+                </tr>
+                <tr>
+                    <td>$TH$</td>
+                    <td>$THH$</td>
+                    <td>$THT$</td>
+                </tr>
+                <tr>
+                    <td>$TT$</td>
+                    <td>$TTH$</td>
+                    <td>$TTT$</td>
+                </tr>
+            </table>
+            <p>
+                $
+                S = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\} \\[3ex]
+                n(S) = 8
+                $
+            </p>
+            <p>
+                <b><u>Case 4:</u> A fair coin tossed four times (quadruple) OR Four fair coins tossed one time</b> <br>
+                <i>
+                    Ask students to draw the Punnett Square or the Tree Diagram for this case <br>
+                    Review their tables and give guidance as appropriate <br>
+                    Ask them to write the set and the cardinality of the set of outcomes for this case. <br>
+                </i>
+            </p>
+            <p>
+                <u>Example 1:</u> Four fair coins are tossed once. <br>
+                (a.) Draw a Punnett Square or a Tree Diagram to list all the outcomes of this experiment. <br>
+                (b.) List the sample space. <br>
+                (c.) Write the cardinality of the sample space.
+            </p>
+            <button class="solutions" onclick="solutions('solutionC1')">Show/Hide Answer</button>
+            <div class="result" id="solutionC1">
+                <br>
+                <u>Used:</u> <b>Punnett Square</b> <br>
+                (a.) <br><br>
+                <table class="w3-center dice">
+                    <caption>$2$ coins in the Column and $2$ coins in the Row</caption>
+                    <tr>
+                        <th style="width: 16%;">
+                            $2\:\:Coins\:\:\rightarrow$ <br>
+                            $2\:\:Coins\:\:\downarrow$
+                        </th>
+                        <th class="green">$HH$</th>
+                        <th class="green">$HT$</th>
+                        <th class="green">$TH$</th>
+                        <th class="green">$TT$</th>
+                    </tr>
+                    <tr>
+                        <td>$HH$</td>
+                        <td>$HHHH$</td>
+                        <td>$HHHT$</td>
+                        <td>$HHTH$</td>
+                        <td>$HHTT$</td>
+                    </tr>
+                    <tr>
+                        <td>$HT$</td>
+                        <td>$HTHH$</td>
+                        <td>$HTHT$</td>
+                        <td>$HTTH$</td>
+                        <td>$HTTT$</td>
+                    </tr>
+                    <tr>
+                        <td>$TH$</td>
+                        <td>$THHH$</td>
+                        <td>$THHT$</td>
+                        <td>$THTH$</td>
+                        <td>$THTT$</td>
+                    </tr>
+                    <tr>
+                        <td>$TT$</td>
+                        <td>$TTHH$</td>
+                        <td>$TTHT$</td>
+                        <td>$TTTH$</td>
+                        <td>$TTTT$</td>
+                    </tr>
+                </table>
+                <br>
+                $
+                (b.) \\[3ex]
+                S = \{ \\[3ex]
+                HHHH, HHHT, HHTH, HHTT, \\[3ex]
+                HTHH, HTHT, HTTH, HTTT, \\[3ex]
+                THHH, THHT, THTH, THTT, \\[3ex]
+                TTHH, TTHT, TTTH, TTTT \\[3ex]
+                \} \\[3ex]
+                (c.) \\[3ex]
+                n(S) = 16
+                $
+            </div>
+            <p>
+                <i>
+                    Student: Why do we need to draw these cases? <br>
+                    Teacher: Good question. <br>
+                    Depending on the question, we shall use the appropriate table. <br>
+                    Let us do some examples.
+                </i>
+            </p>
+            <p>
+                <u>Example 2:</u> <b>JAMB</b> If two fair coins are tossed, what is the probability of getting at
+                least one head?
+                <br><br>
+                $
+                A.\:\: \dfrac{1}{4} \\[5ex]
+                B.\:\: \dfrac{1}{2} \\[5ex]
+                C.\:\: 1 \\[3ex]
+                D.\:\: \dfrac{2}{3} \\[5ex]
+                E.\:\: \dfrac{3}{4}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionC2')">Show/Hide Answer</button>
+            <div class="result" id="solutionC2">
+                <br>
+                We shall use Case 2: A fair coin tossed two times (twice) OR Two fair coins tossed one time <br>
+                At least $1$ means $\ge 1$ <br>
+                Let $E$ be the event of obtaining at least one head in a single toss of two fair coins <br><br>
+                $
+                S = \{HH, HT, TH, TT\} \\[3ex]
+                n(S) = 4 \\[3ex]
+                E = \{HH, HT, TH\} \\[3ex]
+                n(E) = 3 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{3}{4}
+                $
+            </div>
+            <p>
+                <u>Example 3:</u> <b>ACT</b> In $3$ fair coin tosses, what is the probability of obtaining exactly
+                $2$ tails? <br>
+                (Note: In a fair coin toss the $2$ outcomes, heads and tails, are equally likely.)
+                <br><br>
+                $
+                F.\:\: \dfrac{1}{3} \\[5ex]
+                G.\:\: \dfrac{3}{8} \\[5ex]
+                H.\:\: \dfrac{1}{2} \\[5ex]
+                J.\:\: \dfrac{2}{3} \\[5ex]
+                K.\:\: \dfrac{7}{8}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionC3')">Show/Hide Answer</button>
+            <div class="result" id="solutionC3">
+                <br>
+                We shall use Case 3: A fair coin tossed three times (thrice) OR Three fair coins tossed one time <br>
+                Let $E$ be the event of obtaining <u>exactly two tails</u> in a single toss of three fair coins <br><br>
+                $
+                S = \{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\} \\[3ex]
+                n(S) = 8 \\[3ex]
+                E = \{HTT, THT, TTH\} \\[3ex]
+                n(E) = 3 \\[3ex]
+                n(S) = 8 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{3}{8}
+                $
+            </div>
+
+        </div>
+        <!-- End Coins -->
+
+        <br><br>
+
+        <!-- Dice -->
+        <div class="w3-container" id="dice">
+            <h2>Dice</h2>
+            <p>
+                A fair die has faces numbered $1, 2, 3, 4, 5, 6$
+            </p>
+            <p>
+                <b><u>Case 1:</u> A fair die tossed one time</b> <br><br>
+                $
+                S = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+                n(S) = 6
+                $
+            </p>
+            <p>
+                <u>Example 1:</u> A single die is rolled one time. <br>
+                Determine the probability of obtaining an odd number.
+            </p>
+            <button class="solutions" onclick="solutions('solutionFD1')">Show/Hide Answer</button>
+            <div class="result" id="solutionFD1">
+                <br>
+                $
+                S = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+                n(S) = 6 \\[3ex]
+                Let\:\:A\:\:be\:\:the\:\:event\:\:of\:\:picking\:\:an\:\:odd\:\:number \\[3ex]
+                A = \{1, 3, 5\} \\[3ex]
+                n(A) = 3 \\[3ex]
+                P(A) = \dfrac{n(A)}{n(S)} \\[5ex]
+                P(A) = \dfrac{3}{6} \\[5ex]
+                P(A) = \dfrac{1}{2} \\[5ex]
+                $
+                The probability of picking an odd number when a fair die is tossed one time is $\dfrac{1}{2}$ (one-half)
+            </div>
+            <p>
+                <u>Example 2:</u> A single die is rolled one time. <br>
+                Determine the probability of obtaining a number less than $5$
+            </p>
+            <button class="solutions" onclick="solutions('solutionFD2')">Show/Hide Answer</button>
+            <div class="result" id="solutionFD2">
+                <br>
+                $
+                S = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+                n(S) = 6 \\[3ex]
+                Let\:\:B\:\:be\:\:the\:\:event\:\:of\:\:picking\:\:a\:\:number\:\:less\:\:than\:\:5 \\[3ex]
+                B = \{1, 2, 3, 4\} \\[3ex]
+                n(B) = 4 \\[3ex]
+                P(B) = \dfrac{n(B)}{n(S)} \\[5ex]
+                P(B) = \dfrac{4}{6} \\[5ex]
+                P(B) = \dfrac{2}{3} \\[5ex]
+                $
+                In a single toss of a fair die, there is a $\dfrac{2}{3}$ (a two-third) probability of picking a
+                number less than $5$
+            </div>
+            <p>
+                <u>Example 3:</u> A single die is rolled one time. <br>
+                Determine the probability of obtaining an odd number OR a number less than $5$
+            </p>
+            <button class="solutions" onclick="solutions('solutionFD3')">Show/Hide Answer</button>
+            <div class="result" id="solutionFD3">
+                <br>
+                We can solve this question in two ways - By Definition and by the Addition Rule <br>
+                <i>
+                    Ask students to solve the question. <br>
+                    Most or all of them would just solve it by the definition of Probability - Quantitative Reasoning.
+                    <br>
+                    You may introduce the Addition Rule concept to students here or you may wait till you have taught
+                    the concept. <br>
+                    However, whatever you choose to do, please ask them to watch out for the keyword, <u>OR</u> <br>
+                    After you teach the Addition Rule concept, it should be <u>recommended</u> going forward. <br>
+                    This is because some students make the mistake of counting twice in cases of OR
+                </i> <br><br>
+                $
+                \underline{First\:\: Method: Quantitative\:\: Reasoning} \\[3ex]
+                OR\:\:could\:\:go\:\:either\:\:way \\[3ex]
+                S = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+                n(S) = 6 \\[3ex]
+                Let\:\:C\:\:be\:\:the\:\:event\:\:of\:\:picking\:\:an\:\:odd\:\:number\:\:OR\:\:a\:\:number\:\:less\:\:than\:\:5
+                \\[3ex]
+                C = \{1, 2, 3, 4, 5\} \\[3ex]
+                n(C) = 5 \\[3ex]
+                P(C) = \dfrac{n(C)}{n(S)} \\[5ex]
+                P(C) = \dfrac{5}{6} \\[5ex]
+                \underline{Second\:\:Method - By\:\:Addition\:\:Rule} \\[3ex]
+                OR \implies \cup \\[3ex]
+                AND \implies \cap \\[3ex]
+                S = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+                n(S) = 6 \\[3ex]
+                Let\:\:A\:\:be\:\:the\:\:event\:\:of\:\:picking\:\:an\:\:odd\:\:number \\[3ex]
+                A = \{1, 3, 5\} \\[3ex]
+                n(A) = 3 \\[3ex]
+                P(A) = \dfrac{n(A)}{n(S)} = \dfrac{3}{6} \\[5ex]
+                Let\:\:B\:\:be\:\:the\:\:event\:\:of\:\:picking\:\:a\:\:number\:\:less\:\:than\:\:5 \\[3ex]
+                B = \{1, 2, 3, 4\} \\[3ex]
+                n(B) = 4 \\[3ex]
+                P(B) = \dfrac{n(B)}{n(S)} = \dfrac{4}{6} \\[5ex]
+                A \cap B = \{1, 3\} \\[3ex]
+                n(A \cap B) = 2 \\[3ex]
+                P(A \cap B) = \dfrac{n(A \cap B)}{n(S)} = \dfrac{2}{6} \\[5ex]
+                P(A \cup B) = P(A) + P(B) - P(A \cap B)...Addition\:\:Rule \\[3ex]
+                P(A \cup B) = \dfrac{3}{6} + \dfrac{4}{6} - \dfrac{2}{6} \\[5ex]
+                P(A \cup B) = \dfrac{3 + 4 - 2}{6} \\[5ex]
+                P(A \cup B) = \dfrac{5}{6} \\[5ex]
+                $
+                When a fair die is tossed once, there is a $\dfrac{5}{6}$ probability of obtaining an odd number OR
+                a number less than five.
+            </div>
+            <p>
+                <i>
+                    Remind students of the keyword, <b>OR</b> <br>
+                    Ask students if they noticed that all <u>work was shown</u> <br>
+                    Ask students if they noticed the different wordings of the conclusion for the solution of the
+                    examples.
+                </i>
+            </p>
+
+
+            <p>
+                <b><u>Case 2:</u> A fair die tossed two times (twice) OR Two fair dice tossed one time</b> <br>
+                <u>Used:</u> <b>Punnett Square</b>
+            </p>
+            <table class="w3-center dice">
+                <caption>First Table for Case 2: List Each Number</caption>
+                <tr>
+                    <th style="width: 16%;">
+                        $2^{nd}\:\:Die\:\:\rightarrow$ <br>
+                        $1^{st}\:\:Die\:\:\downarrow$
+                    </th>
+                    <th class="green">$1$</th>
+                    <th class="green">$2$</th>
+                    <th class="green">$3$</th>
+                    <th class="green">$4$</th>
+                    <th class="green">$5$</th>
+                    <th class="green">$6$</th>
+                </tr>
+                <tr>
+                    <td>$1$</td>
+                    <td>$1, 1$</td>
+                    <td>$1, 2$</td>
+                    <td>$1, 3$</td>
+                    <td>$1, 4$</td>
+                    <td>$1, 5$</td>
+                    <td>$1, 6$</td>
+                </tr>
+                <tr>
+                    <td>$2$</td>
+                    <td>$2, 1$</td>
+                    <td>$2, 2$</td>
+                    <td>$2, 3$</td>
+                    <td>$2, 4$</td>
+                    <td>$2, 5$</td>
+                    <td>$2, 6$</td>
+                </tr>
+                <tr>
+                    <td>$3$</td>
+                    <td>$3, 1$</td>
+                    <td>$3, 2$</td>
+                    <td>$3, 3$</td>
+                    <td>$3, 4$</td>
+                    <td>$3, 5$</td>
+                    <td>$3, 6$</td>
+                </tr>
+                <tr>
+                    <td>$4$</td>
+                    <td>$4, 1$</td>
+                    <td>$4, 2$</td>
+                    <td>$4, 3$</td>
+                    <td>$4, 4$</td>
+                    <td>$4, 5$</td>
+                    <td>$4, 6$</td>
+                </tr>
+                <tr>
+                    <td>$5$</td>
+                    <td>$5, 1$</td>
+                    <td>$5, 2$</td>
+                    <td>$5, 3$</td>
+                    <td>$5, 4$</td>
+                    <td>$5, 5$</td>
+                    <td>$5, 6$</td>
+                </tr>
+                <tr>
+                    <td>$6$</td>
+                    <td>$6, 1$</td>
+                    <td>$6, 2$</td>
+                    <td>$6, 3$</td>
+                    <td>$6, 4$</td>
+                    <td>$6, 5$</td>
+                    <td>$6, 6$</td>
+                </tr>
+            </table>
+            <p>
+                $n(S) = 36$
+            </p>
+            <table class="w3-center dice">
+                <caption>Second Table for Case 2: Sum of Numbers</caption>
+                <tr>
+                    <th style="width: 16%;">
+                        $(+)$
+                    </th>
+                    <th class="green">$1$</th>
+                    <th class="green">$2$</th>
+                    <th class="green">$3$</th>
+                    <th class="green">$4$</th>
+                    <th class="green">$5$</th>
+                    <th class="green">$6$</th>
+                </tr>
+                <tr>
+                    <td>$1$</td>
+                    <td>$2$</td>
+                    <td>$3$</td>
+                    <td>$4$</td>
+                    <td>$5$</td>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                </tr>
+                <tr>
+                    <td>$2$</td>
+                    <td>$3$</td>
+                    <td>$4$</td>
+                    <td>$5$</td>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                    <td>$8$</td>
+                </tr>
+                <tr>
+                    <td>$3$</td>
+                    <td>$4$</td>
+                    <td>$5$</td>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                    <td>$8$</td>
+                    <td>$9$</td>
+                </tr>
+                <tr>
+                    <td>$4$</td>
+                    <td>$5$</td>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                    <td>$8$</td>
+                    <td>$9$</td>
+                    <td>$10$</td>
+                </tr>
+                <tr>
+                    <td>$5$</td>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                    <td>$8$</td>
+                    <td>$9$</td>
+                    <td>$10$</td>
+                    <td>$11$</td>
+                </tr>
+                <tr>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                    <td>$8$</td>
+                    <td>$9$</td>
+                    <td>$10$</td>
+                    <td>$11$</td>
+                    <td>$12$</td>
+                </tr>
+            </table>
+            <p>
+                $n(S) = 36$
+            </p>
+            <table class="w3-center dice">
+                <caption>Third Table for Case 2: Product of Numbers</caption>
+                <tr>
+                    <th style="width: 16%;">
+                        $(*)$
+                    </th>
+                    <th class="green">$1$</th>
+                    <th class="green">$2$</th>
+                    <th class="green">$3$</th>
+                    <th class="green">$4$</th>
+                    <th class="green">$5$</th>
+                    <th class="green">$6$</th>
+                </tr>
+                <tr>
+                    <td>$1$</td>
+                    <td>$1$</td>
+                    <td>$2$</td>
+                    <td>$3$</td>
+                    <td>$4$</td>
+                    <td>$5$</td>
+                    <td>$6$</td>
+                </tr>
+                <tr>
+                    <td>$2$</td>
+                    <td>$2$</td>
+                    <td>$4$</td>
+                    <td>$6$</td>
+                    <td>$8$</td>
+                    <td>$10$</td>
+                    <td>$12$</td>
+                </tr>
+                <tr>
+                    <td>$3$</td>
+                    <td>$3$</td>
+                    <td>$6$</td>
+                    <td>$9$</td>
+                    <td>$12$</td>
+                    <td>$15$</td>
+                    <td>$18$</td>
+                </tr>
+                <tr>
+                    <td>$4$</td>
+                    <td>$4$</td>
+                    <td>$8$</td>
+                    <td>$12$</td>
+                    <td>$16$</td>
+                    <td>$20$</td>
+                    <td>$24$</td>
+                </tr>
+                <tr>
+                    <td>$5$</td>
+                    <td>$5$</td>
+                    <td>$10$</td>
+                    <td>$15$</td>
+                    <td>$20$</td>
+                    <td>$25$</td>
+                    <td>$30$</td>
+                </tr>
+                <tr>
+                    <td>$6$</td>
+                    <td>$6$</td>
+                    <td>$12$</td>
+                    <td>$18$</td>
+                    <td>$24$</td>
+                    <td>$30$</td>
+                    <td>$36$</td>
+                </tr>
+            </table>
+            <p>
+                $n(S) = 36$
+            </p>
+            <p>
+                <i>
+                    Student: Why did we draw the three tables? <br>
+                    Teacher: Good question. <br>
+                    Depending on the question, we shall use the corresponding table for it. <br>
+                    Let us do some examples
+                </i>
+            </p>
+            <p>
+                <u>Example 1:</u> <b>WASSCE</b> The faces of a fair die are numbered $1, 2, 3, 4, 5, 6$. <br>
+                If the die is thrown twice, what is the probability of obtaining a total score of $6$?
+            </p>
+            <button class="solutions" onclick="solutions('solutionD1')">Show/Hide Answer</button>
+            <div class="result" id="solutionD1">
+                <br>
+                The question asked for a total score of $6$ (sum of $6$) <br>
+                We shall use Case 2: Second Table <br>
+                Let $E$ be the event of obtaining a total score of $6$ <br><br>
+                $
+                n(S) = 36 \\[3ex]
+                n(E) = 5 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{5}{36}
+                $
+            </div>
+            <p>
+                <u>Example 2:</u> <b>ACT</b> "Snake-eyes" occur when you roll two $1's$ on a pair of regular, $6-sided$
+                dice
+                numbered from $1$ to $6$. <br>
+                On any roll, what is the probability of rolling snake-eyes? <br><br>
+                $
+                F.\:\: \dfrac{1}{36} \\[5ex]
+                G.\:\: \dfrac{1}{25} \\[5ex]
+                H.\:\: \dfrac{1}{18} \\[5ex]
+                J.\:\: \dfrac{1}{6} \\[5ex]
+                K.\:\: \dfrac{1}{3}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionD2')">Show/Hide Answer</button>
+            <div class="result" id="solutionD2">
+                <br>
+                The question asked for two $1's$ (a $1$ and a $1$) <br>
+                In other words, it asked for $(1, 1)$ <br>
+                We shall use Case 1: First Table <br>
+                Let $E$ be the event of obtaining $(1, 1)$ <br><br>
+                $
+                n(S) = 36 \\[3ex]
+                n(E) = 1 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{1}{36}
+                $
+            </div>
+            <p>
+                <u>Example 3:</u> <b>JAMB</b> Two fair dice are rolled. <br>
+                What is the probability that both show up the same number of point?
+                <br><br>
+                $
+                A.\:\: \dfrac{1}{36} \\[5ex]
+                B.\:\: \dfrac{7}{36} \\[5ex]
+                C.\:\: \dfrac{1}{2} \\[5ex]
+                D.\:\: \dfrac{1}{3} \\[5ex]
+                E.\:\: \dfrac{1}{6}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionD3')">Show/Hide Answer</button>
+            <div class="result" id="solutionD3">
+                <br>
+                Both dice must show the same number <br>
+                This means $(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6)$ <br>
+                We shall use Case 1: First Table <br>
+                Let $E$ be the event of obtaining the same number on both dice <br><br>
+                $
+                E = \{(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6)\} \\[3ex]
+                n(E) = 6 \\[3ex]
+                n(S) = 36 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{6}{36} \\[5ex]
+                P(E) = \dfrac{1}{6}
+                $
+            </div>
+            <p>
+                <u>Example 4:</u> <b>JAMB</b> If two dice are thrown together, what is the probability of obtaining
+                <b>at least</b> a score of $10$?
+                <br><br>
+                $
+                A.\:\: \dfrac{1}{6} \\[5ex]
+                B.\:\: \dfrac{1}{12} \\[5ex]
+                C.\:\: \dfrac{5}{6} \\[5ex]
+                D.\:\: \dfrac{11}{12}
+                $
+            </p>
+            <button class="solutions" onclick="solutions('solutionD4')">Show/Hide Answer</button>
+            <div class="result" id="solutionD4">
+                <br>
+                <u>At least</u> $10$ means $10$ or more <br>
+                This deals with <u>sum</u> <br>
+                So, we shall use Case 2: Second Table <br>
+                Let $E$ be the event of obtaining at least a score of $10$ <br><br>
+                $
+                E = \{10, 10, 10, 11, 11, 12\} \\[3ex]
+                n(E) = 5 \\[3ex]
+                n(S) = 36 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{5}{36}
+                $
+            </div>
+            <p>
+                <u>Example 5:</u> <b>WASSCE</b> A fair die is thrown <b>two</b> times. <br><br>
+                (a.) Construct a table of the outcomes. <br><br>
+                (b.) Calculate the probability that the: <br>
+                (i) sum of the outcomes is $8$ <br>
+                (ii) product of outcomes is <b>less than</b> $10$ <br>
+                (iii) outcomes contain <b>at least a</b> $3$
+            </p>
+            <button class="solutions" onclick="solutions('solutionD5')">Show/Hide Answer</button>
+            <div class="result" id="solutionD5">
+                <br>
+                (a.) Usually, that should be the first table. <br>
+                So, the First Table for Case $2$ is the answer. <br><br>
+                $
+                (b) \\[3ex]
+                n(S) = 36 \\[3ex]
+                (i) \\[3ex]
+                Second\:\:Table\:\:is\:\:used \\[3ex]
+                n(8) = 5 \\[3ex]
+                P(8) = \dfrac{n(8)}{n(S)} \\[5ex]
+                P(8) = \dfrac{5}{36} \\[5ex]
+                (ii) \\[3ex]
+                Third\:\:Table\:\:is\:\:used \\[3ex]
+                Less\:\:than\:\:10 = \{1, 2, 3, 4, 5, 6, 2, 4, 6, 8, 3, 6, 9\} \\[3ex]
+                n(product\:\:less\:\:than\:\:10) = 13 \\[3ex]
+                P(product\:\:less\:\:than\:\:10) = \dfrac{n(product\:\:less\:\:than\:\:10)}{n(S)} \\[5ex]
+                P(product\:\:less\:\:than\:\:10) = \dfrac{13}{36} \\[5ex]
+                (iii) \\[3ex]
+                First\:\:Table\:\:is\:\:used \\[3ex]
+                At\:\:least\:\:a\:\:3 \implies \ge 3 \\[3ex]
+                Exclude\:\:\{(1, 1), (2, 1), (1, 2), (2, 2)\} \\[3ex]
+                n(Exclude) = 4 \\[3ex]
+                n(\ge 3) = n(S) - n(Exclude) \\[3ex]
+                n(\ge 3) = 36 - 4 \\[3ex]
+                n(\ge 3) = 32 \\[3ex]
+                P(\ge 3) = \dfrac{n(\ge 3)}{n(S)} \\[5ex]
+                P(\ge 3) = \dfrac{32}{36} \\[5ex]
+                P(\ge 3) = \dfrac{8}{9}
+                $
+            </div>
+
+            <p>
+                <u>Example 6:</u> Two fair dice are rolled once. <br>
+                Determine the probability of obtaining these outcomes: <br><br>
+                (a.) the first number is greater than the second number. <br>
+                (b.) an even and a prime. <br>
+                (c.) the first number is less than the second number. <br>
+                (d.) an odd, then a prime. <br>
+                (e.) an odd and a prime. <br>
+                (f.) two primes. <br>
+                (g.) an even, then a prime. <br>
+                (h.) two primes such that the first prime is less than the second prime. <br>
+                (i) the first number is greater than or equal to the second number.
+            </p>
+            <button class="solutions" onclick="solutions('solutionD6')">Show/Hide Answer</button>
+            <div class="result" id="solutionD6">
+                <br>
+                $
+                Even\:\:numbers = \{2, 4, 6\} \\[3ex]
+                Odd\:\:numbers = \{1, 3, 5\} \\[3ex]
+                Prime\:\:numbers = \{2, 3, 5\} \\[3ex]
+                Let: \\[3ex]
+                A = event\:\:of\:\:first\:\:number\:\: \gt \:\:second\:\:number \\[3ex]
+                B = event\:\:of\:\:even\:\:number\:\:and\:\:prime\:\:number...in\:\:any\:\:order \\[3ex]
+                C = event\:\:of\:\:first\:\:number\:\: \lt \:\:second\:\:number \\[3ex]
+                D = event\:\:of\:\:odd\:\:number\:\:then\:\:prime\:\:number...in\:\:that\:\:order \\[3ex]
+                E = event\:\:of\:\:odd\:\:number\:\:and\:\:prime\:\:number...in\:\:any\:\:order \\[3ex]
+                F = event\:\:of\:\:two\:\:prime\:\:numbers \\[3ex]
+                G = event\:\:of\:\:even\:\:number\:\:then\:\:prime\:\:number...in\:\:that\:\:order \\[3ex]
+                H = event\:\:of\:\:two\:\:prime\:\:numbers\:\:such\:\:first\:\: \lt \:\:second \\[3ex]
+                I = event\:\:of\:\:first\:\:number\:\: \ge \:\:second\:\:number \\[3ex]
+                n(S) = 36 \\[3ex]
+                First\:\:Table\:\:is\:\:used\:\:for\:\:all\:\:questions \\[3ex]
+                (a.) \\[3ex]
+                A = \{(2, 1), (3, 1), (3, 2), (4, 1), (4, 2), (4, 3),...continued...below \\[3ex]
+                (5, 1), (5, 2), (5, 3), (5, 4), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5)\} \\[3ex]
+                n(A) = 15 \\[3ex]
+                P(A) = \dfrac{n(A)}{n(S)} \\[5ex]
+                P(A) = \dfrac{15}{36} \\[5ex]
+                P(A) = \dfrac{5}{12} \\[5ex]
+                (b.) \\[3ex]
+                B = \{(2, 2), (2, 3), (2, 5), (2, 6), (3, 2), (3, 4), (3, 6), (4, 2), ...continued...below \\[3ex]
+                (4, 3), (4, 5), (5, 2), (5, 4), (5, 6), (6, 2), (6, 3), (6, 5)\} \\[3ex]
+                n(B) = 16 \\[3ex]
+                P(B) = \dfrac{n(B)}{n(S)} \\[5ex]
+                P(B) = \dfrac{16}{36} \\[5ex]
+                P(B) = \dfrac{4}{9} \\[5ex]
+                (c.) \\[3ex]
+                C = \{(1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (2, 3),...continued...below \\[3ex]
+                (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6), (4, 5), (4, 6), (5, 6)\} \\[3ex]
+                n(C) = 15 \\[3ex]
+                P(C) = \dfrac{n(C)}{n(S)} \\[5ex]
+                P(C) = \dfrac{15}{36} \\[5ex]
+                P(C) = \dfrac{5}{12} \\[5ex]
+                (d.) \\[3ex]
+                D = \{(1, 2), (1, 3), (1, 5), (3, 2), (3, 3), (3, 5), (5, 2), (5, 3), (5, 5)\} \\[3ex]
+                n(D) = 9 \\[3ex]
+                P(D) = \dfrac{n(D)}{n(S)} \\[5ex]
+                P(D) = \dfrac{9}{36} \\[5ex]
+                P(D) = \dfrac{1}{4} \\[5ex]
+                (e.) \\[3ex]
+                E = \{(1, 2), (1, 3), (1, 5), (2, 1), (2, 3), (2, 5),...continued...below \\[3ex]
+                (3, 1), (3, 2), (3, 3), (3, 5), (5, 1), (5, 2), (5, 3), (5, 5)\} \\[3ex]
+                n(E) = 14 \\[3ex]
+                P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                P(E) = \dfrac{14}{36} \\[5ex]
+                P(E) = \dfrac{7}{18} \\[5ex]
+                (f.) \\[3ex]
+                F = \{(2, 2), (2, 3), (2, 5), (3, 2), (3, 3), (3, 5), (5, 2), (5, 3), (5, 5)\} \\[3ex]
+                n(F) = 9 \\[3ex]
+                P(F) = \dfrac{n(F)}{n(S)} \\[5ex]
+                P(F) = \dfrac{9}{36} \\[5ex]
+                P(F) = \dfrac{1}{4} \\[5ex]
+                (g.) \\[3ex]
+                G = \{(2, 2), (2, 3), (2, 5), (4, 2), (4, 3), (4, 5), (6, 2), (6, 3), (6, 5)\} \\[3ex]
+                n(G) = 9 \\[3ex]
+                P(G) = \dfrac{n(G)}{n(S)} \\[5ex]
+                P(G) = \dfrac{9}{36} \\[5ex]
+                P(G) = \dfrac{1}{4} \\[5ex]
+                (h.) \\[3ex]
+                H = \{(2, 3), (2, 5), (3, 5)\} \\[3ex]
+                n(H) = 3 \\[3ex]
+                P(H) = \dfrac{n(H)}{n(S)} \\[5ex]
+                P(H) = \dfrac{3}{36} \\[5ex]
+                P(H) = \dfrac{1}{12} \\[5ex]
+                (i) \\[3ex]
+                I = \{(2, 1), (2, 2), (3, 1), (3, 2), (3, 3) (4, 1), (4, 2), (4, 3), (4, 4),...continued...below \\[3ex]
+                (5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6)\} \\[3ex]
+                n(I) = 20 \\[3ex]
+                P(I) = \dfrac{n(I)}{n(S)} \\[5ex]
+                P(I) = \dfrac{20}{36} \\[5ex]
+                P(I) = \dfrac{5}{9}
+                $
+            </div>
+
+        </div>
+        <!-- End Dice -->
+
+        <br><br>
+
+        <!-- Cards -->
+        <div class="w3-container" id="cards">
+            <h2>Cards</h2>
+            <div class="w3-center">
+                <img src="images/cards.png" alt="cards">
+            </div>
+            <p>
+                A standard deck has fifty two cards. <br>
+                It consists of four suits. <br>
+                There are thirteen cards in each suit. <br>
+                So, $4 * 13 = 52$ <br><br>
+                $n(cards) = 4 * 13 = 52$ <br>
+                The suits are: <b>Clubs, Diamonds, Hearts,</b> and <b>Spades</b> <br>
+                The cards in each suit are: <b>Ace, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$, Jack, Queen,</b> and
+                <b>King</b> <br>
+                The <b>Jack, Queen,</b> and <b>King</b> are called <b>face cards (picture cards)</b> because they have a
+                a face on them. <br>
+                The <b>Jack, Queen,</b> and <b>King</b> are also called <b>court.</b> <br>
+                The <b>Diamonds</b> and <b>Hearts</b> are <b>red.</b> <br>
+                The <b>Spades</b> and <b>Clubs</b> are <b>black.</b> <br><br>
+                $
+                Let\:\: Sample\:\: Space = S \\[3ex]
+                Clubs = C \\[3ex]
+                Diamonds = D \\[3ex]
+                Hearts = H \\[3ex]
+                Spades = SP \\[3ex]
+                Ace = A \\[3ex]
+                Jack = J \\[3ex]
+                Queen = Q \\[3ex]
+                King = K \\[3ex]
+                Suits = SU \\[3ex]
+                Face\:\: Card = F-C \\[3ex]
+                Red = R \\[3ex]
+                Black = B \\[3ex]
+                Non-Face\:\: Card = N-F-C \\[3ex]
+                Court = CO \\[3ex]
+                Numbers\:\: remain\:\: as\:\: is \\[3ex]
+                n(S) = 52 \\[3ex]
+                n(C) = 13 \\[3ex]
+                n(D) = 13 \\[3ex]
+                n(H) = 13 \\[3ex]
+                n(SP) = 13 \\[3ex]
+                n(R) = 13 + 13 = 26 \\[3ex]
+                n(B) = 13 + 13 = 26 \\[3ex]
+                n(F-C) = 3(4) = 12 \\[3ex]
+                n(N-F-C) = 10(4) = 40 \\[3ex]
+                OR \\[3ex]
+                n(N-F-C) = 52 - 12 = 40 \\[3ex]
+                n(A) = 4 \\[3ex]
+                n(2) = 4 \\[3ex]
+                n(3) = 4 \\[3ex]
+                n(4) = 4 \\[3ex]
+                n(5) = 4 \\[3ex]
+                n(6) = 4 \\[3ex]
+                n(7) = 4 \\[3ex]
+                n(8) = 4 \\[3ex]
+                n(9) = 4 \\[3ex]
+                n(10) = 4 \\[3ex]
+                n(J) = 4 \\[3ex]
+                n(Q) = 4 \\[3ex]
+                n(K) = 4 \\[3ex]
+                n(CO) = 12 \\[3ex]
+                n(Q\:\:of\:\: C) = 1 \\[3ex]
+                n(K\:\:of\:\: H) = 1 \\[3ex]
+                n(J\:\:of\:\: D) = 1 \\[3ex]
+                $
+                <u>Example: Cards</u> <br>
+                A card is randomly drawn from a standard deck of cards. <br>
+                Determine the probability of selecting: <br><br>
+                $
+                (1.)\:\:a\:\: 10 \\[3ex]
+                \color{red}{P(10) = \dfrac{n(10)}{n(S)} = \dfrac{4}{52} = \dfrac{1}{13}} \\[5ex]
+
+                (2.)\:\: an\:\: Ace \\[3ex]
+                \color{red}{P(A) = \dfrac{n(A)}{n(S)} = \dfrac{4}{52} = \dfrac{1}{13}} \\[5ex]
+
+                (3.)\:\: a\:\: King \\[3ex]
+                \color{red}{P(K) = \dfrac{n(K)}{n(S)} = \dfrac{4}{52} = \dfrac{1}{13}} \\[5ex]
+
+                (4.)\:\: a\:\: Red\:\: card \\[3ex]
+                \color{red}{P(R) = \dfrac{n(R)}{n(S)} = \dfrac{26}{52} = \dfrac{1}{2}} \\[5ex]
+
+                (5.)\:\: a\:\: Face\:\: card\:(Picture\:\: card) \\[3ex]
+                \color{red}{P(F-C) = \dfrac{n(F-C)}{n(S)} = \dfrac{12}{52} = \dfrac{3}{13}} \\[5ex]
+
+                (6.)\:\: a\:\: Non-face\:\: card\:(Non-picture\:\: card) \\[3ex]
+                \color{red}{P(N-F-C) = \dfrac{n(N-F-C)}{n(S)} = \dfrac{40}{52} = \dfrac{10}{13}} \\[5ex]
+
+                (7.)\:\:a\:\: Diamond \\[3ex]
+                \color{red}{P(D) = \dfrac{n(D)}{n(S)} = \dfrac{13}{52} = \dfrac{1}{4}} \\[5ex]
+
+                (8.)\:\: Queen\:\:of\:\:Clubs \\[3ex]
+                \color{red}{P(Q\:\:of\:\:C) = \dfrac{n(Q\:\:of\:\:C)}{n(S)} = \dfrac{1}{52}} \\[5ex]
+
+                (9.)\:\: a\:\: heart\:\: and\:\: a\:\: spade \\[3ex]
+                $
+                From the question: A card is drawn one time. <br>
+                It is not possible to get a heart and a spade at the same time. <br>
+                The two events: the event of drawing a heart and the event of drawing a spade in a single selection
+                of a card, are disjoint. <br>
+                Hence, the events are mutually exclusive. <br><br>
+                $
+                \color{red}{P(H \cap SP) = 0}...Mutually\:\: Exclusive\:\: Events \\[3ex]
+                (10.)\:\: a\:\: King\:\: or\:\: Queen \\[3ex]
+                \color{red}{P(K \:\:or\:\: Q) = \dfrac{n(K)}{n(S)} + \dfrac{n(Q)}{n(S)} ...Addition\:\: Rule \\[3ex]
+                = \dfrac{4}{52} + \dfrac{4}{52} \\[3ex]
+                = \dfrac{4 + 4}{52} \\[3ex]
+                = \dfrac{8}{52} \\[3ex]
+                = \dfrac{2}{13}} \\[5ex]
+                (11.)\:\: a\:\: Club\:\: or\:\: a\:\: Diamond \:\:or\:\: a\:\: Spade \\[3ex]
+                \color{red}{P(C \:\:or\:\: D \:\:or\:\: SP) = \dfrac{n(C)}{n(S)} + \dfrac{n(D)}{n(S)} +
+                \dfrac{n(SP)}{n(S)} ...Addition\:\: Rule \\[3ex]
+                = \dfrac{13}{52} + \dfrac{13}{52} + \dfrac{13}{52} \\[3ex]
+                = \dfrac{13 + 13 + 13}{52}
+                = \dfrac{39}{52} \\[3ex]
+                = \dfrac{3}{4}} \\[5ex]
+                $
+                (12.) A card is randomly drawn from a standard deck of cards. <br>
+                The card drawn is court. (Jack, King, or Queen). <br>
+                What is the probability that the card drawn is a king? <br><br>
+                In other words, what is the probability that the card drawn is a king, <u>given that</u> this card
+                is court? <br>
+                This is <u>Conditional Probability</u> <br><br>
+                $
+                \color{red}{P(K|CO) = \dfrac{n(K)}{n(CO)} \\[5ex]
+                = \dfrac{4}{12} \\[5ex]
+                = \dfrac{1}{3}}
+                $
+            </p>
+        </div>
+        <!-- End Cards -->
+
+        <br><br>
+
+        <!-- References -->
+        <div class="w3-container" id="references">
+            <h2 class="w3-padding-16">References</h2>
+            <hr>
+            <p>
+                Chukwuemeka, Samuel Dominic (2023). <i>Probability.</i>
+                Retrieved from <a href="https://statistical-science.appspot.com/"
+                    target="_blank">https://statistical-science.appspot.com/</a>
+                <br><br>
+                Bennett, J. O., & Briggs, W. L. (2019).
+                <i>Using and Understanding Mathematics: A Quantitative Reasoning Approach.</i> Pearson.
+                <br><br>
+                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.).
+                New Jersey: Wiley
+                <br><br>
+                Blitzer, R. (2015). <i>Thinking Mathematically</i> (6th ed.). Boston: Pearson
+                <br><br>
+                Gould, R., & Ryan, C. (2016). <i>Introductory Statistics: Exploring the world through data</i> (2nd
+                ed.). Boston: Pearson
+                <br><br>
+                Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
+                <br><br>
+                OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
+                Retrieved from <a href="https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12"
+                    target="_blank">https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12</a>
+                <br><br>
+                Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed decisions using data with an introduction to
+                    mathematics of finance</i>
+                (2nd custom ed.). Boston: Pearson Learning Solutions.
+                <br><br>
+                Tan, S. (2015). <i>Finite Mathematics for the Managerial, Life, and Social Sciences</i> (11th ed.).
+                Boston: Cengage Learning.
+                <br><br>
+                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i> (5th ed.).
+                Boston: Pearson
+                <br><br>
+                Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                <br><br>
+                Weiss, Neil A. (2015). <i>Elementary Statistics</i> (9th ed.).
+                Boston: Pearson
+                <br><br>
+                Authority (NZQA), (n.d.). Mathematics and Statistics subject resources. www.nzqa.govt.nz. Retrieved
+                December 14,
+                2020, from https://www.nzqa.govt.nz/ncea/subjects/mathematics/levels/
+                <br><br>
+                CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/
+                <br><br>
+                CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                <br><br>
+                CDC. (2017, June 22). What is Sickle Cell Trait? Centers for Disease Control and Prevention.
+                https://www.cdc.gov/ncbddd/sicklecell/traits.html
+                <br><br>
+                Centers for Disease Control and Prevention. (2020, December 14). What Is Sickle Cell Disease? Centers
+                for Disease Control and Prevention. https://www.cdc.gov/ncbddd/sicklecell/facts.html
+                <br><br>
+                DLAP Website. (n.d.). Curriculum.gov.mt.
+                https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+                <br><br>
+                Elementary, Intermediate Tests and High School Regents Examinations : OSA : NYSED. (2019).
+                Nysedregents.org. https://www.nysedregents.org/
+                <br><br>
+                Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners.
+                https://www.vastlearners.com/free-jamb-past-questions/
+                <br><br>
+                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                <br><br>
+                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                <br><br>
+                NSC Examinations. (n.d.). www.education.gov.za.
+                https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                <br><br>
+                Papua New Guinea: Department of Education. (n.d.). www.education.gov.pg. Retrieved November 24, 2020,
+                from http://www.education.gov.pg/TISER/exams.html
+                <br><br>
+                School Curriculum and Standards Authority (SCSA): K-12. Past ATAR Course Examinations. Retrieved
+                December 10, 2021,
+                from https://senior-secondary.scsa.wa.edu.au/further-resources/past-atar-course-exams
+                <br><br>
+                West African Examinations Council (WAEC). Retrieved May 30, 2020, from
+                https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                <br><br>
+                WIKIPEDIA. (n.d.). Retrieved from https://en.wikipedia.org/wiki/Standard_52-card_deck
+            </p>
+        </div>
+        <!-- End References -->
+
+        <!-- Footer -->
+        <footer class="w3-center silver w3-padding-24">
+            <p>
+                <!--
+                    <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel"
+                        target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+                    <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img
+                            src="images/twitter.png" alt="Follow me on twitter"></a>
+                    <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog"
+                        target="_blank">
+                        <img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+                    <br><br>
+                    &copy; 2019 &nbsp;<a href="https://www.samuelchukwuemeka.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.
+                    -->
+                &copy; 2019 &nbsp; Samdom4Peace Designs.
+            </p>
+        </footer>
+        <!-- End page content -->
+    </div>
+
+    <script src="scripts/messages.js"></script>
+    <script src="scripts/probability.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

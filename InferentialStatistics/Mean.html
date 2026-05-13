@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Inferential Statistics: Mean</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Chukwuemeka gives all the credit to our LORD GOD and Anointed Savior, JESUS CHRIST. We are experts in estimating population mean.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, statistics, descriptive statistics, inferential statistics, sample, population, 
+              sample proportion, population proportion, level of significance, confidence levels, sample mean, 
+              population mean, sample variance, population variance, sample standard deviation, 
+              population standard deviation, critical values, student t distribution, normal distribution, 
+              chi -square distribution">
+
+    <link href="styles/inferentialStatistics.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-24 bisque">
+        <h1>Solved Examples: Inferential Statistics: Mean</h1>
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <div class="w3-container">
+
+        <!-- Image in top left corner --
+            <a href="https://statistical-reasoning.appspot.com/" title="Samuel Dominic Chukwuemeka">
+                <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+            </a>
+        -->
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+        <br><br>
+        Solve all questions. <br>
+        Show all work.
+        <br><br>
+        <u>Please Note:</u> Do not round intermediate calculations. <br>
+        If you must round intermediate calculations, round them to at least four decimal places more than the number of
+        decimals required for the final answer. <br>
+        For example; if the final answer requires rounding to 3 decimal places, then round your intermediate
+        calculations to at least 7 decimal places.
+        <br><br>
+        <i>
+            The names of the towns (in italics) are written to make you smile. <br>
+            Yes, those towns exist. &#128522; <br>
+            I want to make this topic fun in any way I can.
+        </i>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) (a.) Interpret the statement: 99% confidence interval is: 4.1 &lt; &mu; &lt; 5.2
+                <br><br>
+                (b.) A confidence interval for a population mean has a margin of error of 3.9. <br>
+                Determine the length of the confidence interval.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM1')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM1">
+                    <br>
+                    (a.) We are 99% confident that the interval from 4.1 to 5.2 actually contain the true value of the
+                    population mean.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    LCI = 2E \\[3ex]
+                    LCI = 2(3.9) \\[3ex]
+                    LCI = 7.8
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Determine whether the interpretation is valid or invalid. <br>
+                A university is trying to accommodate its commuter students in its course scheduling. <br>
+                In a survey, the school asked a sample of 75 randomly chosen students how long their daily commute is,
+                in minutes. <br>
+                The data showed a 99% confidence interval of (74.4, 86.8) for the mean commute time for students at the
+                university. <br>
+                If 100 more surveys are conducted (each using a sample with members chosen randomly and independently),
+                it is expected that exactly 99 of them will each produce a 99% confidence interval that contains its
+                sample mean.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM2')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM2">
+                    <br>
+                    The interpretation is invalid. <br>
+                    If 100 more students are chosen randomly to do the survey, it is guaranteed that all 100, not just
+                    99 of them, will each produce a 99% confidence interval that contains the sample mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Determine the <i>t</i>-values such that: <br>
+                (a.) The area in the right tail is 0.025 with 25 degrees of freedom. <br>
+                (b.) The area left of the t-value is 0.25 with 28 degrees of freedom. <br>
+                (c.) Critical <i>t</i>-value that corresponds to 98% confidence level with 7 degrees of freedom.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM3')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM3">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    One-tailed\;\;(Right-tailed) \\[3ex]
+                    \dfrac{\alpha}{2} = 0.025 \\[5ex]
+                    df = 25 \\[3ex]
+                    Critical\;\;t-value = 2.0595 \\[3ex]
+                    $
+                    <img src="images/Mean/Answers/Number3a.png" alt="Number 3a">
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    One-tailed\;\;(Left-tailed) \\[3ex]
+                    \dfrac{\alpha}{2} = 0.25 \\[5ex]
+                    df = 28 \\[3ex]
+                    Critical\;\;t-value = -0.6834 \\[5ex]
+                    (c.) \\[3ex]
+                    CL = 98\% = 0.98 \\[3ex]
+                    \alpha = 1 - 0.98 = 0.02 \\[3ex]
+                    This\;\;could\;\;mean: \\[3ex]
+                    (i.)\;\;Two-tailed\;\;test \\[3ex]
+                    \alpha = 0.02 \\[3ex]
+                    df = 7 \\[3ex]
+                    Critical\;\;t-value = \pm 2.9980 \\[3ex]
+                    (ii.)\;\; One-tailed\;\;(Right-tailed) \\[3ex]
+                    \dfrac{\alpha}{2} = 0.02 \\[5ex]
+                    df = 7 \\[3ex]
+                    Critical\;\;t-value = 2.9980 \\[3ex]
+                    (iii.)\;\; One-tailed\;\;(Left-tailed) \\[3ex]
+                    \dfrac{\alpha}{2} = 0.02 \\[5ex]
+                    df = 7 \\[3ex]
+                    Critical\;\;t-value = -2.9980
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Determine whether the interpretation is valid or invalid. <br>
+                A tire manufacturer wants to examine the durability of its new product. <br>
+                Company engineers randomly selected 175 new tires and measured the number of kilometers each can drive
+                before blowing out. <br>
+                The engineers found a 95% confidence interval of (18157.6, 18522.6) for the mean distance their new
+                tires can drive before blowing out. <br>
+                If 100 more samples are taken (with elements chosen randomly and independently), it is expected that
+                exactly 100 of them will each produce a 95% confidence interval that contains its sample mean.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM4')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM4">
+                    <br>
+                    The interpretation is valid. <br>
+                    If 100 more samples are taken (with elements chosen randomly and independently), it is expected that
+                    exactly 100 of them will each produce a 95% confidence interval that contains its sample mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Interpret this confidence interval. <br>
+                Rita wanted to determine the mean age of the residents of <i>Romance, Arkansas.</i> (<i>Hmmm...is it
+                    better than "Virginia is for Lovers"?</i>) <br>
+                She surveyed 250 random people of the town and obtained a 90% confidence interval for the population
+                mean age. <br>
+                Approximately how many of those confidence intervals will contain the value of the average age of the
+                population?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM5')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM5">
+                    <br>
+                    The 90% confidence interval means that about 90% of the samples (those random selected people) will
+                    contain the mean age of the population.
+                    <br><br>
+                    $
+                    90\%\;\;* 250 \\[3ex]
+                    0.9 * 250 \\[3ex]
+                    225 \\[3ex]
+                    $
+                    About 225 residents will have the average age of the population.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Determine whether the interpretation is valid or invalid. <br>
+                A manager at a Cereal company wants to confirm that there is an acceptable number of raisins in the
+                company's family-sized boxes. <br>
+                She counted the number of raisins in 100 randomly sampled boxes from the factory. <br>
+                From the collected data, she computed a 90% confidence interval of (333.7, 357.1) for the mean number of
+                raisins in family-sized boxes of the cereal. <br>
+                If 100 more samples are taken (with elements chosen randomly and independently), it is expected that
+                exactly 10 of them will each produce a 90% confidence interval that does not contain its sample mean.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM6')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM6">
+                    <br>
+                    The interpretation is invalid. <br>
+                    If 100 more samples are taken, it is guaranteed that all 100 of them will each produce a 90%
+                    confidence interval that contains its sample mean. <br>
+                    In other words, the number of 90% confidence intervals that do not contain the sample mean is
+                    guaranteed to be 0. <br>
+                    It is not expected to be 10.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) A sample is taken from a population. <br>
+                The size of the sample is 36 <br>
+                The mean of the sample is 123 <br>
+                The standard deviation of the population is 10 <br>
+                (a.) Construct a 95% confidence interval for the population mean. <br>
+                (b.) Interpret your result.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM7')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM7">
+                    <br>
+                    $
+                    n = 36 \\[3ex]
+                    \bar{x} = 123 \\[3ex]
+                    \sigma = 10 \\[3ex]
+                    CL = 95\% = 0.95 \\[3ex]
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.95 \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    $
+                    The population standard deviation was given <br>
+                    So, we have to use the $z$ distribution <br><br>
+                    $
+                    z_{\dfrac{\alpha}{2}} = z_{0.025} = 1.9600 \\[5ex]
+                    E = \dfrac{\sigma * z_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{10 * 1.96}{\sqrt{36}} \\[5ex]
+                    E = \dfrac{19.6}{6} \\[5ex]
+                    E = 3.2\bar{6} \\[3ex]
+                    E \approx 3.27 \\[5ex]
+                    95\%\:\: CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 123 \pm 3.27 \\[3ex]
+                    = 119.7\bar{3} \:\:and\:\: 126.2\bar{6} \\[3ex]
+                    \therefore 95\%\:\:CI = 119.73 \lt \mu \lt 126.27 \\[3ex]
+                    $
+                    We are 95% confident that the population mean is within the margin of error of the sample mean
+                    of 123. <br>
+                    We are 95% confident that the population mean is between 119.73 and 126.27
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) Determine whether the interpretation is valid or invalid. <br>
+                A farmer owned an orange grove and wanted to know how productive his trees were. <br>
+                He randomly selected 75 trees in the grove and kept track of how many oranges each tree produced during
+                one season. <br>
+                He found a 99% confidence interval of (459.8, 481.6) for the mean number of oranges produced by his
+                trees that season. <br>
+                There is a 99% chance that the mean number of produced by his trees that season is in the interval
+                (459.8, 481.6).
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM8')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM8">
+                    <br>
+                    The interpretation is invalid. <br>
+                    The population mean is the average number of oranges produced by all of the farmer's trees that
+                    season, not just the ones in the sample.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) James measured the mouth sizes of 10 randomly selected residents of the town of <i>Sweet Lips,
+                    Tennessee</i> (<i>How sweet are their lips</i>?). <br>
+                The mouth sizes (in millimeters) are:
+                <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td>$13$</td>
+                        <td>$35$</td>
+                        <td>$36$</td>
+                        <td>$38$</td>
+                        <td>$16$</td>
+                    </tr>
+                    <tr>
+                        <td>$25$</td>
+                        <td>$8$</td>
+                        <td>$18$</td>
+                        <td>$21$</td>
+                        <td>$26$</td>
+                    </tr>
+                </table>
+                <br>
+                Determine the point estimate for the average of the mouth sizes of the entire residents.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM9')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM9">
+                    <br>
+                    $
+                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                    = \dfrac{236}{10} \\[5ex]
+                    = 23.6 \\[3ex]
+                    $
+                    The point estimate is 23.6 millimeters.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) Determine whether the interpretation is valid or invalid. <br>
+                A psychiatrist conducted a study about the effect of sleep deprivation on academic performance. <br>
+                As part of the study, she surveyed 50 random students from a certain High School about their recent
+                sleep patterns. <br>
+                From the sample measurements, the psychiatrist calculated a 90% confidence interval of (45.4, 53.2) for
+                the mean number of hours the high school students slept last week. <br>
+                90% of the high school students slept between 45.4 and 53.2 hours last week.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM10')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM10">
+                    <br>
+                    The interpretation is invalid. <br>
+                    By chance, the original survey might have included only students that are heavy sleepers and sleep
+                    significantly more hours than what is average for the high school students.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) Calculate the point estimate of the population mean and the margin of error for the confidence
+                interval. <br>
+                Lower bound = 16 <br>
+                Upper bound = 28 <br>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM11')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM11">
+                    <br>
+                    $
+                    \bar{x} = \dfrac{upper\;\;confidence\;\;limit + lower\;\;confidence\;\;limit}{2} \\[5ex]
+                    \bar{x} = \dfrac{28 + 16}{2} \\[5ex]
+                    \bar{x} = 22 \\[5ex]
+                    E = \dfrac{upper\;\;confidence\;\;limit - lower\;\;confidence\;\;limit}{2} \\[5ex]
+                    E = \dfrac{28 - 16}{2} \\[5ex]
+                    E = 6
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) Determine whether the interpretation is valid or invalid. <br>
+                Complaints about poor service led the Department of Motor Vehicles (DMV) of a certain State to
+                investigate the wait times at a local branch. <br>
+                During one week, DMV employees randomly asked 50 people leaving this branch how long they had to wait in
+                line. <br>
+                Using the responses, they found a 99% confidence interval of (39.3, 42.1) for the mean wait time at the
+                DMV branch during that week (in minutes). <br>
+                At most 1% of people leaving this branch during the week waited less than 39.3 or more than 42.1
+                minutes.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM12')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM12">
+                    <br>
+                    The interpretation is invalid. <br>
+                    By chance, the survey might have included people who got stuck in long lines and had to wait
+                    significantly more than what is average.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) An infomercial claimed that a woman drove 6 hours without oil, thanks to an engine treatment. <br>
+                To determine the effectiveness of engine treatment, a company in the <i>City of Truth or Consequences,
+                    New Mexico</i>
+                tested engines in which they added the treatment to the motor oil, ran the engines, drained the oil, and
+                then determined
+                the time until the engines seized. <br>
+                The times (in minutes) are listed as shown:
+                <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td>$13.15$</td>
+                        <td>$15.05$</td>
+                        <td>$13.62$</td>
+                        <td>$16.64$</td>
+                        <td>$17.04$</td>
+                        <td>$16.66$</td>
+                    </tr>
+                    <tr>
+                        <td>$14.41$</td>
+                        <td>$15.10$</td>
+                        <td>$17.21$</td>
+                        <td>$17.87$</td>
+                        <td>$24.04$</td>
+                        <td>$14.39$</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Determine the point estimate of the mean amount of time. <br>
+                (b.) What is the biggest flaw of using a point estimate to determine the population mean? <br>
+                (c.) Construct a 95% confidence interval of the population mean. <br>
+                (d.) Interpret your result.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM13')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM13">
+                    <br>
+                    <table class="w3-center">
+                        <tr class="green">
+                            <td>Waiting Times, $x$</td>
+                            <td>Frequencies, $f$</td>
+                            <td>$f * x$</td>
+                            <td>$x - \bar{x}$</td>
+                            <td>$(x - \bar{x})^2$</td>
+                            <td>$f(x - \bar{x})^2$</td>
+                        </tr>
+                        <tr>
+                            <td>$13.15$</td>
+                            <td>$1$</td>
+                            <td>$13.15$</td>
+                            <td>$-3.115$</td>
+                            <td>$9.703225$</td>
+                            <td>$9.703225$</td>
+                        </tr>
+                        <tr>
+                            <td>$15.05$</td>
+                            <td>$1$</td>
+                            <td>$15.05$</td>
+                            <td>$-1.215$</td>
+                            <td>$1.476225$</td>
+                            <td>$1.476225$</td>
+                        </tr>
+                        <tr>
+                            <td>$13.62$</td>
+                            <td>$1$</td>
+                            <td>$13.62$</td>
+                            <td>$-2.645$</td>
+                            <td>$6.996025$</td>
+                            <td>$6.996025$</td>
+                        </tr>
+                        <tr>
+                            <td>$16.64$</td>
+                            <td>$1$</td>
+                            <td>$16.64$</td>
+                            <td>$0.375$</td>
+                            <td>$0.140625$</td>
+                            <td>$0.140625$</td>
+                        </tr>
+                        <tr>
+                            <td>$17.04$</td>
+                            <td>$1$</td>
+                            <td>$17.04$</td>
+                            <td>$0.775$</td>
+                            <td>$0.600625$</td>
+                            <td>$0.600625$</td>
+                        </tr>
+                        <tr>
+                            <td>$16.66$</td>
+                            <td>$1$</td>
+                            <td>$16.66$</td>
+                            <td>$0.395$</td>
+                            <td>$0.156025$</td>
+                            <td>$0.156025$</td>
+                        </tr>
+                        <tr>
+                            <td>$14.41$</td>
+                            <td>$1$</td>
+                            <td>$14.41$</td>
+                            <td>$-1.855$</td>
+                            <td>$3.441025$</td>
+                            <td>$3.441025$</td>
+                        </tr>
+                        <tr>
+                            <td>$15.10$</td>
+                            <td>$1$</td>
+                            <td>$15.10$</td>
+                            <td>$-1.165$</td>
+                            <td>$1.357225$</td>
+                            <td>$1.357225$</td>
+                        </tr>
+                        <tr>
+                            <td>$17.21$</td>
+                            <td>$1$</td>
+                            <td>$17.21$</td>
+                            <td>$0.945$</td>
+                            <td>$0.893025$</td>
+                            <td>$0.893025$</td>
+                        </tr>
+                        <tr>
+                            <td>$17.87$</td>
+                            <td>$1$</td>
+                            <td>$17.87$</td>
+                            <td>$1.605$</td>
+                            <td>$2.576025$</td>
+                            <td>$2.576025$</td>
+                        </tr>
+                        <tr>
+                            <td>$24.04$</td>
+                            <td>$1$</td>
+                            <td>$24.04$</td>
+                            <td>$7.775$</td>
+                            <td>$60.450625$</td>
+                            <td>$60.450625$</td>
+                        </tr>
+                        <tr>
+                            <td>$14.39$</td>
+                            <td>$1$</td>
+                            <td>$14.39$</td>
+                            <td>$-1.875$</td>
+                            <td>$3.515625$</td>
+                            <td>$3.515625$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 12$</td>
+                            <td>$\Sigma fx = 195.18$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 91.3063$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    \bar{x} = \dfrac{195.18}{12} \\[5ex]
+                    \bar{x} = 16.265 \\[3ex]
+                    $
+                    The point estimate of the population mean is the sample mean <br>
+                    The point estimate of the population mean = $16.265$ minutes <br><br>
+                    (b.) The flaw in using the point estimate is that it gives only a single value estimate of
+                    the population mean as compared to the interval estimate which gives a range of values.
+                    <br><br>
+                    $
+                    \Sigma f - 1 = 12 - 1 = 11 \\[3ex]
+                    s = \sqrt{\dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+                    s = \sqrt{\dfrac{91.3063}{11}} \\[5ex]
+                    s = \sqrt{8.30057273} \\[3ex]
+                    s = 2.88107146 \\[3ex]
+                    CL = 95\% = 0.95 \\[3ex]
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.95 \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    $
+                    The population standard deviation was not given <br>
+                    So, we have to use the $t$ distribution <br><br>
+                    $
+                    df = n - 1 = 12 - 1 = 11 \\[3ex]
+                    t_{\dfrac{\alpha}{2}} = t_{0.025} = 2.1009 \\[5ex]
+                    E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{2.88107146 * 2.1009}{\sqrt{12}} \\[5ex]
+                    E = \dfrac{6.05284303}{3.46410162} \\[5ex]
+                    E = 1.74730527 \\[5ex]
+                    95\%\:\: CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 16.265 \pm 1.74730527 \\[3ex]
+                    = 14.5176947 \:\:and\:\: 18.0123053 \\[3ex]
+                    \therefore 95\%\:\:CI = 14.52 \lt \mu \lt 18.01 \\[3ex]
+                    $
+                    We are 95% confident that the population mean is within the margin of error of the sample mean
+                    of 16.265 <br>
+                    We are 95% confident that the population mean is between 14.52 and 18.01
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) Determine whether the interpretation is valid or invalid. <br>
+                A store owner wants to check whether her competitor carries larger produce than she does. <br>
+                She purchased 100 randomly selected kiwis from her competitor and weighed them. <br>
+                The owner found a 99% confidence interval of (40.9, 41.9) for the mean weight of kiwis from her
+                competitor (in grams). <br>
+                If 100 more samples are taken (with elements chosen randomly and independently), it is expected that the
+                mean weight of kiwis from her competitor would be in 99 of the computed 99% confidence intervals.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM14')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM14">
+                    <br>
+                    The interpretation is valid. <br>
+                    For 99% of random samples, the 99% confidence interval will contain the population mean. <br>
+                    This means that if 100 more random samples are taken, it is expected that the calculated interval
+                    for 99 of them will contain the population mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) The mean undergraduate grade point average​ (GPA) for students accepted at a random sample of 15
+                medical schools in a country was calculated. <br>
+                The mean GPA for these 15 schools was 3.55 with a standard error of 0.05. <br>
+                The distribution of undergraduate GPAs is Normal.
+                <br><br>
+                (a.) Determine and interpret the 95% confidence interval. <br>
+                (b.) Based on your confidence​ interval, would you believe that the population mean GPA is 3.62​? Why or
+                why​ not?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM15')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM15">
+                    <br>
+                    $
+                    \text{sample size, } n = 15 \\[3ex]
+                    \text{sample mean, } \bar{x} = 3.55 \\[3ex]
+                    \text{standard error, } SE = 0.05 \\[3ex]
+                    \text{sample standard deviation, } s = SE * \sqrt{n} \\[3ex]
+                    s = 0.05 * \sqrt{15} \\[3ex]
+                    s = 0.1936491673 \\[3ex]
+                    $
+                    Let us solve the question using at least two approaches: Formulas and Tables, and Technology. <br>
+                    Because the: <br>
+                    (1.) Distribution is normal <br>
+                    (2.) Sample size is less than 30 <br>
+                    (3.) Sample standard deviation was given/found <br>
+                    (4.) Confidence interval is needed <br>
+                    We shall use the <b>t-distribution</b> for the Tables and <b>TInterval</b> for the Technology.
+                    <br><br>
+                    1st Approach: <b>Formulas and Tables</b>
+                    <br><br>
+                    $
+                    \text{Confidence Level, } CL = 95\% = 0.95 \\[3ex]
+                    \text{Significance Level, } \alpha = 1 - 0.95 = 0.05 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    \text{Degrees of freedom, } df = n - 1 = 15 - 1 = 14 \\[3ex]
+                    \text{Critical value of t, } t_{\dfrac{\alpha}{2}} = 2.145 \\[5ex]
+                    $
+                    <img src="images/Mean/Answers/Number15-Table.png" alt="Number 15-Table">
+                    <br><br>
+                    $
+                    \text{Margin of Error, } E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[10ex]
+                    E = \dfrac{0.1936491673 * 2.145}{\sqrt{15}} \\[5ex]
+                    E = 0.10725 \\[3ex]
+                    \text{Lower Confidence Limit, } LCL = \bar{x} - E \\[3ex]
+                    LCL = 3.55 - 0.10725 \\[3ex]
+                    LCL = 3.44275 \\[3ex]
+                    \text{Upper Confidence Limit, } UCL = \bar{x} + E \\[3ex]
+                    UCL = 3.55 + 0.10725 \\[3ex]
+                    UCL = 3.65725 \\[3ex]
+                    \text{95% confidence interval} = (3.44275, 3.65725) \\[3ex]
+                    $
+                    2nd Approach: <b>Technology</b> <br>
+                    Step 1: <br>
+                    <img src="images/Mean/Answers/Number15a.png" alt="Number 15a">
+                    <br><br>
+                    <img src="images/Mean/Answers/Number15b.png" alt="Number 15b">
+                    <br><br>
+                    <img src="images/Mean/Answers/Number15c.png" alt="Number 15c">
+                    <br><br>
+                    <img src="images/Mean/Answers/Number15d.png" alt="Number 15d">
+                    <br><br>
+                    We are 95% confident that that the population mean undergraduate grade point average​ (GPA) is
+                    between 3.44275 and 3.65725
+                    <br><br>
+                    (b.) Since 3.62 is within the bounds of the confidence​ interval, it is plausible that the
+                    population mean GPA is 3.62.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) An IQ (Intelligence Quotient) test is designed so that the mean is 100 and the standard deviation
+                is 21 for the population of normal adults. <br>
+                Calculate the sample size necessary to estimate the mean IQ score of statistics students such that it
+                can be said with 90% confidence that the sample mean is within 9 IQ points of the true mean.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM16')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM16">
+                    <br>
+                    $
+                    \mu = 100 \\[3ex]
+                    \sigma = 21 \\[3ex]
+                    E = 9 \\[3ex]
+                    CL = 90\% = 0.9 \\[3ex]
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.9 \\[3ex]
+                    \alpha = 0.1 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.1}{2} = 0.05 \\[5ex]
+                    $
+                    We shall use the <i>z</i> distribution in this case because we were given the population standard
+                    deviation
+                    <br><br>
+                    $
+                    z_{\dfrac{\alpha}{2}} = 1.6449 \\[7ex]
+                    n = \left(\dfrac{\sigma * z_{\dfrac{\alpha}{2}}}{E}\right)^2 \\[9ex]
+                    n = \left(\dfrac{21 * 1.6449}{9}\right)^2 \\[5ex]
+                    n = 14.73101161 \\[3ex]
+                    n \approx 15\;adults \\[3ex]
+                    $
+                    To estimate the mean IQ score of statistics students such that it can be said with 90% confidence
+                    that the sample mean is within 9 IQ points of the true mean, at least 15 students are needed.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionISM17')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) Determine whether the interpretation is valid or invalid. <br>
+                A physical trainer is designing a fitness program for middle-aged men. <br>
+                She asked a random sample of 175 men in their 40s to report how far they could jump in centimeters from
+                a standstill. <br>
+                The trainer computed a 99% confidence interval of (121.9, 127.1) for the mean jump distance for men in
+                their 40s. <br>
+                If the trainer takes another random sample, there is a 1% chance that the mean jump distance for men in
+                their 40s will not be in the new sample's 99% confidence interval.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM18')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM18">
+                    <br>
+                    The interpretation is valid. <br>
+                    For 99% of random samples, the 99% confidence interval will contain the population mean. <br>
+                    So, for the other 1% of random samples, the 99% confidence interval will not contain the population
+                    mean. <br>
+                    This means that if the sample were repeated, there would be a 1% chance the confidence interval for
+                    that sample would not contain the population mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) A random sample of 10 colleges in the U.S State of Arizona showed the mean graduation rate of high
+                school students in the past 4 years as 44.6% with a margin of error of 5% using a 5% level of
+                significance. <br>
+                The distribution of the graduation rates is a normal distribution.
+                <br><br>
+                (a.) Interpret the confidence interval.
+                <br><br>
+                (b.) Hate News Network reported the population mean percentage as 28.6%. <br>
+                Should the Hate News Network report be rejected?
+                <br><br>
+                (c.) Love News Network study reported the population mean percentage as 43.5%. <br>
+                Should the Love News Network report be rejected?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM19')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM19">
+                    <br>
+                    $
+                    \alpha = 5\% = 0.5 \\[3ex]
+                    CL = 1 - \alpha = 1 - 0.05 = 0.95 = 95\% \\[3ex]
+                    \bar{x} = 43.6\% \\[3ex]
+                    E = 5\% \\[5ex]
+                    \underline{Confidence\;\;Interval\;\;for\;\;the\;\;Population\;\;Mean} \\[3ex]
+                    \bar{x} - E \lt \mu \lt \bar{x} + E \\[3ex]
+                    44.6\% - 5\% \lt \mu \lt 44.6\% + 5\% \\[3ex]
+                    39.6\% \lt \mu \lt 49.6\% \\[3ex]
+                    $
+                    (a.) We are 95% confident that the population mean graduation rate is between 39.6% and 49.6%
+                    <br><br>
+                    (b.) Reject the Hate News Network report because 28.6% is not in the confidence interval. <br>
+                    It is not plausible the population graduation rate is 28.6%.
+                    <br><br>
+                    (c.) Do not reject the Love News Network because 43.5% is in the confidence interval. <br>
+                    It is plausible the population mean graduation rate is 43.5%.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) Determine whether the interpretation is valid or invalid. <br>
+                During a recent exhibit on the physics of football, volunteers at the local science museum conducted a
+                survey of 750 randomly chosen visitors. <br>
+                The survey included questions about attendance at sporting events. <br>
+                The volunteers calculated a 90% confidence interval of (7.9, 8.1) for the mean number of sporting events
+                museum visitors attended last year. <br>
+                The average number of sporting events visitors in the survey went to last year is between 7.9 and 8.1.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM20')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM20">
+                    <br>
+                    The interpretation is valid. <br>
+                    The confidence interval (7.9, 8.1) contains the sample mean. <br>
+                    In other words, the average number of sporting events visitors in the survey went to last year is
+                    between 7.9 and 8.1.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/InferentialStatistics/Mean.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) Paul randomly selected four bags of oranges from many bags of oranges. <br>
+                Each bag was labeled 10 pounds. <br>
+                However, he decided to weigh each bag. <br>
+                The weights of the bags are: 9.2, 9.2, 9.3, and 9.7 pounds.
+                <br><br>
+                (a.) Assuming a normal distribution of the weights of all the bags, calculate the 95% confidence
+                interval for the mean weight of all the bags of oranges. <br>
+                (Round to 3 decimal places.)
+                <br><br>
+                (b.) Interpret the confidence level.
+                <br><br>
+                (c.) Interpret the confidence interval.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM21')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM21">
+                    <br>
+                    $
+                    \underline{Samples}: \\[3ex]
+                    9.2, 9.2, 9.3, 9.7 \\[3ex]
+                    n = 4 \\[3ex]
+                    \bar{x} = 9.35 \\[3ex]
+                    s = 0.2380476143 \\[3ex]
+                    $
+                    Because of the sample standard deviation, we shall use the <i>t</i> distribution table.
+                    <br><br>
+                    $
+                    df = n - 1 \\[3ex]
+                    df = 4 - 1 \\[3ex]
+                    df = 3 \\[3ex]
+                    CL = 95\% = 0.95 \\[3ex]
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.95 \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    t_{\dfrac{\alpha}{2}} = 3.1824 \\[5ex]
+                    E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{0.2380476143 * 3.1824}{\sqrt{4}} \\[5ex]
+                    E = 0.3787813639 \\[5ex]
+                    95\%\;\;CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 9.35 \pm 0.3787813639 \\[3ex]
+                    = 8.971218636 \lt \mu \lt 9.728781364 \\[3ex]
+                    \approx 8.971 \lt \mu \lt 9.729 \\[3ex]
+                    $
+                    (b.) We are 95% confident the population mean of the bags is between 8.971 pounds and 9.729 pounds.
+                    <br><br>
+                    (c.) In about 95% of all the samples of the bags of oranges, the confidence interval will contain
+                    the population mean of (8.971, 9.729) pounds.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) Determine whether the interpretation is valid or invalid. <br>
+                Game reviewers complained extensively about how a gaming company's recent game was too short. <br>
+                To ensure this does not happen again, the gaming company gave a pre-release copy of its new game to 100
+                randomly selected gamers. <br>
+                Each gamer was asked to note his or her play-through time. <br>
+                The gaming company found a 90% confidence interval of (214.6, 242) for the mean play-through time for
+                all gamers in minutes. <br>
+                There is a 10% chance that the mean play-through time for all gamers (in minutes) is not in the interval
+                (214.6, 242).
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM22')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM22">
+                    <br>
+                    The interpretation is invalid. <br>
+                    The population mean is the average play-through time in minutes for all gamers, not just the ones in
+                    the sample.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <button class="solutions" onclick="solutions('solutionISM23')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) Determine whether the interpretation is valid or invalid. <br>
+                An epidemiologist interested in how the common cold impacts health clinics. <br>
+                She asked 275 randomly selected clinics across a certain State for their patient data from one specific
+                month. <br>
+                For each clinic, she looked at the number of patients who came in with a common cold that month. <br>
+                She determined a 90% confidence interval of (43.5, 46.9) for the mean number of patients with a common
+                cold who visited clinics in the State that month. <br>
+                If she takes another random sample, there is a 90% chance that the mean number of patients with a common
+                cold who visited clinics in the State that month will be in the new sample's 90% confidence interval.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM24')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM24">
+                    <br>
+                    The interpretation is valid. <br>
+                    For 90% of random samples, the 90% confidence interval will contain the population mean. <br>
+                    This means that if the sample were repeated, there would be a 90% chance the confidence interval for
+                    that sample would contain the population mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <button class="solutions" onclick="solutions('solutionISM25')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) Determine whether the interpretation is valid or invalid. <br>
+                Executives at a certain public park would like to know what age group to target with their
+                advertisements. <br>
+                To begin, the executives collected the ages of 400 randomly selected attendees in one month. <br>
+                Analysis of the study produced a 99% confidence interval of (13.2, 14.2) for the mean age of attendees
+                at the park. <br>
+                If the executives take more same-sized samples, then 99% of the attendees in each sample will be between
+                13.2 and 14.2 years old.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM26')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM26">
+                    <br>
+                    The interpretation is invalid. <br>
+                    By chance, the original sample might have included only attendees significantly older than what is
+                    average. <br>
+                    If this were the case, the confidence interval (13.2, 14.2) would exclude much of the population.
+                    <br>
+                    As a result, in most samples it would not be the case that 99% of sampled attended would be between
+                    13.2 and 14.2 years old.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+
+                <button class="solutions" onclick="solutions('solutionISM27')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM27">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) Determine whether the interpretation is valid or invalid. <br>
+                Botanists are concerned that rising temperatures are impeding the growth of trees in a certain National
+                Forest. <br>
+                To investigate, they measured the heights of a random sample of 50 mature birch trees to the nearest
+                tenth of a meter. <br>
+                They calculated a 95% confidence interval of (11.7, 13.9) for the mean height of mature birch trees in
+                the National Forest. <br>
+                If 100 more samples are taken (with elements chosen randomly and independently), it is expected that the
+                mean height of mature birch trees in the forest would be in 95 of the computed 95% confidence intervals.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM28')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM28">
+                    <br>
+                    The interpretation is valid. <br>
+                    The population mean is the average height of all mature birch trees in the National Forest, not just
+                    the ones in the sample. <br>
+                    For 95% of random samples, the 95% confidence interval will contain the population mean. <br>
+                    This means that if 100 more random samples are taken, it is expected that the calculated interval
+                    for 95 of them will contain the population mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionISM29')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.) Chastity wanted to determine the population average of the heights of residents in the town of
+                <i>Fidelity, Missouri</i> (<i>Hmmm...who are they loyal to?</i>) <br>
+                She measured the heights of a sample of the residents, and intend to find a confidence interval for the
+                average height of the population of the residents. <br>
+                Which of these confidence levels, 95%, or 99% will result in the confidence interval giving a more
+                accurate estimate of the population mean height?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM30')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM30">
+                    <br>
+                    The 95% confidence level will give a more accurate estimate of the population mean height because
+                    the margin of error will be smaller for that confidence level.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <button class="solutions" onclick="solutions('solutionISM31')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM31">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) Given these values:
+                <br><br>
+                $
+                \bar{x} = 37 \\[3ex]
+                n = 16 \\[3ex]
+                \sigma = 6 \\[3ex]
+                CL = 95\% \\[3ex]
+                $
+                Calculate and interpret the margin of error. <br>
+                Round to two decimal places.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM32')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM32">
+                    <br>
+                    $
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.95 \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    $
+                    We shall use the <i>z</i>-distribution table because the population standard deviation was given.
+                    <br><br>
+                    $
+                    z_{\dfrac{\alpha}{2}} = 1.96 \\[7ex]
+                    E = \dfrac{\sigma * z_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{6 * 1.96}{\sqrt{16}} \\[5ex]
+                    E = 2.94 \\[5ex]
+                    95\%\;\;CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 37 \pm 2.94 \\[3ex]
+                    = 34.06 \lt \mu \lt 39.94 \\[3ex]
+                    $
+                    We are 95% confident that the population mean is within the margin of error of the sample mean of 37
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.) A simple random sample is drawn from a normally distributed population. <br>
+                The sample mean is 109 and the sample standard deviation is 10. <br>
+                (Round to one decimal place as needed.)
+                <br><br>
+                (a.) Construct a 98% confidence interval about the population mean if the sample size is 20.
+                <br><br>
+                (b.) Construct a 98% confidence interval about the population mean if the sample size is 24.
+                <br><br>
+                (c.) Construct a 99% confidence interval about the population mean if the sample size is 20.
+                <br><br>
+                (d.) What are your observations regarding the: <br>
+                (i.) sample size and the margin of error? <br>
+                (ii.) Confidence interval and the margin of error?
+                <br><br>
+                (e.) Assume the population was not normally distributed, should we compute the confidence interval? <br>
+                Why or why not?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM33')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM33">
+                    <br>
+                    $
+                    \bar{x} = 109 \\[3ex]
+                    s = 10 \\[3ex]
+                    $
+                    We shall use the <i>t</i> distribution table because the sample standard deviation was given.
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    CL = 98\% = 0.98 \\[3ex]
+                    \alpha = 1 - 0.98 \\[3ex]
+                    \alpha = 0.02 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.02}{2} = 0.01 \\[5ex]
+                    n = 20 \\[3ex]
+                    df = n - 1 \\[3ex]
+                    df = 20 - 1 \\[3ex]
+                    df = 19 \\[3ex]
+                    t_{\dfrac{\alpha}{2}} = 2.5395 \\[7ex]
+                    E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{10 * 2.5395}{\sqrt{20}} \\[5ex]
+                    E = 5.678494629 \\[3ex]
+                    98\%\;\;CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 109 \pm 5.678494629 \\[3ex]
+                    = 103.3215054 \lt \mu \lt 114.6784946 \\[3ex]
+                    \approx 103.3 \lt \mu \lt 114.7 \\[5ex]
+
+                    (b.) \\[3ex]
+                    CL = 98\% = 0.98 \\[3ex]
+                    \alpha = 1 - 0.98 \\[3ex]
+                    \alpha = 0.02 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.02}{2} = 0.01 \\[5ex]
+                    n = 24 \\[3ex]
+                    df = n - 1 \\[3ex]
+                    df = 24 - 1 \\[3ex]
+                    df = 23 \\[3ex]
+                    t_{\dfrac{\alpha}{2}} = 2.5395 \\[7ex]
+                    E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{10 * 2.5395}{\sqrt{24}} \\[5ex]
+                    E = 5.183732668 \\[3ex]
+                    98\%\;\;CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 109 \pm 5.183732668 \\[3ex]
+                    = 103.8162673 \lt \mu \lt 114.1837327 \\[3ex]
+                    \approx 103.8 \lt \mu \lt 114.2 \\[5ex]
+
+                    (c.) \\[3ex]
+                    CL = 99\% = 0.99 \\[3ex]
+                    \alpha = 1 - 0.99 \\[3ex]
+                    \alpha = 0.01 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.01}{2} = 0.005 \\[5ex]
+                    n = 20 \\[3ex]
+                    df = n - 1 \\[3ex]
+                    df = 20 - 1 \\[3ex]
+                    df = 19 \\[3ex]
+                    t_{\dfrac{\alpha}{2}} = 2.8609 \\[7ex]
+                    E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{10 * 2.8609}{\sqrt{20}} \\[5ex]
+                    E = 6.397166877 \\[3ex]
+                    99\%\;\;CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 109 \pm 6.397166877 \\[3ex]
+                    = 102.6028331 \lt \mu \lt 115.3971669 \\[3ex]
+                    \approx 102.6 \lt \mu \lt 115.4 \\[3ex]
+                    $
+                    (d.) (i.) As the sample size increases, the margin of error decreases. <br>
+                    (ii.) As the level of confidence increases, the margin of error increases.
+                    <br><br>
+                    (e.) If the population is not normally distributed, the confidence interval should not be computed.
+                    <br>
+                    The requirement for computing the confidence interval about a population mean is that the population
+                    should be normally distributed, or the sample size should be greater than 30.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM34')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (35.)
+
+            <button class="solutions" onclick="solutions('solutionISM35')">Show/Hide Answer</button>
+            <div class="result" id="solutionISM35">
+                <br>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (36.)
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionISM36')">Show/Hide Answer</button>
+            <div class="result" id="solutionISM36">
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionISM37')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.) Determine whether the interpretation is valid or invalid. <br>
+                A man is convinced that the German novel he just finished reading has some of the longest sentences he
+                has ever encountered. <br>
+                To prove this to his friends, he randomly selected 50 sentences in the novel and noted the number of
+                words in each. <br>
+                He found a 95% confidence interval of (20.2, 24.2) for the mean number of words in sentences from the
+                novel. <br>
+                If 100 more samples are taken (with elements chosen randomly and independently), it is expected that for
+                95 of the samples, the sample mean will be between 20.2 and 24.2.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM38')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM38">
+                    <br>
+                    This is invalid. <br>
+                    By chance, the original sample might have included only elaborate sentences significantly longer
+                    than what is average for the novel.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <button class="solutions" onclick="solutions('solutionISM39')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM40')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/InferentialStatistics/Mean.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionISM41')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.) In calculating the confidence interval for a random sample of the grade point averages (GPAs) of
+                25 students. <br>
+                The first interval was (2.50, 3.20) and the second interval was (2.60, 3.10). <br>
+                One of them is a 90% interval and one is a 95% interval.
+                <br><br>
+                (a.) Which one is which? <br>
+                How do you know?
+                <br><br>
+                (b.) Suppose the sample size is increased from 25 to 100. <br>
+                Comment on the width, standard error, and the margin of error for the first interval.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM42')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM42">
+                    <br>
+                    (a.) The first interval, (2.50, 3.20) is the 95% interval and the second interval, (2.60, 3.10) is
+                    the 90% interval. <br>
+                    This is because the higher the confidence level, the wider the confidence interval.
+                    <br><br>
+                    $
+                    3.20 - 2.50 \gt 3.10 - 2.60 \\[3ex]
+                    0.7 \gt 0.5 \\[3ex]
+                    $
+                    (b.) The 95% interval with the sample size of 100 would result in a narrower width than the 95%
+                    interval with the sample size of 25. <br>
+                    This is because a larger sample size provides a smaller standard error and a smaller margin of error
+                    at the same confidence level.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.) A clinical trial was conducted to test the effectiveness of a drug for treating insomnia in old
+                patients. <br>
+                Before treatment, 19 patients had a mean wake time of 104.0 minutes. <br>
+                After treatment, the 19 patients had a mean wake time of 79.6 minutes and a standard deviation of 44.2
+                minutes. <br>
+                Assume the 19 patients to be from a normally distributed population. <br>
+                (Round to a decimal place.)
+                <br><br>
+                (a.) Construct a 95% confidence interval estimate of the mean wake time for a population with drug
+                treatments. <br>
+                (b.) What does the result suggest about the mean wake time of 104.0 minutes before the treatment? <br>
+                (c.) Does the drug appear to be effective?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM43')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM43">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    n = 19 \\[3ex]
+                    \bar{x} = 79.6 \\[3ex]
+                    s = 44.2 \\[3ex]
+                    CL = 95\% = 0.95 \\[3ex]
+                    \alpha = 1 - 0.95 \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    $
+                    We shall use the <i>t</i> distribution in this case because we were given the sample standard
+                    deviation
+                    <br><br>
+                    $
+                    df = n = 1 \\[3ex]
+                    df = 19 - 1 \\[3ex]
+                    df = 18 \\[3ex]
+                    t_{\dfrac{\alpha}{2}} = 2.1009 \\[7ex]
+                    E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[7ex]
+                    E = \dfrac{44.2 * 2.1009}{\sqrt{19}} \\[5ex]
+                    E = 21.30349458 \\[3ex]
+                    95\%\;\;CI \\[3ex]
+                    = \bar{x} \pm E \\[3ex]
+                    = 79.6 \pm 21.30349458 \\[3ex]
+                    = 58.29650542 \lt \mu \lt 100.9034946 \\[3ex]
+                    \approx 58.3 \lt \mu \lt 100.9 \\[3ex]
+                    $
+                    (b.) <br>
+                    The confidence interval does not contain the mean wake time of 104.0 minutes before the treatment.
+                    <br>
+                    The mean wake time before the treatment for the 19 patients is 104.0 minutes. <br>
+                    The mean wake time after the treatment for the population that was treated with the drug is between
+                    58.3 minutes and 100.9 minutes. <br>
+                    Both values are less than 104.0 minutes. <br>
+                    (c.) <br>
+                    This means that the drug had an effect. <br>
+                    The drug appears to be effective.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM44')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <button class="solutions" onclick="solutions('solutionISM45')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM45">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM46')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <button class="solutions" onclick="solutions('solutionISM47')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM47">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.) A statistician in the town of <i>Pray, Montana</i> (<i>Is every resident in that town a Prayer
+                    Warrior?</i>) wanted to estimate the average blood alcohol concentration (BAC) for drivers involved
+                in fatal accidents who have positive BAC values. <br>
+                He has been asking the state residents to pray, rather than drink. <br>
+                Montana was one of the states with the highest percentage of drunken drivers in 2014. (24/7 Wall St.:
+                https://247wallst.com/special-report/2014/04/25/states-with-the-most-drunk-driving/) <br>
+                He randomly selected the records from 1000 such drivers in 2014 and determined the sample mean BAC to be
+                0.15 g/dL with a standard deviation of 0.06 g/dL. <br>
+                A histogram of blood alcohol concentrations in fatal accidents shows that BACs are highly skewed right.
+                <br>
+                Why is a large sample size required to construct a confidence interval for the mean BAC of fatal crashes
+                with a positive BAC?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM48')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM48">
+                    <br>
+                    A large sample size is needed because the distribution of blood alcohol concentrations is not
+                    normally distributed. <br>
+                    It is skewed right.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.)
+                <button class="solutions" onclick="solutions('solutionISM49')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM49">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM50')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM50">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (51.)
+                <button class="solutions" onclick="solutions('solutionISM51')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM51">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (52.) The pulse rates of 141 randomly selected adult males in the town of <i>Roaches, Illinois</i>
+                (<i>Wow... guess they have more roaches than the Big Apple</i> ) vary from a low of 43 bpm (beats per
+                minute) to a high of 127 bpm. <br>
+                Calculate the minimum sample size required to estimate the mean pulse rate of adult males in the town
+                using a 90% confidence level that the sample mean is within 3 bpm of the population mean.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM52')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM52">
+                    <br>
+                    $
+                    Max = 127 \\[3ex]
+                    Min = 43 \\[3ex]
+                    \underline{Range\;\;Rule\;\;of\;\;Thumb} \\[3ex]
+                    s = \dfrac{Max - Min}{4} \\[5ex]
+                    s = \dfrac{127 - 43}{4} \\[5ex]
+                    s = 21 \\[3ex]
+                    E = 3 \\[3ex]
+                    CL = 90\% = 0.9 \\[3ex]
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.9 \\[3ex]
+                    \alpha = 0.1 \\[3ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.1}{2} = 0.05 \\[5ex]
+                    n = 141 \\[3ex]
+                    df = n - 1 \\[3ex]
+                    df = 141 - 1 \\[3ex]
+                    df = 140 \\[3ex]
+                    $
+                    We shall use the <i>t</i> distribution in this case because of the sample standard deviation
+                    <br><br>
+                    $
+                    t_{\dfrac{\alpha}{2}} = 1.6558 \\[7ex]
+                    n = \left(\dfrac{s * t_{\dfrac{\alpha}{2}}}{E}\right)^2 \\[9ex]
+                    n = \left(\dfrac{21 * 1.6558}{3}\right)^2 \\[5ex]
+                    n = 134.3420084 \\[3ex]
+                    n \approx 135\;adult\;\;males \\[3ex]
+                    $
+                    To estimate the mean pulse rate of adult males in the town using a 90% confidence level that the
+                    sample mean is within 3 bpm of the population mean, a minimum of 135 adult males are needed.
+                    <br><br>
+                    <i>
+                        <b>Student:</b> Why is it not 134 rather than 135 adult males? <br>
+                        <b>Teacher:</b> Whenever we deal with the number of living beings, we always <u>round up</u> to
+                        the nearest integer. <br>
+                        Unless specified otherwise, we do not do the normal rounding.
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (53.)
+                <button class="solutions" onclick="solutions('solutionISM53')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM53">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (54.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM54')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM54">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (55.)
+                <button class="solutions" onclick="solutions('solutionISM55')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM55">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (56.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM56')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM56">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (57.)
+                <button class="solutions" onclick="solutions('solutionISM57')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM57">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (58.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM58')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM58">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (59.)
+                <button class="solutions" onclick="solutions('solutionISM59')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM59">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (60.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM60')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM60">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/InferentialStatistics/Mean.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (61.)
+                <button class="solutions" onclick="solutions('solutionISM61')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM61">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (62.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM62')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM62">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (63.)
+                <button class="solutions" onclick="solutions('solutionISM63')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM63">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (64.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISM64')">Show/Hide Answer</button>
+                <div class="result" id="solutionISM64">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2017&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages1.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

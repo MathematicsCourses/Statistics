@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Descriptive Statistics Measures</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="All glory to our LORD JESUS CHRIST. We are experts in the measures of center, measures of dispersion, measures of position, and measures of skewness.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
+              mathematics, statistics, descriptive statistics, mean, median, mode, midrange, range, variance, 
+              standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
+              standard error, measures of center, summation, sample size, population size, measures of central tendency, 
+              measures of dispersion, measures of spread, measures of variation, measures of variability, 
+              measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
+              measures of relative standing, boxplots">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 bisque" id="quotes">
+        <!--
+            <div class="w3-center">
+                <button class="quotations" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            
+            <div class="quotes w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages5"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The Joy of a Teacher is the Success of his Students.</q> - Samuel Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples: Descriptive Statistics (All Measures)</h1>
+
+
+    <div class="w3-container">
+        <!--
+            <img src="images/chukwuemekasamueldominic.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" title="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            <! Image in top left corner --
+            <a href="https://descriptive-statistics.appspot.com" title="Samuel Dominic Chukwuemeka">
+                <img src="images/chukwuemeka4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br><br>
+        <mark>For SAT Students</mark> <br>
+        Any question labeled SAT-C is a question that allows a calculator. <br>
+        Any question labeled SAT-NC is a question that does not allow a calculator. <br><br>
+        <mark>For JAMB Students</mark> <br>
+        Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately. <br><br>
+
+        Solve all questions. <br>
+        Show all work.
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>WASSCE</b>
+                <table class="w3-padding w3-center">
+                    <tr>
+                        <td>Marks</td>
+                        <td>$1$</td>
+                        <td>$2$</td>
+                        <td>$3$</td>
+                        <td>$4$</td>
+                        <td>$5$</td>
+                    </tr>
+                    <tr>
+                        <td>Number of students</td>
+                        <td>$m + 2$</td>
+                        <td>$m - 1$</td>
+                        <td>$2m - 3$</td>
+                        <td>$m + 5$</td>
+                        <td>$3m - 4$</td>
+                    </tr>
+                </table> <br>
+                The table shows the distribution of marks scored by some students in a test. <br>
+                (1.) If the mean mark is $3\dfrac{6}{23}$, find the value of $m$ <br><br>
+                (2.) Find the: <br>
+                (i) inter-quartile range; <br>
+                (ii) probability of selecting a student who scored at least $4$ marks in the test.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS1')">Show/Hide Answer</button>
+                <div class="result" id="solutionS1">
+                    <br>
+                    <table class="w3-center">
+                        <tr class="green">
+                            <td>Marks, $x$</td>
+                            <td>Number of students, $f$</td>
+                            <td>$f * x$</td>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$m + 2$</td>
+                            <td>$1(m + 2)$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$m - 1$</td>
+                            <td>$2(m - 1)$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$2m - 3$</td>
+                            <td>$3(2m - 3)$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$m + 5$</td>
+                            <td>$4(m + 5)$</td>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$3m - 4$</td>
+                            <td>$5(3m - 4)$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 8m - 1$</td>
+                            <td>$\Sigma fx = 28m - 9$</td>
+                        </tr>
+                    </table>
+                    <br>
+                    $
+                    (1.) \\[1em]
+                    \bar{x} = 3\dfrac{6}{23} \\[2em]
+                    \Sigma f = (m + 2) + (m - 1) + (2m - 3) + (m + 5) + (3m - 4) \\[1em]
+                    = m + 2 + m - 1 + 2m - 3 + m + 5 + 3m - 4 \\[1em]
+                    = 8m - 1 \\[1em]
+                    \Sigma fx = 1(m + 2) + 2(m - 1) + 3(2m - 3) + 4(m + 5) + 5(3m - 4) \\[1em]
+                    = m + 2 + 2m - 2 + 6m - 9 + 4m + 20 + 15m - 20 \\[1em]
+                    = 28m - 9 \\[1em]
+                    \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    3\dfrac{6}{23} = \dfrac{28m - 9}{8m - 1} \\[5ex]
+                    \dfrac{75}{23} = \dfrac{28m - 9}{8m - 1} \\[5ex]
+                    Cross\:\:Multiply \\[1em]
+                    75(8m - 1) = 23(28m - 9) \\[1em]
+                    600m - 75 = 644m - 207 \\[1em]
+                    -75 + 207 = 644m - 600m \\[1em]
+                    132 = 44m \\[1em]
+                    44m = 132 \\[1em]
+                    m = \dfrac{132}{44} \\[2em]
+                    m = 3 \\[1em]
+                    $
+                    Let us update the table <br><br>
+                    <table class="w3-center">
+                        <tr class="green">
+                            <td>Marks, $x$</td>
+                            <td>Number of students, $f$</td>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>
+                                $m + 2$ <br>
+                                $3 + 2$ <br>
+                                $5$ <br>
+                                means $1, 1, 1, 1, 1$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>
+                                $m - 1$ <br>
+                                $3 - 1$ <br>
+                                $2$ <br>
+                                means $2, 2$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>
+                                $2m - 3$ <br>
+                                $2(3) - 3$ <br>
+                                $6 - 3$ <br>
+                                $3$ <br>
+                                means $3, 3, 3$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>
+                                $m + 5$ <br>
+                                $3 + 5$ <br>
+                                $8$ <br>
+                                means $4, 4, 4, 4, 4, 4, 4, 4$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>
+                                $3m - 4$ <br>
+                                $3(3) - 4$ <br>
+                                $9 - 4$ <br>
+                                $5$ <br>
+                                means $5, 5, 5, 5, 5$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                $\Sigma f$ <br>
+                                $8m - 1$ <br>
+                                $8(3) - 1$ <br>
+                                $24 - 1$ <br>
+                                $23$ <br>
+                                means $\Sigma f = n = 23$
+                            </td>
+                        </tr>
+                    </table> <br>
+                    $
+                    (2.) \\[1em]
+                    The\:\:dataset\:\:is \\[1em]
+                    1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5 \\[1em]
+                    (i) \\[1em]
+                    IQR = Q_3 - Q_1 \\[1em]
+                    Q_3 = 75th\:\:percentile\:\:of\:\:n \\[1em]
+                    = \dfrac{75}{100} * 23 \\[2em]
+                    = 0.75 * 23 \\[1em]
+                    = 17.25th\:position...not\:\:an\:\:integer...round\:\:up \\[1em]
+                    = 18th\:position \\[1em]
+                    = 4 \\[1em]
+                    Q_1 = 25th\:\:percentile\:\:of\:\:n \\[1em]
+                    = \dfrac{25}{100} * 23 \\[2em]
+                    = 0.25 * 23 \\[1em]
+                    = 5.75th\:position...not\:\:an\:\:integer...round\:\:up \\[1em]
+                    = 6th\:position \\[1em]
+                    = 2 \\[1em]
+                    \implies IQR = 4 - 2 \\[1em]
+                    IQR = 2 \\[1em]
+                    (ii) \\[1em]
+                    At\:\:least\:\:4\:\:means \ge 4 \\[1em]
+                    Let\:\:the\:\:event\:\:of\:\:selecting\:\:a\:\:student\:\:who\:\:at\:\:least\:\:4 = E \\[1em]
+                    n(E) = 8 + 5 = 13 \\[1em]
+                    n(S) = 23 \\[1em]
+                    P(E) = \dfrac{n(E)}{n(S)} \\[2em]
+                    P(E) = \dfrac{13}{23}
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>JAMB</b> The mean and the range of the set of numbers 0.20, 1.00, 0.90, 1.40, 0.80, 0.80, 1.20,
+                1.10 are
+                <i>m</i> and <i>r</i> respectively. <br>
+                Find <i>m + r</i> <br><br>
+                $
+                A.\;\; 1.11 \\[3ex]
+                B.\;\; 1.65 \\[3ex]
+                C.\;\; 1.85 \\[3ex]
+                D.\;\; 2.45 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionS2')">Show/Hide Answer</button>
+                <div class="result" id="solutionS2">
+                    <br>
+                    $
+                    n = sample\;\;size = 8 \\[3ex]
+                    \Sigma x = 1.20 + 1.00 + 0.90 + 1.40 + 0.80 + 0.80 + 1.20 + 1.10 \\[3ex]
+                    = 8.4 \\[3ex]
+                    \underline{Mean} \\[3ex]
+                    m = \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                    = \dfrac{8.4}{8} \\[5ex]
+                    = 1.05 \\[3ex]
+                    \underline{Range} \\[3ex]
+                    minimum = 0.20 \\[3ex]
+                    maximum = 1.40 \\[3ex]
+                    r = Range = maximum - minimum \\[3ex]
+                    = 1.40 - 0.80 \\[3ex]
+                    = 0.6 \\[3ex]
+                    m + r \\[3ex]
+                    = 1.05 + 0.6 \\[3ex]
+                    = 1.65
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) <b>NSC</b> In the grid below <i>a, b, c, d, e, f</i> and <i>g</i> represent values in a data set
+                written in an increasing
+                order. <br>
+                No value in the data set is repeated. <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td>$a$</td>
+                        <td>$b$</td>
+                        <td>$c$</td>
+                        <td>$d$</td>
+                        <td>$e$</td>
+                        <td>$f$</td>
+                        <td>$g$</td>
+                    </tr>
+                </table> <br>
+                Determine the value of $a, b, c, d, e, f$ and $g$ if:
+                <ul style="list-style-type: disc;">
+                    <li>The maximum value is $42$</li>
+                    <li>The range is $35$</li>
+                    <li>The median is $23$</li>
+                    <li>*The difference between the median and the upper quartile is $14$ (<i>improper way as it was
+                            written in the past question</i>)*</li>
+                    <li>The difference between the upper quartile and the median is $14$ (proper way to write it, so
+                        please write it as this)</li>
+                    <li>The interquartile range is $22$</li>
+                    <li>$e = 2c$</li>
+                    <li>The mean is $25$</li>
+                </ul>
+                <button class="solutions" onclick="solutions('solutionS3')">Show/Hide Answer</button>
+                <div class="result" id="solutionS3">
+                    <br>
+                    Increasing order means Ascending order <br>
+                    It means that the values are ordered from least to greatest <br>
+                    This means that $a$ is the least and $g$ is the greatest <br><br>
+                    $
+                    \underline{First\:\:Point} \\[1em]
+                    max = g = 42 \\[1em]
+                    \underline{Second\:\:Point} \\[1em]
+                    range = max - min \\[1em]
+                    35 = 42 - min \\[1em]
+                    min = 42 - 35 \\[1em]
+                    min = 7 \\[1em]
+                    a = min \\[1em]
+                    a = 7 \\[1em]
+                    \underline{Third\:\:Point} \\[1em]
+                    n = 7 \\[1em]
+                    median = middle = Q_2 = 4th\:\:position = d \\[1em]
+                    23 = Q_2 = d \\[1em]
+                    d = Q_2 = 23 \\[1em]
+                    \underline{Fourth\:\:Point} \\[1em]
+                    Q_3 - Q_2 = 14 \\[1em]
+                    Q_3 = 75th\:\:percentile\:\:of\:\:n \\[1em]
+                    = \dfrac{75}{100} * 7 \\[2em]
+                    = 0.75 * 7 \\[1em]
+                    = 5.25th\:position...not\:\:an\:\:integer...round\:\:up \\[1em]
+                    = 6th\:position \\[1em]
+                    = f \\[1em]
+                    Q_3 = f \\[1em]
+                    \implies f - 23 = 14 \\[1em]
+                    f = 14 + 23 \\[1em]
+                    f = 37 \\[1em]
+                    \underline{Fifth\:\:Point} \\[1em]
+                    IQR = Q_3 - Q_1 \\[1em]
+                    22 = 37 - Q_1 \\[1em]
+                    Q_1 = 37 - 22 \\[1em]
+                    Q_1 = 15 \\[1em]
+                    Also \\[1em]
+                    Q_1 = 25th\:\:percentile\:\:of\:\:n \\[1em]
+                    = \dfrac{25}{100} * 7 \\[2em]
+                    = 0.25 * 7 \\[1em]
+                    = 1.75th\:position...not\:\:an\:\:integer...round\:\:up \\[1em]
+                    = 2nd\:position \\[1em]
+                    = b \\[1em]
+                    Q_1 = b = 15 \\[1em]
+                    b = 15 \\[1em]
+                    \underline{Sixth\:\:Point} \\[1em]
+                    e = 2c...eqn.(1) \\[1em]
+                    \underline{Seventh\:\:Point} \\[1em]
+                    \bar{x} = 25 \\[1em]
+                    \bar{x} = \dfrac{\Sigma x}{n} \\[2em]
+                    \Sigma x = a + b + c + d + e + f + g \\[1em]
+                    \Sigma x = 7 + 15 + c + 23 + e + 37 + 42 \\[1em]
+                    \Sigma x = 124 + c + e \\[1em]
+                    Substitute\:\:e = 2c...from\:\:eqn.(1) \\[1em]
+                    \Sigma x = 124 + c + 2c \\[1em]
+                    \Sigma x = 124 + 3c \\[1em]
+                    \implies 25 = \dfrac{124 + 3c}{7} \\[2em]
+                    25(7) = 124 + 3c \\[1em]
+                    175 = 124 + 3c \\[1em]
+                    124 + 3c = 175 \\[1em]
+                    3c = 175 - 124 \\[1em]
+                    3c = 51 \\[1em]
+                    c = \dfrac{51}{3} \\[2em]
+                    c = 17 \\[1em]
+                    e = 2c = 2(17) \\[1em]
+                    e = 34 \\[1em]
+                    $
+                    The completed grid is: <br>
+                    <table class="w3-center">
+                        <tr>
+                            <td>$7$</td>
+                            <td>$15$</td>
+                            <td>$17$</td>
+                            <td>$23$</td>
+                            <td>$34$</td>
+                            <td>$37$</td>
+                            <td>$42$</td>
+                        </tr>
+                    </table> <br>
+                    The numbers are in ascending order. <br>
+                    None of the values are repeated.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>WASSCE</b> The table below shows the number of children per family in a community. <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td>Number of children</td>
+                        <td class="w3-padding">$0$</td>
+                        <td class="w3-padding">$1$</td>
+                        <td class="w3-padding">$2$</td>
+                        <td class="w3-padding">$3$</td>
+                        <td class="w3-padding">$4$</td>
+                        <td class="w3-padding">$5$</td>
+                    </tr>
+                    <tr>
+                        <td>Number of families</td>
+                        <td class="w3-padding">$3$</td>
+                        <td class="w3-padding">$5$</td>
+                        <td class="w3-padding">$7$</td>
+                        <td class="w3-padding">$4$</td>
+                        <td class="w3-padding">$3$</td>
+                        <td class="w3-padding">$2$</td>
+                    </tr>
+                </table> <br><br>
+                (a.) Find the: <br>
+                (i) mode <br>
+                (ii) third quartile <br>
+                (iii) probability that a family has at least $2$ children <br><br>
+                (b.) If a pie chart were to be drawn for the data, what would be the sectorial angle representing
+                families with one child?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS4')">Show/Hide Answer</button>
+                <div class="result" id="solutionS4">
+                    <br>
+                    (a.) <br>
+                    Number of children are the data values, $x$ <br>
+                    Number of families are the frequencies, $f$ <br>
+                    (i) <br>
+                    The mode is the number of children in the highest number of families <br>
+                    Highest number of families is $7$ <br>
+                    The number of children in $7$ families is $2$ <br>
+                    $Mode = 2$ <br><br>
+                    $
+                    (ii) \\[1em]
+                    n = \Sigma f = 3 + 5 + 7 + 4 + 3 + 2 = 24 \\[1em]
+                    Q_3 = 75th\:\:percentile\:\:of\:\:n \\[1em]
+                    = \dfrac{75}{100} * 24 \\[2em]
+                    = 0.75 * 24 \\[1em]
+                    = 18th\:position...\:\:an\:\:integer...so \\[1em]
+                    find\:\:the\:\:18th\:\:position...and \\[1em]
+                    round\:\:up...find\:\:the\:\:19th\:\:position...and \\[1em]
+                    find\:\:the\:\:average \\[1em]
+                    Two\:\:methods \\[1em]
+                    \underline{First\:\:Method: Recommended} \\[1em]
+                    18th\:\:position \\[1em]
+                    Add\:\:the\:\:frequencies\:\:till\:\:you\:\:get\:\:18 \\[1em]
+                    3 + 5 = 8 \\[1em]
+                    8 + 7 = 15 \\[1em]
+                    15 + 4 = 19...STOP \\[1em]
+                    Which\:\:children? \\[1em]
+                    18th\:position = 3 \\[1em]
+                    Also:\:\: 118th\:position = 3 \\[1em]
+                    \therefore Q_3 = \dfrac{18th\:position + 19th\:position}{2} \\[2em]
+                    Q_3 = \dfrac{3 + 3}{2} \\[2em]
+                    Q_3 = \dfrac{6}{2} \\[2em]
+                    Q_3 = 3 \\[1em]
+                    OR \\[1em]
+                    \underline{Second\:\:Method: Still\:\:Okay} \\[1em]
+                    List\:\:the\:\:entire\:\:data\:\:values \\[1em]
+                    0\:\:occured\:\:3\:\:times \implies 0, 0, 0 \\[1em]
+                    1\:\:occured\:\:5\:\:times \implies 1, 1, 1, 1, 1 \\[1em]
+                    2\:\:occured\:\:7\:\:times \implies 2, 2, 2, 2, 2, 2, 2 \\[1em]
+                    3\:\:occured\:\:4\:\:times \implies 3, 3, 3, 3 \\[1em]
+                    4\:\:occured\:\:3\:\:times \implies 4, 4, 4 \\[1em]
+                    5\:\:occured\:\:2\:\:times \implies 5, 5 \\[1em]
+                    The\:\:raw\:\:dataset\:\:is \\[1em]
+                    0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5 \\[1em]
+                    18th\:position = 3 \\[1em]
+                    18th\:position = 3 \\[1em]
+                    Q_3 = \dfrac{18th\:position + 19th\:position}{2} \\[2em]
+                    Q_3 = \dfrac{3 + 3}{2} \\[2em]
+                    Q_3 = \dfrac{6}{2} \\[2em]
+                    Q_3 = 3 \\[1em]
+                    (iii) \\[1em]
+                    At\:\:least\:\:2 \implies \gt 2 \\[1em]
+                    Let\:\:E\:\:be\:\:the\:\:event\:\:that\:\:a\:\:family\:\:has\:\:2\:\:children \\[1em]
+                    7\:\:families\:\:have\:\:2\:\:children \\[1em]
+                    4\:\:families\:\:have\:\:3\:\:children \\[1em]
+                    3\:\:families\:\:have\:\:4\:\:children \\[1em]
+                    2\:\:families\:\:have\:\:5\:\:children \\[1em]
+                    n(E) = 7 + 4 + 3 + 2 = 16 \\[1em]
+                    n(S) = \Sigma f = 24 \\[1em]
+                    P(E) = \dfrac{n(E)}{n(S)} \\[2em]
+                    P(E) = \dfrac{16}{24} \\[2em]
+                    P(E) = \dfrac{2}{3} \\[2em]
+                    (b.) \\[1em]
+                    Number\:\:of\:\:families\:\:with\:\:one\:\:child = 5 \\[1em]
+                    Total\:\:number\:\:of\:\:families = n = \Sigma f = 24 \\[1em]
+                    Total\:\:angle\:\:in\:\:a\:\:circle = 360^\circ \\[1em]
+                    Sectoral\: \angle\:\: for\:\:families\:\:with\:\:one\:\:child \\[1em]
+                    = \dfrac{5}{24} * 360 \\[2em]
+                    = 5 * 15 \\[1em]
+                    = 75^\circ
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) <b>WASSCE</b> <br>
+                <table class="w3-center">
+                    <tr>
+                        <th>Class Interval</th>
+                        <th>Frequency</th>
+                    </tr>
+                    <tr>
+                        <td>$60-64$</td>
+                        <td>$2$</td>
+                    </tr>
+                    <tr>
+                        <td>$65-69$</td>
+                        <td>$3$</td>
+                    </tr>
+                    <tr>
+                        <td>$70-74$</td>
+                        <td>$6$</td>
+                    </tr>
+                    <tr>
+                        <td>$75-79$</td>
+                        <td>$11$</td>
+                    </tr>
+                    <tr>
+                        <td>$80-84$</td>
+                        <td>$8$</td>
+                    </tr>
+                    <tr>
+                        <td>$85-89$</td>
+                        <td>$7$</td>
+                    </tr>
+                    <tr>
+                        <td>$90-94$</td>
+                        <td>$2$</td>
+                    </tr>
+                    <tr>
+                        <td>$95-99$</td>
+                        <td>$1$</td>
+                    </tr>
+                </table>
+                <br>
+                The table shows the distribution of marks scored by students in an examination. <br>
+                Calculate, correct to 2 decimal places, the <br>
+                (a.) mean <br>
+                (b.) standard deviation of the distribution.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS5')">Show/Hide Answer</button>
+                <div class="result" id="solutionS5">
+                    <br>
+                    (a.) <br><br>
+                    $
+                    Mean = \dfrac{\Sigma fx_{mid}}{\Sigma f} \\[5ex]
+                    $
+
+                    <table class="w3-center">
+                        <tr>
+                            <td class="w3-padding">Class Interval, $x$</td>
+                            <td class="w3-padding">Class Midpoint, $x_{mid}$</td>
+                            <td class="w3-padding">Frequency, $f$</td>
+                            <td class="w3-padding">$f * x_{mid}$</td>
+                        </tr>
+                        <tr>
+                            <td>$60-64$</td>
+                            <td class="w3-padding">
+                                $\dfrac{60 + 64}{2} = \dfrac{124}{2} = 62$
+                            </td>
+                            <td>$2$</td>
+                            <td>$124$</td>
+                        </tr>
+                        <tr>
+                            <td>$65-69$</td>
+                            <td class="w3-padding">
+                                $\dfrac{65 + 69}{2} = \dfrac{134}{2} = 67$
+                            </td>
+                            <td>$3$</td>
+                            <td>$201$</td>
+                        </tr>
+                        <tr>
+                            <td>$70-74$</td>
+                            <td class="w3-padding">
+                                $\dfrac{70 + 74}{2} = \dfrac{144}{2} = 72$
+                            </td>
+                            <td>$6$</td>
+                            <td>$432$</td>
+                        </tr>
+                        <tr>
+                            <td>$75-79$</td>
+                            <td class="w3-padding">
+                                $\dfrac{75 + 79}{2} = \dfrac{154}{2} = 77$
+                            </td>
+                            <td>$11$</td>
+                            <td>$847$</td>
+                        </tr>
+                        <tr>
+                            <td>$80-84$</td>
+                            <td class="w3-padding">
+                                $\dfrac{80 + 84}{2} = \dfrac{164}{2} = 82$
+                            </td>
+                            <td>$8$</td>
+                            <td>$656$</td>
+                        </tr>
+                        <tr>
+                            <td>$85-89$</td>
+                            <td class="w3-padding">
+                                $\dfrac{85 + 89}{2} = \dfrac{174}{2} = 87$
+                            </td>
+                            <td>$7$</td>
+                            <td>$609$</td>
+                        </tr>
+                        <tr>
+                            <td>$90-94$</td>
+                            <td class="w3-padding">
+                                $\dfrac{90 + 94}{2} = \dfrac{184}{2} = 92$
+                            </td>
+                            <td>$2$</td>
+                            <td>$184$</td>
+                        </tr>
+                        <tr>
+                            <td>$95-99$</td>
+                            <td class="w3-padding">
+                                $\dfrac{95 + 99}{2} = \dfrac{194}{2} = 97$
+                            </td>
+                            <td>$1$</td>
+                            <td>$97$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="w3-padding">$\Sigma f = 40$</td>
+                            <td class="w3-padding">$\Sigma fx_{mid} = 3150$</td>
+                        </tr>
+                    </table>
+                    <br>
+                    $
+                    \bar{x} \\[3ex]
+                    = \dfrac{\Sigma fx_{mid}}{\Sigma f} \\[5ex]
+                    = \dfrac{3150}{40} \\[5ex]
+                    = 78.75 \\[3ex]
+                    $
+                    (b.) <br>
+                    There are two methods/formulas to solve this question. <br>
+                    Use any method you prefer. <br><br>
+                    <u>First Method:</u> Mean is used <br><br>
+                    $
+                    Sample\;\;Standard\;\;Deviation = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+                    Population\;\;Standard\;\;Deviation = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f}} \\[5ex]
+                    $
+
+                    <table class="w3-center">
+                        <tr>
+                            <td class="w3-padding">$x_{mid} - \bar{x}$</td>
+                            <td class="w3-padding">$(x_{mid} - \bar{x})^2$</td>
+                            <td class="w3-padding">$f * (x_{mid} - \bar{x})^2$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$62 - 78.75 = -16.75$</td>
+                            <td class="w3-padding">$(-16.75)^2 = 280.5625$</td>
+                            <td class="w3-padding">$2 * 280.5625 = 561.125$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$67 - 78.75 = -11.75$</td>
+                            <td class="w3-padding">$(-11.75)^2 = 138.0625$</td>
+                            <td class="w3-padding">$3 * 138.0625 = 414.1875$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$72 - 78.75 = -6.75$</td>
+                            <td class="w3-padding">$(-6.75)^2 = 45.5625$</td>
+                            <td class="w3-padding">$6 * 45.5625 = 273.375$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$77 - 78.75 = -1.75$</td>
+                            <td class="w3-padding">$(-1.75)^2 = 3.0625$</td>
+                            <td class="w3-padding">$11 * 3.0625 = 33.6875$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$82 - 78.75 = 3.25$</td>
+                            <td class="w3-padding">$(3.25)^2 = 10.5625$</td>
+                            <td class="w3-padding">$8 * 10.5625 = 84.5$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$87 - 78.75 = 8.25$</td>
+                            <td class="w3-padding">$(8.25)^2 = 68.0625$</td>
+                            <td class="w3-padding">$7 * 68.0625 = 476.4375$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$92 - 78.75 = 13.25$</td>
+                            <td class="w3-padding">$(13.25)^2 = 175.5625$</td>
+                            <td class="w3-padding">$2 * 175.5625 = 351.125$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$97 - 78.75 = 18.25$</td>
+                            <td class="w3-padding">$(18.25)^2 = 333.0625$</td>
+                            <td class="w3-padding">$1 * 333.0625 = 333.0625$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="w3-padding">$\Sigma f * (x_{mid} - \bar{x})^2 = 2527.5$</td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    $
+                    Sample\;\;Standard\;\;Deviation \\[3ex]
+                    = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+                    = \sqrt{\dfrac{2527.5}{40 - 1}} \\[5ex]
+                    = \sqrt{\dfrac{2527.5}{39}} \\[5ex]
+                    = \sqrt{64.80769231} \\[3ex]
+                    = 8.050322497 \\[3ex]
+                    \approx 8.05 \\[5ex]
+
+                    Population\;\;Standard\;\;Deviation \\[3ex]
+                    = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f}} \\[5ex]
+                    = \sqrt{\dfrac{2527.5}{40}} \\[5ex]
+                    = \sqrt{63.1875} \\[3ex]
+                    = 7.949056548 \\[3ex]
+                    \approx 7.95 \\[3ex]
+                    $
+                    <u>Second Method:</u> Mean is not used <br><br>
+                    $
+                    Sample\;\;Standard\;\;Deviation = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma
+                    fx_{mid})^2}{\Sigma f(\Sigma f - 1)}} \\[5ex]
+                    Population\;\;Standard\;\;Deviation = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma
+                    fx_{mid})^2}{\Sigma f(\Sigma f)}} \\[5ex]
+                    $
+
+                    <table class="w3-center">
+                        <tr>
+                            <td class="w3-padding">$x_{mid}$</td>
+                            <td class="w3-padding">$f$</td>
+                            <td class="w3-padding">$f * x_{mid}$</td>
+                            <td class="w3-padding">$(x_{mid})^2$</td>
+                            <td class="w3-padding">$f * (x_{mid})^2$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$62$</td>
+                            <td class="w3-padding">$2$</td>
+                            <td class="w3-padding">$124$</td>
+                            <td class="w3-padding">$3844$</td>
+                            <td class="w3-padding">$7688$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$67$</td>
+                            <td class="w3-padding">$3$</td>
+                            <td class="w3-padding">$201$</td>
+                            <td class="w3-padding">$4489$</td>
+                            <td class="w3-padding">$13467$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$72$</td>
+                            <td class="w3-padding">$6$</td>
+                            <td class="w3-padding">$432$</td>
+                            <td class="w3-padding">$5184$</td>
+                            <td class="w3-padding">$31104$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$77$</td>
+                            <td class="w3-padding">$11$</td>
+                            <td class="w3-padding">$847$</td>
+                            <td class="w3-padding">$5929$</td>
+                            <td class="w3-padding">$65219$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$82$</td>
+                            <td class="w3-padding">$8$</td>
+                            <td class="w3-padding">$656$</td>
+                            <td class="w3-padding">$6724$</td>
+                            <td class="w3-padding">$53792$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$87$</td>
+                            <td class="w3-padding">$7$</td>
+                            <td class="w3-padding">$609$</td>
+                            <td class="w3-padding">$7569$</td>
+                            <td class="w3-padding">$52983$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$92$</td>
+                            <td class="w3-padding">$2$</td>
+                            <td class="w3-padding">$184$</td>
+                            <td class="w3-padding">$8464$</td>
+                            <td class="w3-padding">$16928$</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">$97$</td>
+                            <td class="w3-padding">$1$</td>
+                            <td class="w3-padding">$97$</td>
+                            <td class="w3-padding">$9409$</td>
+                            <td class="w3-padding">$9409$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="w3-padding">$\Sigma f * x_{mid} = 3150$</td>
+                            <td></td>
+                            <td class="w3-padding">$\Sigma f * (x_{mid})^2 = 250590$</td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    $
+                    Sample\;\;Standard\;\;Deviation \\[3ex]
+                    = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)}} \\[5ex]
+                    = \sqrt{\dfrac{40(250590) - (3150)^2}{40(40 - 1)}} \\[5ex]
+                    = \sqrt{\dfrac{10023600 - 9922500}{40(39)}} \\[5ex]
+                    = \sqrt{\dfrac{101100}{1560}} \\[5ex]
+                    = \sqrt{64.80769231} \\[3ex]
+                    = 8.050322497 \\[3ex]
+                    \approx 8.05 \\[5ex]
+
+                    Population\;\;Standard\;\;Deviation \\[3ex]
+                    = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)}} \\[5ex]
+                    = \sqrt{\dfrac{40(250590) - (3150)^2}{40(40)}} \\[5ex]
+                    = \sqrt{\dfrac{10023600 - 9922500}{1600}} \\[5ex]
+                    = \sqrt{\dfrac{101100}{1600}} \\[5ex]
+                    = \sqrt{63.1875} \\[3ex]
+                    = 7.949056548 \\[3ex]
+                    \approx 7.95 \\[3ex]
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>curriculum.gov.mt</b> These are the marks that Stephanie scored in her <b>Maths</b> tests: <br>
+                68, &nbsp;&nbsp;&nbsp; 58, &nbsp;&nbsp;&nbsp; 61, &nbsp;&nbsp;&nbsp; 75, &nbsp;&nbsp;&nbsp; 63. <br>
+                These are the marks that Stephanie scored in her <b>Science</b> tests: <br>
+                81, &nbsp;&nbsp;&nbsp; 77, &nbsp;&nbsp;&nbsp; 68, &nbsp;&nbsp;&nbsp; 76. <br><br>
+                (a.) Complete the following table: <br>
+                <table class="w3-center">
+                    <tr>
+                        <td style="width: 25%;"></td>
+                        <td style="width: 25%;">Mean</td>
+                        <td style="width: 25%;">Median</td>
+                        <td style="width: 25%;">Range</td>
+                    </tr>
+                    <tr>
+                        <td>Maths</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <br><br>
+                (b.) In which subject did Stephanie do better, Maths or Science? <br>
+                Give a reason for your answer.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS6')">Show/Hide Answer</button>
+                <div class="result" id="solutionS6">
+                    <br>
+                    (a.) <br>
+                    <table>
+                        <tr>
+                            <td class="w3-padding" style="width: 25%;"></td>
+                            <td class="w3-padding" style="width: 25%;">Mean</td>
+                            <td class="w3-padding" style="width: 25%;">Median</td>
+                            <td class="w3-padding" style="width: 25%;">Range</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">Maths</td>
+                            <td class="w3-padding">
+                                $
+                                Mean \\[3ex]
+                                = \dfrac{68 + 58 + 61 + 75 + 63}{5} \\[5ex]
+                                = \dfrac{325}{5} \\[5ex]
+                                = 65
+                                $
+                            </td>
+                            <td class="w3-padding">
+                                Sorted in Ascending Order: <br>
+                                58, 61, 63, 68, 75 <br>
+                                Median = 63
+                            </td>
+                            <td class="w3-padding">
+                                Maximum = 75 <br>
+                                Minimum = 58 <br>
+                                Range = 75 - 58 <br>
+                                Range = 17
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">Science</td>
+                            <td class="w3-padding">
+                                $
+                                Mean \\[3ex]
+                                = \dfrac{81 + 77 + 68 + 76}{4} \\[5ex]
+                                = \dfrac{302}{4} \\[5ex]
+                                = 75.5
+                                $
+                            </td>
+                            <td class="w3-padding">
+                                Sorted in Ascending Order: <br>
+                                68, 76, 77, 81 <br><br>
+                                $
+                                Median \\[3ex]
+                                = \dfrac{76 + 77}{2} \\[5ex]
+                                = \dfrac{153}{2} \\[5ex]
+                                = 76.5
+                                $
+                            </td>
+                            <td class="w3-padding">
+                                Maximum = 81 <br>
+                                Minimum = 68 <br>
+                                Range = 81 - 68 <br>
+                                Range = 13
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    (b.) Stephanie did better in Science because her mean and median scores in Science are higher than
+                    her mean and median
+                    scores in Maths.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            <b>ACT</b> Use the following information to answer questions 7 &ndash; 9 <br><br>
+            A large theater complex surveyed 5,000 adults. <br>
+            The results of the survey are shown in the tables below. <br><br>
+            <table style="width: 50%;" class="examples">
+                <tr>
+                    <th style="width: 50%;">Age groups</th>
+                    <th style="width: 50%;">Number</th>
+                </tr>
+                <tr>
+                    <td>
+                        21 - 30 <br>
+                        31 - 40 <br>
+                        41 - 50 <br>
+                        51 or older
+                    </td>
+                    <td>
+                        2,750 <br>
+                        1,225 <br>
+                        625 <br>
+                        400
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table style="width: 50%;" class="examples">
+                <tr>
+                    <th style="width: 50%;">Moviegoer category</th>
+                    <th style="width: 50%;">Number</th>
+                </tr>
+                <tr>
+                    <td>
+                        Very often <br>
+                        Often <br>
+                        Sometimes <br>
+                        Rarely
+                    </td>
+                    <td>
+                        830 <br>
+                        1,650 <br>
+                        2,320 <br>
+                        200
+                    </td>
+                </tr>
+            </table>
+            <br>
+            Tickets are <span>$9.50</span> for all regular showings and <span>$7.00</span> for matinees.
+        </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Based on the survey results, what was the average number of moviegoers for each of the 4
+                categories? <br><br>
+                $
+                A.\;\; 610 \\[3ex]
+                B.\;\; 1,060 \\[3ex]
+                C.\;\; 1,240 \\[3ex]
+                D.\;\; 1,250 \\[3ex]
+                E.\;\; 1,985 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionS7')">Show/Hide Answer</button>
+                <div class="result" id="solutionS7">
+                    <br>
+                    $
+                    Average\;\;number\;\;of\;\;moviegoers \\[3ex]
+                    = \dfrac{830 + 1650 + 2320 + 200}{4} \\[5ex]
+                    = \dfrac{5000}{4} \\[5ex]
+                    = 1,250 \\[3ex]
+                    $
+                    The average number of moviegoers for each of the 4 categories is 1,250 moviegoers.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) Suppose all the adults surveyed happened to attend 1 movie each in one particular week. <br>
+                The total amount spent on tickets by those surveyed in that week was <span>$44,000.00</span> <br>
+                How many adults attended matinees that week?
+                <br><br>
+                $
+                F.\;\; 500 \\[3ex]
+                G.\;\; 1,400 \\[3ex]
+                H.\;\; 2,500 \\[3ex]
+                J.\;\; 3,600 \\[3ex]
+                K.\;\; 4,500 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionS8')">Show/Hide Answer</button>
+                <div class="result" id="solutionS8">
+                    <br>
+                    Let the adults that attended: <br>
+                    regular showings = <i>x</i> <br>
+                    matinees = <i>y</i> <br><br>
+                    A large theater complex surveyed 5,000 adults. <br><br>
+                    $
+                    x + y = 5000 ...eqn.(1) \\[3ex]
+                    $
+                    Tickets are <span>$9.50</span> for all regular showings and <span>$7.00</span> for matinees. <br>
+                    Suppose all the adults surveyed happened to attend 1 movie each in one particular week. <br>
+                    The total amount spent on tickets by those surveyed in that week was <span>$44,000.00</span>
+                    <br><br>
+                    $
+                    9.5x + 7y = 44000 \\[3ex]
+                    95x + 70y = 440000 \\[3ex]
+                    19x + 14y = 88000 ...eqn.(2) \\[3ex]
+                    \underline{Elimination\;\;Method} \\[3ex]
+                    19 * eqn.(1) - eqn.(2) \implies \\[3ex]
+                    19(x + y) - (19x + 14y) = 19(5000) - 88000 \\[3ex]
+                    19x + 19y - 19x - 14y = 95000 - 88000 \\[3ex]
+                    5y = 7000 \\[3ex]
+                    y = \dfrac{7000}{5} \\[5ex]
+                    y = 1400 \\[3ex]
+                    $
+                    1400 adults attended matinees that week.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) One of the following circle graphs represents the proportion by age group of the adults surveyed.
+                <br>
+                Which one? <br><br>
+                <div class="w3-center">
+                    <img src="images/Statistics/Questions/Number9.png" alt="Number 9">
+                </div> <br>
+                <button class="solutions" onclick="solutions('solutionS9')">Show/Hide Answer</button>
+                <div class="result" id="solutionS9">
+                    <br>
+                    We have about a minute to solve this question. <br>
+                    So, we shall find the sectorial angle for the first age group and then use the process of
+                    elimination to
+                    identify our answer <br>
+                    If necessary, we shall find the sectorial angle for the second age group and also eliminate options
+                    <br>
+                    We shall repeat this process until we get our answer <br><br>
+                    $
+                    Sectorial\;\;\angle\;\;for\;\;each\;\;age\;\;group =
+                    \dfrac{frequency\;\;of\;\;the\;\;age\;\;group}{\Sigma f} * 100 \\[5ex]
+                    \underline{21-30\;\;Age\;\;Group} \\[3ex]
+                    Sectorial\;\;\angle = \dfrac{2750}{5000} * 100 \\[5ex]
+                    = 55\% \\[3ex]
+                    $
+                    Eliminate Options B., D., and E. <br>
+                    Let us calculate the sectorial angle for the second age group <br><br>
+                    $
+                    \underline{31-40\;\;Age\;\;Group} \\[3ex]
+                    Sectorial\;\;\angle = \dfrac{1225}{5000} * 100 \\[5ex]
+                    = 24.5\% \\[3ex]
+                    $
+                    Eliminate Option C. <br>
+                    Option A. is the correct answer. <br><br>
+                    For those who just want to complete the rest of the age groups <br><br>
+                    $
+                    \underline{41-50\;\;Age\;\;Group} \\[3ex]
+                    Sectorial\;\;\angle = \dfrac{625}{5000} * 100 \\[5ex]
+                    = 12.5\% \\[3ex]
+                    \underline{51\;\;or\;\;Older\;\;Age\;\;Group} \\[3ex]
+                    Sectorial\;\;\angle = \dfrac{400}{5000} * 100 \\[5ex]
+                    = 8\% \\[5ex]
+                    \underline{Check} \\[3ex]
+                    \Sigma Sectorial\;\; \angle = 55 + 24.5 + 12.5 + 8 = 100\%
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>GCSE</b> A set of data has <br>
+                mean = 30 <br>
+                median = 25 <br>
+                standard deviation = 4 <br>
+                Circle the value of the skew for the data. <br><br>
+                $
+                Use\;\;skew = \dfrac{3(mean - median)}{standard\;\;deviation} \\[5ex]
+                $
+                -11.25 &ensp;&ensp;&ensp; 1.25 &ensp;&ensp;&ensp; 3.75 &ensp;&ensp;&ensp; 16.25 <br><br>
+                <button class="solutions" onclick="solutions('solutionS10')">Show/Hide Answer</button>
+                <div class="result" id="solutionS10">
+                    <br>
+                    $
+                    mean = 30 \\[3ex]
+                    median = 25 \\[3ex]
+                    standard\;\;deviation = 4 \\[3ex]
+                    skew \\[3ex]
+                    = \dfrac{3(mean - median)}{standard\;\;deviation} \\[5ex]
+                    = \dfrac{3(30 - 25)}{4} \\[5ex]
+                    = \dfrac{3(5)}{4} \\[5ex]
+                    = \dfrac{15}{4} \\[5ex]
+                    = 3.75
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <button class="solutions" onclick="solutions('solutionS11')">Show/Hide Answer</button>
+                <div class="result" id="solutionS11">
+                    <br>
+                    $
+                    \Sigma x = 5 + 8 + x + 12 + (x + 5) + 10 \\[3ex]
+                    \Sigma x = 35 + x + x + 5 \\[3ex]
+                    \Sigma x = 40 + 2x \\[3ex]
+                    n = 6 \\[3ex]
+                    \bar{x} = 10 \\[3ex]
+                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                    \rightarrow \Sigma x = \bar{x} * n \\[3ex]
+                    40 + 2x = 10(6) \\[3ex]
+                    40 + 2x = 60 \\[3ex]
+                    2x = 60 - 40 \\[3ex]
+                    2x = 20 \\[3ex]
+                    x = \dfrac{20}{2} \\[5ex]
+                    x = 10 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    x = 10 \\[3ex]
+                    x + 5 = 10 + 5 = 15 \\[3ex]
+                    Data\:\:values = 5, 8, 10, 12, 15, 10 \\[3ex]
+                    \Sigma x = 5 + 8 + 10 + 12 + 15 + 10 = 60 \\[3ex]
+                    n = 6 \\[3ex]
+                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                    \bar{x} = \dfrac{60}{6} \\[5ex]
+                    \bar{x} = 10
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) <b>WASSCE</b> The range of the numbers $p, 6, 8, 11\:and\:q$ arranged in ascending order is $16$.
+                <br>
+                If the mean is $9$, find the value of $(2p + q)$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS12')">Show/Hide Answer</button>
+                <div class="result" id="solutionS12">
+                    <br>
+                    $
+                    p, 6, 8, 11, q ...ascending\:order \\[3ex]
+                    min = p \\[3ex]
+                    max = q \\[3ex]
+                    R = max - min = 16 \\[3ex]
+                    \rightarrow q - p = 16 \\[3ex]
+                    -p + q = 16 ...eqn.(1) \\[3ex]
+                    \bar{x} = \dfrac{p + 6 + 8 + 11 + q}{5} = 9 \\[5ex]
+                    \dfrac{p + q + 25}{5} = 9 \\[5ex]
+                    p + q + 25 = 9(5) \\[3ex]
+                    p + q + 25 = 45 \\[3ex]
+                    p + q = 45 - 25 \\[3ex]
+                    p + q = 20 ...eqn.(2) \\[3ex]
+                    eqn.(1) + eqn.(2) \rightarrow q + q = 16 + 20 \\[3ex]
+                    2q = 36 \\[3ex]
+                    q = \dfrac{36}{2} \\[5ex]
+                    q = 18 \\[3ex]
+                    eqn.(1) - eqn.(2) \rightarrow -p - p = 16 - 20 \\[3ex]
+                    -2p = -4 \\[3ex]
+                    p = \dfrac{-4}{-2} \\[5ex]
+                    p = 2 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    q - p = 18 - 2 = 16 \checkmark \\[3ex]
+                    \dfrac{p + 6 + 8 + 11 + q}{5} = \dfrac{2 + 6 + 8 + 11 + 18}{5} = \dfrac{45}{5} = 9 \checkmark
+                    \\[5ex]
+                    \therefore 2p + q = 2(2) + 18 = 4 + 18 = 22
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <button class="solutions" onclick="solutions('solutionS13')">Show/Hide Answer</button>
+                <div class="result" id="solutionS13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>ACT</b> An outlier is added to the data set below. <br>
+                Which of the following pairs of statistics has no change in value as a result of the addition of the
+                outlier? <br>
+                {60, 63, 66, 70, 72, 72, 73, 73, 73, 75} <br>
+                <b>F.</b> Mean and median <br>
+                <b>G.</b> Mean and mode <br>
+                <b>H.</b> Mean and range <br>
+                <b>J.</b> Median and mode <br>
+                <b>K.</b> Median and range
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS14')">Show/Hide Answer</button>
+                <div class="result" id="solutionS14">
+                    <br>
+                    Usually, the median and the mode are statistical measures that are not affected by outliers <br>
+                    Be it as it may, let us explain using the dataset that was given to us. <br>
+                    The dataset is already sorted <br>
+                    Hence, any data value (outlier) added to the dataset is before 60 or after 75 because outliers are
+                    extreme values <br>
+                    That outlier is not 60. It is not 75 <br>
+                    But even if it is so (though it is not so); the median will not be affected <br>
+                    Presently, the median is 72 [(72 + 72) divided by 2...even sample size] <br>
+                    If an outlier is added, the median will still be 72...odd sample size <br>
+                    So, the median will not be affected <br>
+                    Presently, the mode is 73 <br>
+                    If an outlier is added, the mode will still be 73 <br>
+                    So, the median and the mode are not affected.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (15.) <b>WASSCE-FM</b> The table shows the distribution of marks obtained by students in an examination.
+            <br><br>
+            <table class="w3-center">
+                <tr>
+                    <td class="w3-padding">Marks</td>
+                    <td class="w3-padding">$50 - 54$</td>
+                    <td class="w3-padding">$55 - 59$</td>
+                    <td class="w3-padding">$60 - 64$</td>
+                    <td class="w3-padding">$65 - 69$</td>
+                    <td class="w3-padding">$70 - 74$</td>
+                    <td class="w3-padding">$75 - 79$</td>
+                    <td class="w3-padding">$80 - 84$</td>
+                    <td class="w3-padding">$85 - 89$</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Frequency</td>
+                    <td class="w3-padding">$5$</td>
+                    <td class="w3-padding">$15$</td>
+                    <td class="w3-padding">$20$</td>
+                    <td class="w3-padding">$28$</td>
+                    <td class="w3-padding">$12$</td>
+                    <td class="w3-padding">$9$</td>
+                    <td class="w3-padding">$7$</td>
+                    <td class="w3-padding">$4$</td>
+                </tr>
+            </table>
+            <p>
+                Using an assumed mean (AM) of $67$, calculate, correct to <b>one</b> decimal place, the: <br>
+                (a.) mean; <br>
+                (b.) standard deviation; <br>
+                of the distribution.
+            </p>
+            <button class="solutions" onclick="solutions('solutionS15')">Show/Hide Answer</button>
+            <div class="result" id="solutionS15">
+                <br>
+                Check to make sure the grouped data has equal class intervals. <br>
+                In other words, the class size must be the same for all the classes. <br>
+                $AM = 67$ <br><br>
+                (a.) <br>
+                <table class="w3-center">
+                    <tr>
+                        <th class="green">Marks, $x$</th>
+                        <th class="green">Frequency, $f$</th>
+                        <th class="green w3-padding">$x_{mid} = \dfrac{LCI + UCI}{2}$</th>
+                        <th class="green">$D = x_{mid} - AM$</th>
+                        <th class="green">$f * D$</th>
+                    </tr>
+                    <tr>
+                        <td>$50 - 54$</td>
+                        <td>$5$</td>
+                        <td class="w3-padding">$\dfrac{50 + 54}{2} = \dfrac{104}{2} = 52$</td>
+                        <td>$52 - 67 = -15$</td>
+                        <td>$5(-15) = -75$</td>
+                    </tr>
+                    <tr>
+                        <td>$55 - 59$</td>
+                        <td>$15$</td>
+                        <td class="w3-padding">$\dfrac{55 + 59}{2} = \dfrac{114}{2} = 57$</td>
+                        <td>$57 - 67 = -10$</td>
+                        <td>$15(-10) = -150$</td>
+                    </tr>
+                    <tr>
+                        <td>$60 - 64$</td>
+                        <td>$20$</td>
+                        <td class="w3-padding">$\dfrac{60 + 64}{2} = \dfrac{124}{2} = 62$</td>
+                        <td>$62 - 67 = -5$</td>
+                        <td>$20(-5) = -100$</td>
+                    </tr>
+                    <tr>
+                        <td>$65 - 69$</td>
+                        <td>$28$</td>
+                        <td class="w3-padding">$\dfrac{65 + 69}{2} = \dfrac{134}{2} = 67$</td>
+                        <td>$67 - 67 = 0$</td>
+                        <td>$28(0) = 0$</td>
+                    </tr>
+                    <tr>
+                        <td>$70 - 74$</td>
+                        <td>$12$</td>
+                        <td class="w3-padding">$\dfrac{70 + 74}{2} = \dfrac{144}{2} = 72$</td>
+                        <td>$72 - 67 = 5$</td>
+                        <td>$12(5) = 60$</td>
+                    </tr>
+                    <tr>
+                        <td>$75 - 79$</td>
+                        <td>$9$</td>
+                        <td class="w3-padding">$\dfrac{75 + 79}{2} = \dfrac{154}{2} = 77$</td>
+                        <td>$77 - 67 = 10$</td>
+                        <td>$9(10) = 90$</td>
+                    </tr>
+                    <tr>
+                        <td>$80 - 84$</td>
+                        <td>$7$</td>
+                        <td class="w3-padding">$\dfrac{80 + 84}{2} = \dfrac{164}{2} = 82$</td>
+                        <td>$82 - 67 = 15$</td>
+                        <td>$7(15) = 105$</td>
+                    </tr>
+                    <tr>
+                        <td>$85 - 89$</td>
+                        <td>$4$</td>
+                        <td class="w3-padding">$\dfrac{85 + 89}{2} = \dfrac{174}{2} = 87$</td>
+                        <td>$87 - 67 = 20$</td>
+                        <td>$4(20) = 80$</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>$\Sigma f = 100$</td>
+                        <td></td>
+                        <td></td>
+                        <td>$\Sigma fD = 10$</td>
+                    </tr>
+                </table>
+                <br>
+                $
+                \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[5ex]
+                \bar{x} = 67 + \dfrac{10}{100} \\[5ex]
+                \bar{x} = 67 + 0.1 \\[3ex]
+                \bar{x} = 67.1 \\[5ex]
+                $
+                (b.) <br>
+                Using Assumed Mean: <br><br>
+                $
+                Sample\;\;Standard\;\;Deviation = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma
+                fD}{\Sigma f - 1}\right)^2} \\[5ex]
+                Population\;\;Standard\;\;Deviation = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma
+                fD}{\Sigma f}\right)^2} \\[5ex]
+                $
+                <table class="w3-center">
+                    <tr>
+                        <th class="green w3-padding">$f$</th>
+                        <th class="green w3-padding">$D$</th>
+                        <th class="green w3-padding">$f * D$</th>
+                        <th class="green w3-padding">$D^2$</th>
+                        <th class="green w3-padding">$f * D^2$</th>
+                    </tr>
+                    <tr>
+                        <td>$5$</td>
+                        <td>$-15$</td>
+                        <td>$-75$</td>
+                        <td>$225$</td>
+                        <td>$1125$</td>
+                    </tr>
+                    <tr>
+                        <td>$15$</td>
+                        <td>$-10$</td>
+                        <td>$-150$</td>
+                        <td>$100$</td>
+                        <td>$1500$</td>
+                    </tr>
+                    <tr>
+                        <td>$20$</td>
+                        <td>$-5$</td>
+                        <td>$-100$</td>
+                        <td>$25$</td>
+                        <td>$500$</td>
+                    </tr>
+                    <tr>
+                        <td>$28$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                        <td>$0$</td>
+                    </tr>
+                    <tr>
+                        <td>$12$</td>
+                        <td>$5$</td>
+                        <td>$60$</td>
+                        <td>$25$</td>
+                        <td>$300$</td>
+                    </tr>
+                    <tr>
+                        <td>$9$</td>
+                        <td>$10$</td>
+                        <td>$90$</td>
+                        <td>$100$</td>
+                        <td>$900$</td>
+                    </tr>
+                    <tr>
+                        <td>$7$</td>
+                        <td>$15$</td>
+                        <td>$105$</td>
+                        <td>$225$</td>
+                        <td>$1575$</td>
+                    </tr>
+                    <tr>
+                        <td>$4$</td>
+                        <td>$20$</td>
+                        <td>$80$</td>
+                        <td>$400$</td>
+                        <td>$1600$</td>
+                    </tr>
+                    <tr>
+                        <td>$\Sigma f = 100$</td>
+                        <td></td>
+                        <td>$\Sigma fD = 10$</td>
+                        <td></td>
+                        <td>$\Sigma fD^2 = 7500$</td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+                $
+                Sample\;\;Standard\;\;Deviation \\[3ex]
+                = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2} \\[5ex]
+                = \sqrt{\dfrac{7500}{100 - 1} - \left(\dfrac{10}{100 - 1}\right)^2} \\[5ex]
+                = \sqrt{\dfrac{7500}{99} - \left(\dfrac{10}{99}\right)^2} \\[5ex]
+                = \sqrt{\dfrac{7500}{99} - \dfrac{100}{99^2}} \\[5ex]
+                = \sqrt{\dfrac{99(7500) - 100}{99^2}} \\[5ex]
+                = \sqrt{\dfrac{742500 - 100}{9801}} \\[5ex]
+                = \sqrt{\dfrac{742400}{9801}} \\[5ex]
+                = \sqrt{75.74737272} \\[3ex]
+                = 8.703296658 \\[3ex]
+                \approx 8.7 \\[5ex]
+
+                Population\;\;Standard\;\;Deviation \\[3ex]
+                = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2} \\[5ex]
+                = \sqrt{\dfrac{7500}{100} - \left(\dfrac{10}{100}\right)^2} \\[5ex]
+                = \sqrt{75 - (0.1)^2} \\[3ex]
+                = \sqrt{75 - 0.01} \\[3ex]
+                = \sqrt{74.99} \\[3ex]
+                = 8.659676668 \\[3ex]
+                \approx 8.7
+                $
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (16.)
+            <button class="solutions" onclick="solutions('solutionS16')">Show/Hide Answer</button>
+            <div class="result" id="solutionS16">
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionS17')">Show/Hide Answer</button>
+                <div class="result" id="solutionS17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS18')">Show/Hide Answer</button>
+                <div class="result" id="solutionS18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <button class="solutions" onclick="solutions('solutionS19')">Show/Hide Answer</button>
+                <div class="result" id="solutionS19">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>ACT</b> Set A and Set B each consist of 5 distinct numbers. <br>
+                The 2 sets contain identical numbers with the exception of the number with the least value in each set.
+                <br>
+                The number with the least value in Set B is greater than the number with the least value in Set A. <br>
+                The value of which of the following measures <i>must</i> be greater for Set B than for Set A ? <br>
+                <b>A.</b> Mean only <br>
+                <b>B.</b> Median only <br>
+                <b>C.</b> Range only <br>
+                <b>D.</b> Mean and range only <br>
+                <b>E.</b> Mean, median, and range
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS20')">Show/Hide Answer</button>
+                <div class="result" id="solutionS20">
+                    <br>
+                    Let us write Set A and Set B with numbers as elements of both sets (5 distinct numbers in each set),
+                    making sure that the least
+                    number in Set B is greater than the least number in Set A; while both sets have the <u>same</u>
+                    four numbers. <br>
+                    In other words, 4 of the 5 numbers in both sets are the same while the remaining number
+                    in Set B is greater than the remaining number in Set A. <br><br>
+                    Set A = {0, 2, 3, 4, 5} <br><br>
+                    Set B = {1, 2, 3, 4, 5} <br><br>
+                    $
+                    \underline{Set\;A} \\[3ex]
+                    A = \{0, 2, 3, 4, 5\} \\[3ex]
+                    min = 0 \\[3ex]
+                    max = 5 \\[3ex]
+                    n = 5 \\[3ex]
+                    \Sigma x = 0 + 2 + 3 + 4 + 5 = 14 \\[3ex]
+                    mean = \dfrac{\Sigma x}{n} = \dfrac{14}{5} = 2.8 \\[5ex]
+                    median = 3 \\[3ex]
+                    range = max - min = 5 - 0 = 5 \\[5ex]
+                    \underline{Set\;B} \\[3ex]
+                    B = \{1, 2, 3, 4, 5\} \\[3ex]
+                    min = 1 \\[3ex]
+                    max = 5 \\[3ex]
+                    n = 5 \\[3ex]
+                    \Sigma x = 1 + 2 + 3 + 4 + 5 = 15 \\[3ex]
+                    mean = \dfrac{\Sigma x}{n} = \dfrac{15}{5} = 3 \\[5ex]
+                    median = 3 \\[3ex]
+                    range = max - min = 5 - 1 = 4 \\[3ex]
+                    $
+                    Comparing Set A and Set B: <br>
+                    Mean of Set B is greater than mean of Set A <br>
+                    Median of Set B is the same as median of Set A <br>
+                    Range of Set B is less than range of Set A <br>
+                    Hence, based on the question we were asked, the only statistics of Set B that must be greater than
+                    Set A is the <b>Mean</b>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptiveStatistics.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <button class="solutions" onclick="solutions('solutionS21')">Show/Hide Answer</button>
+                <div class="result" id="solutionS21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS22')">Show/Hide Answer</button>
+                <div class="result" id="solutionS22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <button class="solutions" onclick="solutions('solutionS23')">Show/Hide Answer</button>
+                <div class="result" id="solutionS23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) <b>ACT</b> Data from a random sample of 335 car owners in a certain city are listed below. <br>
+                The table indicates the number of owners in 3 age brackets (16 - 25, 26 - 45, 46 - 60) who own cars from
+                3 car
+                companies (A, B, C) in this city. <br>
+                Each owner in the sample owns only 1 car. <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td style="border-bottom: hidden;"></td>
+                        <td colspan="4">Car companies</td>
+                    </tr>
+                    <tr>
+                        <td>Age (in years)</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>Total</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            16 - 25 <br>
+                            26 - 45 <br>
+                            46 - 60
+                        </td>
+                        <td>
+                            16 <br>
+                            54 <br>
+                            65
+                        </td>
+                        <td>
+                            24 <br>
+                            48 <br>
+                            23
+                        </td>
+                        <td>
+                            40 <br>
+                            53 <br>
+                            12
+                        </td>
+                        <td>
+                            80 <br>
+                            155 <br>
+                            100
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>135</td>
+                        <td>95</td>
+                        <td>105</td>
+                        <td>335</td>
+                    </tr>
+                </table>
+                <br>
+                A circle graph will be drawn with 3 sectors each representing the proportion of owners from Company A,
+                B, and C who
+                are 16 to 25 years old. <br>
+                What is the measure of the central angle for the Company A sector of the graph?
+                <br><br>
+                $
+                F.\;\; 5^\circ \\[3ex]
+                G.\;\; 17^\circ \\[3ex]
+                H.\;\; 20^\circ \\[3ex]
+                J.\;\; 43^\circ \\[3ex]
+                K.\;\; 72^\circ \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionS24')">Show/Hide Answer</button>
+                <div class="result" id="solutionS24">
+                    <br>
+                    $
+                    \underline{For\;\;16 - 25\;\;years} \\[3ex]
+                    Sectorial\;\;\angle\;\;for\;\;Company\;A \\[3ex]
+                    = \dfrac{Frequency\;\;for\;\;Company\;A}{\Sigma Frequency} * 360^\circ \\[5ex]
+                    = \dfrac{16}{80} * 360 \\[5ex]
+                    = 72^\circ
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <button class="solutions" onclick="solutions('solutionS25')">Show/Hide Answer</button>
+                <div class="result" id="solutionS25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS26')">Show/Hide Answer</button>
+                <div class="result" id="solutionS26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            <b>ACT</b> Use the following information to answer questions 27-28. <br>
+            A survey in a study skills class asked the 20 students enrolled in the class how many hours
+            (rounded to the nearest hour) they has spent studying on the previous evening. <br>
+            The 20 responses are summarized by the histogram below. <br><br>
+            <div class="w3-center">
+                <img src="images/Statistics/Questions/Numbers27-28.png" alt="Numbers 27-28">
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.) The teacher decides to show the data in a circle graph (pie chart). <br>
+                What should be the measure of the central angle of the sector for 3 hours? <br><br>
+                $
+                F.\;\; 18^\circ \\[3ex]
+                G.\;\; 20^\circ \\[3ex]
+                H.\;\; 36^\circ \\[3ex]
+                J.\;\; 72^\circ \\[3ex]
+                K.\;\; 90^\circ \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionS27')">Show/Hide Answer</button>
+                <div class="result" id="solutionS27">
+                    <br>
+                    $
+                    0\;hour \rightarrow 2\;students \\[3ex]
+                    1\;hour \rightarrow 5\;students \\[3ex]
+                    2\;hours \rightarrow 6\;students \\[3ex]
+                    3\;hours \rightarrow 4\;students \\[3ex]
+                    4\;hours \rightarrow 2\;students \\[3ex]
+                    5\;hours \rightarrow 1\;student \\[3ex]
+                    Total\;\;number\;\;of\;\;students = \Sigma f = 2 + 5 + 6 + 4 + 2 + 1 = 20 \\[3ex]
+                    sectorial\;\angle \;\;for\;\;3\;\;hours \\[3ex]
+                    = \dfrac{number\;\;of\;\;students\;\;for\;\;3\;\;hours}{total\;\;number\;\;of\;\;students} *
+                    360^\circ \\[5ex]
+                    = \dfrac{4}{20} * 360^\circ \\[5ex]
+                    = 72^\circ
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) To the nearest tenth of an hour, what is the average number of hours for the 20 survey responses?
+                <br><br>
+                $
+                A.\;\; 2.0 \\[3ex]
+                B.\;\; 2.1 \\[3ex]
+                C.\;\; 2.3 \\[3ex]
+                D.\;\; 2.5 \\[3ex]
+                E.\;\; 3.0 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionS28')">Show/Hide Answer</button>
+                <div class="result" id="solutionS28">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green" style="width: 25%;">hours, $x$</th>
+                            <th class="green" style="width: 25%;">number of students, $f$</th>
+                            <th class="green" style="width: 50%;">$f * x$</th>
+                        </tr>
+                        <tr>
+                            <td>$0$</td>
+                            <td>$2$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$5$</td>
+                            <td>$5$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$6$</td>
+                            <td>$12$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                            <td>$12$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$2$</td>
+                            <td>$8$</td>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$1$</td>
+                            <td>$5$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 20$</td>
+                            <td>$\Sigma fx = 42$</td>
+                        </tr>
+                    </table>
+                    $
+                    \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{42}{20} \\[5ex]
+                    = 2.1
+                    $
+                    The average number of hours for the 20 survey responses is 2.1 hours
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionS29')">Show/Hide Answer</button>
+                <div class="result" id="solutionS29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS30')">Show/Hide Answer</button>
+                <div class="result" id="solutionS30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <button class="solutions" onclick="solutions('solutionS31')">Show/Hide Answer</button>
+                <div class="result" id="solutionS31">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) <b>ACT</b> The marketing students at Fort Link Business Academy took a placement test for an
+                accounting class. <br>
+                The mean of the test scores is 100 and the standard deviation is 15 <br>
+                In order to be accepted into the accounting class, a student must have attained a test score that is
+                <u>at least</u> 1 standard deviation above the mean. <br>
+                What is the <u>lowest</u> score a student could attain and still be accepted into the accounting class?
+                <br><br>
+                $
+                A.\:\: 15 \\[3ex]
+                B.\:\: 16 \\[3ex]
+                C.\:\: 101 \\[3ex]
+                D.\:\: 115 \\[3ex]
+                E.\:\: 116 \\[3ex]
+                $
+                <i>
+                    But guess what? <br>
+                    Can we paraphrase this question? <br>
+                    What if this question was worded like this? <br>
+                    To enroll in an accounting class, a student must make a test score of
+                    <u>at least</u> $15$ more than the class average of $100$ <br>
+                    What is the <u>lowest</u> score a student could attain and still be accepted into the accounting
+                    class? <br><br>
+                    Do you see what I mean about lengthy word problems?
+                </i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS32')">Show/Hide Answer</button>
+                <div class="result" id="solutionS32">
+                    <br>
+                    Mean = $100$ <br><br>
+                    Standard deviation = $15$ <br><br>
+                    $1$ standard deviation = $15$ <br><br>
+                    $1$ standard deviation above the mean = $15 + 100 = 115$ <br><br>
+                    at least $1$ standard deviation above the mean is $\ge 115$ <br><br>
+                    This means $115, 116, 117, 118, ...$ <br><br>
+                    The lowest score a student could attain and still be accepted into the accounting class is $115$
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionS33')">Show/Hide Answer</button>
+                <div class="result" id="solutionS33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS34')">Show/Hide Answer</button>
+                <div class="result" id="solutionS34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionS35')">Show/Hide Answer</button>
+                <div class="result" id="solutionS35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS36')">Show/Hide Answer</button>
+                <div class="result" id="solutionS36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionS37')">Show/Hide Answer</button>
+                <div class="result" id="solutionS37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.) <b>ACT</b> There are exactly 5 people in a bookstore at 12:00 p.m. <br>
+                Each person earns an annual income that is between <span>$</span>30,000 and <span>$</span>35,000. <br>
+                No one enters or leaves the bookstore until 12:15 p.m., when a professional athlete with an annual
+                income of more than <span>$</span>1,000,000 enters the bookstore and joins the other 5 people. <br>
+                The mean, median, range, and standard deviation of the annual incomes of the 5 people in the bookstore
+                at 12:00 p.m. are calculated and compared to the same 4 statistics of the annual incomes of the 6 people
+                in the bookstore at 12:15 p.m. <br>
+                If it can be determined, which of the 4 statistics changed the least? <br>
+                <b>A.</b> Range <br>
+                <b>B.</b> Mean <br>
+                <b>C.</b> Median <br>
+                <b>D.</b> Standard deviation <br>
+                <b>E.</b> Cannot be determined from the given information
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS38')">Show/Hide Answer</button>
+                <div class="result" id="solutionS38">
+                    <br>
+                    The annual salaries of the 5 people at 12:00 pm is between <span>$</span>30,000 and
+                    <span>$</span>35,000 <br>
+                    The mean is a measure of center: which is between <span>$</span>30,000 and <span>$</span>35,000 <br>
+                    The median is also a measure of measure which is between <span>$</span>30,000 and
+                    <span>$</span>35,000 <br>
+                    The range and the standard deviation will typically be less than <span>$</span>30,000 <br>
+                    But then at 12:15 pm, an outlier of <span>$</span>1,000,000 is included in the data. <br>
+                    The mean will be highly affected...because it is not resistant to outliers. <br>
+                    The range and the standard deviation will also be highly affected. <br>
+                    The median will be the least affected because the 3rd and 4th data values (for a sample size of 6,
+                    the median is the average of the 3rd and 4th data values)
+                    are still within <span>$</span>30,000 and <span>$</span>35,000 <br>
+                    In other words, the median is resistant to outliers.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <button class="solutions" onclick="solutions('solutionS39')">Show/Hide Answer</button>
+                <div class="result" id="solutionS39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS40')">Show/Hide Answer</button>
+                <div class="result" id="solutionS40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptiveStatistics.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionS41')">Show/Hide Answer</button>
+                <div class="result" id="solutionS41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS42')">Show/Hide Answer</button>
+                <div class="result" id="solutionS42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <button class="solutions" onclick="solutions('solutionS43')">Show/Hide Answer</button>
+                <div class="result" id="solutionS43">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS44')">Show/Hide Answer</button>
+                <div class="result" id="solutionS44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <button class="solutions" onclick="solutions('solutionS45')">Show/Hide Answer</button>
+                <div class="result" id="solutionS45">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS46')">Show/Hide Answer</button>
+                <div class="result" id="solutionS46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <button class="solutions" onclick="solutions('solutionS47')">Show/Hide Answer</button>
+                <div class="result" id="solutionS47">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS48')">Show/Hide Answer</button>
+                <div class="result" id="solutionS48">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.)
+                <button class="solutions" onclick="solutions('solutionS49')">Show/Hide Answer</button>
+                <div class="result" id="solutionS49">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS50')">Show/Hide Answer</button>
+                <div class="result" id="solutionS50">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (51.)
+                <button class="solutions" onclick="solutions('solutionS51')">Show/Hide Answer</button>
+                <div class="result" id="solutionS51">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (52.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS52')">Show/Hide Answer</button>
+                <div class="result" id="solutionS52">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (53.)
+                <button class="solutions" onclick="solutions('solutionS53')">Show/Hide Answer</button>
+                <div class="result" id="solutionS53">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (54.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS54')">Show/Hide Answer</button>
+                <div class="result" id="solutionS54">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (55.)
+                <button class="solutions" onclick="solutions('solutionS55')">Show/Hide Answer</button>
+                <div class="result" id="solutionS55">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (56.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS56')">Show/Hide Answer</button>
+                <div class="result" id="solutionS56">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (57.)
+                <button class="solutions" onclick="solutions('solutionS57')">Show/Hide Answer</button>
+                <div class="result" id="solutionS57">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (58.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS58')">Show/Hide Answer</button>
+                <div class="result" id="solutionS58">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (59.)
+                <button class="solutions" onclick="solutions('solutionS59')">Show/Hide Answer</button>
+                <div class="result" id="solutionS59">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (60.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS60')">Show/Hide Answer</button>
+                <div class="result" id="solutionS60">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptiveStatistics.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (61.)
+                <button class="solutions" onclick="solutions('solutionS61')">Show/Hide Answer</button>
+                <div class="result" id="solutionS61">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (62.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS62')">Show/Hide Answer</button>
+                <div class="result" id="solutionS62">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (63.)
+                <button class="solutions" onclick="solutions('solutionS63')">Show/Hide Answer</button>
+                <div class="result" id="solutionS63">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (64.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionS64')">Show/Hide Answer</button>
+                <div class="result" id="solutionS64">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2018&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2018 Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages5.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

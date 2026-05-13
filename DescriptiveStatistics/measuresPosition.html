@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Measures of Position</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in the measures of location.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
+              mathematics, statistics, descriptive statistics, mean, median, mode, midrange, range, variance, 
+              standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
+              standard error, measures of center, summation, sample size, population size, measures of central tendency, 
+              measures of dispersion, measures of spread, measures of variation, measures of variability, 
+              measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
+              measures of relative standing, boxplots">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 bisque">
+        <h1>Solved Examples: Measures of Position</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+
+
+    <div class="w3-container">
+
+        <!-- Image in top left corner --
+            <a href="https://statistical-reasoning.appspot.com/" title="Samuel Dominic Chukwuemeka">
+                <img src="images/samdom4peace.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br><br>
+        <mark>For SAT Students</mark> <br>
+        Any question labeled SAT-C is a question that allows a calculator. <br>
+        Any question labeled SAT-NC is a question that does not allow a calculator. <br><br>
+        <mark>For JAMB Students</mark> <br>
+        Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+
+        <br><br>
+
+        Solve all questions. <br>
+        Show all work.
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Students <i>A, B, C, D</i>, and <i>E</i> had their SAT (Scholastic Assessment Test) scores
+                converted
+                to <i>z</i>-scores. <br>
+                Their <i>z</i>-scores are &minus;2.00, &minus;1.00, 0.00, 1.00, and 2.00 respectively. <br>
+                Who made the highest of the five scores?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP1')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP1">
+                    <br>
+                    Student $E$ made the highest test score because the score is $2.00$ standard deviations above the
+                    mean.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Two friends Agnes and Agatha were arguing on who made the better score. <br>
+                Agnes made a 73% on her Chemistry test while Agatha made a 46% on her Biology test. <br>
+                The Biology test scores have a mean of 65% and a standard deviation of 10%, while the Chemistry
+                test scores have a mean of 95% and a standard deviation of 11%. <br>
+                Who made the better score?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP2')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP2">
+                    <br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \underline{Agnes'\:\:Chemistry\:\:Test} \\[3ex]
+                    x = 73 \\[3ex]
+                    \mu = 95 \\[3ex]
+                    \sigma = 11 \\[3ex]
+                    z = \dfrac{73 - 95}{11} \\[5ex]
+                    z = -\dfrac{22}{11} \\[5ex]
+                    z = -2.00 \\[3ex]
+                    \underline{Agatha's\:\:Biology\:\:Test} \\[3ex]
+                    x = 46 \\[3ex]
+                    \mu = 65 \\[3ex]
+                    \sigma = 10 \\[3ex]
+                    z = \dfrac{46 - 65}{10} \\[5ex]
+                    z = -\dfrac{19}{10} \\[5ex]
+                    z = -1.90 \\[3ex]
+                    -1.90 \gt -2.00 \\[3ex]
+                    $
+                    Therefore, Agatha's Biology test score is better because it has a higher $z-score$ than Agnes'
+                    Chemistry test score. <br><br>
+                    <i>
+                        Note the responses of your students. <br>
+                        If some of them said that Agnes' test score was better, re-teach the concept of $z-scores$
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) IQ (Intelligence Quotient) scores are measured with a test designed so that the mean is 107 and the
+                standard
+                deviation is 19. <br><br>
+                (a.) What are the <i>z</i>-scores that separate the unusual IQ scores from the usual IQ scores? <br><br>
+                (b.) What are the IQ scores that separate the unusual IQ scores from the usual IQ scores?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP3')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP3">
+                    <br>
+                    (a.) A data score is <u>usual</u> if $-2.00 \le z \le 2.00$ <br>
+                    A data value is <u>unusual</u> if the $z-score \lt -2.00$ OR the $z-score \gt 2.00$ <br>
+                    The lower $z-score$ boundary is $-2.00$ <br>
+                    The upper $z-score$ boundary is $2.00$ <br>
+                    This implies that $-2.00$ and $2.00$ are the $z-scores$ that separate the unusual $IQ$ scores
+                    from the usual $IQ$ scores <br><br>
+                    (b.) To find the $IQ$ scores (data values), we need to express them in terms of the $z-scores$.
+                    <br><br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \rightarrow x - \mu = z\sigma \\[3ex]
+                    x = z\sigma + \mu \\[3ex]
+                    Lower\:\:IQ\:\:score\:\:boundary = -2(19) + 107 = -38 + 107 = 69 \\[3ex]
+                    Upper\:\:IQ\:\:score\:\:boundary = 2(19) + 107 = 38 + 107 = 145 \\[3ex]
+                    Usual\:\:IQ\:\:scores:\:\: 69 \le IQ \le 145 \\[3ex]
+                    Unusual\:\:IQ\:\:scores:\:\: IQ \lt 69 \:\:OR\:\: IQ \gt 145 \\[3ex]
+                    $
+                    Therefore 69 and 145 are the IQ scores that separate the unusual IQ scores
+                    from the usual IQ scores
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) At one time, President Barack Obama had a net worth of 3,670,505.00 <br>
+                The 17 members of the Executive Branch had a mean net worth of 4,939,455.00 with a standard
+                deviation of 7,775,948.00 (<a href="https://www.opensecrets.org/" target="_blank"
+                    class="links">OpenSecrets.org</a>) <br>
+                (a.) What is the difference between the mean net worth of all the Executive Branch members and President
+                Obama's net worth? <br>
+                (b.) How many standard deviations is the difference? <br>
+                (c.) What are the <i>z</i>-score of President Obama's net worth? <br>
+                (d.) Is President Obama's net worth usual or unusual?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP4')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP4">
+                    <br>
+                    $
+                    (a.)\:\: Difference = 4939455 - 3670505 = \$1,268,950.00 \\[3ex]
+                    (b.)\:\: x = 4939455 \\[3ex]
+                    \mu = 3670505 \\[3ex]
+                    \sigma = 7775948 \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{4939455 - 3670505}{7775948} \\[5ex]
+                    z = \dfrac{1268950}{7775948} \\[5ex]
+                    z = 0.16 \\[3ex]
+                    The\:\:difference\:\:is\:\:0.16\:\:standard\:\:deviations \\[3ex]
+                    (c.)\:\: \underline{Obama's\:\:worth} \\[3ex]
+                    x = 3670505 \\[3ex]
+                    \mu = 4939455 \\[3ex]
+                    \sigma = 7775948 \\[3ex]
+                    z-score = \dfrac{3670505 - 4939455}{7775948} \\[5ex]
+                    z-score = -\dfrac{1268950}{7775948} \\[5ex]
+                    z-score = - 0.1631891057 \\[3ex]
+                    z-score \approx -0.16 \\[3ex]
+                    (d.)\:\:Because -2.00 \le -0.16 \le -2.00 \\[3ex]
+                    $
+                    Obama's net worth is usual.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Timothy surveyed 36 adults in the <i>City of Truth or Consequences, New Mexico.</i> <br>
+                He sorted their ages (in years) as seen in the data below:
+                <br><br>
+                <table class="w3-center borderless">
+                    <caption>Ages</caption>
+                    <tr>
+                        <td>18</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>25</td>
+                        <td>27</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>32</td>
+                        <td>36</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>40</td>
+                        <td>40</td>
+                        <td>41</td>
+                        <td>43</td>
+                        <td>44</td>
+                        <td>48</td>
+                        <td>49</td>
+                        <td>49</td>
+                        <td>55</td>
+                        <td>56</td>
+                        <td>58</td>
+                    </tr>
+                    <tr>
+                        <td>61</td>
+                        <td>63</td>
+                        <td>63</td>
+                        <td>65</td>
+                        <td>69</td>
+                        <td>70</td>
+                        <td>70</td>
+                        <td>70</td>
+                        <td>71</td>
+                        <td>76</td>
+                        <td>77</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+                <br>
+                Determine and interpret the quantiles of 65 years.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP5')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP5">
+                    <br>
+                    Sample size = total number of values = <i>n</i> = 36 <br>
+                    Number of data values less than 65 = 27 <br><br>
+                    $
+                    Percentile\;\;of\;\;65 \\[3ex]
+                    = \dfrac{27}{36} * 100 \\[5ex]
+                    = \dfrac{2700}{36} \\[5ex]
+                    = 75th\;\;percentile \\[3ex]
+                    $
+                    This means that 75% of the ages are lower than 65 years while 25% of the ages are higher than 65
+                    years. <br>
+                    Alternatively, we can say that if the ages is divided into 100 parts; the age, 65 years separates
+                    the lowest 75% of the ages from the highest 25%.
+                    <br><br>
+                    $
+                    Decile\;\;of\;\;65 \\[3ex]
+                    = \dfrac{27}{36} * 10 \\[5ex]
+                    = \dfrac{270}{36} \\[5ex]
+                    = 7.5th\;\;decile \\[3ex]
+                    $
+                    If the ages dataset is divided in 10 parts, 65 years separates the lowest 7.5 of the ages from the
+                    highest 2.5.
+                    <br><br>
+                    $
+                    Quintile\;\;of\;\;65 \\[3ex]
+                    = \dfrac{27}{36} * 5 \\[5ex]
+                    = \dfrac{135}{36} \\[5ex]
+                    = 3.75th\;\;quintile \\[3ex]
+                    $
+                    If the ages dataset is divided in 5 parts, 65 years separates the lowest 3.75 of the ages from the
+                    highest 1.25.
+                    <br><br>
+                    $
+                    Quartile\;\;of\;\;65 \\[3ex]
+                    = \dfrac{27}{36} * 4 \\[5ex]
+                    = \dfrac{108}{36} \\[5ex]
+                    = 3rd\;\;quartile \\[3ex]
+                    $
+                    If the ages dataset is divided in 4 parts, 65 years separates the lowest 3 of the ages from the
+                    highest 1.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Using the <i>Ages</i> dataset in Question Number (5.), determine the: 75th percentile, 7.5th
+                decile, 3.75th quintile, and the 3rd quartile.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP6')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP6">
+                    <br>
+                    $
+                    n = 36 \\[3ex]
+                    xth\;\;position = \dfrac{75}{100} * 36 = \dfrac{2700}{100} = 27 \\[5ex]
+                    xth\;\;position = \dfrac{7.5}{10} * 36 = \dfrac{270}{10} = 27 \\[5ex]
+                    xth\;\;position = \dfrac{3.75}{5} * 36 = \dfrac{135}{5} = 27 \\[5ex]
+                    xth\;\;position = \dfrac{3}{4} * 36 = \dfrac{108}{4} = 27 \\[5ex]
+                    \implies \\[3ex]
+                    xth\;\;position \\[3ex]
+                    = \dfrac{27th\;\;position + 28th\;\;position}{2} \\[5ex]
+                    = \dfrac{63 + 65}{2} \\[5ex]
+                    = \dfrac{128}{2} \\[5ex]
+                    = 64 \\[3ex]
+                    $
+                    75th percentile = 7.5th decile = 3.75th quintile = 3rd quartile = 64
+                    <br><br>
+                    <i>
+                        <b>Student:</b> Mr. C, are we not supposed to get 65 as the answer? <br>
+                        <b>Teacher:</b> Yes. But we got 64. This is the correct answer. <br>
+                        I want you to see it this way: 64 is the boundary for the 3rd quartile (75th percentile) <br>
+                        65 is included in that part. But 64 is the boundary. <br>
+                        Be it as it may: please <br>
+                        <u>NOTE:</u> Some textbooks/online resources calculate these formulas
+                        (<a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptive-statistics.html#formulasMeasuresPosition"
+                            target="_blank">formulas that deal with converting a quantile to a data value</a>)
+                        differently. <br>
+                        They may have it this way: <br><br>
+                        $
+                        xth\:\:position = \dfrac{yth\:\:Percentile}{100} * (total\:\:number\:\:of\:\:values + 1) \\[5ex]
+                        $
+                        If we use this formula, we will get the answers we got in Question Number (5.) (which we makes
+                        sense). <br>
+                        However, if we decide to calculate the median of that data with this formula, it will be
+                        different from the median value calculated with the formulas in the link above (main formulas).
+                        <br>
+                        There is still some confusion that the main formulas should only apply to the median. <br>
+                        Be it as it may, please use the main formulas (which is provided for you on the tests/exams)
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Data were collected on the total energy consumption per capita​ (in million​ BTUs) for some states.
+                <br>
+                A summary of the data is shown in the table below.
+                <br>
+                <table class="w3-center">
+                    <caption>Summary Statistics:</caption>
+                    <tr>
+                        <td style="width: 20%;">Column</td>
+                        <td style="width: 16%;">Min</td>
+                        <td style="width: 16%;">Q<sub>1</sub></td>
+                        <td style="width: 16%;">Median</td>
+                        <td style="width: 16%;">Q<sub>3</sub></td>
+                        <td style="width: 16%;">Max</td>
+                    </tr>
+                    <tr>
+                        <td>Total BTU</td>
+                        <td>185.5</td>
+                        <td>242.9</td>
+                        <td>304.7</td>
+                        <td>392.8</td>
+                        <td>912.7</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) What percentage of the states consumed more than 392.8 million BTUs per​ capita? <br>
+                (b.) What percentage of the states consumed more than 242.9 million BTUs per​ capita? <br>
+                (c.) What percentage of the states consumed more than 304.7 million BTUs per​ capita? <br>
+                (d.) Determine the interquartile range. <br>
+                (e.) Interpret the interquartile range in the context of the dataset.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP7')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP7">
+                    <br>
+                    (a.) 392.8 million BTU = Q<sub>3</sub> = 75% <br>
+                    More than 75% = 100% = 75% = 25% <br>
+                    25% of the states consumed more than 392.8 million BTUs per capita.
+                    <br><br>
+                    (b.) 242.9 million BTUs = Q<sub>1</sub> = 25% <br>
+                    More than 25% = 100% - 25% = 75% <br>
+                    75% of the states consumed more than 242.9 million BTUs per capita.
+                    <br><br>
+                    (c.) 304.7 million BTUs = Q<sub>2</sub> = Median = 50% <br>
+                    More than 50% = 100% - 50% = 50% <br>
+                    50% of the states consumed more than 304.7 million BTUs per capita.
+                    <br><br>
+                    $
+                    (d.) \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 392.8 - 242.9 = 149.9\;million\;BTUs \\[3ex]
+                    $
+                    (e.) Interpretation of IQR: The middle​ 50% of the states have values of total energy consumption
+                    per capita that vary by as much 149.9 million BTUs.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>ACT</b> For a given set of data, the standard score, <i>z</i>, corresponding to the raw score,
+                <i>x</i>, is given by
+                $z = \dfrac{x - \mu}{\sigma}$, where &mu; is the mean of the set and &sigma; is the standard deviation.
+                <br>
+                If, for a set of scores, &mu; = 78 and &sigma; = 6, which of the following is the raw score, <i>x</i>,
+                corresponding to
+                <i>z</i> &equals; 2? <br><br>
+                $
+                F.\;\; 90 \\[3ex]
+                G.\;\; 84 \\[3ex]
+                H.\;\; 80 \\[3ex]
+                J.\;\; 76 \\[3ex]
+                K.\;\; 66 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMP8')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP8">
+                    <br>
+                    $
+                    \mu = 78 \\[3ex]
+                    \sigma = 6 \\[3ex]
+                    z = 2 \\[3ex]
+                    x = ? \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    x - \mu = z * \sigma \\[3ex]
+                    x = z * \sigma + \mu \\[3ex]
+                    x = 2 * 6 + 78 \\[3ex]
+                    x = 12 + 78 \\[3ex]
+                    x = 90
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) The boxplot displayed shows the average ticket price for four professional sports leagues.
+                <br><br>
+                <img src="images/MeasuresPosition/Questions/Number9.png" alt="Number 9">
+                <br><br>
+                (a.) Which sport has the most expensive ticket​ prices? <br>
+                (b.) Which sport has the least expensive ticket​ prices? <br>
+                (c.) Compare the ticket prices for Sport A and Sport B. <br>
+                In your​ comparison, compare the price of a typical​ ticket, the amount of variation in ticket​ prices,
+                and the presence of any outliers in the data.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP9')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP9">
+                    <br>
+                    (a.) The sport with the most expensive ticket prices is Sport C because it has the greatest maximum
+                    ticket price. <br>
+                    (b.) The sport with the most expensive ticket prices is Sport D because it has the least minimum
+                    ticket price. <br>
+                    (c.) A typical ticket for Sport A is less expensive than a typical ticket for Sport ​B, since Sport
+                    A has a lower median than Sport B. <br>
+                    Sport B has more variability in ticket​ prices, as shown by a higher IQR (the length of the
+                    box...without the whiskers). <br>
+                    Sport A has potential outliers representing unusually high-priced tickets. <br>
+                    Sport B has potential outliers representing unusually high-priced tickets.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) Determine the five-number summary for the dataset
+                <br><br>
+                $
+                70\hspace{4em}71\hspace{4em}71\hspace{4em}71\hspace{4em}72 \\[3ex]
+                72\hspace{4em}74\hspace{4em}74\hspace{4em}76\hspace{4em}77 \\[3ex]
+                78\hspace{4em}78\hspace{4em}79\hspace{4em}79\hspace{4em}79 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMP10')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP10">
+                    <br>
+                    The data is already arranged in ascending order. <br><br>
+                    $
+                    n = 15 \\[3ex]
+                    Min = 70 \\[3ex]
+                    xth\;\;position = \dfrac{1}{4} * 15 = 3.75 \approx 4th\;\;position = 71 \\[5ex]
+                    Q_1 = 71 \\[3ex]
+                    xth\;\;position = \dfrac{2}{4} * 15 = 7.5 \approx 8th\;\;position = 74 \\[5ex]
+                    Q_2 = 74 \\[3ex]
+                    xth\;\;position = \dfrac{3}{4} * 15 = 11.25 \approx 12th\;\;position = 78 \\[5ex]
+                    Q_3 = 78 \\[3ex]
+                    Max = 79 \\[3ex]
+                    $
+                    The five-number summary: 70, 71, 74, 78, 79
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) The dotplot shows the distribution of the heights​ (in feet) of a sample of roller coasters.
+                <br><br>
+                <img src="images/MeasuresPosition/Questions/Number11.png" alt="Number 11">
+                <br><br>
+                The​ five-number summary of the data is given in the following table.
+                <br>
+                <table class="w3-center noborder">
+                    <tr>
+                        <th style="width: 20%;">Minimum</th>
+                        <th style="width: 20%;">Lower Quartile</th>
+                        <th style="width: 20%;">Median</th>
+                        <th style="width: 20%;">Upper Quartile</th>
+                        <th style="width: 20%;">Maximum</th>
+                    </tr>
+                    <tr>
+                        <td>2.393</td>
+                        <td>8.009</td>
+                        <td>18.086</td>
+                        <td>33.313</td>
+                        <td>129.414</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Sketch a boxplot of the data. <br>
+                (b.) Explain how you determined the length of the whiskers.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP11')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP11">
+                    <br>
+                    (a.) The sketch of the boxplot is:
+                    <br><br>
+                    <img src="images/MeasuresPosition/Answers/Number11.png" alt="Number 11">
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    Q_1 = 8.009 \\[3ex]
+                    Q_3 = 33.313 \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 33.313 - 8.009 \\[3ex]
+                    IQR = 25.304 \\[3ex]
+                    LF = Q_1 - 1.5IQR \\[3ex]
+                    LF = 8.009 - 1.5(25.304) \\[3ex]
+                    LF = 8.009 - 37.956 \\[3ex]
+                    LF = -29.947 \\[5ex]
+                    UF = Q_3 + 1.5IQR \\[3ex]
+                    UF = 33.313 + 37.956 \\[3ex]
+                    UF = 71.269 \\[3ex]
+                    $
+                    The length of the whiskers is determined as follows: <br>
+                    The minimum value is greater than or equal to the left limit (lower fence) of &minus;29.947, so the
+                    left whisker is drawn to the minimum. <br>
+                    The maximum value is greater than the right limit (upper fence) of 71.269, so the right whisker is
+                    drawn to the largest non-outlier.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP12')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) Determine the five-number summary for the dataset
+                <br><br>
+                $
+                5\hspace{3.7em}6\hspace{3.7em}6\hspace{3.3em}7\hspace{3em}10\hspace{3em}11 \\[3ex]
+                11\hspace{3em}12\hspace{3em}12\hspace{3em}17\hspace{3em}24\hspace{3em}29 \\[3ex]
+                32\hspace{3em}37\hspace{3em}42\hspace{3em}45\hspace{3em}54\hspace{3em}64 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMP13')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP13">
+                    <br>
+                    The data is in ascending order. <br><br>
+                    $
+                    n = 18 \\[3ex]
+                    Min = 5 \\[3ex]
+                    xth\;\;position = \dfrac{1}{4} * 18 = 4.5 \approx 5th\;\;position = 10 \\[5ex]
+                    Q_1 = 10 \\[3ex]
+                    xth\;\;position = \dfrac{2}{4} * 18 = 9 = \dfrac{9th\;\;position + 10th\;\;position}{2} = \dfrac{12
+                    + 17}{2} = 14.5 \\[5ex]
+                    Q_2 = 14.5 \\[3ex]
+                    xth\;\;position = \dfrac{3}{4} * 18 = 13.5 \approx 14th\;\;position = 37 \\[5ex]
+                    Q_3 = 37 \\[3ex]
+                    Max = 64 \\[3ex]
+                    $
+                    The five-number summary is: 5, 10, 14.5, 37, 64
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) Given these datasets, determine whether the boxplot can be used to represent the dataset. <br>
+                Give reasons for your answers.
+                <br><br>
+                (a.) 44, 78, 80, 87, 95
+                <br><br>
+                (b.) 51, 72, 80, 86, 100
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP14')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP14">
+                    <br>
+                    First, let us list the five-number summary <br>
+                    Then, we calculate the lower fence and upper fence <br>
+                    Then, we make our decision based on the comparing the minimum and the lower fence and/or the maximum
+                    and upper fence.
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    44, 78, 80, 87, 95 \\[3ex]
+                    minimum = 44 \\[3ex]
+                    Q_1 = 78 \\[3ex]
+                    Q_2 = 80 \\[3ex]
+                    Q_3 = 87 \\[3ex]
+                    maximum = 95 \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 87 - 78 = 9 \\[3ex]
+                    1.5IQR = 1.5(9) = 13.5 \\[3ex]
+                    LF = Q_1 - 1.5IQR \\[3ex]
+                    LF = 78 - 13.5 = 64.5 \\[3ex]
+                    44 \lt 64.5 \\[3ex]
+                    $
+                    The minimum value is less than the lower fence. <br>
+                    Between the minimum value and the lower fence, there may be some values greater than the minimum but
+                    less than the lower fence. <br>
+                    These values are unknown outliers. <br>
+                    Hence, the boxplot cannot be drawn for this dataset because the boxplot must mark all potential
+                    outliers. <br>
+                    Since the minimum is lower than the left​ limit, there may be other unknown outliers between the
+                    minimum and left​ limit, and so the boxplot cannot mark all potential outliers.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    51, 72, 80, 86, 100 \\[3ex]
+                    minimum = 51 \\[3ex]
+                    Q_1 = 72 \\[3ex]
+                    Q_2 = 80 \\[3ex]
+                    Q_3 = 86 \\[3ex]
+                    maximum = 100 \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 86 - 72 = 14 \\[3ex]
+                    1.5IQR = 1.5(14) = 21 \\[3ex]
+                    LF = Q_1 - 1.5IQR \\[3ex]
+                    LF = 72 - 21 = 51 \\[3ex]
+                    51 = 51 \\[3ex]
+                    $
+                    The minimum is the lower fence. <br>
+                    So, there are no unknown outliers based on the lower fence. <br>
+                    Let us compare the maximum with the upper fence.
+                    <br><br>
+                    $
+                    UF = Q_3 + 1.5IQR \\[3ex]
+                    UF = 86 + 21 = 107 \\[3ex]
+                    $
+                    The maximum is lower than the upper fence. <br>
+                    This is in order because there is no other value in the dataset greater than the maximum. <br>
+                    It is possible to draw a boxplot based on this information. <br>
+                    Both the minimum and maximum are within the bounds of the left limit and right​ limit, which means
+                    that all potential outliers can be displayed. <br>
+                    This is necessary to construct the boxplot.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) Data were collected on the industrial energy consumption per capita​ (in million​ BTUs) for some
+                states. <br>
+                A summary of the data is shown in the table below.
+                <br>
+                <table class="w3-center">
+                    <caption>Summary Statistics:</caption>
+                    <tr>
+                        <td style="width: 20%;">Column</td>
+                        <td style="width: 16%;">Min</td>
+                        <td style="width: 16%;">Q<sub>1</sub></td>
+                        <td style="width: 16%;">Median</td>
+                        <td style="width: 16%;">Q<sub>3</sub></td>
+                        <td style="width: 16%;">Max</td>
+                    </tr>
+                    <tr>
+                        <td>Industrial BTU</td>
+                        <td>10.7</td>
+                        <td>43.7</td>
+                        <td>94.9</td>
+                        <td>140.6</td>
+                        <td>620.8</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) What percentage of the states consumed fewer than 43.7 million BTUs per​ capita? <br>
+                (b.) What percentage of the states consumed fewer than 140.6 million BTUs per​ capita? <br>
+                (c.) What percentage of the states consumed more than 94.9 million BTUs per​ capita? <br>
+                (d.) Is there more variability in Total Energy Consumption or in Industrial Energy Consumption for the​
+                states? <br>
+                <br>
+                <table class="w3-center">
+                    <caption>Summary Statistics:</caption>
+                    <tr>
+                        <td style="width: 20%;">Column</td>
+                        <td style="width: 16%;">Min</td>
+                        <td style="width: 16%;">Q<sub>1</sub></td>
+                        <td style="width: 16%;">Median</td>
+                        <td style="width: 16%;">Q<sub>3</sub></td>
+                        <td style="width: 16%;">Max</td>
+                    </tr>
+                    <tr>
+                        <td>Total BTU</td>
+                        <td>189</td>
+                        <td>228.4</td>
+                        <td>305.4</td>
+                        <td>380.4</td>
+                        <td>914.5</td>
+                    </tr>
+                </table>
+                <br>
+                (See the table below for data on total energy consumption per capita​ (in millions of​ BTUs) for the​
+                states.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP15')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP15">
+                    <br>
+                    (a.) 43.7 million BTUs = Q<sub>1</sub> = 25% <br>
+                    25% of the states consumed fewer than 43.7 million BTUs per capita.
+                    <br><br>
+                    (b.) 140.6 million BTUs = Q<sub>3</sub> = 75% <br>
+                    75% of the states consumed fewer than 140.6 million BTUs per capita.
+                    <br><br>
+                    (c.) Median = 94.9 million BTU = 50% <br>
+                    More than 50% = 100 - 50% = 50% <br>
+                    50% of the states consumed more than 94.9 million BTUs per capita.
+                    <br><br>
+                    $
+                    (d.) \\[3ex]
+                    \underline{Industrial\;\;BTU} \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 140.6 - 43.7 = 96.9\;million\;BTUs \\[5ex]
+                    \underline{Total\;\;BTU} \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 380.4 - 228.4 = 152\;million\;BTUs \\[5ex]
+                    152\;million\;BTUs \gt 96.9\;million\;BTUs \\[3ex]
+                    $
+                    There is more variability in Total Energy Consumption because it has an interquartile range of 152
+                    million BTUs versus an interquartile range for Industrial Energy Consumption of 96.9 million BTUs.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP16')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) The boxplot shows the poverty rates​ (the proportion of the population below the​ government's
+                official poverty​ level) in all states of a certain country. <br>
+                The states are divided into four geographical​ regions: A,​ B, C, and D.
+                <br><br>
+                <img src="images/MeasuresPosition/Questions/Number17.png" alt="Number 17">
+                <br><br>
+                (a.) List the regions from highest to lowest median poverty rate. <br>
+                (b.) List the regions from lowest to highest interquartile range. <br>
+                (c.) Do any of the regions have a state with an unusually low or an unusually high poverty​ rate?
+                Explain. <br>
+                (d.) Which region has the least amount of variability in poverty​ rate? Explain. <br>
+                (e.) Why is the interquartile range a better measure of the variability for these data than the range​
+                is?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP17')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP17">
+                    <br>
+                    Scale:
+                    <br><br>
+                    $
+                    \dfrac{12 - 8}{2} = \dfrac{4}{2} = 2 \\[5ex]
+                    8, 10, 12, 14, 16, 18, 20 \\[3ex]
+                    $
+                    (a.) Minimum Poverty Rates: <br>
+                    A = about 10.2 <br>
+                    B = about 8.4 <br>
+                    C = about 11.8 <br>
+                    D = about 8.2 <br>
+                    The regions from highest to lowest median poverty rate are: C, A, B, D
+                    <br><br>
+                    (b.) Interquartile Range is the length of the box: (approximate lengths are calculated)
+                    <br><br>
+                    $
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    A = 13 - 11 = 2 \\[3ex]
+                    B = 12.8 - 8.4 = 4.4 \\[3ex]
+                    C = 18.2 - 14.4 = 3.8 \\[3ex]
+                    D = 13.7 - 10.4 = 3.3 \\[3ex]
+                    $
+                    The regions from lowest to highest interquartile range are: A, D, C, B
+                    <br><br>
+                    (c.) An unusually low or an unusually high poverty​ rate is an outlier. <br>
+                    Region A has a state with an unusually low poverty rate. <br>
+                    Region B has no state with an unusually low or high poverty rate. <br>
+                    Region C has a state with an unusually low poverty rate. <br>
+                    Region D has no state with an unusually low or high poverty rate. <br>
+                    Regions that have states with unusually low poverty rates have dots on the left side of their
+                    boxplots. <br>
+                    Regions that have states with unusually high poverty rates have dots on the right side of their
+                    boxplots.
+                    <br><br>
+                    (d.) Region A has the least amount of variability because it has the lowest interquartile range.
+                    <br><br>
+                    (e.) The range depends on only two observations, while the interquartile range depends on many
+                    observations and is therefore more reliable.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP18')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP19')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP19">
+                    <br>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>WASSCE</b> In a community of 500 people, the 75th percentile age is 65 years while the 25th
+                percentile
+                age is 15 years. <br>
+                How many of the people are between 15 and 65 years?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP20')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP20">
+                    <br>
+                    $
+                    n = 500 \\[1em]
+                    \underline{65\:years} \\[1em]
+                    75th\:\:percentile = \dfrac{75}{100} * 500 = 75 * 5 = 375 \\[2em]
+                    \underline{15\:years} \\[1em]
+                    25th\:\:percentile = \dfrac{25}{100} * 500 = 25 * 5 = 125 \\[2em]
+                    \underline{Between\:15\:years\:\:and\:\:65\:years} \\[1em]
+                    375 - 125 = 250\:people
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresPosition.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) The figure shows population density​ (people per square​ mile) for all states of a certain
+                country.
+                <br><br>
+                <img src="images/MeasuresPosition/Questions/Number21.png" alt="Number 21">
+                <br><br>
+                The states are divided into four geographical​ regions: A,​ B, C, and D.
+                <br>
+                (a.) Why is it best to compare medians and interquartile ranges for these​ data, rather than comparing
+                means and standard​ deviations?
+                <br><br>
+                (b.) List the approximate median number of people per square mile for each​ location; for​ example, the
+                median for Region A is approximately 255
+                <br><br>
+                (c.) List the regions from lowest interquartile range​ (on the​ left) to highest.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP21')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP21">
+                    <br>
+                    (a.) Some of these data have outliers​ and/or are​ skewed, and the median and interquartile range
+                    are resistant to outliers.
+                    <br><br>
+                    (b.) Scale on the <i>x</i>-axis: <br><br>
+                    $
+                    \dfrac{50 - 0}{2} = \dfrac{50}{2} = 25 \\[5ex]
+                    $
+                    The median for Region B (between 150 and 175) is about 170 people per square mile. <br>
+                    The median for Region C (between 500 and 525) is about 520 people per square mile. <br>
+                    The median for Region D (between 75 and 100) is about 95 people per square mile.
+                    <br><br>
+                    (c.) Interquartile Range is the length of the box: (approximate lengths are calculated)
+                    <br><br>
+                    $
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    A = 13 - 11 = 2 \\[3ex]
+                    B = 12.8 - 8.4 = 4.4 \\[3ex]
+                    C = 18.2 - 14.4 = 3.8 \\[3ex]
+                    D = 13.7 - 10.4 = 3.3 \\[3ex]
+                    $
+                    The regions from lowest to highest interquartile range are: A, D, C, B
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP22')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP23')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP24')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP24">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.) The boxplot shows the percentage of the population that has earned a​ bachelor's (BA) degree in
+                two different regions of a country.
+                <br><br>
+                <img src="images/MeasuresPosition/Questions/Number25.png" alt="Number 25">
+                <br><br>
+                (a.) Estimate and interpret the median for Region A. <br>
+                (b.) Estimate and interpret the median for Region B. <br>
+                (c.) In which region does a greater percentage of the population have a BA​ degree? <br>
+                (d.) Which region has more variation in BA​ attainment?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP25')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP25">
+                    <br>
+                    (a.) The median BA percentage for Region A is approximately is 23.6 <br>
+                    (b.) The median BA percentage for Region B is approximately is 25.4 <br>
+                    (c.) A greater percentage of the population has a BA degree in Region B because the median is larger
+                    for Region B. <br>
+                    (d.) Region B has greater variation than Region A because the interquartile range (IQR) for Region A
+                    is less than that for Region B.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP26')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.) <b>HSC Mathematics Standard 1</b> The heights, in centimetres, of 10 players on a basketball team
+                are shown.
+                <div class="w3-center">
+                    170, 180, 185, 188, 192, 193, 193, 194, 196, 202
+                </div>
+                Is the height of the shortest player on the team considered an outlier? <br>
+                Justify your answer with calculations.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP27')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP27">
+                    <br>
+                    <u>Fences:</u> Lower Fence and Upper Fence determine outliers of data. <br>
+                    A data value is an outlier if it is less than the lower fence or greater than the upper fence. <br>
+                    Because the question asked for the height of the shortest player, we shall be concerned with only
+                    the Lower Fence. <br>
+                    Data is already sorted <br><br>
+                    $
+                    n = 10 \\[3ex]
+                    \dfrac{1}{4} * 10 \\[5ex]
+                    = 2.5th \approx 3rd\;\;position \\[3ex]
+                    Q_1 = 185 \\[5ex]
+
+                    \dfrac{3}{4} * 10 \\[5ex]
+                    = 7.5th \approx 8th\;\;position \\[3ex]
+                    Q_3 = 194 \\[5ex]
+
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 194 - 185 \\[3ex]
+                    IQR = 9 \\[3ex]
+
+                    LF = Q_1 - 1.5(IQR) \\[3ex]
+                    LF = 185 - 1.5(9) \\[3ex]
+                    LF = 185 - 13.5 \\[3ex]
+                    LF = 171.5 \\[3ex]
+                    $
+                    Because the height of the shortest player is 170 cm and 170 &lt; 171.5; the height of the shortest
+                    player is an outlier.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP28')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP29')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP30')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (31.) The data show the number of central public libraries in 30 states and the District of Columbia.
+            <br><br>
+            <img src="images/MeasuresPosition/Questions/Number31.png" alt="Number 31">
+            <br><br>
+            A summary of the data is shown in the following table.
+            <br>
+            <table class="w3-center">
+                <caption>Summary Statistics</caption>
+                <tr>
+                    <th style="width: 20%;">Variable</th>
+                    <th style="width: 10%;">n</th>
+                    <th style="width: 10%;">Mean</th>
+                    <th style="width: 10%;">Std. Dev.</th>
+                    <th style="width: 10%;">Median</th>
+                    <th style="width: 10%;">Minimum</th>
+                    <th style="width: 10%;">Maximum</th>
+                    <th style="width: 10%;">Q<sub>1</sub></th>
+                    <th style="width: 10%;">Q<sub>3</sub></th>
+                </tr>
+                <tr>
+                    <td>Central Public Libraries</td>
+                    <td>31</td>
+                    <td>203.19355</td>
+                    <td>201.46586</td>
+                    <td>102</td>
+                    <td>1</td>
+                    <td>756</td>
+                    <td>79</td>
+                    <td>318</td>
+                </tr>
+            </table>
+            <br>
+            Should the maximum and minimum values of this data set be considered potential​ outliers? Why or why​ not?
+            <br>
+            You can check your answer by using technology to make a boxplot using fences to identify potential outliers.
+            <br><br>
+            (a.) Should the maximum value of this data set be considered a potential​ outlier? <br>
+            Why or why​ not?
+            <br><br>
+            (b.) Should the minimum value of this data set be considered a potential​ outlier? <br>
+            Why or why​ not?
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionMP31')">Show/Hide Answer</button>
+            <div class="result" id="solutionMP31">
+                <br>
+                $
+                (a.) \\[3ex]
+                IQR = Q_3 - Q_1 \\[3ex]
+                IQR = 318 - 79 \\[3ex]
+                IQR = 239 \\[3ex]
+                UF = Q_3 + 1.5IQR \\[3ex]
+                UF = 318 + 1.5(239) \\[3ex]
+                UF = 318 + 358.5 \\[3ex]
+                UF = 676.5 \\[3ex]
+                Maximum = 756 \\[3ex]
+                756 \gt 676.5 \\[3ex]
+                $
+                Because the maximum value, 756 is greater than the upper fence (right limit), 676.5, the value is
+                considered a potential outlier.
+                <br><br>
+                $
+                (b.) \\[3ex]
+                LF = Q_1 - 1.5IQR \\[3ex]
+                LF = 79 - 1.5(239) \\[3ex]
+                LF = 79 - 358.5 \\[3ex]
+                LF = -279.5 \\[3ex]
+                Minimum = 1 \\[3ex]
+                -279.5 \lt 1 \\[3ex]
+                $
+                Because the minimum value, 1 is greater than the lower fence (left limit), -279.5, the value is not
+                considered a potential outlier.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (32.) The data show the gas taxes in 30 states and the District of Columbia.
+            <br><br>
+            <img src="images/MeasuresPosition/Questions/Number32.png" alt="Number 32">
+            <br><br>
+            A summary of the data is shown in the following table.
+            <br>
+            <table class="w3-center">
+                <caption>Summary Statistics</caption>
+                <tr>
+                    <th style="width: 30%;">Column</th>
+                    <th style="width: 10%;">n</th>
+                    <th style="width: 10%;">Std. Dev.</th>
+                    <th style="width: 10%;">Median</th>
+                    <th style="width: 10%;">Min</th>
+                    <th style="width: 10%;">Max</th>
+                    <th style="width: 10%;">Q<sub>1</sub></th>
+                    <th style="width: 10%;">Q<sub>3</sub></th>
+                </tr>
+                <tr>
+                    <td>Gas Taxes (ct/gal)</td>
+                    <td>31</td>
+                    <td>7.46543</td>
+                    <td>47</td>
+                    <td>32.9</td>
+                    <td>62.9</td>
+                    <td>39.8</td>
+                    <td>51</td>
+                </tr>
+            </table>
+            <br>
+            Should the maximum and minimum values of this data set be considered potential​ outliers? Why or why​ not?
+            <br>
+            You can check your answer by using technology to make a boxplot using fences to identify potential outliers.
+            <br><br>
+            (a.) Should the maximum value of this data set be considered a potential​ outlier? <br>
+            Why or why​ not?
+            <br><br>
+            (b.) Should the minimum value of this data set be considered a potential​ outlier? <br>
+            Why or why​ not?
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionMP32')">Show/Hide Answer</button>
+            <div class="result" id="solutionMP32">
+                <br>
+                $
+                (a.) \\[3ex]
+                IQR = Q_3 - Q_1 \\[3ex]
+                IQR = 51 - 39.8 \\[3ex]
+                IQR = 11.2 \\[3ex]
+                UF = Q_3 + 1.5IQR \\[3ex]
+                UF = 51 + 1.5(11.2) \\[3ex]
+                UF = 51 + 16.8 \\[3ex]
+                UF = 67.8 \\[3ex]
+                Maximum = 62.9 \\[3ex]
+                62.9 \lt 67.8 \\[3ex]
+                $
+                Because the maximum value, 62.9 is less than the upper fence (right limit), 67.8, the value is not
+                considered a potential outlier.
+                <br><br>
+                $
+                (b.) \\[3ex]
+                LF = Q_1 - 1.5IQR \\[3ex]
+                LF = 39.8 - 1.5(11.2) \\[3ex]
+                LF = 39.8 - 16.8 \\[3ex]
+                LF = 23 \\[3ex]
+                Minimum = 32.9 \\[3ex]
+                32.9 \gt 23 \\[3ex]
+                $
+                Because the minimum value, 32.9 is greater than the lower fence (left limit), 23, the value is not
+                considered a potential outlier.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP33')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP34')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.) The dotplot shows the distribution of passing rates for the bar exam at 185 law schools in the
+                United States in a certain year.
+                <br><br>
+                <img src="images/MeasuresPosition/Questions/Number35.png" alt="Number 35">
+                <br><br>
+                The five number summary is 26​, 78​, 87, ​91, 100. <br>
+                (a.) Draw a boxplot of the data. <br>
+                (b.) Explain how you determined where the whiskers go.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP35')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP35">
+                    <br>
+                    (a.) The sketch of the boxplot is:
+                    <br><br>
+                    <img src="images/MeasuresPosition/Answers/Number35.png" alt="Number 35">
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    Q_1 = 78 \\[3ex]
+                    Q_3 = 91 \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 91 - 78 \\[3ex]
+                    IQR = 13 \\[3ex]
+                    LF = Q_1 - 1.5IQR \\[3ex]
+                    LF = 78 - 1.5(13) \\[3ex]
+                    LF = 78 - 19.5 \\[3ex]
+                    LF = 58.5 \\[5ex]
+                    UF = Q_3 + 1.5IQR \\[3ex]
+                    UF = 91 + 19.5 \\[3ex]
+                    UF = 110.5 \\[3ex]
+                    $
+                    The whiskers extend to the most extreme values that are not potential outliers. <br>
+                    The left whisker extends to the smallest observation that is greater than or equal to 58.5​, and the
+                    right whisker extends to the largest observation that is less than or equal to 110.5
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP36')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP37')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP38')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP39')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP40')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresPosition.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP41')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMP42')">Show/Hide Answer</button>
+                <div class="result" id="solutionMP42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018 Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages4.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

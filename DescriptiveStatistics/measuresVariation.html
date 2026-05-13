@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Measures of Variation</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in the measures of variability.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
+              mathematics, statistics, descriptive statistics, mean, median, mode, midrange, range, variance, 
+              standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
+              standard error, measures of center, summation, sample size, population size, measures of central tendency, 
+              measures of dispersion, measures of spread, measures of variation, measures of variability, 
+              measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
+              measures of relative standing, boxplots">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 bisque">
+        <h1>Solved Examples: Measures of Variability</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <div class="w3-container">
+
+        <!-- Image in top left corner --
+            <a href="https://statistical-reasoning.appspot.com/" title="Samuel Dominic Chukwuemeka">
+                <img src="images/chukwuemeka4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br><br>
+        <mark>For SAT Students</mark> <br>
+        Any question labeled SAT-C is a question that allows a calculator. <br>
+        Any question labeled SAT-NC is a question that does not allow a calculator. <br><br>
+        <mark>For JAMB Students</mark> <br>
+        Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+
+        <br><br>
+
+        Solve all questions. <br>
+        Show all work.
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Answer these questions, giving reasons.
+                <br><br>
+                (a.) In the most recent summer​ Olympics, do you think the standard deviation of the running times for
+                all men who ran the​ 100-meter race would be larger or smaller than the standard deviation of the
+                running times for the​ men's marathon?
+                <br><br>
+                (b.) Suppose you have a data set with the weights of all members of a high school soccer team and all
+                members of a high school academic decathlon team​ (a team of students selected because they often answer
+                quiz questions​ correctly). <br>
+                Which team do you think would have a larger standard deviation of​ weights?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV1')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV1">
+                    <br>
+                    (a.) The standard deviation for the​ 100-meter event would be less. <br>
+                    All the runners come to the finish line within a few seconds of each other. <br>
+                    In the​ marathon, the runners can be quite widely spread after running that long distance.
+                    <br><br>
+                    (b.) The academic decathlon team would have a larger standard deviation of weights. <br>
+                    Academics​ don't require a specific weight to​ succeed, so the distribution of weights should mirror
+                    that of the general population.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>JAMB</b> Find the variance of $2, 6, 8, 6, 2$ and $6$ <br><br>
+                $
+                A.\;\; \sqrt{5} \\[3ex]
+                B.\;\; \sqrt{6} \\[3ex]
+                C.\;\; 5 \\[3ex]
+                D.\;\; 6 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV2')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV2">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="w3-padding">$x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$2$</td>
+                            <td>$4$</td>
+                            <td>$-3$</td>
+                            <td>$9$</td>
+                            <td>$18$</td>
+                        </tr>
+                        <tr>
+                            <td>$6$</td>
+                            <td>$3$</td>
+                            <td>$18$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$3$</td>
+                        </tr>
+                        <tr>
+                            <td>$8$</td>
+                            <td>$1$</td>
+                            <td>$8$</td>
+                            <td>$3$</td>
+                            <td>$9$</td>
+                            <td>$9$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 6$</td>
+                            <td>$\Sigma fx = 30$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 30$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{30}{6} \\[5ex]
+                    = 5 \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{30}{6 - 1} \\[5ex]
+                    = \dfrac{30}{5} \\[5ex]
+                    = 6
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV3')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV3">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>JAMB</b> Find the range of $\dfrac{1}{6}, \dfrac{1}{3}, \dfrac{3}{2}, \dfrac{2}{3},
+                \dfrac{8}{9}$ and $\dfrac{4}{3}$ <br><br>
+                $
+                A.\;\; \dfrac{4}{3} \\[5ex]
+                B.\;\; \dfrac{7}{6} \\[5ex]
+                C.\;\; \dfrac{5}{6} \\[5ex]
+                D.\;\; \dfrac{3}{4} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV4')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV4">
+                    <br>
+                    $
+                    \dfrac{1}{6}, \dfrac{1}{3}, \dfrac{3}{2}, \dfrac{2}{3}, \dfrac{8}{9}, \dfrac{4}{3} \\[5ex]
+                    LCD\;\;of\;\; 6, 3, 2, 9 = 18 \\[3ex]
+                    \implies \\[3ex]
+                    \dfrac{3}{18}, \dfrac{6}{18}, \dfrac{27}{18}, \dfrac{12}{18}, \dfrac{16}{18}, \dfrac{24}{18} \\[5ex]
+                    maximum = \dfrac{27}{18} \\[5ex]
+                    minimum = \dfrac{3}{18} \\[5ex]
+                    Range = maximum - minimum \\[3ex]
+                    = \dfrac{27}{18} - \dfrac{3}{18} \\[5ex]
+                    = \dfrac{27 - 3}{18} \\[5ex]
+                    = \dfrac{24}{18} \\[5ex]
+                    = \dfrac{4}{3}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV5')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV5">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>JAMB</b> The range of the data $k + 2, k - 3, k + 4, k - 2, k, k - 5, k + 3, k - 1$ and $k + 6$
+                is <br><br>
+                $
+                A.\;\; 6 \\[3ex]
+                B.\;\; 8 \\[3ex]
+                C.\;\; 10 \\[3ex]
+                D.\;\; 11 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV6')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV6">
+                    <br>
+                    $
+                    k + 2, k - 3, k + 4, k - 2, k, k - 5, k + 3, k - 1, k + 6 \\[3ex]
+                    Assume\;\; k = 0 \\[3ex]
+                    \implies \\[3ex]
+                    0 + 2, 0 - 3, 0 + 4, 0 - 2, 0, 0 - 5, 0 + 3, 0 - 1, 0 + 6 \\[3ex]
+                    2, -3, 4, -2, 0, -5, 3, -1, 6 \\[3ex]
+                    minimum = -5 \\[3ex]
+                    maximum = 6 \\[3ex]
+                    Range = maximum - minimum \\[3ex]
+                    = 6 - (-5) \\[3ex]
+                    = 6 + 5 \\[3ex]
+                    = 11
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV7')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV7">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>JAMB</b> The range of $4, 3, 11, 9, 6, 15, 19, 23, 27, 24, 21$ and $16$ is <br><br>
+                $
+                A.\;\; 23 \\[3ex]
+                B.\;\; 24 \\[3ex]
+                C.\;\; 21 \\[3ex]
+                D.\;\; 16 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV8')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV8">
+                    <br>
+                    $
+                    4, 3, 11, 9, 6, 15, 19, 23, 27, 24, 21, 16 \\[3ex]
+                    minimum = 3 \\[3ex]
+                    maximum = 27 \\[3ex]
+                    Range = maximum - minimum \\[3ex]
+                    = 27 - 3 \\[3ex]
+                    = 24
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV9')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV9">
+                    <br>
+                    <br>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>JAMB</b> The variance of the scores 1, 2, 3, 4, 5 is <br><br>
+                $
+                A.\;\; 1.2 \\[3ex]
+                B.\;\; 1.4 \\[3ex]
+                C.\;\; 2.0 \\[3ex]
+                D.\;\; 3.0 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV10')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV10">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="w3-padding">$x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$-2$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$-1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$1$</td>
+                            <td>$3$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$1$</td>
+                            <td>$4$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$1$</td>
+                            <td>$5$</td>
+                            <td>$2$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td>$\Sigma fx = 15$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 10$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{15}{5} \\[5ex]
+                    = 3 \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{10}{5 - 1} \\[5ex]
+                    = \dfrac{10}{4} \\[5ex]
+                    = 2.5 \\[3ex]
+                    $
+                    Because the answer is not in the option, assume that the scores are population scores (rather than
+                    sample scores) <br>
+                    In that case, we shall use the population variance <br><br>
+                    $
+                    population\;\;variance = \sigma^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f} \\[5ex]
+                    = \dfrac{10}{5} \\[5ex]
+                    = 2 \\[3ex]
+                    = 2.0
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) The top seven movies based on DC comic book characters for the U.S. box office as of Fall 2017 are
+                shown in the accompanying​ table, rounded to the nearest million.
+                <br>
+                <table class="noborder">
+                    <tr>
+                        <th style="width: 50%; text-align: left;">Movie</th>
+                        <th style="width: 50%; text-align: left;">Domestic Gross (<span>$</span> millions)</th>
+                    </tr>
+                    <tr>
+                        <td>The Dark Knight (2008)</td>
+                        <td>643</td>
+                    </tr>
+                    <tr>
+                        <td>Batman (1989)</td>
+                        <td>547</td>
+                    </tr>
+                    <tr>
+                        <td>Superman (1978)</td>
+                        <td>543</td>
+                    </tr>
+                    <tr>
+                        <td>The Dark Knight Rises (2012)</td>
+                        <td>487</td>
+                    </tr>
+                    <tr>
+                        <td>Wonder Woman (2017)</td>
+                        <td>407</td>
+                    </tr>
+                    <tr>
+                        <td>Batman Forever (1995)</td>
+                        <td>366</td>
+                    </tr>
+                    <tr>
+                        <td>Superman II (1981)</td>
+                        <td>346</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Sort the domestic gross income from smallest to largest. <br>
+                (b.) Determine the median and interpret it in context. <br>
+                (c.) Using the sorted​ data, determine the first quartile and the third quartile. <br>
+                (d.) Determine the interquartile range and interpret it in context. <br>
+                (e.) Determine the range of the data. <br>
+                (f.) Explain why the interquartile range is preferred over the range as a measure of variability.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV11')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV11">
+                    <br>
+                    $
+                    \underline{Domestic\;\;Gross\;\;Income\;(\$\;millions)} \\[3ex]
+                    (a.)\;\;sorted\;\;in\;\;ascending\;\;order \\[3ex]
+                    346, 366, 407, 487, 543, 547, 643 \\[5ex]
+                    (b.) \\[3ex]
+                    n = 7 \\[3ex]
+                    Median = 487\;million\;\$ \\[3ex]
+                    $
+                    This means that about​ 50% of the top 7 DC movies made more than four hundred and eight seven
+                    million dollars.
+                    <br><br>
+                    $
+                    (c.) \\[3ex]
+                    n = 7 \\[3ex]
+                    0.25 * 7 = 1.75 \approx 2 \\[3ex]
+                    Q_1 = 2nd\;\;value = 366\;million\;\$ \\[3ex]
+                    0.75 * 7 = 5.25 \approx 6 \\[3ex]
+                    Q_3 = 6th\;\;value = 547\;million\;\$ \\[5ex]
+                    (d.) \\[3ex]
+                    IQR = Q_3 - Q_1 \\[3ex]
+                    IQR = 547 - 366 = 181\;million\;\$ \\[3ex]
+                    $
+                    Interpretation of IQR: The middle​ 50% of the top 7 DC movies had domestic grosses that varied by as
+                    much as one hundred and eighty one million dollars.
+                    <br><br>
+                    $
+                    (e.) \\[3ex]
+                    max = 643 \;million\;\$ \\[3ex]
+                    min = 346 \;million\;\$ \\[3ex]
+                    Range = max - min \\[3ex]
+                    Range = 643 - 346 = 297 \;million\;\$ \\[3ex]
+                    $
+                    (f.) The interquartile range is preferred over the range as a measure of variability because it
+                    depends on many observations and is therefore more reliable.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) <b>JAMB</b> If the scores of $3$ students in a test are $5, 6$ and $7$, find the standard
+                deviation of their scores. <br><br>
+                $
+                A.\;\; \dfrac{2}{3} \\[5ex]
+                B.\;\; \dfrac{2}{3} \sqrt{3} \\[5ex]
+                C.\;\; \sqrt{\dfrac{2}{3}} \\[5ex]
+                D.\;\; \sqrt{\dfrac{3}{2}} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV12')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV12">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th>$x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$1$</td>
+                            <td>$5$</td>
+                            <td>$-1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$6$</td>
+                            <td>$1$</td>
+                            <td>$6$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$7$</td>
+                            <td>$1$</td>
+                            <td>$7$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 3$</td>
+                            <td>$\Sigma fx = 18$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 2$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{18}{3} \\[5ex]
+                    = 6 \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{2}{3 - 1} \\[5ex]
+                    = \dfrac{2}{2} \\[5ex]
+                    = 1 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{1} \\[3ex]
+                    = 1 \\[3ex]
+                    $
+                    Because the answer is not in the option, assume that the scores are population scores (rather than
+                    sample scores) <br>
+                    In that case, we shall use the population standard deviation <br><br>
+                    $
+                    population\;\;variance = \sigma^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f} \\[5ex]
+                    = \dfrac{2}{3} \\[5ex]
+                    population\;\;standard\;\;deviation = \sigma = \sqrt{\sigma^2} \\[3ex]
+                    = \sqrt{\dfrac{2}{3}} ...answer\;\;option \\[5ex]
+                    = \dfrac{\sqrt{2}}{\sqrt{3}} \\[5ex]
+                    = \dfrac{\sqrt{2}}{\sqrt{3}} * \dfrac{\sqrt{3}}{\sqrt{3}} \\[5ex]
+                    = \dfrac{\sqrt{6}}{3}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV13')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV13">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>JAMB</b> The weights of $10$ pupils in a class are $15\;kg$, $16\;kg$, $17\;kg$, $18\;kg$,
+                $16\;kg$, $17\;kg$,
+                $17\;kg$, $17\;kg$, $18\;kg$ and $16\;kg$ <br>
+                What is the range of this distribution? <br><br>
+                $
+                A.\;\; 1 \\[3ex]
+                B.\;\; 2 \\[3ex]
+                C.\;\; 3 \\[3ex]
+                D.\;\; 4 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV14')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV14">
+                    <br>
+                    $
+                    15, 16, 17, 18, 16, 17, 17, 17, 18, 16 \\[3ex]
+                    minimum = 15\;kg \\[3ex]
+                    maximum = 18\;kg \\[3ex]
+                    Range = maximum - minimum \\[3ex]
+                    = 18 - 15 \\[3ex]
+                    = 3\;kg
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV15')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV15">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV16')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV17')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV18')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2018&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2018 Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages3.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

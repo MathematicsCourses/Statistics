@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Basics of Hypothesis Tests</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in testing hypothesis and hypothesis tests.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics,
+                        hypothesis testing calculators, critical value, confidence level, confidence interval, 
+                        significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, 
+                        type I error, type II error, null hypothesis, alternative hypothesis, one-tail, two-tail, probability value,
+                        p-value, test statistic, critical region, hypothesis testing, population proportion, population mean, 
+                        one sample proportion, two sample proportion, goodness-of-fit test, chi-square, normal distribution table,
+                        student t distribution table, F statistic, test statistic">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 bisque">
+        <h1>Solved Examples on the Basics of Hypothesis Tests</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+        <!-- Image in top left corner --
+            <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-testing.html" title="Samuel Dominic Chukwuemeka"> 
+                <img src="images/chukwuemekasamueldominic.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+            </a>
+        -->
+        Unless stated otherwise/For all applicable questions: <br>
+        For each claim/question, state the: <br>
+        (A.) Null and alternative hypothesis in words. <br>
+        (B.) Null and alternative hypothesis in symbols. <br>
+        (C.) Parameter that is being tested. <br>
+        (D.) Type of hypothesis test. <br>
+        (E.) Other relevant information as applicable.
+        <br><br>
+        <u>NOTE:</u> <br>
+        If the question deals with proportion and you are not given a population proportion, use 50% or 0.5 as the
+        population proportion as the null hypothesis. <br>
+        Then, calculate the sample proportion, compare it with the population and use that comparison (less than,
+        greater than, or not equal to; as applicable) to determine the alternative hypothesis.
+        <br><br>
+        <i>
+            The names of the towns (in italics) are written to make you smile. <br>
+            Yes, those towns exist. &#128522; <br>
+            I want to make this topic fun as much as I can.
+        </i>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) A recent poll estimated that ​4.5% of American adults are vegetarian. <br>
+                A nutritionist thinks this rate has increased and will take a random sample of American adults and
+                record whether or not they are vegetarian.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH1')">Show/Hide Answer</button>
+                <div class="result" id="solutionH1">
+                    <br>
+                    $
+                    4.5\% = \dfrac{4.5}{100} = 0.045 \\[5ex]
+                    $
+                    (A.) <br>
+                    Hint for the null hypothesis: ​4.5% of American adults are vegetarian <br>
+                    <b>Null Hypothesis:</b> The proportion of American adults who are vegetarian is 4.5% <br><br>
+                    Hint for the alternative hypothesis: A nutritionist thinks this rate has increased. <br>
+                    <b>Alternative Hypothesis:</b> The proportion of American adults who are vegetarian is greater than
+                    4.5%
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.045 \\[3ex]
+                    H_1:\:\: p \gt 0.045 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Three years ago, the mean price of a single-family home in the village of <i>Loving, New Mexico
+                    (would they surpass the State of Virginia for lovers?)</i> was
+                <span>$</span>100,000 <br>
+                A realtor believes that the mean price has increased since then.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH2')">Show/Hide Answer</button>
+                <div class="result" id="solutionH2">
+                    <br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The average price of a single-family home in the village is
+                    <span>$</span>100,000 <br>
+                    <b>Alternative Hypothesis:</b> The average price of a single-family home in the village is greater
+                    than <span>$</span>100,000
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: \mu = 100000 \\[3ex]
+                    H_1:\:\: \mu \gt 100000 \\[3ex]
+                    $
+                    (C.) One-sample mean <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) The standard deviation of pulse rates of adult males in the town of <i>Goat Town, Georgia (do they
+                    have a lot of goats?)</i> is more than 12
+                bpm (beats per minute). <br>
+                For a random sample of 129 adult males, the pulse rates have a standard deviation of 12.3 bpm.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH3')">Show/Hide Answer</button>
+                <div class="result" id="solutionH3">
+                    <br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The standard deviation of the pulse rates of adult males in the town is $12$
+                    bpm <br>
+                    <b>Alternative Hypothesis:</b> The standard deviation of the pulse rates of adult males in the town
+                    is more than $12$ bpm
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: \sigma = 100000 \\[3ex]
+                    H_1:\:\: \sigma \gt 100000 \\[3ex]
+                    $
+                    (C.) One-sample standard deviation <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) The mean pulse of adult males in the town of <i>Coward, South Carolina (oh wow...are they
+                    cowards?)</i> is 69.3 bpm (beats per minute). <br>
+                For a random sample of 162 adult means, the mean pulse rate is 69.5 bpm, and the standard deviation is
+                11.4 bpm
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH4')">Show/Hide Answer</button>
+                <div class="result" id="solutionH4">
+                    <br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The mean pulse rate of adults in the town is $69.3$ bpm <br>
+                    <b>Alternative Hypothesis:</b> The mean pulse rate of adults in the town is not $69.3$
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: \mu = 69.3 \\[3ex]
+                    H_1:\:\: \mu \ne 69.3 \\[3ex]
+                    $
+                    (C.) One-sample mean <br>
+                    (D.) Two-tailed test
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) In the <i>City of Surprise, Arizona (be prepared for surprises. Do you like surprises?)</i>, the
+                birth weights of 32 babies whose mothers do not smoke and the birth weights
+                of 28 babies whose mothers smoke, were compared. <br>
+                Test the hypothesis that the population mean birth weight is larger for mothers who do not smoke. <br>
+                Assume the sample is random, and the distributions are normal. <br>
+                Use a significance level of 0.05.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH5')">Show/Hide Answer</button>
+                <div class="result" id="solutionH5">
+                    <br>
+                    (A.) <br>
+                    Let: <br>
+                    $\mu_1$ be the mean weight of babies of mothers who do not smoke. <br>
+                    $\mu_2$ be the mean weight of babies of mothers who smoke. <br><br>
+                    <b>Null Hypothesis:</b> The mean birth weight of the babies of mothers who do NOT smoke is the same
+                    as the mean birth weight of
+                    the babies of mothers who smoke. <br>
+                    <b>Alternative Hypothesis:</b> The mean birth weight of the babies of mothers who do NOT smoke is
+                    greater than the mean birth weight of
+                    the babies of mothers who smoke.
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: \mu_1 = \mu_2 \:\:OR\:\: \mu_1 - \mu_2 = 0 \\[3ex]
+                    H_1:\:\: \mu_1 \gt \mu_2 \\[3ex]
+                    $
+                    (C.) Two-sample mean <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Investigators performed a randomized experiment in which 418 juvenile delinquents in the town of
+                <i>Rough and Ready, California (must you get rough before you get ready?)</i>
+                were randomly assigned to either multisystemic therapy (MST) or just probation (control group). <br>
+                Of the 215 assigned to therapy, 92 had criminal convictions within 12 months. <br>
+                Of the 203 in the control group, 74 had criminal convictions within 12 months. <br>
+                Determine whether the therapy caused significantly fewer arrests using a significance level of 1%
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH6')">Show/Hide Answer</button>
+                <div class="result" id="solutionH6">
+                    <br>
+                    (A.) <br>
+                    Let: <br>
+                    $p_1$ be the proportion of arrests for delinquents assigned to MST. <br>
+                    $p_2$ be the proportion of arrests for delinquents assigned to probation. <br><br>
+                    <b>Null Hypothesis:</b> The proportion of arrests for delinquents who received multisystemic therapy
+                    is the same as the proportion
+                    of arrests for delinquents who received probation. <br>
+                    <b>Alternative Hypothesis:</b> The proportion of arrests for delinquents who received multisystemic
+                    therapy is less than the proportion
+                    of arrests for delinquents who received probation.
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p_1 = p_2 \:\:OR\:\: p_1 - p_2 = 0 \\[3ex]
+                    H_1:\:\: p_1 \lt p_2 \\[3ex]
+                    $
+                    (C.) Two-sample proportion <br>
+                    (D.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Veronica was asked to differentiate distilled water from tap water. <br>
+                Fifty trials (half with distilled water, and half with tap water) was given. <br>
+                She got forty-five trials correctly.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH7')">Show/Hide Answer</button>
+                <div class="result" id="solutionH7">
+                    <br>
+                    Even though this case is a sample proportion, our hypothesis test should focus on the population
+                    proportion.
+                    <br><br>
+                    Use 50% for p because it was not given <br><br>
+                    $
+                    p = 50\% = \dfrac{50}{100} = 0.5 \\[5ex]
+                    0.9 \gt 0.5 \\[3ex]
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population proportion is 0.5 <br>
+                    <b>Alternative Hypothesis:</b> The population proportion is greater than 0.5
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.5 \\[3ex]
+                    H_1:\:\: p \gt 0.5 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) Most adults in the community of <i>Happyland, Oklahoma (happiest people in the USA?)</i> would not
+                erase all their tweets online permanently if they could. <br>
+                A survey of 430 randomly selected adults by Concise Polls showed that 44% of them would erase all their
+                tweets
+                online permanently if they could.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH8')">Show/Hide Answer</button>
+                <div class="result" id="solutionH8">
+                    <br>
+                    Even though this case is a sample proportion, our hypothesis test should focus on the population
+                    proportion. <br><br>
+                    $
+                    \hat{p} = 44\% = \dfrac{44}{100} = 0.44 \\[5ex]
+                    Use\:\:50\%\:\:for\:\:p\:\:because\:\:it\:\:was\:\:not\:\:given \\[3ex]
+                    p = 50\% = \dfrac{50}{100} = 0.5 \\[5ex]
+                    0.44 \lt 0.5 \\[3ex]
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population proportion is $0.5$ <br>
+                    <b>Alternative Hypothesis:</b> The population proportion is less than $0.5$
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.5 \\[3ex]
+                    H_1:\:\: p \lt 0.5 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) A fair coin is flipped fifty times and lands on heads forty times. <br>
+                Gideon wants to test the hypothesis that the coin does not come up seventy percent heads in the long
+                run.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH9')">Show/Hide Answer</button>
+                <div class="result" id="solutionH9">
+                    <br>
+                    Even though this case is a sample proportion, our hypothesis test should focus on the population
+                    proportion. <br><br>
+                    $
+                    \hat{p} = 70\% = \dfrac{70}{100} = 0.7 \\[5ex]
+                    However,\:\:we\:\:shall\:\:use\:\:it\:\:as\:\:the\:\:population\:\:proportion \\[3ex]
+                    Does\:\:not\:\:come\:\:up\:\:seventy\:\:percent\:\:heads\:\:means \ne 0.7 \\[3ex]
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population proportion is $0.7$ <br>
+                    <b>Alternative Hypothesis:</b> The population proportion is NOT equal to $0.7$
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.7 \\[3ex]
+                    H_1:\:\: p \ne 0.7 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) Two-tailed test
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) A fair die is flipped thirty-five times and lands on a 1, five times. <br>
+                Joshua wants to test the hypothesis that the die does not come up with a 1, one-sixth of the time in the
+                long run.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH10')">Show/Hide Answer</button>
+                <div class="result" id="solutionH10">
+                    <br>
+                    Even though this case is a sample proportion, our hypothesis test should focus on the population
+                    proportion. <br><br>
+                    $
+                    \hat{p} = \dfrac{1}{6} \\[5ex]
+                    $
+                    However, we shall use it as the population proportion <br>
+                    Does not come up with 1 means &ne; $\dfrac{1}{6}$ <br><br>
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population proportion is one-sixth <br>
+                    <b>Alternative Hypothesis:</b> The population proportion is NOT one-sixth
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = \dfrac{1}{6} \\[5ex]
+                    H_1:\:\: p \ne \dfrac{1}{6} \\[5ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) Two-tailed test
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) An experiment was done with criminals released from prison in the town of <i>Neversink, New York
+                    (do not sink, there is still hope to rise)</i>
+                who attend boot camp before being released from prison. <br>
+                The recidivism rate was found to be 24%. <br>
+                This means that 24% of the criminals released from prison return to prison within three years. <br>
+                One hundred random prisoners are made to attend a boot camp for two weeks prior to their release, with
+                the expectation
+                that the boot camp will have a good effect to reduce the recidivism rate.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH11')">Show/Hide Answer</button>
+                <div class="result" id="solutionH11">
+                    <br>
+                    $24\% = \dfrac{24}{100} = 0.24$ <br><br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The proportion of criminals who attend boot campy and return to prison
+                    within three years is $0.24 (24\%)$ <br>
+                    <b>Alternative Hypothesis:</b> The proportion of criminals who attend boot campy and return to
+                    prison within three years is less than $0.24 (24\%)$ <br>
+                    ('less than' because of 'reduce the recidivism rate')
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.24 \\[3ex]
+                    H_1:\:\: p \lt 0.24 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) A college in the <i>City of Los Baños, California (how frequent do they use the bathrooms?)</i>
+                wants to increase
+                its retention rate (the number of new students who begin one year and return the next year) of forty
+                five percent. <br>
+                After implementing several new programs to improve retention over a two-year period, the college
+                randomly sampled
+                three hundred and sixty students who started one year and found that one hundred and ninety four of them
+                returned the
+                next year. <br>
+                The college wants to determine if the initiative is working to increase retention.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH12')">Show/Hide Answer</button>
+                <div class="result" id="solutionH12">
+                    <br>
+                    Remember: we are concerned with the population parameter. <br><br>
+                    $45\% = \dfrac{45}{100} = 0.45$ <br><br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The retention rate is $0.45 (45\%)$ <br>
+                    <b>Alternative Hypothesis:</b> The retention rate is more than $0.45 (45\%)$ <br>
+                    ('more than' because of 'wants to increase its retention rate')
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.45 \\[3ex]
+                    H_1:\:\: p \gt 0.45 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) A​ 95% confidence interval for the ages of <i>six <b>consecutive</b> presidents</i> at their
+                inaugurations is about ​(50.9​, 62.4​). <br>
+                Either interpret the interval or explain why it should not be interpreted.
+                <br><br>
+                <b>A.</b> It should not be interpreted. <br>
+                The data is not Normal and so inference based on a confidence interval is not possible.
+                <br><br>
+                <b>B.</b> We are​ 95% confident that the mean of all​ president's ages is between 50.9 and 62.4.
+                <br><br>
+                <b>C.</b> We are​ 95% confident that the mean of all​ president's ages is not between 50.9 and 62.4.
+                <br><br>
+                <b>D.</b> It should not be interpreted. <br>
+                The data are not a random sample and so inference based on a confidence interval is not possible.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH13')">Show/Hide Answer</button>
+                <div class="result" id="solutionH13">
+                    <br>
+                    <b>D.</b> It should not be interpreted. <br>
+                    The data are not a random sample and so inference based on a confidence interval is not possible.
+                    <br><br>
+                    The data was collected​ systematically, selecting 6 consecutive presidents. <br>
+                    Since it was not collected​ randomly, this is not a valid confidence interval.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) A formal hypothesis test is to be conducted to test the claim that the wait times at the Space
+                Mountain ride in Walt Disney World have a mean equal to 46 minutes.
+                <br><br>
+                (E.) What are the possible conclusions that can be made about the null​ hypothesis? <br>
+                (F.) What are the possible conclusions that can be made about the alternative hypothesis? <br>
+                (G.) Is it possible to conclude that​ <i>there is sufficient evidence to support the claim that the mean
+                    wait time is equal to ​minutes</i>? <br>
+                (i.) Yes <br>
+                (ii.) No. Hypothesis tests can never find sufficient evidence to support a​ claim; they can only find
+                sufficient evidence to warrant rejection of a claim. <br>
+                (iii.) No. Hypothesis tests can only find sufficient evidence to support a claim when the claim does not
+                contain equality. <br>
+                (iv.) No. Hypothesis tests can only find sufficient evidence to support a claim when the claim contains
+                equality.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH14')">Show/Hide Answer</button>
+                <div class="result" id="solutionH14">
+                    <br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population mean is 46 minutes <br>
+                    <b>Alternative Hypothesis:</b> The population mean is not equal to 46 minutes
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: \mu = 46\;minutes \\[3ex]
+                    H_1:\:\: \mu \ne 46\;minutes \\[3ex]
+                    $
+                    (C.) One-sample mean <br>
+                    (D.) Two-tailed test <br>
+                    (E.) The possible conclusions that can be made about the null​ hypothesis are: <br>
+                    (a.) Fail to reject the null hypothesis. <br>
+                    (b.) Reject the null hypothesis.
+                    <br><br>
+                    (E.) The possible conclusions that can be made about the alternative​ hypothesis are: <br>
+                    (a.) Fail to reject the alternative hypothesis. <br>
+                    (b.) Reject the alternative hypothesis.
+                    (G.) No. Hypothesis tests can only find sufficient evidence to support a claim when the claim does
+                    not contain equality.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) A college chemistry instructor thinks the use of embedded tutors​ (tutors who work with students
+                during regular class meeting​ times) will improve the success rate in introductory chemistry courses.
+                <br>
+                The passing rate for introductory chemistry is 64​%. <br>
+                The instructor will use embedded tutors in all sections of introductory chemistry and record the
+                percentage of students passing the course.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH15')">Show/Hide Answer</button>
+                <div class="result" id="solutionH15">
+                    <br>
+                    $
+                    \hat{p} = \dfrac{35}{40} = 0.875 \\[5ex]
+                    0.875 \gt 0.5 \\[3ex]
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The proportion of students who pass introductory chemistry is equal to 64%
+                    for classes with embedded tutors. <br>
+                    <b>Alternative Hypothesis:</b> The proportion of students who pass introductory chemistry is greater
+                    than 64% for classes with embedded tutors.
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.64 \\[3ex]
+                    H_1:\:\: p \gt 0.64 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) Claim: The standard deviation of pulse rates of adult males is less than 12bpm. <br>
+                For a random sample of 152 adult​ males, the pulse rates have a standard deviation of 11.7bpm.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH16')">Show/Hide Answer</button>
+                <div class="result" id="solutionH16">
+                    <br>
+                    (a.) Parameter: Population Standard Deviation <br>
+                    Original Claim: $\sigma \lt 12$bpm
+                    <br><br>
+                    (b.) <br>
+                    $
+                    H_0:\:\: \sigma = 12bpm \\[3ex]
+                    H_1:\:\: \sigma \lt 12bpm \\[3ex]
+                    $
+                    (c.) One-sample standard deviation <br>
+                    (d.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) The Ericsson method is one of several methods claimed to increase the likelihood of a baby girl.
+                <br>
+                In a clinical​ trial, results could be analyzed with a formal hypothesis test with the alternative
+                hypothesis of p &gt; ​0.5, which corresponds to the claim that the method increases the likelihood of
+                having a​ girl, so that the proportion of girls is greater than 0.5. <br>
+                If you have an interest in establishing the success of the​ method, which of the following​ P-values
+                would you​ prefer: 0.999,​ 0.5, 0.95,​ 0.05, 0.01,​ 0.001? Why?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH17')">Show/Hide Answer</button>
+                <div class="result" id="solutionH17">
+                    <br>
+                    One-sample proportion <br><br>
+                    $
+                    H_0:\;\; p = 0.5 \\[3ex]
+                    H_1:\;\; p \gt 0.5 \\[3ex]
+                    $
+                    A smaller p-value indicates a stronger evidence in favor of the alternative hypothesis. <br>
+                    This implies that the P-value of 0.001 is most preferred. <br>
+                    The​ P-value of 0.001 is preferred because it corresponds to the sample evidence that most strongly
+                    supports the hypothesis that the method is effective.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) Recently, a health organization estimated that the flu vaccine was 69​% effective against the
+                influenza B virus. <br>
+                An immunologist suspects that the current flu vaccine is less effective against this virus.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH18')">Show/Hide Answer</button>
+                <div class="result" id="solutionH18">
+                    <br>
+                    $
+                    69\% = \dfrac{69}{100} = 0.69 \\[5ex]
+                    $
+                    (A.) <br>
+                    A health organization estimated that the flu vaccine was 69​% effective against the influenza B
+                    virus <br>
+                    <b>Null Hypothesis:</b> The proportion is 0.69
+                    <br><br>
+                    An immunologist suspects that the current flu vaccine is <u>less effective</u> against this virus.
+                    <br>
+                    <b>Alternative Hypothesis:</b> The proportion is less than 0.69
+                    <br><br>
+                    (B.) <br><br>
+                    $
+                    H_0:\:\: p = 0.69 \\[3ex]
+                    H_1:\:\: p \lt 0.69 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) A local news agency in <i>Pee Pee Township, Ohio (do they have to pee all the time!?)</i> reports
+                that
+                forty seven percent of the adult population regularly uses supplemental vitamins. <br>
+                A manager at a local grocery store believes that number is significantly different and collects data
+                from one hundred and
+                seventy randomly selected adults from the city to test the claim. <br>
+                The table summarizes the data. <br><br>
+                <table class="w3-padding w3-center">
+                    <tr>
+                        <td></td>
+                        <td>Adults Surveyed</td>
+                    </tr>
+                    <tr>
+                        <td>Regularly takes supplemental vitamins</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>Does not regularly takes supplemental vitamins</td>
+                        <td>79</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>170</td>
+                    </tr>
+                </table>
+                <br>
+                <button class="solutions" onclick="solutions('solutionH19')">Show/Hide Answer</button>
+                <div class="result" id="solutionH19">
+                    <br>
+                    $47\% = \dfrac{47}{100} = 0.47$ <br><br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The proportion of the population that regularly uses supplemental vitamins
+                    is $0.47 (47\%)$ <br>
+                    <b>Alternative Hypothesis:</b> The proportion of the population that regularly uses supplemental
+                    vitamins is NOT equal to $0.47 (47\%)$ <br>
+                    ('NOT equal to' because of 'significantly different') <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.47 \\[3ex]
+                    H_1:\:\: p \ne 0.47 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (even though the table makes it seems as if it is two samples: the sample that regularly uses
+                    supplemental vitamins and the sample that does not regularly use supplemental vitamins. Review the
+                    <i>wording of the question.</i>) <br><br>
+                    (D.) Two-tailed test <br>
+                    (this is because of 'believes that number is significantly different')
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) A researcher made a claim that the proportion of urban families who regularly eat lunch together
+                is statistically
+                lower than the proportion of rural families. <br>
+                The table displays the summary of her data collection survey. <br>
+                $x_1$ is the number of urban families who regularly eat lunch. <br>
+                $n_1$ is the total number of urban families. <br>
+                $x_2$ is the number of rural families who regularly eat lunch. <br>
+                $n_2$ is the total number of rural families. <br><br>
+                <table class="w3-padding w3-center">
+                    <tr>
+                        <td>Urban Families Surveyed</td>
+                        <td>Rural Families Surveyed</td>
+                    </tr>
+                    <tr>
+                        <td>$x_1$ = 12</td>
+                        <td>$x_2$ = 40</td>
+                    </tr>
+                    <tr>
+                        <td>$n_1$ = 75</td>
+                        <td>$n_2$ = 140</td>
+                    </tr>
+                </table>
+                <br>
+                <button class="solutions" onclick="solutions('solutionH20')">Show/Hide Answer</button>
+                <div class="result" id="solutionH20">
+                    <br>
+                    Keep in mind that the null hypothesis and alternative hypothesis deals with population parameters.
+                    <br>
+                    $p_1$ is the first population proportion (population of urban families who regularly eat lunch
+                    together) <br>
+                    $p_2$ is the second population proportion (population of rural families who regularly eat lunch
+                    together) <br>
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The proportion of urban families who regularly eat lunch together is
+                    <b>equal to</b> the proportion of rural families who regularly eat lunch together <br>
+                    <b>Alternative Hypothesis:</b> The proportion of urban families who regularly eat lunch together is
+                    <b>lower than</b> the proportion of rural families who regularly eat lunch together <br><br>
+                    (B.) <br><br>
+                    $
+                    H_0:\:\: p_1 = p_2 \\[3ex]
+                    H_1:\:\: p_1 \lt p_2 \\[3ex]
+                    $
+                    (C.) Two-sample proportion <br>
+                    The two samples are: the sample of urban families who regularly eat lunch together and the sample of
+                    rural who regularly eat lunch together <br><br>
+                    (D.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) Claim: More than 3.3​% of homes have only a landline telephone and no wireless phone. <br>
+                Sample​ data: A survey by the National Center for Health Statistics showed that among 14961 homes, 5.76%
+                had landline phones without wireless phones.
+                <br><br>
+                (a.) Express the original claim in symbolic form. <br>
+                Let the parameter represent a value with respect to homes that have only a landline telephone and no
+                wireless phone.
+                <br><br>
+                (b.) Identify the null and alternative hypotheses
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH21')">Show/Hide Answer</button>
+                <div class="result" id="solutionH21">
+                    <br>
+                    $
+                    3.3\% = \dfrac{3.3}{100} = 0.033 \\[5ex]
+                    5.76\% = \dfrac{5.76}{100} = 0.0576 \\[5ex]
+                    $
+                    (a.) Parameter: Population Proportion <br>
+                    Original Claim: $p \gt 0.033$
+                    <br><br>
+                    (b.) <br>
+                    $
+                    H_0:\:\: p = 0.033 \\[3ex]
+                    H_1:\:\: p \gt 0.033 \\[3ex]
+                    $
+                    (c.) One-sample proportion <br>
+                    (d.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) According to a recent poll at a​ university, 71.2​% of high school seniors in a certain region had
+                a​ driver's license. <br>
+                A sociologist thinks this rate has declined. <br>
+                The sociologist surveys 500 randomly selected high school seniors and finds that 350 have a​ driver's
+                license.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH22')">Show/Hide Answer</button>
+                <div class="result" id="solutionH22">
+                    <br>
+                    $
+                    71.2\% = \dfrac{71.2}{100} = 0.712 \\[5ex]
+                    $
+                    (A.) <br>
+                    71.2​% of high school seniors in a certain region had a​ driver's license. <br>
+                    <b>Null Hypothesis:</b> The proportion of high school seniors in the entire region who has a
+                    driver's license is 0.712
+                    <br><br>
+                    A sociologist thinks this rate has <u>declined.</u> <br>
+                    <b>Alternative Hypothesis:</b> The proportion of high school seniors in the entire region who has a
+                    driver's license is less than 0.712
+                    <br><br>
+                    (B.) <br><br>
+                    $
+                    H_0:\:\: p = 0.712 \\[3ex]
+                    H_1:\:\: p \lt 0.712 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) A law association estimated that 85.8​% of law school graduates last year found employment. <br>
+                An economist thinks the current employment rate for law school graduates is different from the rate last
+                year.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH23')">Show/Hide Answer</button>
+                <div class="result" id="solutionH23">
+                    <br>
+                    $
+                    85.8\% = \dfrac{85.8}{100} = 0.858 \\[5ex]
+                    $
+                    (A.) <br>
+                    A law association estimated that 85.8​% of law school graduates last year found employment. <br>
+                    <b>Null Hypothesis:</b> The proportion of law school graduates last year that found employment is
+                    0.858
+                    <br><br>
+                    An economist thinks the current employment rate for law school graduates is <u>different</u> from
+                    the rate last year. <br>
+                    <b>Alternative Hypothesis:</b> The proportion of law school graduates last year that found
+                    employment is not 0.858
+                    <br><br>
+                    (B.) <br><br>
+                    $
+                    H_0:\:\: p = 0.858 \\[3ex]
+                    H_1:\:\: p \ne 0.858 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) Two-tailed test
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) Claim: The mean systolic blood pressure of all healthy adults is less than 121mmHg. <br>
+                Sample​ data: For 292 healthy​ adults, the mean systolic blood pressure level is 119.27mmHg and the
+                standard deviation is 16.18mmHg.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH24')">Show/Hide Answer</button>
+                <div class="result" id="solutionH24">
+                    <br>
+                    (a.) Parameter: Population Mean <br>
+                    Original Claim: $\mu \lt 121$mmHg
+                    <br><br>
+                    (b.) <br>
+                    $
+                    H_0:\:\: \mu = 121 \\[3ex]
+                    H_1:\:\: \mu \lt 121 \\[3ex]
+                    $
+                    (c.) One-sample mean <br>
+                    (d.) One-tailed test (Left-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.) The manufacturer of a certain engine treatment in the <i>City of Truth or Consequences, New
+                    Mexico</i> claims that if you add their product to your engine, it will be protected from excessive
+                wear. <br>
+                An infomercial claims that a woman drove 6 hours without oil, thanks to the engine treatment. <br>
+                A magazine tested engines in which they added the treatment to the motor oil, ran the engines, drained
+                the oil, and then determined the time until the engines seized. <br>
+                Write the null and alternative hypothesis. <br>
+                Both engines took exactly 17 minutes to seize. <br>
+                What conclusion might the magazine make based on this evidence?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH25')">Show/Hide Answer</button>
+                <div class="result" id="solutionH25">
+                    <br>
+                    $
+                    H_0:\;\; \mu = 6 \\[3ex]
+                    H_1:\;\; \mu \lt 6 \\[3ex]
+                    $
+                    The infomercial’s claim is not true.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) A friend is tested to see whether he can tell bottled water from tap water. <br>
+                There are 40 trials​ (half with bottled water and half with tap​ water), and he gets 25 right.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH26')">Show/Hide Answer</button>
+                <div class="result" id="solutionH26">
+                    <br>
+                    Even though this case is a sample proportion, our hypothesis test should focus on the population
+                    proportion.
+                    <br><br>
+                    $
+                    \hat{p} = \dfrac{25}{40} = 0.625 \\[5ex]
+                    $
+                    Use 50% for p because it was not given <br><br>
+                    $
+                    p = 50\% = \dfrac{50}{100} = 0.5 \\[5ex]
+                    0.625 \gt 0.5 \\[3ex]
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population proportion is 0.5 <br>
+                    <b>Alternative Hypothesis:</b> The population proportion is greater than 0.5
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.5 \\[3ex]
+                    H_1:\:\: p \gt 0.5 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH27')">Show/Hide Answer</button>
+                <div class="result" id="solutionH27">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.) The label on a can of mixed nuts says that the mixture contains 50​% peanuts. <br>
+                After opening a can of nuts and finding 27 peanuts in a can of 50 ​nuts, a consumer thinks the
+                proportion of peanuts in the mixture differs from 50​%. <br>
+                The consumer writes these​ hypotheses
+                <br><br>
+                $
+                H_0:\;\; p = 0.50 \\[3ex]
+                H_1:\;\; p = 0.54 \\[3ex]
+                $
+                where <i>p</i> represents the proportion of peanuts in all cans of mixed nuts from this company. <br>
+                Are these hypotheses written​ correctly? <br>
+                Correct any mistakes as needed.
+                <br><br>
+                <b>A.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.50 and H<sub>1:</sub> p &gt; 0.50
+                <br><br>
+                <b>B.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.50 and H<sub>1:</sub> p &ne; 0.50
+                <br><br>
+                <b>C.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.54 and H<sub>1:</sub> p &ne; 0.54
+                <br><br>
+                <b>D.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.54 and H<sub>1:</sub> p &gt; 0.54
+                <br><br>
+                <b>E.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.54 and H<sub>1:</sub> p &lt; 0.54
+                <br><br>
+                <b>F.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.50 and H<sub>1:</sub> p &lt; 0.50
+                <br><br>
+                <b>G.</b> The hypotheses are correct.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH28')">Show/Hide Answer</button>
+                <div class="result" id="solutionH28">
+                    <br>
+                    $
+                    50\% = \dfrac{50}{100} = 0.50 \\[5ex]
+                    \dfrac{27}{50} = 0.54 \\[5ex]
+                    $
+                    The label on a can of mixed nuts says that the mixture contains 50​% peanuts. <br>
+                    <b>Null Hypothesis:</b> The proportion of peanuts in a can of mixed nuts is 0.50 <br>
+                    H<sub>0:</sub> p = 0.50
+                    <br><br>
+                    After opening a can of nuts and finding 27 peanuts in a can of 50 ​nuts, a consumer thinks the
+                    proportion of peanuts in the mixture <u>differs from</u> 50​%. <br>
+                    <b>BUT:</b> from the question:
+                    <b>Alternative Hypothesis:</b> The proportion of peanuts in a can of mixed nuts is greater than 0.50
+                    <br>
+                    H<sub>1:</sub> p &ne; 0.50
+                    <br><br>
+                    The answer is Option <b>B.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.) A manager at a casual dining restaurant noted that 14​% of customers ordered soda with their meal.
+                <br>
+                In an effort to increase soda​ sales, the restaurant begins offering free refills with every soda order
+                for a​ two-week trial period. <br>
+                During this trial​ period, 18​% of customers ordered soda with their meal. <br>
+                To test if the promotion was successful in increasing soda​ orders, the manager wrote the following​
+                hypotheses
+                <br><br>
+                $
+                H_0:\;\; p = 0.14 \\[3ex]
+                H_1:\;\; \hat{p} = 0.18 \\[3ex]
+                $
+                where $\hat{p}$ represents the proportion of customers who ordered soda with their meal during
+                promotion. <br>
+                Are these hypotheses written​ correctly? <br>
+                Correct any mistakes as needed.
+                <br><br>
+                <b>A.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.14 and H<sub>1:</sub> p &lt; 0.14
+                <br><br>
+                <b>B.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.18 and H<sub>1:</sub> p &lt; 0.18
+                <br><br>
+                <b>C.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.14 and H<sub>1:</sub> p &ne; 0.14
+                <br><br>
+                <b>D.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.18 and H<sub>1:</sub> p &gt; 0.18
+                <br><br>
+                <b>E.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.14 and H<sub>1:</sub> p &gt; 0.14
+                <br><br>
+                <b>F.</b> The hypotheses are not correct. <br>
+                They should be H<sub>0:</sub> p = 0.18 and H<sub>1:</sub> p &ne; 0.18
+                <br><br>
+                <b>G.</b> The hypotheses are correct.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH29')">Show/Hide Answer</button>
+                <div class="result" id="solutionH29">
+                    <br>
+                    $
+                    14\% = \dfrac{14}{100} = 0.14 \\[5ex]
+                    18\% = \dfrac{18}{100} = 0.18 \\[5ex]
+                    $
+                    ...14​% of customers ordered soda with their meal. <br>
+                    <b>Null Hypothesis:</b> The proportion of customers who ordered soda with their meal is 0.14 <br>
+                    H<sub>0:</sub> p = 0.14
+                    <br><br>
+                    During this trial​ period, 18​% of customers ordered soda with their meal. <br>
+                    0.18 &gt; 0.14 <br>
+                    <b>Alternative Hypothesis:</b> The proportion of customers who ordered soda with their meal is
+                    greater than 0.14 <br>
+                    H<sub>1:</sub> p &gt; 0.14
+                    <br><br>
+                    The answer is Option <b>E.</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.) A 2003 study of dreaming found that out of a random sample of 114 ​people, 82 reported dreaming in
+                color.​ <br>
+                However, the rate of reported dreaming in color that was established in the 1940s was 0.21. <br>
+                Check to see whether the conditions for using a​ one-proportion <i>z</i>-test are met assuming the
+                researcher wanted to test to see if the proportion dreaming in color had changed since the 1940s.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH30')">Show/Hide Answer</button>
+                <div class="result" id="solutionH30">
+                    <br>
+                    Condition 1: Random Sample: ...that out of a <u>random sample</u> of 114 ​people,... <br>
+                    Condition 1 is met. <br>
+                    Condition 2 is also met.
+                    <br><br>
+                    $
+                    \underline{Condition\;3} \\[3ex]
+                    x = 82 \\[3ex]
+                    n = 114 \\[3ex]
+                    p = 0.21 \\[3ex]
+                    q = 1 - 0.21 = 0.79 \\[3ex]
+                    np = 114(0.21) = 23.94 \gt 10 \\[3ex]
+                    nq = 114(0.79) = 90.06 \gt 10 \\[3ex]
+                    Condition\;3\;\;is\;\;met \\[3ex]
+                    $
+                    The conditions for using a​ one-proportion <i>z</i>-test are met.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (31.) The table below lists leading digits of 317​ inter-arrival Internet traffic times for a​ computer,
+            along with the frequencies of leading digits expected with​ Benford's law. <br>
+            When using these data to test for​ goodness-of-fit with the distribution described by​ Benford's law,
+            identify the:
+            (a.) Null hypotheses <br>
+            (b.) Alternative hypotheses.
+            <br><br>
+            <table class="w3-center">
+                <tr>
+                    <td style="width: 28%;"><b>Leading Digit</b></td>
+                    <td style="width: 8%;">1</td>
+                    <td style="width: 8%;">2</td>
+                    <td style="width: 8%;">3</td>
+                    <td style="width: 8%;">4</td>
+                    <td style="width: 8%;">5</td>
+                    <td style="width: 8%;">6</td>
+                    <td style="width: 8%;">7</td>
+                    <td style="width: 8%;">8</td>
+                    <td style="width: 8%;">9</td>
+                </tr>
+                <tr>
+                    <td><b>Benford's Law</b></td>
+                    <td>30.1%</td>
+                    <td>17.6%</td>
+                    <td>12.5%</td>
+                    <td>9.7%</td>
+                    <td>7.9%</td>
+                    <td>6.7%</td>
+                    <td>5.8%</td>
+                    <td>5.1%</td>
+                    <td>4.6%</td>
+                </tr>
+                <tr>
+                    <td><b>Leading Digits of​ Inter-Arrival Traffic Times</b></td>
+                    <td>76</td>
+                    <td>62</td>
+                    <td>29</td>
+                    <td>33</td>
+                    <td>19</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+            </table>
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionH31')">Show/Hide Answer</button>
+            <div class="result" id="solutionH31">
+                <br>
+                H<sub>0:</sub> p<sub>1</sub> = 0.301 and p<sub>2</sub> = 0.176 and p<sub>3</sub> = 0.125 ...and...
+                p<sub>9</sub> = 0.046
+                <br>
+                H<sub>1:</sub> At least one of the proportions is not equal to the given claimed value.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (32.)
+
+
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionH32')">Show/Hide Answer</button>
+            <div class="result" id="solutionH32">
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH33')">Show/Hide Answer</button>
+                <div class="result" id="solutionH33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.) A coin is flipped 40 times and 35 heads come up. <br>
+                The claim is for the coin to come up heads more than 50 of the time.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH34')">Show/Hide Answer</button>
+                <div class="result" id="solutionH34">
+                    <br>
+                    Even though this case is a sample proportion, our hypothesis test should focus on the population
+                    proportion. <br>
+                    We were not given the population proportion, so we shall use 0.5 as the population proportion.
+                    <br><br>
+                    $
+                    \hat{p} = \dfrac{35}{40} = 0.875 \\[5ex]
+                    0.875 \gt 0.5 \\[3ex]
+                    $
+                    (A.) <br>
+                    <b>Null Hypothesis:</b> The population proportion is 0.5 <br>
+                    <b>Alternative Hypothesis:</b> The population proportion is greater than 0.5
+                    <br><br>
+                    (B.) <br>
+                    $
+                    H_0:\:\: p = 0.5 \\[3ex]
+                    H_1:\:\: p \gt 0.5 \\[3ex]
+                    $
+                    (C.) One-sample proportion <br>
+                    (D.) One-tailed test (Right-tailed test)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH35')">Show/Hide Answer</button>
+                <div class="result" id="solutionH35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH36')">Show/Hide Answer</button>
+                <div class="result" id="solutionH36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH37')">Show/Hide Answer</button>
+                <div class="result" id="solutionH37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH38')">Show/Hide Answer</button>
+                <div class="result" id="solutionH38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH39')">Show/Hide Answer</button>
+                <div class="result" id="solutionH39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH40')">Show/Hide Answer</button>
+                <div class="result" id="solutionH40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH41')">Show/Hide Answer</button>
+                <div class="result" id="solutionH41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionH42')">Show/Hide Answer</button>
+                <div class="result" id="solutionH42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2017&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

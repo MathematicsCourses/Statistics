@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Scatter Diagrams</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in scatter diagrams.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics, correlation, 
+        association, causation, causal relationship, predictor variable, explanatory variable, response variable, linear correlation, scatter diagrams, 
+        scatter plots, Pearson correlation coefficient, product moment correlation coefficient, Spearman's rank correlation coefficient, 
+        coefficient of determination, critical values of the correlation coefficient, non-linear relationship, positive linear relationship, 
+        negative linear relationship, regression, linear regression, multiple linear regression, predicted value, residual,
+        least-squares regression line, line of best fit, linear regression equation">
+
+    <link href="styles/correlationRegression.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 cyan" id="quotes">
+
+        <!--
+            <div class="w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages6"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        
+
+            <div class="w3-center">
+                <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            
+            <div class="bibleQuotes w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages6"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples and Applications of Scatter Diagrams</h1>
+
+    <div class="w3-container">
+        <p>
+            <!-- Image in top left corner --
+                <img src="images/samuel-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                
+                <a href="https://correlationandregression.appspot.com" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/samuel-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+                </a>
+            -->
+
+            <mark>Technology:</mark> Pearson Statcrunch software <br><br>
+
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+            So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+            Please ensure you attempt <u>all ACT questions</u>. <br>
+            There is no <i>negative</i> penalty for any wrong answer. <br><br>
+
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+
+            <br><br>
+
+            Solve all questions. <br>
+            Show all work. <br><br>
+
+            <b><u>Please Note:</u></b> <br>
+            (1.) For applicable questions, if the level of significance is not given, use 5% <br><br>
+            (2.) Unless otherwise specified, do not round intermediate calculations. <br>
+            However, if you must round intermediate calculations because of long decimal digits; then round those
+            intermediate calculations to
+            at least three (three or more) decimal places more than the number of decimal places to round the final
+            answer. <br>
+            For example: if the question asks you to round the final answer to three decimal places but did not specify
+            how you should round
+            intermediate calculations; then round the intermediate calculations to at least six decimal places. <br><br>
+            (3.) There are at least two formulas for calculating the Pearson's correlation coefficient. <br>
+            For some questions, I shall use the First Formula. <br>
+            For other questions, I shall use the Second Formula. <br>
+            If you wish to see examples of how both formulas are used, please review all questions that asked for the
+            determination of the
+            correlation coefficient (or Pearson's correlation coefficient).
+        </p>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) For each scatterplot defined below: <br>
+                (a.) Would it make sense to find the correlation using the data set? <br>
+                (b.) Give reason(s). <br><br>
+                (A.) <img src="images/ScatterDiagrams/Questions/Number1A.png" alt="Number 1A"> <br><br>
+                (B.) <img src="images/ScatterDiagrams/Questions/Number1B.png" alt="Number 1B"> <br><br>
+                (C.) <img src="images/ScatterDiagrams/Questions/Number1C.png" alt="Number 1C">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD1')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD1">
+                    <br>
+                    (1A). Determing the linear correlation using that data would not make
+                    sense because the trend is not linear. <br>
+                    It is quadratic. <br><br>
+                    (1B.) Determing the linear correlation using that data would make
+                    sense because the trend is linear. <br><br>
+                    (1C). Determing the linear correlation using that data would not make
+                    sense because the trend is not linear. <br>
+                    It is quadratic. <br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>HSC Mathematics Standard 2</b> For a set of bivariate data, Pearson's correlation coefficient is
+                $-1$ <br>
+                Which graph could best represent this set of bivariate data? <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number2.png" alt="Number 2">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD2')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD2">
+                    <br>
+                    The graph that: <br>
+                    (a.) has a straight-line that joins <u>all</u> the points perfectly <br>
+                    <b>and</b> <br>
+                    (b.) has a negative slope <br>
+                    is <br>
+                    Option D
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Match the linear correlation coefficient to the scatter diagram. <br>
+                The scales on the <i>x</i>-axis and <i>y</i>-axis are the same for each scatter diagram. <br>
+                (a.) <i>r</i> = &minus;0.049 <br>
+                (b.) <i>r</i> = &minus;1 <br>
+                (c.) <i>r</i> = &minus;0.969
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number3.png" alt="Number 3">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD3')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD3">
+                    <br>
+                    The value of the correlation coefficient is between &minus;1 and 1 <br>
+                    A negative correlation implies that the Pearson correlation coefficient is negative (less than 0)
+                    <br><br>
+                    A perfect negative correlation has a negative correlation coefficient value of -1 <br>
+                    A strong negative correlation has a negative correlation coefficient value very close to -1 <br>
+                    A weak negative correlation has a negative correlation coefficient value close to 0 <br><br>
+                    This implies that: <br>
+                    (a.) $r = -0.049 \implies$ Scatter Diagram II <br>
+                    (b.) $r = -1 \implies$ Scatter Diagram III <br>
+                    (c.) $r = -0.969 \implies$ Scatter Diagram I
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>ACT</b> Jayla plotted the data from her science project as a scatterplot in the standard
+                $(x, y)$ coordinate plane. <br>
+                She found the line containing $2$ of the points to be $y = 0.28x + 6$. <br>
+                The scatterplot and the line are shown below.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number4.png" alt="Number 4">
+                <br><br>
+                Jayla decided that this line was not a good fit for her data. <br>
+                To transform her line into the regression line for her data, Jayla <i>must:</i> <br><br>
+                A.&nbsp;&nbsp; increase both the slope and the y-intercept. <br>
+                B.&nbsp;&nbsp; increase the slope and decrease the y-intercept. <br>
+                C.&nbsp;&nbsp; decrease both the slope and the y-intercept. <br>
+                D.&nbsp;&nbsp; decrease the slope and the increase the y-intercept. <br>
+                E.&nbsp;&nbsp; use either a horizontal or vertical line.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD4')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD4">
+                    <br>
+                    <b>Line in Slope-Intercept Form</b> <br>
+                    The slope of the line is $0.28$ <br><br>
+                    The y-intercept of the line is $6$ <br><br>
+                    <b>Regression Line</b> <br>
+                    *The y-intercept of the regression line seems to be $2$.* <br>
+                    In that regard, it is important to note that the y-intercept of the line in slope-intercept form
+                    must be decreased. <br><br>
+                    This eliminates Options $A$ and $D$. <br><br>
+                    Option $E$ is also incorrect because the regression line is not a horizontal line or a vertical
+                    line. <br>
+                    Using a horizontal or vertical line is not a good fit for the regression line. <br><br>
+                    Let us analyze the remaining options: <br><br>
+                    Option $B:$ increase the slope and decrease the y-intercept. <br>
+                    The regression is steeper than the slope-intercept line <br>
+                    This implies that it has a greater slope than the slope-intercept line <br><br>
+                    <i>
+                        <u>Student:</u> How? May you explain? <br>
+                        <u>Teacher:</u> Remember we discussed steepness in Relations and Functions topic in PreCalculus
+                        I <br>
+                        We can also look at an example to prove what I said. <br>
+                        Let us find the slope of the regression line ...not by formula...but by picking any two points
+                        in that
+                        regression line <br>
+                        <u>Student:</u> Point $1$ = $(1, 3)$ and Point $2$ = $(7, 10)$ <br>
+                        <u>Teacher</u> Okay. Find the slope <br>
+                        <u>Student:</u> <br><br>
+                        $
+                        x_1 = 1 \\[3ex]
+                        y_1 = 3 \\[3ex]
+                        x_2 = 7 \\[3ex]
+                        y_2 = 10 \\[3ex]
+                        m = \dfrac{y_2 - y_1}{x_2 - x_1} \\[5ex]
+                        = \dfrac{10 - 3}{7 - 1} \\[5ex]
+                        = \dfrac{7}{6} \\[5ex]
+                        = 1.16666667 \\[3ex]
+                        $
+                        <u>Teacher:</u> $1.16666667 \gt 0.28$
+                    </i> <br><br>
+                    Because the regression line is steeper than the slope-intercept line, it has a higher slope. <br>
+                    Therefore, Jayla needs to increase the slope of her slope-intercept line in order for the line to
+                    fit her regression line. <br>
+                    Option $B$ is correct. <br>
+                    Option $C$ is incorrect because decreasing the slope of the slope-intercept line would cause it to
+                    be less steep. It would not fit the regression line.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) <b>ACT</b> A certain fraternity had its freshmen members keep a log
+                of their hours speD! playing video gimes. <br>
+                When midterm grades were known. the fraternity president
+                plotted the data in the standard (x,y) coordinate plane
+                with average hours per week spent playing video games
+                on the <i>x</i>-axis and the midterm grade point average
+                (GPA) on the <i>y</i>-axis as shown in the figure below. <br>
+                He then performed a linear regression on the data. <br>
+                Which of the following statements is true of the regression equation?
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number5.png" alt="Number 5">
+                <br><br>
+                <b>A.</b> The slope and the <i>y</i>-intercept are both negative. <br>
+                <b>B.</b> The slope and the <i>y</i>-intercept are both positive. <br>
+                <b>C.</b> The slope is negative, and the <i>y</i>-intercept is positive. <br>
+                <b>D.</b> The slope is positive, and the <i>y</i>-intercept is negative. <br>
+                <b>E.</b> The slope is 0, and the <i>y</i>-intercept is positive.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD5')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD5">
+                    <br>
+                    The <i>y</i>-intercept is the point where the graph cuts the <i>y</i>-axis. <br>
+                    Based on the graph: <br>
+                    The slope is negative and the <i>y</i>-intercept is positive.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) For each scatterplot defined below: <br>
+                (a.) Does it appear that the correlation coefficient among these variables is positive, negative, or
+                near zero? <br>
+                (b.) Give reason(s). <br><br>
+                (A.) <img src="images/ScatterDiagrams/Questions/Number6A.png" alt="Number 6A"> <br><br>
+                (B.) <img src="images/ScatterDiagrams/Questions/Number6B.png" alt="Number 6B">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD6')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD6">
+                    <br>
+                    (6A.) The correlation coefficient is positive because the graph shows
+                    an increasing trend.
+                    <br><br>
+                    (6B.) The correlation coefficient is negative because the graph shows
+                    a decreasing trend.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) The scatterplot of the heights and weights of some women taking statistics.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number7.png" alt="Number 7">
+                <br><br>
+                Comment on the trend.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD7')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD7">
+                    <br>
+                    The graph show an increasing trend. <br>
+                    This implies that taller women tend to weigh more.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) The scatterplots show SAT (Scholastic Aptitude Test) scores and GPA
+                (Grade Point Average) in college for a sample of students. <br>
+                The top graph uses the SAT critical reading score to predict GPA in college. <br>
+                The bottom graph shows the SAT math score to predict GPA.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number8.png" alt="Number 8">
+                <br><br>
+                (a.) Which is the better predictor of GPA for these students: Critical Reading SAT or Math SAT? <br>
+                (b.) Explain your answer.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD8')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD8">
+                    <br>
+                    The Critical Reading SAT is a better predictor of GPA because the vertical spread
+                    of GPA for that graph is narrower. <br>
+                    This implies that the Critical Reading SAT scores have the stronger
+                    association with GPA in college.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) Match the linear correlation coefficient to the scatter diagram. <br>
+                (a.) <i>r</i> = &minus;0.980 <br>
+                (b.) <i>r</i> = 0.767 <br>
+                (c.) <i>r</i> = 0.299
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number9.png" alt="Number 9">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD9')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD9">
+                    <br>
+                    (a.) <i>r</i> = &minus;0.980 matches the scatter diagram of the Mean IQ and Mean Age <br><br>
+                    (b.) <i>r</i> = 0.767 matches the scatter diagram of the Total Value (thousands of dollars) and Area
+                    (square feet) <br><br>
+                    (c.) <i>r</i> = 0.299 matches the scatter diagram of the Acreage and Area (square feet)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) The scatterplot shows the data on age, denoted A, of a sample of students and the number of
+                college credits, C, attained. <br>
+                Comment on the strength, direction, and shape of the trend.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number10.png" alt="Number 10">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD10')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD10">
+                    <br>
+                    The trend is linear, positive, and strong until around age 24, when the trend becomes negative and
+                    weak. <br>
+                    For points at or below the age of 24 (many students), the trend closely follows the shape of a line
+                    that increases from left to right; so the trend is linear, positive, and strong. <br>
+                    After age 24 (very few students), the points representing older students do not follow the pattern
+                    of this line, and is generally negative and weak.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) The scatterplot shows the price and area for some houses.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number11.png" alt="Number 11">
+                <br><br>
+                (a.) Comment on the trend. <br>
+                (b.) Identify the potential outliers.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD11')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD11">
+                    <br>
+                    (a.) The trend appears to be positive because the area of the house has a moderate positive curved
+                    association with the price in the sample of houses. <br>
+                    The scatterplot shows that as the area of the house increases, the selling price tends to increase
+                    at an increasing rate. <br>
+                    Hence, the trend is positive but has some curvature. <br><br>
+                    (b.) There are two potential outliers based on the scatterplot: the 2000-square-foot house with a
+                    price of about <span>$</span>2500 thousand and the 5000-square-foot house with
+                    a price of about <span>$</span>2400 thousand.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD12')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD12">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) Match the linear correlation coefficient to the scatter diagram. <br>
+                (a.) <i>r</i> = 0.777 <br>
+                (b.) <i>r</i> = &minus;0.903 <br>
+                (c.) <i>r</i> = 0.374
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number13.png" alt="Number 13">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD13')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD13">
+                    <br>
+                    (a.) <i>r</i> = 0.777 matches the scatter diagram of the Salary (thousands of dollars per year) and
+                    Education (years) <br><br>
+                    (b.) <i>r</i> = &minus;0.903 matches the scatter diagram of the Salary (thousands of dollars per
+                    year) and Start Year <br><br>
+                    (c.) <i>r</i> = 0.374 matches the scatter diagram of the Acreage and Full Bath
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) For the scatterplots: <br>
+                The first graph shows the years a person was employed before working at the company and the salary at
+                the company. <br>
+                The second graph shows the years employed at the company and the salary.
+                <br><br>
+                <div class="w3-center">
+                    <img src="images/ScatterDiagrams/Questions/Number14.png" alt="Number 14">
+                </div>
+                <br>
+                (a.) Which graph shows a stronger relationship and could do a better job predicting salary at the
+                company? <br>
+                (b.) Give reason(s).
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD14')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD14">
+                    <br>
+                    The years employed at the company shows a stronger relationship
+                    because the vertical spread of salary is narrower. <br>
+                    Hence, years employed at the company shows a stronger relationship
+                    and is a better predictor of salary.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) The scatterplot shows the number of hours of work per week and the number of hours of sleep per
+                night for some college students.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number15.png" alt="Number 15">
+                <br><br>
+                Comment on the trend.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD15')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD15">
+                    <br>
+                    The graph does not show any significant trend. It shows very little trend. <br>
+                    The number of hours of work does not seem to be related to the number of hours of sleep for these
+                    students.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD16')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) Match the linear correlation coefficient to the scatter diagram. <br>
+                (a.) <i>r</i> = 0.66 <br>
+                (b.) <i>r</i> = &minus;0.94 <br>
+                (c.) <i>r</i> = 0.03
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number17A.png" alt="Number 17A"> <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number17B.png" alt="Number 17B"> <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number17C.png" alt="Number 17C">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD17')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD17">
+                    <br>
+                    (a.) <i>r</i> = 0.66 matches the scatter diagram of the Wins and Strike Outs <br><br>
+                    (b.) <i>r</i> = &minus;0.94 matches the scatter diagram of the Height and Shoe Size <br><br>
+                    (c.) <i>r</i> = 0.03 matches the scatter diagram of the Strike Outs and ERA
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) The scatterplot shows the numbers of brothers and sisters for a large number of students.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number18.png" alt="Number 18">
+                <br><br>
+                (a.) Comment on the trend. <br>
+                (b.) Does the direction make sense in this context?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD18')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD18">
+                    <br>
+                    (a.) The trend is positive. Students with more sisters tended to have more brothers. <br><br>
+                    (b.) Since it is equally likely for a child to be a boy or a girl (probability of having a boy is
+                    the same as the probability of having a girl), this trend makes sense
+                    because large families are likely to have a large number of sons and a large number of daughters.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD19')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD19">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD20')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD20">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/CorrelationRegression/scatterDiagrams.html"
+            class="w3-button w3-xlarge w3-circle w3-cyan" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD21')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD21">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD22')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.) Match the linear correlation coefficient to the scatter diagram. <br>
+                (a.) <i>r</i> = 0.18 <br>
+                (b.) <i>r</i> = &minus;0.51 <br>
+                (c.) <i>r</i> = 0.98
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number23.png" alt="Number 23">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD23')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD23">
+                    <br>
+                    (a.) <i>r</i> = 0.18 matches the scatter diagram of the Walks and Strikeouts <br><br>
+                    (b.) <i>r</i> = &minus;0.51 matches the scatter diagram of the Batting Average and Strikeouts
+                    <br><br>
+                    (c.) <i>r</i> = 0.98 matches the scatter diagram of the Batting Average and Hits
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) The scatter diagram shows the data on age and GPA for a sample of college students. <br>
+                Comment on the trend of the scatter diagram.
+                <br><br>
+                <div class="w3-center">
+                    <img src="images/ScatterDiagrams/Questions/Number24.png" alt="Number 24">
+                </div>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD24')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD24">
+                    <br>
+                    The graph does not show any discernible trend because the points show no pattern as the age
+                    increases. <br>
+                    The scatterplot does not show a linear or curved pattern for the data. <br>
+                    Hence, there is no discernible trend. <br>
+                    The association between age and GPA is near zero.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD25')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD25">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.) The scatter diagram shows the data on credits and GPA for a sample of college students. <br>
+                Comment on the trend of the scatter diagram.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number26.png" alt="Number 26">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD26')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD26">
+                    <br>
+                    The trend appears to be near zero because the number of credits acquired are not associated with GPA
+                    for the sample of college students. <br>
+                    The scatterplot shows that for any given number of college credits attained, the range in the GPA is
+                    approximately the same for almost any other number of credits attained. <br>
+                    Hence, the trend appears to be near zero, and college credits are not associated with GPA.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD27')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD27">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD28')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD29')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD29">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD30')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD31')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD31">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.) The scatter diagram shows the data on on salary and years of education for a sample of employees.
+                <br>
+                Comment on the trend of the scatter diagram.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number32.png" alt="Number 32">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD32')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD32">
+                    <br>
+                    The trend appears to be positive because the number of years of education has a moderate positive
+                    curved association with the salary for the sample of employees. <br>
+                    The scatterplot shows that as years of education increases, the salary also increases at an
+                    increasing rate and then decreasing rate. <br>
+                    Hence, the trend is positive but shows some curvature.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD33')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD33">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD34')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD35')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD35">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD36')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD37')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD37">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.) The scatterplot shows the number of work hours and the number of TV hours per week for some
+                college students who work.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number38.png" alt="Number 38">
+                <br><br>
+                (a.) Comment on the trend. <br>
+                (b.) Identify any unusual point(s).
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD38')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD38">
+                    <br>
+                    (a.) The trend in this graph is negative because the amount of time a student spends working reduces
+                    the amount of time they have to watch TV. <br>
+                    The more hours of work a student has, the fewer hours of TV the student tends to watch. <br><br>
+                    (b.) The person who works 70 hours appears to be an outlier, because that point is separated from
+                    the other points by a large amount.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD39')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD39">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.) The scatterplot shows the age and number of hours of sleep <i>last night</i> for some students.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number40.png" alt="Number 40">
+                <br><br>
+                Comment on the trend.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD40')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD40">
+                    <br>
+                    The trend is slightly negative. Older adults tend to sleep a bit less than younger adults. <br>
+                    The trend in this graph is slightly negative because as the age increases the number of hours of
+                    sleep tends to decrease. <br>
+                    The result is that older adults tend to sleep a bit less than younger adults.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/CorrelationRegression/scatterDiagrams.html"
+            class="w3-button w3-xlarge w3-circle w3-cyan" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD41')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD41">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD42')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD43')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD43">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD44')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD45')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD45">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD46')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="cyan w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2022&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2022 Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages6.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

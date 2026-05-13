@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Uniform Probability Distribution</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in uniform probability distributions." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, samdom4peace, math, mathematics, 
+    descriptive statistics, probability, combinatorics, random variable, discrete random variable, continuous random variable, 
+    probability distribution, binomial distribution, poisson distribution, normal distribution, Gaussian distribution, empirical rule, 
+    68 - 95 - 99.7 percent rule, Chebyshev's theorem, uniform distribution, sampling distribution, central limit theorem, 
+    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, " />
+
+    <link href="styles/probability-distribution.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki" id="quotes">
+        <!--
+        <div class="w3-center">
+            <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+    
+        <div class="quoteDay w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages6"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+        </div>
+    </header>
+    
+    <header>
+        <div class="w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages6"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka
+            </p>
+        </div>
+    -->
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples: Uniform Distribution</h1>
+
+    <div class="w3-container">
+        <!-- Image in top left corner --
+        <a href="https://descriptive-statistics.appspot.com" title="Samuel Dominic Chukwuemeka">
+            <img src="images/samuel-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+        </a>
+        <a href="https://probability-distribution.appspot.com/#prerequisiteTopics" target="_blank">Prerequisite Topics</a> <br>
+        <a href="https://probability-distribution.appspot.com/probability-distribution-calculators.html#uniformDistribution" target="_blank">Uniform Distribution Calculators</a> <br><br>
+    -->
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+        So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+        Please ensure you attempt <b>all ACT questions</b>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br>
+        <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save time.</b>
+        <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+
+        <br><br>
+
+        Solve all questions. <br>
+        Show all work.
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Chloe wants to go skiing tomorrow, but only if there are 4 inches or more of new snow. <br>
+                According to the weather report, any amount of new snow between 3 inches and 7 inches is equally likely.
+                <br>
+                The probability density curve for tomorrow's new snow depth is shown. <br>
+                Find the probability that the new snow depth will be inches or more tomorrow. <br>
+                Copy the graph, shade the appropriate area, and calculate its numerical value to find the probability.
+                <br>
+                The total area is 1. <br><br>
+                <img src="images/Questions/UniformDistribution/Number1a.jpg" alt="Number 1a">
+                <br><br>
+                (a.) Shade the area of the graph that represents the likelihood of 4 or more inches of new snow.
+                <br><br>
+                <img src="images/Questions/UniformDistribution/Number1b.jpg" alt="Number 1b">
+                <br><br>
+                (b.) What is the probability that there will be 4 or more inches of new snow?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD1')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD1">
+                    <br>
+                    (a.) The shaded area of the graph that represents the likelihood of 4 or more inches of new snow is:
+                    Option <b>C.</b> <br><br>
+                    <img src="images/Answers/UniformDistribution/Number1.jpg" alt="Number 1">
+                    <br><br>
+                    (b.) From 3 to 7 is 4 parts <br>
+                    3 to 4 is one part <br>
+                    4 to 5 is one part <br>
+                    5 to 6 is one part <br>
+                    6 to 7 is one part <br>
+                    The total area is 1 <br>
+                    This implies that each part is $\dfrac{1}{4} = 0.25$ <br><br>
+                    We shaded 3 out of 4 parts <br>
+                    Therefore: <br><br>
+                    $
+                    P(\ge 4\;\;inches\;\;of\;\;snow) \\[3ex]
+                    = 0.25 + 0.25 + 0.25 \\[3ex]
+                    = 0.75
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD2')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD2">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD3')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD3">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD4')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD4">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) Cosmas wants to go skiing tomorrow, but not unless there is between 2 and 5 inches of new snow.
+                <br>
+                According to the weather report, any amount of new snow between 1 inch and 6 inches is equally likely.
+                <br>
+                The probability density curve for tomorrow's new snow depth is shown. <br>
+                Find the probability that the new snow depth will be within Cosmas' ideal range. <br>
+                Copy the graph, shade the appropriate area, and calculate its numerical value to find the probability.
+                <br>
+                The total area is 1. <br><br>
+                <img src="images/Questions/UniformDistribution/Number5a.jpg" alt="Number 5a">
+                <br><br>
+                (a.) Shade the area of the graph that represents the likelihood of between 2 and 5 inches of new snow.
+                <br><br>
+                <img src="images/Questions/UniformDistribution/Number5b.jpg" alt="Number 5b">
+                <br><br>
+                (b.) What is the probability that there will be 4 or more inches of new snow?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD5')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD5">
+                    <br>
+                    (a.) The shaded area of the graph that represents the likelihood of between 2 and 5 inches of new
+                    snow is: Option <b>D.</b> <br><br>
+                    <img src="images/Answers/UniformDistribution/Number5.jpg" alt="Number 5">
+                    <br><br>
+                    (b.) From 1 to 6 is 5 parts <br>
+                    1 to 2 is one part <br>
+                    2 to 3 is one part <br>
+                    3 to 4 is one part <br>
+                    4 to 5 is one part <br>
+                    5 to 6 is one part <br>
+                    The total area is 1 <br>
+                    This implies that each part is $\dfrac{1}{5} = 0.2$ <br><br>
+                    We shaded 3 out of 5 parts <br>
+                    Therefore: <br><br>
+                    $
+                    P(between\;\;2\;\;and\;\;5\;\;inches\;\;of\;\;snow) \\[3ex]
+                    = 0.2(3) \\[3ex]
+                    = 0.6
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD6')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD6">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD7')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD7">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD8')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD8">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD9')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD9">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionUD10')">Show/Hide Answer</button>
+                <div class="result" id="solutionUD10">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <!--
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog" /></a>
+        -->
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2022&nbsp;<a href="https://www.samdomforpeace.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2022 SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages5.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

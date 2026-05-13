@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Hypothesis Tests</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in solving questions in hypothesis tests.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics,
+                        hypothesis testing calculators, critical value, confidence level, confidence interval, 
+                        significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, 
+                        type I error, type II error, null hypothesis, alternative hypothesis, one-tail, two-tail, probability value,
+                        p-value, test statistic, critical region, hypothesis testing, population proportion, population mean, 
+                        one sample proportion, two sample proportion, goodness-of-fit test, chi-square, normal distribution table,
+                        student t distribution table, F statistic, test statistic">
+
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 bisque">
+        <h1>Hypothesis Tests</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+        <!-- Image in top left corner --
+            <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-testing.html" title="Samuel Chukwuemeka">
+                <img src="images/samdomforpeace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        Answer all questions. <br>
+        Show all work. <br>
+        Unless stated otherwise <u>and</u> as applicable: <br>
+        (1.) Assume that all conditions/requirements for conducting the hypothesis test are met. <br>
+        (2.) Use <b>at least two methods</b> to solve each question. <br>
+        (3.) Round the test statistic to two decimal places. <br>
+        (4.) Round the <i>P</i>-value to four decimal places. <br>
+        (5.) Verify your answers with a statistical software (TI-series calculators, Statcrunch, RStudio).
+        <br><br>
+        <i>
+            The names of the towns (in italics) are written to make you smile. <br>
+            Yes, those towns exist. &#128522; <br>
+            I want to make this topic fun in any way I can.
+        </i>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <img src="images/HypothesisTests/Questions/Number1.jpg" class="imageQuestions" alt="Number 1">
+                <br><br>
+                Assume the curve is used for a two-tailed hypothesis test. <br>
+                The <i>p</i>-value is 0.0888
+                <br><br>
+                (a.) If the two-tailed test was conducted at a 5% significance level, would you reject the null
+                hypothesis OR fail to
+                reject the null hypothesis?
+                <br><br>
+                (b.) If the two-tailed test was conducted at a 10% level of significance, would you reject the null
+                hypothesis OR fail to
+                reject the null hypothesis?
+                <br><br>
+                (c.) If we decided to do a right-tailed test instead at a 5% significance level, would you reject the
+                null hypothesis OR fail to
+                reject the null hypothesis?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT1')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT1">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    Two-tailed\:\:Hypothesis\:\:Test \\[3ex]
+                    p-value = 0.0888 \\[3ex]
+                    \alpha = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+                    0.0888 \gt 0.05 \\[3ex]
+                    p-value \gt \alpha \\[3ex]
+                    $
+                    <b>Decision:</b> Fail to reject the null hypothesis <br><br>
+                    $
+                    (b.) \\[3ex]
+                    Two-tailed\:\:Hypothesis\:\:Test \\[3ex]
+                    p-value = 0.0888 \\[3ex]
+                    \alpha = 10\% = \dfrac{10}{100} = 0.1 \\[5ex]
+                    0.0888 \le 0.1 \\[3ex]
+                    p-value \le \alpha \\[3ex]
+                    $
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    $
+                    (c.) \\[3ex]
+                    One-tail\:(Right-tailed)\:\:Hypothesis\:\:Test \\[3ex]
+                    p-value = 0.0888 \\[3ex]
+                    \alpha = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+                    0.0888 \gt 0.05 \\[3ex]
+                    p-value \gt \alpha \\[3ex]
+                    $
+                    <b>Decision:</b> Fail to reject the null hypothesis
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Claim: Fewer than 97​% of adults have a cell phone. <br>
+                In a reputable poll of 1217 ​adults, 89​% said that they have a cell phone. <br>
+                Find the value of the test statistic. <br>
+                (Round to two decimal places as​ needed.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT2')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT2">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    $
+                    H_0:\;\; p = 97\% = 0.97 \\[3ex]
+                    q = 1 - p = 1 - 0.97 = 0.03 \\[5ex]
+                    n = 1217 \\[3ex]
+                    \hat{p} = 89\% = 0.89 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[9ex]
+                    z = \dfrac{0.89 - 0.97}{\sqrt{\dfrac{0.97(0.03)}{1217}}} \\[9ex]
+                    z = -16.36020652 \\[3ex]
+                    z \approx -16.36
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) According to a reputable​ magazine, the dropout rate for all college students with loans is 30​%.
+                <br>
+                Suppose that 64 out of 200 random college students with loans drop out. <br>
+                The graphical technology output for this situation is:
+                <br><br>
+                <img src="images/HypothesisTests/Questions/Number3.png" alt="Number 3">
+                <br><br>
+                (a.) Give the null and alternative hypotheses to test that the dropout rate <b>is not</b> 30​% <br>
+                (b.) What is the test statistic? (Round to four decimal places as needed). <br>
+                (c.) What is the probability value? (Round to four decimal places as needed).
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT3')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT3">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    <i>p</i> = 30% = 0.3 <br>
+                    (a.) The null and alternative hypotheses are: <br><br>
+                    $
+                    H_0:\;\; p = 0.3 \\[3ex]
+                    H_1:\;\; p \ne 0.3 \\[3ex]
+                    $
+                    (b.) The test statistic, <i>z</i> = 0.6172 <br>
+                    (c.) The probability value, <i>p</i> = 0.5371
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) ​Claim: The mean systolic blood pressure of all healthy adults is less than than 124mmHg. <br>
+                Sample​ data: For 279 healthy​ adults, the mean systolic blood pressure level is 123.93mmHg and the
+                standard deviation is 15.71mmHg. <br>
+                The null and alternative hypotheses are H<sub>0</sub>​: &mu; = 124 and H<sub>1</sub>​: &mu; &lt; 124.
+                <br>
+                Find the value of the test statistic. <br>
+                (Round to two decimal places as​ needed.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT4')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT4">
+                    <br>
+                    <b>One-Sample Mean</b>
+                    <br><br>
+                    $
+                    H_0:\;\; \mu = 124\;mmHg \\[3ex]
+                    n = 279 \\[3ex]
+                    \bar{x} = 123.93\;mmHg \\[3ex]
+                    s = 15.71\;mmHg \\[3ex]
+                    t = \dfrac{\bar{x} - \mu}{\dfrac{s}{\sqrt{n}}} \\[9ex]
+                    t = \dfrac{123.93 - 124}{\dfrac{15.71}{\sqrt{279}}} \\[9ex]
+                    t = -0.0744258763 \\[3ex]
+                    t \approx -0.07
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) According to a reputable​ magazine, 32​% of all cars sold in a certain country are SUVs. <br>
+                Suppose a random sample of 500 recently sold cars shows that 140 are SUVs. <br>
+                The graphical technology output for this situation is:
+                <br><br>
+                <img src="images/HypothesisTests/Questions/Number5.png" alt="Number 5">
+                <br><br>
+                (a.) Give the null and alternative hypotheses to test that <b>fewer than</b> 32​% of cars sold are SUVs
+                <br>
+                (b.) What is the test statistic? (Round to four decimal places as needed). <br>
+                (c.) What is the probability value? (Round to four decimal places as needed).
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT5')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT5">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    <i>p</i> = 32% = 0.32 <br>
+                    (a.) The null and alternative hypotheses are: <br><br>
+                    $
+                    H_0:\;\; p = 0.32 \\[3ex]
+                    H_1:\;\; p \lt 0.32 \\[3ex]
+                    $
+                    (b.) The test statistic, <i>z</i> = -1.9174 <br>
+                    (c.) The probability value, <i>p</i> = 0.0276
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) Claim: The standard deviation of pulse rates of adult males is less than 10 <i>bpm</i>. <br>
+                For a random sample of 174 adult​ males, the pulse rates have a standard deviation of 8.6 <i>bpm</i>.
+                <br>
+                Find the value of the test statistic. <br>
+                (Round to two decimal places as​ needed.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT6')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT6">
+                    <br>
+                    <b>One-Sample Standard Deviation</b>
+                    <br><br>
+                    $
+                    H_0:\;\; \sigma = 10\;bpm \\[3ex]
+                    H_1:\;\; \sigma \lt 10\;bpm \\[5ex]
+                    n = 174 \\[3ex]
+                    s = 8.6bpm \\[3ex]
+                    \chi^2 = \dfrac{s^2(n - 1)}{\sigma^2} \\[5ex]
+                    \chi^2 = \dfrac{8.6^2(174 - 1)}{10^2} \\[5ex]
+                    \chi^2 = 127.9508 \\[3ex]
+                    \chi^2 \approx 127.95
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) A college chemistry instructor thinks the use of embedded tutors will improve the success rate in
+                introductory chemistry courses. <br>
+                The passing rate for introductory chemistry is 57​%. <br>
+                During one​ semester, 200 students were enrolled in introductory chemistry courses with an embedded
+                tutor. <br>
+                Of these 200 ​students, 115 passed the course.
+                <br><br>
+                (a.) What is p&#770;​, the sample proportion of students who passed introductory​ chemistry?
+                <br><br>
+                (b.) What is p<sub>0</sub>​, the proportion of students who pass introductory chemistry if the null
+                hypothesis is​ true?
+                <br><br>
+                (c.) Find the value of the test statistic. <br>
+                Explain the test statistic in context. <br>
+                Round to two decimal places as​ needed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT7')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT7">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    $
+                    H_0:\;\; p = 0.57 \\[3ex]
+                    H_1:\;\; p \gt 0.57 \\[5ex]
+                    (a.) \\[3ex]
+                    x = 115 \\[3ex]
+                    n = 200 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{115}{200} = 0.575 \\[5ex]
+                    (b.) \\[3ex]
+                    p_0 = 0.57 \\[3ex]
+                    (c.) \\[3ex]
+                    p = p_0 = 0.57 \\[3ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.57 \\[3ex]
+                    q = 0.43 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[9ex]
+                    z = \dfrac{0.575 - 0.57}{\sqrt{\dfrac{0.57 * 0.43}{200}}} \\[9ex]
+                    z = 0.1428279973 \\[3ex]
+                    z \approx 0.14 \\[3ex]
+                    $
+                    <img src="images/HypothesisTests/Answers/Number7-1.png" alt="Number 7-1">
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number7-2.png" alt="Number 7-2">
+                    <br><br>
+                    The value of the test statistic tells that the observed proportion of students who passed
+                    introductory chemistry was <b>0.14 standard errors above</b> the null hypothesis proportion of
+                    students.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) Suppose a researcher is testing someone to see if he or she can tell Soda X from Soda​ Y, and the
+                researcher is
+                using 22 ​trials, half with Soda X and half with Soda Y. <br>
+                The null hypothesis is that the person is guessing. <br>
+                The alternative is​ one-sided, H<sub>a</sub>​: p &gt; 5. <br>
+                The person gets 14 right out of 22. <br>
+                The​ <i>p</i>-value comes out to be 0.100. <br>
+                Explain the meaning of the​ <i>p</i>-value.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT8')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT8">
+                    <br>
+                    0.1% = 10% <br>
+                    The​ <i>p</i>-value is the probability that if the null hypothesis is​ true (<i>the person is
+                        guessing</i>), a test statistic (<i>p</i>) will have a value as extreme as or more extreme than
+                    the observed value (<i>gets 14 or more right</i>). <br>
+                    So, the correct option is: <b>D.</b>: The probability that a person will get 14 or more​ right, if
+                    the person is truly​ guessing, is about 10​%.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) A local news agency in <i>Pee Pee Township, Ohio (do they have to pee all the time!?)</i> reports
+                that
+                forty seven percent of the adult population regularly uses supplemental vitamins. <br>
+                A manager at a local grocery store believes that number is significantly different and collects data
+                from one hundred and
+                seventy randomly selected adults from the city to test the claim. <br>
+                The table summarizes the data.
+                <br><br>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td class="w3-center">Adults Surveyed</td>
+                    </tr>
+                    <tr>
+                        <td>Regularly takes supplemental vitamins</td>
+                        <td class="w3-center">91</td>
+                    </tr>
+                    <tr>
+                        <td>Does not regularly take supplemental vitamins</td>
+                        <td class="w3-center">79</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="w3-center">170</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Test the hypothesis using the Critical Value Method <br>
+                (b.) State the decision. <br>
+                (c.) Test the hypothesis using the P-value Approach <br>
+                (d.) State the decision. <br>
+                (e.) State the conclusion. <br>
+                Use a 5% level of significance. <br>
+                (f.) Determine a significance level that will change the conclusion.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT9')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT9">
+                    <br>
+                    <b>One-Sample Proportion</b> <br>
+                    We are only interested in the number of adults who regularly use supplemental vitamins
+                    <br><br>
+                    $
+                    H_0:\:\: p = 0.47 \\[3ex]
+                    H_1:\:\: p \ne 0.47 \\[3ex]
+                    x = 91 \\[3ex]
+                    n = 170 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} \\[5ex]
+                    \hat{p} = \dfrac{91}{170} \\[5ex]
+                    \hat{p} = 0.5352941176 \\[3ex]
+                    p = 0.47 \\[3ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.47 \\[3ex]
+                    q = 0.53 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[9ex]
+                    z = \dfrac{0.5352941176 - 0.47}{\sqrt{\dfrac{0.47 * 0.53}{170}}} \\[9ex]
+                    z = \dfrac{0.06529411765}{\sqrt{0.001465294118}} \\[5ex]
+                    z = \dfrac{0.06529411765}{0.03827916036} \\[5ex]
+                    z = 1.705735367 \\[3ex]
+                    \alpha = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    \underline{Classical\:\:Approach} \\[3ex]
+                    -z_{\dfrac{\alpha}{2}} = -1.9599639861189817 \\[5ex]
+                    z_{\dfrac{\alpha}{2}} = 1.9599639861189817 \\[5ex]
+                    -z_{\dfrac{\alpha}{2}} \lt z \lt z_{\dfrac{\alpha}{2}} \\[5ex]
+                    -1.96 \lt 1.71 \lt 1.96 \\[3ex]
+                    $
+                    It does not fall in the critical region <br>
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    $
+                    \underline{P-value\:\:Approach} \\[3ex]
+                    P(z) = P(z \lt -1.705735367) + P(z \gt 1.705735367) \\[3ex]
+                    P(z) = 0.04402868083136646 + 0.04402868083136646 \\[3ex]
+                    P(z) = 0.08805736166 \\[3ex]
+                    P(z) \gt \alpha \\[3ex]
+                    0.0881 \gt 0.05 \\[3ex]
+                    $
+                    <b>Decision:</b> Do not reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to warrant the rejection of the claim that forty
+                    seven percent of the adult population regularly
+                    uses supplemental vitamins.
+                    <br><br>
+                    (f.) <br>
+                    To change the conclusion, there should be sufficient evidence to warrant the rejection of the claim
+                    that forty seven percent of the adult population regularly
+                    uses supplemental vitamins. <br>
+                    This means that there should sufficient evidence to warrant the rejection of the null hypothesis.
+                    <br>
+                    This means that we have to change the decision as well (the decision led to the conclusion) <br>
+                    This means that we have to reject the null hypothesis <br>
+                    The easiest way to do this is to use the P-value Approach <br>
+                    For <b>Two-tailed tests,</b> we reject the null hypothesis if $P-value \le \alpha$ <br>
+                    This means that we have to find a significance level that is greater than or equal to $P(z)$ <br>
+                    $P(z) = 0.08805736166$ <br>
+                    The common significance level that is greater than $0.08805736166$ is $0.1$ <br>
+                    $0.1 = 10\%$ <br>
+                    Therefore, the significance level that will change the conclusion is $10\%$ <br><br>
+                    Let us verify with the calculator.
+                    <br><br>
+                    <i>
+                        <b>Student:</b> Are you saying that if we test the hypothesis using a $1\%$ level of
+                        significance, the
+                        conclusion will be the same? <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        Of the three most common significant levels, only the 10% level of significance will give a
+                        different conclusion.
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) A college in the <i>City of Los Baños, California (how frequently do they use the restrooms?)</i>
+                wants to increase
+                its retention rate (the number of new students who begin one year and return the next year) by forty
+                five percent (45%). <br>
+                After implementing several new programs to improve retention over a two-year period, the college
+                randomly sampled three hundred and sixty students (360) who started one year and found that one hundred
+                and ninety-four of them (194) returned the next year. <br>
+                The college wants to determine if the initiative is working to increase retention.
+                <br><br>
+                (a.) Test the hypothesis using the Classical Approach <br>
+                (b.) State the decision. <br>
+                (c.) Test the hypothesis using the P-value Approach <br>
+                (d.) State the decision. <br>
+                (e.) State the conclusion. <br>
+                Use a 5% level of significance.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT10')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT10">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    $
+                    H_0:\:\: p = 0.45 \\[3ex]
+                    H_1:\:\: p \gt 0.45 \\[3ex]
+                    x = 194 \\[3ex]
+                    n = 360 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} \\[5ex]
+                    \hat{p} = \dfrac{194}{360} \\[5ex]
+                    \hat{p} = 0.5388888889 \\[3ex]
+                    p = 0.45 \\[3ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.45 \\[3ex]
+                    q = 0.55 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[9ex]
+                    z = \dfrac{0.5388888889 - 0.45}{\sqrt{\dfrac{0.45 * 0.55}{360}}} \\[9ex]
+                    z = \dfrac{0.08888888889}{\sqrt{0.0006875}} \\[5ex]
+                    z = \dfrac{0.08888888889}{0.0262202212} \\[5ex]
+                    z = 3.390089206 \\[3ex]
+                    \alpha = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    \underline{Classical\:\:Approach} \\[3ex]
+                    z_{\dfrac{\alpha}{2}} = 1.9599639861189817 \\[5ex]
+                    z \gt z_{\dfrac{\alpha}{2}} \\[5ex]
+                    3.39 \gt 1.96 \\[3ex]
+                    $
+                    It falls in the critical region <br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    $
+                    \underline{P-value\:\:Approach} \\[3ex]
+                    P(z \gt 3.390089206) = 0.000349349418287237 \\[3ex]
+                    P(z \gt 3.390089206) \le \alpha \\[3ex]
+                    0.0003 \le 0.05 \\[3ex]
+                    $
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the claim that the initiative is working
+                    to increase retention.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) Suppose an experiment is done with criminals released from prison in a certain state where the
+                recidivism rate is 34​%; that​ is, 34​% of criminals return to prison within three years. <br>
+                One hundred random prisoners are made to attend a​ "boot camp" for two weeks before their​ release, and
+                it is hoped that​ "boot camp" will have a good effect. <br>
+                Suppose 39 of those prisoners return to prison within three years. <br>
+                The null hypothesis is that those attending boot camp have a recidivism rate of 34​%, p = 0.34.
+                <br><br>
+                (a.) What is p&#770;​, the sample proportion of​ successes? <br>
+                (It is somewhat odd to call returning to prison a​ success.)
+                <br><br>
+                (b.) What is p<sub>0</sub>​, the hypothetical proportion of success under the null​ hypothesis?
+                <br><br>
+                (c.) What is the value of the test​ statistic? Explain in context. <br>
+                (Round to two decimal places as​ needed.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT11')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT11">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    x = 39 \\[3ex]
+                    n = 100 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{39}{100} = 0.39 \\[5ex]
+                    (b.) \\[3ex]
+                    p_0 = 0.34 \\[3ex]
+                    (c.) \\[3ex]
+                    p_0 = p = 0.34 \\[3ex]
+                    q = 1 - p = 1 - 0.34 = 0.66 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[9ex]
+                    z = \dfrac{0.39 - 0.34}{\sqrt{\dfrac{0.34 * 0.66}{100}}} \\[9ex]
+                    z = 1.055500827 \\[3ex]
+                    z \approx 1.06 \\[3ex]
+                    $
+                    The value of the test statistic tells that the observed proportion of prisoners was <b>1.06 standard
+                        errors above</b> the null hypothesis proportion of prisoners.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) A college chemistry instructor thinks the use of embedded tutors will improve the success rate in
+                introductory chemistry courses. <br>
+                The passing rate for introductory chemistry is 72​%. <br>
+                During one​ semester, 200 students were enrolled in introductory chemistry courses with an embedded
+                tutor. <br>
+                Of these 200 ​students, 159 passed the course. <br>
+                The instructor carried out a hypothesis test and found that the observed value of the test statistic was
+                2.36. <br>
+                The​ <i>p</i>-value associated with this test statistic is 0.0091. <br>
+                (a.) State the hypotheses that were used for the test. <br>
+                (b.) Explain the meaning of the​ <i>p</i>-value in this context. <br>
+                (c.) Based on this​ result, should the instructor believe the success rate has​ improved?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT12')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT12">
+                    <br>
+                    (a.) 72% = 0.72 <br>
+                    Null hypotheses: The passing rate for introductory chemistry is 72​%. <br>
+                    Alternative hypotheses: A college chemistry instructor thinks the use of embedded tutors will
+                    <b>improve</b> the success rate in introductory chemistry courses.
+                    <br><br>
+                    $
+                    H_0:\;\; p = 0.72 \\[3ex]
+                    H_1:\;\; p \gt 0.72 \\[3ex]
+                    $
+                    (b.) The <i>p</i>-value is the probability (<i>0.0091</i>) that if the null hypothesis is​ true
+                    (<i>the passing rate for introductory chemistry is 72​%</i>), a test statistic (<i>z = 2.36</i>)
+                    will have a value as extreme as or more extreme than the observed value (<i>will greatly improve the
+                        success rate in introductory chemistry courses</i>). <br>
+                    In the context of the question, this implies that: <br>
+                    The probability of 159 or more introductory chemistry students passing out of a random sample of 200
+                    students is 0.0091​, assuming the population proportion is 0.72.
+                    <br><br>
+                    (c.) In this​ situation, the <i>p</i>-value is ​small (less than the significance level: 0.05), so
+                    reject the null hypotheses. <br>
+                    The instructor should believe the success rate has improved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) A researcher made a claim that the proportion of urban families who regularly eat lunch together
+                is statistically
+                lower than the proportion of rural families. <br>
+                The table displays the summary of her data collection survey. <br>
+                $x_1$ is the number of urban families who regularly eat lunch. <br>
+                $n_1$ is the total number of urban families. <br>
+                $x_2$ is the number of rural families who regularly eat lunch. <br>
+                $n_2$ is the total number of rural families.
+                <br><br>
+                <table class="w3-padding w3-center">
+                    <tr>
+                        <td>Urban Families Surveyed</td>
+                        <td>Rural Families Surveyed</td>
+                    </tr>
+                    <tr>
+                        <td>$x_1$ = 12</td>
+                        <td>$x_2$ = 40</td>
+                    </tr>
+                    <tr>
+                        <td>$n_1$ = 75</td>
+                        <td>$n_2$ = 140</td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Calculate the sample proportions. <br>
+                Do the initial (untested) findings show what the researcher expected? <br>
+                (b.) Test the hypothesis using the Classical Approach <br>
+                (c.) State the decision. <br>
+                (d.) Test the hypothesis using the P-value Approach <br>
+                (e.) State the decision. <br>
+                (f.) State the conclusion. <br>
+                Use a 5% level of significance. <br>
+                (g.) Use the Standard Normal Curve below to mark the location of the test statistic and shade the area
+                that corresponds
+                to the P-value.
+                <br><br>
+                <img src="images/HypothesisTests/Questions/Number13.png" alt="Number 13">
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT13')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT13">
+                    <br>
+                    <b>Two-Samples Proportion</b>
+                    <br><br>
+                    $\hat{p_1}$ is the first sample proportion (proportion of urban families who regularly eat lunch
+                    together) <br>
+                    $\hat{q_1}$ is the complement of the first sample proportion <br>
+                    $\hat{p_2}$ is the second sample proportion (proportion of rural families who regularly eat lunch
+                    together) <br>
+                    $\hat{q_2}$ is the complement of the second sample proportion <br>
+                    $\overline{p}$ is the pooled sample proportion <br>
+                    $\overline{q}$ is the complement of the pooled sample proportion <br><br>
+                    $
+                    H_0:\:\: p_1 = p_2 \:\:OR\:\: p_1 - p_2 = 0 \\[3ex]
+                    H_1:\:\: p_1 \lt p_2 \\[3ex]
+                    \hat{p_1} = \dfrac{x_1}{n_1} \\[5ex]
+                    \hat{p_1} = \dfrac{12}{75} \\[5ex]
+                    \hat{p_1} = 0.16 \\[3ex]
+                    \hat{p_2} = \dfrac{x_2}{n_2} \\[5ex]
+                    \hat{p_2} = \dfrac{40}{140} \\[5ex]
+                    \hat{p_2} = 0.2857142857 \\[3ex]
+                    0.16 \lt 0.2857142857 \\[3ex]
+                    $
+                    Yes, these sample proportions show what the researcher expected. <br>
+                    The sample proportion of urban families who regularly eat lunch together is <b>lower</b> than the
+                    sample proportion of rural families who regularly
+                    eat lunch together because $0.16 \lt 0.2857142857$ <br><br>
+                    $
+                    \overline{p} = \dfrac{x_1 + x_2}{n_1 + n_2} \\[5ex]
+                    \overline{p} = \dfrac{12 + 40}{75 + 140} \\[5ex]
+                    \overline{p} = \dfrac{52}{215} \\[5ex]
+                    \overline{p} = 0.2418604651 \\[3ex]
+                    \overline{q} = 1 - 0.2418604651 \\[3ex]
+                    \overline{q} = 0.7581395349 \\[3ex]
+                    z = \dfrac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\dfrac{\overline{p} *
+                    \overline{q}}{n_1} + \dfrac{\overline{p} * \overline{q}}{n_2}}} \\[10ex]
+                    z = \dfrac{(0.16 - 0.2857142857) - 0}{\sqrt{\dfrac{0.2418604651 *
+                    0.7581395349}{75} + \dfrac{0.2418604651 * 0.7581395349}{140}}} \\[10ex]
+                    z = \dfrac{-0.1257142857}{\sqrt{\dfrac{0.1833639805}{75} + \dfrac{0.1833639805}{140}}} \\[10ex]
+                    z = \dfrac{-0.1257142857}{\sqrt{0.002444853074 + 0.001309742718}} \\[7ex]
+                    z = \dfrac{-0.1257142857}{\sqrt{0.003754595792}} \\[7ex]
+                    z = \dfrac{-0.1257142857}{0.06127475656} \\[7ex]
+                    z = -2.05164888 \\[3ex]
+                    \alpha = 5\% = \dfrac{5}{100} = 0.05 \\[5ex]
+                    \dfrac{\alpha}{2} = \dfrac{0.05}{2} = 0.025 \\[5ex]
+                    \underline{Classical\:\:Approach} \\[3ex]
+                    -z_{\dfrac{\alpha}{2}} = -1.9599639861189817 \\[5ex]
+                    z \lt -z_{\dfrac{\alpha}{2}} \\[5ex]
+                    -2.05164888 \lt -1.9599639861189817 \\[3ex]
+                    $
+                    It falls in the critical region <br>
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    $
+                    \underline{P-value\:\:Approach} \\[3ex]
+                    P(z) = P(z \lt -2.05164888)
+                    P(z \lt -2.05164888) = 0.020101899077793972 \\[3ex]
+                    P(z \lt -2.05164888) \le \alpha \\[3ex]
+                    0.020101899077793972 \le 0.05 \\[3ex]
+                    $
+                    <b>Decision:</b> Reject the null hypothesis <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to support the claim that the sample proportion of
+                    urban families who regularly eat lunch together is <b>lower</b> than the sample proportion of rural
+                    families who regularly
+                    eat lunch together.
+                    <br><br>
+                    (g.) <br><br>
+                    $
+                    Test\:\:statistic:\:\: z = -2.05164888 \approx -2.05 \\[3ex]
+                    P-value:\:\: P(z) = 0.020101899077793972 \approx 2\%
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) Suppose a researcher is testing someone to see whether she or he can tell Soda X from Soda​ Y, and
+                the researcher is using 30 ​trials, half with Soda X and half with Soda Y. <br>
+                The null hypothesis is that the person is guessing.
+                <br><br>
+                (a.) About how many should the researcher expect the person to get right under the null hypothesis that
+                the person is​ guessing?
+                <br><br>
+                (b.) Suppose person A gets 21 right out of 30​, and person B gets 19 right out of 30. <br>
+                Which will have a smaller <i>p</i>-value, and​ why?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT14')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT14">
+                    <br>
+                    (a.) If the population proportion, <i>p</i> is not given, then assume <i>p</i> = 50% = 0.5 <br>
+                    50% of 30 trials = 0.5(30) = 15 <br>
+                    The person should get 15 trials right.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    \underline{Person\;A} \\[3ex]
+                    x = 21 \\[3ex]
+                    n = 30 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{21}{30} = 0.7 \\[5ex]
+                    \underline{Person\;B} \\[3ex]
+                    x = 19 \\[3ex]
+                    n = 30 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{19}{30} = 0.6333333333 \\[5ex]
+                    $
+                    0.7 &gt; 0.6333333333; therefore <br>
+                    Person <b>A</b> will have a smaller <i>p</i>-value because <b>that person's number of successes is
+                        further from the hypothesized number of successes</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) A random sample of 10 independent healthy people showed the body temperatures given below​ (in
+                degrees​ Fahrenheit).
+                <br><br>
+                <table class="w3-center noborder">
+                    <tr>
+                        <td>98.4</td>
+                        <td>98.3</td>
+                        <td>99.0</td>
+                        <td>96.2</td>
+                        <td>98.3</td>
+                    </tr>
+                    <tr>
+                        <td>98.2</td>
+                        <td>97.3</td>
+                        <td>99.2</td>
+                        <td>98.9</td>
+                        <td>97.1</td>
+                    </tr>
+                </table>
+                <br>
+                Test the hypothesis that the population mean is not 98.6 &deg;​F, using a significance level of 0.05
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT15')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT15">
+                    <br>
+                    <b>One-Sample Mean</b>
+                    <br><br>
+                    $
+                    \underline{1st\;\;Step:\;\;Hypothesis} \\[3ex]
+                    H_0:\;\; \mu = 98.6 \\[3ex]
+                    H_1:\;\; \mu \ne 98.6 \\[5ex]
+                    \underline{2nd\;\;Step:\;\;Test\;\;Statistic} \\[3ex]
+                    Sample: \\[3ex]
+                    n = 10 \\[3ex]
+                    10 \lt 30 ...use\;\;t-statistic \\[3ex]
+                    t = \dfrac{\bar{x} - \mu}{\dfrac{s}{\sqrt{n}}} \\[9ex]
+                    \bar{x} = 98.09 \\[3ex]
+                    s = 0.9480389115 \\[3ex]
+                    \implies \\[3ex]
+                    t = \dfrac{98.09 - 98.6}{\dfrac{0.9480389115}{\sqrt{10}}} \\[9ex]
+                    t = -1.701155498 \\[5ex]
+                    \underline{3rd\;\;Step:\;\;Critical\;\;value\;\;of\;\;t} \\[3ex]
+                    df = n - 1 \\[3ex]
+                    df = 10 - 1 \\[3ex]
+                    df = 9 \\[3ex]
+                    Two-tails \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    Critical\;\;t = \pm 2.262 \\[5ex]
+                    \underline{4th\;\;Step:\;\;Classical\;\;Approach} \\[3ex]
+                    -2.262 \lt -1.701155498 \\[3ex]
+                    Critical\;\;t \;\lt\; Test\;\;Statistic \;\;(for\;\;negative\;\;values) \\[3ex]
+                    $
+                    This implies that the test statistic is not in the critical region <br>
+                    <b>Decision:</b> Do not reject the null hypothesis
+                    <br><br>
+                    <u>5th Step:</u> Probability Value <br>
+                    By Technology:
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number15-1.png" alt="Number 15-1">
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number15-2.png" alt="Number 15-2">
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number15-3.png" alt="Number 15-3">
+                    <br><br>
+                    $
+                    p-value = 0.12312501 \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    0.12312501 \gt 0.05 \\[3ex]
+                    p-value \;\gt\; significance\;\;level \\[3ex]
+                    $
+                    <u>6th Step:</u> Probability Value Approach<br>
+                    The probability value is greater than the significance level <br>
+                    <b>Decision:</b> Do not reject the null hypothesis
+                    <br><br>
+                    <b>Conclusion:</b> There is insufficient evidence to conclude that the population mean is not 98.6
+                    &deg;F at a significance level of 0.05.
+                    <br><br>
+                    <i>
+                        <b>Student:</b> Can you find the probability value for <b>t</b> test by Tables? <br>
+                        Is technology the only way to find it? <br>
+                        <b>Teacher:</b> We can use the <b>t</b> distribution table to find it. <br>
+                        We need to look for the exact value of the test statistic for 9 degrees of freedom and find the
+                        significance level that corresponds to that exact value. <br>
+                        If we do not find the exact value, then we have to interpolate between two <b>closest</b>
+                        in-between values of significance levels. <br>
+                        Let's do it.
+                    </i>
+                    <br><br>
+                    Let <i>p</i> be the probability value that corresponds to the test statistic of -1.701155498 at 9
+                    degrees of freedom <br>
+                    This is a two-tailed test so it goes both ways. <br>
+                    Because the test statistic is negative, we choose a negative value that corresponds to that value.
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number15-4.png" alt="Number 15-4">
+                    <br><br>
+                    $
+                    \underline{Linear\;\;Interpolation} \\[3ex]
+                    \dfrac{p - 0.1}{0.2 - 0.1} = \dfrac{-1.701155498 - (-1.833)}{-1.383 - (-1.833)} \\[5ex]
+                    \dfrac{p - 0.1}{0.1} = \dfrac{-1.701155498 + 1.833}{-1.383 + 1.833} \\[5ex]
+                    \dfrac{p - 0.1}{0.1} = \dfrac{0.131844502}{0.45} \\[5ex]
+                    p - 0.1 = \dfrac{0.1(0.131844502)}{0.45} \\[5ex]
+                    p - 0.1 = 0.0292987782 \\[3ex]
+                    p = 0.0292987782 + 0.1 \\[3ex]
+                    p = 0.1292987782 \\[3ex]
+                    $
+                    <i>
+                        <b>Student:</b> But that is not the value we got using technology <br>
+                        <b>Teacher:</b> Well, yes...but if we rounded both values to 2 decimal places (technology and
+                        interpolated values), they are the same <br>
+                        <b>Student:</b> I guess the technology value is more accurate... <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        The values from the <b>t</b> distribution table from which we interpolate (depending on the
+                        closest in-between values of interpolation), gives the approximate value to few number of
+                        decimal places.
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.) A certain county is 24​% African American. <br>
+                Suppose a researcher is looking at jury​ pools, each with 200 ​members, in this county. <br>
+                The null hypothesis is that the probability of an African American being selected into the jury pool is
+                24​%.
+                <br><br>
+                (a.) How many African Americans would the researcher expect on a jury pool of 200 people if the null
+                hypothesis is​ true?
+                <br><br>
+                (b.) Suppose pool A contains 35 African American people out of 200​, and pool B contains 26 African
+                American people out of 200. <br>
+                Which will have a smaller <i>p</i>-value and​ why?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT16')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT16">
+                    <br>
+                    (a.) Number of African Americans the researcher would expect in a jury pool of 200 people is:
+                    <br><br>
+                    $
+                    24\% \;\;of\;\; 200 \\[3ex]
+                    = 0.24(200) \\[3ex]
+                    = 48\;\;African\;\;Americans \\[3ex]
+                    $
+                    (b.) Expected hypothesized number of successes: 48 <br>
+                    Pool A number of succcesses: 35 African American <br>
+                    Pool B number of successes: 26 African American
+                    <br><br>
+                    <i>Which of them is further from 48?</i>
+                    <br><br>
+                    |48 &minus; 35| = |13| = 13 <br>
+                    |48 &minus; 26| = |22| = 22 <br>
+                    13 &lt; 22 <br>
+                    Pool <b>B</b> will have a smaller <i>p</i>-value because <b>that pool's number of African American
+                        people is further from the hypothesized number.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) A random sample of 798 subjects was asked to identify the day of the week that is best for quality
+                family time. <br>
+                Consider the claim that the days of the week are selected with a uniform distribution so that all days
+                have the same chance of being selected. <br>
+                The table below shows​ goodness-of-fit test results from the claim and data from the study. <br>
+                Test that claim using either the critical value method or the​ P-value method with an assumed
+                significance level of &alpha; = 0.05.
+                <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td style="width: 40%;"><b>Num Categories</b></td>
+                        <td style="width: 10%;">7</td>
+                        <td style="width: 40%;"><b>Test statistic, &chi;²</b></td>
+                        <td style="width: 10%;">1731.386</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40%;"><b>Degrees of freedom</b></td>
+                        <td style="width: 10%;">6</td>
+                        <td style="width: 40%;"><b>Critical &chi;²</b></td>
+                        <td style="width: 10%;">12.592</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 40%;"><b>Expected Freq</b></td>
+                        <td style="width: 10%;">114.0000</td>
+                        <td style="width: 40%;"><b>P-Value</b></td>
+                        <td style="width: 10%;">0.0000</td>
+                    </tr>
+                </table>
+                <br>
+                <button class="solutions" onclick="solutions('solutionHT17')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT17">
+                    <br>
+                    <b>Goodness-of-Fit test</b> <br>
+                    Goodness-of-Fit test is always a right-tailed test
+                    <br><br>
+                    <b>Null hypotheses:</b> H<sub>0:</sub> All days of the week have an equal chance of being selected.
+                    <br>
+                    <b>Alternative hypotheses:</b> H<sub>1:</sub> At least one day of the week has a different chance of
+                    being selected.
+                    <br><br>
+                    Test statistic, &chi;² = 1731.386 <br>
+                    Critical &chi;² = 12.592
+                    <br><br>
+                    <b>Critical Value Method</b> <br>
+                    1731.386 &gt; 12.592 <br>
+                    Test statistic, &chi;² &gt; Critical &chi;² <br>
+                    This implies that the Test statistic, &chi;² is in the critical region <br>
+                    <b>Decision:</b> Reject the null hypotheses.
+                    <br><br>
+                    <b>Probability Value Method</b> <br>
+                    0.0000 &lt; 0.05 <br>
+                    P-value is &lt; Significance level <br>
+                    <b>Decision:</b> Reject the null hypotheses.
+                    <br><br>
+                    <b>Conclusion:</b> There is sufficient evidence to warrant rejection of the claim that the days of
+                    the week are selected with a uniform distribution. <br>
+                    <b>Interpretation:</b> It does not appear that all days have the same chance of being selected.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.) A body mass index of more than 25 is considered unhealthful. <br>
+                The technology output given is from 50 randomly and independently selected people from a health​
+                agency's study. <br>
+                Test the hypothesis that the mean BMI is more than 25 using a significance level of 0.05. <br>
+                Assume that conditions are met.
+                <br><br>
+                <img src="images/HypothesisTests/Questions/Number18.png" alt="Number 18">
+                <br><br>
+                (a.) Determine the null and alternative hypotheses. <br>
+                (b.) Calculate the test statistic. <br>
+                (c.) Determine the <i>p</i>-value. <br>
+                (d.) Interpret the results of the test.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT18')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT18">
+                    <br>
+                    <b>One-Sample Mean</b>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    \underline{Hypothesis} \\[3ex]
+                    H_0:\;\; \mu = 25 \\[3ex]
+                    H_1:\;\; \mu \gt 25 \\[5ex]
+                    (b.) \\[3ex]
+                    t = 2.93 \\[5ex]
+                    (c.) \\[3ex]
+                    p-value = 0.003 \\[3ex]
+                    $
+                    (d.) Since the​ p-value is less than or equal to the significance level, reject H<sub>0</sub> <br>
+                    There is sufficient evidence to conclude that the mean BMI is more than 25 using a significance
+                    level of 0.05.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) A hospital readmission is an episode when a patient who has been discharged from a hospital is
+                readmitted again within a certain time period. <br>
+                Nationally the readmission rate for patients with pneumonia is 18​%. <br>
+                A hospital was interested in knowing whether their readmission rate for pneumonia was less than the
+                national percentage. <br>
+                They found 14 patients out of 80 treated for pneumonia in a​ two-month period were readmitted.
+                <br><br>
+                (a.) What is p&#770;​, the sample proportion of​ readmission? (Round to three decimal places as needed).
+                <br>
+                (b.) Write the null and alternative hypotheses. <br>
+                (c.) Find the value of the test statistic and explain it in context. (Round to two decimal places as
+                needed). <br>
+                (d.) The <i>p</i>-value associated with this test statistic is 0.45. <br>
+                Explain the meaning of the​ <i>p</i>-value in this context. <br>
+                Based on this​ result, does the​ <i>p</i>-value indicate the null hypothesis should be​ doubted?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT19')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT19">
+                    <br>
+                    <b>One-Sample Proportion</b>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    x = 14 \\[3ex]
+                    n = 80 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{14}{80} = 0.175 \\[5ex]
+                    $
+                    (b.) 18% = 0.18 <br>
+                    Null hypotheses: Nationally the readmission rate for patients with pneumonia is 18​%. <br>
+                    Alternative hypotheses: A hospital was interested in knowing whether their readmission rate for
+                    pneumonia was <b>less than</b> the national percentage.
+                    <br><br>
+                    $
+                    H_0:\;\; p = 0.18 \\[3ex]
+                    H_1:\;\; p \lt 0.18 \\[3ex]
+                    (c.) \\[3ex]
+                    q = 1 - p = 1 - 0.18 = 0.82 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sqrt{\dfrac{pq}{n}}} \\[9ex]
+                    z = \dfrac{0.175 - 0.18}{\sqrt{\dfrac{0.18 * 0.82}{80}}} \\[9ex]
+                    z = -0.1164050493 \\[3ex]
+                    z \approx -0.12 \\[3ex]
+                    $
+                    This implies that: <br>
+                    The value of the test statistic tells that the observed proportion of readmissions was <b>0.12
+                        standard errors below</b> the null hypothesis proportion of readmissions.
+                    (<i>it is below because of the negative sign</i>)
+                    <br><br>
+                    (d.) The​ <i>p</i>-value is the probability (<i>0.45</i>) that if the null hypothesis is​ true
+                    (<i>Nationally the readmission rate for patients with pneumonia is 18​%.</i>), a test statistic
+                    (<i>z = -0.12</i>) will have a value as extreme as or more extreme than the observed value (<i>their
+                        readmission rate for pneumonia was very less than the national percentage</i>). <br>
+                    In the context of the question, this implies that: <br>
+                    The probability of getting 14 or fewer readmissions for pneumonia of a random sample of 80 patients
+                    with pneumonia is 0.45, assuming the population proportion is 0.18. <br>
+                    In this​ situation, the​ <i>p</i>-value <b>is not</b> small (because it is greater than 0.05), which
+                    indicates that the null hypothesis <b>should not</b> be doubted.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) A health agency suggested that a healthy total cholesterol measurement should be 200​ mg/dL or
+                less. <br>
+                Records from 50 randomly and independently selected people from a study conducted by the agency showed
+                the results in the technology output given below. <br>
+                Test the hypothesis that the mean cholesterol level is more than 200 using a significance level of 0.05.
+                <br>
+                Assume that conditions are met.
+                <br><br>
+                <img src="images/HypothesisTests/Questions/Number20.png" alt="Number 20">
+                <br><br>
+                (a.) Determine the null and alternative hypotheses. <br>
+                (b.) Calculate the test statistic. <br>
+                (c.) Determine the <i>p</i>-value. <br>
+                (d.) Interpret the results of the test.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT20')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT20">
+                    <br>
+                    <b>One-Sample Mean</b>
+                    <br><br>
+                    $
+                    (a.) \\[3ex]
+                    \underline{Hypothesis} \\[3ex]
+                    H_0:\;\; \mu = 200 \\[3ex]
+                    H_1:\;\; \mu \gt 200 \\[5ex]
+                    (b.) \\[3ex]
+                    t = 1.21 \\[5ex]
+                    (c.) \\[3ex]
+                    p-value = 0.116 \\[3ex]
+                    $
+                    (d.) Since the​ p-value is greater than the significance level, do not reject H<sub>0</sub> <br>
+                    There is insufficient evidence to conclude that the mean cholesterol level is more than 200 ​mg/dL
+                    at a significance level of 0.05.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-tests.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.) A professor collected data from classes to see whether humans made selections​ randomly, as a
+                random number generator would. <br>
+                Each of 43 students had to pick an integer from one to five. <br>
+                The data are summarized in the table below. <br>
+                A true random number generator would create roughly equal numbers of all five integers. <br>
+                Do a​ goodness-of-fit analysis to test the hypothesis that humans are not like random number generators.
+                <br>
+                Use a significance level of 0.05​, and assume these data were from a random sample of students.
+                <br><br>
+                <table class="w3-center" style="width: 50%;">
+                    <caption>Integer Selection</caption>
+                    <tr>
+                        <th style="width: 50%;">Integer</th>
+                        <th style="width: 50%;">Times Chosen</th>
+                    </tr>
+                    <tr>
+                        <td>One</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Two</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Three</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Four</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Five</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+                <br>
+                <button class="solutions" onclick="solutions('solutionHT21')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT21">
+                    <br>
+                    <u>1st Step:</u> Hypothesis <br>
+                    <b>Null Hypothesis:</b> H<sub>0:</sub> Humans are like random number generators and produce numbers
+                    in equal quantities. <br>
+                    <b>Alternative Hypothesis:</b> H<sub>1:</sub> Humans are not like random number generators and do
+                    not produce numbers in equal quantities.
+                    <br><br>
+                    Each Observed Value = Times Chosen (Given in the Table) <br>
+                    Total Number of Observed Values = 43 <br>
+                    Each Expected Value = roughly equal numbers of all five integers = $\dfrac{43}{5} = 8.6$
+                    <br><br>
+                    <u>2nd Step:</u> Chi-Square Test Statistic <br>
+                    <table class="w3-center" style="width: 50%;">
+                        <caption>Integer Selection</caption>
+                        <tr>
+                            <th style="width: 5%;">Integer</th>
+                            <th style="width: 35%;">Observed Values, O</th>
+                            <th style="width: 35%;">Expected Values, E</th>
+                            <th style="width: 5%;">$O - E$</th>
+                            <th style="width: 10%;">$(O - E)^2$</th>
+                            <th style="width: 10%;">$\dfrac{(O - E)^2}{E}$
+                                (to 5 decimal places)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>One</td>
+                            <td>16</td>
+                            <td>8.6</td>
+                            <td>7.4</td>
+                            <td>54.76</td>
+                            <td>6.36744</td>
+                        </tr>
+                        <tr>
+                            <td>Two</td>
+                            <td>2</td>
+                            <td>8.6</td>
+                            <td>&minus;6.6</td>
+                            <td>43.56</td>
+                            <td>5.06512</td>
+                        </tr>
+                        <tr>
+                            <td>Three</td>
+                            <td>7</td>
+                            <td>8.6</td>
+                            <td>&minus;1.6</td>
+                            <td>2.56</td>
+                            <td>0.29767</td>
+                        </tr>
+                        <tr>
+                            <td>Four</td>
+                            <td>11</td>
+                            <td>8.6</td>
+                            <td>2.4</td>
+                            <td>5.76</td>
+                            <td>0.66977</td>
+                        </tr>
+                        <tr>
+                            <td>Five</td>
+                            <td>7</td>
+                            <td>8.6</td>
+                            <td>&minus;1.6</td>
+                            <td>2.56</td>
+                            <td>0.29767</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                $\chi^2 = \Sigma \dfrac{(O - E)^2}{E} = 12.69767$
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    Technology Approach: 1st Method:
+                    <br><br>
+                    $
+                    L_1 = Observed \\[3ex]
+                    L_2 = Expected \\[3ex]
+                    L_3 = L_1 - L_2 \\[3ex]
+                    L_4 = L_3^2 \\[3ex]
+                    L_5 = L_4 \div L_2 \\[3ex]
+                    $
+                    <img src="images/HypothesisTests/Answers/Number21-1.png" alt="Number 21-1">
+                    <br><br>
+                    OR
+                    <br><br>
+                    Technology Approach: 2nd Method: <br>
+                    Degrees of Freedom = 5 &minus; 1 = 4
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number21-2.png" alt="Number 21-2">
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number21-3.png" alt="Number 21-3">
+                    <br><br>
+                    <u>3rd Step:</u> Critical Value Method <br>
+                    Critical value of &chi;² at 4 degrees of freedom and 0.05 significance level = 9.48772 <br>
+                    12.69767 &gt; 9.48772 <br>
+                    Test statistic &chi;² &gt; Critical value &chi;² <br>
+                    This implies that the Test statistic &chi;² is in the critical region. <br>
+                    <b>Decision:</b> Reject the null hypothesis.
+                    <br><br>
+                    <u>4th Step:</u> Probability Value Method <br>
+                    By technology: probability = 0.0128514953 <br>
+                    0.0128514953 &lt; 0.05 <br>
+                    Probability value is less than the level of significance <br>
+                    <b>Decision:</b> Reject the null hypothesis.
+                    <br><br>
+                    <b>Conclusion:</b> Humans have been shown to be different from random number generators.
+                    <br><br>
+                    <i>
+                        <b>Student:</b> Can you find the probability value for GOF test by Tables? <br>
+                        Is technology the only way to find it? <br>
+                        <b>Teacher:</b> We can use the &chi;² table to find it. <br>
+                        We need to look for the exact value of the test statistic for 4 degrees of freedom and find the
+                        significance level that corresponds to that exact value. <br>
+                        If we do not find the exact value, then we have to interpolate between two <b>closest</b>
+                        in-between values of significance levels. <br>
+                        Let's do it.
+                    </i>
+                    <br><br>
+                    Let <i>p</i> be the probability value that corresponds to the test statistic of 12.69767 at 4
+                    degrees of freedom
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number21-4.png" alt="Number 21-4">
+                    <br><br>
+                    $
+                    \underline{Linear\;\;Interpolation} \\[3ex]
+                    \dfrac{p - 0.015}{0.01 - 0.015} = \dfrac{12.69767 - 12.3391}{13.2767 - 12.3391} \\[5ex]
+                    \dfrac{p - 0.015}{-0.005} = \dfrac{0.35857}{0.9376} \\[5ex]
+                    p - 0.015 = \dfrac{-0.005(0.35857)}{0.9376} \\[5ex]
+                    p - 0.015 = -0.0019121694 \\[3ex]
+                    p = -0.0019121694 + 0.015 \\[3ex]
+                    p = 0.0130878306 \\[3ex]
+                    $
+                    <i>
+                        <b>Student:</b> But that is not the value we got using technology <br>
+                        <b>Teacher:</b> Well, yes...but if we rounded both values to 3 decimal places (technology and
+                        interpolated values), they are the same <br>
+                        <b>Student:</b> I guess the technology value is more accurate... <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        The values from the Chi-square table from which we interpolate (depending on the closest
+                        in-between values of interpolation), gives the approximate value to few number of decimal
+                        places.
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.) A 55​-question multiple choice quiz has five choices for each question. <br>
+                Suppose that a student just​ guesses, hoping to get a high score. <br>
+                The teacher carries out a hypothesis test to determine whether the student was just guessing. <br>
+                The null hypothesis is <i>p</i> = 0.20, where <i>p</i> is the probability of a correct answer.
+                <br><br>
+                (a.) Which of the following describes the value of the​ <i>z</i>-test statistic that is likely to​
+                result? <br>
+                Explain your choice. <br>
+                ​(i.) The​ <i>z</i>-test statistic will be close to 0. <br>
+                ​(ii.) The​ <i>z</i>-test statistic will be far from 0
+                <br><br>
+                (b.) Which of the following describes the​ <i>p</i>-value that is likely to​ result? <br>
+                Explain your choice. <br>
+                ​(i.) The​ <i>p</i>-value will be small. <br>
+                ​(ii.) The​ <i>p</i>-value will not be small.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT22')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT22">
+                    <br>
+                    (a.) The null hypothesis is <i>p</i> = 0.20, where <i>p</i> is the probability of a correct answer.
+                    <br>
+                    The null hypotheses is true (or assumed to be true) <br>
+                    It makes sense that the probability of getting a correct answer by guessing is 20% so we assume the
+                    null hypothesis to be true <br>
+                    The test statistic compares the observed outcome with the outcome of the null hypothesis (expected
+                    outcome). <br>
+                    For this case, the observed outcome is close to the expected outcome. <br>
+                    Hence, the <i>z</i>-test statistic will be close to 0.
+                    <br><br>
+                    (b.) Because the null hypothesis is true, obtaining an unusual result is not likely. <br>
+                    Hence, the <i>p</i>-value will not be small.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT23')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT23">
+                    <br>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.) Use applicable technology to solve this question. <br>
+                The weights of four randomly and independently selected bags of potatoes labeled 20 pounds were found to
+                be:
+                21.6, 22.2, 21.3, and 21.2 <br>
+                Assume Normality.
+                <br><br>
+                (a.) Using a​ two-sided alternative​ hypothesis, should you be able to reject the hypothesis that the
+                population mean is 20 pounds using a significance level of 0.05​? <br>
+                Why or why​ not? <br>
+                The confidence interval is reported​ here: I am 95​% confident the population mean is between 20.9 and
+                22.3 pounds.
+                <br><br>
+                (b.) Determine the null and alternative hypotheses.
+                <br><br>
+                (c.) Test the hypothesis that the population mean is not 20. <br>
+                Use a significance level of 0.05.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT24')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT24">
+                    <br>
+                    (a.) &mu; = 20 <br>
+                    Confidence Interval: I am 95​% confident the population mean is between 20.9 and 22.3 pounds.
+                    <br>
+                    20 is <u>not</u> in-beween 20.9 and 22.3 <br>
+                    It is not included. It is less than the lower limit of the confidence interval. <br>
+                    <b>Confidence Interval Method:</b> Reject the​ hypothesis, because the interval does not contain the
+                    proposed mean.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    \underline{1st\;\;Step:\;\;Hypothesis} \\[3ex]
+                    H_0:\;\; \mu = 20 \\[3ex]
+                    H_1:\;\; \mu \ne 20 \\[3ex]
+                    $
+                    (c.) <u>2nd Step:</u> Test Statistic <br>
+                    Sample size, <i>n</i> = 4 <br>
+                    4 is less than 30 <br>
+                    Therefore, we shall use the <i>t</i> test
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number24-1.png" alt="Number 24-1">
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number24-2.png" alt="Number 24-2">
+                    <br><br>
+                    <img src="images/HypothesisTests/Answers/Number24-3.png" alt="Number 24-3">
+                    <br><br>
+                    <i>t</i> test statistic = 7
+                    <br><br>
+                    $
+                    \underline{3rd\;\;Step:\;\;Critical\;\;t-value} \\[3ex]
+                    \alpha = 0.05 \\[3ex]
+                    df = n - 1 \\[3ex]
+                    df = 4 - 1 \\[3ex]
+                    df = 3 \\[3ex]
+                    $
+                    Critical <i>t</i>-value at 0.05 significance level and 3 degrees of freedom = &pm; 3.182 (two-tailed
+                    test) <br>
+                    Because the test statistic is positive: <br>
+                    Critical <i>t</i>-value = 3.182
+                    <br><br>
+                    <u>4th Step:</u> Critical Value Method <br>
+                    7 &gt; 3.182 <br>
+                    test statistic &gt; critical value of <i>t</i> <br>
+                    This implies that the test statistic is in the critical region. <br>
+                    <b>Decision:</b> Reject the null hypothesis.
+                    <br><br>
+                    <u>5th Step:</u> Probability Value <br>
+                    <i>p</i>-value = 0.0059862557
+                    <br><br>
+                    <u>5th Step:</u> Probability Value Method <br>
+                    0.0059862557 &lt; 0.05 <br>
+                    probability value is less than the significance level <br>
+                    <b>Decision:</b> Reject the null hypothesis.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT25')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT25">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT26')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT27')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT27">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT28')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT29')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT29">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT30')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (31.) Use an applicable technology software to solve this question. <br>
+            The accompanying data table shows reaction distances in centimeters for the dominant hand for a random
+            sample of 40 independently chosen college students. <br>
+            Smaller distances indicate quicker reactions.
+            <br><br>
+            <img src="images/HypothesisTests/Questions/Number31-1.png" alt="Number 31-1">
+            <br><br>
+            (a.) Make a graph of the distribution of the​ sample. <br>
+            Make a graph of the distribution. <br>
+            For values on the boundary of two​ bins, place that value into the bin on the right. <br>
+            Choose the correct graph below.
+            <br><br>
+            <img src="images/HypothesisTests/Questions/Number31-2.png" alt="Number 31-2">
+            <br><br>
+            (b.) Describe its shape.
+            <br><br>
+            (c.) Find, report, and interpret a​ 95% confidence interval for the population mean.
+            <br><br>
+            (d.) Interpret the 95​% confidence interval.
+            <br><br>
+            (e.) Suppose a professor said that the population mean should be 10 centimeters. <br>
+            Test the hypothesis that the population mean is not 10 ​cm, with a significance level of 0.05. <br>
+            Determine the null and alternative hypotheses.
+            <br><br>
+            (f.) Determine the test statistic.
+            <br><br>
+            (g.) Determine the probability value.
+            <br><br>
+            (h.) Interpret the results of the test.
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionHT31')">Show/Hide Answer</button>
+            <div class="result" id="solutionHT31">
+                <br>
+                <b>One-Sample Mean</b> <br>
+                (a.) Reviewing the histogram, we notice that the bin width is 4 <br>
+                So, let us use the Pearson Statcrunch to draw the histogram for the data. <br>
+                Then, we can select the correct option.
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-1.png" alt="Number 31-1">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-2.png" alt="Number 31-2">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-3.png" alt="Number 31-3">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-4.png" alt="Number 31-4">
+                <br><br>
+                So, the correct answer is Option A. <br>
+                <img src="images/HypothesisTests/Answers/Number31-5.png" alt="Number 31-5">
+                <br><br>
+                (b.) The distribution is slightly skewed to the right.
+                <br><br>
+                (c.) The sample size is 40 <br>
+                40 &gt; 30 <br>
+                However, the distribution is not a normal distribution <br>
+                It is a right-skewed distribution <br>
+                Hence, we shall use the <i>t</i> test.
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-6.png" alt="Number 31-6">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-7.png" alt="Number 31-7">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-8.png" alt="Number 31-8">
+                <br><br>
+                The 95% confidence interval is: 7.8555374 cm to 10.844463 cm
+                <br><br>
+                (d.) One can be 95​% confident that the true population mean reaction distance is between the two values
+                in the confidence interval.
+                <br><br>
+                $
+                (e.) \\[3ex]
+                \underline{Hypothesis} \\[3ex]
+                H_0:\;\; \mu = 10 \\[3ex]
+                H_1:\;\; \mu \ne 10 \\[3ex]
+                $
+                <img src="images/HypothesisTests/Answers/Number31-6.png" alt="Number 31-6">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-9.png" alt="Number 31-9">
+                <br><br>
+                <img src="images/HypothesisTests/Answers/Number31-10.png" alt="Number 31-10">
+                <br><br>
+                (f.) The test statistic is: <i>t</i> = &minus;0.87974707
+                <br><br>
+                (g.) The p-value is: <i>p</i>-value = 0.3844
+                <br><br>
+                (h.) Since the​ p-value is greater than the significance​ level, do not reject H<sub>0</sub> <br>
+                There is insufficient evidence to conclude that the population mean is different from 10 cm at a
+                significance level of 0.05.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (32.)
+
+
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionHT32')">Show/Hide Answer</button>
+            <div class="result" id="solutionHT32">
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT33')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT33">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT34')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT35')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT35">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT36')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT37')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT37">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT38')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT38">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT39')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT39">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT40')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-tests.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT43')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT43">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT44')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT45')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT45">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT46')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT47')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT47">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT48')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT48">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT49')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT49">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionHT50')">Show/Hide Answer</button>
+                <div class="result" id="solutionHT50">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2017&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

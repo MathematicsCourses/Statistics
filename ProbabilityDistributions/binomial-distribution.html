@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Binomial Probability Distribution</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in binomial probability distributions." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, samdom4peace, math, mathematics, 
+    descriptive statistics, probability, combinatorics, random variable, discrete random variable, continuous random variable, 
+    probability distribution, binomial distribution, poisson distribution, normal distribution, Gaussian distribution, empirical rule, 
+    68 - 95 - 99.7 percent rule, Chebyshev's theorem, uniform distribution, sampling distribution, central limit theorem, 
+    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, " />
+
+    <link href="styles/probability-distribution.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki" id="quotes">
+        <!--
+        <div class="w3-center">
+            <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+    
+        <div class="quoteDay w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages3"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+        </div>
+    </header>
+
+    <header>
+        <div class="w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages3"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+        </div>
+    -->
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples: Binomial Distribution</h1>
+
+    <div class="w3-container">
+        <!-- Image in top left corner --
+        <a href="https://descriptive-statistics.appspot.com" title="Samuel Dominic Chukwuemeka">
+            <img src="images/samuelchukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+        </a>
+        <a href="https://probability-distribution.appspot.com/#prerequisiteTopics" target="_blank">Prerequisite Topics</a> <br>
+        <a href="https://probability-distribution.appspot.com/probability-distribution-calculators.html" target="_blank">Probability Distribution Calculators</a> <br>
+    -->
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probabilityDistributions.html#BinomialDistributionTable"
+            target="_blank">Binomial Distribution Table</a> <br>
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/TI-calculators-ProbabilityDistributions.html"
+            target="_blank">Texas Instruments (TI) calculators for Probability</a>
+        <br><br>
+
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+        So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+        Please ensure you attempt <b>all ACT questions</b>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br>
+        <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save time.</b>
+        <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+
+        <br><br>
+
+        Solve all questions. <br>
+        Show all work. <br>
+        You may use Binomial Distribution Formulas or Binomial Distribution Tables or both. <br>
+        However, if you are not asked to round your answers; then it is very necessary that you do not use Binomial
+        Distribution Tables. <br>
+        In other words, if you are not asked to round your answers; use Binomial Distribution Formulas.
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Determine $P(3)$ for a binomial distribution with $n = 12$ and $p = 0.25$ <br>
+                Round your answer to three decimal places.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD1')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD1">
+                    <br>
+                    First Method: <b>Binomial Distribution Formulas</b>
+                    <br><br>
+                    $
+                    n = 12 \\[3ex]
+                    p = 0.25 \\[3ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.25 \\[3ex]
+                    q = 0.75 \\[3ex]
+                    P(x = 3) = C(12, 3) * 0.25^3 * 0.75^{12 - 3} \\[3ex]
+                    ........................................................ \\[3ex]
+                    C(12, 3) = \dfrac{12!}{(12 - 3)! * 3!} \\[5ex]
+                    = \dfrac{12!}{9! * 3!} \\[5ex]
+                    = \dfrac{12 * 11 * 10 * 9!}{9! * 3 * 2 * 1} \\[5ex]
+                    = 220 \\[3ex]
+                    ........................................................ \\[3ex]
+                    P(x = 3) = C(12, 3) * 0.25^3 * 0.75^{9} \\[3ex]
+                    = 220 * 0.015625 * 0.07508468628 \\[3ex]
+                    = 0.2581036091 \\[3ex]
+                    \approx 0.258 \\[3ex]
+                    $
+                    Second Method: <b>Binomial Distribution Tables</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number1.png" alt="Number 1">
+                    <br><br>
+                    $
+                    P(x = 3) = 0.2581 \\[3ex]
+                    P(x = 3) \approx 0.258
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) Be Good University admits students into its medical program either by merit or by affirmative
+                action
+                (also known as positive discrimination) <br>
+                Research has shown that the graduation rate for students admitted by affirmative action is 96% <br>
+                (a.) Determine the probability that at least 14 of it's 15 <u>randomly selected</u> admitted students
+                graduate from it's medical
+                school. Round to 3 decimal places <br>
+                (b.) Will this probability apply if 14 of those selected students were <u>not chosen at random</u>?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD2')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD2">
+                    <br>
+                    First Method: <b>Binomial Distribution Formulas</b>
+                    <br><br>
+                    $
+                    n = 15 \\[3ex]
+                    p = 96\% = \dfrac{96}{100} = 0.96 \\[5ex]
+                    q = 1 - 0.96 = 0.04 \\[3ex]
+                    (a.) \\[3ex]
+                    P(at\;\;least\;\;14) \\[3ex]
+                    = P(\ge 14) \\[3ex]
+                    = P(14) + P(15) \\[3ex]
+                    P(14) = C(15, 14) * 0.96^{14} * 0.04^{15 - 14} \\[3ex]
+                    P(14) = C(15, 14) * 0.96^{14} * 0.04^1 \\[3ex]
+                    P(14) = 15 * 0.5646733124 * 0.04 \\[3ex]
+                    P(14) = 0.3388039874 \\[3ex]
+                    P(15) = C(15, 15) * 0.96^{15} * 0.04^{15 - 15} \\[3ex]
+                    P(15) = 1 * 0.5420863799 * 0.04^0 \\[3ex]
+                    P(15) = 1 * 0.5420863799 * 1 \\[3ex]
+                    P(15) = 0.5420863799 \\[3ex]
+                    \implies \\[3ex]
+                    P(\ge 14) = 0.3388039874 + 0.5420863799 \\[3ex]
+                    P(\ge 14) = 0.8808903673 \\[3ex]
+                    P(\ge 14) \approx 0.881 \\[3ex]
+                    $
+                    (b.) No <br>
+                    This probability will not apply for students not selected at random <br>
+                    0.881 is the probability that 14 of the 15 randomly selected students graduated.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Assume that random guesses are made for 5 ​multiple-choice questions on a test with 5 choices for
+                each​ question, so that there are n = 5 ​trials, each with probability of success​ (correct) given by
+                <i>p</i> = 0.20. <br>
+                Find the probability of no correct answers.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD3')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD3">
+                    <br>
+                    First Method: <b>Binomial Distribution Formulas</b>
+                    <br><br>
+                    $
+                    n = 5 \\[3ex]
+                    p = 0.2 \\[3ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.2 \\[3ex]
+                    q = 0.8 \\[3ex]
+                    P(x = 0) \\[3ex]
+                    = C(5, 0) * 0.2^0 * 0.8^{5 - 0} \\[3ex]
+                    ........................................................ \\[3ex]
+                    C(5, 0) = \dfrac{5!}{(5 - 0)! * 0!} \\[5ex]
+                    = \dfrac{5!}{5! * 0!} \\[5ex]
+                    = \dfrac{5!}{5! * 1} \\[5ex]
+                    = \dfrac{5!}{5!} \\[5ex]
+                    = 1 \\[3ex]
+                    ........................................................ \\[3ex]
+                    = 1 * 1 * 0.8^5 \\[4ex]
+                    = 1 * 0.32768 \\[3ex]
+                    = 0.32768 \\[3ex]
+                    $
+                    Second Method: <b>Texas Instrument Calculator</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number3a.png" alt="Number 3a"> <br>
+                    <img src="images/Answers/BinomialDistribution/Number3b.png" alt="Number 3b">
+                    <br><br>
+                    Third Method: <b>R Programming</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number3c.png" alt="Number 3c">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) (a.) Calculate the mean and standard deviation for the number of students born on the 27th day of
+                June for classes of
+                246 students. Ignore leap years. Round to 6 decimal places as needed. <br>
+                (b.) Would 2 be an unusually high number of individuals who were born on the 27th day of June?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD4')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD4">
+                    <br>
+                    $
+                    1\;\;year = 365\;\;days \\[3ex]
+                    27th\;\;June = 1\;\;day \\[3ex]
+                    n = 146 \\[3ex]
+                    p = \dfrac{1}{365} = 0.002739726027 \\[5ex]
+                    q = 1 - 0.002739726027 = 0.997260274 \\[3ex]
+                    (a.) \\[3ex]
+                    \mu = n * p \\[3ex]
+                    \mu = 246(0.002739726027) \\[3ex]
+                    \mu = 0.6739726027 \\[3ex]
+                    \mu \approx 0.673973 \\[3ex]
+                    \sigma = \sqrt{n * p * q} \\[3ex]
+                    \sigma = \sqrt{246 * 0.002739726027 * 0.997260274} \\[3ex]
+                    \sigma = \sqrt{0.6721261025} \\[3ex]
+                    \sigma = 0.8198329723 \\[3ex]
+                    \sigma \approx 0.819833 \\[3ex]
+                    (b.) \\[3ex]
+                    Minimum\;\;usual\;\;value \\[3ex]
+                    = \mu - 2\sigma \\[3ex]
+                    = 0.6739726027 - 2(0.8198329723) \\[3ex]
+                    = 0.6739726027 - 1.639665945 \\[3ex]
+                    = -0.9656933419 \\[3ex]
+                    Maximum\;\;usual\;\;value \\[3ex]
+                    = \mu + 2\sigma \\[3ex]
+                    = 0.6739726027 + 2(0.8198329723) \\[3ex]
+                    = 0.6739726027 + 1.639665945 \\[3ex]
+                    = 2.313638548 \\[3ex]
+                    Because \\[3ex]
+                    -0.9656933419 \le 2 \le 2.313638548 \\[3ex]
+                    $
+                    2 is within the range of the usual values. <br>
+                    Hence, it is not unusual to notice 2 students who were born on the 27th day of June.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) 39.8% of consumers believe that cash will be obsolete in the next 20 years. <br>
+                Assume that 7 consumers are randomly selected. <br>
+                Find the probability that fewer than 3 of the selected consumers believe that cash will be obsolete in
+                the next 20 years.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD5')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD5">
+                    <br>
+                    1st Approach: <b>Binomial Distribution Formula</b>
+                    <br><br>
+                    $
+                    n = 7 \\[3ex]
+                    p = 39.8\% = \dfrac{39.8}{100} = 0.398 \\[5ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.398 \\[3ex]
+                    q = 0.602 \\[5ex]
+
+                    \text{P(fewer than 3)} = P(\lt 3) \\[3ex]
+                    = P(x = 0) + P(x = 1) + P(x = 2) \\[3ex]
+                    ...................................................... \\[3ex]
+                    P(x = 0) = C(7, 0) * 0.398^0 * 0.602^{7 - 0} \\[4ex]
+                    = 0.0286533522 \\[3ex]
+                    P(x = 1) = C(7, 1) * 0.398^1 * 0.602^{7 - 1} \\[4ex]
+                    = 0.1326050488 \\[3ex]
+                    P(x = 2) = C(7, 2) * 0.398^2 * 0.602^{7 - 2} \\[4ex]
+                    = 0.2630073559 \\[3ex]
+                    ...................................................... \\[3ex]
+                    = 0.0286533522 + 0.1326050488 + 0.2630073559 \\[3ex]
+                    = 0.4242657569 \\[3ex]
+                    $
+                    2nd Approach: <b>Texas Instrument Calculator</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number5a.png" alt="Number 5a"> <br>
+                    <img src="images/Answers/BinomialDistribution/Number5b.png" alt="Number 5b">
+                    <br><br>
+                    3rd Approach: <b>R Programming</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number5c.png" alt="Number 5c">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) 21% of the laptops produced by TechGuys Inc. are claimed to be red in color. <br>
+                A sample of 100 laptops are randomly selected. <br>
+                (a.) Calculate the mean and standard deviation of the number of red laptops in the sample of 100
+                laptops. Round to 1 decimal
+                place as needed. <br>
+                (b.) A random sample of 100 laptops contains 32 red laptops.
+                Is this result unusual? Is the claimed rate of 21% wrong?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD6')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD6">
+                    <br>
+                    $
+                    n = 100 \\[3ex]
+                    p = 21\% = \dfrac{21}{100} = 0.21 \\[5ex]
+                    q = 1 - 0.21 = 0.79 \\[3ex]
+                    (a.) \\[3ex]
+                    \mu = n * p \\[3ex]
+                    \mu = 100(0.21) \\[3ex]
+                    \mu = 21 \\[3ex]
+                    \sigma = \sqrt{n * p * q} \\[3ex]
+                    \sigma = \sqrt{100(0.21)(0.79)} \\[3ex]
+                    \sigma = \sqrt{16.59} \\[3ex]
+                    \sigma = 4.073082371 \\[3ex]
+                    \sigma \approx 4.1 \\[3ex]
+                    (b.) \\[3ex]
+                    Minimum\;\;usual\;\;value \\[3ex]
+                    = \mu - 2\sigma \\[3ex]
+                    = 21 - 2(4.073082371) \\[3ex]
+                    = 21 - 8.146164742 \\[3ex]
+                    = 12.85383526 \\[3ex]
+                    Maximum\;\;usual\;\;value \\[3ex]
+                    = \mu + 2\sigma \\[3ex]
+                    = 21 + 2(4.073082371) \\[3ex]
+                    = 21 + 8.146164742 \\[3ex]
+                    = 29.14616474 \\[3ex]
+                    32 \gt 29.14616474 \\[3ex]
+                    $
+                    The result is unusual <br>
+                    The claimed rate of 21% is probably wrong
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Assume that when human resource managers are randomly​ selected, 44​% say job applicants should
+                follow up within two weeks. <br>
+                If 7 human resource managers are randomly​ selected, find the probability that at least 2 of them say
+                job applicants should follow up within two weeks.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD7')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD7">
+                    <br>
+                    1st Approach: <b>Binomial Distribution Formula</b>
+                    <br><br>
+                    $
+                    n = 7 \\[3ex]
+                    p = 44\% = \dfrac{44}{100} = 0.44 \\[5ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.44 \\[3ex]
+                    q = 0.56 \\[5ex]
+
+                    \text{P(at least 2)} = P(\ge 2) \\[3ex]
+                    = 1 - P(\lt 2)...\text{Complementary Rule} \\[3ex]
+                    = 1 - [P(x = 0) + P(x = 1)] \\[3ex]
+                    ...................................................... \\[3ex]
+                    P(x = 0) = C(7, 0) * 0.44^0 * 0.56^{7 - 0} \\[4ex]
+                    = 0.0172709485 \\[3ex]
+                    P(x = 1) = C(7, 1) * 0.44^1 * 0.56^{7 - 1} \\[4ex]
+                    = 0.0949902167 \\[3ex]
+                    ...................................................... \\[3ex]
+                    = 1 - (0.0172709485 + 0.0949902167) \\[3ex]
+                    = 1 - 0.1122611652 \\[3ex]
+                    = 0.8877388348 \\[3ex]
+                    $
+                    2nd Approach: <b>Texas Instrument Calculator</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number7a.png" alt="Number 7a">
+                    <br><br>
+                    3rd Approach: <b>R Programming</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number7b.png" alt="Number 7b">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>ACT</b> In 3 fair coin tosses, what is the probability of obtaining exactly 2 tails? <br>
+                (Note: In a fair coin toss, the 2 outcomes: heads and tails, are equally likely.)
+                <br><br>
+                $
+                F.\;\; \dfrac{1}{3} \\[5ex]
+                G.\;\; \dfrac{3}{8} \\[5ex]
+                H.\;\; \dfrac{1}{2} \\[5ex]
+                J.\;\; \dfrac{2}{3} \\[5ex]
+                K.\;\; \dfrac{7}{8} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionBD8')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD8">
+                    <br>
+                    We can solve this question in at least two ways. <br>
+                    Use any approach you prefer.
+                    <br><br>
+
+                    First Method: <b>Binomial Distribution Formulas</b> <br><br>
+                    $
+                    Fair\;\;coin = 2 \;\;faces = H,\;\;T \\[3ex]
+                    P(T) = p = success = \dfrac{1}{2} \\[5ex]
+                    P(H) = q = failure = 1 - p = 1 - \dfrac{1}{2} = \dfrac{1}{2} \\[5ex]
+                    Tossed\;\;3\;\;times \rightarrow n = 3 \\[3ex]
+                    Exactly\;\;2T \implies \;\;x = 2T \\[3ex]
+                    P(exactly\;\;2T) = P(x = 2) \\[3ex]
+                    P(x = 2) = C(3, 2) * 0.5^2 * 0.5^{3 - 2} \\[3ex]
+                    P(x = 2) = C(3, 2) * 0.5^2 * 0.5^1 \\[3ex]
+                    C(3, 2) = \dfrac{3!}{(3 - 2)! * 2!} \\[5ex]
+                    = \dfrac{3 * 2!}{1! * 2!} \\[5ex]
+                    = 3 \\[3ex]
+                    \implies \\[3ex]
+                    P(x = 2) \\[3ex]
+                    = 3 * 0.25 * 0.5 \\[3ex]
+                    = 0.375 \\[3ex]
+                    = \dfrac{375}{1000} \\[5ex]
+                    = \dfrac{15}{40} \\[5ex]
+                    = \dfrac{3}{8} \\[5ex]
+                    $
+
+                    Second Approach: <b>Punnett Square</b> <br>
+                    The sets containing exactly 2 tails are indicated in <span style="color: red;">red</span> <br><br>
+                    Sample Space for Three Tosses of a Fair Coin <br>
+                    <table class="w3-center dice">
+                        <caption>Two Tosses in the Column and One Toss in the Row</caption>
+                        <tr>
+                            <th style="width: 16%;" class="w3-padding">
+                                $One\:\:Toss\:\:\rightarrow$ <br>
+                                $Two\:\:Tosses\:\:\downarrow$
+                            </th>
+                            <th class="green w3-padding">$H$</th>
+                            <th class="green w3-padding">$T$</th>
+                        </tr>
+                        <tr>
+                            <td>$HH$</td>
+                            <td class="w3-padding">$HHH$</td>
+                            <td class="w3-padding">$HHT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HT$</td>
+                            <td class="w3-padding">$HTH$</td>
+                            <td class="w3-padding">$\color{red}{HTT}$</td>
+                        </tr>
+                        <tr>
+                            <td>$TH$</td>
+                            <td class="w3-padding">$THH$</td>
+                            <td class="w3-padding">$\color{red}{THT}$</td>
+                        </tr>
+                        <tr>
+                            <td>$TT$</td>
+                            <td class="w3-padding">$\color{red}{TTH}$</td>
+                            <td class="w3-padding">$TTT$</td>
+                        </tr>
+                    </table>
+                    <br>
+                    $
+                    n(exactly\;\;2\;\;tails) = 3 \\[3ex]
+                    n(S) = 4 * 2 = 8 \\[3ex]
+                    P(exactly\;\;2\;\;tails) \\[3ex]
+                    = \dfrac{n(exactly\;\;2\;\;tails)}{n(S)} \\[5ex]
+                    = \dfrac{3}{8} \\[5ex]
+                    $
+
+                    Third Method: <b>Binomial Distribution Tables</b> <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number8.png" alt="Number 8"> <br><br>
+                    $
+                    P(exactly\;\;2T) \\[3ex]
+                    = P(x = 2) \\[3ex]
+                    = 0.3750 \\[3ex]
+                    = \dfrac{375}{1000} \\[5ex]
+                    = \dfrac{15}{40} \\[5ex]
+                    = \dfrac{3}{8}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) When purchasing bulk orders of​ batteries, a toy manufacturer uses this acceptance sampling​ plan:
+                Randomly select and test 35 batteries and determine whether each is within specifications. <br>
+                The entire shipment is accepted if at most 3 batteries do not meet specifications. <br>
+                A shipment contains 3000 ​batteries, and 2​% of them do not meet specifications. <br>
+                What is the probability that this whole shipment will be​ accepted? <br>
+                Will almost all such shipments be​ accepted, or will many be​ rejected?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD9')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD9">
+                    <br>
+                    The probability that this whole shipment will be​ accepted is the probability that at most 3
+                    batteries did not meet specifications.
+                    <br><br>
+                    1st Approach: <b>Binomial Distribution Formula</b>
+                    <br><br>
+                    $
+                    n = 35 \\[3ex]
+                    p = 2\% = \dfrac{2}{100} = 0.02 \\[5ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.02 \\[3ex]
+                    q = 0.98 \\[5ex]
+
+                    \text{P(at most 2)} = P(\le 2) \\[3ex]
+                    = P(x = 0) + P(x = 1) + P(x = 2) \\[3ex]
+                    ...................................................... \\[3ex]
+                    P(x = 0) = C(35, 0) * 0.02^0 * 0.98^{35 - 0} \\[4ex]
+                    = 0.4930746206 \\[3ex]
+                    P(x = 1) = C(35, 1) * 0.02^1 * 0.98^{35 - 1} \\[4ex]
+                    = 0.3521961576 \\[3ex]
+                    P(x = 2) = C(35, 2) * 0.02^2 * 0.98^{35 - 2} \\[4ex]
+                    = 0.1221905037 \\[3ex]
+                    ...................................................... \\[3ex]
+                    = 0.4930746206 + 0.3521961576 + 0.1221905037 \\[3ex]
+                    = 0.9674612819 \\[3ex]
+                    $
+                    2nd Approach: <b>Texas Instrument Calculator</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number9a.png" alt="Number 9a">
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number9b.png" alt="Number 9b">
+                    <br><br>
+                    3rd Approach: <b>R Programming</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number9c.png" alt="Number 9c">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD10')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD10">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) A local county has an unemployment rate of 5.8%. <br>
+                A random sample of 16 employable people are picked at random from the county and are asked if they are
+                employed. <br>
+                Find the probability that there are more than 1 in the sample are unemployed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD11')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD11">
+                    <br>
+                    1st Approach: <b>Binomial Distribution Formula</b>
+                    <br><br>
+                    $
+                    n = 16 \\[3ex]
+                    p = 5.8\% = \dfrac{5.8}{100} = 0.058 \\[5ex]
+                    q = 1 - p \\[3ex]
+                    q = 1 - 0.058 \\[3ex]
+                    q = 0.942 \\[5ex]
+
+                    \text{P(more than 1)} = P(\gt 1) \\[3ex]
+                    = 1 - P(\le 1)...\text{Complementary Rule} \\[3ex]
+                    = 1 - [P(x = 0) + P(x = 1)] \\[3ex]
+                    ...................................................... \\[3ex]
+                    P(x = 0) = C(16, 0) * 0.058^0 * 0.942^{16 - 0} \\[4ex]
+                    = 0.3844274977 \\[3ex]
+                    P(x = 1) = C(16, 1) * 0.058^1 * 0.942^{16 - 1} \\[4ex]
+                    = 0.3787141378 \\[3ex]
+                    ...................................................... \\[3ex]
+                    = 1 - (0.3844274977 + 0.3787141378) \\[3ex]
+                    = 1 - 0.7631416355 \\[3ex]
+                    = 0.2368583645 \\[3ex]
+                    $
+                    2nd Approach: <b>Texas Instrument Calculator</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number11a.png" alt="Number 11a">
+                    <br><br>
+                    3rd Approach: <b>R Programming</b>
+                    <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number11b.png" alt="Number 11b">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD12')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) <b>WASSCE-FM</b> In an examination, 60% of the candidates passed. <br>
+                If 10 candidates are selected at random, find the probability that: <br>
+                (a.) at least two of them failed <br>
+                (b.) exactly half of them passed <br>
+                (c.) at most two of them failed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD13')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD13">
+                    <br>
+                    $
+                    p = 60\% = \dfrac{60}{100} = 0.6...pass \\[5ex]
+                    q = 1 - 0.6 = 0.4...fail \\[3ex]
+                    n = 10 \\[3ex]
+                    (a.) \\[3ex]
+                    P(at\;\;least\;\;2\;\;failed) = 1 - P(less\;\;than\;\;2\;\;failed)...Complementary\;\;Events \\[3ex]
+                    $
+                    But for this particular question (a.) <br>
+                    Because we are interested in finding <i>fail</i> <br>
+                    In the formula: <br>
+                    $p$ will be $0.4$ while $q$ will be $0.6$ <br><br>
+                    $
+                    P(x \ge 2) = 1 - (x \lt 2) \\[3ex]
+                    P(x \lt 2) = P(x = 0) + P(x = 1) \\[3ex]
+                    P(x = 0) = C(10, 0) * 0.4^{0} * 0.6^{10 - 0} \\[3ex]
+                    P(x = 0) = 1 * 1 * 0.6^{10} \\[3ex]
+                    P(x = 0) = 0.0060466176 \\[3ex]
+                    P(x = 1) = C(10, 1) * 0.4^1 * 0.6^{10 - 1} \\[3ex]
+                    P(x = 1) = 10 * 0.4 * 0.6^9 \\[3ex]
+                    P(x = 1) = 4 * 0.010077696 \\[3ex]
+                    P(x = 1) = 0.040310784 \\[3ex]
+                    \implies \\[3ex]
+                    P(x \lt 2) = 0.0060466176 + 0.040310784 \\[3ex]
+                    P(x \lt 2) = 0.0463574016 \\[3ex]
+                    \implies \\[3ex]
+                    P(at\;\;least\;\;2\;\;failed) = 1 - 0.0463574016 \\[3ex]
+                    P(at\;\;least\;\;2\;\;failed) = 0.9536425984 \\[3ex]
+                    (b.) \\[3ex]
+                    P(exactly\;\;half\;\;of\;\;them\;\;passed) = P(x = 5) \\[3ex]
+                    $
+                    For this particular question (b.) <br>
+                    Because we are interested in finding <i>pass</i> <br>
+                    In the formula: <br>
+                    $p$ will be $0.6$ while $q$ will be $0.4$ <br><br>
+                    $
+                    P(x = 5) = C(10, 5) * 0.6^5 * 0.4^{10 - 5} \\[3ex]
+                    P(x = 5) = 252 * 0.07776 * 0.4^5 \\[3ex]
+                    P(x = 5) = 19.59552 * 0.01024 \\[3ex]
+                    P(x = 5) = 0.2006581248 \\[3ex]
+                    (c.) \\[3ex]
+                    P(at\;\;most\;\;2\;\;failed) = P(x = 0) + P(x = 1) + P(x = 2) \\[3ex]
+                    OR \\[3ex]
+                    P(at\;\;most\;\;2\;\;failed) = 1 - P(more\;\;than\;\;2\;\;failed)...Complementary\;\;Events \\[3ex]
+                    $
+                    For this particular question (c.) <br>
+                    Did you notice we can solve it in more than one way? <br>
+                    Because we are interested in finding <i>fail</i> <br>
+                    In the formula: <br>
+                    $p$ will be $0.4$ while $q$ will be $0.6$ <br>
+                    We have already found $P(x = 0)$ and $P(x = 1)$ in (a.) <br>
+                    So, let us go ahead and find $P(x = 2)$
+                    <br><br>
+                    $
+                    P(x = 2) = C(10, 2) * 0.4^2 * 0.6^{10 - 2} \\[3ex]
+                    P(x = 2) = 45 * 0.16 * 0.6^8 \\[3ex]
+                    P(x = 2) = 7.2 * 0.01679616 \\[3ex]
+                    P(x = 2) = 0.120932352 \\[3ex]
+                    \implies \\[3ex]
+                    P(at\;\;most\;\;2\;\;failed) = P(x = 0) + P(x = 1) + P(x = 2) \\[3ex]
+                    = 0.0060466176 + 0.040310784 + 0.120932352 \\[3ex]
+                    = 0.1672897536 \\[3ex]
+                    OR \\[3ex]
+                    P(at\;\;most\;\;2\;\;failed) = 1 - P(more\;\;than\;\;2\;\;failed) \\[3ex]
+                    But:\;\;P(at\;\;least\;\;2\;\;failed) = P(x = 2) + P(more\;\;than\;\;2\;\;failed) \\[3ex]
+                    P(x = 2) + P(more\;\;than\;\;2\;\;failed) = P(at\;\;least\;\;2\;\;failed) \\[3ex]
+                    P(more\;\;than\;\;2\;\;failed) = P(at\;\;least\;\;2\;\;failed) - P(x = 2) \\[3ex]
+                    P(more\;\;than\;\;2\;\;failed) = 0.9536425984 - 0.120932352 \\[3ex]
+                    P(more\;\;than\;\;2\;\;failed) = 0.8327102464 \\[3ex]
+                    \implies \\[3ex]
+                    P(at\;\;most\;\;2\;\;failed) = 1 - 0.8327102464 \\[3ex]
+                    P(at\;\;most\;\;2\;\;failed) = 0.1672897536
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD14')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD14">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) <b>WASSCE-FM</b> A fair coin is tossed 6 times. <br>
+                Calculate the probability of obtaining at most three heads.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD15')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD15">
+                    <br>
+                    <i>
+                        <b>Student:</b> Mr. C, we learned this under <a
+                            href="https://statistical-science.appspot.com/Probability/probability.html#coins"
+                            target="_blank">Probability</a> <br>
+                        We did some examples. <br>
+                        <b>Teacher:</b> That is correct. <br>
+                        But remember the examples we did was for four tosses of a fair coin <br>
+                        <b>Student:</b> Yes, we used the Punnett Square <br>
+                        We can also use Tree Diagrams <br>
+                        <b>Teacher:</b> Okay, but using Punnett Square or Tree Diagram to solve 6 tosses of a fair coin
+                        will take more time <br>
+                        <b>Student:</b> But, it can still be done... <br>
+                        <b>Teacher:</b> Yes <br>
+                        <b>Student:</b> Can we use it to solve this question? <br>
+                        I understand the Punnett Square better <br>
+                        <b>Teacher:</b> We can... <br>
+                        But this question satisfies the requirements for a Binomial distribution <br>
+                        Let us solve it as a Binomial distribution first <br>
+                        Then, we can solve it using a Punnett Square
+                    </i>
+                    <br><br>
+
+                    First Method: <b>Binomial Distribution Formulas</b>
+                    <br><br>
+                    $
+                    Fair\;\;coin = 2 \;\;faces = H,\;\;T \\[3ex]
+                    P(H) = p = success = \dfrac{1}{2} \\[5ex]
+                    P(T) = q = failure = 1 - p = 1 - \dfrac{1}{2} = \dfrac{1}{2} \\[5ex]
+                    Tossed\;\;6\;\;times \rightarrow n = 6 \\[3ex]
+                    At\;\;most\;\;3H \implies x = 0H,\;\;x = 1H,\;\;x = 2H,\;\;x = 3H \\[3ex]
+                    P(at\;\;most\;\;3H) = P(x = 0) + P(x = 1) + P(x = 2) + P(x = 3) \\[3ex]
+                    P(x = 0) = C(6, 0) * 0.5^0 * 0.5^{6 - 0} \\[3ex]
+                    C(6, 0) = \dfrac{6!}{(6 - 0)! * 0!} \\[5ex]
+                    = \dfrac{6!}{6! * 1} \\[5ex]
+                    = 1 \\[3ex]
+                    \implies \\[3ex]
+                    P(x = 0) = 1 * 1 * 0.5^6 \\[3ex]
+                    P(x = 0) = 0.015625 \\[3ex]
+                    P(x = 1) = C(6, 1) * 0.5^1 * 0.5^{6 - 1} \\[3ex]
+                    P(x = 1) = C(6, 1) * 0.5^1 * 0.5^5 \\[3ex]
+                    C(6, 1) = \dfrac{6!}{(6 - 1)! * 1!} \\[5ex]
+                    = \dfrac{6 * 5!}{5! * 1} \\[5ex]
+                    = 6 \\[3ex]
+                    \implies \\[3ex]
+                    P(x = 1) = 6 * 0.5 * 0.03125 \\[3ex]
+                    P(x = 1) = 0.09375 \\[3ex]
+                    P(x = 2) = C(6, 2) * 0.5^2 * 0.5^{6 - 2} \\[3ex]
+                    P(x = 2) = C(6, 2) * 0.5^2 * 0.5^4 \\[3ex]
+                    C(6, 2) = \dfrac{6!}{(6 - 2)! * 2!} \\[5ex]
+                    = \dfrac{6 * 5 * 4!}{4! * 2 * 1} \\[5ex]
+                    = 3(5) \\[3ex]
+                    = 15 \\[3ex]
+                    \implies \\[3ex]
+                    P(x = 2) = 15 * 0.25 * 0.0625 \\[3ex]
+                    P(x = 2) = 0.234375 \\[3ex]
+                    P(x = 3) = C(6, 3) * 0.5^3 * 0.5^{6 - 3} \\[3ex]
+                    P(x = 3) = C(6, 3) * 0.5^3 * 0.5^3 \\[3ex]
+                    C(6, 3) = \dfrac{6!}{(6 - 3)! * 3!} \\[5ex]
+                    = \dfrac{6 * 5 * 4 * 3!}{3! * 3 * 2 * 1} \\[5ex]
+                    = 5(4) \\[3ex]
+                    = 20 \\[3ex]
+                    \implies \\[3ex]
+                    P(x = 3) = 20 * 0.125 * 0.125 \\[3ex]
+                    P(x = 3) = 0.3125 \\[3ex]
+                    \therefore P(at\;\;most\;\;3H) \\[3ex]
+                    = P(x = 0) + P(x = 1) + P(x = 2) + P(x = 3) \\[3ex]
+                    = 0.015625 + 0.09375 + 0.234375 + 0.3125 \\[3ex]
+                    = 0.65625 \\[3ex]
+                    $
+                    Second Method: <b>Punnett Square</b> <br>
+                    6 tosses of a fair coin <br>
+                    6 tosses = 4 tosses + 2 tosses <br>
+                    At most 3 heads = 3 heads or less <br>
+                    This implies: 3 heads, 2 heads, 1 head, and 0 head <br>
+                    These will be in dark blue color <br>
+                    Sample Space for the Six Tosses of 1 Fair Coin <br><br>
+                    <table class="w3-center coin">
+                        <caption>4 tosses in the Column and 2 tosses in the Row</caption>
+                        <tr>
+                            <th width="16%">
+                                $2\:\:Tosses\:\:\rightarrow$ <br>
+                                $4\:\:Tosses\:\:\downarrow$
+                            </th>
+                            <th class="green">$HH$</th>
+                            <th class="green">$HT$</th>
+                            <th class="green">$TH$</th>
+                            <th class="green">$TT$</th>
+                        </tr>
+                        <tr>
+                            <td>$HHHH$</td>
+                            <td class="w3-padding">$HHHHHH$</td>
+                            <td class="w3-padding">$HHHHHT$</td>
+                            <td class="w3-padding">$HHHHTH$</td>
+                            <td class="w3-padding">$HHHHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HHHT$</td>
+                            <td class="w3-padding">$HHHTHH$</td>
+                            <td class="w3-padding">$HHHTHT$</td>
+                            <td class="w3-padding">$HHHTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HHHTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HHTH$</td>
+                            <td class="w3-padding">$HHTHHH$</td>
+                            <td class="w3-padding">$HHTHHT$</td>
+                            <td class="w3-padding">$HHTHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HHTHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HHTT$</td>
+                            <td class="w3-padding">$HHTTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HHTTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HHTTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HHTTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HTHH$</td>
+                            <td class="w3-padding">$HTHHHH$</td>
+                            <td class="w3-padding">$HTHHHT$</td>
+                            <td class="w3-padding">$HTHHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTHHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HTHT$</td>
+                            <td class="w3-padding">$HTHTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTHTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTHTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTHTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HTTH$</td>
+                            <td class="w3-padding">$HTTHHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTHHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$HTTT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$HTTTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$THHH$</td>
+                            <td class="w3-padding">$THHHHH$</td>
+                            <td class="w3-padding">$THHHHT$</td>
+                            <td class="w3-padding">$THHHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THHHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$THHT$</td>
+                            <td class="w3-padding">$THHTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THHTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THHTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THHTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$THTH$</td>
+                            <td class="w3-padding">$THTHHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THTHHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THTHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THTHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$THTT$</td>
+                            <td class="w3-padding">$THTTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THTTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THTTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$THTTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$TTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHHHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHHHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$TTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTHTTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$TTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTHHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTHHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTHTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTHTT$</td>
+                        </tr>
+                        <tr>
+                            <td>$TTTT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTTHH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTTHT$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTTTH$</td>
+                            <td class="w3-padding" style="color: darkblue;">$TTTTTT$</td>
+                        </tr>
+                    </table>
+                    <br>
+                    $
+                    n(S) = 16 * 4 = 64 \\[3ex]
+                    Let\;\;E = At\;\;most\;\;3H = dark\;blue\;\;color \\[3ex]
+                    n(E) = 42 \\[3ex]
+                    P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+                    = \dfrac{42}{64} \\[5ex]
+                    = 0.65625 \\[3ex]
+                    $
+
+                    Third Method: <b>Binomial Distribution Tables</b> <br><br>
+                    <img src="images/Answers/BinomialDistribution/Number15.png" alt="Number 15"> <br><br>
+                    $
+                    P(at\;\;most\;\;3H) \\[3ex]
+                    = P(x = 0) + P(x = 1) + P(x = 2) + P(x = 3) \\[3ex]
+                    P(x = 0) = 0.0156 \\[3ex]
+                    P(x = 1) = 0.0938 \\[3ex]
+                    P(x = 2) = 0.2344 \\[3ex]
+                    P(x = 3) = 0.3125 \\[3ex]
+                    \implies \\[3ex]
+                    P(at\;\;most\;\;3H) \\[3ex]
+                    = 0.0156 + 0.0938 + 0.2344 + 0.3125 \\[3ex]
+                    = 0.6563
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD16')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD17')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD17">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD18')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD19')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD19">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionBD20')">Show/Hide Answer</button>
+                <div class="result" id="solutionBD20">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE CONTENT -->
+
+
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <!--
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog" /></a>
+        -->
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2022&nbsp;<a href="https://www.samdomforpeace.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2022 SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages3.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

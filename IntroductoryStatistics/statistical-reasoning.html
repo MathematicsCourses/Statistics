@@ -1,0 +1,3006 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Introductory Statistics</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our GOD and BLESSED SAVIOUR, JESUS CHRIST. We are experts in statistical reasoning.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
+              statistics, data, data collection, data organization, data presentation, data analysis, data interpretation,
+              descriptive statistics, inferential statistics, statistical science, sample, population, individual, decision, 
+              conclusion, study, variables, quantitative variable, qualitative variable, discrete variable, continuous variable,
+              statistic, parameter, research, research objective, inference, response variable, explanatory variable,
+              predictor variable, level of measurement of a variable, nominal level, ordinal level, interval level, ratio level, 
+              fact, survey, experiment, historical record, Likert scales, statistical process, correlation, regression, 
+              correlation coefficient, product moment correlation coefficient, Pearson correlation coefficient, 
+              critical values of correlation coefficient, forecasting, forecasting models, forecasting techniques, period,
+              value, forecast, error, mean absolute deviation, mean square error, averages, simple averages, 
+              moving averages, weighted moving averages, index numbers, time-series forecasting, smoothing techniques, 
+              naive forecasting models, averaging models, exponential smoothing, trend analysis, seasonal effects, 
+              autocorrelation, autoregression, variables, price index, critical value, confidence level, confidence interval, 
+              significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, 
+              type II error, unstacked table, coding, wide data, narrow data, unstacked table, stacked table, long data, 
+              null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, 
+              critical region, hypothesis testing, population proportion, population mean, one sample proportion, 
+              two sample proportion, goodness-of-fit test, chi-square, normal distribution table, student t distribution table,
+              F statistic, test statistic, sample proportion, population proportion, level of significance, 
+              confidence levels, sample mean, population mean, sample variance, population variance, 
+              sample standard deviation, population standard deviation, critical values, student t distribution, 
+              normal distribution, chi -square distribution, sampling, normal distribution, sampling distribution, 
+              probability distribution, sample mean, sample proportion, sample variance, sample standard deviation, 
+              population mean, population proportion, population variance, population standard deviation, estimators, 
+              bias, standard error, probability, central limit theorem, confounding, lurking variable, sampling frame,
+              frequency distribution table, frequency table, class, classes, frequency, data set, class width, tally,
+              class size, range, number of classes, maximum value, minimum value, class interval, class limit,
+              class midpoint, class mark, class boundary, relative frequency, cumulative frequency, data cycle,
+              two-way table">
+
+    <link href="styles/statistics.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-bisque w3-padding w3-card">
+                <a href="https://statistical-science.appspot.com/" class="w3-bar-item w3-button"><b>Statistics</b></a>
+                <!-- Float links to the right. Hide them on small screens -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#topics" class="w3-bar-item w3-button">Introductory Statistics</a>
+                    <a href="https://statistical-science.appspot.com/IntroductoryStatistics/solved-examples.html" target="_blank" class="w3-bar-item w3-button">Solved Examples</a>
+                    <a href="#references" class="w3-bar-item w3-button">References</a>
+                </div>
+                <div id="google_translate_element"></div>
+                <script>
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6'}, 'google_translate_element');
+                    }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+
+            </script>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <!--
+        <header class="w3-padding-70 white" id="quotes"> 
+            <p class="w3-center">
+                <button class="solutions" onclick="solutions('Quotes')">Quotes of the Day</button>
+            </p>
+            <div class="result w3-content" id="Quotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages1"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        </header>
+    -->
+        <!-- End Header -->
+                
+        <!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+        <hr>                
+            <!-- Welcome -->
+            <div class="w3-container w3-padding-32" id="welcome">
+                <h1>Welcome to Statistics</h1>
+                <p>
+                    
+                    <a href="https://statistical-reasoning.appspot.com/" target="_blank">
+                        <img src="images/samuelchukwuemeka.jpg" alt="Samdom For Peace" class="images" title="Samuel Chukwuemeka aka Samdom For Peace">
+                    </a>
+                    <span id="greetings"></span> <br>
+                    I greet you this day, <script>document.write(Date()+".");</script> <br>  
+                    <u>First:</u> read the notes. <br>
+                    <u>Second:</u> view the videos. <br>
+                    <u>Third:</u> solve the questions/solved examples. <br>
+                    <u>Fourth:</u> check your solutions with my <b>thoroughly-explained</b> solutions. <br>
+                    <u>Fifth:</u> check your answers with the calculators as applicable. <br>
+                    Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may contact me. <br>
+                    If you are my student, please do not contact me here. Contact me via the school's system. <br>
+                    Thank you for visiting.
+                </p>
+                <p><strong>Samuel Dominic Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span></p>
+            </div>
+
+            <div class="w3-row-padding w3-padding-120" id="topics">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#introductoryStatistics';">Introduction</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#dataCollection';">Data Collection</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#dataOrganization';">Data Organization</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="location.href='#dataPresentation';">Data Presentation</button>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://descriptive-statistics.appspot.com');">Descriptive Statistics</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://correlationandregression.appspot.com');">Correlation/Regression</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://www.chukwuemekasamuel.com/Probability/probability.html');">Probability</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://www.chukwuemekasamuel.com/Combinatorics/combinatorics.html');">Combinatorics</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://probability-distribution.appspot.com');">Probability Distribution</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://samplingdistribution.appspot.com');">Sampling Distribution</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://inferential-statistics.appspot.com');">Inferential Statistics</button>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <button class="topics" onclick="window.open('https://hypothesis-testing.appspot.com');">Hypothesis Testing</button>
+                    </div>
+                </div>
+            </div>
+        -->
+                        
+            <!-- Introductory Statistics -->
+            <!-- Objectives -->
+            <div class="w3-container w3-padding-32" id="introductoryStatistics">
+                <h2 class="w3-padding-16">Introductory Statistics</h2>
+                <hr>
+                <h3>Objectives</h3>
+                <p>
+                    Students will: <br>
+                    (1.) Discuss statistics. <br>
+                    (2.) Discuss the basic terms used in statistics. <br>
+                    (3.) Discuss the reasons for studying statistics. <br>
+                    (4.) Define data. <br>
+                    (5.) Identify the population, sample, and individual in scenarios. <br>
+                    (6.) Identify the statistic and/or parameter in scenarios. <br>
+                    (7.) Discuss the statistical process. <br>
+                    (8.) Classify variables as qualitative or quantitative. <br>
+                    (9.) Classify quantitative variables as discrete or continuous. <br>
+                    (10.) Classify variables based on the level of measurement of the variable.
+                </p>
+                <br>
+                <h3>Definition</h3>
+                <p>
+                    <b>Statistics</b> is the science that deals with the: <br>
+                    Collection <br>
+                    Organization <br>
+                    Presentation <br>
+                    Analysis and <br>
+                    Interpretation of data so as to make the right decision and the right conclusion.
+                
+                    <br><br>
+
+                    The main reason for studying statistics is to make the right decision and the right conclusion. <br>
+                    The goal of learning statistics is to distinguish between statistical conclusions that are likely
+                    to be valid and those that are seriously flawed. 
+                
+                    <br><br>
+                    <i>
+                        Teacher: Would you not like to make the right decision in anything you want to do? <br>
+                        What are some of those things? &#128522;&#128522;&#128522; Note students responses. <br>
+                        Would you want to be able to differentiate between results that are valid and results that are flawed? <br>
+                        Would you want to be able to prevent any sources of bias when making important decisions? <br>
+                        <b>Welcome to Statistics!</b>
+                    </i> 
+                    <br><br>
+                    
+                    There are basically, two types of statistics: <br>
+                    <b>Descriptive Statistics</b> and <br>
+                    <b>Inferential Statistics</b> <br><br>
+                    <b>Descriptive Statistics</b> is the science that deals with the collection, organization, and presentation of data. <br>
+                    <b>Inferential Statistics</b> is the science that uses methods that takes the results obtained from a
+                    sample, <u>infers</u> it on the population, and measures the reliability of the results.
+                </p>
+                <br>
+                <h3>Why do we learn Statistics?</h3>
+                <p>
+                    (1.) The media uses statistics to predict election polls such as the Presidential election and nominate
+                    people for awards among others. <br><br>
+                    <u>Example 1:</u> <a href="https://news.gallup.com/poll/150743/obama-romney.aspx" target="_blank">President Barack Obama vs Governor Mitt Romney 2012 Presidential Poll</a> - Gallup Polls <br><br>
+                    <u>Example 2:</u> Who do Americans blame for the Saturday, December 22, 2018 partial government shutdown? <br>
+                    <a href="https://www.yahoo.com/news/more-americans-blame-trump-government-shutdown-reuters-ipsos-194706266--business.html" target="_blank">More Americans blame President Trump for government shutdown</a> - Reuters/Ipsos Polls <br><br>
+                    <i>Discuss some statistics in those links.</i> <br>
+                    <i>For Example 2, read the second to the last paragraph.</i> <br>
+                    <i>Discuss more real-world examples if time is available.</i> <br>
+                    <i>Ask students to research more "valid" sites.</i> <br>
+                    <i>Hmmmm...how do you know if a website is valid? How do you know if a website is not biased?</i>
+                </p>
+                <p>
+                    (2.) School administrators use statistics to know the performance of the schools in their district, and
+                    make decisions as necessary. <br><br>
+                    <u>Example 3:</u> <a href="https://www.nationsreportcard.gov/" target="_blank">The Nation's Report Card</a> - The National Assessment of Educational Progress (NAEP) <br><br>
+                    <i>Discuss how NAEP obtain their data (data collection) to rate schools in each state.</i> <br>
+                    <i>Discuss some statistics based on their results.</i>
+                </p>
+                <p>
+                    (3.) Health professionals use statistics to know how different people react to different medicines.
+                </p>
+                <p>
+                    (4.) Teachers use statistics to know how to meet the learning needs of their students.
+                </p>
+                <p>
+                    (5.) People use statistics to make informed or decisions on who to marry (typical in Africa and India),
+                   what professor's class to take (typical in the United States where "unknown people" insult their teachers
+                   and professors), what car to buy, and what school to attend among others.
+                </p>
+                
+                <br><br>
+                
+                <h3>Data</h3>
+                <p>
+                    <b>Data</b> is the list of observed values for a variable. <br>
+                    Data is the fact used to make a conclusion or decision. <br>
+                    It is also referred to as <i>Information.</i> <br>
+                    It is collected from a survey, an experiment, and a historical record among others. <br>
+                    It can be numeric (numbers) such as age, weight, etc. It is more than just numbers, because it has context. <br>
+                    It can also be non-numeric such as color, gender, etc. <br>
+                    The process of posing a question, collecting data, analyzing data, and interpreting the data is known as a 
+                    <b>Data Cycle.</b> <br>
+                    Data vary. It changes within an individual. It also changes among individuals. <br>
+                    Understanding the variablity of data is very important in statistics. <br>
+                    Statistical studies rely on two major concepts: Data and Variation. <br>
+                    <u>Collecting data</u> about something involves a <u>study</u> of that thing. <br>
+                    This <u>study</u> could be <u>measured</u> or <u>observed.</u> <br>
+                    That leads us to...
+                </p>
+
+                <br>
+                <h3>Population, Sample, and Individual</h3>
+                <p>
+                    <b>Population</b> is the entire group of individuals or thing that is being studied. <br>
+                    It contains all subjects of interest. <br>
+                    <u>Example:</u> All student matadors (Arizona Western College students).
+                
+                    <br><br>
+
+                    <b>Sample</b> is a proper subset (part) of the population being studied. <br>
+                    It contains some members of the population. <br>
+                    It contains some of the subjects of interest. <br>
+                    <u>Example:</u> AWC students in South Yuma campus. <br><br>
+                    <i>Bring it to Algebra: what is the difference between a subset and a proper subset?</i>
+                
+                    <br><br>
+
+                    <b>Individual</b> is a member of the population being studied. <br>
+                    It is a subject of interest. <br>
+                    <u>Example:</u> An AWC student in San Luis campus.
+                
+                    <br><br>
+
+                    <b>Exercise 1</b> <br>
+                    For each of these scenarios, identify the population, sample, and individual.
+                
+                    <br><br>
+
+                    (1.) A 2012 survey of 100 million Nigerians in Nigeria found that they would prefer the 
+                    South to secede from the North.
+                </p>
+                <button class="solutions" onclick="solutions('solution1')">Show/Hide Answer</button>
+                <div class="result" id="solution1">
+                    <br>
+                    <u>Population:</u> All Nigerians in Nigeria <br>
+                    <u>Sample:</u> 100 million Nigerians in Nigeria <br>
+                    <u>Individual:</u> A Nigerian in Nigeria
+                </div>
+                <br>
+                <p>
+                    (2.) 300 ladies aged 19 to 35 who live in the United States were contacted in a poll. <br>
+                    The poll asked whether they use abstinence as a form of birth control. <br>
+                    <i>Hmmmm...what do you think the results would be?</i>
+                </p>
+                <button class="solutions" onclick="solutions('solution2')">Show/Hide Answer</button>
+                <div class="result" id="solution2">
+                    <br>
+                    <u>Population:</u> All ladies aged 19 to 35 who live in the United States <br>
+                    <u>Sample:</u> 300 ladies aged 19 to 35 who live in the United States <br>
+                    <u>Individual:</u> A lady aged 19 to 35 who lives in the United States
+                </div>
+                <br>
+                <p>
+                    (3.) Naboth randomly sampled 125 plants in his farm on June 30 and weighed the chlorophyll in
+                    each plant.
+                </p>
+                <button class="solutions" onclick="solutions('solution3')">Show/Hide Answer</button>
+                <div class="result" id="solution3">
+                    <br>
+                    <u>Population:</u> All plants in his farm on June 30 <br>
+                    <u>Sample:</u> 125 plants in his farm on June 30 <br>
+                    <u>Individual:</u> A plant in his farm on June 30 <br>
+                </div>
+                <br>
+                <h3>From Question 1 in Exercise 1</h3>
+                <p>
+                    Assuming 95 million Nigerians out of 100 million Nigerians said they were ready to secede immediately. <br>
+                    This means that 95\% of the 100 million Nigerians that were surveyed are ready for the secession immediately. <br>
+                    This describes the results of the sample without making any conclusions about the population. (Descriptive Statistics). <br>
+                    Note the population here is the entire Nigerian population. <br>
+                    This leads us to...
+                </p>
+                
+                            
+                <h3>Statistic and Parameter</h3>
+                <p>
+                    <b>Statistic</b> is a numerical summary of a sample. <br>
+                    A <b>statistic</b> is often referred to as an <b>estimator</b>. 
+                    <br><br>
+                    <i>
+                        Please note: It is "Statistic", not "Statistics". <br>
+                        No, Statistic is not the singular form of Statistics! &#128522;&#128522;&#128522; 
+                    </i> 
+                    <br><br>
+                    In our example, the 95% is the statistic. <br>
+                    Suppose we now take this 95% and extend it to the entire Nigerian population. (Inferential Statistics). <br>
+                    Assume we now say that 95% of all Nigerians in Nigeria said they were ready to secede immediately, then the <br>
+                    95% becomes the parameter. 
+                    <br><br>
+                    <b>Parameter</b> is a numerical summary of a population. 
+                    <br><br>
+                    <i>
+                        Did you notice how we went from Descriptive Statistics to Inferential Statistics? <br>
+                        Did you notice how we went from Sample to Population? <br>
+                        Did you notice how we went from Statistic to Parameter? <br>
+                        Is it making sense?
+                    </i>
+                    <br><br>
+
+                    Because a statistic is usually known while a parameter is usually unknown, a statistic is a measurable estimator of an often unknown population parameter. <br>
+                    A statistic is represented by English letters while a parameter is represented by Greek letters. <br>
+                    For example: <br>
+                    (a.) Sample mean (statistic) is represented by $\bar{x}$ <br>
+                    Population mean (parameter) is represented by &mu; <br><br>
+                    (b.) Sample standard deviation (statistic) is represented by <i>s</i> <br>
+                    Population standard deviation (parameter) is represented by &sigma; <br><br>
+                    (b.) Sample variance (statistic) is represented by <i>s</i>² <br>
+                    Population variance (parameter) is represented by &sigma;² <br><br>
+                    In rare cases, the parameters may be represented by English letters. <br>
+                    (d.) Sample proportion (statistic) is represented by $\hat{p}$ <br>
+                    Population proportion (parameter) is represented by <i>p</i>
+                    <br><br>
+                    <b><u>Exercise 2</u></b> <br>
+                    For each of these scenarios, identify whether the underlined is a statistic or parameter.
+                
+                    <br><br>
+
+                    (4.) A sample of London residents were surveyed and it was found that <u>85%</u> had a 
+                    bachelors degree or higher.
+                </p>
+                <button class="solutions" onclick="solutions('solution4')">Show/Hide Answer</button>
+                <div class="result" id="solution4">
+                    <br>
+                    85% is a statistic because it is the numerical summary of the <u>sample</u> of London residents.
+                </div>
+                <br>
+                <p>
+                    (5.) In a study of all 16000 students of Divine Mercy Academy, it was found that <u>99%</u> of them speak in tongues.
+                </p>
+                <button class="solutions" onclick="solutions('solution5')">Show/Hide Answer</button>
+                <div class="result" id="solution5">
+                    <br>
+                    99% is a parameter because it is the numerical summary of the <u>population</u>, $16000$ students of Divine Mercy Academy. <br>
+                </div>
+                <br>
+                <p>
+                    (6.) By 2014, around <u>38%</u> of all mobile phone users were smartphone users. <br>
+                    By 2018, this number is expected to reach over <u>50%</u>. <br>
+                    (<a href="https://www.statista.com/statistics/274774/forecast-of-mobile-phone-users-worldwide/" target="_blank">Number of mobile phone users worldwide from 2015 to 2020 (in billions)</a> - Statista - The Statistics Portal)
+                </p>
+                <button class="solutions" onclick="solutions('solution6')">Show/Hide Answer</button>
+                <div class="result" id="solution6">
+                    <br>
+                    38% is a parameter because it is the numerical summary of <u>all (population)</u> of mobile phone users. <br>
+                    50% is a parameter because it is the numerical summary of <u>all (population)</u> of mobile phone users.
+                </div>
+                <br>
+                <p>
+                    (7.) <u>26</u> of the <u>50</u> states in the United States voted for Barack Obama in the
+                    2012 Presidential Elections. <br>
+                    (<a href="https://www.nbcnews.com/politics/2012-election/all/president/" target="_blank">Presidential Election Results</a> - NBC News)
+                </p>
+                <button class="solutions" onclick="solutions('solution7')">Show/Hide Answer</button>
+                <div class="result" id="solution7">
+                    <br>
+                    26 is a statistic because it is the numerical summary of a <u>sample</u> of the states in the United States. <br>
+                    50 is a parameter because it is the numerical summary of the <u>population</u> of the states in the United States.
+                </div>
+                <br>
+                <p>
+                    (8.) A homeowner in the City of <b><i>Truth or Consequences, New Mexico</i></b> measured the voltage
+                    supplied to his home on 6 days of a given week, and found that the average value was <u>120</u> volts.
+                </p>
+                <button class="solutions" onclick="solutions('solution8')">Show/Hide Answer</button>
+                <div class="result" id="solution8">
+                    <br>
+                    120 is a statistic because it is the numerical summary of a <u>sample</u>, 6 days of a given week.
+                </div>
+                <br>
+                <p>
+                    (9.) The Federal Republic of Nigeria has 36 states. <br>
+                    Assume the areas of 3 of the Southeastern states are added and the sum is divided by 3,
+                    the result is <u>5301.70566</u> square kilometers.
+                </p>
+                <button class="solutions" onclick="solutions('solution9')">Show/Hide Answer</button>
+                <div class="result" id="solution9">
+                    <br>
+                    <u>5301.70566</u> is a statistic because it is the numerical summary of a <u>sample</u>, 
+                    3 states of the 36 states of Nigeria.
+                </div>
+                <br>
+                <p>
+                    (10.) Median weekly earnings of full-time workers were <span>$</span><u>887</u>  in the third quarter of 2018. <br>
+                    Women had median weekly earnings of 796, or 81.8 percent of the 973 median for men. <br>
+                    (<a href="https://www.bls.gov/news.release/pdf/wkyeng.pdf" target="_blank">Usual Weekly Earnings of Wage and Salary Workers Third Quarter 2018 </a> - Bureau of Labor Statistics)
+                </p>
+                <button class="solutions" onclick="solutions('solution10')">Show/Hide Answer</button>
+                <div class="result" id="solution10">
+                    <br>
+                    887 is a parameter because it is the numerical summary of the <u>population</u> of the  nation's 117.2 million full-time wage and salary workers.
+                </div>
+                <br>
+                <p>
+                    (11.) Of the 100 United States Senators, <u>77</u> of them voted for the Iraq war. <br>
+                    (<a href="http://www.washingtonpost.com/wp-srv/onpolitics/transcripts/senaterollcall_iraq101002.htm" target="_blank">Senate Roll Call: Iraq Resolution</a> - The Washington Post)
+                </p>
+                <button class="solutions" onclick="solutions('solution11')">Show/Hide Answer</button>
+                <div class="result" id="solution11">
+                    <br>
+                    77 is a parameter because it is the numerical summary of the <u>population</u> of the  nation's 100 senators.
+                </div>
+                <br>
+                <p>
+                    (12.) A study from Harvard University researchers found that of 93,600 women aged between
+                    25 and 42, three or more servings of berries per week may slash the risk of a heart attack by 
+                    <u>33%</u>.
+                    (<a href="https://www.hsph.harvard.edu/news/hsph-in-the-news/berries-may-lower-womens-heart-attack-risk/" target="_blank">Berries may lower women’s heart attack risk</a> - Harvard School of Public Health published in the January 14, 2013 issue of the American Heart Association’s (AHA) journal Circulation)
+                </p>
+                <button class="solutions" onclick="solutions('solution12')">Show/Hide Answer</button>
+                <div class="result" id="solution12">
+                    <br>
+                    33% is a statistic because it is the numerical summary of the <u>sample</u> of 93,600 women aged between 25 and 42.
+                </div>               
+                                
+                <br><br>
+                                
+                <h3>Statistical Process</h3>
+                <p>
+                     <u>Statistics is a science</u> because its process follows the scientific method. <br>
+                     The basic steps of a statistical process is:
+                
+                     <br><br>
+
+                     (1.) <b>Identify the research objective</b> <br>
+                     What do you want to find out about? <br>
+                     What are the necessary questions to be asked? <br>
+                     What is the population of the study?
+                
+                     <br><br>
+
+                     (2.) <b>Collect the data needed to answer the questions</b> <br>
+                     Use appropriate data collection techniques. (Data Collection) <br>
+                     Gaining access to an entire population is usually difficult. <br>
+                     So, a sample is needed. <br>
+                     How random did take your sample? (Sampling Methods) <br>
+                     How large is your sample size?
+                 
+                     <br><br>
+
+                     (3.) <b>Describe the data</b> <br>
+                     Obtain a descriptive statistics of your sample data. (Descriptive Statistics) <br>
+                     Organize your data. (Data Organization) <br> 
+                     Present your data properly. (Data Presentation) <br>
+                     Analyze your data. (Data Analysis)
+                
+                     <br><br>
+
+                     (4.) <b>Perform Inference</b> <br>
+                     Apply appropriate techniques to extend the results of your sample data to the population of 
+                     your study. (Inferential Statistics) <br>
+                     If the sample fairly represents the population as a​ whole, then it is reasonable to make inferences from the sample to the population. <br>
+                     Report a level of reliability of the results. <br>
+                     What is the confidence level of your results? <br>
+                     What is the margin of error? <br>
+                     In a statistical​ study, the margin of error is used to describe a confidence interval that is likely to contain the true population parameter. <br>
+                     It is used to describe the range of values likely to contain a population parameter. <br>
+                     It is <b>subtracted from</b> <u>and</u> <b>added to</b> a sample statistic to establish a confidence interval. <br>
+                     In other words, we can find this interval by subtracting and adding the margin of error from the sample statistic that was obtained during the study. <br>
+                     The confidence interval is used to estimate a population parameter.
+                
+                     <br><br>
+
+                    For example: <br>
+                    Each​ year, a group surveys​ 50,000 households to study internet usage. <br>
+                    In one area of the​ study, the group is interested in finding out how many hours a day the household spends streaming
+                    video from the internet. <br>
+                    Describe the five basic steps in a statistical study with an example of their application below. <br>
+                    <b>First Step:</b> State the goal/objective of your study. <br>
+                    In this​ case, we want to discover the average amount of time per day that a household spends streaming internet video.
+                    <br><br>
+                    <b>Second Step:</b> Choose a representative sample from the population. <br>
+                    In this​ case, it would be choosing a sample of​ 50,000 households. <br><br>
+                    <b>Third Step:</b> Collect raw data from the sample and summarize these data by finding sample statistics of interest. <br>
+                    In this​ case, it would be reaching out to those​ 50,000 households and collecting data from them. We would collect
+                    their data and then turn the data from all of the households into an average. <br><br>
+                    <b>Fourth Step:</b> Use the sample statistics to infer the population parameters. <br>
+                    In this​ case, we would look at the average time spent per day streaming internet video and use that number to estimate
+                    for the rest of the population. <br><br>
+                    <b>Fifth Step:</b> Draw conclusions to determine what you learned and whether you achieved your goal. <br>
+                    In this​ case, we see that we have an average for time spent streaming internet video and conclude that we achieved our
+                    goal. <br><br>
+                    
+                    Once a research objective is stated and the population is identified, the researcher must create a
+                    list of information of the individuals of the population. <br>
+                    This leads us to...
+                </p>
+                <br>
+                <h3>Variables</h3>
+                <p>
+                    A <b>variable</b> is a characteristic of the individual of the population being studied. <br>
+                    <u>Vocabulary Words/Hint:</u> vary, varies, variable, variability, variation <br>
+                    As the name implies, it always "varies".
+                
+                    <br><br>
+
+                    Variables can be classified as: <br>
+                    <b>Qualitative Variables</b> or <b>Categorical Variables</b> <br>
+                    <u>Vocabulary Words/Hint:</u> quality, category <br>
+                    and <br>
+                    <b>Quantitative Variables</b> or <b>Numerical Variables</b> <br>
+                    <u>Vocabulary Words/Hint:</u> quantity, numerical(number)
+                
+                    <br><br>
+
+                    Quantitative variables can be further classified as: <br>
+                    <b>Discrete Variables</b> <br>
+                    <u>Vocabulary Words/Hint:</u> quantity you can count <br>
+                    and <br>
+                    <b>Continuous Variables</b> <br>
+                    <u>Vocabulary Words/Hint:</u> quantity you can measure
+                </p>
+                <br>
+
+                <h3>Qualitative and Quantitative Variables</h3>
+                <p>
+                    <b>Qualitative Variables</b> (also known as <b>Categorical Variables</b>) are variables that express qualitative 
+                    attributes of the individuals of a population. <br>
+                    They are not measurable. <br>
+                    They are usually not numerical values. <br>
+                    <u>Examples are:</u> gender; color such as eye color, hair color; religion; street names; and zip codes 
+                    (yes because even though USA zip codes are numbers, they are not countable or measurable) among others. <br>
+                    Even though categorical variables are not numeric, we can use numeric values to represent parts of a category or to 
+                    differentiate a category from a non-category. <br>
+                    For example: for the variable: Gender, we can use represent the Female gender with 0 and the Male gender with 1. <br>
+                    Also, we can represent a Smoker with a 1 and a Non-smoker with a 0. <br>
+                    The process of representing categorical variables with numbers is known as <b>Coding.</b> <br>
+                    Sometimes, it is necessary to code categorical data to work with some statistical software especially if the categorical 
+                    data is part of a numerical data (if one of the columns of the data is categorical and the other columns are numerical).
+                
+                    <br><br>
+
+                    <b>Quantitative Variables</b> are variables that express numerical measures of the individuals
+                    of a population. <br>
+                    They are measurable or countable. <br>
+                    They have a numerical value (number value). <br>
+                    <u>Examples are:</u> number of ...."anything you can count", price, age, area, volume, 
+                    temperature, weight, height, size, length, etc.
+                </p>
+                <br>
+
+                <h3>Quantitative Variables: Discrete Variables and Continuous Variables</h3>
+                <p>
+                    <b>Discrete Variables</b> are quantitative variables that has a finite or countable number of values. <br>
+                    If you can <u>count</u> to get the value of the quantitative variable, then that variable is discrete. <br>
+                    <u>Examples are:</u> the number of ...."anything you can count" 
+                    such as the number of GNTC (Georgia Northwestern Technical College) students, capacities of different buildings,
+                    etc. <br>
+                    <i>Students should give more examples</i>
+                
+                    <br><br>
+
+                    <b>Continuous Variables</b> are quantitative variables that has an infinite or uncountable number of values. <br>
+                    If you can <u>measure</u> to get the value of the quantitative variable, then that variable is continuous. <br>
+                    <u>Examples are:</u> weight, height, size, percentage, volume, area, time, distance, temperature, 
+                    pressure, length, etc. <br>
+                    <i>Students should give more examples.</i>
+                
+                    <br><br>
+
+                    <b><u>Exercise 3</u></b> <br>
+                    (13.) Is <b>age</b> a discrete or continuous variable?
+                </p>
+                <button class="solutions" onclick="solutions('solution13')">Show/Hide Answer</button>
+                <div class="result" id="solution13">
+                    <br>
+                    Well, it depends! <br>
+                    Age (in years only) is a discrete variable. You can count it. 
+                    For example: 25 years, 30 years, etc. <br>
+                    Age (that includes years, months, weeks, days, hours, minutes, and seconds) is a continuous variable. <br>
+                    You cannot really count it. For example: 25.5 years, etc.
+                </div>
+
+                <br><br>
+
+                <p>
+                    We also have ...
+                </p>
+                
+                <h3>Dependent and Independent Variables</h3>
+                <p>
+                    <b>Dependent Variable</b> is: <br>
+                    A variable that depends on another variable/other variables. <br>
+                    Also known as the response variable <br>
+                    Variable that is predicted <br>
+                    Outcome/result of a study <br>
+                    The <i>y</i>-value of a function
+                
+                    <br><br>
+
+                    <b>Independent Variable</b> is: <br>
+                    Variable that is not dependent on any other variable. <br>
+                    Also known as the explanatory or predictor variable <br>
+                    Variable that explains the response variable <br>
+                    The <i>x</i>-value function
+                
+                    <br><br>
+
+                    <u>Recall:</u> <b>In Algebra and Calculus;</b> <br>
+                    <i>y</i> &equals; <i>f(x)</i> <br>
+                    <i>y</i> is the dependent variable. <br>
+                    <i>x</i> is the independent variable.
+                
+                    <br><br>
+
+                    <b>Bring it to Statistics</b> <br>
+                    <i>y</i> is the response variable. <br>
+                    <i>x</i> is the predictor or explanatory variable.
+                
+                    <br><br>
+
+                    <b>Bring it to Philosophy</b> <br>
+                    <i>y</i> is the effect. <br>
+                    <i>x</i> is the cause. 
+                
+                    <br><br>
+
+                    <b>Bring it to Economics/Business</b> <br>
+                    <i>y</i> is the output. <br>
+                    <i>x</i> is the input.
+                
+                    <br><br>
+
+                    <b>Bring it to Psychology/Human Behavior/Sociology</b> <br>
+                    <i>y</i> is the consequence. <br>
+                    <i>x</i> is the action.
+                
+                    <br><br>
+
+                    <u>Examples:</u> <br>
+                    (1.) The weight (quantitative: continuous variable) I gained in the United States 
+                    (I was skinny in Nigeria) was dependent on the number of MacDonald's cheeseburgers I ate 
+                    (quantitative: discrete variable) &#128522;&#128522;&#128522; <br>
+                    In this case, weight is the dependent variable and <br>
+                    number of burgers is the independent variable <br><br>
+                    
+                    (2.) GPA (grade point average - quantitative - continuous variable) is dependent on the number of "meaningful" 
+                    hours of study (quantitative: discrete variable) <br>
+                    In this case, GPA is the dependent variable and <br>
+                    number of meaningful study hours is the independent variable <br><br>
+                    <i>Students should give more examples.</i>
+                </p>
+                <br>
+
+                <h3>Stacked (Narrow/Long) Data and Unstacked (Wide) Data</h3>
+                <p>
+                    My preference is unstacked data because it is an organized data. <br>
+                    However, some data downloaded from the Internet or some raw data you collect may be stacked. <br>
+                    Hence, it is important to know the meaning of both forms of data. <br><br>
+                    <b>Unstacked Data</b> also known as <b>Wide Data</b> is the data table where the main row (table headings) are the 
+                    variables and subsequent rows contains the values (observations) of the variables. <br><br>
+                    <b>Stacked Data</b> also known as <b>Narrow Data</b> or <b>Long Data</b> is the data table where one column contains the 
+                    variables and other columns contain the values (observations) of the variables. <br><br>
+                    Let us review examples.
+                </p>
+                <br>
+                <table>
+                    <caption>Unstacked Table Data: Therapy Dogs</caption>
+                    <tr>
+                        <th style="width: 40%;">Dog Breed</th>
+                        <th style="width: 30%">Size</th>
+                        <th style="width: 30%;">Temperament</th>
+                    </tr>
+                    <tr>
+                        <td>French Bull Dog</td>
+                        <td>Small</td>
+                        <td>Playful</td>
+                    </tr>
+                    <tr>
+                        <td>Labrador Retriever</td>
+                        <td>Medium-Large</td>
+                        <td>Intelligent</td>
+                    </tr>
+                    <tr>
+                        <td>Toy Poodle</td>
+                        <td>Small</td>
+                        <td>Smart</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table>
+                    <caption>Stacked Table Data: Therapy Dogs</caption>
+                    <tr>
+                        <th style="width: 40%;">Dog Breed</th>
+                        <th style="width: 30%">Variable</th>
+                        <th style="width: 30%;">Value</th>
+                    </tr>
+                    <tr>
+                        <td>French Bull Dog</td>
+                        <td>Size</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <td>French Bull Dog</td>
+                        <td>Temperament</td>
+                        <td>Playful</td>
+                    </tr>
+                    <tr>
+                        <td>Labrador Retriever</td>
+                        <td>Size</td>
+                        <td>Medium-Large</td>
+                    </tr>
+                    <tr>
+                        <td>Labrador Retriever</td>
+                        <td>Temperament</td>
+                        <td>Intelligent</td>
+                    </tr>
+                    <tr>
+                        <td>Toy Poodle</td>
+                        <td>Size</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <td>Toy Poodle</td>
+                        <td>Temperament</td>
+                        <td>Smart</td>
+                    </tr>
+                </table>
+                
+                <br><br>
+
+                <p>
+                    <b><u>Exercise 4</u></b> <br>
+                    (14.) A sample of students were questioned to determine how much they would be willing to pay to see a movie in a 
+                    theater that served dinner at the seats, with the accompanying results (in dollars). <br><br>
+                    <img src="images/IntroductoryStatistics/Examples/Exercise4-Number14.png" alt="Exercise 4: Number 14"> <br><br>
+                    (a.) Write these data as they might appear in stacked format with codes. <br>
+                    <img src="images/IntroductoryStatistics/Examples/Exercise4-Number14a.png" alt="Exercise 4: Number 14a"> <br><br>
+                    (b.) Write these data as they might appear in unstacked format. <br>
+                    <img src="images/IntroductoryStatistics/Examples/Exercise4-Number14b.png" alt="Exercise 4: Number 14b">
+                </p>
+                <button class="solutions" onclick="solutions('solution14')">Show/Hide Answer</button>
+                <div class="result" id="solution14">
+                    <br>
+                    (a.) There are 5 male students and 4 female students. <br>
+                    Coding the male students as 1 and the female students as 0, the stacked format with codes will show: 5 1's and 4 0's in 
+                    one column alongside the respective costs provided by the male and female students respondents in another column. <br>
+                    This implies that the correct answer is Option <b>B.</b> 
+                    <br><br>
+                    (b.) The unstacked data (without codes because the question did not ask us to provide codes) will show the costs 
+                    provided by the male students in one column and the costs provided by the female students in another column. <br>
+                    It is okay for the headings to be labeled as Male and Female respectively. However, it is much better for the headings 
+                    to be labeled appropriately such as: Cost by Male Students and Cost by Female Students respectively. <br>
+                    The correct answer is Option <b>B.</b>
+                </div>
+
+                <br><br>
+
+                <h3>Data and Variables</h3>
+                <p>
+                    The type of variable dictates the methods that can be used to analyze the data. <br>
+                    <b>Qualitative data</b> are <b>observations corresponding</b> to a <b>qualitative variable.</b> <br>
+                    <b>Quantitative data</b> are <b>observations corresponding</b> to a <b>quantitative variable.</b> <br> 
+                    <b>Discrete data</b> are <b>observations corresponding</b> to a <b>discrete variable.</b> <br>
+                    <b>Continuous data</b> are <b>observations corresponding</b> to a <b>continuous variable.</b>
+                
+                    <br><br>
+
+                    We can also classify variables based on the ...
+                </p>
+                <br>
+
+                <h3>Level of Measurement of a Variable</h3>
+                <p>
+                    The <b>level of measurement of a variable</b> determines the types of descriptive statistics and 
+                    inferential statistics that may be applied to a variable. <br>
+                    It is an important factor in determining what tools may be used to describe the variable and what means
+                    of analysis to use for inference about the variable. <br>
+                    Rather than classify a variable as qualitative or quantitative, we can assign a level of measurement
+                    to the variable. <br>
+                    The levels of measurement of a variable are: <br>
+                    <b>Nominal level of measurement</b> <br>
+                    <b>Ordinal level of measurement</b> <br>
+                    <b>Interval level of measurement</b> <br>
+                    <b>Ratio level of measurement</b>
+                </p>
+                <br>
+                <h3>Nominal Level of Measurement</h3>
+                <p>
+                    A variable is at the <u>nominal level of measurement</u> if the variable deals with <b>name, label,
+                    category, or code</b> <u>and</u> where the <b>order of ranking is not relevant.</b> <br>
+                    <u>Vocabulary Words/Hint:</u> "nominal" means "name" <br><br>
+                    <u>Examples are:</u> <br>
+                    <b>Race:</b> African-American, Alaskan native, American Indian, Asian, Caucasian, Pacific Islander, etc. <br>
+                    <i>Ask students if they have filled any application for employment or internship.</i> <br>
+                    <i>Did they realize they were doing some Statistics!?</i> <br><br>
+                    <b>Nationality:</b> Nigeria, United States, etc. <br>
+                    <b>Religion:</b> Christianity, Judaism, Islam, etc. <br>
+                    <b>Marital Status:</b> Married, Single <br>
+                    <b>Gender:</b> Female, Male <br>
+                    Favorite sports of people identified as $1$ for Soccer, $2$ for Basketball, $3$ for Football 
+                    (the order of ranking is not important) <br>
+                    Survey responses of "yes" or "no" (the order of ranking is not important) <br>
+                    Social security numbers <br>
+                    Types of food dishes <br>
+                    Types of music <br>
+                    Types of movies <br>
+                    Companies that closed locations and fired workers in $2018$ <br>
+                    Companies that filed for bankruptcy but paid the CEOs a lot of bonuses <br>
+                    among others.
+                </p>
+                <br>
+
+                <h3>Ordinal Level of Measurement</h3>
+                <p>
+                    A variable is at the <u>ordinal level of measurement</u> if the variable deals with <b>name, label,
+                    category, or code</b> where the <b>order of ranking is relevant</b>, <u>but</u>
+                    the <b>differences between the values of the variable cannot be found</b> or 
+                    the <b>differences between the values of the variable can be found but are not meaningful.</b> <br>
+                    <u>Vocabulary Words/Hint:</u> "ordinal" means "order" <br><br>
+                    <u>Examples are:</u> <br>
+                    <b>Likert Scales:</b> Strongly Agree, Agree, Neutral, Disagree, Strongly Disagree etc. 
+                    <br><br>
+                    <i>
+                        Ask students if they have filled surveys or polls. <br>
+                        Of course they have! or they may...&#128522;&#128522;&#128522;  in evaluating the professor! <br>
+                    </i> 
+                    <br><br>
+                    <b>Grades:</b> A, B, C, D, F etc. <br>
+                    <b>Rankings or Ratings:</b> 1st, 2nd, 3rd, five stars, three stars, etc. <br>
+                    <b>Levels:</b> High, Medium, Low, etc. <br>
+                    Thumbs up, Thumbs down, <br>
+                    Internet speed levels of fast, medium, slow <br>
+                    Alert levels identified as $10$ for Low, $20$ for Medium, $30$ for High 
+                    (the order of ranking is important) <br>
+                    Positions of people in a line <br>
+                    among others.
+                </p>
+                <br>
+
+                <h3>Interval Level of Measurement</h3>
+                <p>
+                    A variable is at the <u>interval level of measurement</u> if the variable deals with <b>name, label,
+                    category, or code</b>, where the <b>order of ranking is relevant</b>, 
+                    the <b>differences between the values of the variable can be found and are meaningful</b>, <u>and</u> 
+                    there is <b>no natural starting point.</b> <br><br>
+                    <u>Examples are:</u> <br>
+                    calendar dates <br>
+                    Celsius temperatures <br>
+                    Fahrenheit temperatures <br>
+                    years in which an economic recession occurred <br>
+                    among others.
+                </p>
+                <br>
+
+                <h3>Ratio Level of Measurement</h3>
+                <p>
+                    A variable is at the <u>ratio level of measurement</u> if the variable deals with <b>name, label,
+                    category, or code</b>, where the <b>order of ranking is relevant</b>, 
+                    the <b>differences between the values of the variable can be found and are meaningful</b>, <u>and</u> 
+                    there is <b>a natural starting zero point.</b> <br><br>
+                    <u>Examples are:</u> <br>
+                    time in minutes, time in hours <br>
+                    acres of land <br>
+                    ages in years <br>
+                    weights in kilogram <br>
+                    Kelvin temperatures <br>
+                    number of buildings <br>
+                    among others.
+                </p>
+                <br>
+
+                <p>
+                    <b><u>Exercise 5</u></b> <br>
+                    (15.) Identify the individuals, variables and their corresponding data, and the type of variable
+                    in the table.
+                </p>
+                <table class="w3-center">
+                    <tr>
+                        <th class="green">Participants</th>
+                        <th class="green">Weight(lb.)</th>
+                        <th class="green">Type</th>
+                        <th class="green">Price(<span>$</span>)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            A
+                        </td>
+                        <td>
+                            160
+                        </td>
+                        <td>
+                            Athletic
+                        </td>
+                        <td>
+                            25
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            B
+                        </td>
+                        <td>
+                            250
+                        </td>
+                        <td>
+                            Muscular
+                        </td>
+                        <td>
+                            50
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            C
+                        </td>
+                        <td>
+                            120
+                        </td>
+                        <td>
+                            Athletic
+                        </td>
+                        <td>
+                            16
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            D
+                        </td>
+                        <td>
+                            100
+                        </td>
+                        <td>
+                            Skinny
+                        </td>
+                        <td>
+                            10
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E
+                        </td>
+                        <td>
+                            300
+                        </td>
+                        <td>
+                            Obese
+                        </td>
+                        <td>
+                            93
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button class="solutions" onclick="solutions('solution15')">Show/Hide Answer</button>
+                <div class="result" id="solution15">
+                    <br>
+                    Individuals are the participants: A, B, C, D, and E <br><br>
+                    Variables are: Weight(lb.), Type, and Price(<span>$</span>) <br><br>
+                    Variables and their corresponding data are: <br>
+                    Weight(lb.): $160, 250, 120, 100, 300$ <br>
+                    Type: Athletic, Muscular, Athletic, Skinny, Obese <br>
+                    Price(<span>$</span>): $25, 50, 16, 10, 93$ <br><br>
+                    Variables and the types of variables are: <br>
+                    Weight(lb.) is a quantitative variable: continuous variable <br>
+                    Type is a qualitative variable <br>
+                    Price(<span>$</span>) is a quantitative variable: discrete variable                   
+                </div>
+                <br>
+                <p>
+                    (16.) A study looked at the impact of berries consumption in women. <br>
+                    Of the 93,600 women aged 25 to 42 involved in the study, it found that three or more servings
+                    of berries per week may slash the risk of a heart attack by 33%. <br>
+                    Assume the study was done with a margin of error of 5% and a 95% confidence level. <br>
+                    (a.) What is the research objective? <br>
+                    (b.) Identify the population <br>
+                    (c.) Identify the sample. <br>
+                    (d.) List the descriptive statistics. <br>
+                    (e.) What can be inferred from the study?
+                </p>
+                <button class="solutions" onclick="solutions('solution16')">Show/Hide Answer</button>
+                <div class="result" id="solution16">
+                    <br>
+                    (a.) The research objectives is to determine the effect of berries consumption in reducing
+                    the risk of heart attack in women. <br><br>
+                    (b.) The population is all women aged 25 to 42 <br><br>
+                    (c.) The sample is the 93,600 women aged 25 to 42 <br><br>
+                    (d.) The descriptive statistics is: "it found that three or more servings
+                    of berries per week may slash the risk of a heart attack by 33% in women." <br><br>
+                    (e.) It can be inferred that the study is 95% certain that three or more servings of berries
+                    per week may slash the risk of a heart attack between 28% and 38% <br><br>
+                    <i>Ask students if they know how the values of 28% and 38% were obtained.</i>
+                </div>
+            </div>
+            <!-- End Introductory Statistics -->
+                          
+            <br><br>
+            
+            <!-- Data Collection -->
+            <!-- Objectives -->
+            <div class="w3-container w3-padding-32" id="dataCollection">
+                <h2 class="w3-padding-16">Data Collection</h2>
+                <hr>
+                <h3>Objectives</h3>
+                <p>
+                    Students will: <br>
+                    (1.) Discuss the collection of data. <br>
+                    (2.) Note the main difference between association and causation. <br>
+                    (3.) Compare the two methods used for collecting data. <br>
+                    (4.) Contrast the two methods used for collecting data. <br>
+                    (5.) Explain the various types of observational studies. <br>
+                    (6.) Explain the principles of a well-designed experiment. <br>
+                    (7.) Obtain a simple random sample. <br>
+                    (8.) Obtain a stratified sample. <br>
+                    (9.) Obtain a systematic sample. <br>
+                    (10.) Obtain a cluster sample. <br>
+                    (11.) Differentiate between statistical significance and practical significance. <br>
+                    (12.) Explain the sources of bias in sampling.
+                </p>
+                <br>
+                <h3>Vocabulary Words</h3>
+                <p>
+                    response variable, outcome variable, explanatory variable, predictor variable, treatment variable, 
+                    observational studies, controlled experiments, treatment group, control group, comparison group, 
+                    statistical significance, practical significance, replication, randomization, sample size, blinding, 
+                    double-blinding, placebo, confounding, lucking variable, cross-sectional studies, 
+                    case-control studies, retrospective studies, cohorts, longitudinal studies, prospective studies, 
+                    bias, random sampling, sample random sampling, stratified sampling, cluster sampling, 
+                    systematic sampling, convenience sampling, random number table, sampling frame, randomized design,
+                    matched-pairs design, association, causation
+                </p>
+                
+                <br><br>
+                
+                <h3>Data Collection Methods</h3>
+                <p>
+                    There are two basic methods of collecting data. They are: <br>
+                    <b>Observational Studies</b> and <br>
+                    <b>Experiments/Designed Experiments</b>
+                </p>
+                <br>
+                <p>
+                    <b>Observational Studies</b> measure the value of the response variable without attempting to influence
+                    the value of either the response variables or explanatory variables. <br>
+                    We measure and observe specific characteristics of subjects without attempting to modify the 
+                    subjects. <br><br>
+                    <b>Experiments or Designed Experiments</b> is when we assign individuals to certain groups or
+                    experimental units (known as control/comparison and treatment groups), intentionally change the value
+                    of the explanatory variable, and then record the value of the response variable for each group. <br>
+                    The treatment group in an experiment is the group of sample members who receive the treatment being​ tested, while the control group does not receive the treatment being tested. <br>
+                    <br><br>
+                    The response variable is also known as the outcome variable. <br>
+                    The explanatory variable in this case, can be referred to as the treatment variable. 
+                    It is also known as the predictor variable. 
+                </p>
+                <br>
+                <h3>Observational Studies</h3>
+                <p>
+                    There are three categories of observational studies. They are: <br>
+                    (1.) <b>Cross-sectional Studies:</b> These are observational studies that collect data about  individuals at a specific period in time or over a very short time period. 
+                    <br><br>
+                    (2.) <b>Case-control or Retrospective Studies:</b> These are observational studies that collect data about individuals from past time periods. <br>
+                    When there are cases and controls in a retrospective​ study, the cases effectively represent a treatment group and the controls effectively represent the control group.
+                    <br><br>
+                    (3.) <b>Cohort or Prospective or Longitudinal Studies:</b> These are observational studies that 
+                    collect data about a group of individuals otherwise known as cohorts over a long period of time.
+                </p>
+                <br>
+                <p>
+                    <b><u>Exercise 1</u></b> <br>
+                    Identify the category of observational study.
+                </p>
+                <p>
+                    (1.) A researcher plans to obtain data by interviewing the relatives of victims of the Malaysia 
+                    Airlines Flight 370 (MH 370) to study the psychological breakdown on the loss of their loved ones.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC1')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC1">
+                    <br>
+                    This is a cross-sectional study because data is being collected regarding an event that occurred
+                    during a specific period of time.  
+                </div>
+                <br>
+                <p>
+                    (2.) A researcher plans to obtain data by interviewing the relatives of Americans killed by police officers. <br>
+                    She will interview the relatives and non-relatives of those victims over the next ten years to determine how closeness to a tragic event 
+                    might affect recovery time.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC2')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC2">
+                    <br>
+                    This is a cohort study because data is being collected about two different cohorts (related cohorts and
+                    unrelated cohorts) regarding a tragic event over a long period of time.
+                </div>
+                <br>
+                <p>
+                    (3.) The Justice Department plans to obtain data on police interrogations and practices by 
+                    investigating the Cleveland Division of Police over the past five years.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC3')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC3">
+                    <br>
+                    This is a case-control study because data is being collected about individuals from past periods of time.
+                </div>
+                <br>
+                <p>
+                    (4.) Researchers compared the rates of autism for children who received the standard measles-mumps-rubella
+                    vaccine and also for children who did not receive the vaccine to see if the vaccine might be responsible
+                    for autism in some children.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC4')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC4">
+                    <br>
+                    This is a case-control study because data is being collected about individuals from past periods of
+                    time.
+                </div>
+                <br>
+                <p>
+                    (5.) Researchers classified pregnant women as being non-drinkers or light, moderate, or heavy 
+                    drinkers. They examined the weights of the children of these women at regular age intervals to see
+                    if taking alcohol during pregnancy results in poor growth.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC5')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC5">
+                    <br>
+                    This is a cross-sectional study because data is being collected regarding an event that occurred
+                    during a specific period of time.
+                </div>
+                <br><br>
+                <i>Teacher: Please give more scenarios/examples of each category of observational studies.</i>       
+                
+                <h3>Controlled Experiments</h3>
+                <p>
+                    Does drinking 3 to 5 cups of coffee a day lower the risk of heart attacks? <br>
+                    (<a href="https://www.livescience.com/50012-coffee-heart-attack-risk.html" target="_blank">3 to 5 Cups of Coffee a Day May Lower Risk of Heart Attacks</a> - Live Science) <br><br>
+                    Someone read this article, got curious, and wanted to try it out. <br>
+                    Say we wanted to do an experiment to determine whether the statement is true or false or neither. 
+                    <br><br>
+                    <i>
+                        What do you think should be our population? <br>
+                        Should we have two different populations? Why or why not? <br>
+                        Please note the students responses.
+                    </i> 
+                    <br><br>
+                    At this moment, we do know we need: <br>
+                    (1.) sample of people who drink 3 to 5 cups of coffee daily and <br>
+                    (2.) sample of people who do not drink coffee at all. <br><br>
+                    
+                    <i>Student: Hmmm...but you asked for "population", and now you mention "sample". Why?</i> <br>
+                    <i>
+                        Teacher: Good observation. Having access to a population is usually difficult. <br>
+                        Hence, we need a sample that is representative of the population. <br>
+                        Selecting that sample is actually one of our objectives for this lesson.
+                    </i>                     
+                
+                    <br><br>
+
+                    So, let us discuss how to do this experiment. What do we need? What should be the 
+                    procedures? What are the requirements? <br><br>
+                    (1.)  We shall need a <b>large sample of people.</b> <br>
+                    How large should the sample size be? That is a good question. We shall get to it when we do
+                    <a href="https://statistical-science.appspot.com/InferentialStatistics/inferential-statistics.html" target="_blank">Inferential Statistics</a>. 
+                    However; the larger, the better. <br>
+                    Also, it is better to observe those people for an extended period of time. How long? It is not for 
+                    eternity of course! It should not be for a few days either. However; the longer, the better. <br>
+                    Taking repeated measurements on each individual might be helpful in obtaining more precise results
+                    in an experiment.
+                
+                    <br><br>
+
+                    (2.) We will need to <b>divide the sample into two groups:</b> <br>
+                    A <b>treatment group that would actually drink 3 to 5 cups of coffee a day </b> and <br>
+                    A <b>control group (or comparison group) that would not drink coffee.</b> <br>
+                    The participants should not be allowed to choose which group to belong to. <br>
+                    You should not give them that option of: those who like coffee (like me &#128522;) go to one group and those who do not like coffee to go to another group. <br>
+                    In an experiment studying the association between a treatment variable and an outcome​ variable, the group of people who receive the treatment is the treatment group
+                    while the group of people who do NOT receive the treatment is the control group.
+                    <br><br>
+                    <i>
+                        Speaking like an American...why is that? &#128522; <br>
+                        You shall soon find out before the end of this section.
+                    </i> <br>
+                    <i></i> 
+                    <br><br>
+                    <b>Randomly</b> select the samples and place them in the two groups so that they are approximately the same size. 
+                    <br><br>
+                    <i>
+                        How do you randomize? <br>
+                        No worries. Please read on &#128522;
+                    </i> 
+                    <br><br>
+                    Here is the main reason why we do not want Convenience Sampling: we want to avoid bias. <br>
+                    If we allow participants to decide what groups to belong, it creates a bias. 
+                    <br><br>
+                    <i>Student: What is bias?</i> 
+                    <br><br>
+                    <b>Bias</b> is the tendency of a statistic to underestimate or overestimate a parameter. <br>
+                    It refers to any problem in the design or conduct of a statistical study that tends to favor certain results. <br>
+                    Examples of several forms of bias include: <br>
+                    (1.) A​ non-representative sample <br>
+                    (2.) A researcher with a personal stake in the outcome distorts the true meaning of data. <br>
+                    (3.) An experiment that is not blinded. <br>
+                    An inference method is biased if it has a tendency to produce an untrue value. <br><br>
+                    Bias can enter a survey in about four ways. <br>
+                    The first is through sampling​ bias, which results from taking a sample that is not representative of the population. <br>
+                    <b>Sampling Bias</b> occurs when a sample is not representative of the population. <br><br>
+                    A second way is measurement​ bias, which comes from asking questions that do not produce a true answer. <br>
+                    <b>Measurement Bias</b> occurs when the method of data collection does not produce valid results. <br><br>
+                    Another way is through some participants who have strong feelings about the survey. <br>
+                    <b>Voluntary Response Bias</b> occurs when voluntary participation in surveys results in people responding who tend to have strong feelings about the results. <br><br>
+                    The fourth way is through some participants who do not have strong feelings about the survey. <br>
+                    <b>Nonresponse Bias</b> occurs when people selected to participate in a survey fail to answer a question or to respond to the survey.
+                    <br><br>
+                    <i>So far, we have mentioned two sampling techniques. What are they? May you define each of them?</i> 
+                    <br><br>
+                    <b>The treatment group and the control group should be similar in every possible way.</b> <br>
+                    To accomplish that goal, randomization should be used.
+                
+                    <br><br>
+
+                    (3.) The study should be <b>double-blind.</b> <br>
+                    An experiment is​ <b>single-blind</b> if the participants do not know whether they are members of the treatment group or members of the control​ group, but the experimenters do know who belongs to which group. <br>
+                    An experiment is​ <b>double-blind</b> if neither the participants nor the experimenters know who belongs to the treatment group and who belongs to the control group. <br>
+                    You, the researcher should appoint an independent person who would give 3 to 5 cups of coffee to one group and a placebo to the other group.                     
+
+                    <br><br>
+                    <i>
+                        Hmmmm...what is a placebo? <br><br>
+                        Okay, story time! <br>
+                        Esther is a little baby girl. She is 3 years old. She likes viewing TV shows and she likes to play video games for hours. <br>
+                        One day, she complained of headache after playing video games for 3 hours. Her mother wanted her to
+                        rest(because her mother knew it was due to long screen exposure)  but she insisted she wanted to see the family doctor and take medicine. <br>
+                        After much crying and deliberation with a 3-year old, they decided to go to the family doctor. <br>
+                        Her mother sent a text to the doctor and notified her of the situation. <br>
+                        The doctor greeted Esther as usual and assured her she would be okay soon. <br>
+                        The doctor then gave her a peppermint (rather than a medicine) and asked her to take it with water. <br>
+                        Esther took the "medicine" and after a few hours, she was fine. In her mind, she thought she took a 
+                        medicine. In reality, she did not. <br>
+                        In this case, that <b>peppermint is known as the placebo.</b> <br>
+                        Do you want another explanation? <br>
+                        <b>Teacher:</b> Okay, story, story... <br>
+                        <b>Students:</b> Story! <br><br>
+                        Nahum is a little boy. He is 12 years old. He does not eat pork. <br>
+                        He grew up with the understanding that pig is an unclean animal. His parents informed the school
+                        accordingly that Nahum should never eat pork or anything with pig by-products. <br>
+                        One day, his mother took him to the school's end-of-year party. <br>
+                        Nahum came back and after some time, began to complain of stomach ache. <br>
+                        The mother prayed for him and asked him what he ate. <br>
+                        He replied that he ate a sandwich. After eating it, one of his classmates had teased him (and he 
+                        believed) that the meat in the sandwich contained pork. He had been thinking about it and felt
+                        it was the reason for the stomach ache. <br>
+                        Angrily, the mother called the school and demanded for explanations. <br>
+                        The school official assured her that it was not pork. It was a bison burger. <br>
+                        His classmate was made to apologize to Nahum and repeatedly informed him he was teasing him. <br>
+                        Nahum's stomach ache is now gone! <br>
+                        In this case, the <b>bison meat is known as the placebo.</b> <br><br>
+                        Teacher: Alright. After these stories, may you define a <b>placebo?</b>
+                    </i>
+                    <br><br>
+
+                    A <b>placebo</b> is a harmless substance or a sham procedure given for the psychological benefit to
+                    a patient than for any physiological benefit. 
+                    <br><br>
+                    <i>
+                        Student: We now have two new words: psychological and physiological <br>
+                        Teacher: Yes! Compare and contrast those words. What do they mean?
+                    </i> <br><br>
+                    If you, the researcher are directly involved in assigning the groups, you may know some or all the subjects.
+                    You may give special advice or encouragement to one group and not to the other group. <br>
+                    <b>You should avoid interacting with the participants.</b> This is known as <b>Blinding.</b> <br>
+                    <b>Also, except for ethical reasons; the participants should not know the purpose of the experiment.</b>
+                    This is known as <b>Double-Blinding.</b><br>
+                    This is because if some of them know that they are in the treatment group, they may behave differently than
+                    they would, if they did not know about their group assignment. Perhaps, they might want to drink more coffee.
+                    We want to avoid that situation. 
+                    <br><br>
+                    <i>
+                        Teacher: So, if the researcher does not know which participants are in the treatment group or control group; 
+                        it is called ...<br>
+                        Teacher: If the researcher nor the participants do not know which participants are in the 
+                        treatment group or control group; 
+                        it is called ...
+                    </i>
+                    <br><br>
+                    The study should be <b>double-blind</b>. <br>
+                    This means that the researcher and the participants should not know which participants are in the treatment group or 
+                    control group. 
+                    <br><br>
+                    <i>
+                        Student: But, this is difficult. <br>
+                        Teacher: how?
+                    </i> 
+                    <br><br>
+
+                    Some people in the control group might see some people in the treatment group drinking coffee. <br>
+                    They might want to taste/drink the coffee too. 
+                    <br><br>
+                    <i>
+                        Student: How do you avoid that? <br>
+                        Teacher: Very good observation and question. <br>
+                        Give them a placebo. <br>
+                        Give them something that looks like coffee and tastes like coffee, but is not coffee. <br>
+                        Hmmmm...what could that be? Please note their responses.
+                    </i>
+                    <br><br>
+
+                    A placebo is usually given to the control group so they would not feel <i>left out</i> when 
+                    they see those in the treatment group taking something.
+                
+                    <br><br>
+
+                    In summary, the <b>characteristics of a good controlled experiment</b> are:
+                    <br><br>
+
+                    (1.) <b>Large sample size:</b> The study should include the full range of the variation among the population
+                    and allow for small differences to be noticed. <br>
+                    Studying many cases is more helpful that studying a few cases.
+                
+                    <br><br>
+
+                    (2.) <b>Controlled and randomized:</b> Random assignment of subjects to treatment and control groups
+                    to minimize bias. <br>
+                    Random assignment is used to assign people to treatment groups and control groups in a controlled​ experiment to make the groups as similar as​ possible, minimizing bias. <br>
+                    Randomizing the individuals into groups is one way of preventing accidental bias in the study. <br>
+                    Bias is the tendency of a statistic to underestimate or overestimate a parameter. <br>
+                    There is a bias when the results are influenced in any particular way. <br>
+                    Also, controlling more variables in planning an experiment helps ensure each study group is similar
+                    to the other study groups.
+                
+                    <br><br>
+
+                    (3.) <b>Double-blind:</b> Neither the subjects nor the researcher should know who is in which group.
+                
+                    <br><br>
+
+                    (4.) <b>Placebo:</b> A placebo lacks the active ingredients of the treatment being tested in a​ study, but looks or feels enough like the treatment so that participants cannot 
+                    distinguish whether they are receiving the placebo or the real treatment. <br>
+                    The purpose of a placebo is to prevent participants from knowing whether they belong to the treatment group or the control group. <br>                    
+                    Using a control group with a placebo is important since otherwise subjects in the control group may behave differently than those in the treatment group. <br>
+                    The placebo effect refers to a situation in which a patient improves simply because they believe they are receiving a useful treatment. It can sometimes be difficult or impossible to distinguish between effects that arise from the actual treatment and those that arise from psychological factors.
+                </p>
+                
+                <h3>Statistical Significance and Practical Significance</h3>
+                <p>
+                    <b>Statistical Significance</b> is achieved when the result of an experiment is very unlikely to occur by 
+                    chance. <br>
+                    <b>Practical Significance</b> is related to whether common sense suggests that the treatment makes 
+                    enough difference to justify its use. <br>
+                    It is possible for a treatment to have statistical significance, but not practical significance.
+                
+                    <br><br>
+
+                    <b><u>Exercise 2</u></b>
+                
+                    <br><br>
+
+                    (6.) Identify the variables in this article. <br>
+                    <a href="https://www.pnas.org/content/108/7/3017" target="_blank">Proceedings of the National Academy of Sciences</a> <br>
+                    A January 31, 2011 report randomly assigned 120 elderly men and women who volunteered to be part
+                    of this study (average age of mid-$60$s) to one of two exercise groups. <br>
+                    One group walked around a track three times a week. <br>
+                    The other group did a variety of less aerobic exercises, including yoga and resistance training with hands. <br>
+                    After a year, brain scans showed that among the walkers, the hippocampus (part of the brain responsible
+                    for forming memories) had increased in volume by about 2% on average. For the others, it declined by  about 1.4%.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC6')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC6">
+                    <br>
+                    The <u>explanatory variable</u> is the <u>expansion of the type of exercise.</u> <br>
+                    The <u>response variable</u> is the <u>change in the volume of the hippocampus.</u>
+                </div>
+                <br><br>
+                <p>
+                    (7.) Is the study an observational study or controlled experiment? <br>
+                    <a href="https://www.livescience.com/14010-infant-food-breast-fed-formula-health-consequences.html" target="_blank">Breast milk versus Formula</a> - LIVE SCIENCE <br> 
+                    The study involved $234$ infants who were divided into three groups. <br>
+                    One group was exclusively breast-fed for the first four months of life. <br>
+                    Infants in the other two groups were randomly assigned to receive either a low-protein or a high-protein formula. <br>
+                    When the infants were $15$ days old, the levels of the hormone, insulin in their blood was measured.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC7')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC7">
+                    <br>
+                    The study is a <u>controlled experiment</u> because the researchers controlled one variable to 
+                    determine the effect on the response variable. There was at least a treatment group (exclusive
+                    breastfeeding) and a control group (given formula).
+                </div>
+                <br><br>
+                <p>
+                    (8.) Is the study an observational study or controlled experiment? <br>
+                    A student watched people with a cooler of soft drinks to see whether teenagers were less likely than
+                    adults to choose diet sodas over the regular sodas.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC8')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC8">
+                    <br>
+                    This is an <u>observational study</u> because the subjects (the people) were not given treatments.
+                    The subjects were not modified.
+                </div>
+                <br><br>
+                <p>
+                    (9.) Is the study an observational study or controlled experiment? <br>
+                   Records of patients who have had broken ankles were examined to see whether those who had physical
+                   therapy achieved more ankle mobility than those who did not.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC9')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC9">
+                    <br>
+                    This is an <u>observational study</u> because the subjects (the patients) were not given treatments.
+                    They were just examined. The researchers did not assign subjects to the control or treatment group
+                    beforehand, they did not satisfy a key feature of controlled experiments.
+                </div>
+                <br><br>
+                <p>
+                    (10.) Is the study an observational study or controlled experiment? <br>
+                    A researcher was interested in the effect of exercise on memory. She randomly assigned half of a group
+                    of students to run a mile and the other half to sit and relax during that period. <br>
+                    Each student was then asked to memorize a series of random $9-digit$ numbers. <br>
+                    She compared the numbers of digits remembered for the two groups.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC10')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC10">
+                    <br>
+                    This is a <u>controlled experiment</u> because she separated her students into at least two groups -
+                    the treatment group (the runners) and the control group (the sitters).
+                </div>
+                <br><br>
+                <p>
+                    (11.) Is the study an observational study or controlled experiment? <br>
+                    A group of teenagers were randomly divided into two groups. <br>
+                    One group watched violent video games for an hour. <br>
+                    The other group watched non-violent video games for an hour. <br>
+                    The teenagers were then observed to see how many violent actions they take in the next two hours, 
+                    and the two groups were compared.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC11')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC11">
+                    <br>
+                    This is a <u>controlled experiment</u> because the subjects (the people) were divided into the 
+                    treatment group (those that watched the violent video games) and the control group (those that 
+                    watched the non-violent video games).
+                </div>
+                <br><br>
+                <p>
+                    (12.) Is the study an observational study or controlled experiment? <br>
+                    A researcher was interested in the effects of exercise on academic performance on students. <br>
+                    He attended the physical education class, and noted the students who were exercising, and those 
+                    who did not. He then compared their grades.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC12')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC12">
+                    <br>
+                    This is an <u>observational study</u> because the subjects (the patients) were in the treatment group
+                    (those who exercised) or control group (those who did not exercise) by their own voluntary decisions.
+                </div>
+                <br><br>
+                <i>Teacher: Please give more scenarios/examples of observational studies and controlled experiments.</i>
+                
+                <h3>Compare and Contrast Observational Study and Controlled Experiments</h3>
+                <table>
+                    <tr>
+                        <th class="green"><b>Observational Study</b></th>
+                        <th class="green"><b>Controlled Experiment</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            In an observational​ study, researchers do not attempt to influence the characteristics of the sample​ members.
+                        </td>
+                        <td>
+                            In an​ experiment, researchers apply a treatment and then observe the effects of the treatment.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Subjects are divided into treatment groups (the groups you modify) and control groups (the 
+                            groups not modified) by the researcher.
+                        </td>
+                        <td>
+                            Subjects may or may not be divided into treatment groups and control groups. <br>
+                            If the subjects are in groups; it is of their own decisions, or by someone other than the researcher. <br>
+                            In other words, subjects in the study are put into the treatment group or the control group either by their own actions or by the decision of someone not involved in the research study.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Allows us to claim <b>association</b> between an explanatory variable and a response variable.
+                        </td>
+                        <td>
+                            Allows us to claim <b>causation</b> between an explanatory variable and a response variable. <br>
+                            Questions about causality are usually phrased in the form of​ "What if...?" questions. <br>
+                            The outcome variable in a question about causality is also referred to the response variable. <br>
+                            Controlled experiments is the only method of data collection suitable for making conclusions about causal​ relationships.
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <i>
+                    Student: What is the difference between association and causation? <br>
+                    How does observational study claim association while controlled experiment claim causation between the 
+                    explanatory and response variables?
+                
+                    <br><br>
+
+                    Teacher: Good question. <br>
+                    We shall discuss these concepts in detail when we discuss
+                    <a href="https://statistical-science.appspot.com/CorrelationRegression/correlationandregression.html" target="_blank">Correlation and Regression</a> <br>
+                    But, here are some questions to guide your thought process. <br>
+                    Name some things/phenomenon <u>associated</u> with old age. <br>
+                    Name some things/phenomenon that <u>causes</u> cancer.
+                </i>
+                
+                <h4>Which is better: Observational Study or Designed Experiment?</h4>
+                <p>
+                    <b>Is Intelligence inherited or acquired?</b> <br>
+                    This is still a question that does not have a generally accepted answer. <br>
+                    Some Nigerians claim that intelligence is inherited, and not acquired. <br>
+                    I have been involved in several debates where the issue is whether intelligence was purely from
+                    nature, or nurture, or both. What is your opinion? <br>
+                    While there have been some scientific studies that support the statement that intelligence is 
+                    genetically inherited, let us consider these two cases.
+                
+                    <br><br>
+
+                    <b>1st case:</b> The father is intelligent. The mother is intelligent. They were educated and 
+                    wealthy. But, they had alcohol and drug issues. They have a son. The child was not breast-fed by the
+                    mother. The child did not attend school early. Due to bad parenting, the child developed a learning
+                    disability.
+                
+                    <br><br>
+
+                    <b>2nd case:</b> A Nigerian child was born by poor uneducated and not-so-smart parents. However,
+                    the child was breast-fed by the mother. The parents though poor, ate natural foods. They fed their 
+                    child well. They worked very hard to make sure their child was educated. They taught their child 
+                    several life skills including music, swimming, and farming among others. They were very involved in 
+                    their child's education. The child made all A'a in school.
+                
+                    <br><br>
+
+                    Would you classify this scenario as an <u>observational study</u> or a <u>designed experiment</u>? <br>
+                    This could be a designed experiment. Come to think of it - breast-feeding your child and fully 
+                    participating in your child's education makes a lot of difference!
+                
+                    <br><br>
+
+                    Imagine the scenario of an observational study in this case <br>
+                    Interview five families who happen to be intelligent. <br>
+                    Their children were intelligent as well. <br>
+                    You did the same for five unintelligent families and got the same results. <br>
+                    Then, you go ahead and concluded that intelligence is inherited, or purely by nature without 
+                    performing any experiments! <br><br>
+                    This is known as <b>Confounding.</b> Confounding is a major problem with observational studies. <br>
+                    How do you feel making conclusions just by interviewing people without trying to see if there are 
+                    underlying factors which affect the results? <br>
+                    So, if you observe both scenarios - a designed experiment and a an observational study: which of them
+                    do you observe the several factors that affects the IQ (Intelligence Quotient) of the child? <br>
+                    If we just did the observational study, we miss these factors. <br>
+                    But, when we do the experiment, we ask why. That leads us to account for these factors. <br>
+                    These factors are known as <b>lurking variables.</b> <br>
+                    Most times, the cause of confounding is a lurking variable.
+                
+                    <br><br>
+
+                    <b>Confounding</b> in a study occurs when the effects of two or more explanatory variables are not
+                    separated. Therefore, any relation that may exist between an explanatory variable and the response
+                    variable may be due to some other variable or variables not accounted for in the study.
+                
+                    <br><br>
+
+                    A <b>confounding variable</b> is an explanatory variable that was considered in a study whose effect cannot be distinguished from a second explanatory variable in the study. <br>
+                    It is a difference between two groups in an observational study that can explain why the outcomes were very different between the groups.
+                
+                    <br><br>
+
+                    A <b>lurking variable</b> is an explanatory variable that was not considered in a study, but affects 
+                    the value of the response variable in the study. <br>
+                    Lurking variables are typically related to explanatory variables in the study.
+                </p>
+
+                <h3>Sampling Frame</h3>
+                <p>
+                    <b>Sampling Frame</b> is the source from which a sample is taken. <br>
+                    It is the list of all those subjects within a population that can be sampled. <br>
+                    This may include individuals and institutions among others. Sometimes, it is confused with
+                    population. However, there is a "little" difference. <br>
+                    Let us look at the example.
+                
+                    <br><br>
+
+                    The Division of Mathematics and Engineering at Arizona Western College (AWC) wanted to know the 
+                    proportion of students who would want at least a Statistics course to be required for every student
+                    before graduation. <br>
+                    The Division of Business and Computers offered to conduct the survey. <br>
+                    A simple random sample of 700 students were selected from all the enrolled students in 
+                    business and computer science classes. <br>
+                    A survey form was sent by email to these students.
+                
+                    <br><br>
+
+                    <b><u>Exercise 3</u></b>
+                
+                    <br><br>
+
+                    (13.) Identify the population and the sampling frame. 
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC13')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC13">
+                    <br>
+                    The <u>population</u> are <u>all AWC students.</u> <br>
+                    The <u>sampling frame</u> are <u>all the enrolled students in business and computer science classes.</u>
+                </div>
+                <br><br>
+                <p>
+                    It is usually cumbersome and sometimes impossible to survey an entire population. <br>
+                    Therefore, it is necessary to survey a sample from the population. <br>
+                    The sample should be chosen/selected such that it should be a representative of the population. <br>
+                    The characteristics of the individuals in the sample must represent the characteristics of the individuals in the population. <br>
+                    A representative sample is a sample in which the relevant characteristics of the sample members match those of the population. <br>
+                    This is necessary for the results of the survey to be <u>reliable.</u> <br>
+                    Also, it is important that a statistical study use a representative​ sample because of inferential statistics. If the sample fairly represents the population as a​ whole, then it is reasonable to make inferences from the sample to the population. <br>
+                    This implies that the sample should be selected randomly. 
+                    <br><br>
+                    For example: <br>
+                    Assume we want to determine the average height and weight of students at BRCC by measuring the heights and weights of a sample of 100 students. <br>
+                    A sample consisting only of members of the football and basketball teams would not be​ reliable, because these athletes tend to be bigger and taller than most students. <br>
+                    In​ contrast, assume we select our sample with a computer program, random number table, or a statistical software that randomly draws student numbers from the entire college population. <br>
+                    In this​ case, the 100 students in our sample are likely to be representative of the entire student body. <br>
+                    Therefore, we can expect that the average height and weight of students in the sample are reasonable estimates of the averages for all students.
+                    
+                    <br><br>
+                    <i>
+                        Student: How do we select such a sample? <br>
+                        Teacher: Good question. Random Sampling is key. We shall discuss the techniques/methods.
+                    </i>
+                    <br><br>
+                
+                    Say you want to run a Presidential poll, and you attend a Democratic event rally to survey the people,
+                    your results are bound to be <u>misleading.</u> This is because your audience will primarily be
+                    Democrats. Your audience at that event does not represent the population of the United States. You
+                    should survey an appropriate size of the random samples of individuals from all the states.
+                
+                    <br><br>
+                
+                    <b>Random Sampling</b> is the process of using probability/chance to select individuals from a
+                    population to be included in the sample. <br>
+                    Each individual in the population has an equal chance of being selected. <br><br>
+                    <b>Randomization</b> is used when subjects are assigned to different groups through a process of
+                    random selection.
+                </p>
+                
+                <br><br>                
+                
+                <h3>Sampling Techniques</h3>
+                <p>
+                    The sampling techniques are: <br><br>
+                    (1.) <b>Simple Random Sampling:</b> This is a sampling technique in which a sample of size, <i>n</i> is 
+                    selected from a population <i>N</i> in such a way that every possible sample of size <i>n</i> has an equal likely chance of being selected. <br>
+                    Simple random sampling is usually done <b>without​ replacement</b>, which means that a subject cannot be selected for a sample more than once. <br>
+                    A <b>Simple Random Sample</b> is the sample of size <i>n</i>, drawn from a population <i>N</i> in such a way
+                    that every possible sample of size <i>n</i> has an equal likely chance of being selected.
+                
+                    <br><br>
+                    <b><u>Exercise 4</u></b>
+                    <br><br>
+
+                    (14.) Students at GNTC were asked to select three songs from a list of nine free songs available for 
+                    download. <br>
+                    The songs are labeled Song 1, Song 2, Song 3, Song 4, Song 5, Song 6, Song 7, Song 8, and Song 9. <br>
+                   What ways can they select these songs to produce a sample random sample?
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC14')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC14">
+                    <br>
+                    <u>First way:</u> List each song on a separate piece of paper. <br>
+                    Fold them in such a way that the song titles are not visible. <br>
+                    Place them in a container. <br>
+                    Close your eyes and pick three. <br><br>
+                    <i>Student: This is similar to raffle-drawing events.</i> <br>
+                    <i>Teacher: That is correct. It is one of the ways to select a simple random sample.</i>
+                    <br><br>
+                    <u>Second way:</u> Use a Table of Random Numbers. <br>
+                    There are several random number tables. <br>
+                    You may use any table from a tertiary institution, <u>.edu</u>
+                    or from a governmental institution <u>.gov</u> 
+                    <br><br>
+                    We shall use a portion of the Table of Random Numbers written as: <br>
+                    $51111 \hspace{5em} 60678 \hspace{5em} 09822$ <br>
+                    Solution 2: <br>
+                    Beginning from the left and taking the first three numbers between 1 and 9, the three songs that would
+                    be selected are: Song 5, Song 1 and Song 6. 
+                    <br><br>
+                    <i>
+                        Student: May you please explain how you selected the songs based on that portion of the Random Number table? <br>
+                        Teacher: Sure. Beginning from the first digit of the first number on the left; Song 5 is selected first. <br>
+                        Song 1 is selected next. <br>
+                        The third also lands in Song 1. However, Song 1 has already been selected. It cannot be selected twice. <br>
+                        This is a <i>without replacement</i> event (relate with Probability). <br>
+                        The next song to be selected will then be Song 6
+                    </i>
+                    <br><br>
+                    <u>Third way:</u> Use Technology to produce random numbers from which three different one-digit 
+                    numbers corresponding to the songs are selected. <br>
+                    Let us do it.
+                </div>
+
+                <br><br>
+                <i>
+                    Show students how to obtain random numbers using: <br> 
+                    Microsoft Excel <br>
+                    Pearson Statcrunch <br>
+                    TI-84 <br>
+                    <a href="https://www.nist.gov/system/files/documents/2017/04/28/AppenB-HB133-05-Z.pdf" target="_blank">Table of Random Numbers - NIST (National Institute of Standards and Technology)</a> <br>
+                    (https://www.nist.gov/system/files/documents/2017/04/28/AppenB-HB133-05-Z.pdf) <br>
+                    Other statistical software as applicable such as Google Spreadsheets, IBM SPSS, and Minitab among others.
+                    <br><br>
+                    You may also mention: <br>
+                    <a href="https://www.randomizer.org/" target="_blank">Research Randomizer</a> <br>
+                    <a href="https://www.random.org/lists/" target="_blank">Random.Org</a> <br>
+                    Some of these websites are used in door prizes /raffle draws during webinars.
+                </i>
+                <br><br>
+
+                <h4>Generating Random Numbers Using Technology</h4>
+                We can generate random numbers using Technology/Statistical Software. 
+                <br><br>
+                The first thing we want to do is to <b>Seed</b> the random number generator. <br>
+                To seed a random number generator is to initialize the random number generator. <br>
+                We are telling the technology the place to begin from (customizing the starting number), before generating the random numbers. <br>
+                If we do not set the seed, the technology assigns a seed. 
+                <br><br>
+                <i>
+                    If you are teaching a large class, it is important for students to set the seed value. <br>
+                    This could be the date of birth: MMDDYY because the probability of having two students with the same date of birth: MMDDYY is small. <br>
+                    If students do not set the seed value, it is likely that two or more students may get the same random numbers. <br>
+                    To avoid getting the same random numbers, it is important to use different seed values. <br>
+                    Using the same seed value displays the same random numbers.
+                </i>
+                <br><br>
+                <h5>Generating Random Numbers Using TI-84</h5>
+                (1.) Set the seed value as 62782 and store it in the random variable: <b>rand</b> <br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-1st.png" alt="TI-1st"> 
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-2nd.png" alt="TI-2nd"> 
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-3rd.png" alt="TI-3rd"> 
+                <br><br>
+                Because the songs are: <br>
+                single digits <br>
+                total of 9 <br>
+                selection of 3: <br>
+                We shall use: <br>
+                lower = 1 <br>
+                upper = 9 <br>
+                number, <i>n</i> = 3 <br>
+                (2.) Select 3 songs from 9 songs <br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-4th.png" alt="TI-4th"> 
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-5th.png" alt="TI-5th"> 
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-6th.png" alt="TI-6th"> 
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-7th.png" alt="TI-7th"> 
+                <br><br>
+                <i>
+                    <b>Student:</b> What if a number repeats? <br>
+                    <b>Teacher:</b> We would use the No Repeat command: Number <b>8: randIntNoRep</b>
+                    <br><br>
+                    <img src="images/IntroductoryStatistics/RandomNumberGenerators/TI-8th.png" alt="TI-8th"> 
+                </i>
+                <br><br>
+
+                <h5>Generating Random Numbers Using Pearson StatCrunch</h5>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/Statcrunch-1st.png" alt="StatCrunch-1st">
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/Statcrunch-2nd.png" alt="StatCrunch-2nd">
+                <br><br>
+                <img src="images/IntroductoryStatistics/RandomNumberGenerators/Statcrunch-3rd.png" alt="StatCrunch-3rd">
+
+                <br><br>
+                <p>
+                    (15.) The manager of Samdom For Peace Apartments has a list of the names of 438 residents living in the east wing of the main apartment. <br>
+                    He intends to conduct an opinion survey of resident services. <br>
+                    Use the portion of the Table of Random Numbers below to produce five different three-digit numbers corresponding to the names selected. <br>
+                    Begin with the first column of the first row and work down each column.
+                </p>
+                <table class="w3-center">
+                    <tr>
+                        <th class="green" colspan="2"><b>Table of Random Numbers</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            $79651$
+                        </td>
+                        <td>
+                            $75929$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $31992$
+                        </td>
+                        <td>
+                            $37168$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $64880$
+                        </td>
+                        <td>
+                            $01006$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $99251$
+                        </td>
+                        <td>
+                            $59613$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $42118$
+                        </td>
+                        <td>
+                            $05606$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $29102$
+                        </td>
+                        <td>
+                            $21720$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $26945$
+                        </td>
+                        <td>
+                            $49265$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $42999$
+                        </td>
+                        <td>
+                            $51017$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $17845$
+                        </td>
+                        <td>
+                            $13429$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            $58116$
+                        </td>
+                        <td>
+                            $29876$
+                        </td>
+                    </tr>
+                </table>
+                <br>                
+                <button class="solutions" onclick="solutions('solutionDC15')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC15">
+                    <br>
+                    $438$ is a three-digit number. So, we are going to deal with the first three digits. <br>
+                    We begin with the first column of the first row, and work down each column. <br>
+                    The numbers are: <br>
+                    $796$ No. $796 \gt 438$ <br>
+                    $319$ Yes. <br>
+                    $648$ No. $648 \gt 438$ <br>
+                    $992$ No. $992 \gt 438$ <br>
+                    $421$ Yes. <br>
+                    $291$ Yes. <br>
+                    $269$ Yes. <br>
+                    $429$ Yes. <br>
+                    The numbers corresponding to the residents chosen are: $319, 421, 291, 269, 429$
+                </div>
+                <br><br>
+                <p>
+                    (2.) <b>Stratified Sampling:</b> This is a sampling technique in which the stratified sample is 
+                    obtained by: <br>
+                    separating the population into non-overlapping groups known as <u>strata</u>, and <br>
+                    obtaining a simple random sample from each <u>stratum.</u> <br>
+                    <i>Teacher: Singular is Stratum; Plural is Strata</i> <br><br>
+                    The individuals within each stratum should be homogenous. <br>
+                    This means that the individuals within each stratum should have similar characteristics such as
+                    gender, class, and race among others. <br><br>
+                    <u>Examples are:</u> <br>
+                    (a.) Mr. C wants to know the average number of days in which the mathematics students at AWC were absent
+                    during a semester. He visited each math class on a certain day when the class is in session, and 
+                    randomly selects $7$ students from each class. <br><br>
+                    (b.) Reuters poll conducted an election opinion poll of $25,000$ prospective voters for the Presidential
+                    election. They sorted out female responses to observe the candidates rankings with women. <br><br>
+                    (c.) Several pieces of fruit from each tree in an orchard are selected.
+                </p>
+                <br>
+                <p>
+                    (3.) <b>Cluster Sampling:</b> This is a sampling technique in which the cluster sample is 
+                    obtained by: <br>
+                    dividing the population into sections known as <u>clusters</u>, <br>
+                    randomly selecting some of those clusters, and <br>
+                    selecting all the individuals from those selected clusters. <br>
+                    Cluster sampling is similar to stratified sampling in the sense that the population is divided into
+                    groups.
+                    However, in cluster sampling; the entire individuals in those clusters are selected. <br><br>
+                    <u>Examples are:</u> <br>
+                    (a.) Mr. C is teaching a large class. He wants to know whether his students do their WebAssign homework
+                    assignments. &#128522; He randomly selects $3$ rows out of the 7 rows of students in his class and 
+                    asked all the students in those rows to show him the solutions of a certain homework assignment. <br><br>
+                    (b.) In a bid to improve its customer service, the management of a retail store randomly selects $50$ 
+                    stores during a certain week. All customers present at those stores during that week are interviewed.
+                </p>
+                <br>
+                <p>
+                    (4.) <b>Systematic Sampling:</b> This is a sampling technique in which the systematic sample is 
+                    obtained by selecting every $kth$ individual from the population. <br>
+                    Begin from a starting point, then select every <i>kth</i> individual. <br>
+                    That starting point or individual corresponds to a random number between 1 and <i>k</i>. <br>
+                    To obtain a systematic sample with high validity, there must be a sampling frame as a randomly ordered list. 
+                    <br><br>
+                    <u>Examples are:</u> <br>
+                    (a.) BeGood Computers produces laptops. To estimate the percentage of defects in a certain batch,
+                    the quality control manager starts from the $3^{rd}$ laptop, and selects every 12th laptop from 
+                    the assembly line. <br><br>
+                    (b.) The people greeter at a certain Walmart store asks every outgoing 7th customer his/her 
+                    shopping experience. 
+                    <br><br>
+                    (c.) A telemarketer calls every 52nd person in a phone book directory that has over $100,000$ 
+                    phone number listings of the residents of a city.
+                </p>
+                <br>
+                <p>
+                    (5.) <b>Multistage Sampling:</b> This is a sampling technique in which samples are selected by a 
+                    combination of two or more different sampling techniques, or a combination of the same sampling
+                    technique at different stages. <br>
+                    It consists of several stages (hence the name, "multistage") where each stage could comprise a 
+                    particular sampling technique. Most large-scale surveys obtain samples using a combination of 
+                    sampling techniques. <br><br>
+                    <u>Examples are:</u> <br>
+                    (a.) Micah Research Company wants to obtain a sample of undergraduate students in the United States.
+                    They used a simple random sample to select 12 states. From each of the selected states, 12 colleges or 
+                    universities were chosen at random. Then, from each of the $144$ colleges or universities; a simple random
+                    sample of $30$ undergraduate students were selected. <br><br>
+                    (b.) <a href="https://www.nielsen.com/us/en/solutions/measurement/audience.html" target="_blank">Nielsen Media Research</a> 
+                    is an American firm that measures media audiences. They randomly select households and use an electronic
+                    box, called the People Meter to monitor the programs viewed by the households. They sell the information 
+                    they obtain to television stations and companies. These results are helpful in determining the prices for 
+                    commercials. How do they select these households? <br>
+                    <b>First Stage - Stratified Sampling:</b> They divide the country into geographical areas or strata using the 
+                    U.S Census data. The strata typically consists of city blocks in urban areas and geographic regions in rural 
+                    areas. <br>
+                    <b>Second Stage - Simple Random Sampling:</b> They send representatives to the selected strata and lists 
+                    the households within the strata. The households are then randomly selected using a simple random sample. <br><br>
+                    (c.) Another good example of multistage sampling is the one used by the 
+                    <a href="https://nces.ed.gov/statprog/handbook/pdf/cps.pdf" target="_blank">U.S Census Bureau for the 
+                    CPS (Current Population Survey)</a>. 
+                </p>
+                <br>
+                <p>
+                    (6.) <b>Convenience Sampling:</b> This is a sampling technique in which the individuals in the 
+                    convenience sample (also known as a voluntary response sample) are easily obtained because the 
+                    individuals volunteered, rather than by randomness. <br>
+                    Begin from a starting point, then select every $kth$ individual. <br>
+                    The individuals in the sample voluntarily decide to participate in the survey. <br><br>
+                    <u>Examples are:</u> <br>
+                    (a.) America's Got Talent asked its viewers to vote for the contestant with the best performance.
+                    Some voted. Some did not. <br><br>
+                    (b.) Micaiah resides in the community of <b><i>Happyland, Oklahoma</i></b>.
+                    As part of his Statistics project, he would like to collect data on household size in his city. He asks
+                    each person in his class for the size of their household and then reports a simple random sample. <br><br>
+                    <i>
+                        Teacher: Due to the fact that the individuals in this sample were not selected by randomness, 
+                        do you think this sample is a representative of the population? <br>
+                        Do you think the results obtained from this sample are free from bias? <br>
+                        Do you think the results should be valid? <br>
+                        Please note the students' responses.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <b><u>Exercise 5</u></b> <br>
+                    Identify the sampling methods in these scenarios. <br>
+                    Explain what is wrong with the sampling method as applicable.
+                </p>
+                <p>
+                    (16.) All $30$ students in Mr. C's Statistics class were asked to complete a survey to evaluate his 
+                    teaching/instruction. <br>
+                    Of those $30$ students, only $10\%$ responded. 
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC16')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC16">
+                    <br>
+                    Voluntary response/Self-selected response/Convenience sampling method. <br>
+                    <u>Issues:</u> <br>
+                    Many students did not respond to the survey. <br>
+                    The responses of those that responded may not reflect the opinions of the general population of the students
+                    in his Statistics class.
+                </div>
+                                               
+                
+                <h3>Bias in Sampling</h3>
+                <p>
+                    <b><u>Exercise 6</u></b> <br>
+                    Determine whether the source has the potential to create a bias in a statistical study.
+               
+                    <br><br>
+
+                    (17.) <a href="https://www.nytimes.com/2018/07/08/health/world-health-breastfeeding-ecuador-trump.html" target="_blank">
+                            Opposition to Breast-Feeding Resolution by U.S. Stuns World Health Officials
+                        </a> - New York Times <br>
+                    A resolution to encourage breast-feeding was expected to be approved quickly and easily by the 
+                    hundreds of government delegates who gathered in the Spring of 2018 in Geneva for the United Nations-affiliated World 
+                    Health Assembly. <br>
+                    But, the United States delegation, embracing the interests of infant formula manufacturers, upended the deliberations.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC17')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC17">
+                    <br>
+                    There appears to be a potential to create a bias. <br> 
+                    There is an incentive to produce results that are in line with the United States and the 
+                    infant formula manufacturers.
+                </div>
+                <br>
+                <p>
+                    (18.) Georgia Northwestern Technical College (GNTC) obtained word counts from the most popular novels of the 
+                    past three years.
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC18')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC18">
+                    <br>
+                    There does not appear to be a potential to create a bias. <br>
+                    GNTC would not gain anything by manipulating the results.
+                </div>
+                <p>
+                    <b><u>Exercise 7</u></b> <br>
+                    Determine whether these questions are biased or not. <br>
+                    If they are biased, write a less biased question.
+                
+                    <br><br>
+
+                    (19.) Should companies that pollute the environment be forced to pay the costs of cleanup?
+                </p>
+                <button class="solutions" onclick="solutions('solutionDC19')">Show/Hide Answer</button>
+                <div class="result" id="solutionDC19">
+                    <br>
+                    It is a biased question. <br>
+                    A less biased question would be: Should companies pay the costs for any environmental cleanup?
+                </div>
+            </div>
+            <!-- End Data Collection -->
+            
+            <br><br>   
+            
+            <!-- Data Organization -->
+            <!-- Objectives -->
+            <div class="w3-container w3-padding-32" id="dataOrganization">
+                <h2 class="w3-padding-16">Data Organization</h2>
+                <hr>
+                <h3>Objectives</h3>
+                <p>
+                    Students will: <br>
+                    (1.) Organize raw data in classes using a frequency distribution table. <br>
+                    (2.) Compute the statistical properties of data. <br>
+                    (3.) Compute the relative frequencies of data. <br>
+                    (4.) Construct a relative frequency distribution table. <br>
+                    (5.) Compute the cumulative frequencies of data. <br>
+                    (6.) Construct a cumulative frequency distribution table.
+                </p>
+                <!-- End Objectives -->
+                <br>
+                <h3>Vocabulary Words</h3>
+                <p>
+                    frequency distribution table, frequency table, class, classes, frequency, data set, class width, 
+                    tally, class size, range, number of classes, maximum value, minimum value, class interval, 
+                    class limit, lower class interval, lower class limit, upper class interval, upper class limit, 
+                    class midpoint, class mark, class boundary, relative frequency, proportion, cumulative frequency
+                
+                    <br><br>
+
+                    A <b>Frequency Distribution Table</b> also known as a <b>Frequency Table</b> is used to organize data. <br>
+                    It organizes a data set by: <br>
+                    (1.) Separating the data value in classes and <br>
+                    (2.) Listing the frequencies of each class. <br>
+                    It helps us to understand the nature of the distribution of the a data set.
+                
+                    <br><br>
+
+                    <b><u>Example 1</u></b> <br>
+                    A Good Samaritan (generous giver) asked for the pant/trouser sizes of the staff at Divine Mercy Orphanage. <br>
+                    The raw data of the sizes are listed as shown:
+                </p>
+
+                <table class="w3-center">
+                    <tr>
+                        <th class="green" colspan="7"><b>Pant/Trouser Sizes</b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            $36$ <br>
+                            $44$ <br>
+                            $42$ <br>
+                            $36$ <br>
+                            $42$
+                        </td>
+                        <td>
+                            $38$ <br>
+                            $48$ <br>
+                            $48$ <br>
+                            $40$ <br>
+                            $42$
+                        </td>
+                        <td>
+                            $42$ <br>
+                            $42$ <br>
+                            $42$ <br>
+                            $48$ <br>
+                            $42$ 
+                        </td>
+                        <td>
+                            $40$ <br>
+                            $48$ <br>
+                            $48$ <br>
+                            $46$ <br>
+                            $44$ 
+                        </td>
+                        <td>
+                            $50$ <br>
+                            $38$ <br>
+                            $32$ <br>
+                            $44$ <br>
+                            $42$ 
+                        </td>
+                        <td>
+                            $48$ <br>
+                            $42$ <br>
+                            $36$ <br>
+                            $40$ <br>
+                            $42$ 
+                        </td>
+                        <td>
+                            $48$ <br>
+                            $44$ <br>
+                            $44$ <br>
+                            $46$ <br>
+                            $42$ 
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    $(a.)$ Draw a frequency distribution table for the data. Your table should have $7$ classes. <br>
+                    $(b.)$ Compute the statistical properties of the classes.
+                
+                    <br><br>
+
+                    <b>Solution</b> <br><br>                    
+                    <b>1st Step:</b> We want 7 classes. <br>
+                    So, we need to find the <b>class width</b> that will give us 7 classes. <br><br>
+                    <b>Class Width</b> is also known as <b>Class Size</b>. <br>
+                    <b>Class Size is the size of the class.</b> <br>
+                    We shall write <b>Five Formulas for the Class Width</b> <br><br>
+                    <b><u>First Formula for Class Width</u></b> <br><br>
+                    $
+                    Class\:\:Width = \dfrac{Range}{Number\:\:of\:\:classes} \\[5ex]
+                    Range = Maximum - Minimum \\[3ex]
+                    \therefore Class\:\:Width = \dfrac{Maximum - Minimum}{Number\:\:of\:\:classes} \\[5ex]
+                    Maximum\:\:data\:\:value = 50 \\[3ex]
+                    Minimum\:\:data\:\:value = 32 \\[3ex]
+                    Class\:\:Width = \dfrac{50 - 32}{7} = \dfrac{18}{7} = 2.57 \\[5ex]
+                    $
+                    <b>2nd Step:</b> We need to <b>round up the class width to the nearest integer.</b> <br>
+                    This is the common rule. <br><br>
+                    Each class has a range of values, which are called <b>Class Intervals</b> <br>
+                    <b>Class Interval</b> is also known as <b>Class Limit</b>. <br>
+                    <b>Class Intervals separates the classes, but with gaps between the classes.</b> <br><br>
+                    The smallest data value of each class is the <b>Lower Class Interval</b>($LCI$) of that class <br>
+                    The highest data value of each class is the <b>Upper Class Interval</b>($UCI$) of that class <br><br>
+                    <b><u>Second Formula for Class Width</u></b> <br><br>
+                    $
+                    Class\:\:Width = LCI\:\:of\:\:2nd\:\:Class - LCI\:\:of\:\:1st\:\:Class \\[3ex]
+                    \rightarrow LCI\:\:of\:\:2nd\:\:Class = LCI\:\:of\:\:1st\:\:Class + Class\:\:Width \\[5ex]
+                    $
+                    <b>3rd Step:</b> Let us <b>write the lower class interval of the first class by choosing 
+                    the minimum data value or any convenient value below the minimum</b>. <br>
+                    Then, we write the lower class intervals of the remaining classes.
+                </p>
+                <p>
+                    <i>
+                        Student: Choosing the minimum data value or any convenient value below the minimum value? <br>
+                        May you please elaborate? <br>
+                        Teacher: Yes. In our example, we shall use the minimum data value. <br>
+                        However, in some cases - depending on the number of classes; we will need to use a value 
+                        below the minimum value. <br>
+                        Student: When do we have such a case? May you give an example? <br>
+                        Teacher: If you are given the number of classes but not given the class size, then you calculate
+                        the class size using the first formula we just used. <br>
+                        Then, you try to use the minimum value (just as we shall use) and the second formula to write
+                        the first class. We then write other classes until you get to the class that also contains the 
+                        maximum value. That class will be our final class. <br>
+                        Then, count the classes. If the number of classes is what is needed, then you did it well. <br>
+                        If the number of classes is greater or smaller than the required number of classes, then you will
+                        need to adjust the lower class interval of the first class. Please ensure that the first class 
+                        contains the minimum value, just as the last class contains the maximum value. <br>
+                        Let us solve some examples where we shall just use the minimum value as the lower class interval
+                        of our first class. Then, we shall solve examples where we need to adjust the value of the class
+                        size as the lower class interval of the first class. <br>
+                        Please review the <a href="https://statistical-science.appspot.com/IntroductoryStatistics/solved-examples.html" target="_blank">Solved Examples</a> 
+                        for at least an example of such cases.
+                    </i>
+                
+                    <br><br>
+
+                    So, let us write the lower class intervals of the classes. <br><br>
+                    $
+                    LCI\:\:of\:\:1st\:\:Class = Minimum\:\:value = 32 \\[3ex]
+                    $
+                    From the <b><u>Second Formula for Class Width</u></b> <br><br>
+                    $
+                    LCI\:\:of\:\:2nd\:\:Class = LCI\:\:of\:\:1st\:\:Class + Class\:\:Width \\[3ex]
+                    LCI\:\:of\:\:3rd\:\:Class = LCI\:\:of\:\:2nd\:\:Class + Class\:\:Width \\[3ex]
+                    Class\:\:Width = 3 \\[3ex]
+                    LCI\:\:of\:\:2nd\:\:Class = 32 + 3 = 35 \\[3ex]
+                    Similarly \\[3ex]
+                    LCI\:\:of\:\:3rd\:\:Class = 35 + 3 = 38 \\[3ex]
+                    LCI\:\:of\:\:4th\:\:Class = 38 + 3 = 41 \\[3ex]
+                    LCI\:\:of\:\:5th\:\:Class = 41 + 3 = 44 \\[3ex]
+                    LCI\:\:of\:\:6th\:\:Class = 44 + 3 = 47 \\[3ex]
+                    LCI\:\:of\:\:7th\:\:Class = 47 + 3 = 50 \\[5ex]
+                    $
+                
+                    <br><br>
+
+                    <b>4th Step:</b> Let us <b>write the upper class interval ($UCI$) of the first class by noting some rules.</b> <br>
+                    Then, we write the upper class intervals of the remaining classes. <br>
+                    What are those rules? <br>
+                    Let us get back to Class Intervals <br>
+                    Recall that class intervals separate the classes, but with gaps between the classes. <br><br>
+
+                    <mark>NOTE:</mark> <br>
+                    (1.) If the class intervals <b>(the $LCI$ and the $UCI$) are integers</b>, 
+                    then the <b>difference between the lower class interval of a class and the upper class interval of the <u>previous/preceding class</u></b> is $1$ <br><br>
+                    $
+                    LCI\:\:of\:\:2nd\:\:Class - UCI\:\:of\:\:1st\:\:Class = 1 \\[3ex]
+                    LCI\:\:of\:\:5th\:\:Class - UCI\:\:of\:\:4th\:\:Class = 1 \\[3ex]
+                    LCI\:\:of\:\:8th\:\:Class - UCI\:\:of\:\:7th\:\:Class = 1 \\[5ex]
+                    $
+                    (2.) If the class intervals <b>(the $LCI$ and the $UCI$) are decimals rounded to one decimal place</b>, 
+                    then the <b>difference between the lower class interval of a class and the upper class interval of the <u>previous class</u></b> is $0.1$ <br><br>
+                    $
+                    LCI\:\:of\:\:3rd\:\:Class - UCI\:\:of\:\:2nd\:\:Class = 0.1 \\[3ex]
+                    LCI\:\:of\:\:6th\:\:Class - UCI\:\:of\:\:5th\:\:Class = 0.1 \\[3ex]
+                    LCI\:\:of\:\:10th\:\:Class - UCI\:\:of\:\:9th\:\:Class = 0.1 \\[5ex]
+                    $
+                    (3.) If the class intervals <b>(the $LCI$ and the $UCI$) are decimals rounded to two decimal places</b>, 
+                    then the <b>difference between the lower class interval of a class and the upper class interval of the <u>previous class</u></b> is $0.01$ <br><br>
+                    $
+                    LCI\:\:of\:\:4th\:\:Class - UCI\:\:of\:\:3rd\:\:Class = 0.01 \\[3ex]
+                    LCI\:\:of\:\:13th\:\:Class - UCI\:\:of\:\:12th\:\:Class = 0.01 \\[3ex]
+                    LCI\:\:of\:\:21st\:\:Class - UCI\:\:of\:\:20th\:\:Class = 0.01 \\[5ex]
+                    $
+                    and so on and so forth. <br><br>
+                    In this case (our data values are integers): <br><br>
+                    $
+                    LCI\:\:of\:\:2nd\:\:Class - UCI\:\:of\:\:1st\:\:Class = 1 \\[3ex]
+                    LCI\:\:of\:\:2nd\:\:Class = 35 \\[3ex]
+                    \rightarrow 35 - UCI\:\:of\:\:1st\:\:Class = 1 \\[3ex]
+                    UCI\:\:of\:\:1st\:\:Class = 35 - 1 \\[3ex]
+                    UCI = 34 \\[3ex]
+                    Recall\:\: LCI\:\:of\:\:1st\:\:Class = Minimum\:\:value = 32 \\[3ex]
+                    \therefore 1st\:\:Class = 32 - 34 \\[5ex]
+                    $
+                    <b><u>Third Formula for Class Width</u></b> <br><br>
+                    $
+                    Class\:\:Width = UCI\:\:of\:\:2nd\:\:Class - UCI\:\:of\:\:1st\:\:Class \\[3ex]
+                    \rightarrow UCI\:\:of\:\:2nd\:\:Class = UCI\:\:of\:\:1st\:\:Class + Class\:\:Width \\[3ex]
+                    UCI\:\:of\:\:3rd\:\:Class = UCI\:\:of\:\:2nd\:\:Class + Class\:\:Width \\[3ex]
+                    Class\:\:Width = 3 \\[3ex]
+                    UCI\:\:of\:\:2nd\:\:Class = 34 + 3 = 37 \\[3ex]
+                    Similarly \\[3ex]
+                    UCI\:\:of\:\:3rd\:\:Class = 37 + 3 = 40 \\[3ex]
+                    UCI\:\:of\:\:4th\:\:Class = 40 + 3 = 43 \\[3ex]
+                    UCI\:\:of\:\:5th\:\:Class = 43 + 3 = 46 \\[3ex]
+                    UCI\:\:of\:\:6th\:\:Class = 46 + 3 = 49 \\[3ex]
+                    UCI\:\:of\:\:7th\:\:Class = 49 + 3 = 52 \\[5ex]
+                    $
+                
+                    <br><br>
+
+                    So, our classes are: <br><br>
+                    $
+                    1st\:\:Class:\:\: 32 - 34 \\[3ex]
+                    2nd\:\:Class:\:\: 35 - 37 \\[3ex]
+                    3rd\:\:Class:\:\: 38 - 40 \\[3ex]
+                    4th\:\:Class:\:\: 41 - 43 \\[3ex]
+                    5th\:\:Class:\:\: 44 - 46 \\[3ex]
+                    6th\:\:Class:\:\: 47 - 49 \\[3ex]
+                    7th\:\:Class:\:\: 50 - 52 \\[5ex]
+                    $
+                
+                    <br><br>
+
+                    So, we have written the seven classes. <br>
+                    But, let us compute the statistical properties of these classes. <br>
+                    These include: class midpoints, class boundaries, relative frequencies, and cumulative frequencies
+                    for each class.
+                
+                    <br><br>
+
+                    <b>5th Step:</b> Let us <b>write the midpoints of each class</b>. <br>
+                    <b>Class Midpoints</b> are also known as <b>Class Marks</b> <br>
+                    <b>Class Midpoints are the midpoints of the classes.</b> <br><br>
+                    <b>Formula for Class Midpoint</b> <br><br>
+                    $
+                    Class\:\:Midpoint = \dfrac{LCI + UCI}{2} \\[5ex]
+                    1st\:\:Class:\:\: Class\:\:Midpoint = \dfrac{32 + 34}{2} = \dfrac{66}{2} = 33 \\[5ex]
+                    2nd\:\:Class:\:\: Class\:\:Midpoint = \dfrac{35 + 37}{2} = \dfrac{72}{2} = 36 \\[5ex]
+                    3rd\:\:Class:\:\: Class\:\:Midpoint = \dfrac{38 + 40}{2} = \dfrac{78}{2} = 39 \\[5ex]
+                    4th\:\:Class:\:\: Class\:\:Midpoint = \dfrac{41 + 43}{2} = \dfrac{84}{2} = 42 \\[5ex]
+                    5th\:\:Class:\:\: Class\:\:Midpoint = \dfrac{44 + 46}{2} = \dfrac{90}{2} = 45 \\[5ex]
+                    6th\:\:Class:\:\: Class\:\:Midpoint = \dfrac{47 + 49}{2} = \dfrac{96}{2} = 48 \\[5ex]
+                    7th\:\:Class:\:\: Class\:\:Midpoint = \dfrac{50 + 52}{2} = \dfrac{102}{2} = 51 \\[5ex]
+                    $
+                
+                    <br><br>
+
+                    <i>
+                        Student: I just noticed a pattern with the class midpoints and the class width <br>
+                        Teacher: Good observation. However, please use the formula I gave you. <br>
+                        Do not use a shortcut of finding the class midpoint of the first class and adding the class width
+                        to find the class midpoints of the remaining classes. <br>
+                        It is not the formula/technique we use for finding the class midpoints, even though the technique
+                        worked in this case. It does not work all the time.
+                    </i>
+                
+                    <br><br>
+
+                    Recall: Class Intervals separate the classes, but with gaps between the classes. <br>
+                    What about any statistical property that does not have any gaps between the classes? <br>
+                    What statistical property takes into account "all" the data...especially for continuous data? <br>
+                    For example: In the first two classes: <br>
+                    First class: $32 - \color{red}{34}$ <br>
+                    Second Class: $\color{red}{35} - 37$ <br>
+                    What happens to the data values between $34$ and $35$? <br>
+                    This brings us to...
+                
+                    <br><br>
+
+                    <b>6th Step:</b> Let us <b>write the class boundary of each class</b>. <br>
+                    <b>Class Boundaries separate the classes, but without gaps between the classes.</b> <br>
+                    The <b>Class Boundary</b> for each class comprise the <b>Lower Class Boundary</b>, $LCB$ and the 
+                    <b>Upper Class Boundary</b>, $UCB$ <br>
+                    <b>Formula for Class Boundaries</b> <br><br>
+                    $
+                    Lower\:\:Class\:\:Boundary\:\:of\:\:a\:\:class = \dfrac{LCI\:\:of\:\:that\:\:class + UCI\:\:of\:\:previous/preceding\:\:class}{2} \\[5ex]
+                    Upper\:\:Class\:\:Boundary\:\:of\:\:a\:\:class = \dfrac{UCI\:\:of\:\:that\:\:class + LCI\:\:of\:\:next/succeeding\:\:class}{2} \\[5ex]
+                    LCB\:\:of\:\:2nd\:\:Class = \dfrac{LCI\:\:of\:\:2nd\:\:Class + UCI\:\:of\:\:1st\:\:Class}{2} = \dfrac{35 + 34}{2} = \dfrac{69}{2} = 34.5 \\[5ex]
+                    UCB\:\:of\:\:2nd\:\:Class = \dfrac{UCI\:\:of\:\:2nd\:\:Class + LCI\:\:of\:\:3rd\:\:Class}{2} = \dfrac{37 + 38}{2} = \dfrac{75}{2} = 37.5 \\[5ex]
+                    Class\:\:Boundary\:\:of\:\:2nd\:\:Class = 34.5 - 37.5 \\[3ex]
+                    LCB\:\:of\:\:3rd\:\:Class = \dfrac{LCI\:\:of\:\:3rd\:\:Class + UCI\:\:of\:\:2nd\:\:Class}{2} = \dfrac{38 + 37}{2} = \dfrac{69}{2} = 37.5 \\[5ex]
+                    UCB\:\:of\:\:3rd\:\:Class = \dfrac{UCI\:\:of\:\:3rd\:\:Class + LCI\:\:of\:\:4th\:\:Class}{2} = \dfrac{40 + 41}{2} = \dfrac{81}{2} = 40.5 \\[5ex]
+                    Class\:\:Boundary\:\:of\:\:3rd\:\:Class = 37.5 - 40.5 \\[5ex]
+                    $
+                </p>
+                
+                <br><br>
+                
+                <p>
+                    <i>
+                        Student: What about the class boundary of the first class? <br>
+                        Teacher: Good question. <br>
+                        What do you think? <br>
+                        Student: I think the $UCB$ of the first class would be: $34.5$ <br>
+                        Teacher: That is correct. <br>
+                        How did you get it? <br>
+                        From the formula? <br>
+                        Student: No. I noticed that the $UCB$ of the first class should be the $LCB$ of the second class
+                        because there are no gaps between the classes. Is that right? <br>
+                        Teacher: That is very correct...and good reasoning. <br>
+                        But, you can also get it from the formula I gave you. <br>
+                        Student: Yes, I know. <br>
+                        But, how do we get the $LCB$ of the first class? 
+                    </i>
+                
+                    <br><br>
+
+                    What about the class boundary of the first class? <br><br>
+                    $
+                    UCB\:\:of\:\:1st\:\:Class = \dfrac{UCI\:\:of\:\:1st\:\:Class + LCI\:\:of\:\:2nd\:\:Class}{2} = \dfrac{34 + 35}{2} = \dfrac{69}{2} = 34.5 \\[5ex]
+                    $
+                    But, how do we write the lower class boundary of the first class? <br><br>
+                    $
+                    LCB\:\:of\:\:1st\:\:Class = \dfrac{LCI\:\:of\:\:1st\:\:Class + UCI\:\:of\:\:previous\:\:Class}{2} \\[5ex]
+                    $
+                    We do not have a previous class. <br>
+                    But, assuming we did; the $UCI$ of that class would be $34 - 3 = 31$ <br><br>
+                    $
+                    \therefore LCB\:\:of\:\:1st\:\:Class = \dfrac{32 + 31}{2} = \dfrac{63}{2} = 31.5 \\[5ex]
+                    Class\:\:Boundary\:\:of\:\:1st\:\:Class = 31.5 - 34.5 \\[3ex]
+                    $
+                    Also, how do we write the upper class boundary of the seventh class? <br><br>
+                    $
+                    UCB\:\:of\:\:7th\:\:Class = \dfrac{UCI\:\:of\:\:7th\:\:Class + LCI\:\:of\:\:next\:\:Class}{2} \\[5ex]
+                    $
+                    We do not have a next class. <br>
+                    But, assuming we did; the $LCI$ of that class would be $50 + 3 = 53$ <br><br>
+                    $
+                    \therefore UCB\:\:of\:\:7th\:\:Class = \dfrac{52 + 53}{2} = \dfrac{105}{2} = 52.5 \\[5ex]
+                    Class\:\:Boundary\:\:of\:\:7th\:\:Class = 49.5 - 52.5 \\[3ex]
+                    $
+                
+                    <br><br>
+
+                    <i>
+                        Teacher: Did you notice any relationship between the class boundary and the class width? <br>
+                        Student: Yes. <br>
+                        The class width is the difference between the upper class boundary and the lower class boundary 
+                        of the same class. <br>
+                        Teacher: That is very correct. <br>
+                        This leads us to write the...
+                    </i>
+                
+                    <br><br>
+
+                    <b>Fourth Formula for Class Width</b> <br><br>
+                    $
+                    Class\:\:Width = UCB\:\:of\:\:a\:\:class - LCB\:\:of\:\:the\:\:same\:\:class \\[3ex]
+                    UCB\:\:of\:\:a\:\:class - LCB\:\:of\:\:the\:\:same\:\:class = Class\:\:Width \\[3ex]
+                    \rightarrow UCB\:\:of\:\:a\:\:class = Class\:\:Width + LCB\:\:of\:\:the\:\:same\:\:class  \\[3ex]
+                    UCB\:\:of\:\:a\:\:class = LCB\:\:of\:\:the\:\:same\:\:class + Class\:\:Width \\[3ex]
+                    Class\:\:Width = UCB\:\:of\:\:1st\:\:Class - LCB\:\:of\:\:1st\:\:Class = 34.5 - 31.5 = 3 \\[3ex]
+                    Class\:\:Width = UCB\:\:of\:\:2nd\:\:Class - LCB\:\:of\:\:2nd\:\:Class = 37.5 - 34.5 = 3 \\[3ex]
+                    $
+                    Because class boundaries do not have gaps between the classes, we notice that: <br><br>
+                    $
+                    UCB\:\:of\:\:1st\:\:Class = LCB\:\:of\:\:2nd\:\:Class \\[3ex]
+                    UCB\:\:of\:\:2nd\:\:Class = LCB\:\:of\:\:3rd\:\:Class \\[3ex]
+                    This\:\:implies\:\:that \\[3ex]
+                    LCB\:\:of\:\:1st\:\:Class = LCB\:\:of\:\:2nd\:\:Class - Class\:\:Width \\[3ex]
+                    Also \\[3ex]
+                    UCB\:\:of\:\:7th\:\:Class = UCB\:\:of\:\:6th\:\:Class + Class\:\:Width \\[3ex]
+                    $
+                    This leads us to another formula for class width.
+                
+                    <br><br>
+
+                    <b>Fifth Formula for Class Width</b> <br><br>
+                    $
+                    Class\:\:Width = LCB\:\:of\:\:a\:\:Class - LCB\:\:of\:\:previous\:\:class \\[3ex]
+                    \rightarrow LCB\:\:of\:\:a\:\:Class = LCB\:\:of\:\:previous\:\:class + Class\:\:Width \\[3ex]
+                    Class\:\:Width = UCB\:\:of\:\:a\:\:Class - UCB\:\:of\:\:previous\:\:class \\[3ex]
+                    \rightarrow UCB\:\:of\:\:a\:\:Class = UCB\:\:of\:\:previous\:\:class + Class\:\:Width \\[3ex]
+                    $
+                    Let us write the lower class boundaries of the remaining classes. <br><br>
+                    $
+                    LCB\:\:of\:\:3rd\:\:Class = LCB\:\:of\:\:2nd\:\:Class + Class\:\:Width \\[3ex]
+                    LCB\:\:of\:\:3rd\:\:Class = 34.5 + 3 = 37.5 \\[3ex]
+                    Similarly \\[3ex]
+                    LCB\:\:of\:\:4th\:\:Class = 37.5 + 3 = 40.5 \\[3ex]
+                    LCB\:\:of\:\:5th\:\:Class = 40.5 + 3 = 43.5 \\[3ex]
+                    LCB\:\:of\:\:6th\:\:Class = 43.5 + 3 = 46.5 \\[3ex]
+                    LCB\:\:of\:\:7th\:\:Class = 46.5 + 3 = 49.5 \\[3ex]
+                    $
+                    Let us write the upper class boundaries of the remaining classes. <br><br>
+                    $
+                    UCB\:\:of\:\:3rd\:\:Class = UCB\:\:of\:\:2nd\:\:Class + Class\:\:Width \\[3ex]
+                    UCB\:\:of\:\:3rd\:\:Class = 37.5 + 3 = 40.5 \\[3ex]
+                    Similarly \\[3ex]
+                    UCB\:\:of\:\:4th\:\:Class = 40.5 + 3 = 43.5 \\[3ex]
+                    UCB\:\:of\:\:5th\:\:Class = 43.5 + 3 = 46.5 \\[3ex]
+                    UCB\:\:of\:\:6th\:\:Class = 46.5 + 3 = 49.5 \\[3ex]
+                    UCB\:\:of\:\:7th\:\:Class = 49.5 + 3 = 52.5 \\[5ex]
+                    $
+                
+                    <br><br>
+
+                    $\boldsymbol{7th\:\:Step}$ Let us <b>write the relative frequency of each class</b>. <br>
+                    <b>Relative Frequency, $RF$ (also known as Proportion) of a class is the ratio of the frequency of that class to the total
+                    frequency of the data set.</b> <br>
+                    It is the proportion of the observations that display the relevant characteristic. <br>
+                    It is used in summarizing a distribution. <br>
+                    <b>Formula for Relative Frequency</b> <br><br>
+                    $
+                    RF\:\:of\:\:a\:\:class = \dfrac{Frequency\:\:of\:\:that\:\:class}{\Sigma F} \\[5ex]
+                    \Sigma F \:\:means\:\:summation\:\:of\:\:the\:\:frequencies \\[3ex]
+                    RF\:\:of\:\:3rd\:\:Class = \dfrac{Frequency\:\:of\:\:3rd\:\:Class}{\Sigma F} \\[5ex]
+                    $
+                    Relative Frequency of a class is expressed as a fraction, decimal, or percent. <br>
+                    The sum of the relative frequencies of all the classes should be equal to $100\%$ or $1$ <br><br>
+                    $
+                    \Sigma RF = 100\% \\[3ex]
+                    \Sigma RF = 1 \\[3ex]
+                    $
+                    We shall calculate the relative frequencies in the Frequency Table.
+                
+                    <br><br>
+
+                    $\boldsymbol{8th\:\:Step}$ Let us <b>write the cumulative frequency of each class</b>. <br>
+                    <b>Cumulative Frequency, $CF$ of a class is the <u>sum</u> of the <u>frequencies prior to that class</u> and 
+                        the <u>frequency of that class</u>.</b> <br>
+                    <b>Formula for Cumulative Frequency</b> <br><br>
+                    $
+                    CF\:\:of\:\:1st\:\:Class = Frequency\:\:of\:\:1st\:\:Class \\[3ex]
+                    CF\:\:of\:\:2nd\:\:Class = Frequency\:\:of\:\:1st\:\:Class + Frequency\:\:of\:\:2nd\:\:Class \\[3ex]
+                    CF\:\:of\:\:3rd\:\:Class = Frequency\:\:of\:\:1st\:\:Class + Frequency\:\:of\:\:2nd\:\:Class + Frequency\:\:of\:\:3rd\:\:Class \\[3ex]
+                    $
+                    The last cumulative frequency (the cumulative frequency of the last class) is the sum of all the
+                    frequencies. <br><br>
+                    $Last\:\:CF = CF\:\:of\:\:Last\:\:Class = \Sigma F \\[3ex]$
+                    We shall calculate the cumulative frequencies in the Frequency Table.
+                
+                    <br><br>
+
+                    The <b>Frequency Distribution Table</b> is drawn as shown:
+                </p>
+                <br><br>
+
+                <table class="w3-center">
+                    <tr>
+                        <th class="green">Class Intervals</th>
+                        <th class="green">Tally</th>
+                        <th class="green">Frequency, $F$</th>
+                        <th class="green">Class Midpoints</th>
+                        <th class="green">Class Boundaries</th>
+                        <th class="green">Relative Frequency, $RF$</th>
+                        <th class="green">Cumulative Frequency, $CF$</th>
+                    </tr>
+                    <tr>
+                        <td>$32 - 34$</td>
+                        <td class="w3-padding">I</td>
+                        <td>$1$</td>
+                        <td>$33$</td>
+                        <td>$31.5 - 34.5$</td>
+                        <td class="w3-padding">$\dfrac{1}{35} = 0.02875 = 2.875\%$</td>
+                        <td>$1$</td>
+                    </tr>
+                    <tr>
+                        <td>$35 - 37$</td>
+                        <td class="w3-padding">III</td>
+                        <td>$3$</td>
+                        <td>$36$</td>
+                        <td>$34.5 - 37.5$</td>
+                        <td class="w3-padding">$\dfrac{3}{35} = 0.08571 = 8.571\%$</td>
+                        <td>$1 + 3 = 4$</td>
+                    </tr>
+                    <tr>
+                        <td>$38 - 40$</td>
+                        <td class="w3-padding"><del>IIII</del></td>
+                        <td>$5$</td>
+                        <td>$39$</td>
+                        <td>$37.5 - 40.5$</td>
+                        <td class="w3-padding">$\dfrac{5}{35} = \dfrac{1}{7} = 0.14286 = 14.286\%$</td>
+                        <td>$4 + 5 = 9$</td>
+                    </tr>
+                    <tr>
+                        <td>$41 - 43$</td>
+                        <td class="w3-padding"><del>IIII</del>&nbsp;<del>IIII</del>&nbsp;I</td>
+                        <td>$11$</td>
+                        <td>$42$</td>
+                        <td>$40.5 - 43.5$</td>
+                        <td class="w3-padding">$\dfrac{11}{35} = 0.31429 = 31.429\%$</td>
+                        <td>$9 + 11 = 20$</td>
+                    </tr>
+                    <tr>
+                        <td>$44 - 46$</td>
+                        <td class="w3-padding"><del>IIII</del>&nbsp;II</td>
+                        <td>$7$</td>
+                        <td>$45$</td>
+                        <td>$43.5 - 46.5$</td>
+                        <td class="w3-padding">$\dfrac{7}{35} = \dfrac{1}{5} = 0.2 = 20\%$</td>
+                        <td>$20 + 7 = 27$</td>
+                    </tr>
+                    <tr>
+                        <td>$47 - 49$</td>
+                        <td class="w3-padding"><del>IIII</del>&nbsp;II</td>
+                        <td>$7$</td>
+                        <td>$48$</td>
+                        <td>$46.5 - 49.5$</td>
+                        <td class="w3-padding">$\dfrac{7}{35} = \dfrac{1}{5} = 0.2 = 20\%$</td>
+                        <td>$27 + 7 = 34$</td>
+                    </tr>
+                    <tr>
+                        <td>$50 - 52$</td>
+                        <td class="w3-padding">I</td>
+                        <td>$1$</td>
+                        <td>$51$</td>
+                        <td>$49.5 - 52.5$</td>
+                        <td class="w3-padding">$\dfrac{1}{35} = 0.02875 = 2.875\%$</td>
+                        <td>$34 + 1 = \color{red}{35}$</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>$\Sigma F = \color{red}{35}$</td>
+                        <td></td>
+                        <td></td>
+                        <td>$\Sigma RF = 1 = 100\%$</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p>
+                    <mark>CHECKS</mark> <br>
+                    $(1.)$ The summation of the frequencies, $\Sigma F$ is equal to the sample size. <br>
+                    $(2.)$ The summation of relative frequencies, $\Sigma RF$ is equal to $1$ or $100\%$ <br>
+                    $(3.)$ The value in the last row of the cumulative frequency should be the same value as the 
+                    summation of the frequencies (as noted by the red color in the table)
+                </p>
+                <p>
+                    <mark>MORE NOTES</mark> <br>
+                    $(1.)$ If the number of classes is given but the class width is not given, 
+                    use a class width that would give an ideal (a reasonable) number of classes. <br><br>
+                    $(2.)$ If the class width is given, use the class width. <br><br>
+                    $(3.)$ If the number of classes and the class width are given but the class width did not give that 
+                    number of classes; then adjust the class width to give the required number of classes. <br>
+                    Unless otherwise specified by your professor, do not create classes as you wish. Adjust the class size
+                    to give the required number of classes. <br><br>
+                    $(4.)$ The first class must contain the smallest data value (minimum value). <br><br>
+                    $(5.)$ The last class must contain the highest data value (maximum value). <br><br>
+                    $(6.)$ Each class must be uniform. In other words, the class width/class size must be the same. <br><br>
+                    $(7.)$ Follow the directions specified by your professor on what should be in the frequency table. 
+                    He/She grades your work.
+                </p>
+            </div>
+            <!-- End Data Organization -->
+            
+            <br><br>
+            
+            <!-- Data Presentation -->
+            <!-- Objectives -->
+            <div class="w3-container w3-padding-32" id="dataPresentation">
+                <h2 class="w3-padding-16">Data Presentation</h2>
+                <hr>
+                <h3>Objectives</h3>
+                <p>
+                    Students will: <br>
+                    (1.) Represent data using several data presentation tools. <br>
+                    (2.) Calculate the sectorial angles of the variables in pie charts. <br>
+                    (3.) Calculate the percentages of the variables in pie charts. <br>
+                    (4.) Interpret the data presented with several data presentation tools. <br>
+                    (5.) Identify misleading graphs. <br>
+                    (6.) Correct misleading graphs.
+                </p>
+                <!-- End Objectives -->
+                <br>
+                <h3>Vocabulary Words</h3>
+                <p>
+                    frequency distribution table, frequency table, dotplot, boxplot (also known as box-and-whisker plot),
+                    stemplot (stem-and-leaf plot), scatter plot, scatter diagram, normal quantile plot, quantile-quantile plot, 
+                    QQ plot, line graph, bar graph, bar chart, circle graph, pie chart, cumulative frequency graph, 
+                    ogive, cumulative frequency curve, Pareto chart, pictogram, histogram, frequency polygon, 
+                    cumulative frequency polygon, percentages, two-way table, contour map
+                </p>
+
+                <p>
+                    First identify whether the variable under investigation is numerical or categorical. <br>
+                    If the variable is​ numerical, a​ dotplot, histogram, or stemplot can be used. <br>
+                    If the variable is​ categorical, a bar​ chart, Pareto​ chart, or pie chart can be used. However, bar charts and pie charts are commonly used. <br>
+                    When describing the distribution of a categorical variable, the category that appears most often is the mode. <br>
+                    When summarizing graphs of categorical data, report the mode(s), and describe the variability. <br>
+                    If the distribution of a categorical variable has a lot of diversity or many observations in many different categories, the variability is high. <br>
+                    If the distribution has a little diversity, or if many observations fall into the same category, the variability is low. <br>
+                    Pay attention to the differences in the charts and which would be the best to display the specific data set.
+                    <br><br>
+                    
+
+
+
+                    The <b>distribution of a sample</b> organizes data by recording all the values observed in a sample and the number of times each value was observed. <br>
+                    The two-step process used to examine distributions are: See the data and Summarize it. <br>
+                    When examining a distribution, first: visualize or see the distribution; second: use characteristics of the visualization to summarize the data. <br>
+                    All methods used for visualizing distributions are based on making a mark that indicates the number of times each value occurs in the data set. <br>
+                    <br><br>
+
+                    When examining a <b>distribution of numerical data</b>: <br>
+                    (1.) The <b>shape, center,</b> and <b>spread</b> need to be considered. 
+                    <br><br>
+                    (2.) The three basic characteristics of the shape of the distribution are: <br>
+                    (a.) Symmetric or skewness of the distribution <br>
+                    (b.) The number of mounds that appear in the distribution (based on the number of modes of the dataset). <br>
+                    (c.) Presence of outliers (whether unusually large or small values are present). Outliers are extreme values that are so large or so small that they do not fit into the pattern of the distribution.
+                    <br><br>
+                    A <b>right-skewed distribution</b> is the distribution of a variable in which most of the values are relatively small but also has a few very large values. <br>
+                    The graphical representation of the distribution appear to have a <b>tail that extends to the right.</b> <br>
+                    For example: (1.) the number of hours of TV viewed by a sample of people in a week: the smallest possible value in this case is 0. 
+                    Most values will likely cluster around a common value. However, the presence of a small number of people who view TV for long hours will make the distribution to be right-skewed. 
+
+                    <br><br>
+
+                    <br><br>
+                    Percentages or rates are often better than counts for making comparisons because they account for possible differences among the sizes of groups. <br>
+                    A <b>two-way table</b> is used to summarize two potentially related categorical variables.
+                    <br><br>
+                    A <b>contour map</b> can hone in on the trend the same way a regression line can. <br>
+                    It helps one see trends in the concentration on a map.
+                    <br><br>
+                    
+
+
+
+
+                </p>
+
+                <h4>Histogram</h4>
+                <p>
+                    Histograms produce a smooth graphic by grouping observations into intervals known as bins. <br>
+                    In a histogram, observations are grouped into intervals called bins. <br>
+                    Changing the width of bins in a histogram changes the shape of the histogram. Narrow bins results in a spiky histogram that shows a lot of detail, while wider bins hide more detail. <br>
+
+                </p>
+
+                <h4>Bar Chart</h4>
+                <p>
+                    For a bar chart: <br>
+                    The horizontal axis of the bar chart represents the categories of the​ distribution. 
+                    <br><br>
+
+
+                </p>
+
+                <table>
+                    <caption>Bar Chart versus Histogram</caption>
+                    <tr>
+                        <th style="width: 20%;"></th>
+                        <th style="width: 40%;">Bar Chart</th>
+                        <th style="width: 40%;">Histogram</th>
+                    </tr>
+                    <tr>
+                        <td>(1.)</td>
+                        <td>It is best suited for presenting qualitative (categorical) variables.</td> 
+                        <td>It is best suited for presenting quantitative (numerical) variables.</td>
+                    </tr>
+                    <tr>
+                        <td>(2.)</td>
+                        <td>There are gaps between the bars.</td>
+                        <td>
+                            Typically, there are no gaps between the bars unless no value was observed for that variable. <br>
+                            If there is a gap, the gap indicates that no values were observed in the interval represented by the gap.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>(3.)</td>
+                        <td>It does not matter how wide or narrow the bars are.</td>
+                        <td>The widths of the bars have meaning.</td>
+                    </tr>
+                    <tr>
+                        <td>(4.)</td>
+                        <td>
+                            Sometimes, it does not matter in which order the bars are placed. 
+                        </td>
+                        <td>
+                            The order of the placement of the bars matter. <br>
+                            A histogram has bars in ascending order.
+                        </td>
+                    </tr>
+                </table>
+
+                <h4>Stem-and-Leaf Plot (Stemplot)</h4>
+                <p>
+                    A stem-and-leaf plot (also known as a stemplot) is preferably used for visualizing numerical variables when: <br>
+                    (1.) Technology is not available. <br>
+                    (2.) The data set is not large. <br>
+                    (3.) The actual values of the data need to be seen. 
+                    <br><br>
+
+                </p>
+
+                <h4>Pareto Chart</h4>
+                <p>
+                    A Pareto chart is a bar chart that is sorted from most frequent to least frequent. <br>
+
+
+
+
+
+                </p>
+
+                <h4>Pie Chart</h4>
+                <p>
+
+
+                    Pie charts are not commonly used by statisticians or in scientific settings because the human eye has a difficult time judging how much area is taken up by it's wedge-shaped slice. 
+                    <br><br>
+                    $
+                    Sectorial\;\;\angle\;\;for\;\;each\;\;age\;\;group = \dfrac{frequency\;\;of\;\;the\;\;age\;\;group}{\Sigma f} * 100 \\[5ex]
+                    $
+
+
+
+                </p>
+
+
+            </div>
+                <!-- End Data Presentation -->
+             
+                        
+            <div class="w3-container w3-padding-32" id="references">
+                <h2 class="w3-padding-16">References</h2>
+                <hr>
+                <p>
+                    Chukwuemeka, Samuel Dominic (2023). <i>Introductory Statistics</i>
+                    Retrieved from <a href="https://statistical-science.appspot.com/" target="_blank">https://statistical-science.appspot.com/</a>
+                    <br><br>
+                    Bennett, J. O., & Briggs, W. L. (2019). 
+                    <i>Using and Understanding Mathematics: A Quantitative Reasoning Approach.</i> Pearson.
+                    <br><br>
+                    Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.).
+                    New Jersey: Wiley
+                    <br><br>
+                    Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through data</i> 
+                    (3rd ed.). Pearson.
+                    <br><br>
+                    Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
+                    <br><br>
+                    OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
+                    Retrieved from <a href="https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12" target="_blank">https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12</a> 
+                    <br><br>
+                    Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed decisions using data with an introduction
+                    to mathematics of finance</i> 
+                    (2nd custom ed.). Boston: Pearson Learning Solutions.
+                    <br><br>
+                    Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i> (5th ed.). Boston: Pearson
+                    <br><br>
+                    Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                    <br><br>
+                    Weiss, Neil A. (2015). <i>Elementary Statistics</i> 
+                    (9th ed.). Boston: Pearson 
+                    <br><br>
+                    Authority (NZQA), (n.d.). Mathematics and Statistics subject resources. www.nzqa.govt.nz. Retrieved December 14,
+                    2020, from https://www.nzqa.govt.nz/ncea/subjects/mathematics/levels/
+                    <br><br>
+                    CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/
+                    <br><br>
+                    CMAT Question Papers CMAT Previous Year Question Bank - Careerindia. (n.d.). https://www.careerindia.com. Retrieved
+                    May 30, 2020, from https://www.careerindia.com/entrance-exam/cmat-question-papers-e23.html
+                    <br><br>
+                    CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                    <br><br>
+                    Desmos. (n.d.). Desmos Graphing Calculator. https://www.desmos.com/calculator
+                    <br><br>
+                    DLAP Website. (n.d.). Curriculum.gov.mt.
+                    https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+                    <br><br>
+                    Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners.
+                    https://www.vastlearners.com/free-jamb-past-questions/
+                    <br><br>
+                    Geogebra. (2019). Graphing Calculator - GeoGebra. Geogebra.org. https://www.geogebra.org/graphing?lang=en
+                    <br><br>
+                    GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                    https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                    <br><br>
+                    HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                    https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                    <br><br>
+                    JAMB Past Questions, WAEC, NECO, Post UTME Past Questions. (n.d.). Nigerian Scholars. Retrieved February 12, 2022,
+                    from https://nigerianscholars.com/past-questions/
+                    <br><br>
+                    KCSE Past Papers by Subject with Answers-Marking Schemes. (n.d.). ATIKA SCHOOL.
+                    Retrieved June 16, 2022, from https://www.atikaschool.org/kcsepastpapersbysubject
+                    <br><br>
+                    Myschool e-Learning Centre - It's Time to Study! - Myschool. (n.d.). https://myschool.ng/classroom
+                    <br><br>
+                    Netrimedia. (2022, May 2). ICSE 10th Board Exam Previous Papers- Last 10 Years. Education Observer.
+                    https://www.educationobserver.com/icse-class10-previous-papers/
+                    <br><br>
+                    NSC Examinations. (n.d.). www.education.gov.za.
+                    https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                    <br><br>
+                    Papua New Guinea: Department of Education. (n.d.). www.education.gov.pg. Retrieved November 24, 2020, from
+                    http://www.education.gov.pg/TISER/exams.html
+                    <br><br>
+                    School Curriculum and Standards Authority (SCSA): K-12. Past ATAR Course Examinations. Retrieved December 10, 2021,
+                    from https://senior-secondary.scsa.wa.edu.au/further-resources/past-atar-course-exams
+                    <br><br>
+                    TI Products | Calculators and Technology | Texas Instruments. (n.d.). Education.ti.com. Retrieved March 18, 2023, from https://education.ti.com/en/products
+                    <br><br>
+                    West African Examinations Council (WAEC). Retrieved May 30, 2020, from
+                    https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                    <br><br>
+                    51 Real SAT PDFs and List of 89 Real ACTs (Free) : McElroy Tutoring. (n.d.). 
+                    Mcelroytutoring.com. Retrieved December 12, 2022, 
+                    from https://mcelroytutoring.com/lower.php?url=44-official-sat-pdfs-and-82-official-act-pdf-practice-tests-free
+                </p> 
+            </div>
+            <!-- End page content -->
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="w3-center bisque w3-padding-16">
+            <p>&copy; 2018 Samdom4Peace Designs.</p>
+        </footer>
+        
+        <script src="scripts/messages1.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+        
+    </body>
+</html>

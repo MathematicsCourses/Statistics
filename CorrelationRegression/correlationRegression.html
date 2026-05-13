@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Correlation and Regression Applications</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in correlation and regression.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics, correlation, 
+        association, causation, causal relationship, predictor variable, explanatory variable, response variable, linear correlation, scatter diagrams, 
+        scatter plots, Pearson correlation coefficient, product moment correlation coefficient, Spearman's rank correlation coefficient, 
+        coefficient of determination, critical values of the correlation coefficient, non-linear relationship, positive linear relationship, 
+        negative linear relationship, regression, linear regression, multiple linear regression, predicted value, residual,
+        least-squares regression line, line of best fit, linear regression equation">
+
+    <link href="styles/correlationRegression.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 cyan" id="quotes">
+        <!--
+            <div class="w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        
+            
+            <div class="w3-center">
+                <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            
+            <div class="bibleQuotes w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples and Applications of Correlation and Regression</h1>
+
+    <div class="w3-container">
+        <p>
+            <!-- Image in top left corner --
+                <img src="images/samuel-dominic-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image" title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+                
+                
+                <a href="https://correlationandregression.appspot.com" title="Samuel Dominic Chukwuemeka">
+                    <img src="images/samuel-dominic-chukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+                </a>
+            -->
+
+            <mark>Technology:</mark> Pearson Statcrunch software <br><br>
+
+            <mark>Tables Used:</mark> <br>
+            (1.) Based on Sample Size: <a
+                href="https://statistical-science.appspot.com/CorrelationRegression/correlationandregression.html#criticalValuesPearsonSampleSize"
+                target="_blank">Critical Values of the Pearson Correlation Coefficient</a> <br>
+            (2.) Based on Degrees of Freedom: <a
+                href="https://statistical-science.appspot.com/CorrelationRegression/correlationandregression.html#criticalValuesPearsonDF"
+                target="_blank">Critical Values of the Pearson Correlation Coefficient</a> <br>
+            (3.) Based on Sample Size: <a
+                href="https://statistical-science.appspot.com/CorrelationRegression/correlationandregression.html#criticalValuesSpearman"
+                target="_blank">Critical Values of the Spearman's Rank Correlation Coefficient</a>
+            <br><br>
+
+            <mark>For ACT Students</mark> <br>
+            The ACT is a timed exam...60 questions for 60 minutes <br>
+            This implies that you have to solve each question in one minute. <br>
+            Some questions will typically take less than a minute a solve. <br>
+            Some questions will typically take more than a minute to solve. <br>
+            The goal is to maximize your time. You use the time saved on those questions you
+            solved in less than a minute, to solve the questions that will take more than a minute. <br>
+            So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+            So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+            Please ensure you attempt <u>all ACT questions</u>. <br>
+            There is no <i>negative</i> penalty for any wrong answer. <br><br>
+
+            <mark>For WASSCE Students</mark> <br>
+            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics
+            <br><br>
+            <mark>For NSC Students</mark> <br>
+            <u>For the Questions:</u> <br>
+            Any space included in a number indicates a comma used to separate digits...separating multiples of three
+            digits from behind. <br>
+            Any comma included in a number indicates a decimal point. <br>
+            <u>For the Solutions:</u> <br>
+            Decimals are used appropriately rather than commas <br>
+            Commas are used to separate digits appropriately.
+
+            <br><br>
+
+            Solve all questions. <br>
+            Show all work. <br><br>
+
+            <b><u>Please Note:</u></b> <br>
+            (1.) For applicable questions, if the level of significance is not given, use 5% <br><br>
+            (2.) Unless otherwise specified, do not round intermediate calculations. <br>
+            However, if you must round intermediate calculations because of long decimal digits; then round those
+            intermediate calculations to
+            at least three (three or more) decimal places more than the number of decimal places to round the final
+            answer. <br>
+            For example: if the question asks you to round the final answer to three decimal places but did not specify
+            how you should round
+            intermediate calculations; then round the intermediate calculations to at least six decimal places. <br><br>
+            (3.) Unless specified otherwise: <br>
+            There are at least two formulas for calculating the Pearson's correlation coefficient. <br>
+            For some questions, I shall use the First Formula. <br>
+            For other questions, I shall use the Second Formula. <br>
+            If you wish to see examples of how both formulas are used, please review all questions that asked for the
+            determination of the
+            correlation coefficient (or Pearson's correlation coefficient).
+        </p>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) The scatterplot shows the median starting salaries and the median
+                mid-career salaries for graduates at a selection of colleges.
+                $$
+                Mid-Career = -17,092 + 2.067\;Start\;Med
+                $$
+                <img src="images/CorrelationRegression/Questions/Number1.png" alt="Number 1">
+                <br><br>
+                (a.) Identify the independent variable and the dependent variable. <br><br>
+                (b.) Why is median salary used instead of the mean? <br><br>
+                (c.) Using the graph, estimate the median mid-career salary for a median starting salary of
+                <span>$</span>40000 (Round to the nearest dollar as needed) <br><br>
+                (d.) Use the equation to predict the median mid-career salary for a median starting salary of
+                <span>$</span>40000 (Round to the nearest dollar as needed)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR1')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR1">
+                    <br>
+                    (a.) The independent variable is the median starting salary. <br>
+                    The dependent variable is the median mid-career salary. <br><br>
+                    (b.) The median salary is used instead of the mean because the distribution of
+                    salaries is usually skewed. The median is a better measure of center for skewed
+                    distributions. <br><br>
+                    (c.) Using the graph, the median mid-career salary for a median starting salary of
+                    <span>$</span>40000 is about $\dfrac{50 + 75}{2} = \dfrac{125}{2}$
+                    = <span>$</span>62.50 thousand &approx; <span>$</span>63000 <br><br>
+                    $
+                    (d.) \\[3ex]
+                    Mid-Career = -17,092 + 2.067\;Start\;Med \\[3ex]
+                    Mid-Career = -17092 + 2.067(40000) \\[3ex]
+                    Mid-Career = -17092 + 82680 \\[3ex]
+                    Mid-Career = 65588 \\[3ex]
+                    Mid-Career = \$65588
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) The distance (in kilometers) and price (in dollars) for one-way airline tickets from
+                San Francisco to several cities are shown in the table.
+                <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <th style="width: 37%;">Destination</th>
+                        <th style="width: 33%;">Distance (km)</th>
+                        <th style="width: 30%;">Price (<span>$</span>)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dallas <br>
+                            Kansas City <br>
+                            Baltimore <br>
+                            New York City <br>
+                            Seattle
+                        </td>
+                        <td>
+                            2353 <br>
+                            2421 <br>
+                            3945 <br>
+                            4139 <br>
+                            1094
+                        </td>
+                        <td>
+                            172 <br>
+                            198 <br>
+                            265 <br>
+                            308 <br>
+                            141
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                (a.) Determine the correlation coefficient for these data using a
+                computer or statistical calculator. <br>
+                Use distance as the <i>x</i>-variable and price as the <i>y</i>-variable. <br><br>
+                (b.) Recalculate the correlation coefficient for these data using price
+                as the <i>x</i>-variable and distance as the <i>y</i>-variable. <br>
+                What effect does this have on the correlation coefficient? <br><br>
+                (c.) Suppose a <span>$</span>55 security fee was added to the price of each ticket. <br>
+                What effect would this have on the correlation coefficient? <br><br>
+                (d.) Suppose the airline held an incredible sale, where travelers got
+                a round-trip ticket for the price of a one-way ticket. <br>
+                This means that the distances would be doubled while the ticket price
+                remained the same. <br>
+                What effect would this have on the correlation coefficient?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR2')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR2">
+                    <br>
+                    The solution to this question is:
+                    <a href="https://statistical-science.appspot.com/CorrelationRegression/correlationandregression.html#TIcalculator"
+                        target="_blank">here (in the home page)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) In the game of baseball, the on-base percentage, <i>x</i> is the proportion of time a player
+                reaches a base. <br>
+                It is the best predictor of the winning percentage, <i>y</i> <br>
+                For a certain baseball season, <i>x</i> and <i>y</i> are related by the regression equation: $\hat{y} =
+                2.92x - 0.4871$ <br><br>
+                (a.) What is the slope? Interpret the slope. <br><br>
+                (b.) For this baseball season, the lowest on-base percentage was 0.318 and the highest on-base
+                percentage was 0.358 <br>
+                Does it make sense to interpret the y-intercept? <br><br>
+                (c.) Would it be a good idea to use this model to predict the winning percentage of a team whose on-base
+                percentage was
+                0.240? <br><br>
+                (d.) A certain team had an on-base percentage of 0.322 and a winning percentage of 0.544 <br>
+                Compute the residual. <br>
+                Round to four decimal places as needed. <br><br>
+                (e.) Interpret the residual.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR3')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR3">
+                    <br>
+                    (a.) The slope is 2.92 percentage. <br>
+                    For each percentage point increase in the on-base percentage, the winning percentage will increase
+                    by 2.92 percentage
+                    points, on average. <br><br>
+                    (b.) No, it would not make sense to interpret the y-intercept because it is outside the scope of the
+                    model. <br>
+                    <u>Recall:</u> To determine the y-intercept, we set $x = 0$ and solve for $y$ <br>
+                    Lowest on-base percentage = 0.318 <br>
+                    Highest on-base percentage = 0.358 <br>
+                    0 does not lie between 0.318 and 0.358 <br>
+                    It is outside the scope of the model. <br><br>
+                    (c.) No, it would not a good idea to use this model to predict the winning percentage because it is
+                    outside the scope of
+                    the model. <br>
+                    Lowest on-base percentage = 0.318 <br>
+                    Highest on-base percentage = 0.358 <br>
+                    0.240 does not lie between 0.318 and 0.358 <br>
+                    It is outside the scope of the model. <br><br>
+                    (d.) <br><br>
+                    $
+                    Observed\;\;x = 0.322 \\[3ex]
+
+                    Predicted\;\;y = \hat{y} = 2.92x - 0.4871 \\[3ex]
+                    \hat{y} = 2.92(0.322) - 0.4871 \\[3ex]
+                    \hat{y} = 0.94024 - 0.4871 \\[3ex]
+                    \hat{y} = 0.45314 \\[3ex]
+                    Observed\;\;y = 0.544 \\[3ex]
+                    Residual = Observed\;\;y - Predicted\;\;y \\[3ex]
+                    Residual = y - \hat{y} \\[3ex]
+                    Residual = 0.544 - 0.45314 \\[3ex]
+                    Residual = 0.09086 \\[3ex]
+                    Residual \approx 0.0909 \\[3ex]
+                    $
+                    (e.) <br>
+                    The residual value of 0.0909 is positive. <br>
+                    This indicates that the winning percentage of the team is above average for teams with an on-base
+                    percentage of 0.322 <br><br>
+                    <u>Recall:</u> <br>
+                    If the residual is positive, then the observed $y$ is greater than the predited $y$ <br>
+                    Therefore the observed $y$ is above average for the observed $x$ <br><br>
+                    If the residual is negative, then the observed $y$ is less than the predited $y$ <br>
+                    Therefore the observed $y$ is below average for the observed $x$ <br><br>
+                    If the residual is zero, then the observed $y$ is equal to the predicted $y$
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) The scatterplot shows the heights of mothers and daughters.
+                $$
+                Daughter = 21.12 + 0.669\;Mother
+                $$
+                <img src="images/CorrelationRegression/Questions/Number4.png" alt="Number 4">
+                <br><br>
+                (a.) Identify the independent variable and the dependent variable. <br><br>
+                (b.) Using the graph, approximate the predicted height of the daughter of a mother
+                who is 55 inches (4 feet 7 inches) tall. (Round to the nearest inch as needed). <br><br>
+                (c.) Use the equation to determine the predicted height of the daughter of a mother
+                who is 55 inches (4 feet 7 inches) tall. (Round to two decimal places as needed). <br><br>
+                (d.) What is the slope? Interpret the slope.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR4')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR4">
+                    <br>
+                    (a.) The independent variable is the mother's height. <br>
+                    The dependent variable is the daughter's height. <br><br>
+                    (b.) Using the graph, the approximate height of the daughter of a mother who is 55
+                    inches (4 feet 7 inches) tall is about 58 inches. <br><br>
+                    $
+                    (c.) \\[3ex]
+                    Daughter = 21.12 + 0.669\;Mother \\[3ex]
+                    Daughter = 21.12 + 0.669(55) \\[3ex]
+                    Daughter = 21.12 + 36.795 \\[3ex]
+                    Daughter = 57.915 \\[3ex]
+                    $
+                    The daughter is about 57.92 inches tall. <br><br>
+                    (d.) The slope is 0.669 inch. <br>
+                    For each additional inch in the mother's height, the average
+                    daughter's height increases by about 0.669 inch.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) The scatterplot shows the median weekly earnings (by quarter) for men and women in a country for
+                the years from 2005 through 2017. <br>
+                The correlation is 0.983
+                <br><br>
+                <img src="images/CorrelationRegression/Questions/Number5.png" alt="Number 5">
+                <br><br>
+                (a.) Use the scatterplot to estimate the median weekly income for women
+                in a quarter in which the median pay for men is about <span>$</span>750
+                (Round to the nearest dollar as needed). <br><br>
+                (b.) Use the regression equation shown above the graph to get a more
+                precise estimate of the median pay for women in a quarter in which the
+                median pay for men is <span>$</span>750
+                (Round to the nearest cent as needed). <br><br>
+                (c.) What is the slope of the regression equation? <br>
+                Interpret the slope of the regression equation. <br><br>
+                (d.) What is the <i>y</i>-intercept of the regression equation? <br>
+                Interpret the <i>y</i>-intercept of the regression equation, or
+                explain why it would be inappropriate to do so.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR5')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR5">
+                    <br>
+                    (a.) Based on the scatterplot, the median weekly income for women in
+                    a quarter in which the median pay for men is about <span>$</span>750 is
+                    about <span>$</span>600 <br><br>
+                    $
+                    (b.) \\[3ex]
+                    Predicted\;\;Women = -54.88 + 0.878\;Men \\[3ex]
+                    = -54.88 + 0.878(750) \\[3ex]
+                    = -54.88 + 650.5 \\[3ex]
+                    = 603.62 \\[3ex]
+                    $
+                    The estimate of the median pay for women in a quarter in which the
+                    median pay for men is <span>$</span>750 is <span>$</span>603.62 <br><br>
+                    (c.) The slope of the regression equation is 0.878 <br>
+                    Each additional dollar in men's pay is associated with an increase of <span>$</span>0.878,
+                    on average, in the women's pay. <br><br>
+                    (d.) The <i>y</i>-intercept is &minus;54.88 <br>
+                    It is not appropriate to interpret the y-intercept since it does not
+                    make sense to have a median men's weekly pay of <span>$</span>0
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) A sociology​ class teacher gave a midterm exam and a final exam. <br>
+                Assume that the association between midterm and final scores is linear. <br>
+                The summary statistics are shown below.​
+                <br><br>
+                <table class="w3-center">
+                    <tr>
+                        <td style="width: 20%;"></td>
+                        <td style="width: 40%;">Mean</td>
+                        <td style="width: 40%;">Standard deviation</td>
+                    </tr>
+                    <tr>
+                        <td>Midterm</td>
+                        <td>75</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Final</td>
+                        <td>75</td>
+                        <td>8</td>
+                    </tr>
+                </table>
+                <br>
+                The linear correlation coefficient is 0.75 <br>
+                The sample size is 30.
+                <br><br>
+                (a.) Find and report the equation of the regression line to predict the final exam score from the
+                midterm score. <br><br>
+                (b.) For a student who gets 54 on the​ midterm, predict the final exam score. <br>
+                Round to the nearest integer as needed. <br><br>
+                (c.) Explain why your answer in (b.) should be higher than 54. <br><br>
+                (d.) Consider a student who gets a 100 on the midterm. <br>
+                Without doing any​ calculations, state whether the predicted score on the final exam would be​ higher,
+                lower, or the same as 100.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR6')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR6">
+                    <br>
+                    To predict the final exam score from the midterm score implies that: <br>
+                    <i>y</i> = final exam score <br>
+                    <i>x</i> = midterm score <br><br>
+                    $
+                    \bar{x} = 75 \\[3ex]
+                    \bar{y} = 75 \\[3ex]
+                    s_x = 8 \\[3ex]
+                    s_y = 8 \\[3ex]
+                    r = 0.75 \\[3ex]
+                    (a.) \\[3ex]
+                    b_1 = r * \dfrac{s_y}{s_x} \\[5ex]
+                    = 0.75 * \dfrac{8}{8} \\[5ex]
+                    = 0.75 \\[5ex]
+                    b_0 = \bar{y} - b_1\bar{x} \\[3ex]
+                    = 75 - 0.75(75) \\[3ex]
+                    = 75 - 56.25 \\[3ex]
+                    = 18.75 \\[3ex]
+                    Least-squares\;\;regression\;\;line:\;\; \hat{y} = b_1x + b_0 \\[3ex]
+                    \hat{y} = 0.75x + 18.75 \\[3ex]
+                    Predicted\;\;Final\;\;Grade = 0.75(Midterm\;\;Grade) + 18.75 \\[5ex]
+                    (b.) \\[3ex]
+                    Midterm\;\;Grade = 54 \\[3ex]
+                    Predicted\;\;Final\;\;Grade = 0.75(Midterm\;\;Grade) + 18.75 \\[3ex]
+                    = 0.75(54) + 18.75 \\[3ex]
+                    = 40.5 + 18.75 \\[3ex]
+                    = 59.25 \\[3ex]
+                    \approx 59 \\[5ex]
+                    $
+                    Regression towards the mean occurs when values for the predictor variable that are far from the mean
+                    lead to values of the response variable that are closer to the mean. <br><br>
+                    (c.) The​ student's final score should be higher than his or her midterm score because of regression
+                    toward the mean: predictor variables far from the mean tend to produce
+                    response variables closer to the mean. <br>
+                    The farther the predictor variable is from the mean, the closer the response variable is to the
+                    mean. <br>
+                    The farther, <i>x</i> is from the mean, the closer <i>y</i> is to the mean. <br><br>
+                    (d.) The predicted score on the final exam would be lower than 100 because of regression toward the
+                    mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR7')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR7">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR8')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR8">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR9')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR9">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR10')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR10">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR11')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR11">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) Given that: <br><br>
+                $
+                \bar{x} = 1.833 \\[3ex]
+                s_x = 2.228602 \\[3ex]
+                \bar{y} = 5.067 \\[3ex]
+                s_y = 1.5253415 \\[3ex]
+                r = -0.9021256 \\[3ex]
+                $
+                Determine the least-squares regression line. <br>
+                Round to four decimal places as needed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR12')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR12">
+                    <br>
+                    $
+                    b_1 = r * \dfrac{s_y}{s_x} \\[5ex]
+                    = -0.9021256 * \dfrac{1.5253415}{2.228602} \\[5ex]
+                    = -\dfrac{1.376049616}{2.228602} \\[5ex]
+                    = -0.6174496908 \\[3ex]
+                    \approx -0.6175 \\[5ex]
+                    b_0 = \bar{y} - b_1\bar{x} \\[3ex]
+                    = 5.067 - (-0.6174496908)(1.833) \\[3ex]
+                    = 5.067 + 1.131785283 \\[3ex]
+                    = 6.198785283 \\[3ex]
+                    b_0 \approx 6.1988 \\[3ex]
+                    Least-squares\;\;regression\;\;line:\;\; \hat{y} = b_1x + b_0 \\[3ex]
+                    \hat{y} = -0.6175x + 6.1988
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR13')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR13">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR14')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR14">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (15.) <b>GCSE</b> Competitors in the Paris Figure Skating competition in the Winter Olympics perform twice.
+            <br>
+            The competitors are awarded points each time. <br>
+            The table shows the points awarded to the top 10 pairs in the 2018 Winter Olympics. <br>
+            <table>
+                <tr>
+                    <th class="green" style="width: 40%;">Names of competitors</th>
+                    <th class="green" style="width: 30%;">Performance 1</th>
+                    <th class="green" style="width: 30%;">Performance 2</th>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Savchenko & Massot</td>
+                    <td class="w3-center">76.59</td>
+                    <td class="w3-center">159.31</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Sui & Han</td>
+                    <td class="w3-center">82.39</td>
+                    <td class="w3-center">153.08</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Duhamel & Radford</td>
+                    <td class="w3-center">76.81</td>
+                    <td class="w3-center">153.33</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Tarasova & Morozov</td>
+                    <td class="w3-center">81.68</td>
+                    <td class="w3-center">143.25</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">James & Cipress</td>
+                    <td class="w3-center">75.34</td>
+                    <td class="w3-center">143.19</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Marchei & Hotarek</td>
+                    <td class="w3-center">74.50</td>
+                    <td class="w3-center">142.09</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Zabiiako & Enbert</td>
+                    <td class="w3-center">74.34</td>
+                    <td class="w3-center">138.53</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Yu & Zhang</td>
+                    <td class="w3-center">75.58</td>
+                    <td class="w3-center">128.52</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Seguin & Bilodeau</td>
+                    <td class="w3-center">67.52</td>
+                    <td class="w3-center">136.50</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Della Monica & Guarise</td>
+                    <td class="w3-center">74.00</td>
+                    <td class="w3-center">128.74</td>
+                </tr>
+            </table>
+            <br>
+            (a.) Calculate the value of Spearman's Rank Correlation Coefficient between the points scored in the two
+            performances. <br><br>
+            Use $r_s = 1 - \dfrac{6\Sigma d^2}{n(n^2 - 1)} \;\;\;and\;\;\; \Sigma d^2 = 50$ <br><br>
+            (b.) Interpret your answer to <b>part (a.)</b> in context. <br><br>
+            <i>
+                Depending on time: <br>
+                Ask students to verify that the sum of the square of the differences is fifty <br>
+                In other words, ask students to verify that $\Sigma d^2 = 50$ <br>
+                Verify each step of their calculations with the calculators.
+            </i>
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionCR15')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR15">
+                <br>
+                (a.) <br>
+                $
+                n = 10 \\[3ex]
+                \Sigma d^2 = 50 \\[3ex]
+                r_s = 1 - \dfrac{6\Sigma d^2}{n(n^2 - 1)} \\[5ex]
+                = 1 - \dfrac{6 * 50}{10(10^2 - 1)} \\[5ex]
+                = 1 - \dfrac{300}{10(100 - 1)} \\[5ex]
+                = 1 - \dfrac{300}{10(99)} \\[5ex]
+                = 1 - \dfrac{300}{990} \\[5ex]
+                = 1 - 0.303030303 \\[3ex]
+                = 0.696969697 \\[3ex]
+                $
+                (b.) <br>
+                There is a positive correlation between the awarded points in the two performances by the set of
+                competitors. <br>
+                Competitors who did well in the first performance tend to do well in the second performance.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (16.) Divine Mercy Pediatrics wants to determine if there is a relationship between a child's height and the
+            head circumference. <br>
+            Eight patients were randomly selected, and the table below shows their height and head circumference
+            measurements. <br><br>
+            <table>
+                <tr>
+                    <td class="w3-padding">Height (inches)</td>
+                    <td class="w3-center">$27$</td>
+                    <td class="w3-center">$25.75$</td>
+                    <td class="w3-center">$26.75$</td>
+                    <td class="w3-center">$25.5$</td>
+                    <td class="w3-center">$27.25$</td>
+                    <td class="w3-center">$26.25$</td>
+                    <td class="w3-center">$26.25$</td>
+                    <td class="w3-center">$27.25$</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding">Head Circumference (inches)</td>
+                    <td class="w3-center">$17.4$</td>
+                    <td class="w3-center">$17.1$</td>
+                    <td class="w3-center">$17.3$</td>
+                    <td class="w3-center">$16.9$</td>
+                    <td class="w3-center">$17.6$</td>
+                    <td class="w3-center">$17.2$</td>
+                    <td class="w3-center">$17.2$</td>
+                    <td class="w3-center">$17.4$</td>
+                </tr>
+            </table>
+            <br>
+            (a.) Determine with reasons, the response variable and the explanatory variable. <br>
+            (b.) Draw a scatter diagram. <br>
+            (c.) Compute the linear correlation coefficient. <br>
+            For this question, round intermediate calculations to four decimal places as needed. <br>
+            Round the final answer to three decimal places as needed. <br>
+            (d.) Interpret your result.
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionCR16')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR16">
+                <br>
+                (a.) The <b>response variable</b> is the <b>head circumference</b> <br>
+                The <b>explanatory variable</b> is the <b>height</b> <br>
+                This is because the head circumference depends on the height on the child, not the other way around.
+                <br>
+                The response variable, $y-variable$ is the dependent variable (it depends on $x$) <br>
+                The explanatory or predictor variable, $x-variable$ is the independent variable. <br><br>
+
+                (b.) The scatter diagram is as shown: <br>
+                <img src="images/CorrelationRegression/Answers/Number16b.png" alt="Number 16(b.)"> <br><br>
+
+                (c.) First Formula is used. <br>
+                <table class="w3-center">
+                    <tr>
+                        <th class="green">$x$</th>
+                        <th class="green">$x - \bar{x}$</th>
+                        <th class="green">$(x - \bar{x})^2$</th>
+                        <th class="green">$y$</th>
+                        <th class="green">$y - \bar{y}$</th>
+                        <th class="green">$(y - \bar{y})^2$</th>
+                    </tr>
+                    <tr>
+                        <td>$27$</td>
+                        <td>$0.5$</td>
+                        <td>$0.25$</td>
+                        <td>$17.4$</td>
+                        <td>$0.1375$</td>
+                        <td>$0.0189$</td>
+                    </tr>
+                    <tr>
+                        <td>$25.75$</td>
+                        <td>$-0.75$</td>
+                        <td>$0.5625$</td>
+                        <td>$17.1$</td>
+                        <td>$-0.1625$</td>
+                        <td>$0.0264$</td>
+                    </tr>
+                    <tr>
+                        <td>$26.75$</td>
+                        <td>$0.25$</td>
+                        <td>$0.0625$</td>
+                        <td>$17.3$</td>
+                        <td>$0.0375$</td>
+                        <td>$0.0014$</td>
+                    </tr>
+                    <tr>
+                        <td>$25.5$</td>
+                        <td>$-1$</td>
+                        <td>$1$</td>
+                        <td>$16.9$</td>
+                        <td>$-0.3625$</td>
+                        <td>$0.1314$</td>
+                    </tr>
+                    <tr>
+                        <td>$27.25$</td>
+                        <td>$0.75$</td>
+                        <td>$0.5625$</td>
+                        <td>$17.6$</td>
+                        <td>$0.3375$</td>
+                        <td>$0.1139$</td>
+                    </tr>
+                    <tr>
+                        <td>$26.25$</td>
+                        <td>$-0.25$</td>
+                        <td>$0.0625$</td>
+                        <td>$17.2$</td>
+                        <td>$-0.0625$</td>
+                        <td>$0.0039$</td>
+                    </tr>
+                    <tr>
+                        <td>$26.25$</td>
+                        <td>$-0.25$</td>
+                        <td>$0.0625$</td>
+                        <td>$17.2$</td>
+                        <td>$-0.0625$</td>
+                        <td>$0.0039$</td>
+                    </tr>
+                    <tr>
+                        <td>$27.25$</td>
+                        <td>$0.75$</td>
+                        <td>$0.5625$</td>
+                        <td>$17.4$</td>
+                        <td>$0.1375$</td>
+                        <td>$0.0189$</td>
+                    </tr>
+                    <tr>
+                        <td>$\Sigma x = 212$</td>
+                        <td colspan="2">$\Sigma (x - \bar{x})^2 = 3.125$</td>
+                        <td>$\Sigma y = 138.1$</td>
+                        <td colspan="2">$\Sigma (y - \bar{y})^2 = 0.3187$</td>
+                    </tr>
+                </table>
+                <br>
+                $
+                \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                = \dfrac{212}{8} \\[5ex]
+                = 26.5 \\[3ex]
+                \bar{y} = \dfrac{\Sigma y}{n} \\[5ex]
+                = \dfrac{138.1}{8} \\[5ex]
+                = 17.2625 \\[3ex]
+                s_{x} = \sqrt{\dfrac{\Sigma(x - \bar{x})^2}{n - 1}} \\[5ex]
+                = \sqrt{\dfrac{3.125}{8 - 1}} \\[5ex]
+                = \sqrt{\dfrac{3.125}{7}} \\[5ex]
+                = \sqrt{0.4464285714} \\[3ex]
+                = 0.6681531048 \\[3ex]
+                \approx 0.6682 \\[3ex]
+                s_{y} = \sqrt{\dfrac{\Sigma(y - \bar{y})^2}{n - 1}} \\[5ex]
+                = \sqrt{\dfrac{0.3187}{8 - 1}} \\[5ex]
+                = \sqrt{\dfrac{0.3187}{7}} \\[5ex]
+                = \sqrt{0.04552857143} \\[3ex]
+                = 0.213374252 \\[3ex]
+                \approx 0.2134 \\[3ex]
+                $
+
+                <table class="w3-center">
+                    <tr>
+                        <th class="green">$x$</th>
+                        <th class="green">$x - \bar{x}$</th>
+                        <th class="green">$\dfrac{x - \bar{x}}{s_x}$</th>
+                        <th class="green">$y$</th>
+                        <th class="green">$y - \bar{y}$</th>
+                        <th class="green">$\dfrac{y - \bar{y}}{s_y}$</th>
+                        <th class="green w3-padding">$\left(\dfrac{x - \bar{x}}{s_x}\right)\left(\dfrac{y -
+                            \bar{y}}{s_y}\right)$</th>
+                    </tr>
+                    <tr>
+                        <td>$27$</td>
+                        <td>$0.5$</td>
+                        <td>$0.7483$</td>
+                        <td>$17.4$</td>
+                        <td>$0.1375$</td>
+                        <td>$0.6443$</td>
+                        <td>$0.4822$</td>
+                    </tr>
+                    <tr>
+                        <td>$25.75$</td>
+                        <td>$-0.75$</td>
+                        <td>$-1.1224$</td>
+                        <td>$17.1$</td>
+                        <td>$-0.1625$</td>
+                        <td>$-0.7615$</td>
+                        <td>$0.8547$</td>
+                    </tr>
+                    <tr>
+                        <td>$26.75$</td>
+                        <td>$0.25$</td>
+                        <td>$0.3741$</td>
+                        <td>$17.3$</td>
+                        <td>$0.0375$</td>
+                        <td>$0.1757$</td>
+                        <td>$0.0657$</td>
+                    </tr>
+                    <tr>
+                        <td>$25.5$</td>
+                        <td>$-1$</td>
+                        <td>$-1.4966$</td>
+                        <td>$16.9$</td>
+                        <td>$-0.3625$</td>
+                        <td>$-1.6987$</td>
+                        <td>$2.5423$</td>
+                    </tr>
+                    <tr>
+                        <td>$27.25$</td>
+                        <td>$0.75$</td>
+                        <td>$1.1224$</td>
+                        <td>$17.6$</td>
+                        <td>$0.3375$</td>
+                        <td>$1.5815$</td>
+                        <td>$1.7751$</td>
+                    </tr>
+                    <tr>
+                        <td>$26.25$</td>
+                        <td>$-0.25$</td>
+                        <td>$-0.3741$</td>
+                        <td>$17.2$</td>
+                        <td>$-0.0625$</td>
+                        <td>$-0.2929$</td>
+                        <td>$0.1096$</td>
+                    </tr>
+                    <tr>
+                        <td>$26.25$</td>
+                        <td>$-0.25$</td>
+                        <td>$-0.3741$</td>
+                        <td>$17.2$</td>
+                        <td>$-0.0625$</td>
+                        <td>$-0.2929$</td>
+                        <td>$0.1096$</td>
+                    </tr>
+                    <tr>
+                        <td>$27.25$</td>
+                        <td>$0.75$</td>
+                        <td>$1.1224$</td>
+                        <td>$17.4$</td>
+                        <td>$0.1375$</td>
+                        <td>$0.6443$</td>
+                        <td>$0.7232$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="w3-center w3-padding">
+                            $\Sigma \left(\dfrac{x - \bar{x}}{s_x}\right)\left(\dfrac{y - \bar{y}}{s_y}\right) = 6.6624$
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                $
+                r = \dfrac{\Sigma\left(\dfrac{x - \bar{x}}{s_x}\right)\left(\dfrac{y - \bar{y}}{s_y}\right)}{n - 1}
+                \\[7ex]
+                = \dfrac{6.6624}{8 - 1} \\[5ex]
+                = \dfrac{6.6624}{7} \\[5ex]
+                = 0.952 \\[3ex]
+                $
+                We can also compute the correlation coefficient by using the Pearson Statcrunch software <br>
+                <img src="images/CorrelationRegression/Answers/Number16ci.png" alt="Number 16(c.)(i)"> <br>
+                <img src="images/CorrelationRegression/Answers/Number16cii.png" alt="Number 16(c.)(ii)"> <br>
+                <img src="images/CorrelationRegression/Answers/Number16ciii.png" alt="Number 16(c.)(iii)"> <br><br>
+
+                (d.) <br>
+                <img src="images/CorrelationRegression/Answers/Number16d.png" alt="Number 16(d.)"> <br>
+                Absolute value of the correlation coefficient = |0.952| = 0.952 <br>
+                Critical Value of the correlation coefficient for a sample size of 8 = 0.707 <br>
+                Because: <br>
+                (1.) the absolute value of the correlation coefficient is greater than the critical value of the
+                correlation coefficient for
+                a sample size of 8: <br>
+                <u>and</u> <br>
+                (2.) the correlation coeffient is positive: <br>
+                there is a <b>positive linear correlation</b> between a child's height and the head circumference.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (17.) <b>WASSCE-FM</b> In a research to determine the relationship between performance of students in an
+            entrance examination and
+            subsequent school performance, the results of ten randomly selected students were obtained as follows: <br>
+            <table>
+                <tr>
+                    <td class="w3-padding" style="width: 25%;">Students</td>
+                    <td class="w3-center">$A$</td>
+                    <td class="w3-center">$B$</td>
+                    <td class="w3-center">$C$</td>
+                    <td class="w3-center">$D$</td>
+                    <td class="w3-center">$E$</td>
+                    <td class="w3-center">$F$</td>
+                    <td class="w3-center">$G$</td>
+                    <td class="w3-center">$H$</td>
+                    <td class="w3-center">$I$</td>
+                    <td class="w3-center">$J$</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding" style="width: 25%;">Performance in Entrance Examination</td>
+                    <td class="w3-center">$11$</td>
+                    <td class="w3-center">$12$</td>
+                    <td class="w3-center">$8$</td>
+                    <td class="w3-center">$13$</td>
+                    <td class="w3-center">$6$</td>
+                    <td class="w3-center">$15$</td>
+                    <td class="w3-center">$10$</td>
+                    <td class="w3-center">$14$</td>
+                    <td class="w3-center">$17$</td>
+                    <td class="w3-center">$16$</td>
+                </tr>
+                <tr>
+                    <td class="w3-padding" style="width: 25%;">School Performance</td>
+                    <td class="w3-center">$5$</td>
+                    <td class="w3-center">$10$</td>
+                    <td class="w3-center">$9$</td>
+                    <td class="w3-center">$7$</td>
+                    <td class="w3-center">$4$</td>
+                    <td class="w3-center">$8$</td>
+                    <td class="w3-center">$6$</td>
+                    <td class="w3-center">$14$</td>
+                    <td class="w3-center">$11$</td>
+                    <td class="w3-center">$12$</td>
+                </tr>
+            </table>
+            <br>
+            (a.) Calculate the Spearman's rank correlation coefficient. <br>
+            (b.) What would be the researcher's conclusion from the result in (a.)
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionCR17')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR17">
+                <br>
+                <table>
+                    <tr>
+                        <td class="w3-padding" style="width: 25%;">Performance in Entrance Examination, $X$</td>
+                        <td class="w3-center">$11$</td>
+                        <td class="w3-center">$12$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$13$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$15$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$14$</td>
+                        <td class="w3-center">$17$</td>
+                        <td class="w3-center">$16$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding" style="width: 25%;">Rank $X$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$5$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$1$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$3$</td>
+                        <td class="w3-center">$7$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$9$</td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td class="w3-padding" style="width: 25%;">School Performance, $Y$</td>
+                        <td class="w3-center">$5$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$9$</td>
+                        <td class="w3-center">$7$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$14$</td>
+                        <td class="w3-center">$11$</td>
+                        <td class="w3-center">$12$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding" style="width: 25%;">Rank $Y$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$7$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$1$</td>
+                        <td class="w3-center">$5$</td>
+                        <td class="w3-center">$3$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$9$</td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <th class="green w3-padding" style="width: 20%;">Performance in Entrance Examination, $X$</th>
+                        <th class="green" style="width: 20%;">School Performance, $Y$</th>
+                        <th class="green" style="width: 15%;">$R_X$</th>
+                        <th class="green" style="width: 15%;">$R_Y$</th>
+                        <th class="green" style="width: 15%;">$d = R_X - R_Y$</th>
+                        <th class="green" style="width: 15%;">$d^2$</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$11$</td>
+                        <td class="w3-center">$5$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$4$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$12$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$5$</td>
+                        <td class="w3-center">$7$</td>
+                        <td class="w3-center">$-2$</td>
+                        <td class="w3-center">$4$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$9$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$-4$</td>
+                        <td class="w3-center">$16$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$13$</td>
+                        <td class="w3-center">$7$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$4$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$4$</td>
+                        <td class="w3-center">$1$</td>
+                        <td class="w3-center">$1$</td>
+                        <td class="w3-center">$0$</td>
+                        <td class="w3-center">$0$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$15$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$5$</td>
+                        <td class="w3-center">$3$</td>
+                        <td class="w3-center">$9$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$6$</td>
+                        <td class="w3-center">$3$</td>
+                        <td class="w3-center">$3$</td>
+                        <td class="w3-center">$0$</td>
+                        <td class="w3-center">$0$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$14$</td>
+                        <td class="w3-center">$14$</td>
+                        <td class="w3-center">$7$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$-3$</td>
+                        <td class="w3-center">$9$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$17$</td>
+                        <td class="w3-center">$11$</td>
+                        <td class="w3-center">$10$</td>
+                        <td class="w3-center">$8$</td>
+                        <td class="w3-center">$2$</td>
+                        <td class="w3-center">$4$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center">$16$</td>
+                        <td class="w3-center">$12$</td>
+                        <td class="w3-center">$9$</td>
+                        <td class="w3-center">$9$</td>
+                        <td class="w3-center">$0$</td>
+                        <td class="w3-center">$0$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-center"></td>
+                        <td class="w3-center"></td>
+                        <td class="w3-center"></td>
+                        <td class="w3-center"></td>
+                        <td colspan="2" class="w3-center">$\Sigma d^2 = 50$</td>
+                    </tr>
+                </table>
+                <br>
+                $
+                (a.) \\[3ex]
+                n = 10 \\[3ex]
+                n^2 = 10^2 = 100 \\[3ex]
+                n^2 - 1 = 100 - 1 = 99 \\[3ex]
+                \rho = 1 - \dfrac{6\Sigma d^2}{n(n^2 - 1)} \\[5ex]
+                = 1 - \dfrac{6(50)}{10(99)} \\[5ex]
+                = 1 - \dfrac{300}{990} \\[5ex]
+                = 1 - 0.303030303 \\[3ex]
+                = 0.696969697 \\[3ex]
+                $
+                (b.) Based on the result from (a.) <br>
+                Because the Spearman's rank correlation coefficient is positive, there is a positive correlation between
+                performance in
+                entrance examination and school performance and vice versa. <br>
+                This implies that a student who performs well in entrance examination also tends to perform well in
+                school. <br>
+                Similarly, a student who perfoms well in school tends to perform well in the entrance examination.
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (18.) For the data set below: <br>
+            (a.) Draw the scatter diagram <br>
+            (b.) Compute the correlation coefficient. <br>
+            (c.) Interpret the correlation coefficient. <br><br>
+            <table class="w3-center">
+                <tr>
+                    <td>$x$</td>
+                    <td>$7$</td>
+                    <td>$6$</td>
+                    <td>$6$</td>
+                    <td>$7$</td>
+                    <td>$9$</td>
+                </tr>
+                <tr>
+                    <td>$y$</td>
+                    <td>$3$</td>
+                    <td>$7$</td>
+                    <td>$6$</td>
+                    <td>$9$</td>
+                    <td>$5$</td>
+                </tr>
+            </table>
+            <br>
+            <button class="solutions" onclick="solutions('solutionCR18')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR18">
+                <br>
+                (a.) The scatter diagram is drawn as follows: <br>
+                <img src="images/CorrelationRegression/Answers/Number18a.png" alt="Number 18a"> <br><br>
+
+                (b.) Second Formula is used. <br>
+                <table class="w3-center">
+                    <tr>
+                        <th class="green">$x$</th>
+                        <th class="green">$y$</th>
+                        <th class="green">$x^2$</th>
+                        <th class="green">$y^2$</th>
+                        <th class="green">$xy$</th>
+                    </tr>
+                    <tr>
+                        <td>$7$</td>
+                        <td>$3$</td>
+                        <td>$7^2 = 49$</td>
+                        <td>$3^2 = 9$</td>
+                        <td>$7 * 3 = 21$</td>
+                    </tr>
+                    <tr>
+                        <td>$6$</td>
+                        <td>$7$</td>
+                        <td>$6^2 = 36$</td>
+                        <td>$7^2 = 49$</td>
+                        <td>$6 * 7 = 42$</td>
+                    </tr>
+                    <tr>
+                        <td>$6$</td>
+                        <td>$6$</td>
+                        <td>$6^2 = 36$</td>
+                        <td>$6^2 = 36$</td>
+                        <td>$6 * 6 = 36$</td>
+                    </tr>
+                    <tr>
+                        <td>$7$</td>
+                        <td>$9$</td>
+                        <td>$7^2 = 49$</td>
+                        <td>$9^2 = 81$</td>
+                        <td>$7 * 9 = 63$</td>
+                    </tr>
+                    <tr>
+                        <td>$9$</td>
+                        <td>$5$</td>
+                        <td>$9^2 = 81$</td>
+                        <td>$5^2 = 25$</td>
+                        <td>$9 * 5 = 45$</td>
+                    </tr>
+                    <tr>
+                        <td>$\Sigma x = 35$</td>
+                        <td>$\Sigma y = 30$</td>
+                        <td>$\Sigma x^2 = 251$</td>
+                        <td>$\Sigma y^2 = 200$</td>
+                        <td>$\Sigma xy = 207$</td>
+                    </tr>
+                </table>
+                <br>
+                $
+                n = 5 \\[3ex]
+                r = \dfrac{n(\Sigma xy) - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2} * \sqrt{n(\Sigma
+                y^2) - (\Sigma y)^2}} \\[5ex]
+                = \dfrac{5(207) - (35)(30)}{\sqrt{5(251) - (35)^2} * \sqrt{5(200) - (30)^2}} \\[5ex]
+                = \dfrac{1035 - 1050}{\sqrt{1255 - 1225} * \sqrt{1000 - 900}} \\[5ex]
+                = \dfrac{-15}{\sqrt{30} * \sqrt{100}} \\[5ex]
+                = \dfrac{-15}{10(5.477225575)} \\[5ex]
+                = \dfrac{-15}{54.77225575} \\[5ex]
+                = -0.2738612788 \\[3ex]
+                \approx -0.274 \\[3ex]
+                $
+
+                (c.) <br>
+                <img src="images/CorrelationRegression/Answers/Number18ci.png" alt="Number 18ci"> <br><br>
+                <img src="images/CorrelationRegression/Answers/Number18cii.png" alt="Number 18cii"> <br><br>
+                Because the absolute value of the correlation coefficient: $0.274$ is not greater than the critical
+                value for the
+                sample size of 5: $0.878$, <b>no linear relation</b> exists between $x$ and $y$
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (19.) <b>NSC</b> The wind speed (in km per hour) and temperature (in &deg;C) for a certain town were
+            recorded at 16:00 for a
+            period of 10 days. <br>
+            The information is shown in the table below. <br>
+            <table class="w3-center">
+                <tr>
+                    <td style="width: 15%;" class="w3-padding"><b>WIND SPEED IN km/h ($x$)</b></td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>17</td>
+                    <td>11</td>
+                    <td>24</td>
+                    <td>13</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td style="width: 15%;" class="w3-padding"><b>TEMPERATURE IN &deg;C ($y$)</b></td>
+                    <td>28</td>
+                    <td>26</td>
+                    <td>22</td>
+                    <td>22</td>
+                    <td>16</td>
+                    <td>20</td>
+                    <td>24</td>
+                    <td>19</td>
+                    <td>26</td>
+                    <td>19</td>
+                </tr>
+            </table>
+            <br>
+            (19.1) Determine the equation of the least squares regression line for the data. <br>
+            (19.2) Predict the temperature at 16:00 if, on a certain day, the wind speed of this town was 9 km per hour.
+            <br>
+            (19.3) Interpret the value of <i>b</i> in the context of the data.
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionCR19')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR19">
+                <br>
+                (19.1) <br>
+                <table class="w3-center">
+                    <tr>
+                        <th class="green" style="width: 15%;">$x$</th>
+                        <th class="green" style="width: 25%;">$x - \bar{x}$</th>
+                        <th class="green" style="width: 25%;">$(x - \bar{x})^2$</th>
+                        <th class="green w3-padding" style="width: 35%;">$\dfrac{x - \bar{x}}{s_x}$</th>
+                    </tr>
+                    <tr>
+                        <td>$2$</td>
+                        <td>$-13.5$</td>
+                        <td>$182.25$</td>
+                        <td>$-1.765045216$</td>
+                    </tr>
+                    <tr>
+                        <td>$6$</td>
+                        <td>$-9.5$</td>
+                        <td>$90.25$</td>
+                        <td>$-1.242068856$</td>
+                    </tr>
+                    <tr>
+                        <td>$15$</td>
+                        <td>$-0.5$</td>
+                        <td>$0.25$</td>
+                        <td>$-0.065372045$</td>
+                    </tr>
+                    <tr>
+                        <td>$20$</td>
+                        <td>$4.5$</td>
+                        <td>$20.25$</td>
+                        <td>$0.588348405$</td>
+                    </tr>
+                    <tr>
+                        <td>$25$</td>
+                        <td>$9.5$</td>
+                        <td>$90.25$</td>
+                        <td>$1.242068856$</td>
+                    </tr>
+                    <tr>
+                        <td>$17$</td>
+                        <td>$1.5$</td>
+                        <td>$2.25$</td>
+                        <td>$0.196116135$</td>
+                    </tr>
+                    <tr>
+                        <td>$11$</td>
+                        <td>$-4.5$</td>
+                        <td>$20.25$</td>
+                        <td>$-0.588348405$</td>
+                    </tr>
+                    <tr>
+                        <td>$24$</td>
+                        <td>$8.5$</td>
+                        <td>$72.25$</td>
+                        <td>$1.111324766$</td>
+                    </tr>
+                    <tr>
+                        <td>$13$</td>
+                        <td>$-2.5$</td>
+                        <td>$6.25$</td>
+                        <td>$-0.326860225$</td>
+                    </tr>
+                    <tr>
+                        <td>$22$</td>
+                        <td>$6.5$</td>
+                        <td>$42.25$</td>
+                        <td>$0.849836586$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="w3-padding">
+                            $
+                            \Sigma x = 155 \\[3ex]
+                            n = 10 \\[3ex]
+                            \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                            \bar{x} = \dfrac{155}{10} \\[5ex]
+                            \bar{x} = 15.5
+                            $
+                        </td>
+                        <td colspan="2" class="w3-padding">
+                            $
+                            \Sigma (x - \bar{x})^2 = 526.5 \\[5ex]
+                            s_x = \sqrt{\dfrac{\Sigma (x - \bar{x})^2}{n - 1}} \\[5ex]
+                            = \sqrt{\dfrac{526.5}{9}} \\[5ex]
+                            = \sqrt{58.5} \\[3ex]
+                            = 7.64852927
+                            $
+                        </td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+                <table class="w3-center">
+                    <tr>
+                        <th class="green" style="width: 15%;">$y$</th>
+                        <th class="green" style="width: 25%;">$y - \bar{y}$</th>
+                        <th class="green" style="width: 25%;">$(y - \bar{y})^2$</th>
+                        <th class="green w3-padding" style="width: 35%;">$\dfrac{y - \bar{y}}{s_y}$</th>
+                    </tr>
+                    <tr>
+                        <td>$28$</td>
+                        <td>$5.8$</td>
+                        <td>$33.64$</td>
+                        <td>$1.528434202$</td>
+                    </tr>
+                    <tr>
+                        <td>$26$</td>
+                        <td>$3.8$</td>
+                        <td>$14.44$</td>
+                        <td>$1.001387926$</td>
+                    </tr>
+                    <tr>
+                        <td>$22$</td>
+                        <td>$-0.2$</td>
+                        <td>$0.04$</td>
+                        <td>$-0.052704628$</td>
+                    </tr>
+                    <tr>
+                        <td>$22$</td>
+                        <td>$-0.2$</td>
+                        <td>$0.04$</td>
+                        <td>$-0.052704628$</td>
+                    </tr>
+                    <tr>
+                        <td>$16$</td>
+                        <td>$-6.2$</td>
+                        <td>$38.44$</td>
+                        <td>$-1.633843458$</td>
+                    </tr>
+                    <tr>
+                        <td>$20$</td>
+                        <td>$-2.2$</td>
+                        <td>$4.84$</td>
+                        <td>$-0.579750904$</td>
+                    </tr>
+                    <tr>
+                        <td>$24$</td>
+                        <td>$1.8$</td>
+                        <td>$3.24$</td>
+                        <td>$0.474341649$</td>
+                    </tr>
+                    <tr>
+                        <td>$19$</td>
+                        <td>$-3.2$</td>
+                        <td>$10.24$</td>
+                        <td>$-0.843274043$</td>
+                    </tr>
+                    <tr>
+                        <td>$26$</td>
+                        <td>$3.8$</td>
+                        <td>$14.44$</td>
+                        <td>$1.001387926$</td>
+                    </tr>
+                    <tr>
+                        <td>$19$</td>
+                        <td>$-3.2$</td>
+                        <td>$10.24$</td>
+                        <td>$-0.843274043$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="w3-padding">
+                            $
+                            \Sigma y = 222 \\[3ex]
+                            n = 10 \\[3ex]
+                            \bar{y} = \dfrac{\Sigma y}{n} \\[5ex]
+                            \bar{y} = \dfrac{222}{10} \\[5ex]
+                            \bar{y} = 22.2
+                            $
+                        </td>
+                        <td colspan="2" class="w3-padding">
+                            $
+                            \Sigma (y - \bar{y})^2 = 129.6 \\[5ex]
+                            s_y = \sqrt{\dfrac{\Sigma (y - \bar{y})^2}{n - 1}} \\[5ex]
+                            = \sqrt{\dfrac{129.6}{9}} \\[5ex]
+                            = \sqrt{14.4} \\[3ex]
+                            = 3.794733192
+                            $
+                        </td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+                <table class="w3-center">
+                    <tr>
+                        <th class="green w3-padding">
+                            $\left(\dfrac{x - \bar{x}}{s_x}\right) \left(\dfrac{y - \bar{y}}{s_y}\right)$
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>$-2.697755477$</td>
+                    </tr>
+                    <tr>
+                        <td>$-1.243792755$</td>
+                    </tr>
+                    <tr>
+                        <td>$0.003445409$</td>
+                    </tr>
+                    <tr>
+                        <td>$-0.031008684$</td>
+                    </tr>
+                    <tr>
+                        <td>$-2.029346074$</td>
+                    </tr>
+                    <tr>
+                        <td>$-0.113698507$</td>
+                    </tr>
+                    <tr>
+                        <td>$-0.279078153$</td>
+                    </tr>
+                    <tr>
+                        <td>$-0.937151328$</td>
+                    </tr>
+                    <tr>
+                        <td>$-0.327313883$</td>
+                    </tr>
+                    <tr>
+                        <td>$-0.716645133$</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-padding">
+                            $\Sigma \left(\dfrac{x - \bar{x}}{s_x}\right) \left(\dfrac{y - \bar{y}}{s_y}\right) =
+                            -8.372344585$
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                $
+                r = \dfrac{\Sigma\left(\dfrac{x - \bar{x}}{s_x}\right)\left(\dfrac{y - \bar{y}}{s_y}\right)}{n - 1}
+                \\[5ex]
+                = -\dfrac{8.372344585}{10 - 1} \\[5ex]
+                = -\dfrac{8.372344585}{9} \\[5ex]
+                = -0.9302605094 \\[3ex]
+
+                b_1 = r * \dfrac{s_y}{s_x} \\[5ex]
+                = -0.9302605094 * \dfrac{3.794733192}{7.64852927} \\[5ex]
+                = -\dfrac{3.530090432}{7.64852927} \\[5ex]
+                = -0.4615384615 \\[3ex]
+
+                b_0 = \bar{y} - b_1\bar{x} \\[3ex]
+                = 22.2 - (-0.4615384615)(15.5) \\[3ex]
+                = 22.2 - (-7.153846154) \\[3ex]
+                = 22.2 + 7.153846154 \\[3ex]
+                = 29.35384615 \\[3ex]
+
+                Least-squares\;\;regression\;\;line: \\[3ex]
+                \hat{y} = b_1 x + b_0 \\[3ex]
+                \hat{y} = -0.4615384615x + 29.35384615 \\[5ex]
+
+                (19.2) \\[3ex]
+                x = 9\;\;km/h \\[3ex]
+                \hat{y} = -0.4615384615(9) + 29.35384615 \\[3ex]
+                \hat{y} = -0.4615384615x + 29.35384615 \\[3ex]
+                \hat{y} = -4.153846154 + 29.35384615 \\[3ex]
+                \hat{y} = 25.2^\circ C \\[3ex]
+                $
+                (19.3) <br>
+                $b = b_1 = slope = -0.4615384615$ <br>
+                The negative slope implies that as the wind speed, $x$ increases, the temperature, $y$ decreases. <br>
+                The negative value of the slope implies that on average; if the wind speed increases by 1 km/h, the
+                temperature
+                decreases by 0.4615384615 &deg;C
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-topbar w3-padding">
+            (20.) <b>HSC Mathematics Standard/Advanced 2</b> A cricket is an insect. The male cricket produces a
+            chirping sound. <br>
+            A scientist wants to explore the relationship between the temperature in degrees Celsius and the number of
+            cricket chirps heard
+            in a 15-second time interval. <br>
+            Once a day for 20 days, the scientist collects data. Based on the 20 data points, the scientist provides the
+            information below. <br>
+            A box-plot of the temperature data is shown. <br>
+
+            <div class="w3-center">
+                <img src="images/CorrelationRegression/Questions/Number20.png" alt="Number 20">
+            </div>
+
+            The mean temperature in the dataset is 0.525&deg;C below the median temperature in the dataset. <br>
+            A total of 684 chirps was counted when collecting the 20 data points. <br>
+            The scientist fits a least-squares regression line using the data $(x, y)$, where $x$ is the temperature in
+            degrees Celsius and $y$
+            is the number of chirps heard in a 15-second time interval. <br>
+            The equation of the line is $y = -10.6063 + bx$, <br>
+            where $b$ is the slope of the regression line. <br>
+            The least-squares regression line passes through the point $(\bar{x}, \bar{y})$ where $\bar{x}$ is the
+            sample mean of the temperature
+            data and $\bar{y}$ is the sample mean of the chirp data. <br>
+            Calculate the number of chirps expected in a 15-second interval when the temperature is 19&deg; Celsius.
+            <br>
+            Give your answer correct to the nearest whole number.
+            <br><br>
+            <button class="solutions" onclick="solutions('solutionCR20')">Show/Hide Answer</button>
+            <div class="result" id="solutionCR20">
+                <br>
+                $x$ = temperature in degrees Celsius <br>
+                $y$ = number of chirps in a 15-second time interval <br><br>
+
+                Based on the five-number summary in the box-plot: <br><br>
+                $
+                Median:\;\; \tilde{x} = 22^\circ C \\[3ex]
+                Mean:\;\;\bar{x} = 22 - 0.525 = 21.475^\circ C \\[3ex]
+
+                \underline{Number\;\;of\;\;chirps:\;\;y} \\[3ex]
+                \Sigma y = 684 \\[3ex]
+                n = 20 \\[3ex]
+                \bar{y} = \dfrac{\Sigma y}{n} \\[5ex]
+                \bar{y} = \dfrac{684}{20} \\[5ex]
+                \bar{y} = 34.2 \\[3ex]
+
+                \underline{Equation\;\;of\;\;the\;\;line} \\[3ex]
+                y = -10.6063 + bx...eqn.(1) \\[3ex]
+                Passes\;\;through\;\;(\bar{x},\bar{y}) \\[3ex]
+                Passes\;\;through\;\;(21.475, 34.2) \\[3ex]
+                \implies \\[3ex]
+                x_1 = 21.475 \\[3ex]
+                y_1 = 34.2\;chirps \\[3ex]
+                \underline{Equation\;\;of\;\;a\;\;straight\;\;line\;\;passing\;\;through\;\;a\;\;point} \\[3ex]
+                y - y_1 = b(x - x_1) \\[3ex]
+                y - 34.2 = b(x - 21.475) \\[3ex]
+                y - 34.2 = bx - 21.475b \\[3ex]
+                y = bx - 21.475b + 34.2 ...eqn.(2) \\[3ex]
+                Equate\;\;eqn.(1)\;\;and\;\;eqn.(2) \\[3ex]
+                y = y \\[3ex]
+                \implies \\[3ex]
+                -10.6063 + bx = bx - 21.475b + 34.2 \\[3ex]
+                21.475b = bx + 34.2 + 10.6063 - bx \\[3ex]
+                21.475b = 44.8063 \\[3ex]
+                b = \dfrac{44.8063}{21.475} \\[5ex]
+                b = 2.086440047 \\[3ex]
+                Substitute\;\;for\;\;b\;\;in\;\;eqn.(1) \\[3ex]
+                \therefore y = -10.6063 + 2.086440047x \\[3ex]
+                when\;\;x = 19^\circ C \\[3ex]
+                y = -10.6063 + 2.086440047(19) \\[3ex]
+                y = -10.6063 + 39.64236088 \\[3ex]
+                y = 29.03606088 \\[3ex]
+                y \approx 29\;\;chirps
+                $
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/CorrelationRegression/correlationRegression.html"
+            class="w3-button w3-xlarge w3-circle w3-cyan" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR21')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR21">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR22')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR23')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR23">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR24')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR24">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR25')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR25">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR26')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR27')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR27">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR28')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR29')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR29">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionCR30')">Show/Hide Answer</button>
+                <div class="result" id="solutionCR30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="cyan w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2022&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2022 Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

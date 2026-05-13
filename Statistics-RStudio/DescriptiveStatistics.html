@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Descriptive Statistics with RStudio</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD JESUS CHRIST. We are experts in descriptive statistics with RStudio.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
+                statistics, data, data collection, data organization, data presentation, data analysis, data interpretation,
+                descriptive statistics, inferential statistics, statistical science, sample, population, individual, decision, 
+                conclusion, study, variables, quantitative variable, qualitative variable, discrete variable, continuous variable,
+                statistic, parameter, research, research objective, inference, response variable, explanatory variable,
+                predictor variable, level of measurement of a variable, nominal level, ordinal level, interval level, ratio level, 
+                fact, survey, experiment, historical record, Likert scales, statistical process, correlation, regression, 
+                correlation coefficient, product moment correlation coefficient, Pearson correlation coefficient, 
+                critical values of correlation coefficient, forecasting, forecasting models, forecasting techniques, period,
+                value, forecast, error, mean absolute deviation, mean square error, averages, simple averages, 
+                moving averages, weighted moving averages, index numbers, time-series forecasting, smoothing techniques, 
+                naive forecasting models, averaging models, exponential smoothing, trend analysis, seasonal effects, 
+                autocorrelation, autoregression, variables, price index, critical value, confidence level, confidence interval, 
+                significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, 
+                type II error, unstacked table, coding, wide data, narrow data, unstacked table, stacked table, long data, 
+                null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, 
+                critical region, hypothesis testing, population proportion, population mean, one sample proportion, 
+                two sample proportion, goodness-of-fit test, chi-square, normal distribution table, student t distribution table,
+                F statistic, test statistic, sample proportion, population proportion, level of significance, 
+                confidence levels, sample mean, population mean, sample variance, population variance, 
+                sample standard deviation, population standard deviation, critical values, student t distribution, 
+                normal distribution, chi -square distribution, sampling, normal distribution, sampling distribution, 
+                probability distribution, sample mean, sample proportion, sample variance, sample standard deviation, 
+                population mean, population proportion, population variance, population standard deviation, estimators, 
+                bias, standard error, probability, central limit theorem, confounding, lurking variable, sampling frame,
+                frequency distribution table, frequency table, class, classes, frequency, data set, class width, tally,
+                class size, range, number of classes, maximum value, minimum value, class interval, class limit,
+                class midpoint, class mark, class boundary, relative frequency, cumulative frequency, data cycle,
+                two-way table, R programming, RStudio">
+
+    <link href="styles/RStudio.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki">
+        <!--
+            <div class="w3-center">
+                <button class="quoteDay" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            <div class="w3-content quotes" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <!--
+        <header class="w3-padding-64 khaki">
+            <div class="w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        </header>
+    -->
+
+    <!-- End Header/Home -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+        <h1>R and RStudio for Descriptive Statistics</h1>
+        <!-- Image in top left corner --
+            <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="picture" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+            
+            <a href="https://www.samuelchukwuemeka.com" title="Samuel Dominic Chukwuemeka">
+                <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="picture" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+            </a>
+        -->
+        <h2>Concepts: Measures of Center; Measures of Spread; Measures of Position; Measures of Shape</h2>
+        <p>
+            (1.) Please begin from the Overview and review all the questions: one-at-a-time, step-by-step. <br>
+            Do not skip. <br><br>
+            (2.) These steps and solutions are for Statistics students. <br>
+            There are more detailed steps and solutions that I could use for Data Science and Computer Science students.
+        </p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="w3-container">
+        <p class="w3-center w3-padding-16">
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">R/RStudio</a>
+            <a href="#overview" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Overview</a>
+            <a href="#functionsUD" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">User-Defined
+                Functions</a>
+            <br><br>
+            <b>DescriptiveStatistics</b>
+            <br><br>
+            <b>Measures of Center</b> <br>
+            <a href="#QuestionMC1" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 1</a>
+            <a href="#QuestionMC2" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 2</a>
+            <a href="#QuestionMC3" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 3</a>
+            <a href="#QuestionMC4" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 4</a>
+            <br><br>
+            <b>Measures of Variation</b> <br>
+            <a href="#QuestionMV1" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 1</a>
+            <a href="#QuestionMV2" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 2</a>
+            <a href="#QuestionMV3" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 3</a>
+            <br><br>
+            <b>Measures of Position</b> <br>
+            <a href="#QuestionMP1" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 1</a>
+            <a href="#QuestionMP2" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 2</a>
+            <a href="#QuestionMP3" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 3</a>
+            <br><br>
+            <b>Measures of Shape</b> <br>
+            <a href="#QuestionMS1" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 1</a>
+            <a href="#QuestionMS2" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 2</a>
+            <a href="#QuestionMS3" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 3</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/DataPresentation.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Data Presentation</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Scatter Diagrams</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/ProbabilityDistributions.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Probability Distributions</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/InferentialStatistics.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Inferential Statistics</a>
+        </p>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <br><br>
+
+    <!-- Overview -->
+    <div class="w3-row w3-container" id="overview">
+        <div class="w3-topbar w3-padding">
+            <p>
+                Statistical functions in R are used for statistical computations/analysis of a dataset. <br>
+                Some statistical functions are already defined in R (these are <b>built-in functions</b> also known as
+                <b>system-defined functions</b>) <br>
+                For all other functions not built-in, we have to define them. These are known as <b>user-defined
+                    functions.</b> <br>
+                As at today: 07/05/2023; <br>
+                R programming language has these descriptive statistics represented by these built-in functions. <br>
+                Let us review them.
+            </p>
+            <table>
+                <caption>
+                    For a data frame (dataset in the form of a recursive vector) <br>
+                    Assume the data frame is: <code>dataset</code>
+                </caption>
+                <tr>
+                    <th style="width: 25%;">Descriptive Statistics</th>
+                    <th style="width: 15%;">Type</th>
+                    <th style="width: 20%;">Built-in R Function</th>
+                    <th style="width: 40%;">Code</th>
+                </tr>
+                <tr>
+                    <td>Mean</td>
+                    <td>Measure of Center</td>
+                    <td>mean</td>
+                    <td><code>mean(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Median</td>
+                    <td>Measure of Center</td>
+                    <td>median</td>
+                    <td><code>median(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Sample Variance</td>
+                    <td>Measure of Spread</td>
+                    <td>var</td>
+                    <td><code>var(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Sample Standard Deviation</td>
+                    <td>Measure of Spread</td>
+                    <td>sd</td>
+                    <td><code>sd(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Five-Number Summary</td>
+                    <td>Measure of Location</td>
+                    <td>quantile</td>
+                    <td><code>quantile(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Minimum</td>
+                    <td>Measure of Location</td>
+                    <td>min</td>
+                    <td><code>min(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Maximum</td>
+                    <td>Measure of Location</td>
+                    <td>max</td>
+                    <td><code>max(dataset)</code></td>
+                </tr>
+                <tr>
+                    <td>Percentile (Example: 70th percentile)</td>
+                    <td>Measure of Location</td>
+                    <td>quantile</td>
+                    <td><code>quantile(dataset, c(0.7))</code></td>
+                </tr>
+                <tr>
+                    <td>Percentiles (Example: 34th and 70th percentiles)</td>
+                    <td>Measure of Location</td>
+                    <td>quantile</td>
+                    <td><code>quantile(dataset, c(0.34, 0.7))</code></td>
+                </tr>
+            </table>
+            <br>
+            <p>
+                This means that: <br>
+                (1.) We cannot use the built-in function names as names for any user-defined variable or user-defined
+                function. <br>
+                (2.) We have to define our own functions (user-defined functions) for any function that is not built-in.
+                <br>
+                In that sense, we shall: <br>
+                (a.) create a project in RStudio <br>
+                (b.) define all those functions in the project <br>
+                (c.) import any dataset we want into the project and use those functions in the dataset.
+            </p>
+
+            <h4>Create a Project in RStudio</h4>
+            <p>
+                (1.) Step 1: Open RStudio <br>
+                Click: <code>File &rightarrow; New Project...</code> <br>
+                <img src="images/CreateProject/step-1.png" alt="Create Project: 1">
+                <br><br>
+                (2.) Step 2: <br>
+                <img src="images/CreateProject/step-2.png" alt="Create Project: 2">
+                <br><br>
+                (3.) Step 3: <br>
+                <img src="images/CreateProject/step-3.png" alt="Create Project: 3">
+                <br><br>
+                (4.) Step 4: <br>
+                <img src="images/CreateProject/step-4.png" alt="Create Project: 4">
+                <br><br>
+                (5.) Step 5: <br>
+                <img src="images/CreateProject/step-5.png" alt="Create Project: 5" style="width: 100%;">
+                <br><br>
+                The project has been created. <br>
+                By default, this project is located in the <code>Documents</code> folder of the Windows computer
+                <br><br>
+                (6.) Step 6: <br>
+                <img src="images/CreateProject/step-6.png" alt="Create Project: 6">
+                <br><br>
+                Let us go ahead and clear the default notes in the RStudio <code>Console</code> and let us write the
+                remaining statistical functions.
+            </p>
+        </div>
+    </div>
+    <!-- End Overview -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- User-Defined Functions -->
+    <div class="w3-row w3-container" id="functionsUD">
+        <div class="w3-topbar w3-padding">
+            <h4>User-Defined Functions</h4>
+            <p>
+                The syntax for writing a function is <br>
+                <code>
+                        functionName &lt;&ndash; function(parameters) <br>
+                        { <br>
+                        &ensp;&ensp;&ensp;  code/expression <br> 
+                        } <br>
+                    </code>
+                <br>
+                Let us write functions for the rest of the descriptive statistics measures.
+            </p>
+            <br>
+            <pre>
+                    Measure of Center: <b>Mode</b>
+                    # Function to calculate the mode of a dataset 
+                    # It computes the mode for unimodal and multimodal data 
+                    Mode &lt;&ndash; function(x) 
+                    { 
+                        resultMode &lt;&ndash; names(table(x))[table(x) == max(table(x))] 
+                        cat(paste(resultMode, collapse = ", ")) 
+                    }
+
+                    # Call the function 
+                    Mode(dataset)
+                </pre>
+            <br>
+            <pre>
+                    Measure of Center: <b>Midrange</b>
+                    # Function to calculate the midrange of a dataset 
+                    Midrange &lt;&ndash; function(x) 
+                    { 
+                        (min(x) + max(x)) / 2
+                    }
+
+                    # Call the function 
+                    Midrange(dataset)
+                </pre>
+            <br>
+            <pre>
+                    Measure of Spread: <b>Range</b>
+                    # Function to calculate the range of a dataset 
+                    Range &lt;&ndash; function(x) 
+                    { 
+                        max(x) &ndash; min(x)
+                    }
+
+                    # Call the function 
+                    Range(dataset)
+                </pre>
+            <br>
+            <pre>
+                    Measure of Spread: <b>Population Variance</b>
+                    # Function to calculate the population variance of a dataset 
+                    PopulationVariance &lt;&ndash; function(x) 
+                    { 
+                        var(x) * (length(x) &ndash; 1) / length(x)
+                    }
+
+                    # Call the function 
+                    PopulationVariance(dataset)
+                </pre>
+            <br>
+            <pre>
+                    Measure of Spread: <b>Population Standard Deviation</b>
+                    # Function to calculate the population standard deviation of a dataset 
+                    PopulationStandardDeviation &lt;&ndash; function(x) 
+                    { 
+                        sd(x) * sqrt((length(x) &ndash; 1)/length(x))
+                    }
+
+                    # Call the function 
+                    PopulationStandardDeviation(dataset)
+                </pre>
+
+            <p>
+                <mark>Please <u>NOTE:</u></mark> <br>
+                (1.) For all the functions we have discussed so far: system-defined and user-defined functions,
+                <code>dataset</code>
+                is the
+                raw data.
+                <br><br>
+                (2.) For Ungrouped Data: if we want to find the descriptive statistics of a specific column, we write
+                the code as:
+                <br>
+                <code>descriptiveStatistics(FileName<span>$</span>ColumnName)</code> <br>
+                where: <br>
+                descriptiveStatistics is any measure of center, measure of spread, measure of position, or measure of
+                shape <br>
+                FileName is the name of the file <br>
+                The dollar symbol, <span>$</span> is the operator used to access the dataset by the column names. <br>
+                ColumnName is the column that you want to determine the descriptive statistics.
+                <br><br>
+                (3.) For Ungrouped Data: if we want to find the descriptive statistics of the entire dataset (all the
+                columns),
+                we need to convert the dataset to a matrix using the code: <br>
+                <code>FileName &lt;&ndash; as.matrix(FileName)</code> <br>
+                where: <br>
+                <code>as.matrix</code> is the built-in function to convert a dataset to a matrix
+                <br><br>
+                (4.) For Grouped Data: there is no built-in function as at today: 07/07/2023 <br>
+                So, we shall write the function for the descriptive statistics and/or install library packages for it
+                such as the
+                <b>actuar</b> package (R package for Actuarial Science functions) among others.
+            </p>
+
+            <h4>Saving and Loading User-Defined Functions</h4>
+            <p>
+                After writing these functions, we need to save them as a workspace image.
+                <br><br>
+                (1.) This is what we have at the moment: <br>
+                (a.) <img src="images/SaveWorkspace/step-1a.png" alt="Save Workspace: 1a">
+                <br><br>
+                (b.) <img src="images/SaveWorkspace/step-1b.png" alt="Save Workspace: 1b">
+                <br><br>
+                (2.) Step 2: Try to close the project <br>
+                <img src="images/SaveWorkspace/step-2.png" alt="Save Workspace: 2" style="width: 100%;">
+                <br><br>
+                (3.) Save <br>
+                It is saved as <b>.RData</b> file <br>
+                <img src="images/SaveWorkspace/step-3.png" alt="Save Workspace: 3">
+                <br><br>
+                (4.) Double-click the project, <b>DescriptiveStatistics.Rproj</b> to open it <br>
+                <img src="images/SaveWorkspace/step-4.png" alt="Save Workspace: 4" style="width: 100%;">
+                <br><br>
+                (5.) Clear the <b>Console</b> window and Click the <b>.RData</b> file to load it in the <b>Global
+                    Environment</b> <br>
+                (a.) <img src="images/SaveWorkspace/step-5a.png" alt="Save Workspace: 5a">
+                <br><br>
+                Load the <b>.RData</b> file into the Global Environment <br>
+                (b.) <img src="images/SaveWorkspace/step-5b.png" alt="Save Workspace: 5b">
+                <br><br>
+                (c.) The user-defined functions are in the Global Environment <br>
+                This implies that we can use them in the Console window for any dataset in that window, be it written or
+                imported, provided they are seen there. <br>
+                If we clear the Global Environment, then we will need to click the .RData file again to load it in the
+                environment. <br>
+                <img src="images/SaveWorkspace/step-5c.png" alt="Save Workspace: 5c">
+                <br><br>
+                Let us begin to solve questions. <br>
+                After each question, clear the Console window.
+            </p>
+        </div>
+    </div>
+    <!-- End User-Defined Functions -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Measures of Center: Question 1 -->
+    <div class="w3-row w3-container" id="QuestionMC1">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (1.) Listed below are the jersey numbers of 11 players randomly selected from the roster of a
+                championship sports team. <br>
+                39 &ensp;&ensp;&ensp; 35 &ensp;&ensp;&ensp; 76 &ensp;&ensp;&ensp; 37 &ensp;&ensp;&ensp; 23
+                &ensp;&ensp;&ensp; 6
+                &ensp;&ensp;&ensp; 82 &ensp;&ensp;&ensp; 28 &ensp;&ensp;&ensp; 31 &ensp;&ensp;&ensp; 61
+                &ensp;&ensp;&ensp; 70 <br><br>
+                Determine the: <br>
+                (a.) mean <br>
+                (b.) median <br>
+                (c.) mode <br>
+                (d.) midrange for the data <br>
+                Type an integer or a decimal rounded to one decimal place as needed.
+                <br><br>
+                (e.) What do the results tell​ us? <br>
+                (I.) The midrange gives the average​ (or typical) jersey​ number, while the mean and median give two
+                different interpretations of the spread of possible jersey numbers. <br>
+                (II.) The jersey numbers are nominal data and they do not measure or count​ anything, so the resulting
+                statistics are meaningless. <br>
+                (III.) The mean and median give two different interpretations of the average​ (or typical) jersey​
+                number, while the midrange shows the spread of possible jersey numbers. <br>
+                (IV.) Since only 11 of the jersey numbers were in the​ sample, the statistics cannot give any meaningful
+                results.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionDS1')">Show/Hide Answer</button>
+            <div class="result" id="solutionDS1">
+                <br>
+                The sample size is 11. <br>
+                It is not a lot. So, let us just type the code directly in RStudio.
+                <br><br>
+                <img src="images/MeasuresCenter/Answers/Number1.png" alt="Number 1">
+                <br><br>
+                (a.) Mean = 44.36364 &approx; 44.4 <br>
+                (b.) Median = 37 <br>
+                (c.) There is no mode because each value occurred one time. <br>
+                (d.) Midrange = 44 <br>
+                (e.) The jersey numbers are nominal data and they do not measure or count​ anything, so the resulting
+                statistics are meaningless.
+            </div>
+        </div>
+    </div>
+    <!-- End Measures of Center: Question 1 -->
+
+    <!-- Measures of Center: Question 2 -->
+    <div class="w3-row w3-container" id="QuestionMC2">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (2.) Listed below are the ages of 11 players randomly selected from the roster of a championship sports
+                team.
+                <br><br>
+                <img src="images/MeasuresCenter/Questions/Number2.png" alt="Number 2">
+                <br><br>
+                Find the: <br>
+                (a.) mean <br>
+                (b.) median <br>
+                (c.) mode <br>
+                (d.) midrange of the Ages <br>
+                Type an integer or a decimal rounded to one decimal place as needed.
+                <br><br>
+                (e.) Determine how the resulting statistics are fundamentally different from those calculated from the
+                jersey numbers of the same 11 players.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionDS2')">Show/Hide Answer</button>
+            <div class="result" id="solutionDS2">
+                <br>
+                There are only 11 ages so let us just type it in the RStudio console
+                <br><br>
+                <img src="images/MeasuresCenter/Answers/Number2.png" alt="Number 2">
+                <br><br>
+                (a.) The mean age is: 29.18182 &approx; 29.2 years <br>
+                (b.) The median age is: 28 years <br>
+                (c.) The modes are: 25, 28, 30 years <br>
+                (d.) The midrange is: 33 years <br>
+                (e.) The jersey numbers are data at the <u>nominal</u> level of​ measurement, but the ages (in
+                <i>years</i>) are data at the
+                <u>ratio</u> level of​ measurement, so <u>only the age</u> statistics are meaningful.
+            </div>
+        </div>
+    </div>
+    <!-- End Measures of Center: Question 2 -->
+
+    <!-- Measures of Center: Question 3 -->
+    <div class="w3-row w3-container" id="QuestionMC3">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (3.) Use the magnitudes​ (Richter scale) of the earthquakes listed in the data set below.
+                <br><br>
+                <img src="images/MeasuresCenter/Questions/Number3.png" alt="Number 3">
+                <br><br>
+                (A.) Find the mean of the data set. <br>
+                (B.) Determine the median of the data set. <br>
+                Round to three decimal places as needed. <br><br>
+                (C.) Is the magnitude of an earthquake measuring 7.0 on the Richter scale an outlier​ (data value that
+                is very far away from the​ others) when considered in the context of the sample data given in this data​
+                set? Explain. <br>
+                <b>I.</b> No, because this value is not the maximum data value. <br>
+                <b>II.</b> No, because this value is not very far away from all of the other data values. <br>
+                <b>III.</b> Yes, because this value is very far away from all of the other data values. <br>
+                <b>IV.</b> Yes, because this value is the maximum data value.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionDS3')">Show/Hide Answer</button>
+            <div class="result" id="solutionDS3">
+                <br>
+                The sample size is a bit large. So, let us: export the data as an Excel file, save it as a Text file
+                (.txt) and import it in RStudio. <br>
+                <br><br>
+                (a.) Step 1: <br>
+                <img src="images/MeasuresCenter/Answers/Number3-1.png" alt="Number 3-1"> <br><br>
+                (b.) Step 2: <br>
+                There is no column name for the data. Let us insert a row and name it: <code>Data</code> <br>
+                Then, we can name it with an appropriate name, and save it as a .txt file <br>
+                <img src="images/MeasuresCenter/Answers/Number3-2.png" alt="Number 3-2"> <br><br>
+                (c.) Step 3: <br>
+                <img src="images/MeasuresCenter/Answers/Number3-3.png" alt="Number 3-3"> <br><br>
+                (d.) Step 4: <br>
+                <img src="images/MeasuresCenter/Answers/Number3-4.png" alt="Number 3-4"> <br><br>
+                (e.) Step 5: <br>
+                <img src="images/MeasuresCenter/Answers/Number3-5.png" alt="Number 3-5"> <br><br>
+                (f.) Step 6: <br>
+                <img src="images/MeasuresCenter/Answers/Number3-6.png" alt="Number 3-6"> <br><br>
+                (g.) Step 7: <br>
+                <img src="images/MeasuresCenter/Answers/Number3-7.png" alt="Number 3-7">
+                <br><br>
+                (h.) Questions (A.) and (B.) <br>
+                We have at least two approaches to solve the question.
+                <br><br>
+                <u>1st Approach:</u> <b>Code Dataset by Column</b> <br>
+                File Name: <b>EarthquakeMagnitudes.txt</b> <br>
+                Column Name: <b>Data</b> <br>
+                We can go ahead and find the mean and the median. <br>
+                The code to determine the mean is:
+                <pre>
+                        # Mean of the dataset 
+                        mean(EarthquakeMagnitudes<span>$</span>Data)
+                    </pre>
+                The code to determine the median is:
+                <pre>
+                        # Median of the dataset 
+                        median(EarthquakeMagnitudes<span>$</span>Data)
+                    </pre>
+                <img src="images/MeasuresCenter/Answers/Number3-8.png" alt="Number 3-8">
+                <br><br>
+                <u>2nd Approach:</u> <b>Code Dataset</b> <br>
+                File Name: <b>EarthquakeMagnitudes.txt</b> <br>
+                <i>Please see the screenshot below:</i> We need to convert the dataset to a matrix. <br>
+                The code to convert the dataset to a matrix is:
+                <pre>EarthquakeMagnitudes &lt;&ndash; as.matrix(EarthquakeMagnitudes)</pre>
+                <i>
+                    Yes, we can use the same file name. I prefer to use the same file name for the converted file
+                    (matrix). <br>
+                    However, you may choose a new file name for the matrix. <br>
+                    If I still needed to do more work with the initial file "as is", then I will use a new file name.
+                </i>
+                <br><br>
+                The code to determine the mean is:
+                <pre>
+                        # Mean of the dataset 
+                        mean(EarthquakeMagnitudes)
+                    </pre>
+                The code to determine the median is:
+                <pre>
+                        # Median of the dataset 
+                        median(EarthquakeMagnitudes)
+                    </pre>
+                <img src="images/MeasuresCenter/Answers/Number3-9.png" alt="Number 3-9">
+                <br><br>
+                mean = 1.608 <br>
+                median = 1.79
+                <br><br>
+                (C.) The dataset: EarthquakeMagnitudes has values from 0.something to 2.something <br>
+                7.0 is far from these decimals. Hence, it is an outlier when compared to all other data values. <br>
+                Yes, because this value is very far away from all of the other data values.
+            </div>
+        </div>
+    </div>
+    <!-- End Measures of Center: Question 3 -->
+
+    <!-- Measures of Center: Question 4 -->
+    <div class="w3-row w3-container" id="QuestionMC4">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (4.) ANSUR is an abbreviation of​ "anthropometric survey." <br>
+                Use the accompanying sample of weights​ (kg) of the males from the data set ​"​ANSUR I 1988," which were
+                measured from U.S. army personnel in 1988. <br>
+                Use the accompanying sample of weights​ (kg) of the males from the data set ​"​ANSUR II 2012," which
+                were measured from U.S. army personnel in 2012. <br>
+                Use software or a calculator to find the: <br>
+                (a.) means. <br>
+                (b.) medians. <br>
+                Type an integer or decimal rounded to two decimal places as​ needed.
+                <br><br>
+                <img src="images/MeasuresCenter/Questions/Number4-1st.png" alt="Number 4-1st"> <br>
+                <img src="images/MeasuresCenter/Questions/Number4-2nd.png" alt="Number 4-2nd"> <br>
+                <img src="images/MeasuresCenter/Questions/Number4-3rd.png" alt="Number 4-3rd"> <br>
+                <img src="images/MeasuresCenter/Questions/Number4-4th.png" alt="Number 4-4th"> <br>
+                <img src="images/MeasuresCenter/Questions/Number4-5th.png" alt="Number 4-5th">
+                <br><br>
+                (c.) Does it appear that males have become​ heavier? <br><br>
+                (d.) Determine the measures of center of the entire dataset.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionDS4')">Show/Hide Answer</button>
+            <div class="result" id="solutionDS4">
+                <br>
+                <img src="images/MeasuresCenter/Answers/Number4-1.png" alt="Number 4-1"> <br><br>
+                <img src="images/MeasuresCenter/Answers/Number4-2.png" alt="Number 4-2"> <br><br>
+                <img src="images/MeasuresCenter/Answers/Number4-3.png" alt="Number 4-3"> <br><br>
+                (a.) <img src="images/MeasuresCenter/Answers/Number4-4.png" alt="Number 4-4" style="width: 100%;">
+                <br><br>
+                Mean of the ANSUR I 1988 dataset = 78.843 &approx; 78.84kg <br>
+                Mean of the ANSUR II 2012 dataset = 84.56kg <br><br>
+                (b.) <img src="images/MeasuresCenter/Answers/Number4-5.png" alt="Number 4-5"> <br><br>
+                Median of the ANSUR I 1988 dataset = 78.6kg <br>
+                Median of the ANSUR II 2012 dataset = 84.1kg
+                <br><br>
+                (c.) Does it appear that males have become heavier? <br>
+                Yes, because the mean <u>increased</u> from 1988 to 2012 and the median <u>increased</u> from 1988 to
+                2012.
+                <br><br>
+                (d.) <img src="images/MeasuresCenter/Answers/Number4-6.png" alt="Number 4-6"> <br><br>
+                Mean of the ANSUR dataset = 81.7015kg <br>
+                Median of the ANSUR dataset = 81.05kg <br>
+                Mode of the ANSUR dataset = 83kg, 84kg, 86.5kg, 91kg <br>
+                Midrange of the ANSUR dataset = 88.7kg
+            </div>
+        </div>
+    </div>
+    <!-- End Measures of Center: Question 4 -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+
+
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2023&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2023&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+
+    <script src="scripts/messages11.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

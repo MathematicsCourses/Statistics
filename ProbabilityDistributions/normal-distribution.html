@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Normal Probability Distribution</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in normal probability distributions." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, samdom4peace, math, mathematics, 
+    descriptive statistics, probability, combinatorics, random variable, discrete random variable, continuous random variable, 
+    probability distribution, binomial distribution, poisson distribution, normal distribution, Gaussian distribution, empirical rule, 
+    68 - 95 - 99.7 percent rule, Chebyshev's theorem, uniform distribution, sampling distribution, central limit theorem, 
+    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, " />
+
+    <link href="styles/probability-distribution.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="w3-padding-24 khaki">
+        <h1>Solved Examples: Normal Distribution</h1>
+    </header>
+    <!-- End Header -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+
+    <div class="w3-container">
+        <!-- Image in top left corner --
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probabilityDistributions.html"
+            title="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+            <img src="images/samdom.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+        </a>
+    -->
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/TI-calculators-ProbabilityDistributions.html"
+            target="_blank">Texas Instruments (TI) calculators for Probability</a> <br>
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probabilityDistributions.html#NormalDistributionTableLeftShaded"
+            target="_blank">Normal Distribution Table (Left-Shaded Area)</a> <br>
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probabilityDistributions.html#NormalDistributionTableCenterShaded"
+            target="_blank">Normal Distribution Table (Center-Shaded Area)</a> <br><br>
+
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+        So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+        Please ensure you attempt <b>all ACT questions</b>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br>
+        <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save time.</b>
+        <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+
+        <br><br>
+
+        Solve all questions. <br>
+        Show all work. <br>
+        To accommodate all students, <u>when applicable</u> use <b>at least three methods</b> to solve each question:
+        Empirical Rule,
+        Left-Shaded Area Table, and Center-Shaded Area Table.
+    </div>
+
+    <div class="w3-center">
+        <h2>The Empirical Rule</h2>
+        <img src="images/empirical-Rule.png" alt="Empirical Rule">
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Assume the heights of the Golden State Warriors basketball team players have a bell-shaped
+                distribution with mean of 175 cm and
+                standard deviation of 7 cm. <br>
+                (a.) Analyze this information using the Empirical Rule. <br><br>
+                (b.) (i) Draw the normal distribution curve for the information. <br>
+                (ii) Indicate the area of each region in the curve. <br><br>
+                (c.) Verify the area of each region using the results from the appropriate section of the Probability
+                Distribution calculators.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND1')">Show/Hide Answer</button>
+                <div class="result" id="solutionND1">
+                    <br>
+                    Treat the dataset as a sample <br>
+                    But you may choose to treat it as a population if you wish <br>
+                    (a.) <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br><br>
+                    $
+                    \bar{x} = 175\;cm \\[3ex]
+                    s = 7\;cm \\[3ex]
+                    1s = 1(7) = 7\;cm \\[3ex]
+                    2s = 2(7) = 14\;cm \\[3ex]
+                    3s = 3(7) = 21\; cm \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;below\;\;the\;\;mean} \\[3ex]
+                    \bar{x} - 1s \\[3ex]
+                    175 - 7 \\[3ex]
+                    168\;cm \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;above\;\;the\;\;mean} \\[3ex]
+                    \bar{x} + 1s \\[3ex]
+                    175 + 7 \\[3ex]
+                    182\;cm \\[3ex]
+                    $
+                    This impies that 68% of the basketball team players have heights between 168 cm and 182 cm <br><br>
+                    $
+                    \underline{2\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \bar{x} - 2s \\[3ex]
+                    175 - 14 \\[3ex]
+                    161\;cm \\[3ex]
+                    \underline{2\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \bar{x} + 2s \\[3ex]
+                    175 + 14 \\[3ex]
+                    189\;cm \\[3ex]
+                    $
+                    This impies that 95% of the basketball team players have heights between 161 cm and 189 cm <br><br>
+                    $
+                    \underline{3\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \bar{x} - 3s \\[3ex]
+                    175 - 21 \\[3ex]
+                    154\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \bar{x} + 3s \\[3ex]
+                    175 + 21 \\[3ex]
+                    196\;cm \\[3ex]
+                    $
+                    This impies that 99.7% of the basketball team players have heights between 154 cm and 196 cm
+                    <br><br>
+                    (b.) (i) <br>
+                    <img src="images/Answers/NormalDistribution/Number1b.png" alt="Number 1b"> <br><br>
+                    $
+                    Center = \bar{x} = 175 \\[3ex]
+                    Between\;\;168\;\;and\;\;182 = 68\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    Between\;\;168\;\;and\;\;175 = \dfrac{68}{2} = 34\% \\[5ex]
+                    Similarly:\;\;between\;\;175\;\;and\;\;182 = 34\% \\[3ex]
+                    Between\;\;161\;\;and\;\;189 = 95\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    Between\;\;161\;\;and\;\;175 = \dfrac{95}{2} = 47.5\% \\[5ex]
+                    \implies \\[3ex]
+                    Between\;\;161\;\;and\;\;168 = 47.5 - 34 = 13.5\% \\[3ex]
+                    Similarly:\;\;between\;\;175\;\;and\;\;189 = 47.5\% \\[3ex]
+                    Similarly:\;\;between\;\;182\;\;and\;\;189 = 13.5\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    Between\;\;154\;\;and\;\;196 = \dfrac{99.7}{2} = 49.85\% \\[5ex]
+                    \implies \\[3ex]
+                    Between\;\;154\;\;and\;\;161 = 49.85 - (34 + 13.5) = 49.85 - 47.5 = 2.35\% \\[3ex]
+                    Similarly:\;\;between\;\;175\;\;and\;\;196 = 49.85\% \\[3ex]
+                    Similarly:\;\;between\;\;189\;\;and\;\;196 = 2.35\% \\[3ex]
+                    Total\;\;area = 100\% \\[3ex]
+                    symmetrical \implies \\[3ex]
+                    \le 175 = \dfrac{100}{2} = 50\% \\[5ex]
+                    \ge 175 = \dfrac{100}{2} = 50\% \\[5ex]
+                    \implies \\[3ex]
+                    \lt 154 = 50 - (2.35 + 13.5 + 34) = 50 - 49.85 = 0.15\% \\[3ex]
+                    Similarly:\;\; \gt 196 = 0.15\% \\[3ex]
+                    \lt 161 = 2.35 + 0.15 = 2.5\% \\[3ex]
+                    Similarly:\;\; \gt 189 = 2.5\% \\[3ex]
+                    \lt 168 = 13.5 + 2.35 + 0.15 = 16\% \\[3ex]
+                    Similarly:\;\; \gt 182 = 16\% \\[3ex]
+                    Between\;\;161\;\;and\;\;182 = 13.5 + 34 + 34 = 81.5\% \\[3ex]
+                    $
+                    <!--
+                    <i>
+                        Ask students to complete the rest of the regions. <br>
+                        Verify with the calculator: <a href="https://probability-distribution.appspot.com/probability-distribution-calculators.html#empiricalRule" target="_blank">Empirical Rule Calculator</a>
+                    </i> <br><br>
+                
+                    <img src="images/Answers/NormalDistribution/Number1c-1.png" alt="Number 1c-1"> <br>
+                    <img src="images/Answers/NormalDistribution/Number1c-2.png" alt="Number 1c-2"> <br>
+                    <img src="images/Answers/NormalDistribution/Number1c-3.png" alt="Number 1c-3"> <br>
+                    <img src="images/Answers/NormalDistribution/Number1c-4.png" alt="Number 1c-4">
+                -->
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>GCSE</b> The tibia is the bone that connects the knee to the ankle bone. <br>
+                The lengths of the tibia bones in <b>modern-day</b> adult makes have a normal distribution with mean
+                36.0 cm and
+                standard deviation 2.8 cm <br>
+                <b>Almost all</b> adult male tibia bones have lengths that are between <i>a</i> cm and <i>b</i> cm <br>
+                Calculate the values of <i>a</i> and <i>b</i>
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND2')">Show/Hide Answer</button>
+                <div class="result" id="solutionND2">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 99.7% of the adult male tibia bones have lengths within
+                    (below and above) 3 standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 36.0\; cm \\[3ex]
+                    \sigma = 2.8\;cm \\[3ex]
+                    3\sigma = 3(2.8) = 8.4\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \mu - 3\sigma \\[3ex]
+                    36 - 8.4 \\[3ex]
+                    27.6 \\[3ex]
+                    a = 27.6\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \mu + 3\sigma \\[3ex]
+                    36 + 8.4 \\[3ex]
+                    44.4 \\[3ex]
+                    b = 44.4\;cm \\[3ex]
+                    $
+                    About 99.7% of adult male tibia bones have lengths between 27.6 cm and 44.4 cm
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) <b>HSC Mathematics Standard 2</b> The scores on an examination are normally distributed with a mean
+                of 70 and a
+                standard deviation of 6 <br>
+                Michael received a score on the examination between the lower quartile and the upper quartile of the
+                scores. <br>
+                Which shaded region most accurately represents where Michael's score lies? <br>
+                <div class="w3-center">
+                    <img src="images/Questions/NormalDistribution/Number3.png" alt="Number 3">
+                </div>
+                <br>
+                <button class="solutions" onclick="solutions('solutionND3')">Show/Hide Answer</button>
+                <div class="result" id="solutionND3">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 68% of the adult male tibia bones have lengths within (below
+                    and above) 1 standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 70 \\[3ex]
+                    \sigma = 6 \\[3ex]
+                    1s = 1(6) = 6 \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;below\;\;the\;\;mean} \\[3ex]
+                    \mu - 1\sigma \\[3ex]
+                    70 - 6 \\[3ex]
+                    64 \\[3ex]
+                    \underline{1\;standard\;\;deviation\;\;above\;\;the\;\;mean} \\[3ex]
+                    \mu + 1\sigma \\[3ex]
+                    70 + 6 \\[3ex]
+                    76 \\[3ex]
+                    $
+                    This impies that 68% of the examination scores are between 64 and 76 <br>
+                    That means that: 34% of the scores are between 64 and 70 <br>
+                    Similarly, 34% of the scores are between 70 and 76 <br>
+                    But Option B is not the correct answer <br><br>
+
+                    One of the properties of the normal curve is that:
+                    <b>the mean, median, and mode of a normal curve is the same.</b> <br>
+                    This implies that the median is also 70 <br>
+                    median = 70 = 50% of the scores <br>
+                    lower quartile = 25% of the scores = 25% below the median <br>
+                    25% is less than 34% <br>
+                    This implies that 25% below the median is less than 64 <br>
+                    upper quartile = 75% of the scores = 25% above the median <br>
+                    Similarly, 25% is less than 34% <br>
+                    This implies that 25% above the median is less than 76 <br>
+                    So, we are looking for the curve whose shaded area is less than 64 (from the center to the left) and
+                    is also less than
+                    76 (from the center to the right) <br>
+                    This is because 25% is less than 34% (from the center to the left) and 25% is less than 34% (from
+                    the center to the right) <br>
+                    This implies that the correct answer is Option A
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>GCSE</b> [<i>Continued from Question (2.)</i>] <br>
+                The lengths of tibia bones in <b>modern-day</b> adult <b>females</b> have a normal distribution with
+                mean 33.8 cm
+                and standard deviation 2.2 cm <br>
+                (a.) A tibia bone is discovered measuring 34.5 cm <br>
+                Alice says the bone is more likely to be from an adult female than an adult male. <br>
+                Evaluate Alice's statement. <br><br>
+                $
+                Use\;\;standardized\;\;score = \dfrac{value - mean}{standard\;\;deviation} \\[5ex]
+                $
+                (b.) In fact, the bone in <b>part(a.)</b> was discovered on an old Roman site and is estimated as being
+                about 1900 years old. <br>
+                Is the conclusion made in <b>part(a.)</b> likely to be valid? <br>
+                Explain your answer. <br><br>
+                <button class="solutions" onclick="solutions('solutionND4')">Show/Hide Answer</button>
+                <div class="result" id="solutionND4">
+                    <br>
+                    The question wants us to evaluate Alice's statement using the <i>z</i>-score formula <br><br>
+                    $
+                    (a.) \\[3ex]
+                    \underline{Adult\;\;Female} \\[3ex]
+                    \mu = 33.8\;cm \\[3ex]
+                    \sigma = 2.2\;cm \\[3ex]
+                    x = 34.5 \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{34.5 - 33.8}{2.2} \\[5ex]
+                    z = \dfrac{0.7}{2.2} \\[5ex]
+                    z = 0.3181818182 \approx 0.32 \\[5ex]
+                    \underline{Adult\;\;Male} \\[3ex]
+                    \mu = 36\;cm \\[3ex]
+                    \sigma = 2.8\;cm \\[3ex]
+                    x = 34.5 \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{34.5 - 36}{2.8} \\[5ex]
+                    z = -\dfrac{1.5}{2.8} \\[5ex]
+                    z = -0.5357142857 \approx -0.54 \\[3ex]
+                    $
+                    (b.) <br>
+                    A data value is <b>usual</b> if $-2.00 \lt z-score \lt 2.00$ <br>
+                    A data value is <b>unusual</b> if $z-score \lt -2.00$ <u>or</u> if $z-score \gt 2.00$ <br>
+                    Adult Female: Because $-2 \lt 0.32 \lt 2$; the data value is usual <br>
+                    Adult Male: Because $-2 \lt -0.54 \lt 2$; the data value is also usual <br>
+                    Both data values are usual. <br>
+                    Hence, there is insufficient evidence to verify Alice' statement. <br><br>
+                    However, <br>
+                    Because of the positive <i>z</i>-score for the adult female
+                    (a positive <i>z</i>-score indicates that the data value is above the mean), the bone may likely be
+                    from an adult female than
+                    from an adult male.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) <b>GCSE</b> [<i>Continued from Questions (2.) and (4.)</i>] <br>
+                A number of samples of tibia length for modern-day adult <b>females</b> were collected. <br>
+                The histogram is drawn to represent the <b>mean values</b> of these samples. <br>
+                Which normal distribution curve should the histogram most look like? <br>
+                <div class="w3-center">
+                    <img src="images/Questions/NormalDistribution/Number5.png" alt="Number 5">
+                </div>
+                <br>
+                <button class="solutions" onclick="solutions('solutionND5')">Show/Hide Answer</button>
+                <div class="result" id="solutionND5">
+                    <br>
+                    Let us do the same thing we did for adult male in Question (2.), for adult female. <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 99.7% of the adult male tibia bones have lengths within
+                    (below and above) 3 standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 33.8\; cm \\[3ex]
+                    \sigma = 2.2\;cm \\[3ex]
+                    3\sigma = 3(2.2) = 6.6\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;below\;\;the\;\;mean} \\[3ex]
+                    \mu - 3\sigma \\[3ex]
+                    33.8 - 6.6 \\[3ex]
+                    = 27.2\;cm \\[3ex]
+                    \underline{3\;standard\;\;deviations\;\;above\;\;the\;\;mean} \\[3ex]
+                    \mu + 3\sigma \\[3ex]
+                    33.8 + 6.6 \\[3ex]
+                    = 40.4\;cm \\[3ex]
+                    $
+                    About 99.7% of adult female tibia bones have lengths between 27.2 cm and 40.4 cm
+                    The option that matches this result is Option (A.)
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>ACT</b> The standard normal probability distribution function (&mu; = 0 and &sigma; = 1) is
+                graphed in the
+                standard (<i>x, y</i>) coordinate plane below. <br>
+                Which of the following percentages is closest to the percent of the data points that are within 2
+                standard deviations of
+                the mean in any normal distribution? <br><br>
+                <div class="w3-center">
+                    <img src="images/Questions/NormalDistribution/Number6.png" alt="Number 6">
+                </div> <br>
+                $
+                A.\;\; 50\% \\[3ex]
+                B.\;\; 68\% \\[3ex]
+                C.\;\; 90\% \\[3ex]
+                D.\;\; 95\% \\[3ex]
+                E.\;\; 99\% \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionND6')">Show/Hide Answer</button>
+                <div class="result" id="solutionND6">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 95% of the data points are within (below and above) 2
+                    standard
+                    deviations from the mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) Assume that the lengths of pregnancy for humans are approximately normally distributed, with a mean
+                of 267 days and a standard deviation of 10 days. <br>
+                Use the Empirical Rule to answer the following questions. <br>
+                Do not use the technology or the Normal table. <br>
+                Begin by labeling the horizontal axis of the graph with lengths, using the given mean and standard
+                deviation.
+                <br><br>
+                <img src="images/Questions/NormalDistribution/Number7.jpg" alt="Number 7">
+                <br><br>
+                (a.) Roughly what percentage of pregnancies last more than 267 days? <br>
+                (b.) Roughly what percentage of pregnancies last between 267 and 277 days? <br>
+                (c.) Roughly what percentage of pregnancies last less than 237 days? <br>
+                (d.) Roughly what percentage of pregnancies last between 247 and 287 days? <br>
+                (e.) Roughly what percentage of pregnancies last longer than 287 days? <br>
+                (f.) Roughly what percentage of pregnancies last longer than 297 days?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND7')">Show/Hide Answer</button>
+                <div class="result" id="solutionND7">
+                    <br>
+                    Based on the Empirical Rule and the Empirical Rule Table above: <br><br>
+                    $
+                    \mu = 267\;\;days \\[3ex]
+                    \sigma = 10\;\;days \\[3ex]
+                    \underline{Within\;\;1\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - \sigma = 267 - 10 = 257 \\[3ex]
+                    \mu + \sigma = 267 + 10 = 277 \\[3ex]
+                    Between\;\;257\;\;and\;\;277 = 68\% \\[3ex]
+                    \underline{Within\;\;2\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 2\sigma = 267 - 2(10) = 267 - 20 = 247 \\[3ex]
+                    \mu + 2\sigma = 267 + 2(10) = 267 + 20 = 287 \\[3ex]
+                    Between\;\;247\;\;and\;\;287 = 95\% \\[3ex]
+                    \underline{Within\;\;3\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 3\sigma = 267 - 3(10) = 267 - 30 = 237 \\[3ex]
+                    \mu + 3\sigma = 267 + 3(10) = 267 + 30 = 297 \\[3ex]
+                    Between\;\;237\;\;and\;\;297 = 99.7\% \\[3ex]
+                    $
+                    (a.) Mean = 267 days <br>
+                    The percentage of pregnancies last more than 267 days is about 50%
+                    <br><br>
+                    (b.) Between 267 and 277 is 1 standard deviation above the mean <br>
+                    The percentage of pregnancies that last between 267 and 277 days is 34%
+                    <br><br>
+                    (c.) Less than 237 days is less than 3 standard deviations below the mean <br>
+                    The percentage of pregnancies that last less than 237 days is 0.15%
+                    <br><br>
+                    (d.) Between 247 and 287 is 2 standard deviations above the mean <br>
+                    The percentage of pregnancies that last between 247 and 287 days is 95%
+                    <br><br>
+                    (e.) Longer than 287 days is more than 2 standard deviations above the mean <br>
+                    The percentage of pregnancies that last longer than 287 days is 2.35% + 0.15% = 2.5%
+                    <br><br>
+                    (f.) Longer than 297 days is more than 3 standard deviations above the mean <br>
+                    The percentage of pregnancies that last longer than 287 days is 0.15%
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND8')">Show/Hide Answer</button>
+                <div class="result" id="solutionND8">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.) The quantitative scores on a test are approximately normally distributed with a mean of 500 and a
+                standard deviation of 100. <br>
+                On the horizontal axis of the graph, indicate the test scores that correspond with the provided
+                z-scores. <br>
+                Answer the questions using only your knowledge of the Empirical rule and symmetry.
+                <br><br>
+                <img src="images/Questions/NormalDistribution/Number9a.jpg" alt="Number 9a">
+                <br><br>
+                (a.) Indicate the test scores that correspond with the provided <i>z</i>-scores.
+                <br><br>
+                <img src="images/Questions/NormalDistribution/Number9b.jpg" alt="Number 9b">
+                <br><br>
+                (b.) Roughly what percentage of students earn quantitative test scores more than 500? <br>
+                (c.) Roughly what percentage of students earn quantitative test scores between 400 and 600? <br>
+                (d.) Roughly what percentage of students earn quantitative test scores more than 800? <br>
+                (e.) Roughly what percentage of students earn quantitative test scores less than 200? <br>
+                (f.) Roughly what percentage of students earn quantitative test scores between 300 and 700? <br>
+                (g.) Roughly what percentage of students earn quantitative test scores between 700 and 800?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND9')">Show/Hide Answer</button>
+                <div class="result" id="solutionND9">
+                    <br>
+                    $
+                    \mu = 500 \\[3ex]
+                    \sigma = 100 \\[3ex]
+                    \underline{Within\;\;1\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - \sigma = 500 - 100 = 400 \\[3ex]
+                    \mu + \sigma = 500 + 100 = 600 \\[3ex]
+                    Between\;\;400\;\;and\;\;600 = 68\% \\[3ex]
+                    \underline{Within\;\;2\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 2\sigma = 500 - 2(100) = 500 - 200 = 300 \\[3ex]
+                    \mu + 2\sigma = 500 + 2(100) = 500 + 200 = 700 \\[3ex]
+                    Between\;\;300\;\;and\;\;700 = 95\% \\[3ex]
+                    \underline{Within\;\;3\;\sigma\;\;from\;\;the\;\;\mu} \\[3ex]
+                    \mu - 3\sigma = 500 - 3(100) = 500 - 300 = 200 \\[3ex]
+                    \mu + 3\sigma = 500 + 3(100) = 500 + 300 = 800 \\[3ex]
+                    Between\;\;200\;\;and\;\;800 = 99.7\% \\[3ex]
+                    $
+                    (a.) The test scores that correspond with the provided <i>z</i>-scores is: Option <b>B.</b> <br><br>
+                    <img src="images/Answers/NormalDistribution/Number9.jpg" alt="Number 9">
+                    <br><br>
+                    (b.) Scores more than 500 is every score above the mean <br>
+                    The percentage of students that earn quantitative test scores more than 500 is 50%
+                    <br><br>
+                    (c.) Scores between 400 and 600 are scores within 1 standard deviation from the mean <br>
+                    The percentage of students that earn quantitative test scores between 400 and 600 is 68%
+                    <br><br>
+                    (d.) Scores more than 800 are scores more than 3 standard deviations above the mean <br>
+                    The percentage of students that earn quantitative test scores more than 800 is 0.15%
+                    <br><br>
+                    (e.) Scores less than 200 are scores less than 3 standard deviations below the mean <br>
+                    The percentage of students that earn quantitative test scores less than 200 is 0.15%
+                    <br><br>
+                    (f.) Scores between 300 and 700 are scores within 2 standard deviations from the mean <br>
+                    The percentage of students that earn quantitative test scores between 300 and 700 is 95%
+                    <br><br>
+                    (g.) Scores between 700 and 800 are scores in-between 2 standard deviations above the mean
+                    <u>and</u> 3 standard deviations above the mean <br>
+                    The percentage of students that earn quantitative test scores between 700 and 800 is 2.35%
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND10')">Show/Hide Answer</button>
+                <div class="result" id="solutionND10">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) Find the indicated area under the standard Normal curve. <br>
+                Include an appropriately labeled sketch of the Normal curve and shade the appropriate region. <br>
+                (a.) Which graph below shows the probability that a <i>z</i>-score is 1.54 or less? <br>
+                <img src="images/Questions/NormalDistribution/Number11a.jpg" alt="Number 11a"> <br><br>
+                (b.) Find the probability that a <i>z</i>-score will be 1.54 or less. <br>
+                (Round to four decimal places as needed.)
+                <br><br>
+                (c.) Which graph below shows the probability that a <i>z</i>-score is 1.54 or more? <br>
+                <img src="images/Questions/NormalDistribution/Number11c.jpg" alt="Number 11c"> <br><br>
+                (d.) Find the probability that a <i>z</i>-score will be 1.54 or more. <br>
+                (Round to four decimal places as needed.)
+                <br><br>
+                (e.) Which graph below shows the probability that a <i>z</i>-score is between &minus;1.5 and
+                &minus;1.05? <br>
+                <img src="images/Questions/NormalDistribution/Number11e.jpg" alt="Number 11e"> <br><br>
+                (f.) Find the probability that a <i>z</i>-score will be between &minus;1.5 and &minus;1.05.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND11')">Show/Hide Answer</button>
+                <div class="result" id="solutionND11">
+                    <br>
+                    (a.) The graph that shows the probability that a <i>z</i>-score is 1.54 or less is option <b>D.</b>
+                    <br>
+                    <img src="images/Answers/NormalDistribution/Number11a.jpg" alt="Number 11a">
+                    <br><br>
+                    (b.) 1.54 = 1.5 (vertical); 0.04 (horizontal) <br><br>
+                    <u>First Approach:</u> Left-Shaded Area <br>
+                    <img src="images/Answers/NormalDistribution/Number11b-1st.jpg" alt="Number 11b-1st"> <br><br>
+                    The probability that a <i>z</i>-score will be 1.54 or less = P(<i>z</i> &le; 1.54) <br>
+                    = 0.93822 &approx; 0.9382
+                    <br><br>
+                    <u>Second Approach:</u> Center-Shaded Area <br>
+                    <img src="images/Answers/NormalDistribution/Number11b-2nd.jpg" alt="Number 11b-2nd"> <br><br>
+                    The probability that a <i>z</i>-score will be 1.54 or less <br>
+                    = P(<i>z</i> &le; 1.54) <br>
+                    = 0.5 + 0.43822 <br>
+                    = 0.93822 &approx; 0.9382
+                    <br><br>
+                    <u>Third Approach:</u> Texas Instruments (TI) technology <br>
+                    Please see the example: <a
+                        href="https://statistical-science.appspot.com/ProbabilityDistributions/TI-calculators-ProbabilityDistributions.html#Number1"
+                        target="_blank">Texas Instruments (TI) calculators for Probability</a> <br>
+                    The probability that a <i>z</i>-score will be 1.54 or less <br>
+                    = 0.9382198075 &approx; 0.9382
+                    <br><br>
+                    (c.) The graph that shows the probability that a <i>z</i>-score is 1.54 or more is option <b>B.</b>
+                    <br>
+                    <img src="images/Answers/NormalDistribution/Number11c.jpg" alt="Number 11c">
+                    <br><br>
+                    (d.) <u>First Approach:</u> Left-Shaded Area <br>
+                    The probability that a <i>z</i>-score will be 1.54 or more <br>
+                    = P(<i>z</i> &ge; 1.54) <br>
+                    = 1 &minus; 0.93822 <br>
+                    = 0.06178 &approx; 0.0618
+                    <br><br>
+                    <u>Second Approach:</u> Center-Shaded Area <br>
+                    <img src="images/Answers/NormalDistribution/Number11b-2nd.jpg" alt="Number 11b-2nd"> <br><br>
+                    The probability that a <i>z</i>-score will be 1.54 or more <br>
+                    = P(<i>z</i> &ge; 1.54) <br>
+                    = 0.5 &minus; 0.43822 <br>
+                    = 0.06178 &approx; 0.0618
+                    <br><br>
+                    <u>Third Approach:</u> Texas Instruments (TI) technology <br>
+                    Please see the example: <a
+                        href="https://statistical-science.appspot.com/ProbabilityDistributions/TI-calculators-ProbabilityDistributions.html#Number2"
+                        target="_blank">Texas Instruments (TI) calculators for Probability</a> <br>
+                    The probability that a <i>z</i>-score will be 1.54 or more <br>
+                    = 0.0617801925 &approx; 0.0618
+                    <br><br>
+                    (e.) The graph that shows the probability that a <i>z</i>-score is between &minus;1.5 and
+                    &minus;1.05 is option <b>A.</b> <br>
+                    <img src="images/Answers/NormalDistribution/Number11e.jpg" alt="Number 11e">
+                    <br><br>
+                    (f.) &minus;1.5 = &minus;1.5 (vertical); 0.00 (horizontal) <br>
+                    &minus;1.05 = &minus;1.0 (vertical); 0.05 (horizontal) <br><br>
+                    <u>First Approach:</u> Left-Shaded Area <br>
+                    <img src="images/Answers/NormalDistribution/Number11f-1st.jpg" alt="Number 11f-1st"> <br><br>
+                    The probability that a <i>z</i>-score is between &minus;1.5 and &minus;1.05 <br>
+                    = P(&minus;1.5 &le; <i>z</i> &le; &minus;1.05) <br>
+                    = P(<i>z</i> &le; &minus;1.05) - P(<i>z</i> &le; &minus;1.5) <br>
+                    = 0.14686 &minus; 0.06681 <br>
+                    = 0.08005 &approx; 0.0801
+                    <br><br>
+                    <u>Second Approach:</u> Center-Shaded Area <br>
+                    <img src="images/Answers/NormalDistribution/Number11f-2nd.jpg" alt="Number 11f-2nd"> <br><br>
+                    The probability that a <i>z</i>-score is between &minus;1.5 and &minus;1.05 <br>
+                    = P(&minus;1.5 &le; <i>z</i> &le; &minus;1.05) <br>
+                    = P(0 &le; <i>z</i> &le; &minus;1.5) &minus; = P(0 &le; <i>z</i> &le; &minus;1.05)...symmetrical
+                    <br>
+                    = 0.43319 &minus; 0.35314 <br>
+                    = 0.08005 &approx; 0.0801
+                    <br><br>
+                    <u>Third Approach:</u> Texas Instruments (TI) technology <br>
+                    Please see the example: <a
+                        href="https://statistical-science.appspot.com/ProbabilityDistributions/TI-calculators-ProbabilityDistributions.html#Number3"
+                        target="_blank">Texas Instruments (TI) calculators for Probability</a> <br>
+                    The probability that a <i>z</i>-score is between &minus;1.5 and &minus;1.05 <br>
+                    = 0.080018519 &approx; 0.0801
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND12')">Show/Hide Answer</button>
+                <div class="result" id="solutionND12">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND13')">Show/Hide Answer</button>
+                <div class="result" id="solutionND13">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND14')">Show/Hide Answer</button>
+                <div class="result" id="solutionND14">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) According to a human modeling project, the distribution of foot lengths of women is approximately
+                normal with a mean of 22.8 centimeters and a standard deviation of 1.2 centimeters. <br>
+                Suppose a shoe store stocks shoes in women's sizes 5 through 9. <br>
+                These shoes will fit women with feet that are 21.6 to 25 centimeters long. <br>
+                What percentage of women will be able to find shoes that fit in this store? <br>
+                Round to one decimal place as needed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND15')">Show/Hide Answer</button>
+                <div class="result" id="solutionND15">
+                    <br>
+                    Let the shoe size that fits women with feet lengths of 21.6 cm through 25 cm = <i>x</i> <br>
+                    Let <i>x</i><sub>1</sub> be the first shoe size <br>
+                    Let <i>x</i><sub>2</sub> be the second shoe size
+                    <br><br>
+                    $
+                    \mu = 22.8\;cm \\[3ex]
+                    \sigma = 1.2\;cm \\[3ex]
+                    x_1 = 21.6\;cm \\[3ex]
+                    x_2 = 25\;cm \\[3ex]
+                    $
+                    3rd Approach: <b>Texas Instruments Calculators</b>
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number15-1.png" alt="Number 15-1">
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number15-2.png" alt="Number 15-2">
+                    <br><br>
+                    $
+                    P(21.6 \le x \le 25) = \\[3ex]
+                    = normalcdf(21.6, 25, 22.8, 1.2) \\[3ex]
+                    = 0.8079682921 \\[3ex]
+                    = 80.79682921\% \\[3ex]
+                    \approx 80.8\% \\[3ex]
+                    $
+                    1st Approach: <b>Normal Distribution Table (Left Shaded Area)</b>
+                    <br><br>
+                    $
+                    z_1 = \dfrac{x_1 - \mu}{\sigma} \\[5ex]
+                    = \dfrac{21.6 - 22.8}{1.2} \\[5ex]
+                    = -1 \\[3ex]
+                    = -1.00 \\[3ex]
+                    P(z_1 \lt -1.00) = 0.15866 \\[5ex]
+                    z_2 = \dfrac{x_2 - \mu}{\sigma} \\[5ex]
+                    = \dfrac{25 - 22.8}{1.2} \\[5ex]
+                    = 1.833333333 \\[3ex]
+                    \approx 1.83 \\[3ex]
+                    P(z_2 \lt 1.83) = 0.96638 \\[5ex]
+                    P(21.6 \le x \le 25) = \\[3ex]
+                    = P(-1.00 \le z \le 1.83) = \\[3ex]
+                    = P(z \le 1.83) - P(z \le -1.00) \\[3ex]
+                    = 0.96638 - 0.15866 \\[3ex]
+                    = 0.80772 \\[3ex]
+                    = 80.772\% \\[3ex]
+                    \approx 80.8\% \\[3ex]
+                    $
+                    2nd Approach: <b>Normal Distribution Table (Center Shaded Area)</b>
+                    <br><br>
+                    $
+                    P(21.6 \le x \le 25) = \\[3ex]
+                    = P(-1.00 \le z \le 1.83) = \\[3ex]
+                    = P(-1.00 \le z \le 0) + P(0 \le z \le 1.83) \\[3ex]
+                    = P(0 \le z \le 1) + P(0 \le z \le 1.83) \\[3ex]
+                    = 0.34134 + 0.46638 \\[3ex]
+                    = 0.80772 \\[3ex]
+                    = 80.772\% \\[3ex]
+                    \approx 80.8\% \\[3ex]
+                    $
+                    About 80.8% of the women will be able to find shoes that fit in this store.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND16')">Show/Hide Answer</button>
+                <div class="result" id="solutionND16">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.) According to a human modeling project, the distribution of foot lengths of 16-to-17-year-old boys
+                is approximately normal with a mean of 25.4 centimeters and a standard deviation of 1.5 centimeters.
+                <br>
+                Suppose a shoe store stocks shoes in men's sizes 7 through 12. <br>
+                These shoes will fit men with feet that are 24.6 to 28.8 centimeters long. <br>
+                What percentage of boys aged 16 to 17 will <b>not</b> be able to find shoes that fit in this store? <br>
+                Round to one decimal place as needed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND17')">Show/Hide Answer</button>
+                <div class="result" id="solutionND17">
+                    <br>
+                    The percentage of boys aged 16 to 17 will <b>not</b> be able to find shoes that fit in this store
+                    are: <br>
+                    The ones whose shoe size is less than 24.6 cm <u>and</u> the ones whose shoe size is greater than
+                    28.8 cm. <br>
+                    This is known as the Probability(<b>away from</b>) <br>
+                    Let <i>x</i> be the shoe size that is less than 24.6 cm <b>or</b> the shoe size that is greater than
+                    28.8 cm <br>
+                    Let <i>x</i><sub>1</sub> be the first shoe size <br>
+                    Let <i>x</i><sub>2</sub> be the second shoe size
+                    <br><br>
+                    $
+                    \mu = 25.4\;cm \\[3ex]
+                    \sigma = 1.5\;cm \\[3ex]
+                    x_1 = 24.6\;cm \\[3ex]
+                    x_2 = 28.8\;cm \\[3ex]
+                    $
+                    3rd Approach: <b>Texas Instruments Calculators</b>
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number17-1.png" alt="Number 17-1">
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number17-2.png" alt="Number 17-2">
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number17-3.png" alt="Number 17-3">
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number17-4.png" alt="Number 17-4">
+                    <br><br>
+                    $
+                    P(x \le 24.6) \\[3ex]
+                    = normalcdf(-1000000, 24.6, 25.4, 1.5) \\[3ex]
+                    = 0.29690140546 \\[5ex]
+                    P(x \ge 28.8) \\[3ex]
+                    = normalcdf(28.8, 1000000, 25.4, 1.5) \\[3ex]
+                    = 0.0117052622 \\[5ex]
+                    P(away\;\;from) \\[3ex]
+                    = 0.29690140546 + 0.0117052622 \\[3ex]
+                    = 0.30860666766 \\[3ex]
+                    = 30.860666766\% \\[3ex]
+                    \approx 30.9\% \\[3ex]
+                    $
+                    1st Approach: <b>Normal Distribution Table (Left Shaded Area)</b>
+                    <br><br>
+                    $
+                    z_1 = \dfrac{x_1 - \mu}{\sigma} \\[5ex]
+                    = \dfrac{24.6 - 25.4}{1.5} \\[5ex]
+                    = -0.533333333 \\[3ex]
+                    \approx -0.53 \\[3ex]
+                    P(z_1 \lt -0.53) = 0.29806 \\[5ex]
+                    z_2 = \dfrac{x_2 - \mu}{\sigma} \\[5ex]
+                    = \dfrac{28.8 - 25.4}{1.5} \\[5ex]
+                    = 2.266666667 \\[3ex]
+                    \approx 2.27 \\[3ex]
+                    P(z_2 \lt 2.27) = 0.98840 \\[5ex]
+                    P(z_2 \gt 2.27) \\[3ex]
+                    = 1 - 0.98840 \\[3ex]
+                    = 0.0116 \\[3ex]
+                    P(away\;\;from) \\[3ex]
+                    = P(z_1 \lt -0.53) + P(z_2 \gt 2.27) \\[3ex]
+                    = 0.29806 + 0.0116 \\[3ex]
+                    = 0.30966 \\[3ex]
+                    = 30.966\% \\[3ex]
+                    \approx 31.0\% \\[3ex]
+                    $
+                    About 30.9% of the boys aged 16 to 17 will <b>not</b> be able to find shoes that fit in this store.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND18')">Show/Hide Answer</button>
+                <div class="result" id="solutionND18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) The average birth weight of elephants is 240 pounds. <br>
+                Assume that the distribution of birth weights is normal with a standard deviation of 60 pounds. <br>
+                Find the birth weight of elephants at the 85th percentile. <br>
+                Round your answer to the nearest integer.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND19')">Show/Hide Answer</button>
+                <div class="result" id="solutionND19">
+                    <br>
+                    Let the birth weight of elephants at the 85th percentile = <i>x</i> <br>
+                    85th percentile = 85% lie below it = 0.85 lie below it <br><br>
+                    $
+                    P(z \lt value) = 0.85 \\[3ex]
+                    Inverse\;\;Normal\;\;Distribution \implies \\[3ex]
+                    \underline{1st\;\;Approach:}\;\;\boldsymbol{Normal\;\;Distribution\;\;Table} \\[3ex]
+                    \underline{Left-shaded\;\;Area} \\[3ex]
+                    value = ? ...not\;\;found \\[5ex]
+                    \boldsymbol{Interpolate} \\[3ex]
+                    P(z \lt value\;1) = P(z \lt 1.03) = 0.84849 \\[3ex]
+                    P(z \lt value) = 0.85 \\[3ex]
+                    P(z \lt value\;2) = P(z \lt 1.04) = 0.85083 \\[3ex]
+                    \implies \\[3ex]
+                    \dfrac{z - 1.03}{1.04 - 1.03} = \dfrac{0.85 - 0.84849}{0.85083 - 0.84849} \\[5ex]
+                    \dfrac{z - 1.03}{0.01} = \dfrac{0.00151}{0.00234} \\[5ex]
+                    z - 1.03 = \dfrac{0.01 * 0.00151}{0.00234} \\[5ex]
+                    z - 1.03 = 0.0064529915 \\[3ex]
+                    z = 0.0064529915 + 1.03 \\[3ex]
+                    z = 1.036452991 \\[3ex]
+                    \mu = 240\;lbs \\[3ex]
+                    \sigma = 60\;lbs \\[3ex]
+                    x = \mu + z\sigma \\[3ex]
+                    x = 240 + 1.036452991(60) \\[3ex]
+                    x = 240 + 62.18717949 \\[3ex]
+                    x = 302.1871795 \\[3ex]
+                    x \approx 302\;lbs \\[5ex]
+                    $
+                    <u>3rd Approach:</u> <b>Texas Instruments Calculators</b>
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number19-1.png" alt="Number 19-1">
+                    <br><br>
+                    <img src="images/Answers/NormalDistribution/Number19-2.png" alt="Number 19-2">
+                    <br><br>
+                    $
+                    P(z \lt value) = 0.85 \\[3ex]
+                    value = invNorm(0.85, 240, 60) \\[3ex]
+                    value = 302.1860028 \\[3ex]
+                    value \approx 302\lbs
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) <b>HSC Mathematics Standard 2</b> In a particular country, the birth weight of babies is normally
+                distributed with a mean
+                of 3000 grams. <br>
+                It is known that 95% of these babies have a birth weight between 1600 grams and 4400 grams. <br>
+                One of these babies has a birth weight of 3497 grams. <br>
+                What is the <i>z</i>-score of this baby's birth weight?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND20')">Show/Hide Answer</button>
+                <div class="result" id="solutionND20">
+                    <br>
+                    <b>Empirical Rule</b>: 68 - 95 - 99.7% Rule <br>
+                    Part of the Empirical Rule states that 95% of these babies have a birth weight within (below and
+                    above) 2 standard
+                    deviations from the mean <br><br>
+                    $
+                    \mu = 3000\;grams \\[3ex]
+                    \sigma = ? \\[3ex]
+                    \mu - 2\sigma = 1600 \\[3ex]
+                    \mu - 1600 = 2\sigma \\[3ex]
+                    2\sigma = \mu - 1600 \\[3ex]
+                    2\sigma = 3000 - 1600 \\[3ex]
+                    2\sigma = 1400 \\[3ex]
+                    \sigma = \dfrac{1400}{2} \\[5ex]
+                    \sigma = 700\;grams \\[3ex]
+                    \underline{Confirm\;\;the\;\;value\;\;of\;\;the\;\;standard\;\;deviation} \\[3ex]
+                    \mu + 2\sigma = 4400 \\[3ex]
+                    2\sigma = 4400 - \mu \\[3ex]
+                    2\sigma = 4400 - 3000 \\[3ex]
+                    2\sigma = 1400 \\[3ex]
+                    \sigma = \dfrac{1400}{2} \\[5ex]
+                    \sigma = 700\;grams \\[3ex]
+                    \underline{For\;\;the\;\;baby} \\[3ex]
+                    x = 3497\;grams \\[3ex]
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    z = \dfrac{3497 - 3000}{700} \\[5ex]
+                    z = \dfrac{497}{700} \\[5ex]
+                    z = 0.71
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/ProbabilityDistributions/normal-distribution.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND21')">Show/Hide Answer</button>
+                <div class="result" id="solutionND21">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND22')">Show/Hide Answer</button>
+                <div class="result" id="solutionND22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND23')">Show/Hide Answer</button>
+                <div class="result" id="solutionND23">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND24')">Show/Hide Answer</button>
+                <div class="result" id="solutionND24">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND25')">Show/Hide Answer</button>
+                <div class="result" id="solutionND25">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND26')">Show/Hide Answer</button>
+                <div class="result" id="solutionND26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND27')">Show/Hide Answer</button>
+                <div class="result" id="solutionND27">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND28')">Show/Hide Answer</button>
+                <div class="result" id="solutionND28">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND29')">Show/Hide Answer</button>
+                <div class="result" id="solutionND29">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND30')">Show/Hide Answer</button>
+                <div class="result" id="solutionND30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND31')">Show/Hide Answer</button>
+                <div class="result" id="solutionND31">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND32')">Show/Hide Answer</button>
+                <div class="result" id="solutionND32">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND33')">Show/Hide Answer</button>
+                <div class="result" id="solutionND33">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND34')">Show/Hide Answer</button>
+                <div class="result" id="solutionND34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND35')">Show/Hide Answer</button>
+                <div class="result" id="solutionND35">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionND36')">Show/Hide Answer</button>
+                <div class="result" id="solutionND36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2022 SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages4.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

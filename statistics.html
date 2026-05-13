@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Statistics</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in Statistics.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
+        statistics, data, data collection, data organization, data presentation, data analysis, data interpretation,
+        descriptive statistics, inferential statistics, statistical science, sample, population, individual, decision, 
+        conclusion, study, variables, quantitative variable, qualitative variable, discrete variable, continuous variable,
+        statistic, parameter, research, research objective, inference, response variable, explanatory variable,
+        predictor variable, level of measurement of a variable, nominal level, ordinal level, interval level, ratio level, 
+        fact, survey, experiment, historical record, Likert scales, statistical process, correlation, regression, 
+        correlation coefficient, product moment correlation coefficient, Pearson correlation coefficient, 
+        critical values of correlation coefficient, forecasting, forecasting models, forecasting techniques, period,
+        value, forecast, error, mean absolute deviation, mean square error, averages, simple averages, 
+        moving averages, weighted moving averages, index numbers, time-series forecasting, smoothing techniques, 
+        naive forecasting models, averaging models, exponential smoothing, trend analysis, seasonal effects, 
+        autocorrelation, autoregression, variables, price index, critical value, confidence level, confidence interval, 
+        significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, 
+        type II error, unstacked table, coding, wide data, narrow data, unstacked table, stacked table, long data, 
+        null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, 
+        critical region, hypothesis testing, population proportion, population mean, one sample proportion, 
+        two sample proportion, goodness-of-fit test, chi-square, normal distribution table, student t distribution table,
+        F statistic, test statistic, sample proportion, population proportion, level of significance, 
+        confidence levels, sample mean, population mean, sample variance, population variance, 
+        sample standard deviation, population standard deviation, critical values, student t distribution, 
+        normal distribution, chi -square distribution, sampling, normal distribution, sampling distribution, 
+        probability distribution, sample mean, sample proportion, sample variance, sample standard deviation, 
+        population mean, population proportion, population variance, population standard deviation, estimators, 
+        bias, standard error, probability, central limit theorem, confounding, lurking variable, sampling frame,
+        frequency distribution table, frequency table, class, classes, frequency, data set, class width, tally,
+        class size, range, number of classes, maximum value, minimum value, class interval, class limit,
+        class midpoint, class mark, class boundary, relative frequency, cumulative frequency, data cycle,
+        two-way table">
+
+    <link href="styles/statistics.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="w3-content cornsilk" style="max-width:1500px;">
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+        style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close this sidebar</a>
+        <a href="#course-links" onclick="w3_close()" class="w3-bar-item w3-button">Course Navigation Links</a>
+        <a href="https://precalculus.appspot.com/" onclick="w3_close()" class="w3-bar-item w3-button">MTH 161:
+            PreCalculus I (Online)</a>
+        <a href="https://precalculus.appspot.com/PreCalculusOnsite/PreCalculus.html" onclick="w3_close()"
+            class="w3-bar-item w3-button">MTH 161: PreCalculus I (Onsite)</a>
+        <a href="https://quantitativereasoning.appspot.com" onclick="w3_close()" class="w3-bar-item w3-button">MTH 154:
+            Quantitative Reasoning (Onsite)</a>
+        <a href="https://statistical-reasoning.appspot.com" onclick="w3_close()" class="w3-bar-item w3-button">MTH 155:
+            Statistical Reasoning (Onsite)</a>
+        <a href="https://precalculus.appspot.com/IntermediateAlgebra/Algebra.html" onclick="w3_close()"
+            class="w3-bar-item w3-button">MDE 60: Intermediate Algebra (Onsite)</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div>
+        <div class="w3-khaki w3-xlarge" style="max-width:1500px; margin: 0;">
+            <div class="w3-button w3-padding-24 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-24">
+                <h1>MTH 245: Statistics I (Online and Onsite)</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-padding-64">
+
+        <!--
+        <div class="w3-center" id="quotes">
+            <button class="solutions" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+
+        <div class="quotations w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka 
+            </p>
+            <p id="messages9">Let everything that has breath praise the LORD! Praise the LORD. - Psalm 150:6</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Chukwuemeka</p>
+        </div>
+    -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Welcome -->
+    <div class="w3-padding-16 w3-white w3-container">
+        <div class="w3-row-padding">
+            <div>
+                <div id="welcome">
+                    <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                        title="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
+                    <span id="greetings"></span> <br>
+                    I greet you this day,
+                    <script>document.write(Date() + ".");</script> <br>
+                    <b>Welcome to MTH 245: Statistics I online course section.</b> <br>
+                    <u>May you please review the</u>: <br>
+                    (1.) General information regarding the course. <br>
+                    (2.) <a href="https://statistical-science.appspot.com/#course-links">Course navigation links</a>
+                    (all of them). <br><br>
+                    Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+                    Please feel free to talk to me in-person on campus during Office Hours or online during the Office
+                    Hours/Live Sessions via Zoom. <br>
+                    Thank you. <br>
+                    <p style="color: green"><strong>Samuel Dominic Chukwuemeka</strong> (SamDom For Peace) <span
+                            style="font-size: large; color:red">B.Eng., A.A.T, M.Ed., M.S</span></p>
+
+                    <table>
+                        <caption>General Information</caption>
+                        <tr>
+                            <td style="width: 30%;">College System:</td>
+                            <td style="width: 70%;">Virginia Community College System (VCCS)</td>
+                        </tr>
+                        <tr>
+                            <td>College:</td>
+                            <td>Blue Ridge Community College (BRCC)</td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                            <td>Mathematics</td>
+                        </tr>
+                        <tr>
+                            <td>Course:</td>
+                            <td>MTH 245: Statistics I</td>
+                        </tr>
+                        <tr>
+                            <td>Course Description:</td>
+                            <td><a href="https://courses.vccs.edu/courses/MTH245"
+                                    target="_blank">https://courses.vccs.edu/courses/MTH245</a></td>
+                        </tr>
+                        <tr>
+                            <td>Detailed Outline:</td>
+                            <td><a href="https://courses.vccs.edu/courses/MTH245-StatisticsI/detail"
+                                    target="_blank">https://courses.vccs.edu/courses/MTH245-StatisticsI/detail</a></td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td>
+                                <i>
+                                    For this session, we shall use the <a
+                                        href="http://mn.testnav.com/client/index.html#login?username=LGN265231722&password=L5E4J8P8"
+                                        target="_blank">TI-84 Plus CE</a>
+                                </i>
+                            </td>
+                        </tr>
+                    -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Course Links -->
+    <div class="w3-container w3-padding-16 w3-white w3-center" id="course-links">
+        <h5>Course Navigation Links</h5>
+        <div class="w3-row">
+            <div class="w3-col s4">
+                <p><a href="#" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Home</a></p>
+            </div>
+            <div class="w3-col s4">
+                <p><a href="#about" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">About Online
+                        Classes</a></p>
+            </div>
+            <div class="w3-col s4">
+                <p><a href="https://docs.google.com/document/d/1RSI_YPBk8KRBHyy4gIuDqs9Pfn6S9Fe40T-4YsikF_s/edit?usp=sharing"
+                        target="_blank" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Course
+                        Syllabus</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s4">
+                <p><a href="#resources" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">MLS Registration
+                        and Resources</a></p>
+            </div>
+            <div class="w3-col s4">
+                <p><a href="https://statistical-science.appspot.com/announcements.html"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Course Announcements</a></p>
+            </div>
+            <div class="w3-col s4">
+                <p><a href="https://statistical-science.appspot.com/objectives.html"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Course Objectives</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s4">
+                <p><a href="#pacingGuides" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Pacing
+                        Guides</a></p>
+            </div>
+            <div class="w3-col s4">
+                <p><a href="https://statistical-science.appspot.com/discussions.html"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Discussion Board (DB)</a></p>
+            </div>
+            <div class="w3-col s4">
+                <p><a href="#gradeCalculator" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Grade
+                        Calculator</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p><a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">R and RStudio Statistics
+                        Software</a></p>
+            </div>
+            <div class="w3-col s6" id="inferential-statistics-projects">
+                <p>
+                    <a href="https://conferencepresentations.appspot.com/Projects/Statistics/InferentialStatistics.html"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Inferential Statistics
+                        Projects</a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p><a href="https://statistical-science.appspot.com/questions.html"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Frequently Asked Questions
+                        (FAQs)</a></p>
+            </div>
+            <div class="w3-col s6">
+                <p><a href="#studentEvaluation" class="w3-button w3-khaki w3-round w3-padding w3-hover-green">Student
+                        Evaluation of Faculty</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p>
+                    <a href="https://docs.google.com/document/d/1aC2T52c-olqWMtiF4H0UPSmXoJO-7YpaIoLtAMXpy0o/edit?usp=sharing"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">
+                        Course Syllabus: Statistics I (Onsite): Spring 2026
+                    </a>
+                </p>
+            </div>
+            <div class="w3-col s6">
+                <p>
+                    <a href="https://docs.google.com/document/d/1ZrPg2T8112Dhh5PIL7caDwjPLBb8DhQ5/edit?usp=sharing&ouid=106048612693080929231&rtpof=true&sd=true"
+                        class="w3-button w3-khaki w3-round w3-padding w3-hover-green">
+                        Block Schedule: Spring 2026
+                    </a>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p style="text-align: left;">
+                    R Language Class Lab Sessions (Onsite)
+                    <br>
+                    <i>
+                        SamDom For Peace, print these codes and give to your students. <br>
+                        Let your students type and paraphrase them in their own understanding. <br>
+                        Do not give them these links. <br>
+                        Teach them to use AI (preferably Google Gemini) as applicable, to find and fix errors.
+                    </i>
+                    <br>
+                    <a href="https://colab.research.google.com/drive/1b9n7QNH7mlyaJaWivaU-jpxF3Ozn5AZk?usp=sharing">
+                        Probability Distributions
+                    </a>
+                    <br>
+                    <a href="https://colab.research.google.com/drive/1ptsHaQEc8UbJDLoSODGhNSUeSEsA_Hq-?usp=sharing">
+                        Binomial Distribution and Examples
+                    </a>
+                    <br>
+                    <a href="https://colab.research.google.com/drive/16s60WBZsbB7gE8WTqgZp9MB3GnAhs0pA?usp=sharing">
+                        Normal Distribution
+                    </a>
+                    <br>
+                    <a href="https://colab.research.google.com/drive/1--3Ewv0IpIUBq0uJXbtqfS2DasLhz1iq?usp=sharing">
+                        Normal Distribution Examples
+                    </a>
+                </p>
+            </div>
+            <div class="w3-col s6">
+                <p style="text-align: right;">
+                    Print these Resources in Class Lab Sessions (Onsite) <br>
+                    <a href="RProgrammingNotes/DescriptiveStatistics.pdf" target="_blank">
+                        Descriptive Statistics
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Course Links -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/#course-links" class="w3-button w3-xlarge w3-circle w3-green"
+            style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- About Online Classes -->
+    <div class="w3-padding-16 w3-white w3-container" id="about">
+        <h2>About Online Classes. Are Online Classes for You?</h2>
+        <p>
+            It depends. <br>
+            Online classes are convenient. <br>
+            Most of them are asynchronous, so you work at your own time/pace. <br>
+            However, they demand a lot of time especially if you are struggling with the subject/course. <br>
+            I am not trying to scare you. I am just being honest with you. <br>
+            There are several factors that probably made you choose an online class: family demands, extended family
+            demands, and work demands among others. <br>
+            I understand all these demands. <br>
+            Hence, the course is set up for you to acquire the knowledge while maintaining a family &ndash; work &ndash;
+            school balance. <br>
+            Be it as it may, I am more concerned with your successfully passing the course. <br>
+            This includes: <b>acquiring the knowledge</b> of the topics in Statistics (eBook; Notes; Videos; Learning
+            Aids: Help Me Solve This, View an Example; Multimedia Resources among others),
+            <b>discussing the knowledge</b> (Discussion Board), <b>applying the knowledge</b> (Project-based Learning),
+            and
+            <b>mastering the knowledge</b> (successfully completing the MyLab Statistics assignments).
+        </p>
+
+        <h4>Notable Notes about this Course</h4>
+        <p>
+            (1.) You will do a <b>lot of work on your own</b> in this course. <br>
+            (<i>Did I just scare you? I hope not. I am just being honest with you. The good thing is that I am here to
+                help you. But, you will do most of the work on your own.</i>) <br>
+            Online course require very active independent student learners. <br>
+            I provide the resources. You review those resources. We meet weekly during the Office Hours/Live Sessions. I
+            answer any questions you may have regarding the resources I provided. <br>
+            This is the <b>flipped-classroom</b> approach. <br>
+            You will spend a lot of time to read, view videos, view the multimedia resources (according to your learning
+            style) and solve problems. For those problems you cannot solve on your own,
+            that is when I come in and help you. <br>
+            But do not think I am not doing any work. Trust me I will do a lot of work also to guide your learning. I
+            will maintain weekly Office Hours/Live Sessions to answer any questions.
+            I will answer any question you cannot solve anytime anyday, provided you send it to me on time and as my
+            schedule demands, but I'll respond to you. I do not ignore my students.
+            I will monitor and guide the discussions to ensure a safe, conducive, and inclusive learning environment. I
+            will provide comments to the DB posts and responses (some of them) accordingly.
+            I will grade discussions and provide feedback. I will review your project draft submissions and provide
+            feedback. I will grade your projects and provide feedback. That is also a lot of
+            work. So, we are doing a lot of work together. <br>
+            If you are not prepared to do a lot of work/learning on your own, I advise you to please take this course
+            in-person. <br>
+            The weekly Office Hours/Live Sessions are not required. But they are highly recommeded. The link to the Zoom
+            session is provided for you in the Canvas course. <br>
+            If the days/times do not suit your schedule and you need to have a live session with me, please send an
+            email to me with your available days and times. I shall check my schedule and respond.
+            <br><br>
+
+            How did I set up this course to help you succeed? <br>
+            Please note that I set it up this way to help you succeed while ensuring that I provide RSI&ndash;QM
+            (Regular and Substantive Interaction &ndash; Quality Matters) with my students according to
+            the United States Department of Education (USDOE) regulations. <br>
+
+            (2.) Assessments: There are three types of assessments for this course: <br><br>
+
+            (a.) <b>MyLab Statistics (MLS) also known as MyStatistics Lab assignments:</b> This is 70% of your final
+            grade. <br>
+            (i.) Every assignment is open for you from the first day of class. There are many assignments for you to do.
+            But you get the credit for it. If you complete all the MLS assignments with a
+            100%, you have already made 70% in the course. I do not pick and choose questions when assigning the
+            sections because I want you to be exposed to the various types/forms of questions for each
+            section. It is a lot of work. But you get the credit for it if you complete it successfully. It will be good
+            if you make a 100% on all of them, but you must not. It depends on the grade
+            you want for the course. Please review the Grading example in your course syllabus. <br>
+            (ii.) Each section has two due dates: initial due date and final due date. It is not timed. However, it has
+            due dates. <br>
+            (iii.) If there is any section you were unable to complete by the first due date, you may continue to work
+            on it, and try to complete it by the final due date without any penalty. <br>
+            (iv.) If there is any section you did not attempt by the first due date, you will earn a zero score in the
+            Canvas gradebook when grades are updated. When you
+            attempt that section and earn a grade, that grade will be updated the next time grades are updated. <br>
+            (v.) Grades for MLS assignments are updated in the Canvas gradebook weekly (every week). <br>
+            (vi.) Many questions on an MLS assignment have learning aids. The learning aids include: Help Me Solve This
+            and View an Example among others. You are encouraged to use these learning aids.
+            The learning aids typically uses one approach/method to solve the question. If you do not understand that
+            approach/method, that is where I come in. Please contact me with the
+            question/question ID and I'll use another approach to explain the question so you may understand. Further,
+            the solved examples on my websites (as listed in the Pacing Guides) contain
+            some of the questions on your MLS assignments. <br>
+            (vi.) There are unlimited attempts for your MLS assignments. If you do a question about three times and get
+            it incorrect, please click on <i>Similar Question</i> usually at the bottom right
+            corner. If you get a similar question correct, you will get the credit for that question. Please use only a
+            computer (laptop or desktop, no tablets, no smartphones) with internet access. <br>
+            (viii.) The final due date for all MLS assignments is the last day of class, or sometimes the day following
+            the last day of class. Please review the course syllabus for the exact date. <br>
+            (ix.) After the final due date, please do not ask for an extension. <br>
+            (ix.) All MLS assignments are done in the Pearson learning management system via Canvas learning management
+            system. <br><br>
+
+            (b.) <b>Project-based assessment: Inferential Statistics Project:</b> This is 10% of your final grade. <br>
+            (i.) Please review the three types of projects in the course navigation link. You shall do only one type of
+            project: Power Bill or Water Bill or Federal Income Tax. <br>
+            (ii.) Review the requirements, instructions, directions, and the projects from my previous students. Do some
+            research and find a company that you intend to work on. Send the direct website
+            of that company to me do I can verify that the application on that website meets the project requirements.
+            You need to email this information to me as soon as possible. If you need help
+            finding an application, please let me know and I'll help you. <br>
+            (iii.) If your application meets the project requirements, you should begin to work on your draft. It is
+            highly recommeded that you submit your draft to me as soon as possible. Review your
+            course syllabus for the due date to submit drafts. <br>
+            (iv.) The project has two due dates as noted in the Tentative Class Schedule on your course syllabus. After
+            the first due date, a zero grade will be entered in the Canvas gradebook for
+            any student who has not satisfactorily completed the project, regardless of whether I am reviewing your
+            draft or not. <br>
+            (v.) You may continue to work on your project after the first due date and submit it by the final due date.
+            After the final due date, please do not request for an extension. <br>
+            (vi.) All projects (not drafts) are submitted in the appropriate area in the Canvas learning management
+            system. <br><br>
+
+            (c.) <b>Discussion Board (DB) assessment:</b> This is 20% of your grade. <br>
+            (i.) Please review the Discussion Board in the course navigation link. <br>
+            (ii.) The course is 5 weeks. Each week has a DB assessment. <br>
+            (iii.) Each DB assessment requires a DB Post and a DB Response. At least one response to the initial post of
+            your fellow student is required. <br>
+            (iv.) Each DB assessment is 2% of your grade. The grading rubric is provided for you accordingly. <br>
+            (v.) There is only one due date for the DB Post and only one due date for the DB Response. Any work past any
+            of those due dates attracts a penalty according to the grading rubric. Let me
+            explain. It is important that you submit your initial posts on time (by Thursday) so your colleagues will
+            have some time to respond to your post. Some students are very busy during the
+            weekends. They might not be able to log in during weekends. Hence, they would like to complete the DB
+            assessments on time. I am considering those students too. <br>
+            (vi.) Let me explain the reason for having only one due date for each of DB Post and DB Response. Most
+            students, typically do not continue the discussion past the week that it is due. They
+            move on to the next discussion. Hence, if a student posts or responds past the due date, that post or
+            response may not be read by another student. What is the purpose of discussing with your
+            colleagues if they will not read what you wrote? Do you understand what I mean? <br><br>
+
+            (3.) I believe in giving my students a lot of opportunities to succeed: unlimited attempts for the MLS
+            assignments; two due dates for MLS assignments; and two due dates for the project among
+            others including my availability and willingness to answer your questions. <br>
+            In that regard, I do not believe in bonus points. I do not believe in extra credit. Only the three types of
+            assessments are the graded assessments. <br>
+            Please do not ask for bonus points. <br>
+            Please do not ask for extra credit. <br>
+            Please do not ask for the grading to be curved. (normal distribution curve). <br>
+            Please do not ask for re-dos after the project is graded. Those re-dos should be drafts. But once you submit
+            your project, that is it. <br>
+            Please do not ask for re-dos after the DB assessment is graded. Attend Office Hours/Live Sessions and ask
+            questions. <br>
+            Please ask me questions instead. <br><br>
+
+            What should you do? <br>
+            What are some tips for succeeding in the class? <br><br>
+
+            (4.) You control 70% of your final grade. <br>
+            I control 30% of your final grade. <br>
+            (a.) You are the one to decide the grade you want in the class. Just make 100% on what you control: the MLS
+            assignments; you have earned a 70%...a <b>C</b> <br>
+            Then, work with me by submitting your draft for the project on time. Work with me and address any issues
+            till I give you the <i>green light</i> to submit your project...that should give you
+            a 100% (in most cases)...which is 20% of your final grade. You now have: 70% + 20% = 90%...an <b>A</b> <br>
+            Follow all the DB Requirements. Submit your initial post on time and address any comments I make as
+            applicable. Even if I do not make any comments to your post, review the comments I make
+            to the posts and/or responses of your colleagues. You can even address the comments I make to the post of
+            your colleague as a substantive response, if applicable. Contact me via email
+            and/or Live Sessions/Office Hours for any comment you do not understand. You can make enough points on the
+            DB assessment to earn an <b>A.</b> in the course. <br>
+            Making a grade of C is basically your entire/complete decision to make. You can also make a grade of A or B
+            by reviewing my comments to your colleagues (based on the DB), and also
+            based on the project samples and requirements provided to you. I understand some of you have busy schedules,
+            hence your choosing to take an online class. But, please know that you can
+            email me your available days and times. I will check my schedule and respond. We can work out something even
+            if the day and time of the Live Sessions/Office Hours is not convenient for you.
+            <br><br>
+
+            (b.) Let us discuss how you can make a 100% on the MLS assignments: <br>
+            The MLS assignments consists of 31 sections (31 assignments): 829 questions. <br>
+            You have 36 days (5 weeks) to complete 829 questions. Please note that some questions have <i>children</i>
+            (sub-questions). So, if we count each question and sub-question,
+            the number is higher. But you have 36 days to complete all the questions. <br><br>
+            $\dfrac{829}{36} = 23.02777778 \approx 24$ (rounded up) questions per day. <br><br>
+            If you complete 25 questions (including any sub-questions) per day, you would complete all MLS assignments
+            in about 34 days. <br>
+            If you complete 30 questions (including any sub-questions) per day, you would complete all MLS assignments
+            in about 28 days. <br>
+            It is doable. It just requires <b>a lot of</b> your time and effort. <br><br>
+
+            (c.) Please make sure you do all these assignments yourself. <br>
+            (i.) Use the Learning Aids provided for you by Pearson MLS. <br>
+            (ii.) Use my websites (especially the <i>Solved Examples ...</i> as noted in the Pacing Guides). I have
+            solved, and I am still solving your MLS questions on my websites. My
+            explanations of the solutions are clear, as testified by some of my students. Please let me know otherwise.
+            <br>
+            (iii.) Use the R/RStudio and/or the SPSS software for applicable statistical computations. <br>
+            (iv.) Do not use the mobile Mathematics apps that will solve the questions for you. You know these mobile
+            apps including the one where you take the picture of the question with your
+            smartphone and it gives the answer. I do not think you learn the topics/concepts if you use such mobile
+            apps. <br>
+
+
+
+            <br><br>
+
+
+
+
+
+
+        </p>
+
+
+
+    </div>
+    <!-- End About Online Classes -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/#course-links" class="w3-button w3-xlarge w3-circle w3-green"
+            style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Resources -->
+    <div class="w3-container w3-padding-16 w3-white" id="resources">
+        <h2>MyLab Statistics (MLS) Registration and Resources (eText and Multimedia Resources)</h2>
+        <div>
+            Please follow these steps to register for MyLab Statistics (MLS). <br>
+            <object data="images/CourseInformation/DirectIntegrationStudentRegistrationCanvas.pdf" width="1400"
+                height="700"></object>
+        </div>
+
+        <p>
+            This course is a direct integration of the Pearson eText including resources and assignments among others.
+            <br>
+            You have access to the MyLab Statistics (MLS) assignments. <br>
+            You have access to the eText. This includes an <i><b>accessible eText</b></i> (for students who require
+            accommodation). <br>
+            So, you have an electronic textbook. Hence, a physical/hard copy textbook is not required.
+            <br><br>
+            <img src="images/CourseInformation/eBook/MyLabStatistics.png" alt="MyLab Statistics">
+            <br><br>
+            <b>Access the eText/accessible eText</b> <br>
+            Step 1: <br>
+            <img src="images/CourseInformation/eBook/step-1.png" alt="eBook: Step 1"> <br><br>
+            Step 2: <br>
+            <img src="images/CourseInformation/eBook/step-2.png" alt="eBook: Step 2"> <br><br>
+            Step 3: <br>
+            <img src="images/CourseInformation/eBook/step-3.png" alt="eBook: Step 3">
+
+            <br><br><br><br>
+
+            <b>Access the Multimedia Resources</b> <br>
+            Step 4: <br>
+            <img src="images/CourseInformation/Resources/step-1.png" alt="Resources: Step 1"> <br><br>
+            Step 5: <br>
+            <img src="images/CourseInformation/Resources/step-2.png" alt="Resources: Step 2"> <br><br>
+            Step 6: <br>
+            <img src="images/CourseInformation/Resources/step-3.png" alt="Resources: Step 3">
+        </p>
+    </div>
+    <!-- End Resources -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/#course-links" class="w3-button w3-xlarge w3-circle w3-green"
+            style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Pacing Guides -->
+    <div class="w3-row-padding w3-padding-128" id="pacingGuides">
+        <h3>Pacing Guides</h3>
+
+        <div class="w3-half w3-margin-bottom" id="week1">
+            <ul class="w3-ul w3-border w3-white">
+                <li class="w3-green">
+                    <p class="w3-center">Week 1 (Monday, 05/19 &ndash; Saturday, 05/24)</p>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <tr>
+                            <td style="width: 25%;">
+                                Section 1.1: <br>
+                                Section 1.2: <br>
+                                Section 1.3: <br>
+                                Section 2.1: <br>
+                                Section 2.2: <br>
+                                Section 2.3: <br>
+                                Section 2.4:
+                            </td>
+                            <td style="width: 75%;">
+                                Statistical and Critical Thinking <br>
+                                Types of Data <br>
+                                Collecting Sample Data <br>
+                                Frequency Distributions for Organizing and Summarizing Data <br>
+                                Histograms <br>
+                                Graphs that Enlighten and Graphs that Deceive <br>
+                                Scatterplots, Correlation, and Regression
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <caption><b>Initial Due</b></caption>
+                        <tr>
+                            <td style="width: 40%;">
+                                Section 1.1-1st: <br>
+                                Section 1.1-2nd: <br>
+                                Section 1.2: <br>
+                                Section 1.3-1st: <br>
+                                Section 1.3-2nd: <br>
+                                Section 2.1: <br>
+                                Section 2.2: <br>
+                                Section 2.3: <br>
+                                Section 2.4:
+                            </td>
+                            <td style="width: 60%;">
+                                20 questions <br>
+                                18 questions <br>
+                                26 questions <br>
+                                20 questions <br>
+                                13 questions <br>
+                                27 questions <br>
+                                17 questions <br>
+                                21 questions <br>
+                                11 questions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DB 1 (<b>Due</b>):</td>
+                            <td>
+                                Post is due on Thursday <br>
+                                Response is due on Saturday
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <a href="https://statistical-science.appspot.com/IntroductoryStatistics/statistical-reasoning.html"
+                        target="_blank">Introductory Statistics</a> <br>
+                    <a href="https://statistical-science.appspot.com/IntroductoryStatistics/solved-examples.html"
+                        target="_blank">Solved Examples: Introductory Statistics</a> <br>
+                    <a href="https://statistical-science.appspot.com/CorrelationRegression/correlationandregression.html"
+                        target="_blank">Correlation and Regression</a> <br>
+                    <a href="https://statistical-science.appspot.com/CorrelationRegression/scatterDiagrams.html"
+                        target="_blank">Solved Examples: Scatter Diagrams</a> <br>
+                    <a href="https://statistical-science.appspot.com/CorrelationRegression/correlationRegression.html"
+                        target="_blank">Solved Examples: Correlation and Regression</a> <br>
+                    <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+                        target="_blank">Using RStudio for Scatter Diagrams</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-half w3-margin-bottom" id="week2">
+            <ul class="w3-ul w3-border w3-white">
+                <li class="w3-green">
+                    <p class="w3-center">Week 2 (Sunday, 05/25 &ndash; Saturday, 05/31)</p>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <tr>
+                            <td style="width: 25%;">
+                                Section 3.1: <br>
+                                Section 3.2: <br>
+                                Section 3.3: <br>
+                                Section 4.1: <br>
+                                Section 4.2: <br>
+                                Section 4.3:
+                            </td>
+                            <td style="width: 75%;">
+                                Measures of Center <br>
+                                Measures of Variation <br>
+                                Measures of Relative Standing and Boxplots <br>
+                                Basic Concepts of Probability <br>
+                                Addition Rule and Multiplication Rule <br>
+                                Complements
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <caption><b>Initial Due</b></caption>
+                        <tr>
+                            <td style="width: 40%;">
+                                Section 3.1-1st: <br>
+                                Section 3.1-2nd: <br>
+                                Section 3.2-1st: <br>
+                                Section 3.2-2nd: <br>
+                                Section 3.3-1st: <br>
+                                Section 3.3-2nd: <br>
+                                Section 4.1-1st: <br>
+                                Section 4.1-2nd: <br>
+                                Section 4.2-1st: <br>
+                                Section 4.2-2nd: <br>
+                                Section 4.3:
+                            </td>
+                            <td style="width: 60%;">
+                                20 questions <br>
+                                17 questions <br>
+                                20 questions <br>
+                                14 questions <br>
+                                20 questions <br>
+                                14 questions <br>
+                                20 questions <br>
+                                13 questions <br>
+                                20 questions <br>
+                                17 questions <br>
+                                9 questions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DB 2 (<b>Due</b>):</td>
+                            <td>
+                                Post is due on Thursday <br>
+                                Response is due on Saturday
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    All websites from Week 1 <u>and</u> <br>
+                    <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptive-statistics.html"
+                        target="_blank">Descriptive Statistics</a> <br>
+                    <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresCenter.html"
+                        target="_blank">Solved Examples: Measures of Center</a> <br>
+                    <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresVariation.html"
+                        target="_blank">Solved Examples: Measures of Spread</a> <br>
+                    <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresPosition.html"
+                        target="_blank">Solved Examples: Measures of Position</a> <br>
+                    <a href="https://statistical-reasoning.appspot.com/DescriptiveStatistics/measuresShape.html"
+                        target="_blank">Solved Examples: Measures of Shape</a> <br>
+                    <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptiveStatistics.html"
+                        target="_blank">Solved Examples: Descriptive Statistics (All Measures)</a> <br>
+                    <a href="https://statistical-science.appspot.com/Probability/probability.html"
+                        target="_blank">Probability</a> <br>
+                    <a href="https://statistical-science.appspot.com/Probability/probabilityApplications.html"
+                        target="_blank">Applications of Probability</a> <br>
+                    <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+                        target="_blank">Using RStudio for Descriptive Statistics</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-128">
+        <div class="w3-half w3-margin-bottom" id="week3">
+            <ul class="w3-ul w3-border w3-white">
+                <li class="w3-green">
+                    <p class="w3-center">Week 3 (Sunday, 06/01 &ndash; Saturday, 06/07)</p>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <tr>
+                            <td style="width: 25%;">
+                                Section 5.1: <br>
+                                Section 5.2: <br>
+                                Section 6.1: <br>
+                                Section 6.2: <br>
+                                Section 6.3: <br>
+                                Section 6.4: <br>
+                                Section 6.5: <br>
+                                Section 6.6:
+                            </td>
+                            <td style="width: 75%;">
+                                Probability Distributions <br>
+                                Binomial Probability Distributions <br>
+                                The Standard Normal Distribution <br>
+                                Real Applications of Normal Distributions <br>
+                                Sampling Distributions and Estimators <br>
+                                The Central Limit Theorem <br>
+                                Assessing Normality <br>
+                                Normal as Approximation to Binomial
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <caption><b>Initial Due</b></caption>
+                        <tr>
+                            <td style="width: 40%;">
+                                Section 5.1: <br>
+                                Section 5.2-1st: <br>
+                                Section 5.2-2nd: <br>
+                                Section 6.1-1st: <br>
+                                Section 6.1-2nd: <br>
+                                Section 6.2: <br>
+                                Section 6.3: <br>
+                                Section 6.4: <br>
+                                Section 6.5: <br>
+                                Section 6.6:
+                            </td>
+                            <td style="width: 60%;">
+                                26 questions <br>
+                                20 questions <br>
+                                14 questions <br>
+                                20 questions <br>
+                                20 questions <br>
+                                29 questions <br>
+                                15 questions <br>
+                                17 questions <br>
+                                14 questions <br>
+                                17 questions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Project (Draft):</td>
+                            <td><a href="#inferential-statistics-projects">Inferential Statistics</a></td>
+                        </tr>
+                        <tr>
+                            <td>DB 3 (<b>Due</b>):</td>
+                            <td>
+                                Post is due on Thursday <br>
+                                Response is due on Saturday
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    All websites from Week 1, Week 2, <u>and</u> <br>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probabilityDistributions.html"
+                        target="_blank">Probability Distributions</a> <br>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/uniform-distribution.html"
+                        target="_blank">Solved Examples: Uniform Distribution</a> <br>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/binomial-distribution.html"
+                        target="_blank">Solved Examples: Binomial Distribution</a> <br>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/normal-distribution.html"
+                        target="_blank">Solved Examples: Normal Distribution</a> <br>
+                    <a href="https://statistical-science.appspot.com/ProbabilityDistributions/probability-distribution.html"
+                        target="_blank">Solved Examples: Probability Distributions</a> <br>
+                    <a href="https://statistical-science.appspot.com/SamplingDistributions/samplingDistributions.html"
+                        target="_blank">Sampling Distributions</a> <br>
+                    <a href="https://statistical-science.appspot.com/SamplingDistributions/sampling-distribution.html"
+                        target="_blank">Solved Examples: Sampling Distributions</a> <br>
+                    <i>and a few more to be provided soon</i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-half w3-margin-bottom" id="week4">
+            <ul class="w3-ul w3-border w3-white">
+                <li class="w3-green">
+                    <p class="w3-center">Week 4 (Sunday, 06/08 &ndash; Saturday, 06/14)</p>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <tr>
+                            <td style="width: 25%;">
+                                Section 7.1: <br>
+                                Section 7.2: <br>
+                                Section 8.1: <br>
+                                Section 8.2: <br>
+                                Section 8.3:
+                            </td>
+                            <td style="width: 75%;">
+                                Estimating a Population Proportion <br>
+                                Estimating a Population Mean <br>
+                                Basics of Hypothesis Testing <br>
+                                Testing a Claim About a Proportion <br>
+                                Testing a Claim About a Mean
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <caption><b>Initial Due</b></caption>
+                        <tr>
+                            <td style="width: 40%;">
+                                Section 7.1-1st: <br>
+                                Section 7.1-2nd: <br>
+                                Section 7.2: <br>
+                                Section 8.1-1st: <br>
+                                Section 8.1-2nd: <br>
+                                Section 8.2: <br>
+                                Section 8.3:
+                            </td>
+                            <td style="width: 60%;">
+                                20 questions <br>
+                                16 questions <br>
+                                28 questions <br>
+                                25 questions <br>
+                                25 questions <br>
+                                23 questions <br>
+                                24 questions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Project:</td>
+                            <td><a href="https://conferencepresentations.appspot.com/Projects/Statistics/InferentialStatistics.html"
+                                    target="_blank">Inferential Statistics</a></td>
+                        </tr>
+                        <tr>
+                            <td>DB 4 (<b>Due</b>):</td>
+                            <td>
+                                Post is due on Thursday <br>
+                                Response is due on Saturday
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    All websites from Week 1, Week 2, Week 3, <u>and</u> <br>
+                    <a href="https://statistical-science.appspot.com/InferentialStatistics/inferential-statistics.html"
+                        target="_blank">Inferential Statistics</a> <br>
+                    <a href="https://statistical-science.appspot.com/InferentialStatistics/Proportion.html"
+                        target="_blank">Solved Examples: Inferential Statistics: Proportion</a> <br>
+                    <a href="https://statistical-science.appspot.com/InferentialStatistics/Mean.html"
+                        target="_blank">Solved Examples: Inferential Statistics: Mean</a> <br>
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-testing.html"
+                        target="_blank">Hypothesis Testing</a> <br>
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-tests.html"
+                        target="_blank">Solved Examples: Hypothesis Testing: Hypothesis Tests</a> <br>
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/errors.html"
+                        target="_blank">Solved Examples: Hypothesis Testing: Errors</a> <br>
+                    <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis.html"
+                        target="_blank">Solved Examples: Hypothesis Testing: Hypothesis</a> <br>
+                    <i>and more to be provided soon</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-128">
+        <div class="w3-half w3-margin-bottom" id="week5">
+            <ul class="w3-ul w3-border w3-white">
+                <li class="w3-green">
+                    <p class="w3-center">Week 5 (Sunday, 06/15 &ndash; Saturday, 06/21)</p>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <tr>
+                            <td style="width: 25%;">
+                                Section 9.2: <br>
+                                Section 9.3: <br>
+                                Section 10.1: <br>
+                                Section 10.2: <br>
+                                Section 10.3:
+                            </td>
+                            <td style="width: 75%;">
+                                Two Means: Independent Samples <br>
+                                Matched Pairs <br>
+                                Correlation <br>
+                                Regression <br>
+                                Prediction Intervals and Variation
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <caption><b>Initial Due</b></caption>
+                        <tr>
+                            <td style="width: 40%;">
+                                Section 9.2: <br>
+                                Section 9.3: <br>
+                                Section 10.1-1st: <br>
+                                Section 10.1-2nd: <br>
+                                Section 10.2-1st: <br>
+                                Section 10.2-2nd: <br>
+                                Section 10.3:
+                            </td>
+                            <td style="width: 60%;">
+                                22 questions <br>
+                                16 questions <br>
+                                20 questions <br>
+                                14 questions <br>
+                                21 questions <br>
+                                10 questions <br>
+                                16 questions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DB 5 (<b>Due</b>):</td>
+                            <td>
+                                Post is due on Thursday <br>
+                                Response is due on Saturday
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    All websites from Week 1, Week 2, Week 3, Week 4, <u>and</u> <br>
+                    <i>to be provided soon</i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-half w3-margin-bottom" id="week6">
+            <ul class="w3-ul w3-border w3-white">
+                <li class="w3-green">
+                    <p class="w3-center">Weekly Number of Questions</p>
+                </li>
+                <li>
+                    <table class="noborder">
+                        <tr>
+                            <td style="width: 50%;">
+                                Week 1: <br>
+                                Week 2: <br>
+                                Week 3: <br>
+                                Week 4: <br>
+                                Week 5: <br>
+                                Total:
+                            </td>
+                            <td style="width: 50%;">
+                                97 + 76 = 173 questions <br>
+                                105 + 79 = 184 questions <br>
+                                60 + 132 = 192 questions <br>
+                                64 + 97 = 161 questions <br>
+                                38 + 81 = 119 questions <br>
+                                829 questions
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <br>
+    <table class="white w3-padding-16">
+        <caption><b>Final Due</b></caption>
+        <tr>
+            <td style="width: 60%;">
+                Inferential Statistics Project (Draft)
+            </td>
+            <td style="width: 40%;">
+                Friday, 06/20; 11:59 pm EDT
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 60%;">
+                Inferential Statistics Project
+            </td>
+            <td style="width: 40%;">
+                Saturday, 06/21; 11:59 pm EDT
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 60%;">
+                All MyLab Statistics (MLS) Assignments
+            </td>
+            <td style="width: 40%;">
+                Monday, 06/23; 11:59 pm EDT
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="w3-center">
+                <i>Please <b>NOTE:</b> Each Discussion Board (DB) assessment has only one due date. It does <u>not</u>
+                    have two due dates.</i>
+            </td>
+        </tr>
+    </table>
+    <!-- End Pacing Guides -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/#course-links" class="w3-button w3-xlarge w3-circle w3-green"
+            style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Grade Calculator -->
+    <div class="w3-container w3-padding-16 w3-white" id="gradeCalculator">
+        <h2>Grade Calculator</h2>
+        <p>
+            <u>First:</u> <br>
+            <b>MyLab Statistics (MLS) Grades</b> <br>
+            May I explain to you how your MLS grades are calculated? <br>
+            Because we have 57 MLS sections, it is much better to explain it in a different page. <br>
+            So, let us go to
+            <a href="https://statistical-science.appspot.com/MyLabStatisticsGrades.html" target="_blank"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-green">MyLab Statistics (MLS) Grade Example and
+                Calculator</a>
+            to get the current and/or cumulative MLS grades. <br><br>
+
+            <u>Second:</u> <br>
+            <b>Final Grade</b> <br>
+            May I explain to you how your final grade is calculated? <br>
+            So, we have our MLS grade. We shall now use it here to get our current grade and/or final course grade. <br>
+            Let us do an example. Then, we can verify with the calculator.
+        </p>
+
+        <table class="w3-center">
+            <caption>Final Grade Example</caption>
+            <tr>
+                <th style="width: 25%;">Assessments</th>
+                <th style="width: 25%;">Weight (%)</th>
+                <th style="width: 25%;">Your Score (%)</th>
+                <th style="width: 25%;">Weighted Score <br> (Weight * Your Score)</th>
+            </tr>
+            <tr>
+                <td>MyLab Statistics</td>
+                <td>70</td>
+                <td>90</td>
+                <td>6300</td>
+            </tr>
+            <tr>
+                <td>DB 1</td>
+                <td>2</td>
+                <td>95</td>
+                <td>190</td>
+            </tr>
+            <tr>
+                <td>DB 2</td>
+                <td>2</td>
+                <td>90</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>DB 3</td>
+                <td>2</td>
+                <td>80</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td>DB 4</td>
+                <td>2</td>
+                <td>85</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td>DB 5</td>
+                <td>2</td>
+                <td>100</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Project</td>
+                <td>20</td>
+                <td>84</td>
+                <td>1680</td>
+            </tr>
+            <tr>
+                <td colspan="2">$\Sigma Weights = 100$</td>
+                <td colspan="2">$\Sigma Weighted\;\;Scores = 8880$</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    $
+                    Current\;\;Grade = \dfrac{\Sigma Weighted\;\;Scores}{\Sigma Weights} =
+                    \dfrac{8880}{100} = 88.8 \approx 89\%
+                    $
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+        <p>
+            Please <u>NOTE</u>: <br>
+            (1.) This is the grade you will see in the Canvas gradebook. <br>
+            (2.) You must not complete all fields.
+            You can calculate your current grade at any time during the course based on the assessments you have done.
+            Then, you can verify your calculations with the calculator. <br>
+            (3.) The final grade is rounded to the nearest integer only one time. <br>
+            A grade of 79.5000111% is rounded to an 80% which is a B while a grade of 79.499999 is rounded to a 79%
+            which is a C. <br>
+            (4.) At least a final grade of 70% (C) is required to pass the course. <br>
+            (5.) There is no extra credit or bonus point or curving grades for the course. <br>
+            Please review the <a href="https://statistical-science.appspot.com/questions.html"
+                target="_blank">Frequently Asked Questions</a> for explanations. <br>
+            (6.) Please send an email to me and/or attend the Office Hours/Live Sessions if you have any questions.
+        </p>
+        <br><br>
+
+        <!-- Course Grade Calculator -->
+        <h2>Course Grade Calculator</h2>
+        <div class="w3-section">
+            <ul class="w3-ul w3-card w3-hover-shadow">
+                <li class="green w3-xlarge w3-padding-32">
+                    Please type only numbers (integers and decimals only).</u> <br>
+                    The fields for MLS are required. <br>
+                    The other fields are not required. <br>
+                    The olive-colored textboxes are the only textboxes that will accept user input. <br>
+                    <br>
+                    <u>To Calculate:</u> the current grade and the final grade
+                </li>
+
+                <li class="w3-padding-16 white">
+                    <form id="gradeCourse" class="w3-padding w3-center">
+                        <table class="w3-center">
+                            <tr>
+                                <th class="w3-padding green" style="width: 20%">Assessments</th>
+                                <th class="w3-padding green" style="width: 25%">Weight ($\%$)</th>
+                                <th class="w3-padding green" style="width: 25%">Your Score ($\%$)</th>
+                                <th class="w3-padding green" style="width: 30%;">Weighted Score</th>
+                            </tr>
+                            <tr>
+                                <td>MyLab Statistics (MLS)</td>
+                                <td>
+                                    <label for="weightMLS"></label>
+                                    <input type="text" class="small" name="weightMLS" id="weightMLS" autocomplete="off"
+                                        required>
+                                </td>
+                                <td>
+                                    <label for="scoreMLS"></label>
+                                    <input type="text" class="small" name="scoreMLS" id="scoreMLS" autocomplete="off"
+                                        required>
+                                </td>
+                                <td>
+                                    <label for="weightedScoreMLS"></label>
+                                    <input type="text" class="long" name="weightedScoreMLS" id="weightedScoreMLS"
+                                        readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB 1</td>
+                                <td>
+                                    <label for="weightDB1"></label>
+                                    <input type="text" class="small" name="weightDB1" id="weightDB1" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="scoreDB1"></label>
+                                    <input type="text" class="small" name="scoreDB1" id="scoreDB1" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="weightedScoreDB1"></label>
+                                    <input type="text" class="long" name="weightedScoreDB1" id="weightedScoreDB1"
+                                        readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB 2</td>
+                                <td>
+                                    <label for="weightDB2"></label>
+                                    <input type="text" class="small" name="weightDB2" id="weightDB2" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="scoreDB2"></label>
+                                    <input type="text" class="small" name="scoreDB2" id="scoreDB2" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="weightedScoreDB2"></label>
+                                    <input type="text" class="long" name="weightedScoreDB2" id="weightedScoreDB2"
+                                        readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB 3</td>
+                                <td>
+                                    <label for="weightDB3"></label>
+                                    <input type="text" class="small" name="weightDB3" id="weightDB3" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="scoreDB3"></label>
+                                    <input type="text" class="small" name="scoreDB3" id="scoreDB3" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="weightedScoreDB3"></label>
+                                    <input type="text" class="long" name="weightedScoreDB3" id="weightedScoreDB3"
+                                        readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB 4</td>
+                                <td>
+                                    <label for="weightDB4"></label>
+                                    <input type="text" class="small" name="weightDB4" id="weightDB4" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="scoreDB4"></label>
+                                    <input type="text" class="small" name="scoreDB4" id="scoreDB4" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="weightedScoreDB4"></label>
+                                    <input type="text" class="long" name="weightedScoreDB4" id="weightedScoreDB4"
+                                        readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB 5</td>
+                                <td>
+                                    <label for="weightDB5"></label>
+                                    <input type="text" class="small" name="weightDB5" id="weightDB5" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="scoreDB5"></label>
+                                    <input type="text" class="small" name="scoreDB5" id="scoreDB5" autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="weightedScoreDB5"></label>
+                                    <input type="text" class="long" name="weightedScoreDB5" id="weightedScoreDB5"
+                                        readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Project</td>
+                                <td>
+                                    <label for="weightProject"></label>
+                                    <input type="text" class="small" name="weightProject" id="weightProject"
+                                        autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="scoreProject"></label>
+                                    <input type="text" class="small" name="scoreProject" id="scoreProject"
+                                        autocomplete="off">
+                                </td>
+                                <td>
+                                    <label for="weightedScoreProject"></label>
+                                    <input type="text" class="long" name="weightedScoreProject"
+                                        id="weightedScoreProject" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="sumWeightsCourse">$\Sigma Weights = $ </label>
+                                    <input type="text" class="shortAnswer" name="sumWeightsCourse" id="sumWeightsCourse"
+                                        readonly>
+                                </td>
+                                <td colspan="2">
+                                    <label for="sumWeightedScoresCourse">$\Sigma Weighted\:\:Scores = $</label>
+                                    <input type="text" class="longAnswer" name="sumWeightedScoresCourse"
+                                        id="sumWeightedScoresCourse" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="currentGradeCourse">The current grade is </label>
+                                    <input type="text" class="longAnswer" name="currentGradeCourse"
+                                        id="currentGradeCourse" readonly>$\%$
+                                </td>
+                                <td colspan="2">
+                                    <label for="cumulativeGradeCourse">The cumulative grade is </label>
+                                    <input type="text" class="mediumAnswer" name="cumulativeGradeCourse"
+                                        id="cumulativeGradeCourse" readonly>$\%$
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p>
+                            <button class="calculate" onclick="gradeCourse()">Calculate</button>
+                            <input class="calculate" type="reset" value="Reset">
+                        </p>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!-- End Course Grade Calculator -->
+    </div>
+    <!-- End Grade Calculator -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/#course-links" class="w3-button w3-xlarge w3-circle w3-green"
+            style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Student Evaluation of Faculty -->
+    <div class="w3-container w3-padding-16 w3-white" id="studentEvaluation">
+        <h2>Student Evaluation of Faculty</h2>
+        <p>
+            <b>Dear Students,</b> <br>
+            Greetings to you. <br>
+            As you evaluate me and my teaching style on the Canvas course, I ask that you consider these questions in
+            addition to the survey questions. <br>
+            Thank you for giving me the opportunity to teach the course. <br>
+            It was nice working with you. <br>
+            I wish you the best in your academic profession. <br>
+            <b>Thank you!</b> <br><br>
+            <span style="color: darkblue;"><strong>Samuel Dominic Chukwuemeka</strong> (SamDom For Peace)</span>
+            <span style="font-size: large">B.Eng., A.A.T, M.Ed., M.S</span> <br>
+            <span style="font-weight: bold; color: darkblue;"><i>Working together for success</i></span> <br><br>
+
+            <b>Grading Method:</b> <a href="https://statistical-science.appspot.com/#gradeCalculator"
+                target="_blank">Grading Method</a> <br>
+            <b>Classroom/Learning Environment:</b> Canvas course management system. <br>
+            <b>Course Assessments:</b> MyLab Statistics (MLS) assignments, Discussion Board (DB) assessments, and
+            Project-based Learning assessment (Inferential Statistics Project) <br>
+            <b>Direct forms of communication:</b> Office Hours/Live Sessions, Comments to your DB Posts and/or
+            Responses, individualized Zoom sessions, Emails, and Google Voice text messages and calls. <br>
+            <b>Indirect forms of communication:</b> Course announcements, Websites (Notes, Videos, and Resources among
+            others). <br><br>
+
+            <b>Course Contents</b> <br>
+            Please review the <a href="https://courses.vccs.edu/courses/MTH245-StatisticsI" target="_blank">VCCS Course
+                Description</a> and <br>
+            the <a href="https://courses.vccs.edu/courses/MTH245-StatisticsI/detail" target="_blank">VCCS Detailed
+                Outline</a> <br>
+            Those are the <u>basic</u> topics that VCCS/BRCC require that I teach. <br><br>
+            (1.) Did I cover those topics: teach the topics and/or provide resources for the topics? <br>
+            Resources include your textbooks (eText and resources), my websites (including notes/videos/resources)
+            <br><br>
+            (2.) Did I cover other necessary topics that is relevant for you to succeed in your profession? <br><br>
+            (3.) Did the assessments demonstrate the application of the topics? <br><br>
+            (4.) Did the contents and assessments demonstrate important skills such as critical thinking, use of
+            technology,
+            creativity, and organization among others? <br><br>
+
+            <b>Teaching and Learning</b> <br>
+            (5.) Did you acquire any knowledge from me? <br><br>
+            (6.) Did you acquire sufficient knowledge, or more than sufficient knowledge from me? <br><br>
+            (7.) Did you acquire any knowledge from any of your colleagues because of how the course was set up?
+            <br><br>
+            (8.) Did you acquire sufficient knowledge, or more than sufficient knowledge from any of your colleagues
+            because of the way the course was set up? <br><br>
+            (9.) Did I provide effective feedback on the draft submissions <u>and</u> the main submissions of your
+            project? <br>
+            Did you acquire any knowledge based on my feedback? <br><br>
+            (10.) Did I provide comments/effective feedback for your DB Post and/or Response? <br>
+            Did you acquire any knowledge based on the feedback? <br><br>
+            (11.) Did you get any feedback for any of the questions on your MLS assignments? <br>
+            Did you acquire any knowledge based on that feedback? <br><br>
+            (12.) Did any of the feedback help you improve in any way? <br>
+            In other words, was the feedback useful to you in any way? <br><br>
+            (13.) Did you have enough support to ensure the successful completion of the course? <br>
+            Were your questions answered? <br>
+            Did you have enough resources/learning aids? <br><br>
+            (14.) Did I provide a safe and conducive environment for learning? <br><br>
+            (15.) Was the Grading Method fair? <br><br>
+
+            <b>Pacing Guide</b> <br>
+            (16.) Were you given enough time to learn the contents? <br><br>
+            (17.) Were you given enough time to complete the assessments? <br>
+            <i>
+                Consider the fact that you were given two due dates for the MLS assignments and the Project; and that
+                there
+                was no penalty for late work after the first due date.
+            </i> <br><br>
+
+            <b>Professionalism</b> <br>
+            (18.) In all our communication (both direct and indirect), did I act professionally? <br><br>
+            (19.) In all our communication (both direct and indirect), did I use a respectful tone? <br><br>
+            (20.) What do you like or dislike about our communication? <br><br>
+
+            <b>Personality</b> <br>
+            (21.) Based on your experience with me (taking the course with me and communicating with me among others),
+            how
+            would you describe my person? <br>
+            Do I give a lot of work? <br>
+            Do I give a lot of explanations? <br>
+            Do I have a lot of expectations for my students? <br>
+            Do I really want you to learn? <br>
+            Do I really want you to succeed? <br>
+            Do I ask a lot of questions? <br>
+            Do I answer questions with questions sometimes?
+            <br><br>
+            <i>
+                During those times, please note that it is a teaching technique. <br>
+                It is never meant to disrespect you. I do not disrespect my students. I respect them. <br>
+                It is a technique to guide you to review directions/concepts, and explain what you do not understand.
+            </i>
+            <br><br>
+            Would you take another course with me? Why or why not? <br>
+            Did your views/perception about me affect you in completing this course successfully or unsuccessfully?
+        </p>
+    </div>
+    <!-- End Student Evaluation of Faculty -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/#course-links" class="w3-button w3-xlarge w3-circle w3-green"
+            style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Footer -->
+    <footer class="w3-center khaki w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2023&nbsp; SamDom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/statistics.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

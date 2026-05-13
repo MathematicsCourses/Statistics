@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Scatter Diagrams with RStudio</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD JESUS CHRIST. We are experts in scatter diagrams with RStudio.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
+                statistics, data, data collection, data organization, data presentation, data analysis, data interpretation,
+                descriptive statistics, inferential statistics, statistical science, sample, population, individual, decision, 
+                conclusion, study, variables, quantitative variable, qualitative variable, discrete variable, continuous variable,
+                statistic, parameter, research, research objective, inference, response variable, explanatory variable,
+                predictor variable, level of measurement of a variable, nominal level, ordinal level, interval level, ratio level, 
+                fact, survey, experiment, historical record, Likert scales, statistical process, correlation, regression, 
+                correlation coefficient, product moment correlation coefficient, Pearson correlation coefficient, 
+                critical values of correlation coefficient, forecasting, forecasting models, forecasting techniques, period,
+                value, forecast, error, mean absolute deviation, mean square error, averages, simple averages, 
+                moving averages, weighted moving averages, index numbers, time-series forecasting, smoothing techniques, 
+                naive forecasting models, averaging models, exponential smoothing, trend analysis, seasonal effects, 
+                autocorrelation, autoregression, variables, price index, critical value, confidence level, confidence interval, 
+                significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, 
+                type II error, unstacked table, coding, wide data, narrow data, unstacked table, stacked table, long data, 
+                null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, 
+                critical region, hypothesis testing, population proportion, population mean, one sample proportion, 
+                two sample proportion, goodness-of-fit test, chi-square, normal distribution table, student t distribution table,
+                F statistic, test statistic, sample proportion, population proportion, level of significance, 
+                confidence levels, sample mean, population mean, sample variance, population variance, 
+                sample standard deviation, population standard deviation, critical values, student t distribution, 
+                normal distribution, chi -square distribution, sampling, normal distribution, sampling distribution, 
+                probability distribution, sample mean, sample proportion, sample variance, sample standard deviation, 
+                population mean, population proportion, population variance, population standard deviation, estimators, 
+                bias, standard error, probability, central limit theorem, confounding, lurking variable, sampling frame,
+                frequency distribution table, frequency table, class, classes, frequency, data set, class width, tally,
+                class size, range, number of classes, maximum value, minimum value, class interval, class limit,
+                class midpoint, class mark, class boundary, relative frequency, cumulative frequency, data cycle,
+                two-way table, R programming, RStudio">
+
+    <link href="styles/RStudio.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki">
+        <!--
+            <div class="w3-center">
+                <button class="quoteDay" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            <div class="w3-content quotes" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages11"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        -->
+    </header>
+
+    <!--
+        <header class="w3-padding-64 khaki">
+            <div class="w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages11"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        </header>
+    -->
+
+    <!-- End Header/Home -->
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+        <h1>R and RStudio for Scatter Diagrams</h1>
+        <!-- Image in top left corner --
+            <img src="images/chukwuemekasamueldominic.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" title="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            
+            <a href="https://www.samuelchukwuemeka.com" title="Samuel Chukwuemeka">
+                <img src="images/chukwuemekasamueldominic.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" title="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+            </a>
+        -->
+        <h2>Concept: Scatter Diagrams; Linear Correlation</h2>
+        <p>
+            (1.) Please begin from Question (1.). <br>
+            Do not skip. <br><br>
+            (2.) Two types of solutions will be given for Question (1.) <br>
+            The rest of the questions will be done using one type of solution. <br><br>
+            (3.) These steps and solutions are for Statistics students. <br>
+            There are more detailed steps and solutions that I could use for Data Science and Computer Science students.
+        </p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="w3-container">
+        <p class="w3-center w3-padding-16">
+            <b>Scatter Diagrams</b> <br>
+            <a href="#Question1" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 1</a>
+            <a href="#Question2" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 2</a>
+            <a href="#Question3" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Question 3</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/RStudio.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">R/RStudio</a>
+            <a href="#arguments" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Arguments for the Plot
+                Function</a>
+            <a href="#plotCharacters" class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Plot Characters</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/DataPresentation.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Data Presentation</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Descriptive Statistics</a>
+            <br><br>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/ProbabilityDistributions.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Probability Distributions</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/InferentialStatistics.html"
+                class="w3-button w3-khaki w3-round w3-padding w3-hover-red">Inferential Statistics</a>
+        </p>
+    </div>
+    <!-- End Navigation Bar -->
+
+    <br><br>
+
+    <!-- Scatter Diagrams: Question 1 -->
+    <div class="w3-row w3-container" id="Question1">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (1.) The table provided below shows paired data for the heights of a certain​ country's presidents and
+                their main opponents
+                in the election campaign.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number1a.png" alt="Number 1(a.)">
+                <br><br>
+                (a.) Construct a scatterplot.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number1b.png" alt="Number 1(b.)">
+                <br><br>
+                (b.) Does there appear to be a correlation between the​ president's height and his​ opponent's height?
+                <br>
+                <b>A.</b> Yes, there appears to be a correlation. As the​ president's height​ increases, his​ opponent's
+                height decreases. <br>
+                <b>B.</b> Yes, there appears to be a correlation. As the​ president's height​ increases, his​ opponent's
+                height increases. <br>
+                <b>C.</b> Yes, there appears to be a correlation. The candidate with the highest height usually wins.
+                <br>
+                <b>D.</b> No, there does not appear to be a correlation because there is no general pattern to the data.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionSD1')">Show/Hide Answer</button>
+            <div class="result" id="solutionSD1">
+                <br>
+                (1.) Step 1: Open the dataset in Excel <br>
+                <img src="images/ScatterDiagrams/Answers/Number1a.png" alt="Number 1(a.)">
+                <br><br>
+                (2.) Step 2: Save as a text file <br>
+                (a.) <img src="images/ScatterDiagrams/Answers/Number1b.png" alt="Number 1(b.)"> <br><br>
+                (b.) <img src="images/ScatterDiagrams/Answers/Number1c.png" alt="Number 1(c.)" style="width: 100%;">
+                <br><br>
+                (3.) Step 3: Open the text file in RStudio <br>
+                (a.) <img src="images/ScatterDiagrams/Answers/Number1d.png" alt="Number 1(d.)" style="width: 100%;">
+                <br><br>
+                (b.) <img src="images/ScatterDiagrams/Answers/Number1e.png" alt="Number 1(e.)" style="width: 100%;">
+                <br><br>
+                (c.) <img src="images/ScatterDiagrams/Answers/Number1f-1.png" alt="Number 1(f.1)"> <br><br>
+                (d.) <img src="images/ScatterDiagrams/Answers/Number1f-2.png" alt="Number 1(f.2)"> <br><br>
+                (e.) <img src="images/ScatterDiagrams/Answers/Number1f.png" alt="Number 1(f.)">
+                <br><br>
+                (4.) Step 4: Rename the file with a suitable file name and import it into RStudio <br>
+                (a.) <img src="images/ScatterDiagrams/Answers/Number1g.png" alt="Number 1(g.)"> <br><br>
+                I used the file name: <code>PresidentHeightVersusOpponentHeight</code> <br>
+                This is easier because I can connect it with <code>XaxisVersusYaxis</code> <br>
+                The <i>x</i>-axis is the President's Height <br>
+                The <i>y</i>-axis is the Opponent's Height <br>
+                It is highly recommended to use meaningful file names in the context of the data. <br>
+                (b.) <img src="images/ScatterDiagrams/Answers/Number1h.png" alt="Number 1(h.)" style="width: 100%;">
+                <br><br>
+                As we can see, there are 16 obs (observations) and 2 variables in the
+                <code>PresidentHeightVersusOpponentHeight</code> dataset.
+                <br><br>
+                (5.) <b>1st Solution:</b> <code>plot</code> function with only one argument <br>
+                The function is <code>plot</code> <br>
+                The argument is the file name: <code>PresidentHeightVersusOpponentHeight</code> <br>
+                By default, RStudio displays first variable (variable in the first column) as the <i>x</i>-axis and the
+                second variaable (variable in the second column) as the <i>y</i>-axis. <br>
+                This is a quick and easy solution <br>
+                In the console window, type the command:
+                <pre>
+                        plot(PresidentHeightVersusOpponentHeight)
+                    </pre>
+                (a.) <img src="images/ScatterDiagrams/Answers/Number1i.png" alt="Number 1(i.)"> <br><br>
+                (b.) <img src="images/ScatterDiagrams/Answers/Number1j.png" alt="Number 1(j.)">
+                <br><br>
+                But here's the reason why we need more arguments: <br>
+                (I.) Some people may be confused whether the correct option is Option <b>A.</b> or Option <b>C.</b> <br>
+                Although after expanding both options and carefully comparing them with the RStudio graph, you may see
+                the correct option. <br>
+                Be it as it may, we want the graph in RStudio to exactly match the correct one in the option. <br>
+                The minimum and maximum values used on the graphs in the options are different from the minimum and
+                maximum values on the graph in RStudio <br>
+                So, it is better we use adjust the one in RStudio to match the one in the options. <br>
+                We shall use the arguments, each separated by a comma:
+                <pre>
+                        xlim = c(160, 200)
+                        ylim = c(160, 200)
+                    </pre>
+                where: <br>
+                <code>xlim</code> is the limit for the <i>x</i>-axis. This includes the minimum value and the maximum
+                value for the <i>x</i>-axis <br>
+                <code>ylim</code> is the limit for the <i>y</i>-axis. This includes the minimum value and the maximum
+                value for the <i>y</i>-axis <br>
+                <code>c</code> is the function that selects and combines the values into a list. It is used when we need
+                to pass a list (in this case: the values in both axis) as a parameter. <br><br>
+                (II.) The points on the graph in RStudio are circles (open cirles) while the ones in the options are
+                filled circles (closed circles). <br>
+                By default, RStudio displays the points as open circles. But we want filled/shaded circles. <br>
+                To fix this, we shall use the argument:
+                <pre>pch = 16</pre>
+                where: <br>
+                <code>pch</code> is the Plot Character <br>
+                <code>pch</code> = 16 is the value of the plot character for filled circle <br><br>
+                (III.) The labels on the graph in the options are not exactly the same from the those in the RStudio
+                graph <br>
+                To label the one in RStudio accordingly, we use the argument:
+                <pre>
+                        xlab = "President's height"
+                        ylab = "Opponent's height"
+                    </pre>
+                (6.) <b>2nd Solution:</b> Let us use more arguments (the ones we just listed) with the <code>plot</code>
+                function
+                <br><br>
+                <code>
+                        plot(PresidentHeightVersusOpponentHeight, xlab = "President's height", ylab = "Opponent's height", xlim = c(160, 200), ylim = c(160, 200), pch = 16)
+                    </code>
+                <br><br>
+                (a.) <img src="images/ScatterDiagrams/Answers/Number1k.png" alt="Number 1(k.)"> <br><br>
+                (b.) <img src="images/ScatterDiagrams/Answers/Number1l.png" alt="Number 1(l.)"> <br><br>
+                We now see that the correct option is Option <b>C.</b> <br>
+                <img src="images/ScatterDiagrams/Answers/Number1m.png" alt="Number 1(m.)">
+                <br><br>
+                The points are scattered. There is no clear trend. <br>
+                Hence, there does not appear to be a correlation because there is no general pattern to the data.
+            </div>
+        </div>
+    </div>
+    <!-- End Scatter Diagrams: Question 1 -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Scatter Diagrams: Question 2 -->
+    <div class="w3-row w3-container" id="Question2">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (2.) The table lists weights​ (pounds) and highway mileage amounts​ (mpg) for seven automobiles.
+                <br><br>
+            <table class="w3-center">
+                <tr>
+                    <td style="width: 30%;">Weight (lb)</td>
+                    <td style="width: 10%;">3185</td>
+                    <td style="width: 10%;">3420</td>
+                    <td style="width: 10%;">3835</td>
+                    <td style="width: 10%;">4465</td>
+                    <td style="width: 10%;">4650</td>
+                    <td style="width: 10%;">2140</td>
+                    <td style="width: 10%;">3745</td>
+                </tr>
+                <tr>
+                    <td style="width: 30%;">Highway (mpg)</td>
+                    <td style="width: 10%;">32</td>
+                    <td style="width: 10%;">30</td>
+                    <td style="width: 10%;">26</td>
+                    <td style="width: 10%;">22</td>
+                    <td style="width: 10%;">21</td>
+                    <td style="width: 10%;">39</td>
+                    <td style="width: 10%;">28</td>
+                </tr>
+            </table>
+            <br><br>
+            (a.) Use the sample data to construct a scatterplot. <br>
+            Use the first variable for the​ <i>x</i>-axis.
+            <br><br>
+            <img src="images/ScatterDiagrams/Questions/Number2.png" alt="Number 2">
+            <br><br>
+            (b.) Is there a linear relationship between weight and highway​ mileage? <br>
+            <b>A.</b> No, there appears to be no relationship. <br>
+            <b>B.</b> No, there appears to be a​ relationship, but it is not linear. <br>
+            <b>C.</b> ​Yes, as the weight increases the highway mileage decreases. <br>
+            <b>D.</b> Yes, as the weight increases the highway mileage increases.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionSD2')">Show/Hide Answer</button>
+            <div class="result" id="solutionSD2">
+                <br>
+                (a.) The code to draw the scatter diagram to match exactly one of the options is:
+                <br><br>
+                <code>
+                        plot(WeightVersusHighway, xlab = "Weight (lb)", ylab = "Highway (mpg)", xlim = c(2000, 5000), ylim = c(20, 40), pch = 16)
+                    </code>
+                <br><br>
+                (I.) <img src="images/ScatterDiagrams/Answers/Number2a.png" alt="Number 2(a.)"> <br><br>
+                (II.) <img src="images/ScatterDiagrams/Answers/Number2b.png" alt="Number 2(b.)"> <br><br>
+                (III.) <img src="images/ScatterDiagrams/Answers/Number2c.png" alt="Number 2(c.)"> <br><br>
+                (IV.) <img src="images/ScatterDiagrams/Answers/Number2d.png" alt="Number 2(d.)"> <br><br>
+                We see that the correct option is Option <b>A.</b> <br>
+                <img src="images/ScatterDiagrams/Answers/Number2e.png" alt="Number 2(e.)">
+                <br><br>
+                (b.) There is a pattern in the scatterplot. <br>
+                It is a negative trend. <br>
+                It shows a negative slope. <br>
+                This implies that as the weight increases the highway mileage decreases.
+            </div>
+        </div>
+    </div>
+    <!-- End Scatter Diagrams: Question 2 -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Scatter Diagrams: Question 3 -->
+    <div class="w3-row w3-container" id="Question3">
+        <div class="w3-topbar w3-padding">
+            <p>
+                (3.) This data is from a study comparing the amount of tar and carbon monoxide​ (CO) in cigarettes. <br>
+                Use tar for the horizontal scale and use carbon monoxide​ (CO) for the vertical scale.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number3a.png" alt="Number 3(a.)">
+                <br><br>
+                (a.) Construct a scatterplot.
+                <br><br>
+                <img src="images/ScatterDiagrams/Questions/Number3b.png" alt="Number 3(b.)">
+                <br><br>
+                (b.) Is there a relationship between cigarette tar and​ CO? <br>
+                <b>A.</b> ​Yes, as the amount of tar increases the amount of carbon monoxide decreases. <br>
+                <b>B.</b> Yes, as the amount of tar increases the amount of carbon monoxide also increases. <br>
+                <b>C.</b> ​No, there appears to be no relationship.
+            </p>
+            <br>
+            <button class="solutions" onclick="solutions('solutionSD3')">Show/Hide Answer</button>
+            <div class="result" id="solutionSD3">
+                <br>
+                (a.) The code to draw the scatter diagram to match one of the options is:
+                <br><br>
+                <code>
+                        plot(TarVersusCO, xlab = "Tar", ylab = "CO", xlim = c(0, 20), ylim = c(0, 20), pch = 15)
+                    </code>
+                <br><br>
+                (I.) <img src="images/ScatterDiagrams/Answers/Number3a.png" alt="Number 3(a.)"> <br><br>
+                (II.) <img src="images/ScatterDiagrams/Answers/Number3b.png" alt="Number 3(b.)"> <br><br>
+                (III.) <img src="images/ScatterDiagrams/Answers/Number3c.png" alt="Number 3(c.)"> <br><br>
+                (IV.) <img src="images/ScatterDiagrams/Answers/Number3d.png" alt="Number 3(d.)"> <br><br>
+                We see that the correct option is Option <b>C.</b> <br>
+                <img src="images/ScatterDiagrams/Answers/Number3e.png" alt="Number 3(e.)">
+                <br><br>
+                (b.) There is a pattern in the scatterplot. <br>
+                It is a positive trend. <br>
+                It shows a positive slope. <br>
+                This implies that as the amount of tar increases the amount of carbon monoxide also increases.
+            </div>
+        </div>
+    </div>
+    <!-- End Scatter Diagrams: Question 3 -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+    <!-- Plot Characters -->
+    <div class="w3-row w3-container" id="plotCharacters">
+        <div class="w3-topbar w3-padding">
+            <p>
+                Plot Character is the argument that sets the characters/points in a plot. <br>
+                It is denoted by <code>pch</code> <br>
+                It has numeric values that shows several symbols used to represent the points in a plot.
+            </p>
+            <br>
+            <table class="someCenter">
+                <caption>Plot Characters for RStudio</caption>
+                <tr>
+                    <th style="width: 10%;">Value</th>
+                    <th style="width: 45%;">Symbol</th>
+                    <th style="width: 45%;">Argument</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Square</td>
+                    <td><code>pch = 0</code></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Circle</td>
+                    <td><code>pch = 1</code></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Triangle: Vertex up</td>
+                    <td><code>pch = 2</code></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Plus</td>
+                    <td><code>pch = 3</code></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cross</td>
+                    <td><code>pch = 4</code></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Diamond</td>
+                    <td><code>pch = 5</code></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Triangle: Vertex down</td>
+                    <td><code>pch = 6</code></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Cross inside Square (Square Cross)</td>
+                    <td><code>pch = 7</code></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Asterisk</td>
+                    <td><code>pch = 8</code></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Plus inside Diamond (Diamond Plus)</td>
+                    <td><code>pch = 9</code></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Plus inside Circle (Circle Plus)</td>
+                    <td><code>pch = 10</code></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Two Triangles: Vertex up and down</td>
+                    <td><code>pch = 11</code></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Plus inside Square (Square Plus)</td>
+                    <td><code>pch = 12</code></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Cross inside Circle (Circle Cross)</td>
+                    <td><code>pch = 13</code></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Triangle: Vertex up inside Square</td>
+                    <td><code>pch = 14</code></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Filled/Shaded Square</td>
+                    <td><code>pch = 15</code></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Filled/Shaded Circle</td>
+                    <td><code>pch = 16</code></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Filled/Shaded Triangle: Vertex up</td>
+                    <td><code>pch = 17</code></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Filled/Shaded Diamond</td>
+                    <td><code>pch = 18</code></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Filled/Shaded Circle</td>
+                    <td><code>pch = 19</code></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Small Shaded Circle</td>
+                    <td><code>pch = 20</code></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Circle</td>
+                    <td><code>pch = 21</code></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Square</td>
+                    <td><code>pch = 22</code></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Diamond</td>
+                    <td><code>pch = 23</code></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Triangle: Vertex up</td>
+                    <td><code>pch = 24</code></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Triangle: Vertex down</td>
+                    <td><code>pch = 25</code></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End Plot Characters -->
+
+    <br><br><br><br>
+    <!-- Top of the Main Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Main</a>
+    </div>
+    <br><br>
+
+
+
+    <!-- END PAGE CONTENT -->
+
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <!--
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+            -->
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2023&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2023&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+
+    <script src="scripts/messages11.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

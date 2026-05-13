@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Inferential Statistics: Proportion</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Chukwuemeka gives all the credit to our LORD GOD and Anointed Savior, JESUS CHRIST. We are experts in estimating population proportion.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, statistics, descriptive statistics, inferential statistics, sample, population, 
+              sample proportion, population proportion, level of significance, confidence levels, sample mean, 
+              population mean, sample variance, population variance, sample standard deviation, 
+              population standard deviation, critical values, student t distribution, normal distribution, 
+              chi -square distribution">
+
+    <link href="styles/inferentialStatistics.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-24 bisque">
+        <h1>Solved Examples: Inferential Statistics: Proportion</h1>
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+    <div class="w3-container">
+        <!-- Image in top left corner --
+        <a href="https://statistical-reasoning.appspot.com/" title="Samuel Dominic Chukwuemeka">
+            <img src="images/ChukwuemekaSamuelDominic.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                class="image">
+        </a>
+    -->
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...60 questions for 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately. <br><br>
+
+        Solve all questions. <br>
+        Show all work. <br><br>
+
+        <u>Please Note:</u> Do not round intermediate calculations. <br>
+        If you must round intermediate calculations, round them to at least four decimal places more than the number of
+        decimals required for the final answer. <br>
+        For example; if the final answer requires rounding to 3 decimal places, then round your intermediate
+        calculations to at least 7 decimal places.
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) What does “70% confidence” means in a 70% confidence interval?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP1')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP1">
+                    <br>
+                    70% confidence in a 70% confidence interval means that if 100 different confidence intervals are
+                    constructed, each based on a different sample of size, <i>n</i> from the same population, <i>N</i>;
+                    then it is expected that 70 of the intervals will include the parameter.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>ACT</b> A team of biologists tagged and released 90 deer in a forest. <br>
+                From the same forest 2 weeks later, the biologists collected a random sample of 30 deer, 5 of
+                which were tagged. <br>
+                Let <i>p</i> be the proportion of deer in this forest that are tagged. <br>
+                What is <i>p&#770;</i>, the sample proportion, for this sample? <br><br>
+                $
+                A.\;\; \dfrac{1}{24} \\[5ex]
+                B.\;\; \dfrac{1}{18} \\[5ex]
+                C.\;\; \dfrac{1}{6} \\[5ex]
+                D.\;\; \dfrac{1}{5} \\[5ex]
+                E.\;\; \dfrac{1}{3} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionISP2')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP2">
+                    <br>
+                    $
+                    x = 5 \\[3ex]
+                    n = 30 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} \\[5ex]
+                    \hat{p} = \dfrac{5}{30} \\[5ex]
+                    \hat{p} = \dfrac{1}{6}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Naija Polls asked 411 randomly selected adults whether they were thriving, struggling, or
+                suffering. <br>
+                294 Nigerians said they were suffering. Round to three decimals as needed. <br>
+                (a.) Calculate the sample proportion of those who said they were suffering. <br>
+                (b.) Calculate the 95% confidence interval for the population proportion that said they were suffering.
+                <br>
+                Interpret your result.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP3')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP3">
+                    <br>
+                    $
+                    x = 294 \\[3ex]
+                    n = 411 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{294}{411} = 0.7153284672 \\[5ex]
+                    \hat{q} = 1 - \hat{p} \\[3ex]
+                    \hat{q} = 1 - 0.715328 = 0.2846715328 \\[3ex]
+                    For\;\;95\%\;CL,\;\; z_{\dfrac{\alpha}{2}} = 1.96 \\[5ex]
+                    E = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{\hat{p} * \hat{q}}{n}} \\[5ex]
+                    E = 1.96 * \sqrt{\dfrac{0.7153284672(0.2846715328)}{411}} \\[5ex]
+                    E = 0.0436274606 \\[3ex]
+                    \hat{p} - E = 0.7153284672 - 0.0436274606 = 0.6717010066 \approx 0.672 \\[3ex]
+                    \hat{p} + E = 0.7153284672 + 0.0436274606 = 0.7589559278 \approx 0.759 \\[3ex]
+                    0.672 \lt p \lt 0.759 \\[3ex]
+                    $
+                    Naija Polls is 95% confident that the population percentage of Nigerians that are suffering is
+                    between 67.2% and 75.9%.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Given: Lower bound = 0.229; Upper bound = 0.691; sample size = 1000 <br>
+                Determine: <br>
+                (a.) the point estimate of the population proportion <br>
+                (b.) the margin of error for the confidence interval and <br>
+                (c.) the number of individuals in the sample with the specified characteristic for the sample size. <br>
+                Round to the nearest thousandth as needed.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP4')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP4">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    LCL = 0.229 \\[3ex]
+                    UCL = 0.691 \\[3ex]
+                    n = 1000 \\[3ex]
+                    \hat{p} = \dfrac{UCL + LCL}{2} \\[5ex]
+                    \hat{p} = \dfrac{0.691 + 0.229}{2} = \dfrac{0.92}{2} = 0.46 \\[5ex]
+                    (b.) \\[3ex]
+                    E = \dfrac{UCL - LCL}{2} \\[5ex]
+                    E = \dfrac{0.691 - 0.229}{2} = \dfrac{0.462}{2} = 0.231 \\[5ex]
+                    (c.) \\[3ex]
+                    x = \hat{p} * n \\[3ex]
+                    x = 0.46 * 1000 \\[3ex]
+                    x = 460
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) By how many times does the sample size have to be increased to decrease the margin of error by a
+                factor of $\dfrac{1}{5}$
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP5')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP5">
+                    <br>
+                    $
+                    n = \dfrac{0.25 * \left(z_{\dfrac{\alpha}{2}}\right)^2}{E^2} \\[7ex]
+                    n \propto \dfrac{1}{E^2} \\[5ex]
+                    n = \dfrac{k}{E^2} ...k\;\;is\;\;the\;\;constant\;\;of\;\;proportion \\[5ex]
+                    k = n * E^2 \\[3ex]
+                    \implies \\[3ex]
+                    k = n_1 * E_1^2 = n_2 * E_2^2 \\[3ex]
+                    \implies \\[3ex]
+                    n_1 * E_1^2 = n_2 * E_2^2 \\[3ex]
+                    n_2 * E_2^2 = n_1 * E_1^2 \\[3ex]
+                    But\;\;E_2 = \dfrac{E_1}{5} \\[5ex]
+                    E_2^2 = \left(\dfrac{E_1}{5}\right)^2 \\[5ex]
+                    E_2^2 = \dfrac{E_1^2}{5^2} \\[5ex]
+                    E_2^2 = \dfrac{E_1^2}{25} \\[5ex]
+                    What\;\;is\;\;n_2\;\;in\;\;terms;\;of\;\;n_1? \\[3ex]
+                    \implies \\[3ex]
+                    n_2 * \dfrac{E_1^2}{25} = n_1 * E_1^2 \\[5ex]
+                    n_2 = n_1 * E_1^2 * \dfrac{25}{E_1^2} \\[5ex]
+                    n_2 = n_1 * 25 \\[3ex]
+                    n_2 = 25 * n_1 \\[3ex]
+                    $
+                    The sample size has to be increased by a factor of 25 to decrease the margin of error by a factor of
+                    $\dfrac{1}{5}$
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) A survey of 2500 randomly selected Nigerians from the 36 Nigerian States found that 2325 Nigerians
+                strongly believe their governors and congressmen do not care for the poor. <br>
+                Determine the best point estimate of the population proportion of Nigerians that has such belief. <br>
+                Interpret your result.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP6')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP6">
+                    <br>
+                    $
+                    x = 2325 \\[3ex]
+                    n = 2500 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{2325}{2500} = 0.93 = 93\% \\[5ex]
+                    $
+                    We estimate that 93% of Nigerians strongly believe their governors and congressmen do not care for
+                    the poor.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.) A clinical trial tests a method designed to increase the probability of conceiving a girl. <br>
+                In the study, 380 babies were born. <br>
+                323 of them were girls. <br>
+                (a.) Construct a 99% confidence interval estimate of the percentage of girls born. <br>
+                (b.) Based on your result, does the method appear to be effective?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP7')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP7">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    x = 323 \\[3ex]
+                    n = 380 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} = \dfrac{323}{380} = 0.85 \\[5ex]
+                    \hat{q} = 1 - \hat{p} = 1 - 0.85 = 0.15 \\[3ex]
+                    For\;\;99\%\;CL;\;\; z_{\dfrac{\alpha}{2}} = 2.576 \\[5ex]
+                    E = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{\hat{p} * \hat{q}}{n}} \\[5ex]
+                    E = 2.576 * \sqrt{\dfrac{0.85 * 0.15}{380}} \\[5ex]
+                    E = 0.0471855643 \\[3ex]
+                    \hat{p} - E = 0.85 - 0.0471855643 = 0.8028144357 \approx 0.803 \\[3ex]
+                    \hat{p} + E = 0.85 + 0.0471855643 = 0.8971855643 \approx 0.897 \\[3ex]
+                    0.803 \lt p \lt 0.897 \\[3ex]
+                    (b.) \\[3ex]
+                    \hat{p} - E \gt 0.5 \\[3ex]
+                    \hat{p} + E \gt 0.5 \\[3ex]
+                    $
+                    Hence, the method appear to be effective because the proportion of girls in both cases is greater
+                    than 0.5 (50%).
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) SFP (Samdom For Peace) News conducted a poll of 2001 likely voters just prior to an election. <br>
+                Nahum Joel and Micah Haggai were the candidates. <br>
+                Nahum Joel received 48% of the popular vote while Micah Haggai received 46% of the popular vote. <br>
+                The margin of error was 3%. <br>
+                SFP News reported that the race was too close to call. <br>
+                Using the concept of confidence interval, what does it mean to say the race was too close to call?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP8')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP8">
+                    <br>
+                    It is within the margin of error for Nahum Joel to receive between 45% and 51% of the popular vote.
+                    <br>
+                    It is also within the margin of error for Micah Haggai to receive between 43% and 49% of the popular
+                    vote. <br>
+                    The two confidence intervals overlap. <br>
+                    Hence, the poll cannot predict the winner. The race is too close to call.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <button class="solutions" onclick="solutions('solutionISP9')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP9">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP10')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP10">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.) A research poll showed that 1217 out of 2033 randomly polled people in a country favor the death
+                penalty for anyone convicted of murder. <br>
+                Assume the conditions for the Central Limit Theorem were​ met. <br>
+                Using the technology output below:
+                <br><br>
+                <img src="images/Proportion/Questions/Number11.png" alt="Number 11">
+                <br><br>
+                (a.) Interpret the confidence interval. <br>
+                (b.) Is it plausible to claim that a majority favor the death​ penalty? Explain.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP11')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP11">
+                    <br>
+                    (a.) There is 95% confidence that the population proportion favoring the death penalty is between
+                    0.577315 and 0.619930
+                    <br><br>
+                    (b.) ​Yes, it is a plausible claim because the confidence interval contains values above​ 50%.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) When asked whether marriage is becoming​ obsolete, 759 out of 2034 randomly selected adults who
+                responded to a poll said yes. <br>
+                Assume the conditions for the Central Limit Theorem were​ met. <br>
+                Using the technology output below:
+                <br><br>
+                <img src="images/Proportion/Questions/Number12.png" alt="Number 12">
+                <br><br>
+                (a.) Report a​ 95% confidence interval for the proportion. <br>
+                (b.) Is it plausible to claim that a majority think marriage is becoming​ obsolete?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP12')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP12">
+                    <br>
+                    (a.) With​ 95% confidence, the population proportion of people who think marriage is becoming
+                    obsolete is between 0.35214 and 0.39417
+                    <br><br>
+                    (b.) No, it is not a plausible claim because the confidence interval does not contain values above​
+                    50%.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP13')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP13">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP14')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP14">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.) According to a​ poll, 724 out of 1067 randomly selected adults living in a certain country felt
+                the laws covering the sale of firearms should be stricter. <br>
+                (a.) What is the value of p&#770;​, the sample proportion who favor stricter gun​ laws? <br>
+                (b.) Check the conditions to determine whether the Central Limit Theorem can be used to find a
+                confidence interval. <br>
+                (c.) Find a​ 95% confidence interval for the population proportion who favor stricter gun laws. <br>
+                (d.) Based on your confidence​ interval, do a majority of adults in the country favor stricter gun​
+                laws?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP15')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP15">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    x = 724 \\[3ex]
+                    n = 1067 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} \\[5ex]
+                    \hat{p} = \dfrac{724}{1067} \\[5ex]
+                    \hat{p} = 0.6785379569 \\[3ex]
+                    $
+                    The proportion of the randomly selected adults who favor stricter gun​ laws is 0.6785379569 or
+                    67.85379569%
+                    <br><br>
+                    (b.) Verify the conditions for using the Central Limit Theorem to find a confidence interval <br>
+                    (I.) <u>Condition 1:</u> Simple Random Sample. <br>
+                    724 out of 1067 randomly selected adults... verified
+                    <br><br>
+                    (II.) <u>Condition 2:</u> Independent Trials. <br>
+                    We do not know the population size. <br>
+                    The Independent Trials condition can reasonably be assumed to hold.
+                    <br><br>
+                    (III.) <u>Condition 3:</u> Large Sample Size
+                    <br><br>
+                    $
+                    n = 1067 \\[3ex]
+                    \hat{p} = 0.6785379569 \\[3ex]
+                    n * \hat{p} = 1067(0.6785379569) = 724 \ge 10 \\[3ex]
+                    \hat{q} = 1 - \hat{p} \\[3ex]
+                    \hat{q} = 1 - 0.6785379569 \\[3ex]
+                    \hat{q} = 0.3214620431 \\[3ex]
+                    n * \hat{q} = 1067(0.3214620431) = 343 \ge 10 \\[3ex]
+                    $
+                    There are at least ten successes and at least ten failures... verified
+                    <br><br>
+                    $
+                    (c.) \\[3ex]
+                    For\;\;95\%\;CL,\;\; z_{\dfrac{\alpha}{2}} = 1.96 \\[5ex]
+                    E = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{\hat{p} * \hat{q}}{n}} \\[5ex]
+                    E = 1.96 * \sqrt{\dfrac{0.6785379569(0.3214620431)}{1067}} \\[5ex]
+                    E = 0.02802372 \\[3ex]
+                    \hat{p} - E = 0.6785379569 - 0.02802372 = 0.6505142369 \approx 0.651 \gt 0.5 \\[3ex]
+                    \hat{p} + E = 0.6785379569 + 0.02802372 = 0.7065616769 \approx 0.707 \gt 0.5 \\[3ex]
+                    0.651 \lt p \lt 0.707 \\[3ex]
+                    $
+                    The​ 95% confidence interval for the population proportion who favor stricter gun laws is (0.651,
+                    0.707)
+                    <br><br>
+                    (d.) Because the confidence interval only includes values greater than​ 50%, a majority of adults in
+                    the country favor stricter gun​ laws.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP16')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP16">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <button class="solutions" onclick="solutions('solutionISP17')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP17">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP18')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP18">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) Please review the poll information from
+                <a href="https://www.peoplespunditdaily.com/polls/2017/08/28/arizona-senate-kelli-ward-leads-jeff-flake-25-points/"
+                    target="_blank">People’s Pundit Daily</a> <br>
+                and note the three statistics (highlighted):
+                <br><br>
+                <img src="images/Proportion/Questions/Number19a.png" alt="Number 19a"> <br>
+                <img src="images/Proportion/Questions/Number19b.png" alt="Number 19b">
+                <br><br>
+                (a.) Given the margin of error and the confidence level, justify the sample size. <br>
+                (b.) Interpret the result of the poll.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP19')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP19">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    CL = 95\% = 0.95 \\[3ex]
+                    E = \pm 4.4\% = 0.044 \\[3ex]
+                    \alpha = 1 - CL \\[3ex]
+                    \alpha = 1 - 0.95 = 0.05 \\[3ex]
+                    z_{\dfrac{\alpha}{2}} = 1.96 \\[5ex]
+                    n = \dfrac{0.25 * \left(z_{\dfrac{\alpha}{2}}\right)^2}{E^2} \\[7ex]
+                    n = \dfrac{0.25 * 1.96^2}{0.044^2} \\[5ex]
+                    n = \dfrac{0.9604}{0.001936} \\[5ex]
+                    n = 496.0743802 \\[3ex]
+                    n \approx 497...round\;\;up\;\;human\;\;beings \\[3ex]
+                    $
+                    The <u>minimum</u> sample size required, for a margin or error of &pm; 4.4 percentage points and a
+                    95% confidence level is 497 voters. <br>
+                    500 voters were used. So, it is in order because 500 is greater than 497.
+                    <br><br>
+                    (b.) Dr. Kelli Ward holds a big 47% to 21% lead over incumbent Sen. Jeff Flake for the U.S. Senate
+                    in a new poll of the Republican primary voters in Arizona. <br>
+                    The survey was conducted August 26-27. The margin of error, with a 95% confidence interval, was
+                    4.4%. <br>
+                    47% &minus; 4.4% = 42.6% <br>
+                    47% &plus; 4.4% = 51.4% <br>
+                    There is 95% confidence that the proportion of Arizona Republican registered primary voters prefer
+                    Dr. Kelli Ward to incumbent Senator Jeff Flake is between 42.6% and 51.4%.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.) Please review the poll information from
+                <a href="https://www.foxnews.com/politics/fox-news-poll-support-for-puerto-rican-statehood-increases-in-wake-of-maria"
+                    target="_blank">Fox News</a> <br>
+                and note the statistics (highlighted):
+                <br><br>
+                <img src="images/Proportion/Questions/Number20.png" alt="Number 20">
+                <br><br>
+                (a.) Fox News did not specify the confidence level (if you read the entire information, they did not;
+                but they should have specified it). <br>
+                Be it as it may, considering the common confidence levels, what confidence level do you think the survey
+                was taken, based on the minimum sample size? <br>
+                (b.) Interpret the result of the poll. <br>
+                (c.) Assume the minimum sample size to be the actual sample size. <br>
+                Determine the confidence level for that size.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP20')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP20">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/InferentialStatistics/Proportion.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <button class="solutions" onclick="solutions('solutionISP21')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP21">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP22')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP22">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+                <button class="solutions" onclick="solutions('solutionISP23')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP23">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+
+                <button class="solutions" onclick="solutions('solutionISP24')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP24">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <button class="solutions" onclick="solutions('solutionISP25')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP25">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP26')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP26">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+
+                <button class="solutions" onclick="solutions('solutionISP27')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP27">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+
+                <button class="solutions" onclick="solutions('solutionISP28')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP28">
+                    <br>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (29.)
+                <button class="solutions" onclick="solutions('solutionISP29')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP29">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (30.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP30')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP30">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (31.)
+                <button class="solutions" onclick="solutions('solutionISP31')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP31">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (32.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP32')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP32">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (33.)
+                <button class="solutions" onclick="solutions('solutionISP33')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP33">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (34.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP34')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP34">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (35.)
+                <button class="solutions" onclick="solutions('solutionISP35')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP35">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (36.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP36')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP36">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (37.)
+                <button class="solutions" onclick="solutions('solutionISP37')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP37">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (38.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP38')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP38">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (39.)
+                <button class="solutions" onclick="solutions('solutionISP39')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP39">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (40.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP40')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP40">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/InferentialStatistics/Proportion.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (41.)
+                <button class="solutions" onclick="solutions('solutionISP41')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP41">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (42.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP42')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP42">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (43.)
+                <button class="solutions" onclick="solutions('solutionISP43')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP43">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (44.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP44')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP44">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (45.)
+                <button class="solutions" onclick="solutions('solutionISP45')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP45">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (46.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP46')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP46">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (47.)
+                <button class="solutions" onclick="solutions('solutionISP47')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP47">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (48.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP48')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP48">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (49.)
+                <button class="solutions" onclick="solutions('solutionISP49')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP49">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (50.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP50')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP50">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (51.)
+                <button class="solutions" onclick="solutions('solutionISP51')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP51">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (52.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP52')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP52">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (53.)
+                <button class="solutions" onclick="solutions('solutionISP53')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP53">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (54.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP54')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP54">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (55.)
+                <button class="solutions" onclick="solutions('solutionISP55')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP55">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (56.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP56')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP56">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (57.)
+                <button class="solutions" onclick="solutions('solutionISP57')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP57">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (58.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP58')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP58">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (59.)
+                <button class="solutions" onclick="solutions('solutionISP59')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP59">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (60.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP60')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP60">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/InferentialStatistics/Proportion.html"
+            class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (61.)
+                <button class="solutions" onclick="solutions('solutionISP61')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP61">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (62.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP62')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP62">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (63.)
+                <button class="solutions" onclick="solutions('solutionISP63')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP63">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (64.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionISP64')">Show/Hide Answer</button>
+                <div class="result" id="solutionISP64">
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2017&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages1.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>

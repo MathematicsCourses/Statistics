@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+    
+    <title>Inferential Statistics</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description" content="Samuel Chukwuemeka gives all the credit to our LORD GOD and Anointed Savior, JESUS CHRIST. We are experts in inferential statistics.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, statistics, descriptive statistics, inferential statistics, sample, population, 
+              sample proportion, population proportion, level of significance, confidence levels, sample mean, 
+              population mean, sample variance, population variance, sample standard deviation, 
+              population standard deviation, critical values, student t distribution, normal distribution, 
+              chi -square distribution">
+
+    <link href="styles/inferential-statistics.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-khaki w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-center">
+            
+            <br>
+            <a href="https://statistical-science.appspot.com/" title="Samuel Dominic Chukwuemeka" target="_blank">
+                <img src="images/samuelchukwuemeka.jpg" alt="Samuel Dominic Chukwuemeka" title="Samuel Dominic Chukwuemeka" style="width:50%;" class="w3-round">
+            </a> <br>
+        
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+
+        <div class="w3-bar-block">
+            <br>
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Home</a>
+            <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Welcome</a>            
+            <a onclick="statisticsStory()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Stories <i class="fa fa-caret-down"></i></a>
+            <div id="story" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#storyPopulationProportion" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i>Population Proportion</a> <br>
+                <a href="#storyPopulationMean" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i>Population Mean</a> <br>
+                <a href="#storyPopulationStandardDeviation" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i>Population Standard Deviation</a> <br>
+            </div>
+            <br>
+            
+            <a onclick="statisticsOverview()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Overview <i class="fa fa-caret-down"></i></a>
+            <div id="overview" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#objectives" class="w3-bar-block w3-button">Objectives</a>
+                <a href="#introduction" class="w3-bar-block w3-button">Introduction</a>
+                <a href="#definitions" class="w3-bar-block w3-button">Definitions</a>
+                <a href="#symbols" class="w3-bar-block w3-button">Symbols</a>
+            </div>
+            <br>
+            <a onclick="statisticsFormulas()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Formulas <i class="fa fa-caret-down"></i></a>
+            <div id="formulas" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#formulasPopulationProportion" class="w3-bar-block w3-button">Population Proportion</a> <br>
+                <a href="#formulasPopulationMean" class="w3-bar-block w3-button">Population Mean</a> <br>
+                <a href="#formulasPopulationVariance" class="w3-bar-block w3-button">Population Variance</a> <br>
+                <a href="#formulasPopulationStandardDeviation" class="w3-bar-block w3-button">Population Standard Deviation</a>
+            </div>
+            <br>
+            <a onclick="statisticsSolvedExamples()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Solved Examples <i class="fa fa-caret-down"></i></a>
+            <div id="examples" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="https://statistical-science.appspot.com/InferentialStatistics/Proportion.html" target="_blank" class="w3-bar-block w3-button">Proportion</a> <br>
+                <a href="https://statistical-science.appspot.com/InferentialStatistics/Mean.html" target="_blank" class="w3-bar-block w3-button">Mean</a> <br>
+                <a href="https://statistical-science.appspot.com/InferentialStatistics/Variance-StandardDeviation.html" target="_blank" class="w3-bar-block w3-button">Variance and Standard Deviation</a>
+            </div>
+            <br>
+            <a onclick="statisticsProjects()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Projects <i class="fa fa-caret-down"></i></a>
+            <div id="projects" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="https://statistical-science.appspot.com/DescriptiveStatistics/Projects.html" target="_blank" class="w3-bar-block w3-button">Descriptive Statistics</a> <br>
+                <a href="https://statistical-science.appspot.com/InferentialStatistics/Projects.html" target="_blank" class="w3-bar-block w3-button">Inferential Statistics</a>
+            </div>
+            <br>
+            <a onclick="statisticsTables()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Tables <i class="fa fa-caret-down"></i></a>
+            <div id="tables" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#tablesNormalDistribution" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Normal Distribution</a> <br>
+                <a href="#tDistribution1" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><b><i>t</i></b> Distribution (First)</a> <br>
+                <a href="#tDistribution2" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><b><i>t</i></b> Distribution (Second)</a> <br>
+                <a href="#tDistribution3" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><b><i>t</i></b> Distribution (Third)</a> <br>
+                <a href="https://statistical-science.appspot.com/HypothesisTesting/hypothesis-testing.html#criticalValuesChiSquare1" target="_blank" class="w3-bar-block w3-button">Critical Values of the Chi-Square Distribution: SFP</a> <br>
+                <a href="https://itl.nist.gov/div898/handbook/eda/section3/eda3674.htm" target="_blank" class="w3-bar-block w3-button">Critical Values of the Chi-Square Distribution: NIST</a> <br>
+                <a href="https://home.ubalt.edu/ntsbarsh/Business-stat/StatistialTables.pdf" target="_blank" class="w3-bar-block w3-button">Statistical Tables</a>
+            </div>
+            <br>
+            <a onclick="statisticsSoftware()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">Software <i class="fa fa-caret-down"></i></a>
+            <div id="software" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#RStudio" class="w3-bar-block w3-button">RStudio</a> <br>
+                <a href="#TI" class="w3-bar-block w3-button">Texas Instruments</a> <br>
+                <a href="#Statcrunch" class="w3-bar-block w3-button">StatCrunch</a> <br>
+                <a href="#SPSS" class="w3-bar-block w3-button">SPSS</a>
+            </div>
+            <br>
+            <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">References</a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay">
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header class="w3-padding-32 w3-khaki">
+            <h1>Inferential Statistics</h1>
+        </header>
+        <!-- End Header -->
+
+        <!-- Welcome -->
+        <div class="w3-container w3-padding-32" id="welcome">
+            
+            <p>
+                <span id="greetings"></span> <br>
+                I greet you this day,
+                <script>document.write(Date() + ".");</script>
+                <br><br>
+                <u>First:</u> Read the Stories (Yes, I tell stories too. &#x263A;) <br>
+                The stories will introduce you to the topic, while making you smile/laugh at the same time. <br>
+                <u>Second:</u> Review the Notes. <br>
+                <u>Third:</u> View the Videos. <br>
+                <u>Fourth:</u> Solve the questions/solved examples. <br>
+                <u>Fifth:</u> Check your solutions with my <b>thoroughly-explained solved examples.</b> <br>
+                <u>Sixth:</u> Check your answers with the calculators.
+                <br><br>
+                I wrote some of the codes for the calculators using Javascript, a client-side scripting language. In
+                addition, I used the AJAX Javascript library. Please use the latest Internet browsers. 
+                The calculators should work.
+                <br><br>
+                Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. Should you
+                need to contact me, please use the form at the bottom of the page. Thank you for visiting.
+                <br><br>
+                <strong>Samuel Chukwuemeka</strong> (Samdom For Peace) 
+                <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+            </p>
+        </div>
+        <!-- End Welcome -->
+
+        <!-- Stories -->
+        <!-- Story: Population Proportion -->
+        <div class="w3-container w3-padding-32" id="storyPopulationProportion">
+            <h2 class="w3-padding-16">Story on Population Proportion</h2>
+            <hr>
+
+            <p>
+                <i>
+                    Please check back later for the story.
+                </i>
+
+
+
+            </p>
+        </div>
+        <!-- End Story: Population Proportion -->
+        <!-- End Stories -->
+
+
+        <!-- Objectives -->
+        <div class="w3-container w3-padding-32" id="objectives">
+            <h2 class="w3-padding-16">Objectives</h2>
+            <hr>
+
+            <p>
+                Students will: <br>
+                (1.) Discuss Inferential Statistics. <br>
+                (2.) Estimate population proportion. <br>
+                (3.) Estimate population mean. <br>
+                (4.) Estimate population variance. <br>
+                (5.) Estimate population standard deviation. <br>
+                (6.) Calculate inferential statistics using an appropriate statistical software package such as R studio. <br>
+                (7.) Draw statistical inferences from a large, realistic data set using a statistical software package such as R studio. <br>
+                (8.) Solve applied problems in inferential statistics. 
+            </p>
+        </div>
+        <!-- End Objectives -->
+
+        <br><br>
+
+        <!-- Introduction -->
+        <div class="w3-container w3-padding-32" id="introduction">
+            <h2 class="w3-padding-16">Introduction</h2>
+            <hr>
+
+            <p>
+                Do you have any favorite News Media? Or do you think any/some of them are fake news? <br>
+                (<i>Lol ...I did not mention any name so I do not get in trouble. &#128522; But anyway, let's get back on track. Please <u>note:</u> I am not endorsing any of them. I am only using them to teach you topics in Statistics.</i>) <br>
+                Let us review some of the results of the surveys/polls conducted by these New Media. No worries, I shall avoid controversial topics.
+                <br><br>
+                <b>1st Example:</b> Using Sample Proportion to Estimate Population Proportion <br>
+                Proportion deals with Fraction which deals with Percentage. <br>
+                <img src="images/Notes/population-proportion-1.png" alt="Population Proportion 1">
+                <br><br>
+                Notice the result of the poll: Poll: <i>Seven in 10 Americans say TikTok is a threat to national security.</i> <br>
+                Keep in mind that 7 in 10 Americans means 70% of Americans. <br>
+                But come on, do you think NPR/PBS NewsHour/Marist Poll surveyed all American adults? <br>
+                If they did not survey all American adults, why would they say 7 in 10 Americans? <br>
+                By the way, this is the data collection process: <br>
+                <img src="images/Notes/population-proportion-2.png" alt="Population Proportion 2">
+                <br><br>
+                So, would it not be better if they specified: 70% of 1327 = 0.7(1327) = 928.9 &approx; 929 adults...the <b>70%</b> here is a <b>statistic</b> (numerical summary of a sample) <br>
+                But they specified 70% of American adults ... the <b>70%</b> here is a <b>parameter</b> (numerical summary of a population) <br>
+                Noticed how NPR/PBS NewsHour/Marist Poll used the results of a sample to <u>infer</u> on a population? <br>
+                Notice they included: the result of the poll, the sample size, and the margin of error. <br>
+                But they did not specify an important measure. We shall find out that measure in the second example. <br>
+                Let us review another example.
+                <br><br>
+                <b>2nd Example:</b> Using Sample Mean to Estimate Population Mean <br>
+                Mean is the same as Average. <br>
+                The sample mean is a useful estimator for the population mean because the sample mean is accurate​ and, with a sufficiently large sample​ size, very precise. <br>
+                The spread of the distribution of the sample mean is much smaller than the spread of the population. <br>
+                As the sample size​ increases, the spread of the sample mean decreases. <br>
+                The accuracy of the sample mean in estimating the population mean is measured by the bias. <br>
+                Bias is the mean distance between the sample statistic and the parameter it is estimating.
+                <br><br>
+                Let us discuss an example on how the sample mean is used to estimate the population mean. <br>
+                <img src="images/Notes/population-mean.png" alt="Population Mean">
+                <br><br>
+                The result of the survey states that: <i>Americans are spending 4 hours, 25 minutes each day on their phones.</i>
+                <br>
+                They only surveyed 1000 Americans. <br>
+                They did not mention: <i>average</i>... but they should have mentioned it. <br>
+                Why would they not write: <i>1000 Americans are spending an average of 4 hours, 25 minutes each day on their phones?</i> <br>
+                But, rather they used the results of a sample of Americans to make a generalization about the population of Americans. <br>
+                Though they missed the wording: <i>average</i> in the conclusion, they did not omit an important measure: the <i>confidence level</i> <br>
+                They included the result of the survey, the sample size, and the margin of error, and the confidence level.
+                <br><br>
+                <i>
+                    Please <u>note</u>: This is a learning process, not an avenue to criticize reports. <br>
+                    Some of you may be journalists and may report polls/surveys. Please make sure you do not omit any necessary measure.
+                </i>
+                <br><br>
+                Welcome to <b>Inferential Statistics.</b> <br>
+                In statistical​ inference, measurements are made on a sample and generalizations are made to a population. <br>
+                It is often difficult to measure the population, hence we measure samples. <br>
+                The results are then generalized to the population.
+            </p>
+        </div>
+        <!-- End Introduction -->
+
+        <br><br>
+
+        <!-- Definitions and Notes -->
+        <div class="w3-container w3-padding-32" id="definitions">
+            <h2 class="w3-padding-16">Definitions and Notes</h2>
+            <hr>
+
+            <div>
+                <b>Inferential Statistics</b> is the science that uses methods that takes the results obtained from a sample, infers it on the population, and measures the reliability of the results. <br>
+                It is also known as <b>Statistical Inference.</b> <br>
+                This includes topics in: Probability, Probability Distributions, Sampling and Sampling Distributions, the Central Limit Theorem, Estimation of Population Parameters, and Hypothesis Testing among others. 
+                <br><br>
+
+                A proportion can be expressed as a percent, decimal, or fraction. <br>
+                We can estimate a population proportion using a: <br>
+                (1.) Point Estimate <br>
+                (2.) Confidence Interval also known as Interval Estimate <br>
+                (3.) Sample Size
+                <br><br>
+
+                <b>Point Estimate</b> <br>
+                A <b>point estimate</b> is the value of a statistic (from a sample) used to estimate the value of a population parameter. <br>
+                It could be sample proportion, sample mean, and sample variance among others. <br>
+                It is a single estimate of the population parameter. <br>
+                The sample proportion is the best point estimate of the population proportion. <br>
+                It is an unbiased estimator of the population proportion. <br>
+                It is a single value. <i>How do you see it? Any concern(s)?</i> <br>
+                <u>How is it used?</u> <br>
+                A moral philosopher wanted to know the percentage of teenagers in the U.S that are virgins. <br>
+                He knew it would be practically impossible to survey all the teenagers in the U.S. <br>
+                So, he used a random sampling method and selected 5 schools in each of the 50 states in the U.S. <br>
+                This implies $5 * 50 = 250$ schools <br>
+                He visited those schools and randomly selected 20 students from each school. <br>
+                This implies $20 * 250 = 5000$ students <br>
+                He surveyed the students and the survey showed that only 7% of them are virgins. <br>
+                He then estimates that 7% of U.S teenagers are virgins.  <i>Is he correct?</i> <br> 
+                Keep in mind that he did not survey all U.S teenagers. Yet, he used Inferential Statistics to infer on that population from the result of the samples (the students he surveyed).
+                <br><br>
+
+                <b>Confidence Interval (Interval Estimate)</b> <br>
+                A <b>confidence interval</b> is an interval of values of a statistic (from a sample) used to estimate a population parameter. <br>
+                It is denoted by <i>CI</i> <br>
+                The sample proportion is used to estimate the population proportion but not as a single value (as seen in Point Estimate). <br>
+                Rather, it is used as an interval (Interval Estimate) with a level of confidence. <br>
+                It is an interval of values. <i>How do you see it? Any concern(s)?</i> <br>
+                Before we construct a confidence interval for estimating a population proportion, we need to make sure all the requirements are satisfied. <i>What are the requirements?</i> 
+                <br><br>
+                <b>Confidence Level (Level of Confidence or Degree of Confidence or Confidence Coefficient)</b> <br>
+                A <b>confidence level</b> is the probability that the confidence interval actually contains the population parameter if a large number of different samples are obtained. <br>
+                It measures the success rate of the method of finding confidence intervals. <br>
+                It is denoted by <i>CL</i> <br>
+                The common confidence levels are: 90% (0.9), 95% (0.95), and 99% (0.99) <br>
+                To create a confidence interval for a population​ proportion, add and subtract the margin of error​ to/from the sample proportion. 
+                <br><br>
+
+                <b>Significance Level (Level of Significance): 1st Definition</b> <br>
+                A <b>significance level</b> is the probability that the confidence interval does not contain the population parameter. <br>
+                It is denoted by <i>&alpha;</i> <br>
+                Based on our knowledge of Probability: <br>
+                CL + &alpha; = 1 <br>
+                &Implies; CL = 1 &minus; &alpha; <br>
+                The common significance levels are: 10% (0.1), 5% (0.05), and 1% (0.09)
+                <br><br>
+                <b>Margin of Error (Maximum Error of Estimation or Error Bound)</b> <br>
+                The <b>margin of error</b> is the maximum likely difference between the point estimate and the actual value of the population parameter. <br>
+                It tells how far the estimate is from the population value. <br>
+                It is denoted by <i>E</i>
+                <br><br>
+
+                <b>Critical Values</b> <br>
+                A <b>critical value</b> is a standard score used to separate sample statistics that are likely to occur from those that are not likely to occur. <br>
+                <u>NOTE:</u> Usually, critical values are rounded to two decimal places. <br>
+                If the number of decimal places is not specified, please use two decimal places. <br>
+                However, if there is an equal distance between the probability for which you need to find the critical value (as demonstrated using the Interpolation Method), then round the critical value to three decimal places. <br>
+                Does it make sense? This should only take place if the number of decimal places is not specified.
+                <br><br>
+                If the population standard deviation is given, use the z distribution (normal distribution table). <br>
+                If the sample standard deviation is given, use the t distribution (<i>t</i> distribution table). 
+                <br><br>
+
+                <b>Properties of the <i>z</i> distribution</b> <br>
+                (1.) It is a bell-shaped curve. <br><br>
+                (2.) The total area under the normal curve is 100% <br>
+                or <br>
+                The total probability under the normal curve is 1 <br>
+                or <br>
+                The total relative frequency under the normal curve is 100% or 1 <br><br>
+                (3.) It is symmetric about the mean. <br>
+                The mean is the center of the normal distribution. <br>
+                Being symmetric about the mean implies that the area under the curve to the left of the mean is equal to the area under the curve to 
+                the right of the mean. <br><br>
+                (4.) The mean, median, and mode of a normal curve is the same. <br>
+                Because of this property, it has a single highest peak that occurs at the mean: $x = \mu$ <br>
+                In other words, the highest peak of the normal curve occurs where the value of the variable is equal to the mean of the 
+                distribution. <br><br>
+                (5.) As the variable increases without bounds (gets larger and larger), or decreases without bounds (gets smaller and smaller); the 
+                normal curve approaches but never touches the horizontal axis. <br><br>
+                (6.) The Empirical Rule: <br>
+                (a.) About 68% of the curve lie within 1 standard deviation from the mean <br>
+                In other words, about 68% of the curve lie between $\mu - 1\sigma$ and $\mu + 1\sigma$ 
+                <br><br>
+                (b.) About 95% of the curve lie within 2 standard deviations from the mean <br>
+                In other words, about 95% of the curve lie between $\mu - 2\sigma$ and $\mu + 2\sigma$ 
+                <br><br>
+                (c.) About 99.7% of the curve lie within 3 standard deviations from the mean <br>
+                In other words, about 99.7% of the curve lie between $\mu - 3\sigma$ and $\mu + 3\sigma$ 
+                <br><br>
+                (7.) The most widely used probability model for continuous numerical variables is the normal distribution.
+                <br><br>
+                (8.) The normal probability model is unimodal and symmetric, so if a dataset is suspected to be unimodal and symmetric, the normal probability model is a good model for 
+                such dataset.
+                <br><br>
+                (9.) The exact shape of the normal distribution is determined by the mean and the standard deviation. 
+                <br><br>
+                (10.) The normal curve has inflection points at one standard deviation from the mean: between $\mu - 1\sigma$ and $\mu + 1\sigma$ <br>
+                This implies that the inflection points are found: one standard deviation below the mean and one standard deviation above the mean. 
+                <br><br>
+
+                <b>Properties of the <i>t</i> distribution</b> <br>
+                (1.) The <i>t</i> distribution is different for different sample sizes.
+                <br><br>
+                (2.) It has the same general symmetric bell shape as the <i>z</i> distribution but has more variability. <br>
+                It has wider distributions as expected with small samples.
+                <br><br>
+                (3.) The mean of the <i>t</i> distribution is 0.
+                <br><br>
+                (4.) The standard deviation of the <i>t</i> distribution varies with the sample size, but it is greater than 1.
+                <br><br>
+                (5.) As the sample size gets larger, the <i>t</i> distribution gets closer to the z distribution.
+                <br><br>
+
+                <b>Degrees of Freedom</b> <br>
+                The <b>degrees of freedom</b> of a sample data is defined as the number of sample values that are free to vary without violating any restrictions imposed on all the data values. <br>
+                It is denoted by <i>df</i> <br>
+                For example: say that we want the weights of 10 students to be restricted to 1600 pounds. <br>
+                This means that we can freely assign weights to any 9 students (provided we meet the restriction). <br>
+                But, we have to compute the weight of the 10th student (to still be within the restriction). <br>
+                So, our degrees of freedom in this case would be (10 &minus; 1 = 9) values. 
+                <br><br>
+                <b>Rare Event Rule for Inferential Statistics</b> <br>
+                If we assume that the probability of an event is less than 5%, then that assumption is probably not correct. 
+                <br><br>
+
+                <b>Notable Notes Regarding Inferential Statistics:</b> <br>
+                <i>(Explain these using formulas and practical situations. Students should understand it, rather than memorize it. You may use mnemonics for some students.)</i>
+                <br><br>
+                (1.) A statistical procedure is said to be robust if it works reasonable well even when one of its assumptions is violated. 
+                <br><br>
+                (2.) The confidence interval methods for the mean are robust against departures from normality. <br>
+                This means that the methods work well with distributions that aren’t normal, if departures from normality are not extreme. 
+                <br><br>
+                (3.) As the sample size increases, the standard error decreases. 
+                <br><br>
+                (4.) As the sample size decreases, the standard error increases. 
+                <br><br>
+                (5.) As the sample size increases, the margin of error decreases. <br>
+                This is because the difference between the statistic and the parameter decreases. <br>
+                This is a consequence of the Law of Large Numbers. 
+                <br><br>
+                (6.) As the confidence level increases, the margin of error increases. <br>
+                This is because the larger the expected proportion of intervals that will contain the parameter, the larger the margin of error.
+                <br><br>
+                (7.) As the sample size increases, the margin of error decreases; and hence the accuracy increases.
+                <br><br>
+                (8.) As the sample size decreases, the margin of error increases; and hence the accuracy decreases.
+                <br><br>
+                (9.) As the sample size increases, the confidence interval is narrower.
+                <br><br>
+                (10.) As the sample size decreases, the confidence interval is wider.
+                <br><br>
+                (11.) As the standard deviation increases, the confidence interval is wider.
+                <br><br>
+                (12.) As the standard deviation decreases, the confidence interval is narrower.
+                <br><br>
+                (13.) As the level of confidence increases, the critical <i>t</i> value increase; thus, the margin of error increases, and the confidence interval is wider.
+                <br><br>
+                (14.) As the level of confidence decreases, the critical <i>t</i> value decreases; thus, the margin of error decreases, and the confidence interval is narrower.
+                <br><br>
+                (15.) Increasing the sample size while keeping the same confidence level decreases the margin of error; and hence increases the accuracy of estimating a population mean by a sample mean.
+                <br><br>
+                (16.) Decreasing the confidence level while keeping the same sample size decreases the margin of error; and hence increases the accuracy of estimating a population mean by a sample mean.
+                <br><br>
+                (17.) Before using either the <i>z</i> distribution or the <i>t</i> distribution, please make sure the population is normally distributed, or the sample size is greater than 30.
+                <br><br>
+                (18.)
+                <br><br>
+
+
+
+                <b>Requirements for Constructing Confidence Interval used to Estimate Population Proportion</b> <br>
+                (1.) The sample must be a simple random sample. <br>
+                (2.) The procedure has a fixed number of trials. <br>
+                (3.) The trials are independent. <br>
+                (4.) There are two categories of outcome for each trial: a success or a failure. <br>
+                (5.) The procedure must have <u>at least</u> 5 successes and 5 failures. <br>
+                In other words: <i>np</i> &ge; 5 <u>and</u> <i>nq</i> &ge; 5 <br>
+                Alternatively, we can write it as: <i>npq</i> &ge; 10 
+                <br><br>
+                (6.) The probability of success in any one trial is the same as the probability of success in all trials. <br>
+                Similarly, the probability of failure in any one trial is the same as the probability of failure in all trials.
+                <br><br>
+                <b>Requirements for Constructing Confidence Interval used to Estimate Population Mean</b> <br>
+                (1.) The sample must be a simple random sample. <br>
+                (2.) The population is normally distributed or the sample size is greater than 30. <br>
+                (3.) The sample size must be less than 5% of the population size. <br>
+                Alternatively, the population size must not be larger than 10 times the sample size.
+                <br><br>
+
+
+
+
+            </div>
+        </div>
+        <!-- End Definitions and Notes -->
+
+        <!-- Symbols -->
+        <div class="w3-container w3-padding-32" id="symbols">
+            <h2 class="w3-padding-16">Symbols</h2>
+            <hr>
+
+            <ul class="w3-ul white">
+                <li class="yellow w3-hover-black w3-xlarge w3-padding-16 w3-center">
+                    <h2>Symbols and Meanings</h2>
+                </li>
+                <li>CL = Confidence Level <u>or</u> Level of Confidence <u>or</u> Confidence Coefficient</li>
+                <li>CI = Confidence Interval <u>or</u> Interval Estimate</li>
+                <li>LCL = Lower confidence limit</li>
+                <li>UCL = Upper confidence limit</li>
+                <li>LCI = Length of confidence interval</li>
+                <li>&alpha; = Level of Significance <u>or</u> Significance Level</li>
+                <li>$z_{\dfrac{\alpha}{2}}$ = critical <i>z</i> value separating an area or probability of $\dfrac{\alpha}{2}$ in the right tail.</li>
+                <li>$-z_{\dfrac{\alpha}{2}}$ = critical <i>z</i> value separating an area or probability of $\dfrac{\alpha}{2}$ in the left tail.</li>
+                <li>$z_{\alpha}$ = critical <i>z</i> value separating an area or probability of &alpha; in the right tail.</li>
+                <li>$-z_{\alpha}$ = critical <i>z</i> value separating an area or probability of &alpha; in the left tail.</li>
+                <li>p&#770; = sample proportion <u>or</u> estimated proportion of successes <u>or</u> point estimate of the population proportion</li>
+                <li>q&#770; = estimated proportion of failures</li>
+                <li><i>p</i> = population proportion</li>
+                <li>SE = standard error</li>
+                <li>SE<sub>est</sub> = estimated standard error</li>
+                <li><i>x</i> = number of individuals in the sample with the specified characteristic</li>
+                <li><i>n</i> = sample size <u>or</u> minimum sample size</li>
+                <li><i>N</i> = population size</li>
+                <li>E = margin or error <u>or</u> maximum error of estimation <u>or</u> error bound</li>
+                <li>$\bar{x}$ = sample mean <u>or</u> point estimate of the population mean</li>
+                <li>&mu; = population mean</li>
+                <li><i>s</i> = sample standard deviation</li>
+                <li><i>s</i>² = sample variance</li>
+                <li>&sigma; = population standard deviation</li>
+                <li>&sigma;² = population variance</li>
+                <li>$t_{\dfrac{\alpha}{2}}$ = critical <i>t</i> value separating an area or probability of $\dfrac{\alpha}{2}$ in the right tail (use for one-tailed tests)</li>
+                <li>$t_{\alpha}$ = critical <i>t</i> value separating an area or probability of &alpha; in the right tail (use for two-tailed tests)</li>
+                <li><i>df</i> = degrees of freedom</li>
+                <li>&Chi;² = Chi-Square distribution</li>
+                <li>&Chi;²<sub>R</sub> = right-tailed (upper-tail) critical values of the Chi-Square distribution</li>
+                <li>&Chi;²<sub>L</sub> = left-tailed (lower-tail) critical values of the Chi-Square distribution</li>
+                <li>CI for Population Proportion in plus-minus notation = p&#770; &pm; E</li>
+                <li>CI for Population Proportion in interval notation = (p&#770; &minus; E, p&#770; + E)</li>
+                <li>CI for Population Proportion in trilinear inequality = p&#770; &minus; E &lt; <i>p</i> &lt; p&#770; + E</li>
+                <li>CI for Population Mean in plus-minus notation = x&#772; &pm; E</li>
+                <li>CI for Population Mean in interval notation = (x&#772; &minus; E, x&#772; + E)</li>
+                <li>CI for Population Mean in trilinear inequality = x&#772; &minus; E &lt; <i>p</i> &lt; x&#772; + E</li>
+                <li>min = minimum data value</li>
+                <li>max = maximum data value</li>
+                <li>R = range (we shall use it typically for the Range Rule of Thumb)</li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- End Symbols -->
+
+        
+        <!-- Formulas: Inferential Statistics: Population Proportion -->
+        <div class="w3-container w3-padding-32" id="formulasPopulationProportion">
+            <h2 class="cyan w3-hover-black w3-padding-32 w3-center">Formulas: Inferential Statistics: Population Proportion</h2>
+            <hr>
+
+            <h3>Population Proportion</h3>
+            <p>
+                $
+                (1.)\;\; \alpha = 1 - CL ...in\;\;decimal \\[5ex]
+                (2.)\:\: \hat{p} = \dfrac{x}{n} \\[5ex]
+                (3.)\:\: \hat{p} + \hat{q} = 1 \\[5ex]
+                (4.)\;\; \hat{p} = \dfrac{UCL + LCL}{2} \\[5ex]
+                (5.)\;\; E = \dfrac{UCL - LCL}{2} \\[5ex]
+                (6.)\:\: E = z_{\dfrac{\alpha}{2}} * \sqrt{\dfrac{\hat{p} * \hat{q}}{n}} \\[7ex]
+                (7.)\;\; n = \dfrac{0.25 * \left(z_{\dfrac{\alpha}{2}}\right)^2}{E^2} \\[7ex]
+                
+                $
+            </p>
+            <br><br>
+            <table class="w3-center">
+                <tr>
+                    <th style="width: 25%;">Significance Level, &alpha;</th>
+                    <th style="width: 25%;">Confidence Level, CL</th>
+                    <th style="width: 50%;">critical <i>z</i> value separating an area or probability of $\dfrac{\alpha}{2}$ in the right tail, $z_{\dfrac{\alpha}{2}}$</th>
+                </tr>
+                <tr>
+                    <td>1% (0.01)</td>
+                    <td>99% (0.99)</td>
+                    <td>2.575829306443923 &approx; 2.576</td>
+                </tr>
+                <tr>
+                    <td>5% (0.05)</td>
+                    <td>95% (0.95)</td>
+                    <td>1.9599639861189817 &approx; 1.96</td>
+                </tr>
+                <tr>
+                    <td>10% (0.1)</td>
+                    <td>90% (0.9)</td>
+                    <td>1.6448536251332162 &approx; 1.64</td>
+                </tr>
+            </table>
+        </div>
+        <!-- End Formulas: Inferential Statistics: Population Proportion -->
+
+        <br><br>
+
+        <!-- Formulas: Inferential Statistics: Population Mean -->
+        <div class="w3-container w3-padding-32" id="formulasPopulationMean">
+            <h2 class="cyan w3-hover-black w3-padding-32 w3-center">Formulas: Inferential Statistics: Population Mean</h2>
+            <hr>
+
+            <h3>Population Mean</h3>
+            <p>
+                $
+                (1.)\;\; \alpha = 1 - CL ...in\;\;decimal \\[5ex]
+                (2.)\;\; LCI = UCL - LCL \\[5ex]
+                (3.)\:\: \bar{x} = \dfrac{\Sigma x}{n} \\[7ex]
+                (4.)\:\: \bar{x} = \dfrac{UCL + LCL}{2} \\[7ex]
+                (5.)\;\; E = \dfrac{UCL - LCL}{2} \\[7ex]
+                (6.)\;\; LCI = 2E \\[5ex]
+                (7.)\;\; SE = \dfrac{\sigma}{\sqrt{n}} \\[7ex]
+                (8.)\:\: E = \dfrac{\sigma * z_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[10ex]
+                (9.)\;\; E = \dfrac{s * t_{\dfrac{\alpha}{2}}}{\sqrt{n}} \\[10ex]
+                (10.)\;\; n = \left(\dfrac{\sigma * z_{\dfrac{\alpha}{2}}}{E}\right)^2 \\[10ex]
+                (11.)\;\; n = \left(\dfrac{s * t_{\dfrac{\alpha}{2}}}{E}\right)^2 \\[10ex]
+                $
+            </p>
+            <br><br>
+            <table class="w3-center">
+                <tr>
+                    <th style="width: 25%;">Significance Level, &alpha;</th>
+                    <th style="width: 25%;">Confidence Level, CL</th>
+                    <th style="width: 50%;">critical <i>z</i> value separating an area or probability of $\dfrac{\alpha}{2}$ in the right tail, $z_{\dfrac{\alpha}{2}}$</th>
+                </tr>
+                <tr>
+                    <td>1% (0.01)</td>
+                    <td>99% (0.99)</td>
+                    <td>2.575829306443923 &approx; 2.576</td>
+                </tr>
+                <tr>
+                    <td>5% (0.05)</td>
+                    <td>95% (0.95)</td>
+                    <td>1.9599639861189817 &approx; 1.96</td>
+                </tr>
+                <tr>
+                    <td>10% (0.1)</td>
+                    <td>90% (0.9)</td>
+                    <td>1.6448536251332162 &approx; 1.64</td>
+                </tr>
+            </table>
+        </div>
+        <!-- End Formulas: Inferential Statistics: Population Mean -->
+
+        <!-- Normal Distribution Tables -->
+        <div class="w3-container w3-padding-32" id="tablesNormalDistribution">
+            <h2 class="w3-padding-16">Normal Distribution Tables</h2>
+            <hr>
+
+            <p class="w3-padding-64" id="NormalDistributionTableLeftShaded">
+                <b>Standard Normal Distribution Table (Left-Shaded Area)</b> <br>
+                <img src="images/Tables/normal-distribution-negative-left-shaded-area.png" alt="Normal Distribution Area: Left Shaded: Negative">
+                <img src="images/Tables/normal-distribution-positive-left-shaded-area.png" alt="Normal Distribution Area: Left Shaded: Positive">
+                <object data="images/Tables/Normal-Distribution-Table-left-shaded-area.pdf" width="1300" height="700"></object>
+            </p>
+
+            <br><br>
+
+            <p class="w3-padding-64" id="NormalDistributionTableCenterShaded">
+                <b>Standard Normal Distribution Table (Center-Shaded Area)</b> <br>
+                <img src="images/Tables/normal-distribution-center-shaded-area.png" alt="Normal Distribution Area: Center Shaded"> 
+                <br><br>
+                <img src="images/Tables/normal-distribution-table-center-shaded-area.png" alt="Normal Distribution Table: Center Shaded">
+            </p>
+        </div>
+        <!-- End Normal Distribution Tables -->
+
+        <br><br>
+
+        <!-- t Distribution Table 1-->
+        <div class="w3-container w3-padding-32" id="tDistribution1">
+            <h2 class="w3-padding-16">t Distribution Table (First)</h2>
+            <hr>
+            <p>
+                <object data="images/Tables/t-table-1.pdf" width="1300" height="700"></object>
+            </p>
+        </div>
+        <!-- End t Distribution Table 1 -->
+
+        <br><br>
+
+        <!-- t Distribution Table 2-->
+        <div class="w3-container w3-padding-32" id="tDistribution2">
+            <h2 class="w3-padding-16">t Distribution Table (Second)</h2>
+            <hr>
+            <p>
+                <object data="images/Tables/t-table-2.pdf" width="1300" height="700"></object>
+            </p>
+        </div>
+        <!-- End t Distribution Table 2 -->
+
+        <br><br>
+
+        <!-- t Distribution Table 3-->
+        <div class="w3-container w3-padding-32" id="tDistribution3">
+            <h2 class="w3-padding-16">t Distribution Table (Third)</h2>
+            <hr>
+            <p>
+                <object data="images/Tables/t-table-3.pdf" width="1300" height="700"></object>
+            </p>
+        </div>
+        <!-- End t Distribution Table 3 -->
+
+        <br><br>
+
+        <!-- Texas Instruments (TI) -->
+        <div class="w3-container w3-padding-32" id="TI">
+            <h2 class="w3-padding-16">Texas Instruments (TI) Calculators</h2>
+            <hr>
+            <h4>Critical <i>t</i>-value</h4>
+            <p>
+                By default, the area is to the left. <br>
+                In other words, the result from the TI-calculator shown below gives the critical <i>t</i>-value such that the area is in the left tail. <br>
+                The value given by the calculator is a negative value by default. <br>
+                Based on the diagrams in <b>t Distribution Table (Third)</b> table: <br>
+                To determine the critical <i>t</i>-value if the: <br>
+                (1.) Area is to the right, subtract the area in the left tail from 1 (because the total area under the curve is 1) <br>
+                Then, use the value.
+                <br><br>
+                (2.) Area is in both tails, use both the value (negative value) and the absolute value (positive value). 
+                <br><br>
+                <img src="images/Software/criticalT.png" alt="Critical T">
+            </p>
+            
+
+
+
+        </div>
+        <!-- End Texas Instruments (TI) -->
+
+        <br><br>
+
+        <br><br>
+
+        <!-- References -->
+        <div class="w3-container w3-padding-32" id="references">
+            <h2 class="w3-padding-16">References</h2>
+            <hr>
+            <p>
+                Chukwuemeka, Samuel Dominic (2023). <i>Inferential Statistics.</i>
+                Retrieved from <a href="https://statistical-science.appspot.com/" target="_blank">https://statistical-science.appspot.com/</a>
+                <br><br>
+                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.).
+                New Jersey: Wiley
+                <br><br>
+                Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through data</i> (3rd ed.). Pearson.
+                <br><br>
+                Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
+                <br><br>
+                Margin of Error and Level of Confidence. (n.d.). www.math.lsu.edu. https://www.math.lsu.edu/~madden/M1100/week12goals.html
+                <br><br>
+                OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
+                Retrieved from <a href="https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12" target="_blank">https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12</a>
+                <br><br>
+                Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed decisions using data with an introduction to mathematics of finance</i>
+                (2nd custom ed.). Boston: Pearson Learning Solutions.
+                <br><br>
+                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i>
+                (5th ed.). Boston: Pearson
+                <br><br>
+                Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                <br><br>
+                Weiss, Neil A. (2015). <i>Elementary Statistics</i> (9th ed.). Boston: Pearson
+                <br><br>
+                CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/
+                <br><br>
+                Critical Values of the Chi-Square Distribution: https://itl.nist.gov/div898/handbook/eda/section3/eda3674.htm
+                <br><br>
+                CMAT Question Papers CMAT Previous Year Question Bank - Careerindia. (n.d.).
+                Https://Www.Careerindia.Com. Retrieved May 30, 2020, from
+                https://www.careerindia.com/entrance-exam/cmat-question-papers-e23.html
+                <br><br>
+                CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                <br><br>
+                Datasets - Data.gov. (2012). Data.Gov. https://catalog.data.gov/dataset
+                <br><br>
+                DLAP Website. (n.d.). Curriculum.gov.mt.
+                https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+                <br><br>
+                Fox News Poll: Support for Puerto Rican statehood increases in wake of Maria. (2017, October 26). Fox News. http://www.foxnews.com/politics/2017/10/26/fox-news-poll-support-for-puerto-rican-statehood-increases-in-wake-maria.html
+                <br><br>
+                Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners.
+                https://www.vastlearners.com/free-jamb-past-questions/
+                <br><br>
+                Geogebra. (2019). Graphing Calculator - GeoGebra. Geogebra.org.
+                https://www.geogebra.org/graphing?lang=en
+                <br><br>
+                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                <br><br>
+                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                <br><br>
+                Inc, G. (2016, February 4). Americans’ Big Debt Burden Growing, Not Evenly Distributed. Gallup.com. http://news.gallup.com/businessjournal/188984/americans-big-debt-burden-growing-not-evenly-distributed.aspx
+                <br><br>
+                JAMB Past Questions, WAEC, NECO, Post UTME Past Questions. (n.d.). Nigerian Scholars. Retrieved February
+                12, 2022, from https://nigerianscholars.com/past-questions/
+                <br><br>
+                KCSE Past Papers by Subject with Answers-Marking Schemes. (n.d.). ATIKA SCHOOL.
+                Retrieved June 16, 2022, from https://www.atikaschool.org/kcsepastpapersbysubject
+                <br><br>
+                Myschool e-Learning Centre - It's Time to Study! - Myschool. (n.d.). https://myschool.ng/classroom
+                <br><br>
+                Netrimedia. (2022, May 2). ICSE 10th Board Exam Previous Papers- Last 10 Years. Education Observer.
+                https://www.educationobserver.com/icse-class10-previous-papers/
+                <br><br>
+                Normal Distribution Table (Left Shaded Area): https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf
+                <br><br>
+                Normal Distribution Table (Center Shaded Area): https://itl.nist.gov/div898/handbook/eda/section3/eda3671.htm
+                <br><br>
+                NSC Examinations. (n.d.). www.education.gov.za.
+                https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                <br><br>
+                School Curriculum and Standards Authority (SCSA): K-12. Past ATAR Course Examinations. Retrieved
+                December 10, 2021,
+                from https://senior-secondary.scsa.wa.edu.au/further-resources/past-atar-course-exams
+                <br><br>
+                Staff, P. E. (2017, August 28). Arizona Senate Poll: Kelli Ward Leads Jeff Flake By More than 25 Points. People’s Pundit Daily. https://www.peoplespunditdaily.com/polls/2017/08/28/arizona-senate-kelli-ward-leads-jeff-flake-25-points/
+                <br><br>
+                Statistial Tables: https://home.ubalt.edu/ntsbarsh/Business-stat/StatistialTables.pdf
+                <br><br>
+                Struyk, R. (2017, October 18). CNN poll: Most Americans oppose Trump’s tax reform plan | CNN Politics. CNN. http://www.cnn.com/2017/10/18/politics/poll-trump-tax-reform/index.html
+                <br><br>
+                <b><i>t</i></b> Distribution Table: https://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf
+                <br><br>
+                <b><i>t</i></b> Distribution Table: https://www.usu.edu/math/cfairbourn/Stat2300/t-table.pdf
+                <br><br>
+                51 Real SAT PDFs and List of 89 Real ACTs (Free) : McElroy Tutoring. (n.d.).
+                Mcelroytutoring.com. Retrieved December 12, 2022,
+                from https://mcelroytutoring.com/lower.php?url=44-official-sat-pdfs-and-82-official-act-pdf-practice-tests-free
+            </p>
+        </div>
+        <!-- End References -->
+
+        <!-- Footer -->
+        <footer class="w3-center w3-khaki w3-padding-16">
+            <p>&copy; 2019 &nbsp; Samdom4Peace Designs.</p>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End page content -->
+
+    <script src="scripts/messages1.js"></script>
+    <script src="scripts/inferential-statistics.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Descriptive Statistics</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in descriptive statistics.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
+              mathematics, statistics, descriptive statistics, mean, median, mode, midrange, range, variance, 
+              standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
+              standard error, measures of center, summation, sample size, population size, measures of central tendency, 
+              measures of dispersion, measures of spread, measures of variation, measures of variability, 
+              measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
+              measures of relative standing, boxplots">
+
+    <link href="styles/descriptive-statistics.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-cyan w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+
+        <div class="w3-container w3-center">
+            <img src="images/chukwuemekasamueldominic.png" alt="Samuel Dominic Chukwuemeka"
+                title="Samuel Dominic Chukwuemeka" style="width:50%;" class="w3-round">
+            <!--
+            <a href="https://www.chukwuemekasamuel.com" title="Samuel Dominic Chukwuemeka" target="_blank">
+                <img src="images/chukwuemekasamueldominic.png" alt="Samuel Dominic Chukwuemeka" title="Samuel Dominic Chukwuemeka" style="width:50%;" class="w3-round">
+            </a> 
+        -->
+            <br>
+
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Home</a>
+            <!--<a href="#quotes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Quotes</a>-->
+            <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Welcome</a>
+            <!--<a href="https://www.youtube.com/playlist?list=PLjyyswMG9g9CtQbA_HZhNLyNBfiazlJr5&feature=edit_ok&disable_polymer=true" target="_blank" class="w3-bar-item w3-button w3-padding">Videos</a>-->
+
+            <a onclick="statisticsStory()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Stories <i class="fa fa-caret-down"></i></a>
+            <div id="story" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#storyMeasuresCenter" class="w3-bar-block w3-button"><i class="fa fa-caret-right"></i>Measures
+                    of Center</a> <br>
+                <a href="#storyMeasuresVariation" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right"></i>Measures of Variation</a> <br>
+                <a href="#storyMeasuresLocation" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right"></i>Measures of Location</a> <br>
+            </div>
+            <br>
+
+            <a onclick="statisticsOverview()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Overview <i class="fa fa-caret-down"></i></a>
+            <div id="overview" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#objectives" class="w3-bar-block w3-button">Objectives</a> <br>
+                <a href="#definitions" class="w3-bar-block w3-button">Definitions</a>
+                <a href="#symbols" class="w3-bar-block w3-button">Symbols</a>
+            </div>
+
+            <a onclick="statisticsMeasuresCenter()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Measures of Center <i class="fa fa-caret-down"></i></a>
+            <div id="center" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#introductionMeasuresCenter" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right"></i>Introduction</a> <br>
+                <a href="#mean" class="w3-bar-block w3-button">Mean</a> <br>
+                <a href="#median" class="w3-bar-block w3-button">Median</a> <br>
+                <a href="#mode" class="w3-bar-block w3-button">Mode</a> <br>
+                <a href="#midrange" class="w3-bar-block w3-button">Midrange</a> <br>
+                <a href="#formulasMeasuresCenter" class="w3-bar-block w3-button">Formulas</a> <br>
+                <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresCenter.html"
+                    target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+            </div>
+
+            <a onclick="statisticsMeasuresVariation()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Measures of Spread <i class="fa fa-caret-down"></i></a>
+            <div id="variation" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#introductionMeasuresSpread" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right"></i>Introduction</a> <br>
+                <a href="#range" class="w3-bar-block w3-button">Range</a> <br>
+                <a href="#variance" class="w3-bar-block w3-button">Variance</a> <br>
+                <a href="#standardDeviation" class="w3-bar-block w3-button">Standard Deviation</a> <br>
+                <a href="#meanDeviation" class="w3-bar-block w3-button">Mean Deviation</a> <br>
+                <a href="#interquartileRange" class="w3-bar-block w3-button">Interquartile Range</a> <br>
+                <a href="#formulasMeasuresSpread" class="w3-bar-block w3-button">Formulas</a> <br>
+                <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresVariation.html"
+                    target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+            </div>
+
+            <a onclick="statisticsMeasuresPosition()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Measures of Position <i class="fa fa-caret-down"></i></a>
+            <div id="position" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#introductionMeasuresPosition" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right"></i>Introduction</a> <br>
+                <a href="#zscores" class="w3-bar-block w3-button"><i>z</i> scores</a> <br>
+                <a href="#quantiles" class="w3-bar-block w3-button">Quantiles</a> <br>
+                <a href="#formulasMeasuresPosition" class="w3-bar-block w3-button">Formulas</a> <br>
+                <a href="https://statistical-science.appspot.com/DescriptiveStatistics/measuresPosition.html"
+                    target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+            </div>
+
+            <a onclick="statisticsMeasuresShape()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Measures of Shape <i class="fa fa-caret-down"></i></a>
+            <div id="shape" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="#introductionSkewnessKurtosis" class="w3-bar-block w3-button"><i
+                        class="fa fa-caret-right"></i>Introduction</a> <br>
+                <a href="#skewness" class="w3-bar-block w3-button">Skewness</a> <br>
+                <a href="#kurtosis" class="w3-bar-block w3-button">Kurtosis</a> <br>
+                <a href="#empiricalRule" class="w3-bar-block w3-button">Empirical Rule</a> <br>
+                <a href="#formulasMeasuresShape" class="w3-bar-block w3-button">Formulas</a> <br>
+                <a href="#tablesNormalDistribution" class="w3-bar-block w3-button">Tables</a> <br>
+                <a href="https://statistical-reasoning.appspot.com/DescriptiveStatistics/measuresShape.html"
+                    target="_blank" class="w3-bar-block w3-button">Solved Examples</a>
+            </div>
+
+            <a href="#boxplots" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Boxplots</a>
+            <a href="#outliers" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Outliers and Fences</a>
+            <a href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptiveStatistics.html"
+                target="_blank" class="w3-bar-item w3-button w3-padding">Solved Examples (All Measures)</a>
+            <a href="Notes/DescriptiveStatisticsFormulas.pdf" target="_blank"
+                class="w3-bar-item w3-button w3-padding">Descriptive Statistics Formulas</a>
+            <a href="https://statistical-science.appspot.com/Statistics-RStudio/DescriptiveStatistics.html"
+                target="_blank" class="w3-bar-item w3-button w3-padding">Using R/RStudio for Descriptive Statistics</a>
+
+            <a onclick="statisticsProjects()" href="javascript:void(0)"
+                class="w3-button w3-bar-block w3-left-align">Projects <i class="fa fa-caret-down"></i></a>
+            <div id="projects" class="w3-bar-block w3-hide w3-padding-large">
+                <a href="https://statistical-reasoning.appspot.com/DescriptiveStatistics/Project.html" target="_blank"
+                    class="w3-bar-block w3-button">Descriptive Statistics</a> <br>
+                <a href="https://statistical-science.appspot.com/InferentialStatistics/Projects.html" target="_blank"
+                    class="w3-bar-block w3-button">Inferential Statistics</a>
+            </div>
+
+            <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">References</a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header class="w3-padding-32 w3-cyan" id="quotes">
+            <h1>Descriptive Statistics</h1>
+        </header>
+        <!-- End Header -->
+
+        <!-- Welcome -->
+        <div class="w3-container w3-padding-32" id="welcome">
+
+            <p>
+                <span id="greetings"></span> <br>
+                I greet you this day,
+                <script>document.write(Date() + ".");</script>
+                <br><br>
+                <u>First:</u> Read the Stories (Yes, I tell stories too. &#x263A;) <br>
+                The stories will introduce you to the topic, while making you smile/laugh at the same time. <br>
+                <u>Second:</u> Review the Notes/eText. <br>
+                <u>Third:</u> View the Videos/Multimedia Resources. <br>
+                <u>Fourth:</u> Solve the questions/solved examples. <br>
+                <u>Fifth:</u> Check your solutions with my <b>thoroughly-explained solved examples.</b>
+                <br><br>
+                I wrote some of the codes for the calculators using JavaScript, a client-side scripting language. In
+                addition, I used the AJAX Javascript library. Please use the latest Internet browsers.
+                The calculators should work.
+                <br><br>
+                Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. Should you
+                need to contact me, please use the form at the bottom of the page. Thank you for visiting.
+                <br><br>
+                <strong>Samuel Chukwuemeka</strong> (Samdom For Peace)
+                <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+            </p>
+        </div>
+        <!-- End Welcome -->
+
+        <!-- Stories -->
+        <!-- Story - Measures of Center -->
+        <div class="w3-container w3-padding-32" id="storyMeasuresCenter">
+            <h2 class="w3-padding-16">Story on the Measures of Center</h2>
+            <hr>
+
+            <p>
+                <i>
+                    It was a Saturday <br>
+                    A family of the Dad, Mom, Daughter, Son <br>
+                    The two children are in middle school. <br>
+                    The Dad and Mom were reviewing the notes of their children <br>
+                    The children were reading books. <br>
+                    All of them were in the living room at home. <br>
+                </i>
+
+                <br><br>
+
+                <b>Dad:</b> Elijah <br>
+                <b>Son:</b> Yes, Dad <br>
+                <b>Dad:</b> Esther <br>
+                <b>Daughter:</b> Yes, Dad <br>
+                <b>Dad:</b> A philanthropist wanted to buy shoes for the motherless and fatherless children at an
+                orphanage. <br>
+                There were $300$ children at the orphanage. <br>
+                He arrived at the orphanage and asked for a shoe size. <br>
+                What shoe size should the director recommend? <br>
+                <b>Son:</b> He asked for just a shoe size... <br>
+                Rather than shoe sizes? <br>
+                <b>Dad:</b> Yes. Do you not think it is cumbersome to ask for the shoe sizes of $300$ children? <br>
+                <b>Son:</b> But, if he really wanted to help, why would he not help "all" of them? <br>
+                Typically, all of them would not have the same shoe size. <br>
+                So, why not just make everyone happy by providing each one with the shoe that fits him/her? <br>
+                <b>Dad:</b> I understand. <br>
+                But, let's assume he just wanted a shoe size. <br>
+                What shoe size should the director give? <br>
+                <b>Son:</b> But, Dad; why would he want to do that? <br>
+                <b>Dad:</b> Answering questions with questions...typical of a <i>Nigerian</i> <br>
+                Just answer my question or say you do not know the answer. <br>
+                Rather than answering it with a question <br>
+                <b>Son:</b> I have your gene, Dad &#x263A; <br>
+                <b>Dad:</b> Whatever... <br>
+                But, I want you to think about it... while I ask your sister <br>
+                Esther, what shoe size would the director recommend? <br>
+                <b>Daughter:</b> I think Elijah made a point. <br>
+                Why would the philanthropist choose to buy shoes of only one size? <br>
+                One size certainly does not fit all.
+
+                <br><br>
+
+                <b>Mom:</b> Listen my children. <br>
+                Your Dad is indirectly asking you about what you learned in school last week. <br>
+                He wants you to see the connection/application of what you learned. <br>
+                <b>Daughter:</b> Okay, Mom. I get it. <br>
+                The director can measure the shoe sizes of the $300$ children. <br>
+                Find the sum. <br>
+                And divide by $300$ <br>
+                That is known as the <b>Mean or Average</b> <br>
+                <b>Dad:</b> Correct! Proud of you, Daddy's girl! &#x263A; <br>
+                <b>Son:</b> The second way would be the arrange all those measured shoe sizes in order ... <br>
+                Preferably in ascending order <br>
+                Because it is an even sample size, there would be two sizes in the middle. <br>
+                So, find the average of those two sizes. <br>
+                That measure is the <b>Median</b> <br>
+                <b>Mom:</b> Perfect! Mummy's boy! &#x263A; <br>
+                But, why would you arrange the sizes in ascending order? <br>
+                What about descending order? <br>
+                Would it not give the same result? <br>
+                <b>Daughter:</b> Mom, guess what? &#x263A; <br>
+                That was the same question Elijah asked Mr. C in the class &#x263A; <br>
+                <b>Mom:</b> What did he say? <br>
+                <b>Son:</b> He said that it is normal to start from the kindergarten up to the $12^{th}$ grade... <br>
+                Rather than from the $12^{th}$ grade to the kindergarten <br>
+                <b>Dad:</b> Wow, that is an "okay" answer. Is that the only reason? <br>
+                <b>Daughter:</b> He also said that when we study the <b>Quartiles</b>, we must have to arrange it
+                in ascending order. <br>
+                So, it is better to just learn to arrange the data in ascending order. <br>
+                <b>Dad:</b> That is correct. <br>
+                What other ways do we have? <br>
+                <b>Daughter:</b> The director can find the most popular shoe size <br>
+                <b>Dad:</b> What do you mean by "most popular"? <br>
+                <b>Daughter:</b> By "most popular", I mean the shoe size that most of the children wear <br>
+                <b>Dad:</b> Okay, but I am looking for a term... a statistics term... <br>
+                <b>Son:</b> It means the shoe size with the highest frequency. <br>
+                <b>Dad:</b> and the measure is called the ... <br>
+                <b>Daughter:</b> <b>Mode</b> <br>
+                <b>Dad:</b> Wow, my children are wonderful! Thank GOD! <br>
+                <b>Mom:</b> Our children... <br>
+                <b>Dad:</b> Yes, GOD gave us intelligent children. <br>
+                <b>Mom:</b> What is the remaining measure of center? <br>
+                <b>Son:</b> It's my turn this time. <br>
+                The fourth measure is the <b>Midrange</b> <br>
+                The director can take the average of the minimum shoe size and the maximum shoe size. <br>
+                <b>Mom and Dad:</b> That is correct!
+
+                <br><br>
+
+                <b>Dad:</b> These are called the <b>Measures of Center</b> <br>
+                <b>Mom:</b> or the <b>Measures of Central Tendency</b> <br>
+                <b>Dad:</b> because they tend towards the "center" of the data set <br>
+                <b>Mom:</b> and the center is seen as a representative of the whole. <br>
+                <b>Dad:</b> The mean or average is the most used. <br>
+                Although each of these measure has it's advantages and disadvantages <br>
+                <b>Mom:</b> The midrange is also an average. <br>
+                <b>Dad:</b> And if the sample size is an even number, the median is also an average.
+
+                <br><br>
+
+                <b>Daughter:</b> Thank You, Dad! Thank You, Mom! <br>
+                <b>Son:</b> Thank You, Mom! Thank You, Dad! <br>
+                <b>Dad and Mom:</b> You are most welcome!!!
+            </p>
+        </div>
+        <!-- End Story - Measures of Center -->
+        <!-- End Stories -->
+
+
+        <!-- Objectives -->
+        <div class="w3-container w3-padding-32" id="objectives">
+            <h2 class="w3-padding-16">Objectives</h2>
+            <hr>
+
+            <p>
+                Students will: <br>
+                (1.) Discuss descriptive statistics. <br>
+                (2.) Explain the measures of center. <br>
+                (3.) Compute the measures of central tendency of data by formula. <br>
+                (4.) Compute the measures of central tendency of data by technology. <br>
+                (5.) Compute the measures of central tendency of data by formula. <br>
+                (6.) Explain the measures of spread. <br>
+                (7.) Compute the measures of variation of data by formula. <br>
+                (8.) Compute the measures of dispersion of data by technology. <br>
+                (9.) Explain the measures of position. <br>
+                (10.) Compute the measures of location of data by formula. <br>
+                (11.) Compute the measures of position of data by technology. <br>
+                (12.) Define <i>z</i>-scores. <br>
+                (13.) Interpret <i>z</i>-scores <br>
+                (14.) Convert a data value to a quantile. <br>
+                (15.) Convert a quantile to a data value. <br>
+                (16.) Determine the five-number summary of a data set. <br>
+                (17.) Construct a boxplot for a data set. <br>
+                (18.) Determine outliers using fences. <br>
+                (19.) Explain the shape of the distribution of data. <br>
+                (20.) Solve applied problems on descriptive statistics.
+            </p>
+        </div>
+        <!-- End Objectives -->
+
+        <br><br>
+
+        <!-- Definitions -->
+        <div class="w3-container w3-padding-32" id="definitions">
+            <h2 class="w3-padding-16">Definitions</h2>
+            <hr>
+
+            <p>
+                Descriptive Statistics is the science that deals with the organization and presentation of the collected
+                data.
+            </p>
+        </div>
+        <!-- End Definitions -->
+
+        <!-- Symbols -->
+        <div class="w3-container w3-padding-32" id="symbols">
+            <h2 class="w3-padding-16">Symbols</h2>
+            <hr>
+
+            <ul class="w3-ul white">
+                <li class="yellow w3-hover-black w3-xlarge w3-padding-16 w3-center">
+                    <h2>Symbols and Meanings</h2>
+                </li>
+                <li>$X$ = dataset $X$</li>
+                <li>$x = x-values$ OR data values</li>
+                <li>$x_{mid}$ = class midpoint of $x-values$ = class midpoint of the data values</li>
+                <li>$\Sigma$ (pronounced as uppercase Sigma) = $summation$</li>
+                <li>$\Sigma x$ = summation of the $x-values$</li>
+                <li>$f = frequency$</li>
+                <li>$F = frequency$</li>
+                <li>$\Sigma f$ = summation of the frequencies</li>
+                <li>$\Sigma fx$ = summation of the product of the $x-values$ and their corresponding frequencies</li>
+                <li>$(\Sigma x)^2$ = square of the summation of the $x-values$</li>
+                <li>$\Sigma x^2$ = summation of the squared of the $x-values$</li>
+                <li>$\bar{x}$ is sample mean of the $x-values$</li>
+                <li>$\mu$ = population mean</li>
+                <li>$n$ = sample size</li>
+                <li>$N$ = population size</li>
+                <li>$\tilde{x}$ = median</li>
+                <li>$\widehat{x}$ = mode</li>
+                <li>$AM$ = assumed mean</li>
+                <li>$D$ = deviation from the assumed mean</li>
+                <li>$x_{MR}$ = midrange</li>
+                <li>$LCL$ = lower class limit</li>
+                <li>$UCL$ = upper class limit</li>
+                <li>$min$ = minimum data value</li>
+                <li>$max$ = maximum data value</li>
+                <li>$LCB_{med}$ = lower class boundary of the median class</li>
+                <li>$CW$ = class width</li>
+                <li>$f_{med}$ = frequency of the median class</li>
+                <li>$CF_{bmed}$ = cumulative frequency of the class before the median class</li>
+                <li>$LCB_{mod}$ = lower class boundary of the modal class </li>
+                <li>$f_{mod}$ = frequency of the modal class</li>
+                <li>$f_{bmod}$ = frequency of the class before the modal class</li>
+                <li>$f_{amod}$ = frequency of the class after the modal class</li>
+                <li>$R$ = range</li>
+                <li>$s$ = sample standard deviation</li>
+                <li>$s^2$ = sample variance</li>
+                <li>$\sigma$ = population standard deviation</li>
+                <li>$\sigma^2$ = population variance</li>
+                <li>$CV$ = coefficient of variation</li>
+                <li>$z = z-score$</li>
+                <li>$Q_1$ = lower quartile or first quartile</li>
+                <li>$P_{25}$ = 25th percentile or first quartile</li>
+                <li>$Q_2$ = middle quartile or second quartile or median</li>
+                <li>$P_{50}$ = 50th percentile or median</li>
+                <li>$Q_3$ = upper quartile or third quartile</li>
+                <li>$P_{75}$ = 75th percentile or third quartile</li>
+                <li>$IQR$ = interquartile range</li>
+                <li>$SIQR$ = semi-interquartile range</li>
+                <li>$MQ$ = midquartile</li>
+                <li>$LF$ = lower fence</li>
+                <li>$UF$ = upper fence</li>
+                <li>$TM$ = trimmed mean</li>
+                <li>$\Pi$ (pronounced as uppercase Pi) = $product$</li>
+                <li>$\Pi x$ = product of the $x-values$</li>
+                <li>$GM$ = geometric mean</li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- End Symbols -->
+
+        <!-- Measures of Center -->
+        <div class="w3-container w3-padding-32" id="introductionMeasuresCenter">
+            <h2 class="w3-padding-16">Measures of Center</h2>
+            <hr>
+
+            <p>
+                The <b>Measures of Center</b> is also known as the <b>Measures of Central Tendency</b> <br>
+                They are called the measures of central tendency because they <b>tend towards the center</b> of the
+                data set. <br>
+                Most times, the center of the data can be seen as a representative of the entire sample data or
+                population data.
+                <br><br>
+                The <b>measures of center</b> are: <br><br>
+                (1.) Mean of Average, $\bar{x}$ <br><br>
+                (2.) Median, $\tilde{x}$ <br><br>
+                (3.) Mode, $\widehat{x}$ <br><br>
+                (4.) Midrange, $x_{MR}$
+            </p>
+        </div>
+        <!-- End Measures of Center -->
+
+        <!-- Mean -->
+        <div class="w3-container w3-padding-32" id="mean">
+            <h2 class="w3-padding-16">Mean or Average</h2>
+            <hr>
+
+            <p>
+                The <b>Mean</b> is commonly referred to as the <b>Arithmetic Mean.</b> <br>
+                It is another term for the arithmatic average. It can be thought of as the balancing point of a
+                distribution of data. <br>
+                The mean of a collection of data is located at the​ "balancing point" of a distribution of data. <br>
+                We do have other types of mean: <b>Geometric Mean</b>, <b>Quadratic Mean</b>, and <b>Harmonic Mean</b>
+                <br>
+                We can also <u>trim</u> the dataset to determine the <u>trimmed mean.</u>
+                <br><br>
+                The <b>Arithmetic Mean</b> is the measure of center found by adding the data values of the variable and
+                dividing the sum by the count/total number of the data values.
+            </p>
+
+            <h2>Why Arithmetic Mean?: Have you heard of these statements?</h2>
+            <p>
+                (1.) The <b>average</b> miles per gallon of the $2015$ Hyundai Santa Fe in the highway is $36\:mpg$
+                <br><br>
+                (2.) Mr. C uses the weighted <b>average</b> method for determining the final grade of his students'
+                work. <br><br>
+                (3.) The Consumer Price Index ($CPI$) is a measure of the <b>average</b> change in price over time in a
+                fixed
+                market basket of goods and services bought by customers for day-to-day living. <br><br>
+                (4.) To be admitted into the graduate program at a certain university, you must have at least an
+                undergraduate cumulative
+                grade point <b>average</b> ($CGPA$) of $3.00$ <br><br>
+                (5.) According to the Bureau of Labor Statistics ($BLS$), the <b>average</b> expenditures in $2014$ was
+                $\$53,495$,
+                a $4.7$ percent increase from $2013$ spending level. <br><br>
+                (6.) What was your grade point <b>average</b> ($GPA$) last semester?
+            </p>
+
+            <h2>Advantages of the Mean</h2>
+            <p>
+                (1.) The mean of a data set uses every data value. <br><br>
+                (2.) Sample means drawn from the same population tend to have less variation when compared to the
+                other measures of center. <br><br>
+                (3.) The mean is the most appropriate measure of center for symmetric (normal) distributions.
+            </p>
+            <div class="w3-center">
+                <img src="images/mean.png" alt="mean"> <br>
+                Normal (Symmetric) Distribution
+            </div>
+            <p>
+                (4.) The mean of a population can be estimated to be the sample means of the samples drawn from that
+                population. <br>
+                This implies that:
+                $
+                \mu = \bar{x}_{\bar{x}}
+                $
+            </p>
+
+            <h2>Disadvantages of the Mean</h2>
+            <p>
+                (1.) The value of the mean can substantially change due to the presence of an outlier in the data set.
+                In this regard, we say that the <b>mean is not resistant.</b> <br>
+                An <b>outlier</b> is an extreme data value: that is either too low or too high relative to the other
+                data values.
+                <br><br>
+                (2.) The mean is not an appropriate measure of center for skewed distributions.
+            </p>
+
+            <h2>Round-Off Rules for the Mean</h2>
+            <p>
+                Except otherwise stated, it is <u>suggested</u> to round the final answer
+                (not intermediate calculations) of the mean to one more decimal place than the original set of data
+                values. <br>
+                Do not round intermediate calculations. <br>
+                If you must round intermediate calculations, round to a reasonable number of decimal places (at least
+                three) more than the number of decimal places required for the answer.
+            </p>
+        </div>
+        <!-- End Mean -->
+
+        <!-- Median -->
+        <div class="w3-container w3-padding-32" id="median">
+            <h2 class="w3-padding-16">Median</h2>
+            <hr>
+
+            <p>
+                The <b>Median</b> is also the <b>Middle Quartile</b> or the <b>2nd Quartile</b> or the
+                <b>50th Percentile.</b> <br>
+                It is the middle value of a data value when the data set is sorted in ascending or descending order.
+                However, it is better to sort the data in ascending order rather than descending order. <br>
+                Sorting in ascending order (ordering from least to greatest) is highly recommended.
+                <br><br>
+                <i>
+                    Student: Why is the ascending order preferred over descending order? <br>
+                    The answer would still be the same either way. Is that right? <br><br>
+                    Teacher: Yes, that is correct. <br>
+                    However, when we discuss <b>Quartiles</b>: a measure of location, we shall have to sort in
+                    ascending order. <br>
+                    Besides, one normally begins from the kindergarten up to the $12^{th}$ grade, and not the other
+                    way around.
+                </i>
+                <br><br>
+                The median is the value that would be right in the middle if you were to sort the data from smallest to
+                largest (ascending order). <br>
+                About​ 50% of the observations are below it and about​ 50% of the observations are above it. <br>
+                For an <b>odd sample size (the sample size is an odd number),</b> there is
+                <b>only one middle value.</b> That value is the <b>median.</b> <br><br>
+                For an <b>even sample size (the sample size is an even number),</b> there are
+                <b>two middle values.</b> The <b>median</b> is the <b>average of those two middle values.</b>
+            </p>
+
+            <h2>Why Median?: Have you heard of these statements?</h2>
+            <p>
+                (1.) The <b>median</b> household income for a 6-person family in the State of Arizona during $2016$
+                is <span>$</span>51,590.00:
+                <a href="https://liheapch.acf.hhs.gov/Tribes/Tables/povertytables/FY2016/azsmi.htm"
+                    target="_blank">Arizona State Median Income for Fiscal Year 2016 - The LIHEAP Clearinghouse</a> <br>
+                What does this mean? <br>
+                This means that of all $6-person$ families in the State of Arizona, $\$51,590.00$ divides the lower
+                half of incomes from the upper half of the incomes. <br><br>
+                (2.) The <b>median</b> home price for the homes sold in the San Francisco Bay Area in
+                March 2017 was <span>$</span>709,000.00:
+                <a href="https://sanfrancisco.cbslocal.com/2017/04/28/bay-area-median-home-price-approaches-all-time-high/"
+                    target="_blank">Bay Area Median Home Price Approaches All-Time High - CBS San Francisco</a> Wow!
+                <br><br>
+                (3.) The <b>median</b> age at first marriage by men in the United States for 2003 is 27.1 years:
+                <a href="https://www.census.gov/population/socdemo/hh-fam/tabMS-2.pdf" target="_blank">Estimated Median
+                    Age at First Marriage, by Sex - U.S Bureau of the Census</a>
+            </p>
+
+            <h2>Advantages of the Median</h2>
+            <p>
+                (1.) The median is resistant to outliers. <br>
+                It is not affected by extremely low or extremely high data values.
+                <br><br>
+                (2.) The median is the most appropriate measure of center for skewed distributions. <br>
+                The mean is not often used for skewed distributions because skew affects the mean more than it affects
+                the median.
+            </p>
+
+            <table class="w3-center ads">
+                <tr>
+                    <td class="ads">
+                        <img src="images/median1.png" alt="median 1"> <br>
+                        Skewed Distribution (Skewed Left)
+                    </td>
+                    <td class="ads">
+                        <img src="images/median2.png" alt="median 2"> <br>
+                        Skewed Distribution (Skewed Right)
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+
+            <h2>Disadvantages of the Median</h2>
+            <p>
+                (1.) The median does not use every data value in the data set. <br><br>
+                (2.) Computing the
+                <!--<a href="https://www.youtube.com/watch?v=ZpQz6F5Cl_k&index=5&list=PLjyyswMG9g9CtQbA_HZhNLyNBfiazlJr5" target="_blank">median of a grouped data</a>-->
+                median of a grouped data algebraically is a bit cumbersome.
+            </p>
+
+            <h2>Round-Off Rules for the Median</h2>
+            <p>
+                Except otherwise stated, it is <u>suggested</u> to round the final answer
+                (not intermediate calculations) of the mean to one more decimal place than the original set of data
+                values. <br>
+                Do not round intermediate calculations. <br>
+                If you must round intermediate calculations, round to a reasonable number of decimal places (at least
+                three) more than the number of decimal places required for the answer.
+            </p>
+        </div>
+        <!-- End Median -->
+
+        <br><br>
+
+        <!-- Mode -->
+        <div class="w3-container w3-padding-32" id="mode">
+            <h2 class="w3-padding-16">Mode</h2>
+            <hr>
+
+            <p>
+                The <b>Mode</b> is the data value that occurs most frequently in a data set. <br>
+                It can also be defined as the data value with the highest frequency.
+            </p>
+
+            <h2>Why Mode?: Have you heard of these statements?</h2>
+            <p>
+                (1.) Louisville Quarterback, Lamar Jackson won the $2016$ Heisman Trophy award because he received the
+                <b>most</b>
+                first-place votes:
+                <a href="https://www.nytimes.com/2016/12/10/sports/ncaafootball/heisman-trophy-lamar-jackson-louisville.html"
+                    target="_blank">The New York Times</a> <br><br>
+                (2.) The <b>modal</b> age of the population of New Zealand from $1970 - 2010$ shows a similar
+                pattern for males and females from $1970 - 1989$. Then, the pattern for males and females
+                diverge -
+                <a href="http://archive.stats.govt.nz/browse_for_stats/population/estimates_and_projections/NationalPopulationEstimates_HOTPSep10qtr/Commentary.aspx"
+                    target="_blank">National Population Estimates: September 2010 Quarter - Government of New
+                    Zealand</a>
+            </p>
+
+            <h2>Advantages of the Mode</h2>
+            <p>
+                (1.) The mode is resistant to outliers. It is not affected by extremely low or extremely high
+                data values. <br><br>
+                (2.) The mode is the most appropriate measure of center for qualitative data. <br><br>
+                (3.) The mode is the most appropriate measure of center for the nominal level of measurement of a
+                variable.
+            </p>
+
+            <h2>Disadvantages of the Mode</h2>
+            <p>
+                (1.) The mode does not use every data value in the data set. <br><br>
+                (2.) A data set can have two modes (bimodal data set), more than two modes (multimodal data set),
+                or no mode at all. In such cases, the mode is not a good measure of center. <br><br>
+                (3.) Computing the
+                <!--<a href="https://www.youtube.com/watch?v=ZpQz6F5Cl_k&index=5&list=PLjyyswMG9g9CtQbA_HZhNLyNBfiazlJr5" target="_blank">mode of a grouped data</a>-->
+                mode of a grouped data algebraically is a bit cumbersome.
+            </p>
+
+            <h2>Round-Off Rules for the Mode</h2>
+            <p>
+                Except otherwise stated, it is <i>suggested</i> to leave the mode <b><i>as is</i></b>
+            </p>
+        </div>
+        <!-- End Mode -->
+
+        <!-- Midrange -->
+        <div class="w3-container w3-padding-32" id="midrange">
+            <h2 class="w3-padding-16">Midrange</h2>
+            <hr>
+
+            <p>
+                The <b>Midrange</b> is the average of the minimum and maximum values of a data set. <br>
+                It is also known as <b>Midextreme.</b>
+            </p>
+
+            <h2>Why Midrange?: Have you heard of these statements?</h2>
+            <p>
+                (1.) <u>Let us bring it to Algebra.</u> Do you remember how to calculate the <b>midpoint</b> of two
+                points?
+                What is the formula? <br><br>
+                $
+                For\:\:Point\:1\:(x_1, y-1) \:\:and\:\: Point\:2\:(x_2, y_2) \\[3ex]
+                Midpoint\:\:Formula = \left(\dfrac{x_1 + y_1}{2}, \dfrac{x_2 + y_2}{2}\right) \\[5ex]
+                $
+                (2.) What is a <b>midrange</b> computer system? <br><br>
+                (3.) List some <b>middle range</b> watches. Give reasons for your answer.
+            </p>
+
+            <h2>Advantages of the Midrange</h2>
+            <p>
+                (1.) The midrange is very easy to compute. <br><br>
+                (2.) The midrange is the most appropriate measure of center for uniform distributions.
+            </p>
+
+            <h2>Disadvantages of the Midrange</h2>
+            <p>
+                (1.) The midrange does not use every data value in the data set. It only uses two values -
+                the minimum and maximum values. <br><br>
+                (2.) The midrange is not resistant to outliers. It is extremely affected by it.
+            </p>
+
+            <h2>Round-Off Rules for the Median</h2>
+            <p>
+                Except otherwise stated, it is <u>suggested</u> to round the final answer
+                (not intermediate calculations) of the mean to one more decimal place than the original set of data
+                values. <br>
+                Do not round intermediate calculations. <br>
+                If you must round intermediate calculations, round to a reasonable number of decimal places (at least
+                three) more than the number of decimal places required for the answer.
+            </p>
+        </div>
+        <!-- End Midrange -->
+
+        <!-- Formulas: Measures of Center -->
+        <div class="w3-container w3-padding-32" id="formulasMeasuresCenter">
+            <h2 class="cyan w3-hover-black w3-padding-32 w3-center">Formulas: Measures of Central Tendency</h2>
+            <hr>
+
+            <h3>Raw Data and Ungrouped Data</h3>
+            <p>
+                $
+                \underline{Sample\:\:Mean} \\[3ex]
+                (1.)\:\: \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                (2.)\:\: n = \Sigma f \\[3ex]
+                (3.)\:\: \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+
+                \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+                (4.)\:\: D = x - AM \\[3ex]
+                (5.)\:\: \bar{x} = AM + \dfrac{\Sigma D}{n} \\[5ex]
+                (6.)\:\: \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+                \underline{Population\:\:Mean} \\[3ex]
+                (7.)\:\: \mu = \dfrac{\Sigma x}{N} \\[5ex]
+                (8.)\:\: N = \Sigma f \\[3ex]
+
+                \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+                (9.)\:\: D = x - AM \\[3ex]
+                (10.)\:\: \mu = AM + \dfrac{\Sigma D}{N} \\[5ex]
+                (11.)\:\: \mu = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+                \underline{Median} \\[3ex]
+                (12.)\:\: \tilde{x} = \left(\dfrac{\Sigma f + 1}{2}\right)th \:\:for\:\:sorted\:\:odd\:\:sample\:\:size
+                \\[5ex]
+                (13.)\:\: \tilde{x} = \left(\dfrac{\Sigma f}{2}\right)th \:\:for\:\:sorted\:\:even\:\:sample\:\:size
+                \\[7ex]
+
+                \underline{Mode} \\[3ex]
+                (14.)\:\: Mode = x-value(s) \:\;with\:\:highest\:\:frequency \\[5ex]
+
+                \underline{Midrange} \\[3ex]
+                (15.)\:\: x_{MR} = \dfrac{min + max}{2} \\[5ex]
+
+                \underline{Geometric\;\;Mean} \\[3ex]
+                (16.)\;\; GM = \sqrt[n]{\prod\limits_{x=1}^n x}
+                $
+            </p>
+
+            <br><br>
+
+            <h3>Grouped Data</h3>
+            <p>
+                $
+                \underline{Class\:\:Midpoint} \\[3ex]
+                (1.)\:\: x_{mid} = \dfrac{LCL + UCL}{2} \\[7ex]
+
+                Equal\:\:Class\:\:Intervals\:(Same\:\:Class\:\:Size) \\[3ex]
+                \underline{Mean} \\[3ex]
+                (2.)\:\: \bar{x} = \dfrac{\Sigma fx_{mid}}{\Sigma f} \\[7ex]
+
+                Equal\:\:Class\:\:Intervals\:(Same\:\:Class\:\:Size) \\[3ex]
+                \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+                (3.)\:\: D = x_{mid} - AM \\[3ex]
+                (4.)\:\: \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+                \underline{Median} \\[3ex]
+                (5.)\:\: \tilde{x} = LCB_{med} + \dfrac{CW}{f_{med}} * \left[\left(\dfrac{\Sigma f}{2}\right) -
+                CF_{bmed}\right] \\[7ex]
+
+                \underline{Mode} \\[3ex]
+                (6.)\:\: \widehat{x} = LCB_{mod} + CW * \left[\dfrac{f_{mod} - f_{bmod}}{(f_{mod} - f_{bmod}) + (f_{mod}
+                - f_{amod})}\right]
+                $
+            </p>
+        </div>
+        <!-- End Formulas: Measures of Center -->
+
+        <br><br>
+
+        <!-- Measures of Spread -->
+        <div class="w3-container w3-padding-32" id="introductionMeasuresSpread">
+            <h2 class="w3-padding-16">Measures of Spread</h2>
+            <hr>
+
+            <p>
+                The <b>Measures of Spread</b> is also known as the <b>Measures of Variation</b> or <b>Measures of
+                    Variability</b> <br>
+                They are called the measures of spread because they <b>move away from the center</b> of the
+                data set.
+                <br><br>
+                The <b>measures of spread</b> are: <br><br>
+                (1.) Range, <i>R</i> <br><br>
+                (2.) Variance, &sigma;² <br><br>
+                (3.) Standard Deviation, &sigma; <br><br>
+                (4.) Interquartile Range, <i>IQR</i>
+            </p>
+        </div>
+        <!-- End Measures of Spread -->
+
+        <!-- Range -->
+        <div class="w3-container w3-padding-32" id="range">
+            <h2 class="w3-padding-16">Range</h2>
+            <hr>
+
+            <p>
+                The <b>Range</b> is the difference between the maximum value and the minimum value of a dataset.
+            </p>
+        </div>
+        <!-- End Range -->
+
+        <!-- Variance -->
+        <div class="w3-container w3-padding-32" id="variance">
+            <h2 class="w3-padding-16">Variance</h2>
+            <hr>
+
+            <p>
+                The <b>Variance</b> is the square of the standard deviation.
+
+            </p>
+
+            <h2>Advantages of the Variance</h2>
+            <p>
+                (1.) The standard deviation is preferred when the data is symmetric.
+            </p>
+        </div>
+        <!-- End Variance -->
+
+        <!-- Standard Deviation -->
+        <div class="w3-container w3-padding-32" id="standardDeviation">
+            <h2 class="w3-padding-16">Standard Deviation</h2>
+            <hr>
+
+            <p>
+                The <b>Standard Deviation</b> is a number that measures how far away the typical observation is from the
+                mean. <br>
+                It is the measure that tells us how far the data values are from the mean. <br>
+                It is the square root of the average of the squared deviations from the mean. <br>
+                In other words, it is the square root of the variance. <br>
+                For most​ distributions, a majority of observations are within one standard deviation of the mean value.
+                <br>
+                If all the values of a dataset are the same, the standard deviation of that dataset is zero. <br>
+                The standard deviation cannot be negative because it is the square root of the variance, which is a
+                nonnegative value. <br>
+                In the calculation of the standard deviation, all differences from the mean are​ squared, making all
+                distances positive values. <br>
+                For most​ applications, the standard deviation is preferred over the​ variance because the units for the
+                variance are always squared.
+                Measuring spread distance with the variance implies that the units for measuring spread are different
+                from the units for measuring​ center, which is not true. <br>
+
+            </p>
+
+            <h2>Advantages of the Standard Deviation</h2>
+            <p>
+                (1.) The standard deviation is preferred when the data is symmetric.
+            </p>
+        </div>
+        <!-- End Standard Deviation -->
+
+        <!-- Interquartile Range -->
+        <div class="w3-container w3-padding-32" id="interquartileRange">
+            <h2 class="w3-padding-16">Interquartile Range</h2>
+            <hr>
+
+            <p>
+                The <b>Interquartile Range</b> of a dataset is the difference between the upper quartile and the lower
+                quartile of the dataset. <br>
+                It tells us how much space the middle 50% of the data occupy.
+
+
+            </p>
+
+            <h2>Advantages of the Interquartile Range</h2>
+            <p>
+                (1.) The interquartile range is preferred when the data is strongly skewed, or has outliers.
+
+            </p>
+        </div>
+        <!-- End Interquartile Range -->
+
+        <br><br>
+
+        <!-- Formulas: Measures of Spread -->
+        <div class="w3-container w3-padding-32" id="formulasMeasuresSpread">
+            <h2 class="cyan w3-hover-black w3-padding-32 w3-center">Formulas: Measures of Dispersion</h2>
+            <hr>
+
+            <h3>Raw Data and Ungrouped Data</h3>
+            <p>
+                $
+                \underline{Range} \\[3ex]
+                (1.)\:\: Range = max - min \\[3ex]
+
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (2.)\;\; D = x - AM \\[5ex]
+
+                \underline{Sample\:\:Variance} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (3.)\:\: s^2 = \dfrac{\Sigma(x - \bar{x})^2}{n - 1} \\[5ex]
+                (4.)\:\: s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (5.)\:\: s^2 = \dfrac{n(\Sigma x^2) - (\Sigma x)^2}{n(n - 1)} \\[5ex]
+                (6.)\:\: s^2 = \dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{\Sigma f(\Sigma f - 1)} \\[7ex]
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (7.)\;\; s^2 = \dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2 \\[7ex]
+                (8.)\;\; s^2 = \dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2
+                \\[10ex]
+
+                \underline{Population\:\:Variance} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (9.)\:\: \sigma^2 = \dfrac{\Sigma(x - \mu)^2}{N} \\[5ex]
+                (10.)\:\: \sigma^2 = \dfrac{\Sigma f(x - \mu)^2}{\Sigma f} \\[5ex]
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (11.)\:\: \sigma^2 = \dfrac{N(\Sigma x^2) - (\Sigma x)^2}{N^2} \\[5ex]
+                (12.)\:\: \sigma^2 = \dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{(\Sigma f)^2} \\[7ex]
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (13.)\;\; \sigma^2 = \dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2 \\[7ex]
+                (14.)\;\; \sigma^2 = \dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2 \\[10ex]
+
+                \underline{Sample\:\:Standard\:\:Deviation} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (15.)\:\: s = \sqrt{\dfrac{\Sigma(x - \bar{x})^2}{n - 1}} \\[5ex]
+                (16.)\:\: s = \sqrt{\dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (17.)\:\: s = \sqrt{\dfrac{n(\Sigma x^2) - (\Sigma x)^2}{n(n - 1)}} \\[5ex]
+                (18.)\:\: s = \sqrt{\dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{\Sigma f(\Sigma f - 1)}} \\[7ex]
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (19.)\;\; s = \sqrt{\dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2} \\[7ex]
+                (20.)\;\; s = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2}
+                \\[10ex]
+
+                \underline{Population\:\:Standard\:\:Deviation} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (21.)\:\: \sigma = \sqrt{\dfrac{\Sigma(x - \mu)^2}{N}} \\[5ex]
+                (22.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(x - \mu)^2}{\Sigma f}} \\[5ex]
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (23.)\:\: \sigma = \dfrac{\sqrt{N(\Sigma x^2) - (\Sigma x)^2}}{N} \\[5ex]
+                (24.)\:\: \sigma = \dfrac{\sqrt{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}}{\Sigma f} \\[7ex]
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (25.)\;\; \sigma = \sqrt{\dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2} \\[7ex]
+                (26.)\;\; \sigma = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2}
+                \\[10ex]
+
+                \underline{Range\:\:Rule\:\:of\:\:Thumb} \\[3ex]
+                Approximate\:\:Value\:\:of\:\:Calculating\:\:Standard\:\:Deviation \\[3ex]
+                (27.)\:\: s = \dfrac{Range}{4} = \dfrac{max - min}{4} \\[7ex]
+
+                \underline{Interquartile\:\:Range} \\[3ex]
+                (28.)\:\: IQR = Q_3 - Q_1 \\[5ex]
+
+                \underline{Coefficient\:\:of\:\:Variation\:\:for\:\:Sample} \\[3ex]
+                (29.)\:\: CV = \dfrac{s}{x} * 100 ...in\:\:\% \\[7ex]
+
+                \underline{Coefficient\:\:of\:\:Variation\:\:for\:\:Population} \\[3ex]
+                (30.)\:\: CV = \dfrac{\sigma}{x} * 100 ...in\:\:\% \\[7ex]
+
+                \underline{Mean\:\:Absolute\:\:Deviation} \\[3ex]
+                (31.)\:\: MAD = \dfrac{\Sigma |x - \bar{x}|}{n} \\[5ex]
+
+                \underline{Mean\:\:Absolute\:\:Deviation} \\[3ex]
+                (32.)\:\: MAD = \dfrac{\Sigma f|x - \bar{x}|}{\Sigma f} \\[5ex]
+                $
+            </p>
+
+            <br><br>
+            <h3>Grouped Data</h3>
+            <p>
+                $
+                \underline{Class\:\:Midpoint} \\[3ex]
+                (1.)\:\: x_{mid} = \dfrac{LCL + UCL}{2} \\[5ex]
+
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (2.)\;\; D = x_{mid} - AM \\[5ex]
+
+                \underline{Sample\:\:Variance} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (3.)\:\: s^2 = \dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (4.)\:\: s^2 = \dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)} \\[5ex]
+
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (5.)\;\; s^2 = \dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2 \\[7ex]
+                (6.)\;\; s^2 = \dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2
+                \\[10ex]
+
+                \underline{Sample\:\:Standard\:\:Deviation} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (7.)\:\: s = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (8.)\:\: s = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)}}
+                \\[5ex]
+
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (9.)\;\; s = \sqrt{\dfrac{\Sigma D^2}{n} - \left(\dfrac{\Sigma D}{n - 1}\right)^2} \\[7ex]
+                (10.)\;\; s = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2}
+                \\[10ex]
+
+                \underline{Population\:\:Variance} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (11.)\:\: \sigma^2 = \dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f} \\[5ex]
+
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (12.)\:\: \sigma^2 = \dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)}
+                \\[5ex]
+
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (13.)\;\; \sigma^2 = \dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2 \\[7ex]
+                (14.)\;\; \sigma^2 = \dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2 \\[10ex]
+
+                \underline{Population\:\:Standard\:\:Deviation} \\[3ex]
+                \color{red}{First\:\:Formula} \\[3ex]
+                (15.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f}} \\[5ex]
+
+                \color{red}{Second\:\:Formula} \\[3ex]
+                (16.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)}}
+                \\[5ex]
+
+                \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+                (17.)\;\; \sigma = \sqrt{\dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2} \\[7ex]
+                (18.)\;\; \sigma = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2}
+                \\[10ex]
+                $
+            </p>
+        </div>
+        <!-- End Formulas: Measures of Spread -->
+
+        <!-- Z Scores -->
+        <div class="w3-container w3-padding-32" id="zscores">
+            <h2 class="w3-padding-16">$z-scores$</h2>
+            <hr>
+
+            <p>
+                A standard unit is how many standard deviations away an observation is from the mean. <br>
+                A measurement converted to standard units is called a​ <b>z-score.</b> <br>
+                If an observation has a​ z-score of​ 0, then it is equal to the mean. The mean is 0 standard deviations
+                away from​ itself, so it has a​ z-score of 0. <br>
+                The​ z-score measures distance from a mean in terms of standard​ deviations, so it can be used to
+                compare values measured in different​ units, such as inches and pounds.
+                <br><br>
+                The <b>z-score is:</b> <br>
+                (1.) Also known as a <b>Standard Score</b> or <b>Standardized Score</b>. <br><br>
+                (2.) Defined as the <b>number of standard deviations</b> in which a <b>data value is above or below the
+                    mean.</b> <br><br>
+                (3.) A <b>measure of location/position</b> because it <b>describes the location of a data value in terms
+                    of the
+                    standard deviations relative to the mean.</b> <br><br>
+                (4.) A <b>positive value</b> if the <b>data value is above the mean.</b> <br><br>
+                (5.) A <b>negative value</b> if the <b>data value is below the mean.</b> <br><br>
+                (6.) <b>Zero</b> if the <b>data value is the mean.</b> <br><br>
+                (7.) <b>Unit less</b>: it does not have a unit. <br><br>
+                (8.) Used to determine whether a <b>data value is usual or unusual.</b> <br><br>
+                (9.) Used to <b>compare two individual data values measured on the same scale with the same unit of
+                    measurement.</b> <br><br>
+                (10.) Used to <b>compare two individual data values measured on the same scale with the different units
+                    of measurement.</b> <br><br>
+                (11.) Used to <b>compare two individual data values measured on the different scales with the same unit
+                    of measurement.</b> <br><br>
+                (12.) Used to <b>compare two individual data values measured on different scales with different units of
+                    measurement.</b> <br><br>
+                To explain the aforementioned four points; <br>
+                In the Education field, one can use $z-score$ to: <br>
+                <b>compare two scores</b> achieved by the <b>same individual</b> on <b>two different tests</b> <br>
+                <b>compare scores</b> achieved by <b>two individuals</b> on the <b>same test</b> <br>
+                <b>compare a score</b> achieved by <b>an individual</b> on <b>a test</b> with the <b>population of
+                    scores</b>
+                by <b>different individuals</b> for the <b>same test.</b>
+            </p>
+
+            <h2>Notable Notes About <i>z</i>-scores</h2>
+            <p>
+                (1.) <i>z</i>-scores are rounded to $2$ decimal places. <br><br>
+                (2.) A <b>data value is usual</b> if $-2.00 \le z-score \le 2.00$ <br><br>
+                (3.) A <b>data value is unusual</b> if $z-score \lt -2.00$ OR $z-score \gt 2.00$ <br><br>
+                This means that the boundary <i>z</i>-scores to determine whether a data value is usual or unusual are
+                $-2.00$ and $2.00$
+            </p>
+        </div>
+        <!-- End Z Scores -->
+
+        <!-- Quantiles -->
+        <div class="w3-container w3-padding-32" id="quantiles">
+            <h2 class="w3-padding-16">Quantiles</h2>
+            <hr>
+
+            <p>
+                Sometimes, it may be necessary to divide a dataset into equal-sized parts. <br>
+                <b>Quantiles</b> are the data values or cut-off points marking the boundaries between consecutive
+                subsets. <br>
+                We are interested in these types of Qunatiles: <br>
+                (1.) <b>Percentiles:</b> divides the dataset into 100 equal parts. <br>
+                (2.) <b>Deciles:</b> divides the dataset into 10 equal parts. <br>
+                (3.) <b>Quintiles</b> divides the dataset into 5 equal parts. <br>
+                (4.) <b>Quartiles</b> divides the dataset into 4 equal parts. <br>
+                These are measures of location. They indicate the location of data values. <br>
+                For us to know the exact location of a data value, it is necessary that we arrange the dataset in
+                ascending or descending order. <br>
+                Arranging it in <b>ascending orer (least to greatest)</b> is highly recommend. This is because one
+                usually begins from the kindergarten up to the 12th grade, not the other way around. <br>
+                Besides, our formulas will deal with values less than the <i>main</i> value. So, it is important we
+                arrange the data values in ascending order.
+            </p>
+            <br>
+            <table class="w3-center">
+                <caption>
+                    Relationship Between Quantiles <br>
+                    <b><i>Fill in the blank</i></b>
+                </caption>
+                <tr>
+                    <th style="width: 25%;">Percentile</th>
+                    <th style="width: 25%;">Decile</th>
+                    <th style="width: 25%;">Quintile</th>
+                    <th style="width: 25%;">Quartile</th>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>1st</td>
+                    <td>&#128214;</td>
+                    <td>&#128214;</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>2nd</td>
+                    <td>1st</td>
+                    <td>&#128214;</td>
+                </tr>
+                <tr>
+                    <td>25th</td>
+                    <td>2.5th</td>
+                    <td>1.25th</td>
+                    <td>1st</td>
+                </tr>
+                <tr>
+                    <td>30th</td>
+                    <td>3rd</td>
+                    <td>&#128214;</td>
+                    <td>1.2nd</td>
+                </tr>
+                <tr>
+                    <td>40th</td>
+                    <td>&#128214;</td>
+                    <td>2nd</td>
+                    <td>&#128214;</td>
+                </tr>
+                <tr>
+                    <td>50th</td>
+                    <td>5th</td>
+                    <td>2.5th</td>
+                    <td>2nd</td>
+                </tr>
+                <tr>
+                    <td>75th</td>
+                    <td>&#128214;</td>
+                    <td>3.75th</td>
+                    <td>3rd</td>
+                </tr>
+                <tr>
+                    <td>100th</td>
+                    <td>10th</td>
+                    <td>5th</td>
+                    <td>4th</td>
+                </tr>
+            </table>
+        </div>
+        <!-- End Quantiles -->
+
+        <br><br>
+
+        <!-- Formulas: Measures of Position -->
+        <div class="w3-container w3-padding-32" id="formulasMeasuresPosition">
+            <h2 class="cyan w3-hover-black w3-padding-32 w3-center">Formulas: Measures of Location</h2>
+            <hr>
+
+            <p>
+                A <b>data value is usual</b> if $-2.00 \le z-score \le 2.00$ <br><br>
+                A <b>data value is unusual</b> if $z-score \lt -2.00$ OR $z-score \gt 2.00$ <br><br>
+                $
+                \underline{Sample} \\[3ex]
+                Minimum\:\:usual\:\:data\:\:value = \bar{x} - 2s \\[3ex]
+                Maximum\:\:usual\:\:data\:\:value = \bar{x} + 2s \\[5ex]
+
+                \underline{Population} \\[3ex]
+                Minimum\:\:usual\:\:data\:\:value = \mu - 2\sigma \\[3ex]
+                Maximum\:\:usual\:\:data\:\:value = \mu + 2\sigma \\[5ex]
+
+                \underline{z\:\:score\:\:for\:\:Sample} \\[3ex]
+                (1.)\:\: z = \dfrac{x - \bar{x}}{s} \\[7ex]
+
+                \underline{z\:\:score\:\:for\:\:Population} \\[3ex]
+                (2.)\:\: z = \dfrac{x - \mu}{\sigma} \\[7ex]
+
+                \underline{Quantiles(Percentiles,\:Deciles,\:Quintiles,\:and\:Quartiles)} \\[3ex]
+                \color{red}{Convert\:\:a\:\:Data\:\:value\:\:to\:\:a\:\:Quantile} \\[3ex]
+                x\:\:and\:\:y\:\:are\:\:two\:\:different\:\:variables \\[3ex]
+                (3.)\:\: Percentile\:\:of\:\:x =
+                \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 100 =
+                yth\:\:Percentile \\[5ex]
+                (4.)\:\: Decile\:\:of\:\:x =
+                \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 10 =
+                yth\:\:Decile \\[5ex]
+                (5.)\:\: Quintile\:\:of\:\:x =
+                \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 5 =
+                yth\:\:Quintile \\[5ex]
+                (6.)\:\: Quartile\:\:of\:\:x =
+                \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 4 =
+                yth\:\:Quartile \\[7ex]
+
+                \color{red}{Convert\:\:a\:\:Quantile\:\:to\:\:a\:\:Data\:\:Value} \\[3ex]
+                Calculate\:\:the\:\:xth\:\:position\:\:of\:\:the\:\:yth\:\:Quantile \\[3ex]
+                (7.)\:\: xth\:\:position = \dfrac{yth\:\:Percentile}{100} * total\:\:number\:\:of\:\:values \\[5ex]
+                (8.)\:\: xth\:\:position = \dfrac{yth\:\:Decile}{10} * total\:\:number\:\:of\:\:values \\[5ex]
+                (9.)\:\: xth\:\:position = \dfrac{yth\:\:Quintile}{5} * total\:\:number\:\:of\:\:values \\[5ex]
+                (10.)\:\: xth\:\:position = \dfrac{yth\:\:Quartile}{4} * total\:\:number\:\:of\:\:values \\[7ex]
+                $
+            </p>
+
+            <table class="w3-padding">
+                <tr class="green">
+                    <th>If the $xth$ position</th>
+                    <th>then,</th>
+                </tr>
+                <tr>
+                    <td class="w3-padding">is an integer</td>
+                    <td class="w3-padding">
+                        <br>
+                        $xth\:\:position = \dfrac{xth\:\:position + (x + 1)th\:\;position}{2}$ <br><br>
+                        In other words, find the value of the $xth$ position; find the value of the next position; and
+                        determine the mean of the
+                        two values.
+                    </td>
+                </tr>
+                <tr>
+                    <td>is not an integer</td>
+                    <td>$xth$ position is <b>rounded up</b></td>
+                </tr>
+            </table>
+
+            <br><br>
+
+            <p>
+                $
+                \underline{The\:\:Five-Number\:\:Summary\:\:of\:\:Data} \\[3ex]
+                (11.)\:\: Minimum\:(min) \\[3ex]
+                (12.)\:\: Lower\:\:Quartile\:(Q_1) \\[3ex]
+                (13.)\:\: Median\:\:or\:\:Middle\:\:Quartile\:(Q_2) \\[3ex]
+                (14.)\:\: Upper\:\:Quartile\:(Q_3) \\[3ex]
+                (15.)\:\: Maximum\:(Max) \\[5ex]
+
+                \underline{Other\:\:Statistics\:\:from\:\:Quantiles} \\[3ex]
+                (16.)\:\: IQR = Q_3 - Q_1 \\[3ex]
+                (17.)\:\: SIQR = \dfrac{IQR}{2} = \dfrac{Q_3 - Q_1}{2} \\[5ex]
+                (18.)\:\: MQ = \dfrac{Q_3 + Q_1}{2} \\[5ex]
+                (19.)\:\: Upper\:\:Quartile\:(Q_3) \\[3ex]
+                (20.)\:\: LF = Q_1 - 1.5(IQR) \\[3ex]
+                (21.)\:\: UF = Q_3 + 1.5(IQR)
+                $
+            </p>
+        </div>
+        <!-- End Formulas: Measures of Position -->
+
+        <br><br>
+
+        <!-- Empirical Rule -->
+        <div class="w3-container w3-padding-32" id="empiricalRule">
+            <h2 class="w3-padding-16">Empirical Rule</h2>
+            <hr>
+
+            <p>
+                The <b>Empirical Rule</b> also known as the 68&ndash;95&ndash;99.7 percent Rule applies to distributions
+                that are unimodal and​ symmetric. <br>
+                It states that: <br>
+                In a unimodal symmetric distribution (normal distribution) dataset, approximately: <br>
+                (a.) 68% of the distribution lie <u>within</u> (below and above) one standard deviation <u>from</u> the
+                mean <br>
+                (b.) 95% of the distribution lie <u>within</u> (below and above) two standard deviations <u>from</u> the
+                mean <br>
+                (c.) 99.7% of the distribution lie <u>within</u> (below and above) three standard deviations <u>from</u>
+                the mean
+                <br><br>
+                In other words, in a unimodal normal distribution (bell-shaped curve distribution): <br>
+                (a.) 68% of the distribution lie <u>from</u> &ensp;&ensp; &mu; &minus; &sigma; &ensp;&ensp; <u>to</u>
+                &ensp;&ensp; &mu; + &sigma; <br>
+                (a.) 95% of the distribution lie <u>from</u> &ensp;&ensp; &mu; &minus; 2&sigma; &ensp;&ensp; <u>to</u>
+                &ensp;&ensp; &mu; + 2&sigma; <br>
+                (a.) 99.7% of the distribution lie <u>from</u> &ensp;&ensp; &mu; &minus; 3&sigma; &ensp;&ensp; <u>to</u>
+                &ensp;&ensp; &mu; + 3&sigma;
+                <br><br>
+                Let us review an example: <br>
+                <img src="images/empirical-Rule.png" alt="Empirical Rule">
+                <br><br>
+                <b>Example:</b> Assume the average height and the standard deviation of basketball players in the a
+                certain school is 175cm and 7cm respectively. <br>
+                Describe/Analyze this information using the Empirical Rule.
+                <br><br>
+                <b>Solution:</b> <br>
+                mean = 175cm <br>
+                standard deviation = 7cm <br><br>
+                mean + 1 standard deviation = 175 + 7 = 182cm <br>
+                mean &minus; 1 standard deviation = 175 &minus; 7 = 168cm <br>
+                mean + 2 standard deviations = 175 + 2(7) = 175 + 14 = 189cm <br>
+                mean &minus; 2 standard deviations = 175 &minus; 2(7) = 175 &minus; 14 = 161cm <br>
+                mean + 3 standard deviations = 175 + 3(7) = 175 + 21 = 196cm <br>
+                mean &minus; 3 standard deviations = 175 &minus; 3(7) = 175 &minus; 21 = 154cm <br><br>
+                68% of the heights lie between 168cm and 182cm <br>
+                95% of the heights lie between 161cm and 189cm <br>
+                99.7% of the heights lie between 154cm and 196cm <br>
+                34% of the heights lie between 168cm and 175cm <br>
+                34% of the heights lie between 175cm and 182cm <br>
+                47.5% of the heights lie between 161cm and 175cm <br>
+                47.5% of the heights lie between 175cm and 189cm <br>
+                49.85% of the heights lie between 154cm and 175cm <br>
+                49.85% of the heights lie between 175cm and 196cm <br>
+                50% lie below 175cm <br>
+                50% lie above 175cm <br>
+                16% lie below 168cm <br>
+                16% lie above 182cm <br>
+                2.5% lie below 161cm <br>
+                2.5% lie above 189cm <br>
+                0.15% lie below 154cm <br>
+                0.15% lie above 196cm <br>
+                2.35% lie between 154cm and 161cm <br>
+                2.35% lie between 189cm and 196cm <br>
+                13.5% lie between 161cm and 168cm <br>
+                13.5% lie between 182cm and 189cm <br>
+                15.85% lie between 154cm and 168cm <br>
+                15.85% lie between 182cm and 196cm <br>
+                84% lie above 168cm <br>
+                84% lie below 182cm <br>
+                83.85% lie between 168cm and 196cm <br>
+                83.85% lie between 154cm and 182cm <br>
+                81.5% lie between 168cm and 189cm <br>
+                81.5% lie between 161cm and 182cm <br>
+                97.5% lie above 161cm <br>
+                97.5% lie below 189cm <br>
+                97.35% lie between 161cm and 196cm <br>
+                97.35% lie between 154cm and 189cm <br>
+                99.85% lie above 154cm <br>
+                99.85% lie below 196cm
+            </p>
+        </div>
+        <!-- End Empirical Rule -->
+
+        <!-- Normal Distribution Tables -->
+        <div class="w3-container w3-padding-32" id="tablesNormalDistribution">
+            <h2 class="w3-padding-16">Normal Distribution Tables</h2>
+            <hr>
+
+            <p class="w3-padding-64" id="NormalDistributionTableLeftShaded">
+                <b>Standard Normal Distribution Table (Left-Shaded Area)</b> <br>
+                <img src="images/Tables/normal-distribution-negative-left-shaded-area.png"
+                    alt="Normal Distribution Area: Left Shaded: Negative">
+                <img src="images/Tables/normal-distribution-positive-left-shaded-area.png"
+                    alt="Normal Distribution Area: Left Shaded: Positive">
+                <object data="images/Tables/Normal-Distribution-Table-left-shaded-area.pdf" width="1300"
+                    height="700"></object>
+            </p>
+
+            <br><br>
+
+            <p class="w3-padding-64" id="NormalDistributionTableCenterShaded">
+                <b>Standard Normal Distribution Table (Center-Shaded Area)</b> <br>
+                <img src="images/Tables/normal-distribution-center-shaded-area.png"
+                    alt="Normal Distribution Area: Center Shaded"> <br><br>
+                <img src="images/Tables/normal-distribution-table-center-shaded-area.png"
+                    alt="Normal Distribution Table: Center Shaded">
+            </p>
+        </div>
+        <!-- End Normal Distribution Tables -->
+
+        <br><br>
+
+        <!-- Boxplots -->
+        <div class="w3-container w3-padding-32" id="boxplots">
+            <h2 class="w3-padding-16">Boxplots</h2>
+            <hr>
+
+            <p>
+                A <b>boxplot</b> (also known as a <b>box-and-whisker plot</b>): <br>
+                (1.) is a graphical representation of data using the five-number summary of data. <br>
+                It help us to visualize the location of the​ five-number summary.
+                <br><br>
+                (2.) is a useful graphical tool for visualizing a​ distribution, especially when comparing two or more
+                groups of data.
+                <br><br>
+                (3.) shows us the distribution divided into fourths.
+                <br><br>
+                Boxplots are best used only for unimodal distributions because they hide bimodality or any
+                multimodality. <br>
+                Hence, they are not recommended for use with bimodal or multimodal distributions. <br>
+                The left edge of the box is at the first quartile​ (Q<sub>1</sub>). <br>
+                The right edge is at the third quartile​ (Q<sub>3</sub>). <br>
+                Thus the middle​ 50% of the sorted observations lie inside the box.​ <br>
+                Therefore, the length of the box is proportional to the Interquartile Range (IQR). <br>
+                In a​ boxplot, the vertical line inside the box marks the location of the median.
+                <br><br>
+                The boxplot also identifiers the outliers of a dataset. <br>
+                Outliers are observations that are a distance of more than 1.5 interquartile ranges below the first
+                quartile​ (the left edge of a horizontal​ box) or above the third quartile​ (the right​ edge); these are
+                typically
+                called the left limit (lower fence) and the right​ limit (upper fence), respectively. <br>
+                To see potential​ outliers, the whiskers are drawn from the edge of each box to the most extreme
+                observation that is not a potential outlier. <br>
+                Recap: In a​ boxplot, the whiskers extend to the most extreme values that are not potential outliers.
+                <br>
+                Potential outliers are then represented by others​ markers, such as dots.<br>
+                This implies that before we can draw the​ whiskers, we must identify any potential outliers. <br>
+                For the boxplot to be used to represent any dataset, it must mark all potential outliers. <br>
+                The first step with potential outliers is always to investigate. <br>
+                A potential outlier might not be an outlier at all. It might tell an interesting​ story, or it might be
+                the result of an error in entering data.
+                <br><br>
+
+                <br><br>
+                <b>Multiple boxplots</b> are boxplots of several datasets usually constructed on the same scale. <br>
+                <b>Modified boxplots</b> are boxplots in which the outliers are identified with points or asterisks, and
+                in which the solid horizontal line extends only to the minimum and maximum value that are not outliers.
+
+
+            </p>
+        </div>
+        <!-- End Boxplots -->
+
+        <br><br>
+
+        <!-- Outliers and Fences -->
+        <div class="w3-container w3-padding-32" id="outliers">
+            <h2 class="w3-padding-16">Outliers and Fences</h2>
+            <hr>
+
+            <p>
+                An <b>outlier</b> is an extreme data value: a data value that is either too low or too high from the
+                majority of the other values in a dataset. <br>
+                It affects several statistics of data including the mean and the standard deviation among others. <br>
+                <b>Fences</b> are cutoffs for determining outliers.
+                <br><br>
+                <i>Ask students to write the formulas for the lower fence and the upper fence.</i>
+                <br><br>
+                A data value is an outlier if: <br>
+                (1.) It is less than the lower fence OR <br>
+                (2.) It is greater than the upper fence. <br>
+                So, an <b>outlier</b> can also be defined as a data value which falls more than 1.5 times the
+                interquartile range: below the lower quartile or above the upper quartile.
+            </p>
+        </div>
+        <!-- End Outliers and Fences -->
+
+        <br><br>
+
+        <!-- References -->
+        <div class="w3-container w3-padding-32" id="references">
+            <h2 class="w3-padding-16">References</h2>
+            <hr>
+            <p>
+                Chukwuemeka, Samuel Dominic (2023). <i>Descriptive Statistics.</i>
+                Retrieved from <a href="https://statistical-science.appspot.com/"
+                    target="_blank">https://statistical-science.appspot.com/</a>
+                <br><br>
+                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.).
+                New Jersey: Wiley
+                <br><br>
+                Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through
+                    data</i> (3rd ed.). Pearson.
+                <br><br>
+                Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
+                <br><br>
+                OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
+                Retrieved from <a href="https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12"
+                    target="_blank">https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12</a>
+                <br><br>
+                Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed decisions using data with an introduction
+                    to mathematics of finance</i>
+                (2nd custom ed.). Boston: Pearson Learning Solutions.
+                <br><br>
+                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i>
+                (5th ed.). Boston: Pearson
+                <br><br>
+                Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
+                <br><br>
+                Weiss, Neil A. (2015). <i>Elementary Statistics</i> (9th ed.). Boston: Pearson
+                <br><br>
+                CrackACT. (n.d.). Retrieved from http://www.crackact.com/act-downloads/
+                <br><br>
+                CMAT Question Papers CMAT Previous Year Question Bank - Careerindia. (n.d.).
+                Https://Www.Careerindia.Com. Retrieved May 30, 2020, from
+                https://www.careerindia.com/entrance-exam/cmat-question-papers-e23.html
+                <br><br>
+                CSEC Math Tutor. (n.d). Retrieved from https://www.csecmathtutor.com/past-papers.html
+                <br><br>
+                Datasets - Data.gov. (2012). Data.Gov. https://catalog.data.gov/dataset
+                <br><br>
+                DLAP Website. (n.d.). Curriculum.gov.mt.
+                https://curriculum.gov.mt/en/Examination-Papers/Pages/list_secondary_papers.aspx
+                <br><br>
+                Free Jamb Past Questions And Answer For All Subject 2020. (2020, January 31). Vastlearners.
+                https://www.vastlearners.com/free-jamb-past-questions/
+                <br><br>
+                Geogebra. (2019). Graphing Calculator - GeoGebra. Geogebra.org.
+                https://www.geogebra.org/graphing?lang=en
+                <br><br>
+                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                <br><br>
+                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                <br><br>
+                JAMB Past Questions, WAEC, NECO, Post UTME Past Questions. (n.d.). Nigerian Scholars. Retrieved February
+                12, 2022,
+                from https://nigerianscholars.com/past-questions/
+                <br><br>
+                KCSE Past Papers by Subject with Answers-Marking Schemes. (n.d.). ATIKA SCHOOL.
+                Retrieved June 16, 2022, from https://www.atikaschool.org/kcsepastpapersbysubject
+                <br><br>
+                Myschool e-Learning Centre - It's Time to Study! - Myschool. (n.d.). https://myschool.ng/classroom
+                <br><br>
+                Netrimedia. (2022, May 2). ICSE 10th Board Exam Previous Papers- Last 10 Years. Education Observer.
+                https://www.educationobserver.com/icse-class10-previous-papers/
+                <br><br>
+                NSC Examinations. (n.d.). www.education.gov.za.
+                https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                <br><br>
+                School Curriculum and Standards Authority (SCSA): K-12. Past ATAR Course Examinations. Retrieved
+                December 10, 2021,
+                from https://senior-secondary.scsa.wa.edu.au/further-resources/past-atar-course-exams
+                <br><br>
+                West African Examinations Council (WAEC). Retrieved May 30, 2020, from
+                https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                <br><br>
+                Papua New Guinea: Department of Education. (n.d.). www.education.gov.pg. Retrieved November 24, 2020,
+                from
+                http://www.education.gov.pg/TISER/exams.html
+                <br><br>
+                51 Real SAT PDFs and List of 89 Real ACTs (Free) : McElroy Tutoring. (n.d.).
+                Mcelroytutoring.com. Retrieved December 12, 2022,
+                from
+                https://mcelroytutoring.com/lower.php?url=44-official-sat-pdfs-and-82-official-act-pdf-practice-tests-free
+            </p>
+        </div>
+        <!-- End References -->
+
+        <!-- Footer -->
+        <footer class="w3-center w3-cyan w3-padding-16">
+
+            <p>&copy; 2019 Samdom4Peace Designs.</p>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- End page content -->
+
+    <script src="scripts/messages1.js"></script>
+    <script src="scripts/descriptiveStatistics.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

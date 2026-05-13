@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2P5LF7BJD6');
+    </script>
+
+    <title>Applications of Sampling Distributions</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+
+    <meta name="description"
+        content="Samuel Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD JESUS CHRIST. We are experts in solving sampling distributions.">
+
+    <meta name="keywords" content="samuel chukwuemeka, samdom for peace, samuel dominic chukwuemeka, math, mathematics, statistics, inferential statistics, sampling, 
+              samples, population, normal distribution, sampling distribution, probability distribution,
+              sample mean, sample proportion, sample variance, sample standard deviation, population mean,
+              population proportion, population variance, population standard deviation, estimators, bias,
+              standard error, probability, central limit theorem">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/sampling-distribution.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki" id="quotes">
+        <!--   
+        <div class="w3-content">
+            <div class="w3-center">
+                <button class="bibleQuotes" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+            </div>
+            <div class="quoteDay w3-content" id="solutionQuotes">
+                <p>
+                    <q>
+                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                        It is the <b>most powerful prayer</b>.
+                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                    </q> - Samuel Dominic Chukwuemeka 
+                </p>
+                <p id="messages10"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+            </div>
+        </div>
+        
+        
+        <div class="w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka 
+            </p>
+            <p id="messages7"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students</b>.</q> - Samuel Dominic Chukwuemeka</p>
+        </div>
+    -->
+    </header>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples on Sampling Distributions</h1>
+
+    <div class="w3-container">
+        <!-- Image in top left corner --
+        <a href="http://www.samplingdistribution.appspot.com" title="Samuel Chukwuemeka">
+            <img src="images/chukwuemekasamuel.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+        </a>
+        <br>
+    -->
+        Assume all the requirements are met. <br>
+        Solve all questions. <br>
+        Show all work.
+        <br><br>
+        Unless otherwise specified, round: all probability values to four decimal places as needed; and all other values
+        to three decimal places as needed.
+        <br><br>
+        <i>
+            The names of the towns (in italics) are written to make you smile. <br>
+            Yes, those towns exist. &#128522; <br>
+            I want to make this topic fun in any way I can.
+        </i>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) Several students enrolled in the Introductory Statistics class in the town of <i>Zigzag, Oregon</i>
+                took a Statistics exam. <br>
+                The average score on that exam is normally distributed with a mean of 70% and a standard deviation of 8%
+                <br><br>
+                (a.) One student who took the exam is randomly selected. <br>
+                Determine the probability that the student's score is at least 74%
+                <br><br>
+                (b.) A sample of 36 students who took the exam are randomly selected. <br>
+                Determine the probability that the average score of that sample is at least 74%
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD1')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD1">
+                    <br>
+                    At least 74% means: Greater than OR Equal to 74% <br><br>
+                    $
+                    \mu = 70 \\[3ex]
+                    \sigma = 8 \\[3ex]
+                    (a.) \\[3ex]
+                    n = 1 \\[3ex]
+                    x = 74 \\[3ex]
+                    z = \dfrac{x - \mu}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    x - \mu = 74 - 70 = 4 \\[3ex]
+                    \sqrt{n} = \sqrt{1} = 1 \\[3ex]
+                    \dfrac{\sigma}{\sqrt{n}} = \dfrac{8}{1} = 8 \\[5ex]
+                    \rightarrow z = \dfrac{4}{8} = 0.5 \\[5ex]
+                    P(x \lt 74) = P(z \lt 0.50) = 0.691462461274013 \\[3ex]
+                    P(x \ge 74) = P(z \ge 0.50) = 1 - 0.691462461274013 \\[3ex]
+                    \therefore P(x \ge 74) = 0.308537538725987 \\[5ex]
+                    (b.) \\[3ex]
+                    n = 36 \\[3ex]
+                    x = 74 \\[3ex]
+                    z = \dfrac{\bar{x} - \mu}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    \bar{x} - \mu = 74 - 70 = 4 \\[3ex]
+                    \sqrt{n} = \sqrt{36} = 6 \\[3ex]
+                    \dfrac{\sigma}{\sqrt{n}} = \dfrac{8}{6} = \dfrac{4}{3} \\[5ex]
+                    \rightarrow z = 4 \div \dfrac{4}{3} = 4 * \dfrac{3}{4} = 3 \\[5ex]
+                    P(\bar{x} \lt 74) = P(z \lt 3.00) = 0.9986501019683698 \\[3ex]
+                    P(\bar{x} \ge 74) = P(z \ge 3.00) = 1 - 0.9986501019683698 \\[3ex]
+                    \therefore P(\bar{x} \ge 74) = 0.0013498980316302144
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) The letter, <i>C</i> is thought to make up an estimated 12% of Igbo language. <br>
+                A random sample of 700 letters is taken from a randomly selected Igbo literature book and the <i>C</i>’s
+                are counted. <br>
+                Calculate the probability that the random sample of 700 letters will contain: <br>
+                (a.) At most 10% of C’s
+                <br><br>
+                (b.) At least 10% of C’s
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD2')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD2">
+                    <br>
+                    At most 10% means: Less than OR Equal to 10% <br>
+                    At least 10% means: Greater than OR Equal to 10%
+                    <br><br>
+                    $
+                    p = 12\% = \dfrac{12}{100} = 0.12 \\[5ex]
+                    q = 1 - p = 1 - 0.12 = 0.88 \\[3ex]
+                    n = 700 \\[3ex]
+                    \mu_{\hat{p}} = p = 0.12 \\[3ex]
+                    \mu_{\hat{p}} = p = 0.12 \\[3ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{p * q}{n}} \\[5ex]
+                    = \sqrt{\dfrac{0.12 * 0.88}{700}} \\[5ex]
+                    = 0.0122823916 \\[3ex]
+                    \hat{p} = 10\% = 0.1 \\[3ex]
+                    z = \dfrac{\hat{p} - \mu_{\hat{p}}}{\sigma_{\hat{p}}} \\[5ex]
+                    = \dfrac{0.1 - 0.12}{0.0122823916} \\[5ex]
+                    = -1.628347365 \\[3ex]
+                    z \approx -1.63 \\[3ex]
+                    (a.) \\[3ex]
+                    P(z \le -1.63) = 0.0516 \\[3ex]
+                    (b.) \\[3ex]
+                    P(z \ge -1.63) = 1 - 0.051725625 = 0.9484
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) Some statisticians in the town of <i>Surprise, Arizona</i> claimed that the mean number of chickens
+                consumed by the population in a month is 200 chickens. <br>
+                A sample of 144 residents is taken from the population, and the mean number of chickens consumed by that
+                sample in a month is calculated to be 205 chickens. <br>
+                Assume that somehow, it is known that the standard deviation of the population of interest is 15
+                chickens
+                <br><br>
+                (a.) Determine the probability of taking a sample of <i>n</i> = 144 and getting a sample mean of 205 or
+                more if the actual population mean is 200 and the actual population standard deviation is 15.
+                <br><br>
+                (b.) Does this sample outcome support the claim that the mean of the population of interest is 200?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD3')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD3">
+                    <br>
+                    205 or more means Greater than OR Equal to $205$ <br><br>
+                    $
+                    \mu = 200 \\[3ex]
+                    \sigma = 15 \\[3ex]
+                    (a.) \\[3ex]
+                    n = 144 \\[3ex]
+                    \bar{x} = 205 \\[3ex]
+                    z = \dfrac{\bar{x} - \mu}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    \bar{x} - \mu = 205 - 200 = 5 \\[3ex]
+                    \sqrt{n} = \sqrt{144} = 12 \\[3ex]
+                    \dfrac{\sigma}{\sqrt{n}} = \dfrac{15}{12} = \dfrac{5}{4} \\[5ex]
+                    \implies \\[3ex]
+                    z = 5 \div \dfrac{5}{4} = 5 * \dfrac{4}{5} = 4 \\[5ex]
+                    P(\bar{x} \lt 205) = P(z \lt 4.00) = 0.9999683287581669 \approx 1 \\[3ex]
+                    P(\bar{x} \ge 205) = P(z \ge 4.00) = 1 - 0.9999683287581669 = 0.00003167124183311998 \approx 0
+                    \\[3ex]
+                    \therefore P(\bar{x} \ge 205) = 0 \\[3ex]
+                    $
+                    This is an impossible event <br><br>
+                    Because this is an impossible event, the sample outcome of $144$ does not support the claim that
+                    the mean of the population of interest is $200$
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) Do you think juries should have the same racial distribution proportion as their demographics? <br>
+                About 21% of residents in the town of <i>Rough and Ready, California</i> identify as biracial or
+                multiracial. <br>
+                A local court randomly selects 150 residents to participate in the jury pool. <br>
+                Use the Central Limit Theorem and the Empirical Rule to find the probability of selecting a proportion
+                of residents that are: <br>
+                (a.) Less than three standard errors below 21% <br>
+                (b.) More than three standard errors below 21% <br>
+                (c.) Less than three standard errors above 21% <br>
+                (d.) More than three standard errors above 21% <br>
+                (e.) Within three standard errors of 21%
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD4')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD4">
+                    <br>
+                    Remember the definition of the <i>z</i> score. <br>
+                    The <i>z</i> score tells us the number of standard deviations (or in this case, standard errors)
+                    from the mean. <br>
+                    From the Central Limit Theorem, $\mu_{\hat{p}} = p = 21\% = 0.21$ <br>
+                    There are at least two approaches to solving this question. <br>
+                    Use any approach you prefer.
+                    <br><br>
+                    <b>1st Approach:</b> (Less Work) <br>
+                    (a.) Less than 3 standard errors below the mean = $P(z \le -3) = 0.0013$
+                    <br><br>
+                    (b.) More than 3 standard errors below the mean = $P(z \ge -3) = 1 - 0.0013 = 0.9987$
+                    <br><br>
+                    (c.) Less than 3 standard errors above the mean = $P(z \le 3) = 0.9987$
+                    <br><br>
+                    (d.) More than 3 standard errors above the mean = $P(z \le 3) = 1 - 0.9987 = 0.0013$
+                    <br><br>
+                    (e.) Within 3 standard errors from the mean = <br>
+                    $P(-3 \le z \le 3)$ <br>
+                    = $P(z \le 3) - P(z \le -3)$ <br>
+                    = 0.9986501 &minus; 0.0013499 <br>
+                    = 0.9973
+                    <br><br>
+                    <b>2nd Approach:</b> (More Work) <br><br>
+                    $
+                    p = 21\% = 0.21 \\[3ex]
+                    q = 1 - 0.21 = 0.79 \\[3ex]
+                    n = 150 \\[3ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{p * q}{n}} \\[5ex]
+                    $
+                    3 standard errors = 3(0.033256578) = 0.09976973489 <br><br>
+                    3 standard errors below 0.21 = 0.21 &minus; 0.09976973489 = 0.1102302651
+                    <br><br>
+                    $
+                    \hat{p} = 0.1102302651 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sigma_{\hat{p}}} \\[5ex]
+                    z = \dfrac{0.1102302651 - 0.21}{0.0332565783} \\[5ex]
+                    z = -\dfrac{0.09976973489}{0.0332565783} \\[5ex]
+                    z = -3 \\[3ex]
+                    (a.) \\[3ex]
+                    P(z \le -3) = 0.0013 \\[3ex]
+                    (b.) \\[3ex]
+                    P(z \ge -3) = 1 - 0.0013 = 0.9987 \\[3ex]
+                    $
+                    3 standard errors above 0.21 = 0.21 + 0.09976973489 = 0.3097697349
+                    <br><br>
+                    $
+                    \hat{p} = 0.3097697349 \\[3ex]
+                    z = \dfrac{\hat{p} - p}{\sigma_{\hat{p}}} \\[5ex]
+                    z = \dfrac{0.3097697349 - 0.21}{0.0332565783} \\[5ex]
+                    z = \dfrac{0.09976973489}{0.0332565783} \\[5ex]
+                    z = 3 \\[3ex]
+                    (c.) \\[3ex]
+                    P(z \le 3) = 0.9987 \\[3ex]
+                    (d.) \\[3ex]
+                    P(z \ge 3) = 1 - 0.9987 = 0.0013 \\[3ex]
+                    $
+                    Within 3 standard errors from the mean = $P(-3 \le z \le 3)$
+                    <br><br>
+                    $
+                    (e.) \\[3ex]
+                    P(-3 \le z \le 3) \\[3ex]
+                    = P(z \le 3) - P(z \le -3) \\[3ex]
+                    = 0.9986501 - 0.0013499 \\[3ex]
+                    = 0.9973 \\[3ex]
+                    $
+                    <u>NOTE:</u> These answers are comparable to the <a
+                        href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptive-statistics.html#empiricalRule"
+                        target="_blank">Empirical Rule</a> (68 &ndash; 95 &ndash; 99.7% Rule). <br>
+                    Approximately 99.7% of the data lie within 3 standard deviations from the mean.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) A survey of eating habits showed that approximately 5% of people in the City of <i>Weed,
+                    California</i> are vegans. <br>
+                Vegans do not eat meat, poultry, fish, seafood eggs, or milk. <br>
+                A restaurant in the city expects 350 people on opening night, and the chef is deciding on the menu. <br>
+                Assume the patrons to be a simple random sample from the city and the surrounding area, which has a
+                population of about 600,000. <br>
+                If 18 vegan meals are available, what is the approximate probability that there will not be enough vegan
+                meals: that is, the probability that 19 or more vegans will come to the restaurant? <br>
+                Assume the vegans are independent and there are no families of vegans.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD5')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD5">
+                    <br>
+                    $
+                    p = 5\% = 0.05 \\[3ex]
+                    q = 1 - p = 1 - 0.05 = 0.95 \\[3ex]
+                    \mu_{\hat{p}} = p = 0.05 \\[3ex]
+                    x = 19 \\[3ex]
+                    n = 350 \\[3ex]
+                    \hat{p} = \dfrac{x}{n} \\[5ex]
+                    \hat{p} = \dfrac{19}{350} = 0.0542857143 \\[5ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{p * q}{n}} \\[5ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{0.05 * 0.95}{350}} \\[5ex]
+                    \sigma_{\hat{p}} = 0.0116496475 \\[3ex]
+                    z = \dfrac{\hat{p} - \mu_{\hat{p}}}{\sigma_{\hat{p}}} \\[5ex]
+                    z = \dfrac{0.0542857143 - 0.05}{0.0116496475} \\[5ex]
+                    z = 0.3678836033 \\[3ex]
+                    z \approx 0.37 \\[3ex]
+                    P(z \le 0.37) = 0.6443087 \\[3ex]
+                    P(\hat{p} \gt 0.0542857143) = P(z \gt 0.37) = 1 - 0.6443087 = 0.3556913 \\[3ex]
+                    P(\hat{p} \gt 0.0542857143) \approx 0.3557
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) A True/False test has 40 questions. Assume the passing grade to be 58% or more correct answers.
+                <br>
+                (a.) Determine the probability that a student will guess correctly on one question. <br>
+                (b.) Determine the probability that a student will guess incorrectly on one question. <br>
+                (c.) Determine the probability that a person who guesses will pass the test. <br>
+                (d.) If a similar test were given with multiple-choice questions with four choices for each question,
+                would the approximate probability of passing the test by guessing be higher or lower than the
+                approximate probability of passing the true/false test? Why?
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD6')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD6">
+                    <br>
+                    For each question on the True/False test; <br>
+                    <i>n</i>(<i>S</i>) = <i>n</i>(options) = 2 <br>
+                    <i>n</i>(correct answer) = 1 <br>
+                    <i>n</i>(incorrect answer) = 1 <br><br>
+                    $
+                    (a.) \\[3ex]
+                    P(correct\;\;answer) = \dfrac{1}{2} = 0.5 \\[5ex]
+                    (b.) \\[3ex]
+                    P(incorrect\;\;answer) = \dfrac{1}{2} = 0.5 \\[5ex]
+                    p = P(correct\;\;answer) = 0.5 \\[3ex]
+                    \mu_{\hat{p}} = p = 0.5 \\[3ex]
+                    q = P(incorrect\;\;answer) = 0.5 \\[3ex]
+                    \hat{p} = 58\% = 0.58 \\[3ex]
+                    n = 40 \\[3ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{p * q}{n}} \\[5ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{0.5 * 0.5}{40}} \\[5ex]
+                    \sigma_{\hat{p}} = 0.0790569415 \\[3ex]
+                    z = \dfrac{\hat{p} - \mu_{\hat{p}}}{\sigma_{\hat{p}}} \\[5ex]
+                    z = \dfrac{0.58 - 0.5}{0.0790569415} \\[5ex]
+                    z = 1.011928851 \approx 1.01 \\[3ex]
+                    P(z \le 1.01) = 0.84375235 \\[3ex]
+                    (c.) \\[3ex]
+                    P(\hat{p} \gt 0.58) \\[3ex]
+                    = P(z \gt 1.01) \\[3ex]
+                    = 1 - 0.84375235 \\[3ex]
+                    = 0.15624765 \\[3ex]
+                    $
+                    (d.) <br>
+                    For each question on the multiple-choice test; <br>
+                    <i>n</i>(<i>S</i>) = <i>n</i>(options) = 4 <br>
+                    <i>n</i>(correct answer) = 1 <br>
+                    <i>n</i>(incorrect answers) = 3 <br><br>
+                    $
+                    P(correct\;\;answer) = \dfrac{1}{4} = 0.25 \\[5ex]
+                    P(incorrect\;\;answer) = \dfrac{3}{4} = 0.75 \\[5ex]
+                    $
+                    The probability of passing a multiple-choice test would be lower than passing a true/false test
+                    because the probability of guessing correctly on a multiple-choice test, 0.25 is lower than guessing
+                    correctly on a true/false question test, 0.5
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD7')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD7">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD8')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD8">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD9')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD9">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD10')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD10">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD11')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD11">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD12')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD12">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.) The school district in the town of <i>Sandwich, Massachusetts</i> has 1000 teachers. <br>
+                50% of those teachers are men, and 50% are women. <br>
+                In this district, administrators are promoted from among the teachers. <br>
+                Presently, there are 50 administrators. <br>
+                60% of the administrators are men.
+                <br><br>
+                (a.) If administrators are selected randomly from the faculty, determine the probability that the
+                percentage of male administrators will be 60% or more.
+                <br><br>
+                (b.) If administrators are selected randomly from the faculty, determine the probability that the
+                percentage of female administrators will be 40% or less.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD13')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD13">
+                    <br>
+                    $
+                    (a.) \\[3ex]
+                    \underline{Male\;\;Teachers} \\[3ex]
+                    p = 50\% = 0.5 \\[3ex]
+                    q = 1 - p = 1 - 0.5 = 0.5 \\[3ex]
+                    n = 50 \\[3ex]
+                    \underline{Male\;\;Administrators} \\[3ex]
+                    \hat{p} = 60\% = 0.6 \\[3ex]
+                    \mu_{\hat{p}} = p = 0.6 \\[3ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{p * q}{n}} \\[5ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{0.5 * 0.5}{50}} \\[5ex]
+                    \sigma_{\hat{p}} = 0.0707106781 \\[3ex]
+                    z = \dfrac{\hat{p} - \mu_{\hat{p}}}{\sigma_{\hat{p}}} \\[5ex]
+                    z = \dfrac{0.6 - 0.5}{0.0707106781} \\[5ex]
+                    z = 1.414213562 \approx 1.41 \\[3ex]
+                    P(z \le 1.41) = 0.92073016 \\[3ex]
+                    P(\hat{p} \gt 0.6) = P(z \gt 1.41) = 1 - 0.92073016 = 0.07926984 \\[3ex]
+                    P(\hat{p} \gt 0.6) \approx 0.0793 \\[3ex]
+                    $
+                    Selecting 60% or more male administrators is the same as selecting 40% or less female
+                    administrators. <br>
+                    Our answers for both questions should be the same. However, let us solve it.
+                    <br><br>
+                    $
+                    (b.) \\[3ex]
+                    \underline{Female\;\;Teachers} \\[3ex]
+                    p = 50\% = 0.5 \\[3ex]
+                    q = 1 - p = 1 - 0.5 = 0.5 \\[3ex]
+                    n = 50 \\[3ex]
+                    \underline{Female\;\;Administrators} \\[3ex]
+                    \hat{p} = 100\% - 60\% = 40\% = 0.4 \\[3ex]
+                    \mu_{\hat{p}} = p = 0.4 \\[3ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{p * q}{n}} \\[5ex]
+                    \sigma_{\hat{p}} = \sqrt{\dfrac{0.5 * 0.5}{50}} \\[5ex]
+                    \sigma_{\hat{p}} = 0.0707106781 \\[3ex]
+                    z = \dfrac{\hat{p} - \mu_{\hat{p}}}{\sigma_{\hat{p}}} \\[5ex]
+                    z = \dfrac{0.4 - 0.5}{0.0707106781} \\[5ex]
+                    z = -1.414213562 \approx -1.41 \\[3ex]
+                    P(z \le -1.41) = 0.07926984 \\[3ex]
+                    P(\hat{p} \le 0.4) = P(z \le -1.41) \approx 0.0793
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD14')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD14">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (15.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD15')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD15">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (16.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD16')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD16">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (17.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD17')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD17">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (18.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD18')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD18">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (19.) The weights of full-term newborn babies in the town of <i>No Name, Colorado</i> are normally
+                distributed with a mean of 8 pounds and a standard deviation of 0.6 pounds. <br><br>
+                (a.) Determine the probability that the average of four randomly selected babies will be less than 0.6
+                pounds less than the mean. <br><br>
+                (b.) Determine the probability that the average of four randomly selected babies will be more than 0.6
+                pounds less than the mean. <br><br>
+                (c.) Determine the probability that the average of four randomly selected babies will be less than 0.6
+                pounds more than the mean. <br><br>
+                (d.) Determine the probability that the average of four randomly selected babies will be more than 0.6
+                pounds more than the mean. <br><br>
+                (e.) Determine the probability that the average of four randomly selected babies will be within 0.6
+                pounds of the mean. <br><br>
+                (f.) Determine the probability that the average of a randomly selected baby will be within 0.6 pounds of
+                the mean.
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD19')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD19">
+                    <br>
+                    $
+                    n = 4 \\[3ex]
+                    \mu = 8 \\[3ex]
+                    \sigma = 0.6 \\[3ex]
+                    $
+                    0.6 pounds less than the mean &Implies; x&#772; = 8 &minus; 0.6 = 7.4 <br><br>
+                    $
+                    z = \dfrac{\bar{x} - \mu_{\bar{x}}}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    z = \dfrac{7.4 - 8}{\dfrac{0.6}{\sqrt{4}}} \\[7ex]
+                    z = \dfrac{7.4 - 8}{\dfrac{0.6}{2}} \\[7ex]
+                    z = -\dfrac{0.6}{0.3} \\[5ex]
+                    z = -2.00 \\[3ex]
+                    (a.) \\[3ex]
+                    P(\bar{x} \lt -0.6) = P(z \lt -2.00) = 0.02275013 \approx 0.0228 \\[3ex]
+                    (b.) \\[3ex]
+                    P(\bar{x} \gt -0.6) = P(z \gt -2.00) = 1 - 0.02275013 = 0.97724987 \approx 0.9772 \\[3ex]
+                    $
+                    0.6 pounds less than the mean &Implies; x&#772; = 8 + 0.6 = 8.6 <br><br> <br><br>
+                    $
+                    z = \dfrac{\bar{x} - \mu_{\bar{x}}}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    z = \dfrac{8.6 - 8}{\dfrac{0.6}{\sqrt{4}}} \\[7ex]
+                    z = \dfrac{8.6 - 8}{\dfrac{0.6}{2}} \\[7ex]
+                    z = \dfrac{0.6}{0.3} \\[5ex]
+                    z = 2.00 \\[3ex]
+                    (c.) \\[3ex]
+                    P(\bar{x} \lt 0.6) = P(z \lt 2.00) = 0.97724987 \approx 0.9772 \\[3ex]
+                    (d.) \\[3ex]
+                    P(\bar{x} \gt 0.6) = P(z \gt 2.00) = 1 - 0.97724987 = 0.02275013 \approx 0.0228 \\[3ex]
+                    $
+                    0.6 pounds within the mean &Implies; that x&#772; is between 7.4 and 8.6 <br><br>
+                    $
+                    (e.) \\[3ex]
+                    P(7.4 \le x \le 8.6) \\[3ex]
+                    = P(-2 \le z \le 2) \\[3ex]
+                    = P(z \le 2.00) - P(z \le -2.00) \\[3ex]
+                    = 0.97724987 - 0.02275013 \\[3ex]
+                    = 0.95449974 \\[3ex]
+                    \approx 0.9544 \\[3ex]
+                    $
+                    <i>
+                        Compare with the <a
+                            href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptive-statistics.html#empiricalRule"
+                            target="_blank">Empirical Rule</a> (68 &ndash; 95 &ndash; 99.7% Rule). <br>
+                        About 95% lie within 2 standard deviations from the mean.
+                    </i>
+                    <br><br>
+                    $
+                    n = 1 \\[3ex]
+                    \bar{x} = 7.4 \\[3ex]
+                    \mu_{\bar{x}} = 8 \\[3ex]
+                    \sigma = 0.6 \\[3ex]
+                    z = \dfrac{\bar{x} - \mu_{\bar{x}}}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    z = \dfrac{7.4 - 8}{\dfrac{0.6}{\sqrt{1}}} \\[7ex]
+                    z = \dfrac{7.4 - 8}{\dfrac{0.6}{1}} \\[7ex]
+                    z = -\dfrac{0.6}{0.6} \\[5ex]
+                    z = -1.00 \\[5ex]
+                    n = 1 \\[3ex]
+                    \bar{x} = 8.6 \\[3ex]
+                    \mu_{\bar{x}} = 8 \\[3ex]
+                    \sigma = 0.6 \\[3ex]
+                    z = \dfrac{\bar{x} - \mu_{\bar{x}}}{\dfrac{\sigma}{\sqrt{n}}} \\[7ex]
+                    z = \dfrac{8.6 - 8}{\dfrac{0.6}{\sqrt{1}}} \\[7ex]
+                    z = \dfrac{8.6 - 8}{\dfrac{0.6}{1}} \\[7ex]
+                    z = \dfrac{0.6}{0.6} \\[5ex]
+                    z = 1.00 \\[5ex]
+                    P(7.4 \le x \le 8.6) \\[3ex]
+                    = P(-1 \le z \le 1) \\[3ex]
+                    = P(z \le 1.00) - P(z \le -1.00) \\[3ex]
+                    = 0.8413447 - 0.1586553 \\[3ex]
+                    = 0.6826894 \\[3ex]
+                    \approx 0.6827 \\[3ex]
+                    $
+                    <i>
+                        Compare with the <a
+                            href="https://statistical-science.appspot.com/DescriptiveStatistics/descriptive-statistics.html#empiricalRule"
+                            target="_blank">Empirical Rule</a> (68 &ndash; 95 &ndash; 99.7% Rule). <br>
+                        About 68% lie within 1 standard deviation from the mean.
+                    </i>
+                    <br><br>
+                    The difference between a sample size of 4 and a sample size of for the same population mean,
+                    population standard deviation, and the value of the variable is that the distribution of means is
+                    taller and narrower for the sample size of 4 than the sample size of 1. <br>
+                    This implies that the distribution of means will have more observations located closer to the center
+                    of the distribution.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (20.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD20')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD20">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+        <a href="https://statistical-science.appspot.com/SamplingDistributions/sampling-distribution.html"
+            class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top
+        </a>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (21.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD21')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD21">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (22.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD22')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD22">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (23.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD23')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD23">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (24.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionSD24')">Show/Hide Answer</button>
+                <div class="result" id="solutionSD24">
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- END PAGE CONTENT -->
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <!--
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank">
+            <img src="images/youtube.png" alt="Subscribe to my YouTube channel">
+        </a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank">
+            <img src="images/twitter.png" alt="Follow me on twitter">
+        </a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank">
+            <img src="images/blogger.jpg" alt="Subscribe and follow my blog">
+        </a>
+    -->
+
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'G-2P5LF7BJD6' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<p>&copy; 2017&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>-->
+        <p>&copy; 2017&nbsp; Samdom4Peace Designs.</p>
+    </footer>
+
+    <script src="scripts/messages10.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>
