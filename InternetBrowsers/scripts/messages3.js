@@ -2,9 +2,8 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.expressions-equations.appspot.com/factoring.html
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
+// https://samuelchukwuemeka.github.io/expressions-equations/factoring.html
+
 // message 3
 
 

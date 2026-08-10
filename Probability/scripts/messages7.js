@@ -4,8 +4,7 @@
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
     www.chukwuemekasamuel.com/probability/probabilityApplications.html
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
+    
     message 7
 */
 

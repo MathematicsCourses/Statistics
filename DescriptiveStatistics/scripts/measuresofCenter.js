@@ -1,13 +1,13 @@
 /*
     Copyright 2017 - Samuel Dominic Chukwuemeka (SamDom For Peace)
-    www.descriptive-statistics.appspot.com
-    www.descriptive-statistics.appspot.com/descriptive-statistics-calculators.html
-    www.descriptive-statistics.appspot.com/descriptiveStatistics.html
-    www.descriptive-statistics.appspot.com/measuresCenter.html
-    www.descriptive-statistics.appspot.com/measuresPosition.html
-    www.descriptive-statistics.appspot.com/measuresVariation.html
-    www.descriptive-statistics.appspot.com/statistics.html
-    www.descriptive-statistics.appspot.com/project.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/
+    https://samuelchukwuemeka.github.io/descriptive-statistics/descriptive-statistics-calculators.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/descriptiveStatistics.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/measuresCenter.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/measuresPosition.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/measuresVariation.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/statistics.html
+    https://samuelchukwuemeka.github.io/descriptive-statistics/project.html
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com

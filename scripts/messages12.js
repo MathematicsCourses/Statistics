@@ -3,8 +3,7 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
+    
     www.chukwuemekasamuel.com/Vectors/vectorExamples.html
     message 12
 */

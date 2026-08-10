@@ -2,9 +2,7 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.descriptive-statistics.appspot.com/descriptive-statistics.html
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
+// https://samuelchukwuemeka.github.io/descriptive-statistics/descriptive-statistics.html
 // message 1
 
 

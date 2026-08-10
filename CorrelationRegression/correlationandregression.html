@@ -4,25 +4,18 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P5LF7BJD6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-2P5LF7BJD6');
-    </script>
-    
+
     <title>Correlation and Regression</title>
 
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
 
-    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in correlation and regression.">
+
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in correlation and regression.">
 
     <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, statistics, correlation, 
         association, causation, causal relationship, predictor variable, explanatory variable, response variable, linear correlation, scatter diagrams, 
@@ -43,8 +36,10 @@
 
 <body>
     <!-- Side Navigation -->
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-cornsilk w3-animate-left w3-card" style="z-index:3; width:320px;" id="mySidebar">
-        <img src="images/samdom4peace.jpg" style="width:100%;" title="Samuel Dominic Chukwuemeka" alt="Samuel Dominic Chukwuemeka">
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-cornsilk w3-animate-left w3-card" style="z-index:3; width:320px;"
+        id="mySidebar">
+        <img src="images/samdom4peace.jpg" style="width:100%;" title="Samuel Dominic Chukwuemeka"
+            alt="Samuel Dominic Chukwuemeka">
         <!--
         <a href="https://www.samdomforpeace.com/" class="w3-bar-item w3-button w3-border-bottom w3-large">
             <img src="images/samdom4peace.jpg" style="width:100%;" title="Samuel Dominic Chukwuemeka">
@@ -62,39 +57,46 @@
         <a href="#formulas" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Formulas</a>
         <a href="#introduction" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Introduction</a>
         <a href="#scatterDiagrams" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Scatter Diagrams</a>
-        <a href="#correlationCoefficientPearson" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Pearson's Correlation Coefficient</a>
-        <a href="#coefficientDetermination" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Coefficient of Determination</a>
-        <a href="#leastSquaresRegressionLine" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Least-Squares Regression Line</a>
-        <a href="https://mathematicscourses.github.io/Statistics/Statistics-RStudio/ScatterDiagrams.html" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Scatter Diagrams using RStudio</a>
+        <a href="#correlationCoefficientPearson" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Pearson's
+            Correlation Coefficient</a>
+        <a href="#coefficientDetermination" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Coefficient of
+            Determination</a>
+        <a href="#leastSquaresRegressionLine" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Least-Squares
+            Regression Line</a>
+        <a href="https://mathematicscourses.github.io/Statistics/Statistics-RStudio/ScatterDiagrams.html"
+            class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Scatter Diagrams using RStudio</a>
 
         <a onclick="technology()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">
             Calculators <i class="fa fa-caret-down"></i>
         </a>
         <div id="calculators" class="w3-bar-block w3-hide w3-padding-large">
-            <a href="#TIcalculator" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>TI-series Calculators</a>
+            <a href="#TIcalculator" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>TI-series
+                Calculators</a>
             <!--
-            <a href="https://correlationandregression.appspot.com/correlationRegressionCalculators-vertical.html" target="_blank" class="w3-bar-item w3-button">
+            <a href="https://samuelchukwuemeka.github.io/correlation-regression/correlationRegressionCalculators-vertical.html" target="_blank" class="w3-bar-item w3-button">
                 <i class="w3-margin-right"></i>Calculators <br> (Vertical Data Entry)
             </a>
-            <a href="https://correlationandregression.appspot.com/correlationRegressionCalculators-horizontal.html" target="_blank" class="w3-bar-item w3-button">
+            <a href="https://samuelchukwuemeka.github.io/correlation-regression/correlationRegressionCalculators-horizontal.html" target="_blank" class="w3-bar-item w3-button">
                 <i class="w3-margin-right"></i>Calculators <br> (Horizontal Data Entry)
             </a>
         -->
         </div>
-        
+
         <a onclick="examples()" href="javascript:void(0)" class="w3-button w3-bar-block w3-left-align">
             Solved Examples <i class="fa fa-caret-down"></i>
         </a>
         <div id="solvedExamples" class="w3-bar-block w3-hide w3-padding-large">
-            <a href="https://mathematicscourses.github.io/Statistics/CorrelationRegression/scatterDiagrams.html" target="_blank" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Scatter Diagrams</a>
-            <a href="https://mathematicscourses.github.io/Statistics/CorrelationRegression/correlationRegression.html" target="_blank" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Correlation/Regression</a>
+            <a href="https://mathematicscourses.github.io/Statistics/CorrelationRegression/scatterDiagrams.html"
+                target="_blank" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Scatter Diagrams</a>
+            <a href="https://mathematicscourses.github.io/Statistics/CorrelationRegression/correlationRegression.html"
+                target="_blank" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Correlation/Regression</a>
         </div>
         <a href="#tables" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Tables</a>
         <a href="#references" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>References</a>
         <!--<a href="https://chukwuemekasamuel.weebly.com/" target="_blank" class="w3-bar-item w3-button"><i class="w3-margin-right"></i>Contact</a>-->
     </nav>
 
-    
+
     <!-- Overlay effect when opening the side navigation on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
         title="Close Sidemenu" id="myOverlay">
@@ -116,7 +118,7 @@
                     </q> - Samuel Dominic Chukwuemeka 
                 </p>
                 <p id="messages7"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
-                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+                <p><q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
             </div>
             <br>
             
@@ -136,7 +138,7 @@
                     </q> - Samuel Dominic Chukwuemeka 
                 </p>
                 <p id="messages7"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
-                <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
+                <p><q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b></q> - Samuel Dominic Chukwuemeka</p>
             </div>
         -->
         </div>
@@ -148,7 +150,7 @@
                 <span id="greetings"></span> <br>
                 I greet you this day,
                 <script>document.write(Date() + ".");</script> <br><br>
-        
+
                 <u>First:</u> Read the stories. (Yes, I tell stories too. &#x263A;) <br>
                 The stories will introduce you to the topic, while making you smile/laugh at the same time. <br>
                 <u>Second:</u> Review the Notes. <br>
@@ -158,9 +160,11 @@
                 <u>Sixth:</u> Check your answers with the calculators. <br><br>
                 I wrote the codes for the calculators using Javascript, a client-side scripting language. <br>
                 Please use the latest Internet browsers. The calculators should work. <br>
-                Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may contact me. <br>
+                Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. You may
+                contact me. <br>
                 Thank you for visiting. <br>
-                <strong>Samuel Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: medium">B.Eng., A.A.T, M.Ed., M.S</span>
+                <strong>Samuel Chukwuemeka</strong> (Samdom For Peace) <span style="font-size: medium">B.Eng., A.A.T,
+                    M.Ed., M.S</span>
             </p>
         </div>
         <!-- End Welcome -->
@@ -175,7 +179,8 @@
                 (1.) Differentiate between association and causation. <br>
                 (2.) Discuss correlation. <br>
                 (3.) Draw scatter diagrams manually. <br>
-                (4.) Draw scatter diagrams using technology (Texas Instruments (TI) calculator, Pearson Statcrunch, Microsoft Excel, and Google Spreadsheets among others). <br>
+                (4.) Draw scatter diagrams using technology (Texas Instruments (TI) calculator, Pearson Statcrunch,
+                Microsoft Excel, and Google Spreadsheets among others). <br>
                 (5.) Interpret scatter diagrams. <br>
                 (6.) Calculate the Pearson's correlation coefficient. <br>
                 (7.) Interpret the Pearson's correlation coefficient in the context in which it was asked. <br>
@@ -183,8 +188,10 @@
                 (9.) Interpret the coefficient of determination. <br>
                 (10.) Compute residuals. <br>
                 (11.) Determine the least-squares regression line. <br>
-                (12.) Determine the correlation coefficient and the least-squares regression line using TI (Texas Instruments) calculators. <br>
-                (13.) Determine the correlation coefficient and the least-squares regression line using technology (Pearson Statcrunch, Microsoft Excel, and Google Spreadsheets among others). <br>
+                (12.) Determine the correlation coefficient and the least-squares regression line using TI (Texas
+                Instruments) calculators. <br>
+                (13.) Determine the correlation coefficient and the least-squares regression line using technology
+                (Pearson Statcrunch, Microsoft Excel, and Google Spreadsheets among others). <br>
                 (14.) Calculate the Spearman's rank correlation coefficient. <br>
                 (15.) Interpret the Spearman's rank correlation coefficient in the context in which it was asked. <br>
                 (16.) Calculate the Kendall's rank correlation coefficient. <br>
@@ -199,7 +206,7 @@
         <div id="vocabularyWords" class="w3-container">
             <h2>Vocabulary Words</h2>
             <p>
-                relationship, relates, causation, causes, association, is associated with, correlation, correlates with, 
+                relationship, relates, causation, causes, association, is associated with, correlation, correlates with,
             </p>
         </div>
         <!-- End Vocabulary Words -->
@@ -210,31 +217,39 @@
         <div id="definitions" class="w3-container">
             <h2>Definitions</h2>
             <p>
-                <b>Linear Correlation</b> is an <b>association between two variables:</b> the <b>predictor variable</b> and the
+                <b>Linear Correlation</b> is an <b>association between two variables:</b> the <b>predictor variable</b>
+                and the
                 <b>response variable.</b> <br>
                 The association may or may not be causal. <br><br>
 
-                <b>Causation</b> is an <b>association between two variables</b> in which a <b>change in one variable</b> <u>causes</u> a
+                <b>Causation</b> is an <b>association between two variables</b> in which a <b>change in one variable</b>
+                <u>causes</u> a
                 <b>change in the other variable.</b> <br>
                 This is otherwise known as <b>cause</b> <u>and</u> <b>effect.</b> <br><br>
 
-                A <b>Linear Correlation</b> is the correlation that shows a linear relationship between the variables. <br>
+                A <b>Linear Correlation</b> is the correlation that shows a linear relationship between the variables.
+                <br>
                 Linear correlation can be positive linear correlation or negative linear correlation. <br><br>
 
-                A <b>Positive Linear Correlation</b> shows a <b>direct relationship</b> in which an increase in the predictor
-                variable leads to an increase in the response variable, and in which a decrease in the predictor variable leads to a decrease 
+                A <b>Positive Linear Correlation</b> shows a <b>direct relationship</b> in which an increase in the
+                predictor
+                variable leads to an increase in the response variable, and in which a decrease in the predictor
+                variable leads to a decrease
                 in the response variable. <br><br>
 
-                A <b>Negative Linear Correlation</b> shows an <b>inverse relationship</b> in which an increase in the predictor
-                variable leads to a decrease in the response variable, and in which a decrease in the predictor variable leads to an increase 
+                A <b>Negative Linear Correlation</b> shows an <b>inverse relationship</b> in which an increase in the
+                predictor
+                variable leads to a decrease in the response variable, and in which a decrease in the predictor variable
+                leads to an increase
                 in the response variable. <br><br>
-            
-                A <b>Scatter Diagram</b> is a graph that shows the relationship between two variables: the response variable and the predictor 
+
+                A <b>Scatter Diagram</b> is a graph that shows the relationship between two variables: the response
+                variable and the predictor
                 variable. <br><br>
-            
-            
-            
-            
+
+
+
+
             </p>
         </div>
         <!-- End Definitions -->
@@ -356,8 +371,8 @@
                 <tr>
                     <td>$y - \hat{y}$</td>
                     <td>
-                        residual = 
-                        observed values of $y$ $-$ predicted values of $y$ 
+                        residual =
+                        observed values of $y$ $-$ predicted values of $y$
                     </td>
                 </tr>
                 <tr>
@@ -397,13 +412,13 @@
         <!-- Formulas -->
         <div id="formulas" class="w3-container">
             <h2>Formulas</h2>
-            
+
             <p>
                 $
-                (1.)\;\; \bar{x} = \dfrac{\Sigma x}{n} \\[5ex] 
-                (2.)\;\; \bar{y} = \dfrac{\Sigma y}{n} \\[5ex] 
-                (3.)\;\; z_{x} = \dfrac{x - \bar{x}}{s_{x}} \\[5ex] 
-                (4.)\;\; z_{y} = \dfrac{y - \bar{y}}{s_{y}} \\[5ex] 
+                (1.)\;\; \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                (2.)\;\; \bar{y} = \dfrac{\Sigma y}{n} \\[5ex]
+                (3.)\;\; z_{x} = \dfrac{x - \bar{x}}{s_{x}} \\[5ex]
+                (4.)\;\; z_{y} = \dfrac{y - \bar{y}}{s_{y}} \\[5ex]
                 $
 
                 <b>First Formula for Standard Deviation</b> <br><br>
@@ -420,23 +435,25 @@
 
                 <b>First Formula for Pearson Correlation Coefficient</b> <br><br>
                 $
-                (9.)\;\; r = \dfrac{\Sigma\left(\dfrac{x - \bar{x}}{s_x}\right)\left(\dfrac{y - \bar{y}}{s_y}\right)}{n - 1} \\[7ex]
+                (9.)\;\; r = \dfrac{\Sigma\left(\dfrac{x - \bar{x}}{s_x}\right)\left(\dfrac{y - \bar{y}}{s_y}\right)}{n
+                - 1} \\[7ex]
                 (10.)\;\; r = \dfrac{\Sigma\left(z_x\right)\left(z_y\right)}{n - 1} \\[5ex]
                 $
 
                 <b>Second Formula for Pearson Correlation Coefficient</b> <br><br>
                 $
-                (11.)\;\; r = \dfrac{n(\Sigma xy) - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2} * \sqrt{n(\Sigma y^2) - (\Sigma y)^2}} \\[7ex]
+                (11.)\;\; r = \dfrac{n(\Sigma xy) - (\Sigma x)(\Sigma y)}{\sqrt{n(\Sigma x^2) - (\Sigma x)^2} *
+                \sqrt{n(\Sigma y^2) - (\Sigma y)^2}} \\[7ex]
                 $
 
                 Slope of the Least-Squares Regression Line <br><br>
                 $
-                (12.)\;\; b_1 = r * \dfrac{s_y}{s_x} \\[7ex] 
+                (12.)\;\; b_1 = r * \dfrac{s_y}{s_x} \\[7ex]
                 $
 
                 Y-intercept of the Least-Squares Regression Line <br><br>
                 $
-                (13.)\;\; b_0 = \bar{y} - b_1 * \bar{x} \\[3ex] 
+                (13.)\;\; b_0 = \bar{y} - b_1 * \bar{x} \\[3ex]
                 $
 
                 Least-Squares Regression Line <br>
@@ -445,7 +462,7 @@
                 or <br>
                 Linear Regression Equation <br><br>
                 $
-                (14.)\;\; \hat{y} = b_{1}x + b_0 \\[3ex] 
+                (14.)\;\; \hat{y} = b_{1}x + b_0 \\[3ex]
                 $
 
                 Residual <br><br>
@@ -467,8 +484,8 @@
 
                 Formula for the Multiple Linear Regression Equation <br><br>
                 $
-                (17.)\;\; \hat{y} = b_0 + b_{1}x_{1} + b_{2}x_{2} \\[5ex] 
-                where \\[3ex] 
+                (17.)\;\; \hat{y} = b_0 + b_{1}x_{1} + b_{2}x_{2} \\[5ex]
+                where \\[3ex]
                 \Sigma x_1^2 = \Sigma X_1^2 - \dfrac{(\Sigma X_1)^2}{n} \\[5ex]
                 \Sigma x_2^2 = \Sigma X_2^2 - \dfrac{(\Sigma X_2)^2}{n} \\[5ex]
                 \Sigma x_1 x_2 = \Sigma X_1 X_2 - \dfrac{\Sigma X_1 * \Sigma X_2}{n} \\[5ex]
@@ -476,9 +493,11 @@
                 \Sigma x_2y = \Sigma X_2Y - \dfrac{\Sigma X_2 * \Sigma Y}{n} \\[5ex]
 
 
-                (18.)\;\; b_1 = \dfrac{(\Sigma x_2^2)(\Sigma x_1 y) - (\Sigma x_1 x_2)(\Sigma x_2 y)}{(\Sigma x_1^2)(\Sigma x_2^2) - (\Sigma x_1 x_2)^2} \\[7ex]
+                (18.)\;\; b_1 = \dfrac{(\Sigma x_2^2)(\Sigma x_1 y) - (\Sigma x_1 x_2)(\Sigma x_2 y)}{(\Sigma
+                x_1^2)(\Sigma x_2^2) - (\Sigma x_1 x_2)^2} \\[7ex]
 
-                (19.)\;\; b_2 = \dfrac{(\Sigma x_1^2)(\Sigma x_2 y) - (\Sigma x_1 x_2)(\Sigma x_1 y)}{(\Sigma x_1^2)(\Sigma x_2^2) - (\Sigma x_1 x_2)^2} \\[7ex]
+                (19.)\;\; b_2 = \dfrac{(\Sigma x_1^2)(\Sigma x_2 y) - (\Sigma x_1 x_2)(\Sigma x_1 y)}{(\Sigma
+                x_1^2)(\Sigma x_2^2) - (\Sigma x_1 x_2)^2} \\[7ex]
 
                 (20.)\;\; b_0 = \bar{Y} - b_{1}\bar{X}_{1} - b_{2}\bar{X}_{2}
                 $
@@ -489,7 +508,7 @@
             <h4>Spearman's Rank Correlation Correlation</h4>
             <p>
                 $
-                (1.)\;\; d = R_X - R_Y \\[5ex] 
+                (1.)\;\; d = R_X - R_Y \\[5ex]
                 (2.)\;\; \rho = 1 - \dfrac{6\Sigma d^2}{n(n^2 - 1)} \\[7ex]
 
 
@@ -536,7 +555,7 @@
                 Let us review and discuss these articles in the class/computer lab <br>
                 <i>
                     Allow students to give their opinions/answers, then discuss the answers. <br>
-                    Ask questions that promote critical thinking. 
+                    Ask questions that promote critical thinking.
                 </i> <br><br>
 
                 (1.) The <b>Number of cheeseburgers</b> and <b>Weight</b> <br>
@@ -548,40 +567,42 @@
                     OR <br>
                     Is weight gain <u>associated</u> with the number of cheeseburgers one eats? <br>
                     OR <br>
-                    Both? 
+                    Both?
                 </i> <br><br>
-                
+
 
                 (2.) <b>Weight of a car</b> and the <b>Mileage</b> <br>
                 (a.) https://www.wired.com/2012/08/fuel-economy-vs-mass/ <br>
                 (b.) https://www.autoblog.com/2009/10/29/greenlings-how-does-weight-affect-a-vehicles-efficiency/ <br>
                 <i>
                     Good mileage is <u>associated</u> with lightweight cars. <br>
-                    However, does the weight of a car <u>cause</u> better fuel economy (good mileage)? 
+                    However, does the weight of a car <u>cause</u> better fuel economy (good mileage)?
                 </i> <br><br>
 
                 (3.) <b>Obesity</b> and <b>Diabetes</b> <br>
                 (a.) https://pubmed.ncbi.nlm.nih.gov/21128002/ <br>
                 (b.) https://health.clevelandclinic.org/diabesity-the-connection-between-obesity-and-diabetes/ <br>
                 <i>
-                    In a nationally representative sample of US adults, the prevalence of diabetes increases with increasing weight classes. 
+                    In a nationally representative sample of US adults, the prevalence of diabetes increases with
+                    increasing weight classes.
                     (Nguyen, N.T., Nguyen, X.M., Lane, J., & Wang, P.; 2011, March). <br>
                     Diabetes is strongly <u>related</u> to obesity. <br>
-                    But, does obesity <u>cause</u> diabetes? 
+                    But, does obesity <u>cause</u> diabetes?
                 </i> <br><br>
 
                 (4.) <b>Socioeconomic status (SES)</b> and <b>Health</b> <br>
                 (a.) https://www.ncbi.nlm.nih.gov/books/NBK25526/ <br>
                 (b.) https://www.apa.org/pi/ses/resources/publications/work-stress-health <br>
                 <i>
-                    In the United States, people with less education have worse health outcomes. (Anderson, N.B.; 1970, January 01). <br>
-                    But, does it imply that less education <u>causes</u> bad health?  
+                    In the United States, people with less education have worse health outcomes. (Anderson, N.B.; 1970,
+                    January 01). <br>
+                    But, does it imply that less education <u>causes</u> bad health?
                 </i> <br><br>
 
                 (5.) <b>Old Age</b> and <b>Osteoarthritis</b> <br>
                 (a.) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2818253/ <br>
                 <i>
-                    Osteoarthritis is a multi-factorial condition for which aging is the major risk factor. 
+                    Osteoarthritis is a multi-factorial condition for which aging is the major risk factor.
                     (Anderson, A.S., & Loeser, R.F.; 2010, February) <br>
                     Arthritis is <u>associated</u> with old age. <br>
                     However, does old age <u>cause</u> arthritis?
@@ -593,7 +614,7 @@
                     Fever and headache can go hand-in-hand during an illness. <br>
                     Many infectious disease are in fact heralded by the tandem of headache and fever. (D.; n.d). <br>
                     Headache is <u>associated</u> with fever. <br>
-                    However, does fever <u>cause</u> headache? 
+                    However, does fever <u>cause</u> headache?
                 </i>
             </p>
 
@@ -612,7 +633,7 @@
 
             <p>
                 (7.) <b>Smoking tobacco</b> and <b>Lung cancer</b> <br>
-                (a.)  https://www.cancer.org/cancer/lung-cancer/causes-risks-prevention/what-causes.html <br>
+                (a.) https://www.cancer.org/cancer/lung-cancer/causes-risks-prevention/what-causes.html <br>
                 (b.) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3749017/ <br>
                 (c.) https://www.cdc.gov/tobacco/campaign/tips/diseases/cancer.html
             </p>
@@ -620,7 +641,8 @@
             <button class="solutions" onclick="solutions('IntroductionSeven')">Show/Hide Answer</button>
             <div class="answer" id="IntroductionSeven">
                 <p>
-                    Smoking tobacco is associated with lung cancer. This is a Correlation (because of the relationship). <br>
+                    Smoking tobacco is associated with lung cancer. This is a Correlation (because of the relationship).
+                    <br>
                     Smoking tobacco causes lung cancer. This is a Causation. <br>
                     So, it is both a correlation and a causation.
                 </p>
@@ -632,59 +654,88 @@
             <i>
                 Read this article or ask any student to read it. <br>
                 Discuss it as it is read. <br>
-                Ask questions that promote critical thinking. 
+                Ask questions that promote critical thinking.
             </i> <br><br>
 
             Taken from: http://web.cn.edu/kwheeler/logic_causation.html <br><br>
             <i>
                 "
-                For instance, consider New York City in the 1980s. The city at that time was a dangerous place. Crime was at an
-                all-time high then. Murders, prostitution, and drug-dealing had reached epic levels. New York had tried stiffer
-                penalties, longer jail terms, mandatory counseling, methadone treatments, and a variety of other approaches without
-                denting the ugly problem. Mayor Guiliani hired researchers to come in. What was one of the early findings? Analysts
-                spotted a correlation between graffiti in an inner-city neighborhood and the relative crime-rate in that area. The
-                more graffiti, the higher the crime rate. Treating this as a cause/effect relationship, New York's mayor Guiliani
-                decided to alter the funding for the police department, cutting back money for some types of law-enforcement,
-                pouring money into an city-wide anti-graffiti campaign, and arguing that a cleaner city would diminish the visual
-                "mindset" of crime in the area. He enacted a zero-tolerance policy by prosecuting taggers who painted on public
-                property, and he cleaned up Times Square and the trashiest parts of the city. As overall crime rates dropped in the
+                For instance, consider New York City in the 1980s. The city at that time was a dangerous place. Crime
+                was at an
+                all-time high then. Murders, prostitution, and drug-dealing had reached epic levels. New York had tried
+                stiffer
+                penalties, longer jail terms, mandatory counseling, methadone treatments, and a variety of other
+                approaches without
+                denting the ugly problem. Mayor Guiliani hired researchers to come in. What was one of the early
+                findings? Analysts
+                spotted a correlation between graffiti in an inner-city neighborhood and the relative crime-rate in that
+                area. The
+                more graffiti, the higher the crime rate. Treating this as a cause/effect relationship, New York's mayor
+                Guiliani
+                decided to alter the funding for the police department, cutting back money for some types of
+                law-enforcement,
+                pouring money into an city-wide anti-graffiti campaign, and arguing that a cleaner city would diminish
+                the visual
+                "mindset" of crime in the area. He enacted a zero-tolerance policy by prosecuting taggers who painted on
+                public
+                property, and he cleaned up Times Square and the trashiest parts of the city. As overall crime rates
+                dropped in the
                 1990s, the mayor touted his program as a success. <br>
-            
-                Impressed and surprised, other cities tried to duplicate New York's approach. They enacted similar financial
-                policies and created similar laws. They hauled in hoodlums and cleaned up graffiti . . . and they all failed
-                miserably. Crime in these cities either remained the same or in one or two cases, worsened slightly, even though the
+
+                Impressed and surprised, other cities tried to duplicate New York's approach. They enacted similar
+                financial
+                policies and created similar laws. They hauled in hoodlums and cleaned up graffiti . . . and they all
+                failed
+                miserably. Crime in these cities either remained the same or in one or two cases, worsened slightly,
+                even though the
                 changes they made were nearly identical to that of New York. <br>
-            
-                What happened? Why couldn't they duplicate New York's success? The problem may be one of false causation. That
-                correlation between the amount of graffiti and the overall crime rate doesn't necessarily mean that graffiti <u>causes</u>
-                crime to happen--no more than the correlation between black eyes and broken noses in people who lose fist fights
-                means that black eyes "cause" broken noses. The crime-rate in an area also correlates to the rate of unemployment,
-                for example, and New York's unemployment was dropping steadily through the 1990s. Perhaps rising employment caused
-                crime to drop at just about the same time the mayor started his anti-graffiti campaign. The rate of drug abuse in a
-                given area also correlates to the number of crimes in that area. The city had started constructing larger drug
-                treatment clinics in the late 1980s after the decade's peak of cocaine addiction. Although the construction funding
-                had been spent in the late 1980s without visible effect, many of these clinics actually started operation only two
-                or three years before the fall in crime in the early 1990s. Perhaps after two or three years of treatment, a
-                significant fraction of cured addicts no longer needed to engage in crime sprees to support an expensive and illicit
-                habit. It's not at all clear if there was just one cause--maybe the combination of rising employment, drug clinics,
-                and the mayor's anti-graffiti campaign together had a synergistic effect that was missing in other cities where the
-                anti-graffiti program didn't work. One recent book on applied economic theory, entitled <u>Freakonomics</u>, has gone so
-                far as to suggest plausibly the source of the crime-drop nationwide in the late 1990s and the early 2000s has been
+
+                What happened? Why couldn't they duplicate New York's success? The problem may be one of false
+                causation. That
+                correlation between the amount of graffiti and the overall crime rate doesn't necessarily mean that
+                graffiti <u>causes</u>
+                crime to happen--no more than the correlation between black eyes and broken noses in people who lose
+                fist fights
+                means that black eyes "cause" broken noses. The crime-rate in an area also correlates to the rate of
+                unemployment,
+                for example, and New York's unemployment was dropping steadily through the 1990s. Perhaps rising
+                employment caused
+                crime to drop at just about the same time the mayor started his anti-graffiti campaign. The rate of drug
+                abuse in a
+                given area also correlates to the number of crimes in that area. The city had started constructing
+                larger drug
+                treatment clinics in the late 1980s after the decade's peak of cocaine addiction. Although the
+                construction funding
+                had been spent in the late 1980s without visible effect, many of these clinics actually started
+                operation only two
+                or three years before the fall in crime in the early 1990s. Perhaps after two or three years of
+                treatment, a
+                significant fraction of cured addicts no longer needed to engage in crime sprees to support an expensive
+                and illicit
+                habit. It's not at all clear if there was just one cause--maybe the combination of rising employment,
+                drug clinics,
+                and the mayor's anti-graffiti campaign together had a synergistic effect that was missing in other
+                cities where the
+                anti-graffiti program didn't work. One recent book on applied economic theory, entitled
+                <u>Freakonomics</u>, has gone so
+                far as to suggest plausibly the source of the crime-drop nationwide in the late 1990s and the early
+                2000s has been
                 an unintentional result or by-product of abortion policies thirty years earlier!
                 "
             </i> <br><br>
 
             <b>Linear Correlation</b> is an <b>association between two variables.</b> <br>
-            The two variables are the: <b>predictor variable</b> 
-            (also known as the <b>explanatory variable</b> or the <b>independent variable</b>, $x$) and the 
+            The two variables are the: <b>predictor variable</b>
+            (also known as the <b>explanatory variable</b> or the <b>independent variable</b>, $x$) and the
             <b>response variable</b> (also known as the <b>dependent variable</b>), $y$. <br>
             The association may or may not be causal. <br><br>
-            <b>Causation</b> is an <b>association between two variables</b> in which a <b>change in one variable</b> <u>causes</u> a 
+            <b>Causation</b> is an <b>association between two variables</b> in which a <b>change in one variable</b>
+            <u>causes</u> a
             <b>change in the other variable.</b> <br>
             This is otherwise known as <b>cause</b> <u>and</u> <b>effect.</b> <br><br>
-            A positive association means that an increase in the predictor variable tends to 
+            A positive association means that an increase in the predictor variable tends to
             be associated with an increase in the response variable. <br>
-            A causal relationship cannot be established solely on an association between the 
+            A causal relationship cannot be established solely on an association between the
             variables.
 
             <b>Interdisciplinary Connection</b> <br>
@@ -712,12 +763,17 @@
             In addition, correlation can be linear or nonlinear. <br>
             A <b>Linear Correlation</b> is the correlation that shows a linear relationship between the variables. <br>
             Linear correlation can be positive linear correlation or negative linear correlation. <br><br>
-            A <b>Positive Linear Correlation</b> shows a <b>direct relationship</b> in which an increase in the predictor variable leads to an increase 
-            in the response variable, and in which a decrease in the predictor variable leads to a decrease in the response variable. <br><br>
-            A <b>Negative Linear Correlation</b> shows an <b>inverse relationship</b> in which an increase in the predictor variable leads to a decrease 
-            in the response variable, and in which a decrease in the predictor variable leads to an increase in the response variable. <br><br>
+            A <b>Positive Linear Correlation</b> shows a <b>direct relationship</b> in which an increase in the
+            predictor variable leads to an increase
+            in the response variable, and in which a decrease in the predictor variable leads to a decrease in the
+            response variable. <br><br>
+            A <b>Negative Linear Correlation</b> shows an <b>inverse relationship</b> in which an increase in the
+            predictor variable leads to a decrease
+            in the response variable, and in which a decrease in the predictor variable leads to an increase in the
+            response variable. <br><br>
 
-            <b>Question 8:</b> Will these variables have positive correlation, negative correlation, or no correlation? <br>
+            <b>Question 8:</b> Will these variables have positive correlation, negative correlation, or no correlation?
+            <br>
             Give reasons for your answers. <br>
             (a.) The outside temperature and the number of people wearing jackets <br>
             (b.) Head circumference and IQ (Intelligence Quotient) <br>
@@ -726,20 +782,26 @@
             <button class="solutions" onclick="solutions('IntroductionEight')">Show/Hide Answer</button>
             <div class="answer" id="IntroductionEight">
                 <p>
-                    (a.) The outside temperature and the number of people wearing jackets: <b>Negative correlation</b> <br>
-                    This is because as the outside temperature increases (gets very hot), the number of people wearing jackets decreases. <br>
-                    Similarly, as the outside temperature decreases (gets very cold), the number of people wearing jackets increases. <br><br>
+                    (a.) The outside temperature and the number of people wearing jackets: <b>Negative correlation</b>
+                    <br>
+                    This is because as the outside temperature increases (gets very hot), the number of people wearing
+                    jackets decreases. <br>
+                    Similarly, as the outside temperature decreases (gets very cold), the number of people wearing
+                    jackets increases. <br><br>
 
                     (b.) Head circumference and IQ (Intelligence Quotient): <b>No correlation</b> <br>
                     People with big head circumference do not necessarily have high IQs or low IQs. <br>
                     The same applies to people with small head circumference. <br><br>
 
                     (c.) The years of education and annual salary: <b>Positive correlation</b> <br>
-                    A person with a bachelors degree (10 years of education) <i>typically</i> earns more than a person with a high school diploma 
+                    A person with a bachelors degree (10 years of education) <i>typically</i> earns more than a person
+                    with a high school diploma
                     (6 years of education) <br>
-                    Also, a person with a masters degree (12 years of education) <i>typically</i> earns more than a person with a bachelors 
+                    Also, a person with a masters degree (12 years of education) <i>typically</i> earns more than a
+                    person with a bachelors
                     degree. <br>
-                    Therefore, ceteris paribus; the higher the number of years of education, the higher the annual salary. 
+                    Therefore, ceteris paribus; the higher the number of years of education, the higher the annual
+                    salary.
                 </p>
             </div>
 
@@ -753,11 +815,13 @@
             (4.) Spearman's Rank Correlation Coefficient <br>
             (5.) Kendall's Rank Correlation Coefficient <br><br>
 
-            <u>Please Note:</u> 
-            If the question asks you to calculate the correlation coefficient, then it is most likely asking you to calculate the 
+            <u>Please Note:</u>
+            If the question asks you to calculate the correlation coefficient, then it is most likely asking you to
+            calculate the
             Pearson's correlation coefficient. <br>
-            This implies that <i>correlation coeffient</i> or <i>coefficient of correlation</i> or <i>Pearson's correlation coefficient</i> or 
-            <i>Product moment correlation coefficient</i> are synonymous. 
+            This implies that <i>correlation coeffient</i> or <i>coefficient of correlation</i> or <i>Pearson's
+                correlation coefficient</i> or
+            <i>Product moment correlation coefficient</i> are synonymous.
         </div>
         <!-- End Introduction -->
 
@@ -766,32 +830,41 @@
         <!-- Scatter Diagrams -->
         <div id="scatterDiagrams" class="w3-container">
             <h2>Scatter Diagrams</h2>
-        
+
             <p>
-                A <b>scatter diagram</b> is a graph that shows the relationship between two variables: the response variable and the predictor 
+                A <b>scatter diagram</b> is a graph that shows the relationship between two variables: the response
+                variable and the predictor
                 variable. <br>
-                The response variable is plotted on the vertical axis (y-axis) and the predictor variable is plotted on the horizontal axis (x-axis). <br>
-                When studying scatter diagrams, we examine the trend (measure of center), the strength (measure of spread), and the shape. <br>
-                A strong association between two variables means that there is less vertical spread (or narrower spread), so more accurate predictions can be made. It has a little amount of scatter. <br>
-                A large amount of scatter in a scatterplot is an indication that the association between the two variables is weak. <br>
-                When describing two-variable associations, a written description should always include trend, shape, strength, and the context of the data. <br><br>
+                The response variable is plotted on the vertical axis (y-axis) and the predictor variable is plotted on
+                the horizontal axis (x-axis). <br>
+                When studying scatter diagrams, we examine the trend (measure of center), the strength (measure of
+                spread), and the shape. <br>
+                A strong association between two variables means that there is less vertical spread (or narrower
+                spread), so more accurate predictions can be made. It has a little amount of scatter. <br>
+                A large amount of scatter in a scatterplot is an indication that the association between the two
+                variables is weak. <br>
+                When describing two-variable associations, a written description should always include trend, shape,
+                strength, and the context of the data. <br><br>
 
                 <b>Non-linear Relationship</b> <br>
-                The data points do not have a linear relationship because they do not lie mainly on a straight line. <br>
+                The data points do not have a linear relationship because they do not lie mainly on a straight line.
+                <br>
                 <img src="images/nonlinear-relationship.png" alt="Non-linear Relationship"> <br><br>
 
                 <b>Positive Linear Relationship</b> <br>
                 The data points have a linear relationship because they lie mainly on a straight line. <br>
                 However, the slope is positive. <br>
-                This implies generally that as the predictor variable increases, the response variable increases. <br> 
-                This shows an increasing trend, which means that the value of the correlation coefficient will be positive. <br>
+                This implies generally that as the predictor variable increases, the response variable increases. <br>
+                This shows an increasing trend, which means that the value of the correlation coefficient will be
+                positive. <br>
                 <img src="images/positivelinear-relationship.png" alt="Positive Linear Relationship"> <br><br>
-                
+
                 <b>Negative Linear Relationship</b> <br>
                 The data points have a linear relationship because they lie mainly on a straight line. <br>
                 However, the slope is negative. <br>
-                This implies generally that as the predictor variable increases, the response variable decreases. <br> 
-                This shows a decreasing trend, which means that the value of the correlation coefficient will be negative. <br>
+                This implies generally that as the predictor variable increases, the response variable decreases. <br>
+                This shows a decreasing trend, which means that the value of the correlation coefficient will be
+                negative. <br>
                 <img src="images/negativelinear-relationship.png" alt="Negative Linear Relationship"> <br><br>
 
 
@@ -804,34 +877,34 @@
         <!-- Pearson Correlation Coefficient -->
         <div id="correlationCoefficientPearson" class="w3-container">
             <h2>Pearson Correlation Coefficient</h2>
-        
+
             <p>
-                (1.) The Pearson Correlation Coefficient, also known as the 
-                Product Moment Correlation Coefficient, also simply known as the 
-                Correlation Coefficient is a number that measures the strength of the 
+                (1.) The Pearson Correlation Coefficient, also known as the
+                Product Moment Correlation Coefficient, also simply known as the
+                Correlation Coefficient is a number that measures the strength of the
                 linear association between two numerical variables. <br><br>
                 (2.) It is denoted by <i>r</i> <br><br>
                 (3.) It is a number between &minus;1 and 1 <br>
                 This implies that: &minus;1 &le; <i>r</i> &le; 1 <br><br>
-                (4.) It makes sense only if the trend is linear and the variables are 
+                (4.) It makes sense only if the trend is linear and the variables are
                 numerical. <br><br>
-                (5.) If the value of the correlation coefficient is positive, then the 
+                (5.) If the value of the correlation coefficient is positive, then the
                 trend is positive. <br>
-                If the value of the correlation coefficient is negative, then the trend is 
+                If the value of the correlation coefficient is negative, then the trend is
                 negative. <br><br>
-                (6.) When computing the correlation coefficient for a pair of data sets, 
-                changing the order of the variables has no effect on the correlation 
+                (6.) When computing the correlation coefficient for a pair of data sets,
+                changing the order of the variables has no effect on the correlation
                 coefficient. <br>
-                In other words, the value of <i>r</i> when <i>x</i> is interchanged with 
+                In other words, the value of <i>r</i> when <i>x</i> is interchanged with
                 <i>y</i> or <i>y</i> is interchanged with <i>x</i> <br><br>
                 (7.) The correlation coefficient remains the same when adding a constant. <br><br>
                 (8.) The correlation coefficient remains the same when multiplying by a positive constant. <br><br>
 
-                <u>NOTE:</u> A correlation coefficient based on an observational study can 
+                <u>NOTE:</u> A correlation coefficient based on an observational study can
                 never be used to support a claim of cause and effect. <br>
-                This is because it is based on an observational study rather than on a designed 
-                experiment. 
-                
+                This is because it is based on an observational study rather than on a designed
+                experiment.
+
             </p>
         </div>
         <!-- End Pearson Correlation Coefficient -->
@@ -841,18 +914,18 @@
         <!-- Coefficient of Determination -->
         <div id="coefficientDetermination" class="w3-container">
             <h2>Coefficient of Determination</h2>
-        
+
             <p>
-                (1.) The <b>Coefficient of Determination</b> measures how much of the variation in the response variable 
+                (1.) The <b>Coefficient of Determination</b> measures how much of the variation in the response variable
                 is explained by the explanatory variable. <br><br>
                 (2.) It is the square of the correlation coefficient, often called <i>r</i>-squared <br><br>
                 (3.) It is denoted by <i>r</i>² or <i>R</i>² <br><br>
                 (4.) It is between 0% and 100%. <br>
-                A value of 0% indicates no linear relationship between the variables. Hence, the regression line 
+                A value of 0% indicates no linear relationship between the variables. Hence, the regression line
                 does not predict the observations well. <br>
-                A value of 100% indicates a strong linear relationship. Hence, the regression line perfectly predicts 
-                the observations. 
-                
+                A value of 100% indicates a strong linear relationship. Hence, the regression line perfectly predicts
+                the observations.
+
 
             </p>
         </div>
@@ -865,42 +938,49 @@
             <h2>Least-Squares Regression Line</h2>
 
             <p>
-                (1.) The <b>Least-Squares Regression Line</b> also known as <b>Linear Regression Equation</b> or 
+                (1.) The <b>Least-Squares Regression Line</b> also known as <b>Linear Regression Equation</b> or
                 <b>Line of Best Fit</b> is a tool used for making predictions about future observed values. <br>
                 In other words, we use it to predict a value of <i>y</i>, given the value of <i>x</i>. <br><br>
                 (2.) It is also a useful way of summarizing a linear relationship. <br>
                 Regression models are only useful for linear associations. <br><br>
-                (3.) The word, <i>predicted</i> is often written in front of the <i>y</i>-variable in the equation of the 
-                regression line to emphasize that the line consists of the predicted <i>y</i>-values, rather than the 
+                (3.) The word, <i>predicted</i> is often written in front of the <i>y</i>-variable in the equation of
+                the
+                regression line to emphasize that the line consists of the predicted <i>y</i>-values, rather than the
                 actual <i>y</i>-values. <br><br>
-                (4.) The name, <i>least-squares line</i> derives from the fact that it is chosen so that the sum of the 
-                squares of the differences between the observed <i>y</i>-values and the predicted <i>y</i>-values is as 
+                (4.) The name, <i>least-squares line</i> derives from the fact that it is chosen so that the sum of the
+                squares of the differences between the observed <i>y</i>-values and the predicted <i>y</i>-values is as
                 small as possible. <br><br>
-                (5.) The intercept of a regression line gives the value of the predicted mean <i>y</i>-value when the 
+                (5.) The intercept of a regression line gives the value of the predicted mean <i>y</i>-value when the
                 <i>x</i>-value is 0. <br><br>
-                (6.) Outliers have a big effect on the regression line because the regression line is a line of means. <br>
-                An <b>influential point</b> is an outlier whose presence or absence has a big effect on the regression 
+                (6.) Outliers have a big effect on the regression line because the regression line is a line of means.
+                <br>
+                An <b>influential point</b> is an outlier whose presence or absence has a big effect on the regression
                 analysis. <br>
-                If the data have one or more influential points, it is recommended to perform the regression analysis with 
+                If the data have one or more influential points, it is recommended to perform the regression analysis
+                with
                 and without these points, and comment on the differences. <br>
-                Regression analysis should be performed with and without the influential points, to determine whether the 
+                Regression analysis should be performed with and without the influential points, to determine whether
+                the
                 influential points have an effect. <br><br>
                 (7.) In the least-squares regression model,
                 y<sub>i</sub> = &beta;<sub>1</sub>x<sub>i</sub> + &beta;<sub>0</sub> + &epsilon;<sub>i</sub>, <br>
                 &epsilon;<sub>i</sub> is a random error term with mean = 0, and <br>
                 standard deviation &sigma;<sub>&epsilon;<sub>i</sub></sub> = &sigma; <br><br>
-                (8.) Regression towards the mean occurs when values for the predictor variable that are far from the mean lead to values of the response variable that are closer to the mean. <br>
-                The farther the predictor variable is from the mean, the closer the response variable is to the mean. <br>
+                (8.) Regression towards the mean occurs when values for the predictor variable that are far from the
+                mean lead to values of the response variable that are closer to the mean. <br>
+                The farther the predictor variable is from the mean, the closer the response variable is to the mean.
+                <br>
                 The farther, <i>x</i> is from the mean, the closer <i>y</i> is to the mean. <br><br>
 
-                <u>NOTE:</u> Extrapolation is defined as using the regression line to make predictions beyond the 
+                <u>NOTE:</u> Extrapolation is defined as using the regression line to make predictions beyond the
                 range of <i>x</i>-values in the data. <br>
-                Because we develop the regression line using only the points in the data, extrapolation should not be used. 
-                
-            
-            
+                Because we develop the regression line using only the points in the data, extrapolation should not be
+                used.
+
+
+
             </p>
-        
+
         </div>
         <!-- End Least-Squares Regression Line -->
 
@@ -914,12 +994,12 @@
                 The first thing we need to do is to <u>turn</u> <b>Diagonstic On</b> <br><br>
                 (1.) <img src="images/TI-Calculator/set-up-1.png" alt="Set Up 1"> <br><br>
                 (2.) <img src="images/TI-Calculator/set-up-2.png" alt="Set Up 2"> <br><br>
-                (3.) <img src="images/TI-Calculator/set-up-3.png" alt="Set Up 3">                
-            
+                (3.) <img src="images/TI-Calculator/set-up-3.png" alt="Set Up 3">
+
                 <br><br>
 
-                <b>Example 1:</b> The distance (in kilometers) and price (in dollars) for one-way 
-                airline tickets from San Francisco to several cities are shown in the 
+                <b>Example 1:</b> The distance (in kilometers) and price (in dollars) for one-way
+                airline tickets from San Francisco to several cities are shown in the
                 table.
             </p>
             <table class="w3-center">
@@ -963,9 +1043,9 @@
                 (4.) <img src="images/TI-Calculator/calculator-4.png" alt="Calculator: Step 4"> <br><br>
                 (5.) <img src="images/TI-Calculator/calculator-5.png" alt="Calculator: Step 5"> <br><br>
                 (6.) <img src="images/TI-Calculator/calculator-6.png" alt="Calculator: Step 6"> <br><br>
-                The correlation coefficient, <i>r</i> = 0.9668225299 
+                The correlation coefficient, <i>r</i> = 0.9668225299
                 <br><br>
-                (b.) Recalculate the correlation coefficient for these data using price 
+                (b.) Recalculate the correlation coefficient for these data using price
                 as the <i>x</i>-variable and distance as the <i>y</i>-variable. <br>
                 What effect does this have on the correlation coefficient?
                 <br><br>
@@ -1016,9 +1096,9 @@
                 The correlation coefficient, <i>r</i> = 0.9668225299 <br>
                 The correlation coefficient remains the same when adding a constant.
                 <br><br>
-                (d.) Suppose the airline held an incredible sale, where travelers got 
+                (d.) Suppose the airline held an incredible sale, where travelers got
                 a round-trip ticket for the price of a one-way ticket. <br>
-                This means that the distances would be doubled while the ticket price 
+                This means that the distances would be doubled while the ticket price
                 remained the same. <br>
                 What effect would this have on the correlation coefficient?
             </p>
@@ -1063,14 +1143,14 @@
                 <img src="images/TI-Calculator/calculator-LinearRegression.png" alt="Linear Regression Equation">
                 <br><br>
                 $
-                \hat{y} = b_{1}x + b_0 \\[3ex] 
+                \hat{y} = b_{1}x + b_0 \\[3ex]
                 \hat{y} = ax + b \\[3ex]
                 \hat{y} = 0.0525014805x + 70.29986885 \\[3ex]
                 $
                 (f.) Using the initial dataset, what is the coefficient of determination? <br>
-                The coefficient of determination, <i>r</i>² = 0.9347458043 
+                The coefficient of determination, <i>r</i>² = 0.9347458043
                 <br><br>
-                (g.) Draw the scatter diagram of the initial data. 
+                (g.) Draw the scatter diagram of the initial data.
                 <br><br>
                 (16.) <img src="images/TI-Calculator/calculator-16.png" alt="Calculator: Step 16"> <br><br>
                 (17.) <img src="images/TI-Calculator/calculator-17.png" alt="Calculator: Step 17"> <br><br>
@@ -1081,7 +1161,7 @@
                 (22.) <img src="images/TI-Calculator/calculator-22.png" alt="Calculator: Step 22"> <br><br>
                 (23.) <img src="images/TI-Calculator/calculator-23.png" alt="Calculator: Step 23">
             </p>
-        
+
         </div>
         <!-- End TI (Texas Instruments) Calculators -->
 
@@ -1090,11 +1170,12 @@
         <!-- Tables -->
         <div id="tables" class="w3-container">
             <h2>Tables</h2>
-            
+
             <div id="criticalValuesPearsonDF">
                 <b>Critical Values of the Pearson Correlation Coefficient</b> <br>
                 (<i>based on Degrees of Freedom</i>) <br>
-                <object data="images/critical-values-Pearson-correlation-coefficient-based-on-degrees-freedom.pdf" width="1400" height="700"></object> <br><br>
+                <object data="images/critical-values-Pearson-correlation-coefficient-based-on-degrees-freedom.pdf"
+                    width="1400" height="700"></object> <br><br>
             </div>
 
             <br>
@@ -1102,14 +1183,16 @@
             <div id="criticalValuesPearsonSampleSize">
                 <b>Critical Values of the Pearson Correlation Coefficient</b> <br>
                 (<i>based on Sample Size</i>) <br>
-                <object data="images/critical-values-Pearson-correlation-coefficient-based-on-sample-size.pdf" width="1400" height="700"></object> <br><br>
+                <object data="images/critical-values-Pearson-correlation-coefficient-based-on-sample-size.pdf"
+                    width="1400" height="700"></object> <br><br>
             </div>
 
             <br>
 
             <div id="criticalValuesSpearman">
                 <b>Critical Values of the Spearman's Rank Correlation Coefficient</b> <br>
-                <object data="images/critical-values-Spearman-correlation-coefficient.pdf" width="1400" height="700"></object> <br><br>
+                <object data="images/critical-values-Spearman-correlation-coefficient.pdf" width="1400"
+                    height="700"></object> <br><br>
             </div>
 
         </div>
@@ -1123,61 +1206,71 @@
             <h2>References</h2>
             <p>
                 Chukwuemeka, Samuel Dominic (2023). <i>Correlation and Regression.</i>
-                Retrieved from <a href="https://mathematicscourses.github.io/Statistics/" target="_blank">https://mathematicscourses.github.io/Statistics/</a>
+                Retrieved from <a href="https://mathematicscourses.github.io/Statistics/"
+                    target="_blank">https://mathematicscourses.github.io/Statistics/</a>
                 <br><br>
-                Anderson, A. S., & Loeser, R. F. (2010, February). Why is Osteoarthritis an Age-Related Disease? 
-                Retrieved September 27, 2017, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2818253/ 
+                Anderson, A. S., & Loeser, R. F. (2010, February). Why is Osteoarthritis an Age-Related Disease?
+                Retrieved September 27, 2017, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2818253/
                 <br><br>
-                Anderson, N. B. (1970, January 01). Race/Ethnicity, Socioeconomic Status, and Health. 
-                Retrieved September 27, 2017, from https://www.ncbi.nlm.nih.gov/books/NBK25526/ 
+                Anderson, N. B. (1970, January 01). Race/Ethnicity, Socioeconomic Status, and Health.
+                Retrieved September 27, 2017, from https://www.ncbi.nlm.nih.gov/books/NBK25526/
                 <br><br>
-                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.). New Jersey: Wiley
+                Black, Ken. (2012). <i>Business Statistics for Contemporary Decision Making</i> (7th ed.). New Jersey:
+                Wiley
                 <br><br>
-                Gould, R., & Ryan, C. (2016). <i>Introductory Statistics: Exploring the world through data</i> (2nd ed.). Boston: Pearson
+                Gould, R., & Ryan, C. (2016). <i>Introductory Statistics: Exploring the world through data</i> (2nd
+                ed.). Boston: Pearson
                 <br><br>
-                Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through data</i> (3rd ed.). Pearson.
+                Gould, R., Wong, R., & Ryan, C. N. (2020). <i>Introductory Statistics: Exploring the world through
+                    data</i> (3rd ed.). Pearson.
                 <br><br>
                 Kozak, Kathryn. (2015). <i>Statistics Using Technology</i> (2nd ed.).
                 <br><br>
-                Nguyen, N. T., Nguyen, X. M., Lane, J., & Wang, P. (2011, March). 
-                Relationship between obesity and diabetes in a US adult population: 
-                findings from the National Health and Nutrition Examination Survey, 1999-2006. 
-                Retrieved September 27, 2017, from https://www.ncbi.nlm.nih.gov/pubmed/21128002 
+                Nguyen, N. T., Nguyen, X. M., Lane, J., & Wang, P. (2011, March).
+                Relationship between obesity and diabetes in a US adult population:
+                findings from the National Health and Nutrition Examination Survey, 1999-2006.
+                Retrieved September 27, 2017, from https://www.ncbi.nlm.nih.gov/pubmed/21128002
                 <br><br>
                 OpenStax, <i>Introductory Statistics.</i>OpenStax CNX. Sep 28, 2016.
                 Retrieved from https://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de@18.12
                 <br><br>
-                Smoking facts and evidence. (2017, June 26). Retrieved September 27, 2017, 
-                from http://www.cancerresearchuk.org/about-cancer/causes-of-cancer/smoking-and-cancer/smoking-facts-and-evidence#smoking_facts0  
-                <br><br>  
+                Smoking facts and evidence. (2017, June 26). Retrieved September 27, 2017,
+                from
+                http://www.cancerresearchuk.org/about-cancer/causes-of-cancer/smoking-and-cancer/smoking-facts-and-evidence#smoking_facts0
+                <br><br>
                 Sullivan, M., & Barnett, R. (2013). <i>Statistics: Informed decisions using data with an introduction
-                to mathematics of finance</i> 
+                    to mathematics of finance</i>
                 (2nd custom ed.). Boston: Pearson Learning Solutions.
                 <br><br>
-                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i> 
+                Triola, M. F. (2015). <i>Elementary Statistics using the TI-83/84 Plus Calculator</i>
                 (5th ed.). Boston: Pearson
                 <br><br>
                 Triola, M. F. (2022). <i>Elementary Statistics.</i> (14th ed.) Hoboken: Pearson.
                 <br><br>
                 Weiss, Neil A. (2015). <i>Elementary Statistics</i> (9th ed.). Boston: Pearson
                 <br><br>
-                Spearman Ranked Correlation Table. (n.d.). http://webspace.ship.edu/pgmarr/geo441/tables/spearman%20ranked%20correlation%20table.pdf
+                Spearman Ranked Correlation Table. (n.d.).
+                http://webspace.ship.edu/pgmarr/geo441/tables/spearman%20ranked%20correlation%20table.pdf
                 <br><br>
-                Elementary, Intermediate Tests and High School Regents Examinations : OSA : NYSED. (2019). 
+                Elementary, Intermediate Tests and High School Regents Examinations : OSA : NYSED. (2019).
                 Nysedregents.org. https://www.nysedregents.org/
                 <br><br>
-                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from https://revisionworld.com/gcse-revision/gcse-exam-past-papers
+                GCSE Exam Past Papers: Revision World. Retrieved April 6, 2020, from
+                https://revisionworld.com/gcse-revision/gcse-exam-past-papers
                 <br><br>
-                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au. https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
+                HSC exam papers | NSW Education Standards. (2019). Nsw.edu.au.
+                https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers
                 <br><br>
-                NSC Examinations. (n.d.). www.education.gov.za. https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
+                NSC Examinations. (n.d.). www.education.gov.za.
+                https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx
                 <br><br>
-                West African Examinations Council (WAEC). Retrieved May 30, 2020, from https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
+                West African Examinations Council (WAEC). Retrieved May 30, 2020, from
+                https://waeconline.org.ng/e-learning/Mathematics/mathsmain.html
                 <br><br>
-                D. (n.d.). Health Information for Your Health Needs. Retrieved September 27, 2017, 
-                from http://healthymedinfo.blogspot.com/2012/09/fever-and-headache-causes-and-treatment.html 
-                <br><br>   
-                (n.d.). Retrieved September 27, 2017, from http://web.cn.edu/kwheeler/logic_causation.html 
+                D. (n.d.). Health Information for Your Health Needs. Retrieved September 27, 2017,
+                from http://healthymedinfo.blogspot.com/2012/09/fever-and-headache-causes-and-treatment.html
+                <br><br>
+                (n.d.). Retrieved September 27, 2017, from http://web.cn.edu/kwheeler/logic_causation.html
             </p>
         </div>
         <!-- End References -->
@@ -1216,4 +1309,5 @@
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
 </body>
+
 </html>

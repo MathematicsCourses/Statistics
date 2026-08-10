@@ -2,9 +2,8 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.descriptive-statistics.appspot.com/measuresCenter.html
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
+// https://samuelchukwuemeka.github.io/descriptive-statistics/measuresCenter.html
+
 // message 2
 
 var date = new Date();

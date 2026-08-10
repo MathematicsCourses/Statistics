@@ -3,9 +3,8 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
-    www.polynomials.appspot.com/FactorPolynomials.html
+    
+    https://samuelchukwuemeka.github.io/polynomials/FactorPolynomials.html
     message 6
 */
 

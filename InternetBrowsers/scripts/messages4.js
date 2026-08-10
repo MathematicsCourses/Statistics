@@ -2,9 +2,8 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.expressions-equations.appspot.com/literalEquations.html
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
+// https://samuelchukwuemeka.github.io/expressions-equations/literalEquations.html
+
 // message 4
 
 

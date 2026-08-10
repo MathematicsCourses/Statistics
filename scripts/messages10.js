@@ -2,8 +2,7 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
+
 // www.samuelchukwuemeka.com/Sequences/quadraticSequences.html
 // message 10
 

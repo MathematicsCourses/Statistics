@@ -2,8 +2,7 @@
 // www.samuelchukwuemeka.com/statistics/statistical-science.html
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
+
 // messages 2
 
 var date = new Date();

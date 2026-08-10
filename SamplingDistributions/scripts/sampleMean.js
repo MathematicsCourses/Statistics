@@ -1,7 +1,7 @@
 // Copyright 2017 - Samuel Dominic Chukwuemeka (Samdom For Peace)
 // www.samuelchukwuemeka.com
-// www.chukwuemeka-samuel.appspot.com
-// www.samplingdistribution.appspot.com
+// 
+// https://samuelchukwuemeka.github.io/sampling-distributions/
 
 
 "use strict";

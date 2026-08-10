@@ -2,10 +2,8 @@
     Copyright 2022 - Samuel Dominic Chukwuemeka (Samdom For Peace)
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
-    www.chukwuemeka-samuel.appspot.com
     www.samdomforpeace.com
-    www.samdomforpeace.appspot.com
-    www.probability-distribution.appspot.com/poisson-distribution.html
+    https://samuelchukwuemeka.github.io/probability-distributions/poisson-distribution.html
     message 5
 */
 

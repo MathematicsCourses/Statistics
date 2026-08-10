@@ -2,9 +2,7 @@
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
 // www.samdomforpeace.com
-// www.chukwuemeka-samuel.appspot.com
-// www.samdomforpeace.appspot.com
-// www.probability-distribution.appspot.com
+// https://samuelchukwuemeka.github.io/probability-distributions/
 
 "use strict";
 

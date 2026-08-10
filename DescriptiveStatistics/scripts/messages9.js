@@ -3,9 +3,8 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.descriptive-statistics.appspot.com/descriptive-statistics-calculators.html
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
+    https://samuelchukwuemeka.github.io/descriptive-statistics/descriptive-statistics-calculators.html
+    
     message 9
 */
 

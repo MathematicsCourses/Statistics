@@ -3,9 +3,8 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
-    www.statistical-science.appspot.com/Statistics-RStudio/ScatterDiagrams.html
+    
+    https://mathematicscourses.github.io/Statistics/Statistics-RStudio/ScatterDiagrams.html
  message 11
 */
 

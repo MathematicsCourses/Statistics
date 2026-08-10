@@ -2,11 +2,9 @@
     Copyright 2017 - Samuel Dominic Chukwuemeka (Samdom For Peace)
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
-    www.chukwuemeka-samuel.appspot.com
     www.samdomforpeace.com
-    www.samdomforpeace.appspot.com
-    www.samplingdistribution.appspot.com
-    www.samplingdistribution.appspot.com/sampling-distribution-calculators.html
+    https://samuelchukwuemeka.github.io/sampling-distributions/
+   https://samuelchukwuemeka.github.io/sampling-distributions/sampling-distribution-calculators.html
     message 2
 */
 

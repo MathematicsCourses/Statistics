@@ -3,9 +3,8 @@
     www.samuelchukwuemeka.com
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
-    www.correlationandregression.appspot.com/correlationRegressionCalculators-horizontal
+    
+   https://samuelchukwuemeka.github.io/correlation-regression/correlationRegressionCalculators-horizontal
     message 8
 */
 

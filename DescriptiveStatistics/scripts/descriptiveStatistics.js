@@ -1,8 +1,7 @@
 // Copyright 2018 - Samuel Dominic Chukwuemeka (Samdom For Peace)
 // www.samuelchukwuemeka.com
 // www.chukwuemekasamuel.com
-// www.sequences.appspot.com
-// www.chukwuemeka-samuel.appspot.com
+// https://samuelchukwuemeka.com/Sequences/sequences.html
 
 //"use strict";
 

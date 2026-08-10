@@ -3,8 +3,7 @@
     www.samuelchukwuemeka.com/statistics/statistics.html
     www.chukwuemekasamuel.com
     www.samdomforpeace.com
-    www.chukwuemeka-samuel.appspot.com
-    www.samdomforpeace.appspot.com
+    
     messages 1
 */
 
