@@ -143,8 +143,23 @@
         Any comma included in a number indicates a decimal point. <br>
         <u>For the Solutions:</u> <br>
         Decimals are used appropriately rather than commas <br>
-        Commas are used to separate digits appropriately. <br><br>
-
+        Commas are used to separate digits appropriately.
+        <br><br>
+        <b>Notable Notes About Mean and Standard Deviation.</b> <br>
+        (1.) Given an initial dataset: <br>
+        If the value of a variable is decreased, the total sum of the frequencies and the values of the variable,
+        &Sigma;<i>fx</i> of the new dataset will decrease, hence the mean and the standard deviation of the new dataset
+        will decrease. <br>
+        The mean and the standard deviation will decrease.
+        <br><br>
+        (2.) Given an initial dataset: <br>
+        If a new value, lower than the minimum value of the initial dataset is included in it: <br>
+        The mean will decrease and the standard deviation will increase.
+        <br><br>
+        (3.) Given an initial dataset: <br>
+        If a new value, higher than the maximum value of the initial dataset is included in it: <br>
+        The mean will increase and the standard deviation will decrease.
+        <br><br>
         Solve all questions. <br>
         Show all work.
     </div>
@@ -1153,49 +1168,12 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (9.) One of the following circle graphs represents the proportion by age group of the adults surveyed.
-                <br>
-                Which one? <br><br>
-                <div class="w3-center">
-                    <img src="images/Statistics/Questions/Number9.png" alt="Number 9">
-                </div> <br>
+                (9.)
                 <button class="solutions" onclick="solutions('solutionS9')">Show/Hide Answer</button>
                 <div class="result" id="solutionS9">
                     <br>
-                    We have about a minute to solve this question. <br>
-                    So, we shall find the sectorial angle for the first age group and then use the process of
-                    elimination to
-                    identify our answer <br>
-                    If necessary, we shall find the sectorial angle for the second age group and also eliminate options
-                    <br>
-                    We shall repeat this process until we get our answer <br><br>
-                    $
-                    Sectorial\;\;\angle\;\;for\;\;each\;\;age\;\;group =
-                    \dfrac{frequency\;\;of\;\;the\;\;age\;\;group}{\Sigma f} * 100 \\[5ex]
-                    \underline{21-30\;\;Age\;\;Group} \\[3ex]
-                    Sectorial\;\;\angle = \dfrac{2750}{5000} * 100 \\[5ex]
-                    = 55\% \\[3ex]
-                    $
-                    Eliminate Options B., D., and E. <br>
-                    Let us calculate the sectorial angle for the second age group <br><br>
-                    $
-                    \underline{31-40\;\;Age\;\;Group} \\[3ex]
-                    Sectorial\;\;\angle = \dfrac{1225}{5000} * 100 \\[5ex]
-                    = 24.5\% \\[3ex]
-                    $
-                    Eliminate Option C. <br>
-                    Option A. is the correct answer. <br><br>
-                    For those who just want to complete the rest of the age groups <br><br>
-                    $
-                    \underline{41-50\;\;Age\;\;Group} \\[3ex]
-                    Sectorial\;\;\angle = \dfrac{625}{5000} * 100 \\[5ex]
-                    = 12.5\% \\[3ex]
-                    \underline{51\;\;or\;\;Older\;\;Age\;\;Group} \\[3ex]
-                    Sectorial\;\;\angle = \dfrac{400}{5000} * 100 \\[5ex]
-                    = 8\% \\[5ex]
-                    \underline{Check} \\[3ex]
-                    \Sigma Sectorial\;\; \angle = 55 + 24.5 + 12.5 + 8 = 100\%
-                    $
+
+
                 </div>
             </div>
         </div>
@@ -1208,7 +1186,7 @@
                 standard deviation = 4 <br>
                 Circle the value of the skew for the data. <br><br>
                 $
-                Use\;\;skew = \dfrac{3(mean - median)}{standard\;\;deviation} \\[5ex]
+                \text{Use } skew = \dfrac{3(mean - median)}{standard\;\;deviation} \\[5ex]
                 $
                 -11.25 &ensp;&ensp;&ensp; 1.25 &ensp;&ensp;&ensp; 3.75 &ensp;&ensp;&ensp; 16.25 <br><br>
                 <button class="solutions" onclick="solutions('solutionS10')">Show/Hide Answer</button>
@@ -1233,34 +1211,251 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (11.)
+                (11.) The prices​ (in $​ thousands) of a sample of​ three-bedroom homes for sale in State A and State B
+                are shown in the table below.
+                <br>
+                <table class="noborder">
+                    <tr>
+                        <th style="width: 50%; text-align: left;">State A</th>
+                        <th style="width: 50%; text-align: left;">State B</th>
+                    </tr>
+                    <tr>
+                        <td>291</td>
+                        <td>192</td>
+                    </tr>
+                    <tr>
+                        <td>336</td>
+                        <td>211</td>
+                    </tr>
+                    <tr>
+                        <td>129</td>
+                        <td>414</td>
+                    </tr>
+                    <tr>
+                        <td>182</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>115</td>
+                        <td>197</td>
+                    </tr>
+                    <tr>
+                        <td>172</td>
+                        <td>291</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td>127</td>
+                    </tr>
+                </table>
+                <br>
+                (I.) In a few​ sentences, compare the prices of these homes. <br>
+                (II.) Answer the questions of which state had the most expensive homes and which had the most
+                variability in home prices.
                 <button class="solutions" onclick="solutions('solutionS11')">Show/Hide Answer</button>
                 <div class="result" id="solutionS11">
                     <br>
+                    <table class="w3-center">
+                        <caption>State A</caption>
+                        <tr>
+                            <th>Price, $x$ (<span>$</span> thousands)</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$291$</td>
+                            <td>$1$</td>
+                            <td>$291$</td>
+                            <td>$90.28571429$</td>
+                            <td>$8151.510204$</td>
+                            <td>$8151.510204$</td>
+                        </tr>
+                        <tr>
+                            <td>$336$</td>
+                            <td>$1$</td>
+                            <td>$336$</td>
+                            <td>$135.2857143$</td>
+                            <td>$18302.22449$</td>
+                            <td>$18302.22449$</td>
+                        </tr>
+                        <tr>
+                            <td>$129$</td>
+                            <td>$1$</td>
+                            <td>$129$</td>
+                            <td>$-71.71428571$</td>
+                            <td>$5142.938776$</td>
+                            <td>$5142.938776$</td>
+                        </tr>
+                        <tr>
+                            <td>$182$</td>
+                            <td>$1$</td>
+                            <td>$182$</td>
+                            <td>$-18.71428571$</td>
+                            <td>$350.2244898$</td>
+                            <td>$350.2244898$</td>
+                        </tr>
+                        <tr>
+                            <td>$115$</td>
+                            <td>$1$</td>
+                            <td>$115$</td>
+                            <td>$-85.71428571$</td>
+                            <td>$7346.938776$</td>
+                            <td>$7346.938776$</td>
+                        </tr>
+                        <tr>
+                            <td>$172$</td>
+                            <td>$1$</td>
+                            <td>$172$</td>
+                            <td>$-28.71428571$</td>
+                            <td>$824.5102041$</td>
+                            <td>$824.5102041$</td>
+                        </tr>
+                        <tr>
+                            <td>$180$</td>
+                            <td>$1$</td>
+                            <td>$180$</td>
+                            <td>$-20.71428571$</td>
+                            <td>$429.0816327$</td>
+                            <td>$429.0816327$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 7$</td>
+                            <td>$\Sigma fx = 1405$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 40547.42857$</td>
+                        </tr>
+                    </table>
+                    <br><br>
                     $
-                    \Sigma x = 5 + 8 + x + 12 + (x + 5) + 10 \\[3ex]
-                    \Sigma x = 35 + x + x + 5 \\[3ex]
-                    \Sigma x = 40 + 2x \\[3ex]
-                    n = 6 \\[3ex]
-                    \bar{x} = 10 \\[3ex]
-                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
-                    \rightarrow \Sigma x = \bar{x} * n \\[3ex]
-                    40 + 2x = 10(6) \\[3ex]
-                    40 + 2x = 60 \\[3ex]
-                    2x = 60 - 40 \\[3ex]
-                    2x = 20 \\[3ex]
-                    x = \dfrac{20}{2} \\[5ex]
-                    x = 10 \\[3ex]
-                    \underline{Check} \\[3ex]
-                    x = 10 \\[3ex]
-                    x + 5 = 10 + 5 = 15 \\[3ex]
-                    Data\:\:values = 5, 8, 10, 12, 15, 10 \\[3ex]
-                    \Sigma x = 5 + 8 + 10 + 12 + 15 + 10 = 60 \\[3ex]
-                    n = 6 \\[3ex]
-                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
-                    \bar{x} = \dfrac{60}{6} \\[5ex]
-                    \bar{x} = 10
+                    \underline{State\;A} \\[3ex]
+                    (a.) \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{1405}{7} \\[5ex]
+                    = 200.7142857 \\[3ex]
+                    \approx 200.71...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[5ex]
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{40547.42857}{7 - 1} \\[5ex]
+                    = \dfrac{40547.42857}{6} \\[5ex]
+                    = 6757.904762 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{6757.904762} \\[3ex]
+                    = 82.2064764 \\[3ex]
+                    \approx 82.21...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[3ex]
                     $
+                    <table class="w3-center">
+                        <caption>State B</caption>
+                        <tr>
+                            <th>Price, $x$ (<span>$</span> thousands)</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$192$</td>
+                            <td>$1$</td>
+                            <td>$192$</td>
+                            <td>$-31.14285714$</td>
+                            <td>$969.877551$</td>
+                            <td>$969.877551$</td>
+                        </tr>
+                        <tr>
+                            <td>$211$</td>
+                            <td>$1$</td>
+                            <td>$211$</td>
+                            <td>$-12.14285714$</td>
+                            <td>$147.4489796$</td>
+                            <td>$147.4489796$</td>
+                        </tr>
+                        <tr>
+                            <td>$414$</td>
+                            <td>$1$</td>
+                            <td>$414$</td>
+                            <td>$190.8571429$</td>
+                            <td>$36426.44898$</td>
+                            <td>$36426.44898$</td>
+                        </tr>
+                        <tr>
+                            <td>$130$</td>
+                            <td>$1$</td>
+                            <td>$130$</td>
+                            <td>$-93.14285714$</td>
+                            <td>$8675.591837$</td>
+                            <td>$8675.591837$</td>
+                        </tr>
+                        <tr>
+                            <td>$197$</td>
+                            <td>$1$</td>
+                            <td>$197$</td>
+                            <td>$-26.14285714$</td>
+                            <td>$683.4489796$</td>
+                            <td>$683.4489796$</td>
+                        </tr>
+                        <tr>
+                            <td>$291$</td>
+                            <td>$1$</td>
+                            <td>$291$</td>
+                            <td>$67.85714286$</td>
+                            <td>$4604.591837$</td>
+                            <td>$4604.591837$</td>
+                        </tr>
+                        <tr>
+                            <td>$127$</td>
+                            <td>$1$</td>
+                            <td>$127$</td>
+                            <td>$-96.14285714$</td>
+                            <td>$9243.44898$</td>
+                            <td>$9243.44898$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 7$</td>
+                            <td>$\Sigma fx = 1562$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 60750.85714$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    \underline{State\;A} \\[3ex]
+                    (a.) \\[3ex]
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{1562}{7} \\[5ex]
+                    = 223.1428571 \\[3ex]
+                    \approx 223.14...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[5ex]
+                    (b.) \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{60750.85714}{7 - 1} \\[5ex]
+                    = \dfrac{60750.85714}{6} \\[5ex]
+                    = 10125.14286 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{10125.14286} \\[3ex]
+                    = 100.6237688 \\[3ex]
+                    \approx 100.62...rounded\;\;to\;\;the\;\;nearest\;\;hundredth \\[3ex]
+                    $
+                    (I.) This implies that: <br>
+                    The typical price​ (in $​ thousands) for a​ three-bedroom home in State A is <span>$</span>200.71
+                    <br>
+                    The typical price​ (in $​ thousands) for a​ three-bedroom home in State B is <span>$</span>223.14
+                    <br>
+                    Therefore, the typical price for a​ three-bedroom home is higher in State B.
+                    <br><br>
+                    The standard deviation of price​ (in <span>$</span> thousands) for a​ three-bedroom home in State A
+                    is <span>$</span>82.21 <br>
+                    The standard deviation of price​ (in <span>$</span> thousands) for a​ three-bedroom home in State B
+                    is <span>$</span>100.62 <br>
+                    Therefore, the standard deviation of price for a​ three-bedroom home is higher in State B.
+                    <br><br>
+                    (II.) Therefore, the prices for​ three-bedroom homes tend to be lower and have less variation in
+                    State A than in State B.  
                 </div>
             </div>
         </div>
@@ -1774,7 +1969,7 @@
         <a href="https://mathematicscourses.github.io/Statistics/DescriptiveStatistics/descriptiveStatistics.html"
             class="w3-button w3-xlarge w3-circle w3-red" style="position:absolute;top:-70px;right:24px">Top</a>
     </div>
-    <br><br><br><br>fewer
+    <br><br><br><br>
 
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
@@ -1814,81 +2009,13 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (23.) <b>ACT</b> Data from a random sample of 335 car owners in a certain city are listed below. <br>
-                The table indicates the number of owners in 3 age brackets (16 &ndash; 25, 26 &ndash; 45, 46 &ndash; 60)
-                who own cars from 3 car
-                companies (A, B, C) in this city. <br>
-                Each owner in the sample owns only 1 car. <br><br>
-                <table class="w3-center">
-                    <tr>
-                        <td style="border-bottom: hidden;"></td>
-                        <td colspan="4">Car companies</td>
-                    </tr>
-                    <tr>
-                        <td>Age (in years)</td>
-                        <td>A</td>
-                        <td>B</td>
-                        <td>C</td>
-                        <td>Total</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            16 - 25 <br>
-                            26 - 45 <br>
-                            46 - 60
-                        </td>
-                        <td>
-                            16 <br>
-                            54 <br>
-                            65
-                        </td>
-                        <td>
-                            24 <br>
-                            48 <br>
-                            23
-                        </td>
-                        <td>
-                            40 <br>
-                            53 <br>
-                            12
-                        </td>
-                        <td>
-                            80 <br>
-                            155 <br>
-                            100
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>135</td>
-                        <td>95</td>
-                        <td>105</td>
-                        <td>335</td>
-                    </tr>
-                </table>
-                <br>
-                A circle graph will be drawn with 3 sectors each representing the proportion of owners from Company A,
-                B, and C who
-                are 16 to 25 years old. <br>
-                What is the measure of the central angle for the Company A sector of the graph?
-                <br><br>
-                $
-                F.\;\; 5^\circ \\[3ex]
-                G.\;\; 17^\circ \\[3ex]
-                H.\;\; 20^\circ \\[3ex]
-                J.\;\; 43^\circ \\[3ex]
-                K.\;\; 72^\circ \\[3ex]
-                $
+                (23.)
+
                 <button class="solutions" onclick="solutions('solutionS23')">Show/Hide Answer</button>
                 <div class="result" id="solutionS23">
                     <br>
-                    $
-                    \underline{For\;\;16 - 25\;\;years} \\[3ex]
-                    Sectorial\;\;\angle\;\;for\;\;Company\;A \\[3ex]
-                    = \dfrac{Frequency\;\;for\;\;Company\;A}{\Sigma Frequency} * 360^\circ \\[5ex]
-                    = \dfrac{16}{80} * 360 \\[5ex]
-                    = 72^\circ
-                    $
+
+
                 </div>
             </div>
         </div>
@@ -1937,13 +2064,8 @@
     <br><br>
     <div class="w3-row w3-container">
         <div class="w3-topbar w3-padding">
-            <b>ACT</b> Use the following information to answer questions 27-28. <br>
-            A survey in a study skills class asked the 20 students enrolled in the class how many hours
-            (rounded to the nearest hour) they has spent studying on the previous evening. <br>
-            The 20 responses are summarized by the histogram below. <br><br>
-            <div class="w3-center">
-                <img src="images/Statistics/Questions/Numbers27-28.png" alt="Numbers 27-28">
-            </div>
+
+
         </div>
     </div>
     <br><br>
@@ -1951,32 +2073,12 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (27.) The teacher decides to show the data in a circle graph (pie chart). <br>
-                What should be the measure of the central angle of the sector for 3 hours? <br><br>
-                $
-                F.\;\; 18^\circ \\[3ex]
-                G.\;\; 20^\circ \\[3ex]
-                H.\;\; 36^\circ \\[3ex]
-                J.\;\; 72^\circ \\[3ex]
-                K.\;\; 90^\circ \\[3ex]
-                $
+                (27.)
                 <button class="solutions" onclick="solutions('solutionS27')">Show/Hide Answer</button>
                 <div class="result" id="solutionS27">
                     <br>
-                    $
-                    0\;hour \rightarrow 2\;students \\[3ex]
-                    1\;hour \rightarrow 5\;students \\[3ex]
-                    2\;hours \rightarrow 6\;students \\[3ex]
-                    3\;hours \rightarrow 4\;students \\[3ex]
-                    4\;hours \rightarrow 2\;students \\[3ex]
-                    5\;hours \rightarrow 1\;student \\[3ex]
-                    Total\;\;number\;\;of\;\;students = \Sigma f = 2 + 5 + 6 + 4 + 2 + 1 = 20 \\[3ex]
-                    sectorial\;\angle \;\;for\;\;3\;\;hours \\[3ex]
-                    = \dfrac{number\;\;of\;\;students\;\;for\;\;3\;\;hours}{total\;\;number\;\;of\;\;students} *
-                    360^\circ \\[5ex]
-                    = \dfrac{4}{20} * 360^\circ \\[5ex]
-                    = 72^\circ
-                    $
+
+
                 </div>
             </div>
         </div>
