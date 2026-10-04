@@ -15,54 +15,74 @@
         gtag('config', 'G-6FSJYT2TDC');
     </script>
 
-<meta name="msvalidate.01" content="53BB84784B5D75B5310ED94DF892DC7B">
+    <meta name="msvalidate.01" content="53BB84784B5D75B5310ED94DF892DC7B">
 
 
 
-    <title>Scatter Diagrams with RStudio</title>
-
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
+    <title>Scatter Diagrams in RStudio: Plotting Bivariate Data with R | Statistics</title>
     <meta name="description"
-        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD JESUS CHRIST. We are experts in scatter diagrams with RStudio.">
+        content="Learn how to plot and interpret scatter diagrams in RStudio using R: base R graphics, ggplot2, geom_point, adding regression trend lines, and customizing scatter plot aesthetics.">
+    <meta name="keywords"
+        content="scatter diagrams in RStudio, plot scatter plot R, ggplot2 geom_point, RStudio bivariate plot, adding regression line R, base R plot, RStudio statistics, customizing plots in R, scatter plot visualization R">
+    <meta name="author" content="Samuel Dominic Chukwuemeka (SamDom For Peace)">
+    <meta name="robots" content="index, follow">
 
-    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, mathematics, 
-                statistics, data, data collection, data organization, data presentation, data analysis, data interpretation,
-                descriptive statistics, inferential statistics, statistical science, sample, population, individual, decision, 
-                conclusion, study, variables, quantitative variable, qualitative variable, discrete variable, continuous variable,
-                statistic, parameter, research, research objective, inference, response variable, explanatory variable,
-                predictor variable, level of measurement of a variable, nominal level, ordinal level, interval level, ratio level, 
-                fact, survey, experiment, historical record, Likert scales, statistical process, correlation, regression, 
-                correlation coefficient, product moment correlation coefficient, Pearson correlation coefficient, 
-                critical values of correlation coefficient, forecasting, forecasting models, forecasting techniques, period,
-                value, forecast, error, mean absolute deviation, mean square error, averages, simple averages, 
-                moving averages, weighted moving averages, index numbers, time-series forecasting, smoothing techniques, 
-                naive forecasting models, averaging models, exponential smoothing, trend analysis, seasonal effects, 
-                autocorrelation, autoregression, variables, price index, critical value, confidence level, confidence interval, 
-                significance level, level of significance, level of confidence, confidence limit, hypothesis, claim, type I error, 
-                type II error, unstacked table, coding, wide data, narrow data, unstacked table, stacked table, long data, 
-                null hypothesis, alternative hypothesis, one-tail, two-tail, probability value p-value, test statistic, 
-                critical region, hypothesis testing, population proportion, population mean, one sample proportion, 
-                two sample proportion, goodness-of-fit test, chi-square, normal distribution table, student t distribution table,
-                F statistic, test statistic, sample proportion, population proportion, level of significance, 
-                confidence levels, sample mean, population mean, sample variance, population variance, 
-                sample standard deviation, population standard deviation, critical values, student t distribution, 
-                normal distribution, chi -square distribution, sampling, normal distribution, sampling distribution, 
-                probability distribution, sample mean, sample proportion, sample variance, sample standard deviation, 
-                population mean, population proportion, population variance, population standard deviation, estimators, 
-                bias, standard error, probability, central limit theorem, confounding, lurking variable, sampling frame,
-                frequency distribution table, frequency table, class, classes, frequency, data set, class width, tally,
-                class size, range, number of classes, maximum value, minimum value, class interval, class limit,
-                class midpoint, class mark, class boundary, relative frequency, cumulative frequency, data cycle,
-                two-way table, R programming, RStudio">
+    <!-- Canonical URL -->
+    <link rel="canonical"
+        href="https://mathematicscourses.github.io/Statistics/Statistics-RStudio/ScatterDiagrams.html">
 
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://mathematicscourses.github.io/Statistics/Statistics-RStudio/ScatterDiagrams.html">
+    <meta property="og:title" content="Scatter Diagrams in RStudio: Plotting Bivariate Data with R">
+    <meta property="og:description"
+        content="Step-by-step tutorial on creating and customizing scatter diagrams in RStudio using base R and ggplot2, complete with regression lines, labels, and code examples.">
+    <meta property="og:image" content="https://mathematicscourses.github.io/images/samuelchukwuemeka.png">
+    <meta property="og:site_name" content="Statistics &amp; Mathematics Courses">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scatter Diagrams in RStudio: Plotting Bivariate Data with R">
+    <meta name="twitter:description"
+        content="Master scatter diagram generation in RStudio: learn base R plotting, ggplot2 geom_point syntax, trend line fitting, and data visualization best practices.">
+    <meta name="twitter:image" content="https://mathematicscourses.github.io/images/samuelchukwuemeka.png">
+
+    <!-- Favicon & External CSS -->
     <link href="styles/RStudio.css" rel="stylesheet" type="text/css" media="all">
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Structured Data / JSON-LD (Schema.org for Educational Content) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "name": "Scatter Diagrams in RStudio",
+        "description": "Interactive study guide and programming resource for generating scatter diagrams in RStudio using base R plot() functions and ggplot2 geom_point(), fitting linear trend lines, and formatting graph aesthetics.",
+        "learningResourceType": "Study Guide",
+        "educationalLevel": "Secondary / High School / College Level Statistics & Data Science",
+        "competencyRequired": "Statistics, Bivariate Data, R Programming, RStudio, Data Visualization, ggplot2",
+        "author": {
+          "@type": "Person",
+          "name": "Samuel Dominic Chukwuemeka"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "SamDom For Peace Designs"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Statistics Courses",
+          "url": "https://mathematicscourses.github.io/Statistics/"
+        }
+      }
+      </script>
+
+
 </head>
 
 <body>
